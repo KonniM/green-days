@@ -1,0 +1,2520 @@
+{
+  "principles": [
+    {
+      "title_de": "Energiesystem-Profil für Boulderer",
+      "text_de": "Bouldern besteht aus kurzen, maximalen Einsätzen. Der Schwerpunkt liegt deshalb auf Kraft/Power und – als wichtigstem ‚Ausdauer'-Baustein – auf anaerober Kapazität (Lattice: AnCap, hochintensive Arbeit über ca. 30 s bis 2 min bzw. wiederholte harte Versuche). Aerobe Arbeit bleibt Nebenrolle: Lattice empfiehlt Boulderern etwa 25–50 % des Ausdauervolumens eines Routenkletterers bei etwas niedrigerer Intensität, mindestens eine Einheit pro Woche. Sie verbessert vor allem die Erholung zwischen Versuchen.",
+      "source": "https://latticetraining.com/blog/training-series-endurance"
+    },
+    {
+      "title_de": "Aerobe vs. anaerobe Kapazität (Lattice-Terminologie)",
+      "text_de": "Lattice beschreibt die Systeme mit einem Wassertank-Bild: Anaerobe Kapazität ist die Menge an Arbeit, die oberhalb des aeroben Niveaus möglich ist; aerobe Kapazität ist die Fähigkeit, Energie nachzuliefern und anaerobe Nebenprodukte abzupuffern. Alles, was sich ohne steigenden Pump halten lässt, ist aerob; darüber liegen in aufsteigender Dauer Kraft, anaerobe Kapazität und Aerobic Power (‚Power Endurance'). Die Einheit wird nach dem gewünschten System gewählt – nicht nach dem Gefühl, möglichst gepumpt zu sein.",
+      "source": "https://latticetraining.com/blog/training-energy-systems-the-climbers-guide"
+    },
+    {
+      "title_de": "Kraft vor Power",
+      "text_de": "Maximalkraft braucht am längsten zur Anpassung und gehört in die Basisphase; sie ist die Grundlage für spätere Power-Arbeit. Power (Kraft × Geschwindigkeit) wird zum Formaufbau genutzt und beginnt etwa 2–6 Wochen vor dem Ziel. Beides immer frisch, gut aufgewärmt, mit langen Pausen (ca. 3 min) und nie am Ende einer Einheit; grob zwei Einheiten pro Woche je nach Phase. Sinkt die Qualität, ist die Einheit vorbei.",
+      "source": "https://latticetraining.com/blog/training-series-strength-power"
+    },
+    {
+      "title_de": "Phasen bauen aufeinander auf (Paradigm)",
+      "text_de": "Charlie Schreiber ordnet das Bouldertraining in aufeinander aufbauende Phasen: Capacity → Strength → Power → Power Endurance → Performance. Zufälliges Training (‚Random Training Trap') führt trotz hohem Einsatz zu Plateaus. Entscheidend ist das Lastmanagement: das Verhältnis von akuter zu chronischer Belastung (ACWR) kündigt Überlastung an, bevor der Körper sich meldet. Jede Session bekommt eine klare Intention.",
+      "source": "https://www.youtube.com/watch?v=P1LnRNAtM8k"
+    },
+    {
+      "title_de": "Max-Hang-Dosierung: kurz, schwer, mit Reserve",
+      "text_de": "Max Hangs sind kurze Hänge (ca. 7–10 s) bei etwa 85–100 % der Maximalleistung, mit vollständiger Pause und wenigen Sätzen. Paradigm betont: nur mit gesunden Fingern, nach gründlichem Warm-up und in frischem Zustand – ein Kontroll-, kein Schmerztest, nach dem man am nächsten Tag noch stark klettern kann. Lattice setzt Fingertraining an den Anfang der Einheit, hält Intensität hoch und Volumen niedrig und bleibt 6–12 Wochen bei einer Methode, bevor gewechselt wird.",
+      "source": "https://www.youtube.com/watch?v=1XVmaFtaBkc"
+    },
+    {
+      "title_de": "Half Crimp als Basis, Griffarten rotieren",
+      "text_de": "Lattice trainiert in der Basisphase überwiegend Half Crimp: Er belastet die Unterarmmuskulatur am breitesten, verträgt Volumen und überträgt sich auf die meisten anderen Griffe. Full Crimp, Pockets, Sloper und Pinch kommen später und zielgerichtet dazu (grob 80 % Basis, 20 % spezifisch). Wer an der Wand viel crimpt, sollte das Zusatztraining bewusst in anderen Griffpositionen bzw. mit Block-Lifts machen, damit sich die Belastung derselben Gelenkstrukturen nicht überlagert.",
+      "source": "https://latticetraining.com/blog/why-do-we-train-half-crimp"
+    },
+    {
+      "title_de": "Deload-Wochen einplanen",
+      "text_de": "Lattice arbeitet in 3–4-wöchigen Blöcken, die meist mit einer Deload-Woche enden (Verhältnis 2:1 oder 3:1). Im Deload sinkt die Gesamtlast um etwa 40–60 %: weniger Sätze/Einheiten, kürzere Haltezeiten (z. B. 5 statt 10 s Pick-ups) und Klettern auf Flash-Niveau statt Projektieren. Einzelne Reize dürfen intensiv bleiben, wenn das Volumen fällt. Keine neuen Übungen im Deload.",
+      "source": "https://latticetraining.com/blog/do_climbers_need_deload_weeks"
+    },
+    {
+      "title_de": "Qualität stoppt die Einheit (Paradigm)",
+      "text_de": "Bei Paradigm zählt jeder Versuch nur, wenn er bei etwa 95–100 % der aktuellen Leistungsfähigkeit stattfindet. Deshalb: begrenzte Versuchszahl pro Boulder (z. B. vier), Pause nach geleisteter Arbeit (ca. 1 min pro gekletterten Zug) und Abbruch, sobald Kraft oder Power nachlassen. Das verhindert ‚Junk Volume' und Übertraining und trainiert zugleich die Entscheidungsfähigkeit für Projekttage.",
+      "source": "https://www.youtube.com/watch?v=K5NLcANk1X8"
+    },
+    {
+      "title_de": "Intensität über RPE steuern",
+      "text_de": "Paradigm nutzt RPE (subjektives Anstrengungsempfinden) zur Autoregulation: Die Tagesform bestimmt die Last, nicht eine starre Prozentzahl. RPE wird je Session protokolliert, für Kraft und Ausdauer unterschiedlich interpretiert und über Zeit mit dem realen Output abgeglichen, um die eigene Einschätzung zu kalibrieren.",
+      "source": "https://www.youtube.com/watch?v=FU-HtaXGoS0"
+    },
+    {
+      "title_de": "Warm-up: aktivieren statt ermüden",
+      "text_de": "Ein gutes Finger-Warm-up macht vorhandene Kraft abrufbar, ohne Energie zu verbrauchen: kurzes Kletter-Warm-up mit leichtem Pump und ansteigender Fingerlast, dann wenige sehr kurze, sehr harte Rekrutierungsreize mit viel Pause und optional ein Potenzierungsreiz (PAPE). Danach ruhig 5–15 min pausieren, bevor es maximal wird – 30 min ‚Aufwärmen' bis zur Müdigkeit kostet Leistung.",
+      "source": "https://www.youtube.com/watch?v=Veppe-SARoc"
+    },
+    {
+      "title_de": "Niedrig-intensive Fingerlast ergänzt, ersetzt aber nicht",
+      "text_de": "Abrahangs (10 Hänge à 10 s mit 50 s Pause, Füße am Boden) zeigten in einer Crimpd-Auswertung allein einen kleinen, nicht signifikanten Trend, Max Hangs einen signifikanten Zuwachs und die Kombination den größten. Lattice empfiehlt sie als Ergänzung oder Ersatz für zusätzliche intensive Fingerarbeit – nicht obendrauf –, mit mindestens einem Tag pro Woche ganz ohne Sehnenbelastung und nicht als Reha ohne physiotherapeutische Abklärung.",
+      "source": "https://latticetraining.com/blog/abrahangs-why-so-divisive-and-do-they-actually-work"
+    },
+    {
+      "title_de": "Erhaltungsdosis und Peaking",
+      "text_de": "Kraft lässt sich mit wenig Aufwand halten: Laut Lattice reichen etwa 30–60 % des Volumens und 50–80 % der Frequenz bei 80–95 % der Intensität (z. B. 5–6 maximale Hänge einmal pro Woche, 2–3 schwere Sätze pro Kraftübung). Felstage zählen voll zur Wochenlast. Vor Trips reduziert Paradigm die Trainingslast so weit, dass Ermüdung abklingt, hält aber genug Intensität – Fitness und Ermüdung sind getrennte Größen.",
+      "source": "https://latticetraining.com/blog/minimum-effective-dose-for-climbers-how-to-train-strength-over-summer-without-living-in-the-gym"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "max-hangs",
+      "name_de": "Max Hangs (7–10 s)",
+      "group": "finger",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Maximalkraft der Fingerbeuger über kurze, sehr intensive isometrische Hänge mit vollständiger Erholung – vor allem ein neuronaler Reiz (Rekrutierung). Standard-Kraftprotokoll bei Lattice und Paradigm.",
+      "how_de": [
+        "Gründlich aufwärmen: leichtes Klettern, dann 3–4 ansteigende Hänge an der Trainingsleiste.",
+        "20-mm-Leiste im Half Crimp (vier Finger) greifen, Schultern aktiv, Ellbogen minimal gebeugt.",
+        "Last über Zusatzgewicht oder Pulley so einstellen, dass 7–10 s sauber gelingen und noch 2–3 s Reserve bleiben.",
+        "Einen Hang ausführen, kontrolliert absetzen und 2–3 min (bei sehr hoher Last bis 5 min) pausieren.",
+        "Satz oder Einheit beenden, sobald die Finger aufgehen oder die Zielzeit nicht mehr erreicht wird."
+      ],
+      "dose": {
+        "intermediate": "3–4 × 10 s am Körpergewicht bzw. leicht entlastet, ca. 3 s Reserve, 3 min Pause, 1–2×/Woche",
+        "advanced": "4–6 × 7–10 s bei ca. 85–90 % des Maximums (RPE 8–9), 2–3 min Pause, 2×/Woche, 3–4 Wochen + Deload",
+        "expert": "5–6 × 7 s bei ca. 90–95 %, 3–5 min Pause, 1–2×/Woche; in Erhaltungsphasen 5–6 Hänge 1×/Woche"
+      },
+      "cues_de": [
+        "Fingerwinkel einfrieren – kein Aufrollen in den Full Crimp, kein Aufgehen in die offene Hand",
+        "Schulterblätter nach hinten-unten, Brust raus",
+        "Last langsam aufnehmen statt in die Leiste zu fallen",
+        "Kontrolltest, kein Schmerztest: jeder Hang sieht gleich aus"
+      ],
+      "mistakes_de": [
+        "Bis zum Muskelversagen hängen – Max Hangs enden mit Reserve",
+        "Müde oder nach einer harten Board-Session trainieren; Fingerkraft gehört an den Anfang der Einheit",
+        "PIP-Historie: Half Crimp unter hoher Last komprimiert das Mittelgelenk – nur schmerzfrei trainieren, bei Reizung Intensität senken oder auf offene Hand/3-Finger-Drag bzw. Block-Lifts ausweichen",
+        "Ständig das Protokoll wechseln – 6–12 Wochen bei einer Methode bleiben, dann neu bewerten"
+      ],
+      "equipment": [
+        "Hangboard (Beastmaker, 20-mm-Leiste)",
+        "Klettergurt + Gewichtsscheiben oder Pulley",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 10,
+        "rest": 0,
+        "reps": 1,
+        "sets": 5,
+        "setRest": 180
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=1XVmaFtaBkc",
+        "title": "Max Hangs for Finger Strength (How To)",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=1XVmaFtaBkc",
+        "https://latticetraining.com/workout/1c4cc25a-ebe8-4930-8541-5b604a831c5f/half-4-hang-max",
+        "https://latticetraining.com/blog/training-series-finger-strength",
+        "https://latticetraining.com/app/uploads/2018/06/1528799872597_180503_Lattice-Testing-Training-Rung-Instructions.pdf",
+        "https://en-eva-lopez.blogspot.com/2018/07/fingerboard-training-guide-iii-periodization-samples-of-maxhangs-training-programs-.html",
+        "https://trainingforclimbing.com/4-fingerboard-strength-protocols-that-work/",
+        "https://latticetraining.com/blog/minimum-effective-dose-for-climbers-how-to-train-strength-over-summer-without-living-in-the-gym"
+      ]
+    },
+    {
+      "id": "min-edge-hangs",
+      "name_de": "Min-Edge-Hänge (kleinste Leiste)",
+      "group": "finger",
+      "levels": [
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Maximalkraft ohne Zusatzgewicht: Statt Last zu addieren, wird die Leiste verkleinert (Eva López' MinEdge-Methode). Sehr spezifisch für kleine Leisten am Fels, aber haut- und gelenkintensiv.",
+      "how_de": [
+        "Leiste suchen, an der 10 s Half Crimp mit etwa 3 s Reserve möglich sind (du könntest ca. 13 s hängen).",
+        "10 s hängen, 3 min pausieren; 3–5 Sätze.",
+        "Über einen 4-Wochen-Zyklus zuerst die Satzzahl aufbauen (z. B. 3-4-4-5), Leiste und Reserve konstant lassen.",
+        "Erst im nächsten Zyklus die Leiste verkleinern (z. B. 15 → 12 → 10 mm) oder die Reserve von 3 auf 2 s verkürzen.",
+        "Nur phasenweise einsetzen und danach wieder auf größere Leiste mit Zusatzgewicht wechseln."
+      ],
+      "dose": {
+        "advanced": "3–5 × 10 s an der kleinsten Leiste mit 3 s Reserve (z. B. 15–10 mm), 3 min Pause, 1–2×/Woche, 4 Wochen",
+        "expert": "4–5 × 10 s mit 2–3 s Reserve (z. B. 10–6 mm), 3 min Pause, 48–72 h zwischen Einheiten, max. 4–8 Wochen am Stück"
+      },
+      "cues_de": [
+        "Fingerkuppen sauber platzieren, Haut und Chalk vor jedem Hang prüfen",
+        "Spannung langsam aufbauen, nicht in die Leiste springen",
+        "Immer innerhalb der Reserve bleiben – Abrutschen ist kein Trainingsziel"
+      ],
+      "mistakes_de": [
+        "Ganzjährig auf Mini-Leisten trainieren – Lattice setzt Small-Edge-Training nur phasenweise ein",
+        "Ungeeignet für Einsteiger, bei Hypermobilität und bei akuten Fingerproblemen; bei PIP-Reizung zuerst streichen (hohe Gelenkkompression, Abrutschrisiko)",
+        "Leiste verkleinern, obwohl der Fingerwinkel schon zerfällt"
+      ],
+      "equipment": [
+        "Hangboard mit abgestuften Leisten (Beastmaker 2000: 20/15/10 mm u. kleiner)",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 10,
+        "rest": 0,
+        "reps": 1,
+        "sets": 4,
+        "setRest": 180
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=LJ6GTLTaj-k",
+        "title": "How To Hangboard: Small Edge Finger Strength Training",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=LJ6GTLTaj-k",
+        "https://en-eva-lopez.blogspot.com/2018/07/fingerboard-training-guide-iii-periodization-samples-of-maxhangs-training-programs-.html",
+        "https://en-eva-lopez.blogspot.com/2018/03/maximal-hangs-intermittent-hangs.html",
+        "https://trainingforclimbing.com/4-fingerboard-strength-protocols-that-work/"
+      ]
+    },
+    {
+      "id": "one-arm-assisted-hangs",
+      "name_de": "Einarmige Hänge mit Entlastung",
+      "group": "finger",
+      "levels": [
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Sehr hohe Fingerlast ohne großes Zusatzgewicht; fordert zusätzlich Schulterstabilität und Rotationskontrolle. Lattice nutzt einarmige 7-s-Hänge an 20 mm mit Pulley als intensivste Hangboard-Variante.",
+      "how_de": [
+        "Pulley mit Gegengewicht (oder Widerstandsband) so einrichten, dass die freie Hand die Entlastung hält.",
+        "Einarmig an der 20-mm-Leiste im Half Crimp einhängen, Schulter aktiv, Arm leicht gebeugt.",
+        "5–7 s halten, absetzen, Seite wechseln.",
+        "2–3 min Pause, bevor derselbe Arm wieder belastet wird.",
+        "Entlastung über die Wochen in 1–2-kg-Schritten reduzieren."
+      ],
+      "dose": {
+        "advanced": "3–4 × 7 s pro Arm mit Entlastung (RPE 8), 2–3 min Pause, 1×/Woche",
+        "expert": "4–5 × 5–7 s pro Arm mit minimaler Entlastung bzw. am Körpergewicht, 3 min Pause, 1–2×/Woche"
+      },
+      "cues_de": [
+        "Schulter ‚einpacken' – weg vom Ohr",
+        "Körper ruhig halten, Rotation über den Rumpf kontrollieren",
+        "Leiste zuerst sauber setzen, dann Füße lösen",
+        "Entlastung fein dosieren statt große Sprünge machen"
+      ],
+      "mistakes_de": [
+        "Passiv im gestreckten Schultergelenk hängen",
+        "Zu früh einsteigen – erst solide zweiarmige Max Hangs mit deutlichem Zusatzgewicht",
+        "Einarmig summiert sich die Last an Ringbändern und PIP-Gelenken schnell: Volumen niedrig halten, bei Gelenkreizung zurück zu zweiarmig oder Block-Lifts"
+      ],
+      "equipment": [
+        "Hangboard (20-mm-Leiste)",
+        "Pulley/Umlenkrolle + Gewichte oder Widerstandsband",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 7,
+        "rest": 60,
+        "reps": 2,
+        "sets": 4,
+        "setRest": 150
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=92uhiwD4Z6U",
+        "title": "Hangboard Climbing Training: Two Arm vs One Arm",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=92uhiwD4Z6U",
+        "https://latticetraining.com/workout/3731e5cb-45c8-4d8f-b420-adab696d6f0d/half-4-1-arm-hang-max",
+        "https://www.trainingbeta.com/the-simplest-finger-training-program/"
+      ]
+    },
+    {
+      "id": "no-hang-max-lifts",
+      "name_de": "No-Hang Max Lifts am Block (7 s)",
+      "group": "finger",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Maximalkraft der Finger durch Anheben eines Gewichts am Lifting-Block: Die Last ist fein dosierbar, Schulter und Ellbogen werden entlastet und man kann jederzeit absetzen. Lattice ersetzt damit in vielen Plänen Hangboard-Einheiten.",
+      "how_de": [
+        "Block (20-mm-Kante) mit Loading Pin und Scheiben beladen; 2–3 leichtere Aufwärm-Lifts.",
+        "In die Hocke gehen, Finger im Half Crimp setzen, Arm gestreckt, Schulter aktiv.",
+        "Über die Beine aufstehen und das Gewicht wenige Zentimeter anheben – nicht aus dem Ellbogen ziehen.",
+        "5–7 s halten, kontrolliert absetzen, Hand wechseln.",
+        "2–3 min Pause pro Hand; Gewicht in kleinen Schritten steigern."
+      ],
+      "dose": {
+        "intermediate": "3–4 × 5–7 s pro Hand bei RPE 7–8, 2 min Pause, 1–2×/Woche",
+        "advanced": "4–5 × 7 s pro Hand bei RPE 8–9 (ca. 85–90 %), 2–3 min Pause, 2×/Woche",
+        "expert": "5–6 × 5–7 s pro Hand bei ca. 90–95 %, 3 min Pause; im Deload Haltezeit bzw. Sätze halbieren"
+      },
+      "cues_de": [
+        "Finger zuerst setzen, dann die Last über die Beine aufnehmen – nicht reißen",
+        "Arm lang, Schulter weg vom Ohr",
+        "Fingerposition bleibt bis zum Absetzen identisch",
+        "Handgelenk neutral, Block nicht verkanten"
+      ],
+      "mistakes_de": [
+        "Mit Ruck anheben – erzeugt Spitzenlasten auf Ringbänder und Gelenke",
+        "Eine zusätzliche Lift-Einheit einfach obendrauf packen: laut Lattice-Coaches immer nur eine neue Einheit einführen und das Klettern vorübergehend reduzieren",
+        "Den Ellbogen beugen und ‚curlen' – der Reiz soll in den Fingern bleiben",
+        "PIP-Historie: im schmerzfreien Bereich bleiben; wenn Half Crimp reizt, am Block auf 3-Finger-Drag/offene Hand wechseln"
+      ],
+      "equipment": [
+        "Tension Block / Lifting Edge (20 mm)",
+        "Loading Pin + Karabiner",
+        "Gewichtsscheiben (inkl. 0,5–1 kg)",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 7,
+        "rest": 60,
+        "reps": 2,
+        "sets": 4,
+        "setRest": 150
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=JTkuzCx51eA",
+        "title": "Max Lifts (How To)",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=JTkuzCx51eA",
+        "https://www.youtube.com/watch?v=wAe5uMjVKfw",
+        "https://latticetraining.com/workout/1f6a4409-08e4-40ab-8be8-d13aa3560f1d/half-4-lift-max",
+        "https://latticetraining.com/blog/how-to-train-pick-ups-for-finger-strength-for-climbing",
+        "https://latticetraining.com/blog/do_climbers_need_deload_weeks"
+      ]
+    },
+    {
+      "id": "block-pulls-reps",
+      "name_de": "Block Pulls mit Wiederholungen (3–5RM)",
+      "group": "finger",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Fingerkraft über wiederholte, etwas dynamischere Lifts statt langer Halte: einfach progressiv zu überlasten, gut zu protokollieren und praktisch, um gezielt Griffe zu trainieren, deren Last weit vom Körpergewicht entfernt liegt.",
+      "how_de": [
+        "Aufwärmsatz: 8 Wiederholungen mit etwa 50 % des geschätzten Maximums.",
+        "Gewicht in Sprüngen steigern (je nach Gefühl ca. 1–10 kg), bis 5 Wiederholungen fordernd sind.",
+        "3 Arbeitssätze am 5RM: anheben, kurz oben stabilisieren, absetzen und neu greifen.",
+        "3–5 min Pause zwischen den Sätzen.",
+        "Progression: erst Sätze aufbauen, dann wöchentlich Gewicht erhöhen; stagniert es, Last 2–5 % senken und Wiederholungen bzw. Haltezeit aufbauen."
+      ],
+      "dose": {
+        "intermediate": "8 Wdh. @ ca. 50 % zum Aufwärmen, dann 3 × 5 Wdh. pro Hand (RPE 7–8), 3 min Pause, 1–2×/Woche",
+        "advanced": "3–5 × 3–5 Wdh. pro Hand am 3–5RM, 3–5 min Pause, 1–2×/Woche",
+        "expert": "wie advanced; bei Stagnation Last 2–5 % senken, auf 10–12 Wdh. oder 10–15 s Halte aufbauen, dann wieder Gewicht steigern"
+      },
+      "cues_de": [
+        "Jede Wiederholung neu sauber greifen – der Reset ist ein Vorteil des Blocks",
+        "Zug aus Beinen und Hüfte, die Finger halten nur",
+        "Gleiche Griffposition für alle Wiederholungen",
+        "Gewicht und Wiederholungen notieren, kleine Sprünge wählen"
+      ],
+      "mistakes_de": [
+        "Gewicht fallen lassen oder ruckartig abheben",
+        "Zu große Gewichtssprünge – Sehnen und Gelenke passen sich langsamer an als die Muskulatur",
+        "Bei gereiztem PIP-Gelenk den Griff wählen, der schmerzfrei bleibt (oft offene Hand), und die oberste Position nicht ‚zuquetschen'"
+      ],
+      "equipment": [
+        "Tension Block / Lifting Edge",
+        "Loading Pin",
+        "Gewichtsscheiben"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=I_-YapmymjA",
+        "title": "How to Train Finger Strength for Climbing [Block Pulls Guide]",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://www.hoopersbeta.com/library/how-to-train-finger-strength-with-no-hangs",
+        "https://www.youtube.com/watch?v=I_-YapmymjA",
+        "https://www.youtube.com/watch?v=wAe5uMjVKfw"
+      ]
+    },
+    {
+      "id": "recruitment-pulls",
+      "name_de": "Recruitment Pulls (überwindende Isometrie)",
+      "group": "finger",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Maximale willentliche Rekrutierung der Fingerbeuger durch 3–5 s Zug gegen einen unbeweglichen Widerstand (Tyler Nelson). Selbstregulierend – man zieht nur so stark, wie man kann – und in kleiner Dosis als Aktivierung vor Limit-Sessions geeignet.",
+      "how_de": [
+        "Unter das Hangboard stellen (oder knien) und einarmig eine Leiste greifen; Ellbogen bei etwa 120–150°.",
+        "Kraft über 1–2 s langsam aufbauen.",
+        "Dann 3–5 s so fest wie möglich nach unten ziehen – die Füße müssen dabei nicht abheben.",
+        "Lösen, Seite wechseln, zwischen den Zügen kurz erholen.",
+        "Progression über kleinere Leisten bzw. mehr Kraft (optional mit Kraftmesser kontrollieren)."
+      ],
+      "dose": {
+        "beginner": "2 Sätze × 3 Züge à 3–5 s pro Hand an großer Leiste, submaximal beginnen (RPE 7), 2×/Woche mit zwei Ruhetagen dazwischen",
+        "intermediate": "2–3 Sätze × 3 Züge à 3–5 s pro Hand (RPE 9), 2–3 min Satzpause, 2×/Woche",
+        "advanced": "3–4 Sätze × 3–5 Züge à 3–5 s pro Hand, maximal, 2–5 min Satzpause, 2–3×/Woche",
+        "expert": "3–5 Sätze × 3–5 Züge à 3–5 s pro Hand, maximal, 3–5 min Satzpause, bis 3×/Woche; 2–3 Züge auch als Aktivierung vor dem Klettern"
+      },
+      "cues_de": [
+        "Erst greifen, dann andrücken – Kraft hochfahren wie bei einem Max Hang",
+        "Mit der ganzen Zugkette senkrecht nach unten ziehen",
+        "Volle Absicht, aber kein Ruck",
+        "Fingerposition während des Zugs nicht verändern"
+      ],
+      "mistakes_de": [
+        "Explosiv in die Leiste reißen – das wären Velocity Pulls, die laut Nelson erst nach einem Zyklus Recruitment (Einsteiger: plus Density Hangs) drankommen",
+        "Viel Volumen direkt vor oder nach hartem Klettern; Nelson empfiehlt 4–6 h Abstand zur Klettereinheit (Ausnahme: wenige Züge als Warm-up)",
+        "PIP-Historie: nur schmerzfrei ziehen und lieber mit offener Hand als im engen Crimp beginnen"
+      ],
+      "equipment": [
+        "Hangboard oder Tension Block an fixem Anker",
+        "optional Kraftmesser (z. B. Tindeq)",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 5,
+        "work": 5,
+        "rest": 55,
+        "reps": 3,
+        "sets": 3,
+        "setRest": 180
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=S79sxau2sQQ",
+        "title": "Simplest Finger Training Program - Recruitment Pulls",
+        "channel": "C4HP - Tyler Nelson DC, MS, CSCS"
+      },
+      "sources": [
+        "https://www.trainingbeta.com/the-simplest-finger-training-program/",
+        "https://www.youtube.com/watch?v=S79sxau2sQQ",
+        "https://www.youtube.com/watch?v=Veppe-SARoc"
+      ]
+    },
+    {
+      "id": "repeaters-7-3",
+      "name_de": "Repeaters 7:3",
+      "group": "finger",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kraftausdauer der Fingerbeuger: wiederholte hohe Kontraktionen mit unvollständiger Erholung. Brücke zwischen Maximalkraft und Ausdauer – für Boulderer vor allem als Kapazitäts-/Hypertrophiereiz und für lange Boulder.",
+      "how_de": [
+        "Griff wählen (Half Crimp, offene Hand, ggf. Pinch) und Last so einstellen, dass sechs Hänge gerade sauber gelingen.",
+        "7 s hängen, 3 s lösen – sechsmal hintereinander (ein Satz dauert etwa 1 min).",
+        "3 min Pause.",
+        "Pro Griffart 1–3 Sätze, dann nächste Griffart.",
+        "Last erst erhöhen, wenn alle Sätze vollständig gelingen."
+      ],
+      "dose": {
+        "intermediate": "pro Griff 1 Satz 6 × 7 s/3 s (Körpergewicht oder entlastet), 2–3 Griffarten, 3 min Pause, 1×/Woche",
+        "advanced": "pro Griff 2 Sätze 6 × 7 s/3 s mit leichtem Zusatzgewicht (RPE 8), 3 min Pause, 1×/Woche",
+        "expert": "pro Griff 2–3 Sätze, 3 min Pause, insgesamt höchstens 6–9 Sätze"
+      },
+      "cues_de": [
+        "In den 3 s wirklich lösen und ausschütteln",
+        "Schultern auch im letzten Hang aktiv halten",
+        "Der sechste Hang ist hart, aber technisch identisch mit dem ersten"
+      ],
+      "mistakes_de": [
+        "Zu schwer starten und schon im vierten Hang versagen",
+        "Viel Zeit unter Spannung im Half Crimp kann ein gereiztes PIP-Gelenk aufschaukeln – bei Historie offene Hand oder Block-Variante wählen und das Volumen langsam steigern",
+        "Am selben Tag vor Max Hangs trainieren – wenn kombiniert, Max Hangs zuerst und 10–15 min Pause dazwischen",
+        "Mehr als vier harte Finger-/Klettertage pro Woche summieren"
+      ],
+      "equipment": [
+        "Hangboard",
+        "Klettergurt + Gewichte oder Pulley",
+        "Intervall-Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 7,
+        "rest": 3,
+        "reps": 6,
+        "sets": 4,
+        "setRest": 180
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=vyhdpNGtF78",
+        "title": "Hangboard Finger Training for Climbers - The 7/3 Repeater (\"Strength-Endurance\") Protocol",
+        "channel": "Training4climbing"
+      },
+      "sources": [
+        "https://trainingforclimbing.com/4-fingerboard-strength-protocols-that-work/",
+        "https://www.youtube.com/watch?v=vyhdpNGtF78",
+        "https://www.youtube.com/watch?v=Gg6-JoO-dTw",
+        "https://latticetraining.com/app/uploads/2021/12/Lattice-Training-Plans-Lockdown-Guidance.pptx.pdf",
+        "https://latticetraining.com/blog/how-to-break-a-finger-strength-plateau"
+      ]
+    },
+    {
+      "id": "density-hangs",
+      "name_de": "Density Hangs (20–40 s)",
+      "group": "finger",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Lange Hänge bei mäßiger Intensität (ca. 40–70 %) bis nahe ans Muskelversagen: Reiz für Sehnen-/Bindegewebsbelastbarkeit und Hypertrophie der Fingerbeuger. Bei Tyler Nelson der Basisbaustein vor schnellen, harten Belastungen.",
+      "how_de": [
+        "Zweiarmig eine Leiste wählen, an der etwa 20–40 s möglich sind.",
+        "Mit aktiven Schultern einhängen; Ellbogen gestreckt oder leicht gebeugt.",
+        "Halten, bis die Finger kurz vor dem Aufgehen sind.",
+        "3–5 min pausieren, dann wiederholen.",
+        "Progression: Zeit bis zum Versagen verlängern; sobald 30 s leicht gehen, kleinere Leiste wählen."
+      ],
+      "dose": {
+        "beginner": "2–3 × 20–30 s an großer Leiste (ca. 35 mm), 3 min Pause, 2×/Woche",
+        "intermediate": "3 × 20–40 s an 20–25 mm, 3–5 min Pause, 2×/Woche",
+        "advanced": "3–4 × 30–40 s an 15–20 mm, 3–5 min Pause, 2–3×/Woche in der Basisphase",
+        "expert": "3–4 × 30–40 s an 10–15 mm, 3–5 min Pause, 2–3×/Woche in der Basisphase"
+      },
+      "cues_de": [
+        "Ruhig atmen, Griffposition konstant halten",
+        "Schultern aktiv, nicht in die Gelenke sacken",
+        "Leistengröße bestimmt die Intensität – kein Zusatzgewicht nötig"
+      ],
+      "mistakes_de": [
+        "Direkt vor oder nach einer Klettereinheit trainieren; besser 4–6 h Abstand oder passend zu einem Kapazitätstag",
+        "Lange Half-Crimp-Hänge bis zum völligen Versagen können ein gereiztes PIP-Gelenk belasten – offene Hand/3-Finger-Drag wählen und 2–3 s vor dem Versagen beenden",
+        "Zu kleine Leiste wählen, sodass nur 10 s möglich sind – dann ist es kein Density Hang mehr"
+      ],
+      "equipment": [
+        "Hangboard mit mehreren Leistentiefen",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 30,
+        "rest": 0,
+        "reps": 1,
+        "sets": 3,
+        "setRest": 240
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=YDMdP6juY4w",
+        "title": "Density Hangs",
+        "channel": "TrainingBeta"
+      },
+      "sources": [
+        "https://www.trainingbeta.com/the-simplest-finger-training-program/",
+        "https://www.youtube.com/watch?v=YDMdP6juY4w"
+      ]
+    },
+    {
+      "id": "abrahangs",
+      "name_de": "Abrahangs (10 min Low-Load, Füße am Boden)",
+      "group": "finger",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Sehr niedrig intensive, häufige Fingerbelastung (ca. 40 % des Maximums) zur Anpassung von Sehnen und Bindegewebe ohne nennenswerte Ermüdung. Ergänzt Max Hangs – die Kombination schnitt in der Crimpd-Auswertung am besten ab.",
+      "how_de": [
+        "Hangboard so nutzen, dass die Füße am Boden bleiben; nur einen Teil des Körpergewichts in die Finger sinken lassen.",
+        "10 s belasten, 50 s Pause – zehn Hänge, insgesamt etwa 10 min.",
+        "Griffe nach Emil Abrahamsson: 3 × Half Crimp, 3 × 3-Finger-Drag, dann je 1 × Front-2-Drag, Middle-2-Drag, Front-2-Crimp, Middle-2-Crimp.",
+        "Die Intensität bleibt durchgehend niedrig – es darf sich nie nach Training anfühlen.",
+        "Als eigene kurze Einheit einplanen, z. B. morgens oder an leichten Tagen."
+      ],
+      "dose": {
+        "intermediate": "10 × 10 s / 50 s Pause, sehr leicht, 2–3×/Woche als Ersatz für zusätzliche intensive Fingerarbeit",
+        "advanced": "10 × 10 s / 50 s bei ca. 40 % des Maximums, 3–4×/Woche bzw. an den meisten Nicht-Ruhetagen; mind. 1 Tag/Woche ganz ohne Fingerlast",
+        "expert": "wie advanced; Originalprotokoll 2×/Tag mit mind. 6 h Abstand nur, wenn anderes Fingervolumen dafür sinkt"
+      },
+      "cues_de": [
+        "Wer frei hängt, zieht zu fest – Füße bleiben am Boden",
+        "Schultern leicht aktiv, Ellbogen minimal gebeugt",
+        "Fingerposition bleibt stabil; verändert sie sich, Last reduzieren",
+        "Lieber zu leicht als zu schwer"
+      ],
+      "mistakes_de": [
+        "Zusätzlich auf einen vollen Plan packen statt anderes Fingervolumen zu ersetzen",
+        "Mitten im Trainingsblock einführen – besser zu Blockbeginn",
+        "Kein Reha-Ersatz bei akuter Fingerverletzung oder Entzündung ohne physiotherapeutische Abklärung; bei PIP-Reizung 2-Finger-Griffe weglassen und Last weiter senken",
+        "Nichts für komplette Einsteiger – erst Kletter- und Hangboard-Grundlagen"
+      ],
+      "equipment": [
+        "Hangboard (20-mm-Leiste), tief montiert oder mit Tritt/Stuhl",
+        "Intervall-Timer",
+        "optional Waage zur Lastkontrolle"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 10,
+        "rest": 50,
+        "reps": 10,
+        "sets": 1,
+        "setRest": 0
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=3FNZdixeuZw",
+        "title": "10 Minute Daily Hangboard Routine (FOLLOW ALONG)",
+        "channel": "Emil Abrahamsson"
+      },
+      "sources": [
+        "https://latticetraining.com/blog/abrahangs-why-so-divisive-and-do-they-actually-work",
+        "https://latticetraining.com/workout/1832c13b-14c1-444c-82a2-e72b22a6fb13/abrahangs-protocol",
+        "https://www.youtube.com/watch?v=3FNZdixeuZw",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11576708/",
+        "https://www.youtube.com/watch?v=jiVDDPJbqvc"
+      ]
+    },
+    {
+      "id": "grip-rotation-open-hand",
+      "name_de": "Griffarten-Rotation: 3-Finger-Drag & Back-3",
+      "group": "finger",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kraft in offenen Fingerpositionen aufbauen und die Gelenkbelastung über wechselnde Griffwinkel verteilen. Lattice nennt als Grundpositionen: 4-Finger-Half-Crimp, 3-Finger-Drag sowie Front-3-/Back-3-Half-Crimp.",
+      "how_de": [
+        "Pro Zyklus einen Hauptgriff (meist Half Crimp) und einen Nebengriff festlegen.",
+        "3-Finger-Drag an 20 mm: Zeige-, Mittel- und Ringfinger eingehängt, Mittelgelenke fast gestreckt, kleiner Finger locker.",
+        "7–10 s hängen oder am Block anheben, 2–3 min Pause.",
+        "Optional Back-3-Half-Crimp (Mittel-, Ring-, kleiner Finger) als Schwachstellenarbeit ergänzen.",
+        "Nach 4–6 Wochen den Nebengriff wechseln (z. B. Pinch, Sloper, Pocket), je nach Projektanforderung."
+      ],
+      "dose": {
+        "intermediate": "3 × 10 s 3-Finger-Drag an 20 mm (entlastet oder Körpergewicht), 2–3 min Pause, im Anschluss an die Half-Crimp-Sätze",
+        "advanced": "3–4 × 7–10 s 3-Finger-Drag bei RPE 8 plus 2–3 × Back-3-Half-Crimp, 2–3 min Pause, 1–2×/Woche",
+        "expert": "blockweise Schwerpunkt wechseln (4–6 Wochen je Nebengriff); übers Jahr grob 80 % Basisgriff, 20 % spezifische Griffe"
+      },
+      "cues_de": [
+        "Griff vor dem Belasten festlegen und nicht wechseln",
+        "Im Drag hängen die Finger passiv-lang, die Schulter bleibt aktiv",
+        "Last für jede Griffart separat ermitteln",
+        "Schwächere Griffe mit Entlastung beginnen"
+      ],
+      "mistakes_de": [
+        "Unter Last vom Drag in den Crimp ‚umschnappen' (oder umgekehrt)",
+        "Open Hand als reinen Ersatz sehen – Lattice betrachtet Half Crimp als Basisgriff mit dem breitesten Übertrag",
+        "Full Crimp schon in der Basisphase schwer trainieren – wenn überhaupt, spät und zielspezifisch",
+        "PIP-Historie: Der Drag entlastet das Mittelgelenk oft, belastet aber FDP und Lumbrikalen stärker – langsam steigern und den kleinen Finger nicht ruckartig strecken"
+      ],
+      "equipment": [
+        "Hangboard (20-mm-Leiste) oder Tension Block",
+        "Gewichte/Pulley",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 10,
+        "rest": 0,
+        "reps": 1,
+        "sets": 3,
+        "setRest": 150
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=j9Uwh6e7A9w",
+        "title": "Top 3 Grip Positions for Fingerboard Training",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=j9Uwh6e7A9w",
+        "https://latticetraining.com/blog/why-do-we-train-half-crimp",
+        "https://www.youtube.com/watch?v=ViqlLDmurk0",
+        "https://en-eva-lopez.blogspot.com/2018/07/fingerboard-training-guide-iii-periodization-samples-of-maxhangs-training-programs-.html"
+      ]
+    },
+    {
+      "id": "pinch-block-lifts",
+      "name_de": "Pinch-Block Lifts",
+      "group": "finger",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Maximale Pinch-Kraft (Daumenopposition) – spezifisch für Pinches und Kompression auf TB2 und Kilter – und zugleich Abwechslung für die Gelenke gegenüber reinem Leistentraining.",
+      "how_de": [
+        "Pinch-Block am Loading Pin beladen; mit leichtem Gewicht beginnen.",
+        "Block seitlich greifen, Daumen gegenüber den Fingern, Handgelenk neutral.",
+        "Über die Beine anheben und 5–7 s halten.",
+        "Gewicht Satz für Satz nach Gefühl (RPE) steigern, bis die letzten Sätze schwer sind.",
+        "Pro Hand arbeiten, 2–3 min Pause."
+      ],
+      "dose": {
+        "intermediate": "4 × 5–7 s pro Hand, ansteigend bis RPE 8, 2 min Pause, 1×/Woche",
+        "advanced": "5–6 Sätze × 7 s pro Hand, ansteigend bis RPE 9 (letzte zwei Sätze schwer), 2–3 min Pause, 1×/Woche",
+        "expert": "wie advanced, zusätzlich Pinch-Breite variieren (schmal/breit)"
+      },
+      "cues_de": [
+        "Daumen aktiv gegen die Finger pressen",
+        "Block senkrecht halten, nicht kippen",
+        "Gut chalken – sonst limitiert die Reibung vor der Kraft",
+        "Arm lang lassen, Schulter aktiv"
+      ],
+      "mistakes_de": [
+        "Zu schnelle Laststeigerung – das Daumensattelgelenk reagiert empfindlich",
+        "Das Handgelenk stark beugen und den Block ‚einhaken' statt zu pinchen",
+        "Bis zum Herausrutschen halten – vorher kontrolliert absetzen"
+      ],
+      "equipment": [
+        "Pinch-Block (z. B. Pinch-Seite des Tension Block)",
+        "Loading Pin",
+        "Gewichtsscheiben",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 7,
+        "rest": 60,
+        "reps": 2,
+        "sets": 5,
+        "setRest": 120
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=ViqlLDmurk0",
+        "title": "How to Use A Pinch & Crimp Block For Climbing Training",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=ViqlLDmurk0",
+        "https://latticetraining.com/workout/b1bf6c0c-2eb1-402a-a115-398da7b8e47b/pinch-lifts-b",
+        "https://en-eva-lopez.blogspot.com/2013/02/training-pinch-strength-for-climbing.html"
+      ]
+    },
+    {
+      "id": "sloper-strength",
+      "name_de": "Sloper-Kraft: Sloper-Hänge & Handgelenk",
+      "group": "finger",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kraft in der offenen Hand mit aktiver Handgelenksbeteiligung: verbessert die Fähigkeit, unter Slopern zu hängen und das Handgelenk in Beugung zu stabilisieren.",
+      "how_de": [
+        "Sloper des Hangboards wählen (Beastmaker 2000: 35° oder 45°); Hände gut chalken.",
+        "Handfläche so weit wie möglich auflegen, Finger leicht gespreizt, Handgelenk leicht gebeugt.",
+        "Körperschwerpunkt direkt unter den Griff bringen und 7–10 s halten.",
+        "2–3 min Pause; 3–5 Sätze.",
+        "Ergänzend Handgelenksbeuger kräftigen (z. B. Roller-Lifts oder Wrist Curls)."
+      ],
+      "dose": {
+        "intermediate": "3–4 × 10 s am flacheren Sloper (ggf. entlastet), 2–3 min Pause, 1×/Woche",
+        "advanced": "4–5 × 7–10 s am steileren Sloper oder mit Zusatzgewicht (RPE 8), 2–3 min Pause; dazu 3 × 8–10 Handgelenks-Curls",
+        "expert": "wie advanced; Sloper-Winkel bzw. Last steigern und einarmige Varianten mit Entlastung testen"
+      },
+      "cues_de": [
+        "Maximale Kontaktfläche – die ganze Hand arbeitet",
+        "Unter dem Griff bleiben, Ellbogen nicht nach außen fliegen lassen",
+        "Handgelenk aktiv ‚über' den Sloper ziehen",
+        "Bedingungen beachten: Reibung entscheidet"
+      ],
+      "mistakes_de": [
+        "Bei schlechter Reibung bis zum Abrutschen hängen – Sturz- und Hautrisiko",
+        "Das Handgelenk passiv überstrecken",
+        "Sloper-Training als Ersatz für Technik sehen – Körperposition ist bei Slopern der größere Hebel"
+      ],
+      "equipment": [
+        "Hangboard mit Slopern (Beastmaker 2000)",
+        "Chalk",
+        "optional Gewichte, Heavy Roller oder Kurzhantel"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 10,
+        "rest": 0,
+        "reps": 1,
+        "sets": 4,
+        "setRest": 150
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=KjE7R-tmYGE",
+        "title": "Slopers: Technique, Training, and Cheat Codes",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=KjE7R-tmYGE",
+        "https://www.youtube.com/watch?v=oyHNwol21vI",
+        "https://en-eva-lopez.blogspot.com/2018/07/fingerboard-training-guide-iii-periodization-samples-of-maxhangs-training-programs-.html",
+        "https://latticetraining.com/blog/how-do-i-strengthen-my-wrists-for-climbing"
+      ]
+    },
+    {
+      "id": "finger-warmup-ladder",
+      "name_de": "Finger-Warm-up: Hang-Leiter & Rekrutierung",
+      "group": "finger",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Finger, Ringbänder und Nervensystem stufenweise auf Maximalbelastung vorbereiten, ohne Ermüdung in die Einheit mitzunehmen. Paradigm-Abfolge: kurzes Kletter-Warm-up → neuronale Rekrutierung → Potenzierung.",
+      "how_de": [
+        "5–10 min allgemein aufwärmen und leicht klettern, bis ein kleiner Pump und warme Finger da sind.",
+        "3–5 ansteigende Hänge oder Block-Lifts à 5–7 s (grob 50 → 60 → 70 → 80 → 90 % Anstrengung), dazwischen 60–90 s Pause.",
+        "Die Griffarten des Tages einbeziehen (Half Crimp, offene Hand, ggf. Pinch).",
+        "2–3 sehr kurze, sehr harte Rekrutierungszüge (ca. 3 s) mit reichlich Pause.",
+        "Danach 5–15 min pausieren, bevor der erste Maximalversuch startet."
+      ],
+      "dose": {
+        "beginner": "5–10 min leichtes Klettern + 3 × 5–7 s ansteigend an großer Leiste (Füße teilweise am Boden)",
+        "intermediate": "4 Stufen à 5–7 s (ca. 50–80 %), 60–90 s Pause",
+        "advanced": "4–5 Stufen bis ca. 90 % + 2–3 Rekrutierungszüge à 3 s, danach 5–15 min Pause",
+        "expert": "wie advanced; vor Power-Einheiten zusätzlich 2–3 explosive Züge als Potenzierung"
+      },
+      "cues_de": [
+        "Jede Stufe soll sich leichter anfühlen als erwartet",
+        "Volumen niedrig halten – Aktivierung, kein Training",
+        "Vor dem ersten harten Versuch bewusst pausieren",
+        "Auch die Schultern mit 1–2 Sätzen Scap Pull-ups aktivieren"
+      ],
+      "mistakes_de": [
+        "So lange ‚warmklettern', bis die Unterarme müde sind",
+        "Stufen überspringen und direkt maximal an kleine Leisten gehen – gerade bei PIP-Historie die ersten Stufen in offener Hand beginnen",
+        "Zu viele Rekrutierungszüge – das kippt schnell in Ermüdung"
+      ],
+      "equipment": [
+        "Hangboard oder Tension Block",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 7,
+        "rest": 75,
+        "reps": 5,
+        "sets": 1,
+        "setRest": 0
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=Veppe-SARoc",
+        "title": "How to Unlock 100% of your Finger Strength",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=Veppe-SARoc",
+        "https://www.youtube.com/watch?v=p2osi7N2YXM",
+        "https://latticetraining.com/blog/the-fastest-and-best-way-to-warm-up-for-climbing"
+      ]
+    },
+    {
+      "id": "weighted-pull-ups",
+      "name_de": "Gewichtete Klimmzüge",
+      "group": "pull",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Maximale Zugkraft über die volle Bewegungsamplitude – Grundlage für Lock-offs, Deadpoints und steiles Gelände. Trainiert zugleich Schulterblattkontrolle und Schulterstabilität unter Last.",
+      "how_de": [
+        "2–3 Aufwärmsätze mit Körpergewicht bzw. leichtem Zusatzgewicht.",
+        "Gewicht am Klettergurt oder Dip-Gürtel befestigen; aus dem aktiven Hang starten.",
+        "Zügig hochziehen, bis das Kinn klar über der Stange ist.",
+        "2–3 s kontrolliert ablassen.",
+        "3–5 Wiederholungen mit 1–2 Wiederholungen Reserve; 3 min Pause."
+      ],
+      "dose": {
+        "intermediate": "3 × 5 Wdh. mit Körpergewicht bis leichtem Zusatzgewicht (RPE 7–8), 2–3 min Pause, 1–2×/Woche",
+        "advanced": "3–4 × 3–5 Wdh. (RPE 8–9), 3 min Pause, 1–2×/Woche",
+        "expert": "4–5 × 2–3 Wdh. schwer (RPE 9), 3–5 min Pause; zur Erhaltung 2–3 Sätze 1×/Woche"
+      },
+      "cues_de": [
+        "Erst Schulterblätter setzen, dann ziehen",
+        "Ellbogen Richtung Hüfte führen",
+        "Rumpf fest, kein Kippen",
+        "Unten aktiv bleiben, nicht durchsacken"
+      ],
+      "mistakes_de": [
+        "Halbe Wiederholungen oder Schwung holen",
+        "Zugkraft über den Bedarf hinaus jagen: Laut Lattice-Daten flacht der Nutzen oberhalb des Richtwerts ab (2RM-Gesamtlast ca. 165 % des Körpergewichts bei Männern, 135 % bei Frauen) – darüber eher Finger, Beweglichkeit oder Kapazität priorisieren",
+        "Am selben Tag nach hartem Bouldern bis zum Versagen ziehen – Ellbogen und Schultern danken es nicht"
+      ],
+      "equipment": [
+        "Klimmzugstange",
+        "Klettergurt oder Dip-Gürtel",
+        "Gewichtsscheiben/Kettlebell"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=fnJ0F1Xsu7Y",
+        "title": "Weighted Pull-Ups (How To)",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=fnJ0F1Xsu7Y",
+        "https://www.youtube.com/watch?v=7TLG1mHQHgw",
+        "https://latticetraining.com/blog/pull-ups-dimishing-returns",
+        "https://latticetraining.com/blog/minimum-effective-dose-for-climbers-how-to-train-strength-over-summer-without-living-in-the-gym",
+        "https://latticetraining.com/workout/51a6d778-ffb7-4abe-963c-d12648707845/wide-pulls-strength",
+        "https://latticetraining.com/workout/02d88350-2349-4a29-b718-ea82cd681ae6/chin-ups-strength"
+      ]
+    },
+    {
+      "id": "lock-offs",
+      "name_de": "Lock-offs (isometrische Halte in 3 Winkeln)",
+      "group": "pull",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Isometrische Zugkraft in gebeugten Armwinkeln, um Positionen statisch zu fixieren und kontrolliert weiterzugreifen. Einarmige Engagement-Halte kräftigen zusätzlich Schulterblattstabilisatoren und Lat.",
+      "how_de": [
+        "An Stange oder Jugs hochziehen.",
+        "Nacheinander in drei Positionen halten: voll angezogen, ca. 90° und ca. 120° Ellbogenwinkel – je 5–10 s.",
+        "Kontrolliert ablassen, 2–3 min Pause.",
+        "Progression: zweiarmig → versetzt (eine Hand tiefer an Schlinge/Tuch) → einarmig mit Unterstützung.",
+        "Alternativ One-Arm-Engagement: einarmig in mittlerer Schulterposition 10 s halten."
+      ],
+      "dose": {
+        "intermediate": "3 Sätze: je 5 s voll angezogen / 90° / 120° (zweiarmig), 2 min Pause, 1×/Woche",
+        "advanced": "3–4 Sätze Offset- oder assistierte einarmige Lock-offs, 5–8 s pro Winkel und Seite, 2–3 min Pause; oder 4–5 × 10 s One-Arm-Engagement",
+        "expert": "3–4 × 5–10 s einarmig bei 90° und 120° pro Seite, ggf. mit Zusatzgewicht, 3 min Pause"
+      },
+      "cues_de": [
+        "Schulter tief und stabil, Brust zur Hand",
+        "Position wirklich einfrieren – kein langsames Absinken",
+        "Ruhig weiteratmen",
+        "Beide Seiten gleich behandeln"
+      ],
+      "mistakes_de": [
+        "Nur ganz oben halten – die weiteren Winkel (um 120°) sind am Board oft die schwächeren",
+        "Mit hochgezogener Schulter und vorgeschobenem Kopf halten",
+        "Zu lange Halte bis zum Zittern: Kraftreiz, nicht Ausdauer",
+        "Bei Ellbogenbeschwerden (medial) Volumen sofort reduzieren"
+      ],
+      "equipment": [
+        "Klimmzugstange oder Hangboard-Jugs",
+        "Schlinge/Handtuch für Offset",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 8,
+        "rest": 20,
+        "reps": 3,
+        "sets": 3,
+        "setRest": 150
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=7TLG1mHQHgw",
+        "title": "Pull Up Strength for Climbers - Fundamentals Series",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=7TLG1mHQHgw",
+        "https://latticetraining.com/workout/cb6b7d23-1736-4c98-b0b3-11a4b4e145df/one-arm-engagements-iso-10s",
+        "https://www.youtube.com/watch?v=79P0QGn68HU",
+        "https://latticetraining.com/blog/video-qa-everything-you-need-to-know-about-campusing"
+      ]
+    },
+    {
+      "id": "one-arm-pull-up-progression",
+      "name_de": "One-Arm-Pull-up-Progression",
+      "group": "pull",
+      "levels": [
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Einarmige Maximalzugkraft und Schulterkontrolle. Laut Lattice kein Muss für hohe Grade – der einarmige Klimmzug korreliert nicht direkt mit Kletterleistung –, aber ein legitimes Kraftziel mit Übertrag auf weite, einarmige Züge.",
+      "how_de": [
+        "Voraussetzung: solide gewichtete Klimmzüge und beschwerdefreie Ellbogen/Schultern.",
+        "Assistierte einarmige Klimmzüge: freie Hand an Band, Pulley oder tief an einer Schlinge.",
+        "1–3 saubere Wiederholungen pro Arm, 3 min Pause.",
+        "Ergänzend einarmige Negative: oben starten und 5–8 s kontrolliert ablassen.",
+        "Unterstützung über Wochen schrittweise reduzieren."
+      ],
+      "dose": {
+        "advanced": "3–4 × 2–3 assistierte Wdh. pro Arm (RPE 8) + 2 × 1 Negative à 5–8 s, 3 min Pause, 1×/Woche",
+        "expert": "4–5 × 1–2 Wdh. pro Arm mit minimaler Hilfe bzw. frei, 3–5 min Pause, 1–2×/Woche"
+      },
+      "cues_de": [
+        "Aus aktiver Schulter starten, nicht aus dem toten Hang reißen",
+        "Rotation des Körpers mit dem Rumpf bremsen",
+        "Ellbogen eng zum Körper ziehen",
+        "Qualität vor Wiederholungszahl"
+      ],
+      "mistakes_de": [
+        "Zu viel Volumen – der mediale Ellbogen (Golferellbogen) ist die typische Schwachstelle",
+        "Negative fallen lassen statt bremsen",
+        "Die Übung über das Klettern stellen: Sie ist Ergänzung, kein Leistungsindikator"
+      ],
+      "equipment": [
+        "Klimmzugstange",
+        "Widerstandsband oder Pulley mit Gewichten",
+        "Schlinge"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=2INd9Otu2qY",
+        "title": "How to One Arm Pull-Up | Pulling Strength for Climbing",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=2INd9Otu2qY",
+        "https://www.youtube.com/watch?v=b5gp3QB3rMU",
+        "https://www.youtube.com/watch?v=79P0QGn68HU"
+      ]
+    },
+    {
+      "id": "explosive-pull-ups",
+      "name_de": "Explosive Klimmzüge / Climber's Muscle-up",
+      "group": "pull",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Schnellkraft der Zugkette (hohe Kraftanstiegsrate) für Dynos und Deadpoints. Paradigms Variante verzichtet auf Kip und Vorlehnen und explodiert senkrecht nach oben – wie ein kraftvoller Wurf an der Wand.",
+      "how_de": [
+        "Gut aufwärmen; nur im frischen Zustand trainieren.",
+        "Aus dem aktiven Hang so schnell wie möglich ziehen – Ziel: Brust oder Bauch zur Stange.",
+        "Kontrolliert ablassen, neu setzen; jede Wiederholung ist ein Einzelversuch.",
+        "2–4 Wiederholungen, dann 2–3 min Pause.",
+        "Fortgeschritten: Climber's Muscle-up ohne Kip; Satz beenden, sobald das Tempo sinkt."
+      ],
+      "dose": {
+        "intermediate": "3–4 × 3 schnelle Klimmzüge (Kinn deutlich über die Stange), 2–3 min Pause, 1×/Woche",
+        "advanced": "4–5 × 2–3 Wdh. Brust-zur-Stange, maximal schnell, 3 min Pause, 1–2×/Woche in der Power-Phase",
+        "expert": "4–5 × 1–3 Climber's Muscle-ups oder leicht gewichtete Power Pulls, 3 min Pause"
+      },
+      "cues_de": [
+        "Absicht: so schnell wie möglich – Tempo ist der Reiz",
+        "Rumpf fest, kein Schwung aus den Beinen",
+        "Senkrecht nach oben, nicht nach hinten",
+        "Zwischen den Wiederholungen neu spannen"
+      ],
+      "mistakes_de": [
+        "Bis zur Ermüdung weitermachen – langsame Wiederholungen trainieren keine Power",
+        "Power-Arbeit ans Ende der Einheit legen",
+        "Unkontrolliert in den gestreckten Arm fallen (Schulter, Ellbogen)"
+      ],
+      "equipment": [
+        "Klimmzugstange",
+        "optional leichte Gewichtsweste"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=ciHZ9Wnqt2w",
+        "title": "MORE POWER: The Climber's Muscle Up (How To)",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=ciHZ9Wnqt2w",
+        "https://www.youtube.com/watch?v=7TLG1mHQHgw",
+        "https://www.youtube.com/watch?v=p2osi7N2YXM",
+        "https://latticetraining.com/blog/training-series-strength-power"
+      ]
+    },
+    {
+      "id": "campus-ladders",
+      "name_de": "Campus Board: Leitern",
+      "group": "pull",
+      "levels": [
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kontakt- und Schnellkraft der Finger- und Zugkette durch schnelle, fußlose Züge an Sprossen. Level-Gating: nur für Erwachsene mit mehrjähriger Trainingserfahrung, beschwerdefreien Fingern, Ellbogen und Schultern – Lattice sieht den größten Nutzen bei Fortgeschrittenen und schließt Jugendliche praktisch aus.",
+      "how_de": [
+        "Nur frisch und nach vollständigem Warm-up (inkl. Finger-Leiter und ein paar explosiven Zügen).",
+        "Große bis mittlere Sprossen wählen; beidhändig auf Sprosse 1 starten, offene Hand oder Half Crimp.",
+        "Abwechselnd hochgreifen: zuerst 1-2-3-4-5, später 1-3-5(-7).",
+        "Oben kontrolliert abspringen statt herunterzucampusen.",
+        "2–3 min Pause; Führhand von Satz zu Satz wechseln."
+      ],
+      "dose": {
+        "advanced": "4–6 Leitern (1-2-3-4-5 bzw. 1-3-5-7) im Wechsel der Führhand, 2–3 min Pause, max. 1×/Woche, ca. 15–20 min",
+        "expert": "5–8 Leitern (1-3-5-7 → 1-4-7) an mittleren Sprossen, 3 min Pause, 1–2×/Woche in der Power-Phase"
+      },
+      "cues_de": [
+        "Schnell und flüssig – kein statisches Blockieren",
+        "Untere Hand drückt aktiv durch",
+        "Arme beim Fangen leicht gebeugt, Schultern aktiv",
+        "Präzise greifen, Sprosse voll treffen"
+      ],
+      "mistakes_de": [
+        "Bei Finger- oder PIP-Reizung komplett streichen: dynamisches Fangen im Crimp erzeugt hohe Spitzenlasten – Ersatz sind Campus-Boulder an guten Griffen oder Recruitment Pulls",
+        "Ermüdet oder am Ende der Einheit campusen",
+        "Full Crimp an den Sprossen und Fangen mit gestrecktem Arm",
+        "Zu viel Volumen – wenige hochwertige Sätze reichen"
+      ],
+      "equipment": [
+        "Campus Board (mittlere/große Sprossen)",
+        "Bouldermatte"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=bLz0xp1PEm4",
+        "title": "Improved your Climbing with This Exercise? Campus Training Explained",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=bLz0xp1PEm4",
+        "https://latticetraining.com/blog/video-qa-everything-you-need-to-know-about-campusing",
+        "https://www.youtube.com/watch?v=sttPqRX7vyg",
+        "https://latticetraining.com/blog/training-series-strength-power",
+        "https://latticetraining.com/blog/training-series-finger-strength"
+      ]
+    },
+    {
+      "id": "campus-max-throws",
+      "name_de": "Campus Board: Max Throws / weite Züge",
+      "group": "pull",
+      "levels": [
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Maximale Explosivkraft und Reichweite: aus der gematchten Position so weit wie möglich ziehen (z. B. 1-4, 1-5) und am Totpunkt präzise fangen. Nur sinnvoll, wenn Leitern wie 1-3-5-7 sicher gelingen.",
+      "how_de": [
+        "Beidhändig auf Sprosse 1 starten, Schultern aktiv.",
+        "Explosiv ziehen und mit einer Hand die höchstmögliche Sprosse antippen (Touch) oder fangen (Catch).",
+        "Die untere Hand drückt bis zur Hüfte durch.",
+        "Abspringen; nach jedem Versuch 3 min Pause.",
+        "Seite wechseln; als Fernziel einen zweiten weiten Zug anhängen (z. B. 1-5-8/9)."
+      ],
+      "dose": {
+        "advanced": "3–4 Versuche pro Seite als Touches oder Catches (z. B. 1-4), 3 min Pause, max. 1×/Woche",
+        "expert": "4–6 Maximalversuche pro Seite (1-5 → 1-5-8/9), 3–5 min Pause, 1×/Woche in der Power-Phase"
+      },
+      "cues_de": [
+        "Jeder Versuch ist ein Maximalversuch – volle Absicht",
+        "Aus den Schultern starten, Hüfte nah ans Board",
+        "Am Totpunkt greifen, nicht im Fallen",
+        "Touches vor Catches üben"
+      ],
+      "mistakes_de": [
+        "Ohne Basis einsteigen: Lattice nennt als Vorbereitung einarmige Hänge, Trizeps/Dips, tiefe Lock-offs, schwere gewichtete Klimmzüge und explosive assistierte einarmige Züge",
+        "Mit gestrecktem Arm in kleine Sprossen fangen – hohe Last auf Ringbänder, PIP-Gelenke und Schulter; bei Fingerhistorie nur große Sprossen in offener Hand oder ganz weglassen",
+        "Zu viele Versuche: Sobald die Reichweite sinkt, ist Schluss"
+      ],
+      "equipment": [
+        "Campus Board (große/mittlere Sprossen)",
+        "Bouldermatte"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=ZWDSoHEoBvY",
+        "title": "MORE POWER: Campus Board Essential Exercises",
+        "channel": "Tension Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=ZWDSoHEoBvY",
+        "https://latticetraining.com/blog/video-qa-everything-you-need-to-know-about-campusing",
+        "https://www.youtube.com/watch?v=sttPqRX7vyg",
+        "https://www.youtube.com/watch?v=MToIJp5klLU"
+      ]
+    },
+    {
+      "id": "campus-bumps",
+      "name_de": "Campus Board: Bumps",
+      "group": "pull",
+      "levels": [
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Einarmige Kontakt- und Blockierkraft: Eine Hand ‚bumpt' Sprosse für Sprosse nach oben, während die andere unten bleibt und immer weiter durchdrücken bzw. blockieren muss.",
+      "how_de": [
+        "Beidhändig auf Sprosse 1 starten.",
+        "Eine Hand greift zu Sprosse 2, dann ohne Zwischenstopp der anderen Hand weiter zu 3, 4 (und 5).",
+        "Jede Sprosse kurz sauber fassen, bevor es weitergeht.",
+        "An der höchsten erreichbaren Sprosse abspringen.",
+        "2–3 min Pause, dann die andere Seite."
+      ],
+      "dose": {
+        "advanced": "2–3 Sätze pro Seite (1 → 2 → 3 → 4), 2–3 min Pause, max. 1×/Woche",
+        "expert": "3–4 Sätze pro Seite bis zur maximalen Reichweite (z. B. 1 → 5/6), ggf. kleinere Sprossen, 3 min Pause"
+      },
+      "cues_de": [
+        "Die untere Hand ist der Motor – aktiv ziehen und dann drücken",
+        "Körper nah am Board, Rumpf fest",
+        "Kleine, schnelle Bumps statt großer Sprünge",
+        "Schulter des unteren Arms stabil halten"
+      ],
+      "mistakes_de": [
+        "Den unteren Arm komplett strecken und in der Schulter hängen",
+        "An zu kleinen Sprossen beginnen – hohe einarmige Fingerlast; bei PIP-Historie große Sprossen und offene Hand",
+        "Campusing mit unzureichender Basis: Sehnen und Bänder werden stark belastet"
+      ],
+      "equipment": [
+        "Campus Board",
+        "Bouldermatte"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=mXwWbpBum1k",
+        "title": "Campus Board Bumps WIth Offset Pull Up",
+        "channel": "TrainingBeta"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=mXwWbpBum1k",
+        "https://www.youtube.com/watch?v=ZWDSoHEoBvY",
+        "https://latticetraining.com/blog/video-qa-everything-you-need-to-know-about-campusing"
+      ]
+    },
+    {
+      "id": "campus-boulders",
+      "name_de": "Campus-Boulder / fußlose Max Efforts",
+      "group": "pull",
+      "levels": [
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kontaktkraft und maximale Oberkörper-Power an echten Griffen und Bewegungsmustern statt an Sprossen (Paradigm). Lattice nutzt dafür kurze fußlose Boulder mit etwa vier Zügen an großen Griffen.",
+      "how_de": [
+        "Am Board 3–4 Züge an großen, positiven Griffen definieren (Jugs, gute Leisten, Pinches).",
+        "Optional davor 2–3 explosive Klimmzüge als Potenzierung.",
+        "Fußlos klettern – dynamisch und kraftvoll, nicht statisch blockieren.",
+        "Pro Boulder 3–4 Versuche, zwischen den Versuchen 3 min Pause.",
+        "Schwierigkeit über Abstand und Griffart steigern, nicht über kleinere Leisten."
+      ],
+      "dose": {
+        "advanced": "3 Boulder à 3–4 Züge an großen Griffen, je 3 Versuche, 3 min Pause, ca. 20–30 min",
+        "expert": "4–5 Boulder à ca. 4 Züge (auch Pinches/flachere Griffe), je 3–4 Versuche, 3 min Pause, ca. 30 min"
+      },
+      "cues_de": [
+        "Schwung aus Hüfte und Schultern mitnehmen",
+        "Griffe aktiv ‚zupacken', sobald der Kontakt da ist",
+        "Rumpf fest, Beine ruhig",
+        "Kontrolliert abspringen"
+      ],
+      "mistakes_de": [
+        "Kleine Leisten fußlos fangen – genau die Belastung, die Finger und PIP-Gelenke am wenigsten mögen",
+        "Zu lange Boulder: wird zur Ausdauerübung",
+        "Müde weitermachen, wenn die Züge langsamer werden"
+      ],
+      "equipment": [
+        "Trainingsboard (TB2, Kilter, MoonBoard) mit großen Griffen",
+        "Bouldermatte"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=lhp4WHT2gw4",
+        "title": "Campus Boulders: A Highly Effective Way to Train Contact Strength!",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=lhp4WHT2gw4",
+        "https://latticetraining.com/workout/d1728a29-ca9f-4e34-952b-9782bae2466a/footless-boulder-max-efforts",
+        "https://www.youtube.com/watch?v=p2osi7N2YXM",
+        "https://www.youtube.com/watch?v=NLePCAp-uuo"
+      ]
+    },
+    {
+      "id": "limit-bouldering",
+      "name_de": "Limit Bouldering (Board Max Efforts)",
+      "group": "board",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Maximalkraft, Power und Rekrutierung in kletterspezifischer Form: Züge und Boulder am absoluten Limit, die mehrere Einheiten bis zum Durchstieg brauchen.",
+      "how_de": [
+        "Vollständig aufwärmen, inklusive ansteigend schwerer Boulder und Finger-Leiter.",
+        "2–4 Projekte oder Einzelzüge am persönlichen Limit wählen (steiles Board, kurze Sequenzen).",
+        "Jeder Versuch mit maximalem Einsatz – auch ein gehaltener Einzelzug ist ein Erfolg.",
+        "Zwischen den Versuchen 3–5 min vollständig pausieren.",
+        "Einheit beenden, sobald Kraft oder Explosivität sichtbar nachlassen (meist nach 45–60 min)."
+      ],
+      "dose": {
+        "intermediate": "30–40 min, ca. 8–12 Qualitätsversuche an 2–3 Bouldern, 3 min Pause, 1×/Woche",
+        "advanced": "45–60 min, ca. 12–15 Maximalversuche an 2–4 Projekten (3–6 Züge), 3–5 min Pause, 1–2×/Woche",
+        "expert": "ca. 60 min, 3–5 min Pause, bis 2×/Woche; in Deload-Wochen durch Flash-Level-Klettern ersetzen"
+      },
+      "cues_de": [
+        "Vor jedem Versuch Beta und Absicht klarmachen",
+        "Pausenuhr stellen – ehrlich volle Pausen",
+        "Züge isolieren, wenn der ganze Boulder noch nicht geht",
+        "Versuche zählen und notieren"
+      ],
+      "mistakes_de": [
+        "Zu kurze Pausen – dann wird es Power Endurance",
+        "Eine Stunde nur abfallen: Paradigm warnt vor Limit-Sessions mit kaum gehaltenen Zügen und empfiehlt dann Sub-Limit",
+        "Immer derselbe Stil: Auf Boards dominieren kleine Leisten im Crimp – bei PIP-Historie Griffarten mischen und crimp-lastige Limit-Züge begrenzen",
+        "Am Ende der Einheit oder nach Kapazitätstraining ansetzen"
+      ],
+      "equipment": [
+        "Trainingsboard (MoonBoard, TB2, Kilter) oder Spraywall",
+        "Timer",
+        "Logbuch/App"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=i4TuubD6r8Y",
+        "title": "How Limit Bouldering Pushes You into the Next Grade",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=i4TuubD6r8Y",
+        "https://latticetraining.com/workout/065f590b-3ecd-4080-907e-86972183856b/board-max-efforts",
+        "https://www.youtube.com/watch?v=AhVXa1i_73E",
+        "https://latticetraining.com/blog/training-series-strength-power",
+        "https://latticetraining.com/blog/do_climbers_need_deload_weeks"
+      ]
+    },
+    {
+      "id": "sub-limit-bouldering",
+      "name_de": "Sub-Limit Bouldering (max. 4 Versuche)",
+      "group": "board",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Paradigm-Drill: sehr hohe Intensität (95–100 % der aktuellen Leistungsfähigkeit) bei deutlich höherer Erfolgsquote als im Limit Bouldering – mehr gehaltene Züge, mehr Zeit unter Spannung und besseres motorisches Lernen.",
+      "how_de": [
+        "Boulder knapp unter dem Limit wählen, die realistisch in 1–4 Versuchen gehen.",
+        "Höchstens vier Versuche pro Boulder, dann zum nächsten wechseln.",
+        "Pause nach geleisteter Arbeit: etwa 1 min pro gekletterten Zug.",
+        "Griffarten (Leisten, Sloper, Pinches, Pockets) und Stile (Kompression, Deadpoint, Koordination, Lock-off) bewusst durchwechseln.",
+        "Einheit beenden, sobald Kraft oder Power nachlassen."
+      ],
+      "dose": {
+        "intermediate": "4–5 Boulder, je max. 4 Versuche, ca. 1 min Pause pro Zug, ca. 45 min",
+        "advanced": "5–7 Boulder (z. B. Board-Benchmarks 1–2 Grade unter Maximum), je max. 4 Versuche, ca. 60 min, 1–2×/Woche",
+        "expert": "6–8 Boulder, sonst gleich; Volumen über den Zyklus leicht steigern (vgl. Paradigm ‚Sub Max Batch')"
+      },
+      "cues_de": [
+        "Jeder Versuch zählt – vorher visualisieren",
+        "Reihenfolge und Pausen strategisch planen",
+        "Nach dem vierten Versuch konsequent weiterziehen",
+        "Stilwechsel als Schonung für Finger und Haut nutzen"
+      ],
+      "mistakes_de": [
+        "Heimlich doch projektieren und zehn Versuche in einen Boulder stecken",
+        "Zu leichte Boulder wählen – dann fehlt der Reiz",
+        "Trotz nachlassender Power ‚noch schnell' weiterklettern (Junk Volume)"
+      ],
+      "equipment": [
+        "Trainingsboard (TB2, Kilter, MoonBoard) oder Boulderhalle",
+        "Timer"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=K5NLcANk1X8",
+        "title": "Sub Limit Bouldering: Guarantee Improvements",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=K5NLcANk1X8",
+        "https://www.youtube.com/watch?v=2J58kayx5N8"
+      ]
+    },
+    {
+      "id": "board-benchmarks-three-tries",
+      "name_de": "Board-Benchmarks: 3 Versuche pro Boulder",
+      "group": "board",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Maximale Zugkraft und schnelles Problemlösen auf standardisiertem, steilem Terrain. Die feste Versuchszahl macht die Einheit vergleichbar und begrenzt die Belastung automatisch.",
+      "how_de": [
+        "Benchmarks am MoonBoard (oder Klassiker auf TB2/Kilter) nahe am Flash- bis Maximalgrad auswählen.",
+        "Härtere Boulder im eigenen Stil, etwas leichtere in Schwächen-Stilen.",
+        "Pro Boulder genau drei Versuche mit vollem Einsatz.",
+        "Zwischen den Versuchen etwa 3 min Pause; dann nächster Boulder.",
+        "Ergebnisse loggen; TB2-Boulder gespiegelt wiederholen, um Seitenunterschiede auszugleichen."
+      ],
+      "dose": {
+        "intermediate": "5–6 Boulder, je 3 Versuche, 3 min Pause, ca. 45–60 min, 1×/Woche",
+        "advanced": "6–8 Boulder, je 3 Versuche, 3 min Pause, ca. 60–70 min, 1×/Woche",
+        "expert": "wie advanced mit härteren Benchmarks; Board-Winkel/-Typ je nach Ziel wählen"
+      },
+      "cues_de": [
+        "Vor dem ersten Versuch gründlich lesen",
+        "Drei Versuche – dann ohne Diskussion weiter",
+        "Den Board-Typ nach Ziel und Fingerzustand wählen (Griffgrößen, Winkel und Stil der Boards unterscheiden sich deutlich)",
+        "Stile mischen statt nur Lieblingsboulder"
+      ],
+      "mistakes_de": [
+        "Den Board-Grad als Selbstwert-Messung nehmen – er ist nur eine Richtlinie",
+        "Das Board zu schwer oder zu leicht einsetzen: zuerst kurze Sequenzen testen, um das passende Niveau zu finden",
+        "MoonBoard-Leisten mehrmals pro Woche maximal crimpen – bei PIP-Historie Einheiten mit TB2 (Holz) und Kilter (größere Griffe) abwechseln"
+      ],
+      "equipment": [
+        "MoonBoard, Tension Board 2 oder Kilter Board",
+        "Board-App",
+        "Timer"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=wAzXIX0uOy0",
+        "title": "No.1 Training Method of Pro Climbers",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=wAzXIX0uOy0",
+        "https://latticetraining.com/workout/08fc1a34-ae1f-4147-bc3c-94e387a79dff/moonboard-benchmarks",
+        "https://www.youtube.com/watch?v=EtQOMnrTMKA",
+        "https://latticetraining.com/blog/do-i-need-to-climb-on-a-training-board"
+      ]
+    },
+    {
+      "id": "board-session-structure",
+      "name_de": "Board-Session-Struktur (‚Go Hard'-Einheit)",
+      "group": "board",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Rahmen für eine harte Board-Einheit: Aufwärmen und Drills → kurze ergänzende Fingerarbeit → intensiver Hauptteil. Stellt sicher, dass die höchste Intensität im frischen Zustand stattfindet und die Einheit ein klares Ziel hat.",
+      "how_de": [
+        "10–15 min allgemeines Warm-up und leichte Boulder, dabei 2–3 Technik- oder Spannungs-Drills.",
+        "Kurze Fingerarbeit: Hang-Leiter und wenige harte Züge oder Hänge.",
+        "Hauptteil (30–50 min): eine intensive Form wählen – Limit-Züge, Projekt, Flash-Versuche oder harte Repeats.",
+        "Zwischen harten Versuchen 3–5 min pausieren.",
+        "Aufhören, wenn die Qualität sinkt; danach optional Antagonisten oder lockeres Ausklettern."
+      ],
+      "dose": {
+        "intermediate": "60–75 min gesamt, Hauptteil 30–40 min, 1–2×/Woche",
+        "advanced": "75–90 min gesamt, Hauptteil 40–50 min mit 3–5 min Pausen, 2×/Woche mit mind. 48 h Abstand",
+        "expert": "ca. 90 min, 2–3×/Woche je nach Phase; harte Tage und Kapazitätstage klar trennen"
+      },
+      "cues_de": [
+        "Eine Intention pro Einheit festlegen",
+        "Das Härteste zuerst, solange du frisch bist",
+        "Pausen einhalten statt ‚noch schnell' zu probieren",
+        "Einheit mit einem gelungenen Versuch beenden, nicht mit dem zehnten Fehlversuch"
+      ],
+      "mistakes_de": [
+        "Ohne Plan ans Board gehen und nur Lieblingsboulder klettern",
+        "Kraft- und Ausdauerreiz in derselben Einheit vermischen",
+        "Fingertraining ans Ende hängen – wenn, dann vor dem Hauptteil und kurz"
+      ],
+      "equipment": [
+        "Trainingsboard (TB2, Kilter, MoonBoard)",
+        "Hangboard oder Block fürs Warm-up",
+        "Timer"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=RQtii8MxjkQ",
+        "title": "The Simplest (Effective) Hard Bouldering Training",
+        "channel": "Power Company Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=RQtii8MxjkQ",
+        "https://www.youtube.com/watch?v=T84C5cpykhM",
+        "https://latticetraining.com/blog/training-series-finger-strength",
+        "https://latticetraining.com/blog/training-series-strength-power"
+      ]
+    },
+    {
+      "id": "flash-level-volume",
+      "name_de": "Flash-Level-Volumen (Boulder Mileage)",
+      "group": "board",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kapazität und Toleranz für hohes Boulder-Volumen bei kontrollierter mittlerer Intensität: viele saubere Durchstiege auf oder knapp unter Flash-Niveau.",
+      "how_de": [
+        "Auswahl an Bouldern auf oder knapp unter dem Flash-Grad treffen, Stile mischen.",
+        "Alle 3 min einen Boulder starten.",
+        "Ziel ist Flash oder Durchstieg in höchstens zwei Versuchen.",
+        "Bewegungsqualität auch bei aufkommender Ermüdung halten.",
+        "Etwa 20 Boulder in 60 min; früher aufhören, wenn die Qualität kippt."
+      ],
+      "dose": {
+        "beginner": "10–12 Boulder in 30–40 min (1 Boulder alle 3 min), deutlich unter dem Limit",
+        "intermediate": "ca. 15 Boulder in 45 min auf oder unter Flash-Niveau",
+        "advanced": "ca. 20 Boulder in 60 min auf/knapp unter Flash-Grad, max. 2 Versuche pro Boulder, 1×/Woche",
+        "expert": "wie advanced; auch als Deload-Ersatz für Limit-Einheiten"
+      },
+      "cues_de": [
+        "Vor jedem Boulder kurz lesen, dann entschlossen klettern",
+        "Rhythmus halten: ein Boulder pro 3 min",
+        "Bewusst verschiedene Griffarten und Wandneigungen wählen",
+        "Sauber statt hektisch"
+      ],
+      "mistakes_de": [
+        "Zu schwere Boulder wählen – dann wird es eine Limit-Einheit mit zu vielen Versuchen",
+        "Pausen weglassen und in den Pump klettern",
+        "Nur crimp-lastige Board-Boulder aneinanderreihen: Volumen an kleinen Leisten ist bei PIP-Historie der klassische Reizauslöser"
+      ],
+      "equipment": [
+        "Boulderhalle oder Trainingsboard",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 60,
+        "rest": 120,
+        "reps": 20,
+        "sets": 1,
+        "setRest": 0
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=FX31SLv5Fqk",
+        "title": "Lattice Training - Boulder Mileage",
+        "channel": "UKClimbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=FX31SLv5Fqk",
+        "https://latticetraining.com/workout/441fd96a-72eb-4a31-bc01-43b8832c103d/boulder-mileage",
+        "https://latticetraining.com/workout/e743fca6-16fe-4fac-9a91-c568971926a6/flashing-boulders",
+        "https://latticetraining.com/blog/how-to-break-a-finger-strength-plateau",
+        "https://latticetraining.com/blog/do_climbers_need_deload_weeks"
+      ]
+    },
+    {
+      "id": "board-repeats",
+      "name_de": "Board-Repeats: ‚Guarantees' & Kraftintervalle",
+      "group": "board",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Hochwertige Wiederholung der wertvollsten harten Züge und Boulder. Paradigms ‚Guarantees' streichen Füllzüge und wiederholen Maximal-Power-Züge; Lattice nutzt Kraftintervalle an bekannten Bouldern und ‚Board Efficiency' zur Perfektionierung. Ziel: Kraft, Koordination, Körperspannung und Muskelgedächtnis.",
+      "how_de": [
+        "3–6 bekannte, harte Boulder oder selbst definierte Einzelzüge auswählen (1–2 Grade unter Maximum, ‚basic' im Stil).",
+        "Jeden Boulder bzw. Zug mehrfach sauber wiederholen.",
+        "Zwischen allen Gos etwa 3 min pausieren.",
+        "Jeder Durchgang soll effizienter werden: weniger Nachfassen, bessere Position, mehr Tempo.",
+        "Abbrechen, wenn Form oder Qualität nachlassen."
+      ],
+      "dose": {
+        "intermediate": "3 Boulder/Züge × 3 Wiederholungen, 2–3 min Pause, 1×/Woche",
+        "advanced": "Lattice-Kraftintervalle: 6 Sätze × 3 verschiedene bekannte Boulder 1–2 Grade unter Maximum, 3 min Pause zwischen allen Gos; oder 4–5 Maximal-Züge × 3–4 Wiederholungen",
+        "expert": "wie advanced mit härteren Bouldern; 1–2×/Woche in der Kraftphase"
+      },
+      "cues_de": [
+        "Bekannte Boulder – der Kopf ist frei für Ausführung",
+        "Jede Wiederholung filmen oder bewusst bewerten",
+        "Volle Pausen, volle Absicht",
+        "Züge wählen, die deine Schwächen treffen"
+      ],
+      "mistakes_de": [
+        "Wiederholungen ohne Fokus ‚abspulen'",
+        "Zu kurze Pausen – das verschiebt den Reiz Richtung Ausdauer",
+        "Immer denselben schmerzhaften Leistenzug wiederholen: Wiederholte Maximalzüge an einem kleinen Griff sind für PIP-Gelenke heikel – Griffe variieren"
+      ],
+      "equipment": [
+        "Trainingsboard (TB2, Kilter, MoonBoard) oder Spraywall",
+        "Timer",
+        "optional Kamera"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=MmInRGHTX08",
+        "title": "Guarantees: Ensuring Improvement in Bouldering Training",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=MmInRGHTX08",
+        "https://latticetraining.com/blog/training-series-strength-power",
+        "https://latticetraining.com/workout/d2f8df70-f5e1-4266-8760-bee7498a43cc/board-efficiency",
+        "https://www.youtube.com/watch?v=7iVyi6fQWUY"
+      ]
+    },
+    {
+      "id": "board-pauses",
+      "name_de": "Board Pauses & Tension-Drills",
+      "group": "board",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kontaktkraft, Schulterstabilität und Positionskontrolle unter Last. Lattice nutzt Board-Drills, damit Körperspannung gehalten statt jeder Zug dynamisch mit fliegenden Füßen gelöst wird.",
+      "how_de": [
+        "Steilen Board-Boulder mit großen Zügen ohne Matchen wählen, deutlich unter dem Limit.",
+        "Nach jedem Zug die Füße bewusst lösen.",
+        "Position 3 s kontrolliert halten.",
+        "Füße präzise zurücksetzen und zum nächsten Zug weiterklettern.",
+        "3–4 min Pause zwischen den Durchgängen."
+      ],
+      "dose": {
+        "intermediate": "4–5 Boulder (2–3 Grade unter Maximum), je 1–2 Durchgänge, 3 min Pause",
+        "advanced": "5–6 Boulder, je 2 Durchgänge mit 3 s Halt pro Zug, 3–4 min Pause, ca. 45 min",
+        "expert": "wie advanced an schwereren Bouldern oder steilerem Winkel"
+      },
+      "cues_de": [
+        "Schwung sofort abfangen – Hüfte ruhig",
+        "Schultern aktiv, Arme leicht gebeugt",
+        "Füße leise und gezielt zurücksetzen",
+        "Griff nach dem Fangen aktiv ‚schließen'"
+      ],
+      "mistakes_de": [
+        "An kleinen Leisten ausführen: Füße lösen erhöht die Fingerlast schlagartig – bei PIP-Historie gute Griffe wählen",
+        "Durchschwingen statt kontrolliert halten",
+        "Zu schwere Boulder wählen und die Übung zur Limit-Einheit machen"
+      ],
+      "equipment": [
+        "Steiles Trainingsboard (TB2, Kilter, MoonBoard)",
+        "Timer"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=nXiNDhiMhm0",
+        "title": "3 Quick Drills for Climbing Stength",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=nXiNDhiMhm0",
+        "https://latticetraining.com/workout/9199fa51-16b8-47a1-985d-0faa165244bd/board-pauses"
+      ]
+    },
+    {
+      "id": "arc-continuity",
+      "name_de": "ARC / Continuity (lockeres Dauerklettern)",
+      "group": "capacity",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Aerobe Basis und Kapillarisierung der Unterarme; fördert die Erholung zwischen Versuchen und Einheiten. Für Boulderer niedrig dosiert – Lattice empfiehlt grob 25–50 % des Ausdauervolumens von Routenkletterern.",
+      "how_de": [
+        "Sehr leichtes Gelände wählen: große Griffe, Circuit oder Board mit ‚French Traversing' (Füße bei Bedarf am Boden).",
+        "Kontinuierlich klettern, ohne nennenswerten Pump – du kannst jederzeit ausschütteln.",
+        "Steigt der Pump, Intensität senken oder in Intervalle teilen (klettern, kurz pausieren, weiter).",
+        "Alternative: denselben sehr leichten Boulder 4–6× am Stück, 2–3 min Pause, mehrere Sätze.",
+        "Als eigene lockere Einheit, als Cool-down oder an aktiven Erholungstagen."
+      ],
+      "dose": {
+        "beginner": "3 × 5 min on / 3 min off, sehr leicht",
+        "intermediate": "10–20 min am Stück oder 3 × 5 min on / 3 min off",
+        "advanced": "20–30 min kontinuierlich oder 3–4 × 5/3, 1×/Woche bzw. als aktive Erholung",
+        "expert": "wie advanced; Intensität über Zeit minimal steigern, nie in starken Pump klettern"
+      },
+      "cues_de": [
+        "Nasenatmung bzw. Gesprächstempo als Intensitätskontrolle",
+        "Locker greifen, so wenig Kraft wie nötig",
+        "Technik-Fokus nutzen: leise Füße, flüssige Bewegungen",
+        "Pump höchstens 2–3 von 10"
+      ],
+      "mistakes_de": [
+        "Zu intensiv klettern – das Gefühl ‚kurz vor dem Abfallen' ist hier falsch",
+        "An steilen Boards mit normalen Bouldern arbeiten: Nach wenigen Minuten ist man am Limit – Griffe vergrößern oder Füße auf den Boden",
+        "Als Boulderer zu viel davon machen und Kraftqualität opfern"
+      ],
+      "equipment": [
+        "Kletterwand/Circuit oder Board mit großen Griffen",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 300,
+        "rest": 180,
+        "reps": 3,
+        "sets": 1,
+        "setRest": 0
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=c0iB-LDx4oA",
+        "title": "ARCing for Beginners",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=c0iB-LDx4oA",
+        "https://latticetraining.com/workout/7833d306-ee04-4d67-b751-69c98895c7fd/arc-medium",
+        "https://latticetraining.com/workout/5f19044e-dac1-4c1d-a9bb-6dd0fc477d5a/arc-long",
+        "https://latticetraining.com/workout/338e00c3-33ee-478f-9d47-bcbb40fa54c2/5-on-3-off",
+        "https://latticetraining.com/blog/training-series-endurance",
+        "https://latticetraining.com/blog/what-is-endurance-training-in-climbing",
+        "https://www.youtube.com/watch?v=dGMP5vbM3Os"
+      ]
+    },
+    {
+      "id": "aerobic-capacity-intervals",
+      "name_de": "Aerobe Kapazität: 1 on / 1 off",
+      "group": "capacity",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Intensiverer aerober Reiz (Lattice: Aerobic Capacity): ein moderater Pump, der in der Pause wieder verschwindet. Verbessert die Erholungsrate zwischen harten Versuchen – der Hauptnutzen von Ausdauerarbeit für Boulderer.",
+      "how_de": [
+        "Circuit, Wandbereich oder Board mit größeren Griffen wählen.",
+        "1 min klettern bei etwa RPE 4/10 – es baut sich ein moderater Pump auf.",
+        "1 min abseits der Wand pausieren, bis der Pump weitgehend weg ist.",
+        "Zehnmal wiederholen; kein Durchgang endet nahe am Versagen.",
+        "Progression: Arbeitszeit verlängern oder Schwierigkeit leicht erhöhen."
+      ],
+      "dose": {
+        "intermediate": "8–10 × 1 min on / 1 min off bei RPE 4/10, 1×/Woche",
+        "advanced": "10 × 1 min on / 1 min off (ca. 2 Grade unter Onsight-Niveau), 1×/Woche; Boulderer: mind. 1 Ausdauereinheit pro Woche",
+        "expert": "10 × 1/1 oder 2 Blöcke à 6–8 Wdh. mit 5 min Blockpause"
+      },
+      "cues_de": [
+        "Gleichmäßig klettern, nicht sprinten",
+        "In der Pause wirklich loslassen und ausschütteln",
+        "Der letzte Durchgang sieht aus wie der erste",
+        "Am Board: kurze Arbeitsblöcke, große Griffe"
+      ],
+      "mistakes_de": [
+        "Zu schwer wählen und ab Runde fünf abfallen – dann ist es keine aerobe Einheit mehr",
+        "Die Session nach dem Gefühl maximaler Erschöpfung bewerten",
+        "Vor einer Kraft- oder Limit-Einheit trainieren"
+      ],
+      "equipment": [
+        "Circuit/Kletterwand oder Board mit großen Griffen",
+        "Intervall-Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 60,
+        "rest": 60,
+        "reps": 10,
+        "sets": 1,
+        "setRest": 0
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=s9xFZ1epi2U",
+        "title": "Climbing's Most MISUNDERSTOOD Training Method",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=s9xFZ1epi2U",
+        "https://latticetraining.com/blog/what-is-endurance-training-in-climbing",
+        "https://latticetraining.com/blog/training-series-endurance",
+        "https://www.youtube.com/watch?v=dGMP5vbM3Os",
+        "https://latticetraining.com/blog/training-energy-systems-the-climbers-guide"
+      ]
+    },
+    {
+      "id": "on-the-minute-boulders",
+      "name_de": "On-the-Minute-Boulder (OTM)",
+      "group": "capacity",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Wiederholbare anaerobe Leistung: Einstudierte Boulder werden im Minutentakt geklettert, die knappe Pause lässt die Ermüdung schnell ansteigen (Lattice ‚On the Minute').",
+      "how_de": [
+        "Sechs einstudierte Boulder wählen, die frisch zuverlässig gelingen (am Board vorher speichern).",
+        "Zu jeder vollen Minute einen Boulder starten; pro Boulder nur ein Versuch.",
+        "Der Rest der Minute ist Pause.",
+        "Nach sechs Bouldern etwa 5 min Satzpause.",
+        "2–3 Sätze; Progression über etwas schwerere Boulder."
+      ],
+      "dose": {
+        "intermediate": "2 Sätze × 6 Boulder im Minutentakt, 5 min Satzpause",
+        "advanced": "3 Sätze × 6 Boulder im Minutentakt, ca. 5 min Satzpause (ca. 28 min), 1×/Woche in der Kapazitätsphase",
+        "expert": "3–4 Sätze, schwerere Boulder oder 8 Boulder pro Satz"
+      },
+      "cues_de": [
+        "Boulder vorab festlegen – keine Suchzeit",
+        "Zügig, aber sauber klettern",
+        "Pause aktiv nutzen: ausschütteln, atmen",
+        "Die Schwierigkeit entsteht durch die kurze Pause, nicht durch den Einzelboulder"
+      ],
+      "mistakes_de": [
+        "Boulder zu nah am Limit wählen und schon im ersten Satz scheitern",
+        "Riskante Züge oder kleine Crimps unter Ermüdung – Boulder mit sicheren Griffen und Landungen wählen (PIP-Historie: keine scharfen Leisten)",
+        "Die Satzpausen kürzen: Die Qualität der späteren Sätze ist der Reiz"
+      ],
+      "equipment": [
+        "Trainingsboard oder Boulderhalle",
+        "Intervall-Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 60,
+        "rest": 0,
+        "reps": 6,
+        "sets": 3,
+        "setRest": 300
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=tK5VNaRJ60c",
+        "title": "How to Stop Pumping Out on Boulders [Power Endurance Guide]",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://latticetraining.com/workout/561f9efc-7b67-4484-9390-58ddf9c42c31/on-the-minute",
+        "https://www.youtube.com/watch?v=tK5VNaRJ60c"
+      ]
+    },
+    {
+      "id": "boulder-triples",
+      "name_de": "Boulder Triples (anaerobe Kapazität)",
+      "group": "capacity",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Anaerobe Kapazität (Lattice: AnCap) – die Fähigkeit, hochintensive Leistung über längere Boulder und wiederholte harte Versuche zu halten. Laut Lattice der zentrale Kraftausdauer-Baustein für Boulderer und Basis für spätere, leistungsnähere Einheiten.",
+      "how_de": [
+        "Steilen Boulder mit etwa 6–10 Zügen wählen, der frisch sicher gelingt – ohne riskante oder hautkritische Züge.",
+        "Den Boulder dreimal klettern, dazwischen nur kurz pausieren.",
+        "Der dritte Durchgang soll hart, aber gerade noch machbar sein.",
+        "Lange Satzpause; dann nächster Satz am gleichen oder einem neuen Boulder.",
+        "Schwierigkeit anpassen: Fällst du im zweiten Durchgang, ist der Boulder zu schwer."
+      ],
+      "dose": {
+        "intermediate": "4 Sätze × 3 Wdh., ca. 1–2 min zwischen den Wdh., 4–5 min Satzpause",
+        "advanced": "5–6 Sätze × 3 Wdh., ca. 1–2 min zwischen den Wdh., 3–5 min Satzpause, 1×/Woche in der Kapazitätsphase",
+        "expert": "6 Sätze × 3 Wdh.; Progression über schwerere Boulder oder kürzere Pausen"
+      },
+      "cues_de": [
+        "Gleiche Beta in allen drei Durchgängen",
+        "Tempo halten, nicht trödeln",
+        "Pausen stoppen statt schätzen",
+        "Im letzten Durchgang kämpfen, aber sauber bleiben"
+      ],
+      "mistakes_de": [
+        "Zu leichte Boulder: kein anaerober Reiz; zu schwere: man scheitert zu früh – die passende Boulderwahl ist laut Lattice eine typische Fehlerquelle",
+        "Boulder mit einem einzelnen sehr harten Zug wählen statt gleichmäßig fordernder Züge",
+        "Unter Ermüdung an kleinen Leisten zuschnappen – bei PIP-Historie Boulder mit größeren Griffen (Kilter, TB2) bevorzugen"
+      ],
+      "equipment": [
+        "Trainingsboard (Kilter, TB2) oder Boulderhalle",
+        "Intervall-Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 45,
+        "rest": 75,
+        "reps": 3,
+        "sets": 5,
+        "setRest": 240
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=Y6BxtLXfAFI",
+        "title": "Try this Exercise! Power Endurance Training for Climbing",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=Y6BxtLXfAFI",
+        "https://www.ukclimbing.com/articles/features/lattice_training_series_with_tom_randall_-_part_2_power_endurance-11352",
+        "https://www.youtube.com/watch?v=F42cvQVeeeM",
+        "https://latticetraining.com/workout/92637196-666c-41ff-b01c-044d6432a081/boulder-doubles",
+        "https://latticetraining.com/blog/how-to-break-a-finger-strength-plateau"
+      ]
+    },
+    {
+      "id": "linked-boulders",
+      "name_de": "Linked Boulders / ‚Dream x 4'",
+      "group": "capacity",
+      "levels": [
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Power Endurance am oberen Ende: mehrere harte Boulder zu einem langen Link-up verbinden, um Leistung unter wachsender Ermüdung und Erholung unter Zeitdruck zu trainieren. Paradigm nutzt das 4er-Link-up ‚Dream x 4' zum Peaken wenige Wochen vor Wettkampf oder Trip.",
+      "how_de": [
+        "Vier Boulder unterschiedlicher Stile wählen, die einzeln gut machbar sind.",
+        "Alle vier hintereinander mit nur minimaler bzw. fest begrenzter Pause klettern.",
+        "Das Link-up wie ein Projekt behandeln: Reihenfolge, Tempo und Erholungspunkte planen.",
+        "Lange Pause zwischen den Durchgängen.",
+        "Dasselbe Link-up wöchentlich wiederholen, um Fortschritt zu messen."
+      ],
+      "dose": {
+        "advanced": "2–3 Durchgänge eines Link-ups aus 2–4 Bouldern (zusammen ca. 20–30 Züge), 8–10 min Pause",
+        "expert": "3 Durchgänge des 4er-Link-ups, ca. 10 min Pause, 1×/Woche in den letzten 3–5 Wochen vor dem Ziel"
+      },
+      "cues_de": [
+        "Den schwersten Boulder nicht ans Ende legen, solange das Link-up neu ist",
+        "Zwischen den Bouldern bewusst atmen und ausschütteln",
+        "Ruhig bleiben, wenn der Pump kommt – Technik zuerst",
+        "Ergebnis notieren (wie weit gekommen?)"
+      ],
+      "mistakes_de": [
+        "Zu früh im Jahr einsetzen – das ist ein Peaking-Werkzeug, kein Basistraining",
+        "Boulder mit Verletzungsrisiko unter Ermüdung wählen (weite Sprünge, scharfe Leisten)",
+        "Mehrmals pro Woche wiederholen: sehr hohe Ermüdungskosten"
+      ],
+      "equipment": [
+        "Trainingsboard oder Boulderhalle",
+        "Timer"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=uhu4yLOtHrc",
+        "title": "\"Dream X 4\": Top End Power Endurance (How To)",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=uhu4yLOtHrc",
+        "https://latticetraining.com/blog/how-to-break-a-finger-strength-plateau",
+        "https://latticetraining.com/workout/1742b0d2-40a2-4e87-94d7-e0ae8967dd24/broken-30s",
+        "https://latticetraining.com/app/uploads/2021/12/Lattice-Training-Plans-Lockdown-Guidance.pptx.pdf"
+      ]
+    },
+    {
+      "id": "four-by-fours",
+      "name_de": "4x4s",
+      "group": "capacity",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Power Endurance / Aerobic Power: hohe Leistung bei sehr kurzen Pausen aufrechterhalten und starken Pump tolerieren. Klassiker – für reine Boulder-Ziele aber nur phasenweise sinnvoll.",
+      "how_de": [
+        "Lattice-Variante: pro Satz einen Boulder wählen und viermal direkt hintereinander klettern (klassisch: vier verschiedene Boulder am Stück).",
+        "Der Boulder ist einzeln gut machbar; die vierte Wiederholung wird fast maximal.",
+        "Zwischen den Wiederholungen nur abspringen und wieder einsteigen.",
+        "Nach vier Wiederholungen Satzpause.",
+        "Vier Sätze; Boulder pro Satz wechseln."
+      ],
+      "dose": {
+        "intermediate": "3 Sätze × 4 Boulder am Stück, ca. 5 min Satzpause, Boulder ca. 3–4 Grade unter Maximum",
+        "advanced": "4 × 4, ca. 4–5 min Satzpause, Boulder ca. 2–3 Grade unter Maximum, max. 1×/Woche",
+        "expert": "4 × 4 mit schwereren Bouldern oder Paradigms 6x2 als intensivere Variante"
+      },
+      "cues_de": [
+        "Rhythmus und Atmung halten",
+        "Gleiche Beta, auch wenn es brennt",
+        "Zwischen den Wiederholungen keine Zeit verlieren",
+        "Sauber abspringen – müde Landungen sind Verletzungsquellen"
+      ],
+      "mistakes_de": [
+        "4x4s für Boulder-Ziele überbewerten: hoher Ermüdungspreis bei wenig Maximalkraftreiz – Lattice diskutiert ausdrücklich Pro und Contra",
+        "Boulder mit riskanten Zügen oder kleinen Crimps wählen: Unter Pump zerfällt die Technik (PIP-Historie!)",
+        "Zu schwer starten und im zweiten Satz scheitern"
+      ],
+      "equipment": [
+        "Boulderhalle oder Trainingsboard (Kilter/TB2)",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 40,
+        "rest": 5,
+        "reps": 4,
+        "sets": 4,
+        "setRest": 300
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=w0m0Ky21wwY",
+        "title": "The Truth About the No.1 Power Endurance Exercise",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=w0m0Ky21wwY",
+        "https://latticetraining.com/workout/3d29bf02-0431-4365-b779-b5665f2ba041/4x4s",
+        "https://www.youtube.com/watch?v=Z4nWebZqDwg",
+        "https://www.trainingbeta.com/the-simplest-finger-training-program/"
+      ]
+    },
+    {
+      "id": "six-by-two",
+      "name_de": "6x2 (Paradigm): Top-End Power Endurance",
+      "group": "capacity",
+      "levels": [
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Intensivere, volumenärmere Variante des 4x4: zwei direkt aufeinanderfolgende Laps an harten Bouldern trainieren, Maximalleistung unter Ermüdung zu reproduzieren – relevant für lange Boulder und Cruxe am Ende.",
+      "how_de": [
+        "Sechs harte, bereits gekonnte Boulder knapp unter dem Limit auswählen.",
+        "Einen Boulder klettern, abspringen und sofort ein zweites Mal klettern.",
+        "Danach ausreichend pausieren, bis wieder ein hochwertiger Versuch möglich ist.",
+        "Mit dem nächsten Boulder wiederholen – insgesamt sechs Doppel-Laps.",
+        "Fokus: Bewegungsqualität und ruhige, selbstbewusste Selbstgespräche unter Ermüdung."
+      ],
+      "dose": {
+        "advanced": "6 Boulder × 2 Laps direkt hintereinander, ca. 3–5 min Pause zwischen den Bouldern, 1×/Woche in der Power-Endurance-Phase",
+        "expert": "wie advanced mit Bouldern näher am Limit; Stile über die sechs Boulder mischen"
+      },
+      "cues_de": [
+        "Im zweiten Lap dieselbe Beta, nur effizienter",
+        "Sofort wieder einsteigen – nicht zögern",
+        "Atmung zwischen den Laps bewusst beruhigen",
+        "Gefasst bleiben, wenn es schwer wird"
+      ],
+      "mistakes_de": [
+        "Boulder wählen, die schon der erste Lap ans Limit bringt",
+        "Die Pausen zwischen den Bouldern zu kurz halten – das senkt die Intensität, um die es hier geht",
+        "Unter Ermüdung unsauber in kleine Leisten greifen; bei PIP-Historie Boulder mit gutmütigen Griffen wählen"
+      ],
+      "equipment": [
+        "Trainingsboard oder Boulderhalle",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 40,
+        "rest": 10,
+        "reps": 2,
+        "sets": 6,
+        "setRest": 240
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=eiNOIl-AdJI",
+        "title": "6x2: Top End Power Endurance Drill (How To)",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=eiNOIl-AdJI",
+        "https://latticetraining.com/workout/92637196-666c-41ff-b01c-044d6432a081/boulder-doubles"
+      ]
+    },
+    {
+      "id": "front-lever-progression",
+      "name_de": "Front-Lever-Progression",
+      "group": "core",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Ganzkörperspannung und Zugkraft bei gestreckten Armen (Lat, Rumpf, Hüfte) – hilft, im Steilen die Füße an der Wand zu halten und Schwung zu kontrollieren.",
+      "how_de": [
+        "Stufe 1: Hanging L-Sit, Hollow Body Hold und Lat Pull-over als Grundlage.",
+        "Stufe 2: Tuck Front Lever (Knie angezogen) und Toes-to-Bar.",
+        "Stufe 3: Front Lever mit einem angewinkelten Bein; Beinheben mit Ablassen durch die Lever-Position.",
+        "Stufe 4: voller Front Lever.",
+        "Je Übung 4 Sätze mit 2 min Pause; erst Haltezeit steigern, dann die nächste Stufe."
+      ],
+      "dose": {
+        "intermediate": "Stufe 1–2: 4 × 5 s Hanging L-Sit bzw. 4 × 1–5 s Tuck Lever + 4 × 10 s Hollow Body, 2 min Pause, 2×/Woche",
+        "advanced": "Stufe 3: 4 × 1–5 s Front Lever mit einem angewinkelten Bein + 4 × 4 Beinheben mit Lever-Ablassen, 2 min Pause",
+        "expert": "Stufe 4: 4 × 1–5 s voller Front Lever, 2 min Pause; Steigerung über die Haltezeit"
+      },
+      "cues_de": [
+        "Arme gestreckt, Schulterblätter nach hinten-unten",
+        "Becken aufrichten, Rippen runter (Hollow Body)",
+        "Körper als gerade Linie – lieber leichtere Stufe als Hohlkreuz",
+        "Kurze, saubere Halte statt langer wackeliger"
+      ],
+      "mistakes_de": [
+        "Arme beugen und daraus einen Klimmzug machen",
+        "Die Hüfte abknicken",
+        "Zu früh zur nächsten Stufe wechseln",
+        "Bei gereizten Ellbogen (gestreckter Arm unter hoher Last) zu viel Volumen"
+      ],
+      "equipment": [
+        "Klimmzugstange oder Ringe",
+        "optional Widerstandsband, Kurzhantel für Pull-over",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 5,
+        "rest": 0,
+        "reps": 1,
+        "sets": 4,
+        "setRest": 120
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=nt2DOn4lp68",
+        "title": "Front Levers For Climbing: 4 Progressions To Get You Stronger",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=nt2DOn4lp68",
+        "https://latticetraining.com/workout/ee2dae7a-d7a5-403a-97ff-9bbe5e2eb80e/hollow-body-hold-30s",
+        "https://www.youtube.com/watch?v=f_J48vXCaN4"
+      ]
+    },
+    {
+      "id": "hanging-leg-raises",
+      "name_de": "Hanging Leg Raises / Toes-to-Bar",
+      "group": "core",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Hüftbeuger- und Bauchkraft im Hang – die Fähigkeit, im Überhang die Füße hochzubringen und nach dem Lösen kontrolliert zurück an die Wand zu setzen.",
+      "how_de": [
+        "In den aktiven Hang gehen (Schultern gesetzt).",
+        "Knie oder gestreckte Beine ohne Schwung anheben – so hoch wie kontrolliert möglich, Ziel: Zehen zur Stange.",
+        "2–3 s kontrolliert ablassen, unten nicht auspendeln.",
+        "Progression: Knieheben → gestreckte Beine bis Hüfthöhe → Toes-to-Bar → mit Fußgewichten.",
+        "Früh in der Einheit trainieren; lieber wenig und oft."
+      ],
+      "dose": {
+        "beginner": "3 × 6–8 Knieheben im Hang, 90 s Pause",
+        "intermediate": "3–4 × 5–6 gestreckte Leg Raises bis Hüfthöhe, 2 min Pause",
+        "advanced": "4 × 4–6 strikte Toes-to-Bar, 2 min Pause, 2×/Woche",
+        "expert": "4 × 4–6 mit Fußgewichten oder 4–5 s Ablassphase, 2 min Pause"
+      },
+      "cues_de": [
+        "Erst Becken kippen, dann Beine heben",
+        "Kein Schwung – jede Wiederholung startet aus der Ruhe",
+        "Schultern aktiv, Arme lang",
+        "Langsam ablassen"
+      ],
+      "mistakes_de": [
+        "Mit Schwung arbeiten (Kipping)",
+        "Im passiven Schulterhang trainieren",
+        "Immer nur dieselbe Übung: Lattice empfiehlt Variation in Ebenen und Tempo"
+      ],
+      "equipment": [
+        "Klimmzugstange oder Hangboard-Jugs",
+        "optional Fußgewichte"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=uP8fhthrWnc",
+        "title": "Bar Core Build Up - 4 Key Exercises for climbing training",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=uP8fhthrWnc",
+        "https://www.youtube.com/watch?v=nt2DOn4lp68",
+        "https://www.youtube.com/watch?v=f_J48vXCaN4"
+      ]
+    },
+    {
+      "id": "board-core",
+      "name_de": "Board Core: Tension-Boulder & Füße-zurück-Drills",
+      "group": "core",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kletterspezifische Körperspannung von den Fingerspitzen bis zu den Zehen: Füße an schlechten Tritten im Überhang halten bzw. nach dem Lösen kontrolliert zurücksetzen. Lattice nennt ‚End-to-end tension' mit Drills an der Wand als Priorität für Boulderer; Paradigm setzt dafür eigene Tension-Boulder am Kilter Board.",
+      "how_de": [
+        "Drei Boulder am steilen Board mit weiten oder schlechten Tritten wählen bzw. definieren – deutlich unter dem Limit.",
+        "Variante 1: Die Füße bleiben an der Wand – mit den Zehen aktiv ‚ziehen', Hüfte zur Wand, hintere Kette und Beine anspannen.",
+        "Variante 2: Füße bewusst lösen und in einem Schwung zurück auf die Tritte bringen (Toes-to-Board).",
+        "Langsam klettern und so wenig Fingerkraft wie nötig einsetzen.",
+        "Je Boulder 2–3 Durchgänge, 2–3 min Pause."
+      ],
+      "dose": {
+        "intermediate": "3 Boulder × 2–3 Durchgänge, 2–3 min Pause, 1×/Woche",
+        "advanced": "3–4 Boulder × 3 Durchgänge, davon je einer als Füße-zurück-Variante, 3 min Pause",
+        "expert": "wie advanced mit schlechteren Tritten, größerer Distanz oder steilerem Winkel"
+      },
+      "cues_de": [
+        "Zehen ‚krallen' und am Tritt ziehen",
+        "Spannung zuerst aufbauen, dann den Zug machen",
+        "Hüfte nah an die Wand, Gesäß und Beinrückseite aktiv",
+        "Füße gezielt und leise setzen"
+      ],
+      "mistakes_de": [
+        "Jeden Zug dynamisch lösen und die Füße fliegen lassen",
+        "Zu schwere Boulder wählen – dann wird es Fingerkraft- statt Spannungstraining",
+        "Fehlende Spannung über mehr Zupacken an kleinen Griffen kompensieren"
+      ],
+      "equipment": [
+        "Steiles Trainingsboard (Kilter, TB2, MoonBoard)",
+        "Kletterschuhe mit guter Zehenspannung"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=bex5jR5BORQ",
+        "title": "Master Body Tension for Steep Climbing (Climb WITH Me)",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=bex5jR5BORQ",
+        "https://www.youtube.com/watch?v=nXiNDhiMhm0",
+        "https://latticetraining.com/blog/planning-your-bouldering-training-what-matters"
+      ]
+    },
+    {
+      "id": "trx-rings-core",
+      "name_de": "TRX-/Ring-Core in voller Streckung",
+      "group": "core",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Rumpf- und Schulterstabilität in langer, gestreckter Körperposition – überträgt sich auf weite Züge im steilen Gelände. Lattice empfiehlt Boulderern ausdrücklich TRX- oder Ringarbeit in voller Streckung.",
+      "how_de": [
+        "Ringe/TRX knapp über dem Boden einstellen.",
+        "Fallouts/Rollouts: aus dem Knie- oder Liegestütz die Arme nach vorn führen, Körper bleibt ein Brett.",
+        "Nur so weit gehen, wie der untere Rücken neutral bleibt; kontrolliert zurückziehen.",
+        "Ergänzend Füße in die Schlaufen: Knee Tucks oder Pikes.",
+        "3 Sätze pro Übung, 90 s Pause."
+      ],
+      "dose": {
+        "beginner": "2–3 × 6 Fallouts im Kniestand, 90 s Pause",
+        "intermediate": "3 × 6–8 Rollouts (kniend) + 3 × 8 Knee Tucks, 90 s Pause, 1–2×/Woche",
+        "advanced": "3 × 6–8 Rollouts aus dem Stand bis nahe zur vollen Streckung + 3 × 8 Pikes, 2 min Pause",
+        "expert": "wie advanced, zusätzlich einarmige oder gewichtete Varianten"
+      },
+      "cues_de": [
+        "Rippen runter, Gesäß fest",
+        "Arme lang, Schultern weg von den Ohren",
+        "Bewegung langsam und geführt",
+        "Reichweite vor Wiederholungszahl"
+      ],
+      "mistakes_de": [
+        "Ins Hohlkreuz fallen",
+        "Zu schnell die Hebel verlängern – die Schulter muss die Endposition halten können",
+        "Mit Schwung zurückkommen"
+      ],
+      "equipment": [
+        "TRX/Schlingentrainer oder Turnringe",
+        "Matte"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=f_J48vXCaN4",
+        "title": "8 Essential Core Exercises for Climbing",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=f_J48vXCaN4",
+        "https://latticetraining.com/blog/planning-your-bouldering-training-what-matters",
+        "https://www.youtube.com/watch?v=X2-77jC6BT4"
+      ]
+    },
+    {
+      "id": "push-ups",
+      "name_de": "Liegestütze (Press-ups)",
+      "group": "antagonist",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Druckkraft von Brust, Trizeps und vorderer Schulter für Mantles und Kompression; hält das muskuläre Gleichgewicht zur zugdominanten Kletterbelastung.",
+      "how_de": [
+        "Hände schulterbreit oder etwas weiter aufsetzen, Körper von Kopf bis Ferse als Brett.",
+        "Brust kontrolliert Richtung Boden senken, Ellbogen etwa 45° zum Rumpf.",
+        "Kraftvoll hochdrücken, oben die Schulterblätter kurz nach vorn schieben.",
+        "Intensität über Körperwinkel (Hände erhöht, Füße erhöht), Ringe oder Zusatzgewicht anpassen.",
+        "2–3 Sätze, 90 s bis 2 min Pause."
+      ],
+      "dose": {
+        "beginner": "3 × 6–10 (ggf. Hände erhöht), 90 s Pause, 1–2×/Woche",
+        "intermediate": "3 × 8–12, 90 s Pause, 1–2×/Woche",
+        "advanced": "2–3 × 5–8 schwer (Füße erhöht, Ringe oder Zusatzgewicht), 2 min Pause, 1–2×/Woche",
+        "expert": "wie advanced; in Performance-Phasen als Erhaltungsdosis beibehalten"
+      },
+      "cues_de": [
+        "Rumpf fest – kein Durchhängen",
+        "Ellbogen nicht seitlich ausstellen",
+        "Volle Amplitude",
+        "Kontrolliertes Tempo"
+      ],
+      "mistakes_de": [
+        "Antagonisten in der Performance-Phase komplett streichen – Lattice empfiehlt auch dann zwei kurze Einheiten pro Woche (ca. 3 × 8–12 bei moderater Intensität, nach Klettertagen)",
+        "Halbe Wiederholungen mit hängendem Becken",
+        "So viel Volumen, dass die Erholung fürs Klettern leidet"
+      ],
+      "equipment": [
+        "Boden/Matte",
+        "optional Ringe, Gewichtsweste"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=HypBP4vsj0o",
+        "title": "How to get Stronger with Antagonist Training - Fundamentals Series",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=HypBP4vsj0o",
+        "https://latticetraining.com/workout/8580ae3c-1e8c-448b-9127-52a6991fcbe7/press-ups-strength",
+        "https://latticetraining.com/workout/2ed3c3dd-be1d-4280-8e0d-82ec02605c5e/bullet-proof-shoulders",
+        "https://latticetraining.com/blog/minimum-effective-dose-for-climbers-how-to-train-strength-over-summer-without-living-in-the-gym",
+        "https://latticetraining.com/blog/training-tips-for-climbers-the-importance-of-antagonist-training-during-performance-phase"
+      ]
+    },
+    {
+      "id": "shoulder-external-rotation",
+      "name_de": "Schulter-Außenrotation",
+      "group": "antagonist",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kräftigt die Außenrotatoren der Rotatorenmanschette als Gegengewicht zur zug- und innenrotationsdominanten Kletterbelastung – zentral für Schultergesundheit.",
+      "how_de": [
+        "Band, Kabelzug oder leichte Kurzhantel wählen.",
+        "Ellbogen 90° gebeugt am Körper (Handtuch unter dem Arm) oder – Lattice-Variante – sitzend mit dem Ellbogen auf dem angehobenen Knie.",
+        "Unterarm kontrolliert nach außen bzw. oben rotieren.",
+        "2–3 s zurückführen, ohne dass sich der Ellbogen bewegt.",
+        "Später schwierigere Positionen (Oberarm seitlich auf 90°) ergänzen."
+      ],
+      "dose": {
+        "beginner": "3 × 15–20 leicht (Band), 60 s Pause, 2×/Woche",
+        "intermediate": "3 × 10–12, 60–90 s Pause, 2×/Woche",
+        "advanced": "3–4 × 8 mit höherem Widerstand, 60–90 s Pause, 2×/Woche",
+        "expert": "3–4 × 8 schwer in mehreren Positionen (am Körper und in 90° Abduktion)"
+      },
+      "cues_de": [
+        "Ellbogen bleibt fixiert",
+        "Schulterblatt leicht nach hinten-unten",
+        "Die Bewegung kommt aus der Schulter, nicht aus dem Handgelenk",
+        "Langsam zurückführen"
+      ],
+      "mistakes_de": [
+        "Zu schwer arbeiten und mit dem Rumpf ausweichen",
+        "Schulter hochziehen",
+        "Nur bei Schmerzen trainieren statt regelmäßig vorbeugend"
+      ],
+      "equipment": [
+        "Widerstandsband, Kabelzug oder leichte Kurzhantel",
+        "optional Handtuch"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=qv9nQhyuKzk",
+        "title": "Top 6 Exercises for Rotator Cuffs | Strong Shoulders Pt. 1",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=qv9nQhyuKzk",
+        "https://latticetraining.com/workout/f3af7b09-179d-4d8d-89d9-0dfa0af7df39/seated-shoulder-rotations-strength",
+        "https://latticetraining.com/workout/2ed3c3dd-be1d-4280-8e0d-82ec02605c5e/bullet-proof-shoulders",
+        "https://latticetraining.com/blog/training-tips-for-climbers-the-importance-of-antagonist-training-during-performance-phase"
+      ]
+    },
+    {
+      "id": "i-y-t",
+      "name_de": "I-Y-T an Ringen/TRX",
+      "group": "antagonist",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kräftigt unteren und mittleren Trapezius, hintere Schulter und Rotatorenmanschette in drei Armwinkeln und verbessert die Schulterblattkontrolle – ein Lattice-Klassiker für stabile Schultern.",
+      "how_de": [
+        "Ringe/TRX greifen und mit gestrecktem Körper zurücklehnen.",
+        "I: gestreckte Arme über den Kopf führen, bis der Körper aufrecht ist.",
+        "Y: Arme schräg nach oben-außen (ca. 45°).",
+        "T: Arme seitlich auf Schulterhöhe.",
+        "Jeweils langsam zurück; die Schräglage bestimmt die Last."
+      ],
+      "dose": {
+        "beginner": "2 × 5 je Buchstabe, fast aufrechter Stand, 60–90 s Pause",
+        "intermediate": "3 × 6 je Buchstabe, 90 s Pause, 1–2×/Woche",
+        "advanced": "3 × 6–8 je Buchstabe mit flacherem Körperwinkel, 90 s Pause, 1–2×/Woche",
+        "expert": "wie advanced; langsame Exzentrik (3–4 s) für mehr Reiz"
+      },
+      "cues_de": [
+        "Arme gestreckt lassen",
+        "Körper als Brett – keine Hüftbewegung",
+        "Schulterblätter bewusst führen",
+        "Winkel leichter wählen als gedacht"
+      ],
+      "mistakes_de": [
+        "Die Arme beugen und daraus ein Rudern machen",
+        "Mit Schwung aus der Hüfte arbeiten",
+        "Schultern zu den Ohren ziehen"
+      ],
+      "equipment": [
+        "Turnringe oder TRX/Schlingentrainer"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=fCEgANP9ScM",
+        "title": "TRX & Rings -  IYT",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=fCEgANP9ScM",
+        "https://www.youtube.com/watch?v=X2-77jC6BT4",
+        "https://www.youtube.com/watch?v=As_nIl4VcUQ",
+        "https://latticetraining.com/blog/training-tips-for-climbers-the-importance-of-antagonist-training-during-performance-phase"
+      ]
+    },
+    {
+      "id": "reverse-wrist-curls",
+      "name_de": "Reverse Wrist Curls (Handgelenkstrecker)",
+      "group": "antagonist",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kräftigt die Handgelenkstrecker als Gegenspieler der Fingerbeuger; stabilisiert das Handgelenk beim Greifen und hilft, Beschwerden am äußeren Ellbogen vorzubeugen.",
+      "how_de": [
+        "Unterarm auf Oberschenkel oder Bank ablegen, Handrücken zeigt nach oben, Hand ragt über die Kante.",
+        "Leichte Kurzhantel greifen.",
+        "Handgelenk nach oben strecken, kurz halten.",
+        "3 s kontrolliert ablassen.",
+        "2–3 Sätze pro Seite."
+      ],
+      "dose": {
+        "beginner": "2–3 × 12–15 leicht, 60 s Pause, 2×/Woche",
+        "intermediate": "3 × 10–15, 60 s Pause, 2×/Woche",
+        "advanced": "2–3 × 8–12 mit 3–4 s Ablassphase, 1 min Pause, 2–3×/Woche (Kraftfokus: 3–4 × 3–6, 2–3 min Pause)",
+        "expert": "wie advanced; zusätzlich Rotation (Pronation/Supination) sowie radiale und ulnare Seite des Handgelenks kräftigen"
+      },
+      "cues_de": [
+        "Der Unterarm bleibt liegen",
+        "Volle, schmerzfreie Amplitude",
+        "Langsam ablassen",
+        "Locker greifen – nicht zusätzlich die Fingerbeuger zuquetschen"
+      ],
+      "mistakes_de": [
+        "Zu schwer und mit Schwung arbeiten",
+        "Nur die Beuger trainieren und die Strecker vernachlässigen",
+        "Bei akuten Ellbogenschmerzen in den Schmerz trainieren"
+      ],
+      "equipment": [
+        "Leichte Kurzhantel (1–5 kg) oder Widerstandsband",
+        "Bank/Oberschenkel als Auflage"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=uKtlb-Etxg0",
+        "title": "How to Get Bulletproof Wrists in 15 Minutes",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=uKtlb-Etxg0",
+        "https://www.youtube.com/watch?v=gf4dcg2i2HU",
+        "https://latticetraining.com/blog/how-do-i-strengthen-my-wrists-for-climbing",
+        "https://latticetraining.com/blog/training-tips-for-climbers-the-importance-of-antagonist-training-during-performance-phase"
+      ]
+    },
+    {
+      "id": "rice-bucket",
+      "name_de": "Rice Bucket",
+      "group": "antagonist",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Niedrig belastende Mobilisation und Durchblutung für Finger, Hand und Unterarm in alle Richtungen (öffnen, schließen, rotieren). Geeignet als Warm-up, Cool-down oder an Ruhetagen – kein Maximalkraftreiz.",
+      "how_de": [
+        "Eimer mit Reis füllen, Hand bis über das Handgelenk eintauchen.",
+        "Finger kraftvoll spreizen und öffnen.",
+        "Faust schließen und ‚kneten'.",
+        "Handgelenk in beide Richtungen kreisen und rotieren.",
+        "Jede Bewegung 30–45 s, dann Hand wechseln; 2–3 Runden."
+      ],
+      "dose": {
+        "beginner": "2 Runden à 4 Bewegungen × 30 s pro Hand, 2×/Woche",
+        "intermediate": "2–3 Runden à 4 Bewegungen × 30–45 s pro Hand, 2–3×/Woche",
+        "advanced": "2–3 Runden à 4 Bewegungen × 30–45 s pro Hand, 2–4×/Woche, locker (RPE 3–5)",
+        "expert": "wie advanced, v. a. als Warm-up oder an Ruhetagen"
+      },
+      "cues_de": [
+        "Gleichmäßiges Tempo, tief im Reis arbeiten",
+        "Öffnende Bewegungen betonen",
+        "Locker bleiben – es soll warm werden, nicht brennen",
+        "Beide Hände gleich behandeln"
+      ],
+      "mistakes_de": [
+        "Den Rice Bucket als Kraft- oder Reha-Wundermittel sehen – er ersetzt weder Belastungssteuerung noch gezielte Kräftigung",
+        "Bei gereiztem PIP-Gelenk mit maximaler Kraft in den Endbereich drücken",
+        "Direkt vor einer Limit-Einheit bis zur Ermüdung arbeiten"
+      ],
+      "equipment": [
+        "Eimer mit ca. 5–10 kg Reis",
+        "Timer"
+      ],
+      "timer": {
+        "prep": 5,
+        "work": 30,
+        "rest": 10,
+        "reps": 4,
+        "sets": 2,
+        "setRest": 30
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=Pzzt0XK39SY",
+        "title": "Rice Buckets are a GREAT Tool for Climbers (Climbing Myth?)",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=Pzzt0XK39SY",
+        "https://latticetraining.com/blog/how-to-train-with-injured-fingers"
+      ]
+    },
+    {
+      "id": "finger-extensors",
+      "name_de": "Fingerstrecker-Training",
+      "group": "antagonist",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kräftigt die Fingerstrecker als Gegenspieler der Beuger und unterstützt die muskuläre Balance an Grund- (MCP) und Mittelgelenken (PIP).",
+      "how_de": [
+        "Widerstandsband um die Finger legen.",
+        "Variante der Climbing Doctor: Finger in einer griffähnlichen, gebeugten Position halten statt nur flach zu spreizen.",
+        "Zuerst nur im Grundgelenk (MCP) strecken.",
+        "Dann nur im Mittelgelenk (PIP) strecken, anschließend beide Bewegungen kombinieren.",
+        "Langsam ausführen, 2–3 Sätze."
+      ],
+      "dose": {
+        "beginner": "2 × 15–20 leicht, 60 s Pause, 2–3×/Woche",
+        "intermediate": "2–3 × 15–20, 60 s Pause, 2–3×/Woche",
+        "advanced": "3 × 10–15 mit stärkerem Band, 60 s Pause, 2–3×/Woche",
+        "expert": "wie advanced; auch als Teil des Warm-ups mit 1 leichten Satz"
+      },
+      "cues_de": [
+        "Langsam und kontrolliert, oben kurz halten",
+        "Handgelenk neutral",
+        "Alle Finger gleichmäßig arbeiten lassen",
+        "Spannung auch auf dem Rückweg halten"
+      ],
+      "mistakes_de": [
+        "Nur das Gummiband auseinanderdrücken – das überlastet oft Daumen und kleinen Finger",
+        "Bei gereiztem PIP-Gelenk in den Schmerz oder den harten Endanschlag strecken",
+        "Zu starkes Band mit Ausweichbewegungen"
+      ],
+      "equipment": [
+        "Widerstandsband/Fingerband"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=j8ODTWfc4XI",
+        "title": "Finger Extensor Strength for Climbing",
+        "channel": "The Climbing Doctor"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=j8ODTWfc4XI",
+        "https://latticetraining.com/blog/how-to-train-with-injured-fingers"
+      ]
+    },
+    {
+      "id": "scapular-pull-ups",
+      "name_de": "Scapular Pull-ups (Schulterblatt-Klimmzüge)",
+      "group": "antagonist",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kraft und Kontrolle für das Senken und Zusammenführen der Schulterblätter (unterer Trapezius, Lat) – Grundlage für aktives Hängen, gesunde Schultern und saubere Zugmuster unter Ermüdung.",
+      "how_de": [
+        "An Stange oder Jugs mit gestreckten Armen hängen.",
+        "Schulterblätter nach unten und hinten ziehen – der Körper hebt sich wenige Zentimeter, die Arme bleiben gestreckt.",
+        "1–2 s halten.",
+        "Kontrolliert in den langen Hang zurück.",
+        "Variante: mittlere Engagement-Position isometrisch halten; später einarmig mit Unterstützung."
+      ],
+      "dose": {
+        "beginner": "2 × 6–8 (Füße bei Bedarf leicht aufgestützt), 60–90 s Pause",
+        "intermediate": "3 × 8–10, 60–90 s Pause, als Aktivierung im Warm-up",
+        "advanced": "2–3 × 8–10 im Warm-up oder 3 × 5 einarmig-assistiert, 90 s Pause",
+        "expert": "3 × 5 einarmig-assistiert oder 4–5 × 10 s One-Arm-Engagement pro Seite"
+      },
+      "cues_de": [
+        "Arme bleiben lang – die Bewegung kommt nur aus dem Schulterblatt",
+        "Brust leicht nach oben",
+        "Hals lang, Schultern weg von den Ohren",
+        "Oben kurz halten"
+      ],
+      "mistakes_de": [
+        "Die Arme beugen und daraus halbe Klimmzüge machen",
+        "Mit Schwung arbeiten",
+        "Unten völlig passiv durchsacken"
+      ],
+      "equipment": [
+        "Klimmzugstange oder Hangboard-Jugs"
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=6P9r0UAdwXM",
+        "title": "The Best Climbing Exercise You're Not Doing!",
+        "channel": "Training4climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=6P9r0UAdwXM",
+        "https://latticetraining.com/workout/52d60086-ef53-4b5f-9f35-8af14cbbb327/activations",
+        "https://latticetraining.com/workout/cb6b7d23-1736-4c98-b0b3-11a4b4e145df/one-arm-engagements-iso-10s"
+      ]
+    }
+  ]
+}

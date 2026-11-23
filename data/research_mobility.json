@@ -1,0 +1,2552 @@
+{
+  "principles": [
+    {
+      "title_de": "Aktive schlägt passive Beweglichkeit",
+      "text_de": "Passive Beweglichkeit ist die Reichweite, in die dich Schwerkraft, Gewicht oder ein Partner drücken. Aktive Beweglichkeit ist die Reichweite, die du aus eigener Muskelkraft erreichst und halten kannst – und genau die brauchst du an der Wand (hoher Tritt, weiter Gaston, Drop-Knee). Trainiere deshalb nicht nur das Hineinsinken, sondern vor allem Kraft an der Endposition: Lift-offs, Isometrien, langsame Tempo-Wiederholungen.",
+      "source": "https://latticetraining.com/blog/lattice-training-insights-flexibility-training-for-climbers"
+    },
+    {
+      "title_de": "Dehnen an der Endposition ist Krafttraining",
+      "text_de": "Aktiv-statische Arbeit (Isometrien, belastetes Dehnen, Contract-Relax) wirkt am schnellsten, erzeugt aber echten Muskelkater und braucht Erholung. Plane sie wie eine Krafteinheit: 1–2-mal pro Woche pro Position mit etwa 72 h Abstand. Lockeres passives Dehnen und dynamische Schwünge sind dagegen niedrig intensiv und können täglich bzw. in jedem Warm-up laufen.",
+      "source": "https://latticetraining.com/blog/lattice-training-insights-flexibility-training-for-climbers"
+    },
+    {
+      "title_de": "Timing: vor der Session dynamisch, lange Holds danach oder am Ruhetag",
+      "text_de": "Lange passive Dehnungen (ab ca. 60 s pro Muskel) können die Maximalkraft direkt danach leicht und vorübergehend senken; dynamisches Dehnen tut das nicht, und nachfolgende dynamische Aktivität hebt den Effekt weitgehend auf. Für harte Board-Sessions heißt das: vorher kurz und dynamisch mobilisieren, die langen Hüft- und Schulter-Holds hinter die Session oder auf den Ruhetag legen. Kurze Hüftdehnungen im Warm-up sind unkritisch, weil sie nicht die Zugmuskulatur betreffen.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/26642915/"
+    },
+    {
+      "title_de": "Dosis: Wochenvolumen und Häufigkeit zählen mehr als die Einzeleinheit",
+      "text_de": "In einer Übersichtsarbeit zu Dehnprotokollen verbesserten alle Methoden langfristig die Beweglichkeit, statisches Dehnen am deutlichsten. Entscheidend war die Gesamtzeit pro Woche (mindestens rund 5 min pro Muskelgruppe) und die Verteilung auf möglichst viele Tage (etwa 5 pro Woche), nicht die Länge einer einzelnen Einheit. Praktisch: lieber täglich 2 × 60 s Frosch als einmal pro Woche 15 min.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/29506306/"
+    },
+    {
+      "title_de": "Wenige Ziele, messbar machen, dranbleiben",
+      "text_de": "Beweglichkeit verbessert sich wie Kraft am besten mit Fokus: 2–3 Zielpositionen gleichzeitig (z. B. Side Split, Pancake, High Step) statt einer langen Liste. Setze kleine, konkrete Aufgaben (Fingerknöchel zum Boden, 5 cm mehr Fersenabstand) und teste alle 8–12 Wochen unter gleichen Bedingungen nach. Messbare Fortschritte brauchen meist 8–12 Wochen konsequentes Training.",
+      "source": "https://latticetraining.com/blog/flexibility-for-climbers-how-to-improve-your-side-split"
+    },
+    {
+      "title_de": "Intensität: deutlicher Dehnreiz ja, Gelenkschmerz nein",
+      "text_de": "Arbeite bis zu einem klaren, aber gut atembaren Dehngefühl – nicht bis zum Schmerz. Spannung 20–30 s aufbauen lassen und dann in kleinen Schritten vertiefen. Warnsignale sind stechender Schmerz an der Knie-Innenseite, Klemmen vorn in der Hüfte oder Schulter und ein harter, knöcherner Anschlag ohne Dehngefühl: dort endet die individuelle Struktur, mehr Druck bringt nichts. Beckenkippung (leichtes Hohlkreuz) verändert oft, wie weit Side Split und Pancake gehen.",
+      "source": "https://www.ukclimbing.com/articles/skills/lattice_training_series_with_tom_randall_-_part_4_conditioning+mobility-11396"
+    },
+    {
+      "title_de": "Warm-up nach RAMP: Raise – Activate – Mobilise – Potentiate",
+      "text_de": "Ein gutes Warm-up ist kurz, immer gleich und endet mit einem Priming-Teil: erst Puls und Temperatur anheben, dann Schultern/Rumpf aktivieren und dynamisch mobilisieren, anschließend Finger progressiv belasten und zum Schluss mit wenigen harten, kurzen Zügen oder Bouldern nahe Session-Intensität potenzieren. Rund 15 min abseits der Wand reichen; ein standardisierter Ablauf zeigt dir außerdem, wie du an dem Tag drauf bist.",
+      "source": "https://latticetraining.com/blog/the-fastest-and-best-way-to-warm-up-for-climbing"
+    },
+    {
+      "title_de": "Gereizte Fingergelenke: Last dosieren statt komplett pausieren",
+      "text_de": "Kapsel-/Synovialreizungen der PIP-Gelenke entstehen meist durch zu viel Crimp-Last in zu kurzer Zeit. Bewährt haben sich: auslösende Griffe (v. a. voll aufgestellt) und Volumen reduzieren, offene Griffpositionen bevorzugen, tägliche sanfte Gelenkmobilisation und Sehnengleiten, dann schrittweise wieder belasten. Maßstab ist die 24-h-Reaktion: Schwellung, Morgensteifigkeit oder Schmerz am Folgetag bedeuten zu viel. Hält die Schwellung trotz Anpassung über Wochen an, gehört der Finger zu Ärztin/Arzt oder Kletter-Physio.",
+      "source": "https://www.frontiersin.org/articles/10.3389/fspor.2023.1185653/full"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "frog-stretch",
+      "name_de": "Frosch (Frog Stretch) mit Contract-Relax",
+      "group": "hips",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Öffnet Adduktoren und Hüftkapsel in gebeugter, außenrotierter Position. Das ist die Basis, um bei frontalem Stehen, weiten Tritten und Froschpositionen die Hüfte nah an die Wand zu bringen.",
+      "how_de": [
+        "Vierfüßlerstand auf weicher Unterlage, Knie so weit wie angenehm nach außen schieben, Knie etwa 90° gebeugt, Füße in einer Linie mit den Knien.",
+        "Unterarme ablegen, Becken leicht nach vorn kippen und das Gesäß langsam nach hinten zwischen die Fersen schieben, bis ein deutlicher Zug in Leiste und Oberschenkel-Innenseite entsteht.",
+        "20–30 s Spannung aufbauen lassen, danach alle 10–15 s ein kleines Stück tiefer sinken.",
+        "Contract-Relax: Knie 5 s mit etwa 50–70 % Kraft in den Boden drücken, ausatmen, lösen und in die neu gewonnene Tiefe sinken; 2–3 Zyklen.",
+        "Langsam nach vorn herausschieben, Knie zusammenführen und kurz ausschütteln."
+      ],
+      "dose": {
+        "beginner": "2–3 × 30 s",
+        "intermediate": "3 × 45–60 s, 30 s Pause",
+        "advanced": "3 × 60 s inkl. 2–3 Contract-Relax-Zyklen (5 s drücken, 10 s tiefer sinken)",
+        "expert": "3 × 60–90 s mit Contract-Relax, danach 6 langsame aktive Vor-Zurück-Rocks"
+      },
+      "cues_de": [
+        "Becken kippt nach vorn, Rücken nicht einrollen",
+        "Lange Ausatmung, Schultern und Kiefer locker",
+        "Hüfte wandert Richtung Boden und nach hinten",
+        "Dehnreiz in Leiste und Adduktoren, nicht im Knie"
+      ],
+      "mistakes_de": [
+        "Stechender Schmerz an der Knie-Innenseite: Position verkleinern, Knie polstern oder Füße näher zusammennehmen.",
+        "Harter, klemmender Anschlag in der Hüfte ohne Dehngefühl ist meist knöchern – nicht hineindrücken, sondern Beckenkippung und Kniewinkel variieren.",
+        "Kalt und ruckartig in die Endposition fallen."
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 60,
+        "rest": 0,
+        "reps": 1,
+        "sets": 3,
+        "setRest": 30
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=6FBEC9SNIbY",
+        "title": "3 EASY Stretches for INFLEXIBLE Climbers",
+        "channel": "Lattice Training",
+        "start_s": 548
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=6FBEC9SNIbY",
+        "https://latticetraining.com/blog/lattice-training-insights-flexibility-training-for-climbers",
+        "https://www.ukclimbing.com/articles/skills/lattice_training_series_with_tom_randall_-_part_4_conditioning+mobility-11396",
+        "https://www.youtube.com/watch?v=MZY02QGXcmM"
+      ]
+    },
+    {
+      "id": "pancake-tempo-hinge",
+      "name_de": "Pancake – Tempo-Vorbeuge in der Grätsche (stehend → sitzend)",
+      "group": "hips",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Belastetes Dehnen für Adduktoren und hintere Oberschenkel in der Grätsche. Hilft bei weiten Spreiz- und Stemmpositionen, hohen seitlichen Tritten und beim Hüfte-zur-Wand-Bringen.",
+      "how_de": [
+        "Variante wählen: Wenn du in der Grätsche nicht mit gestreckten Beinen und aufrechter Brust sitzen kannst, stehend beginnen; sonst erhöht auf Block/Kante sitzend, später am Boden.",
+        "Beine weit gegrätscht, Knie gestreckt, Becken nach vorn kippen (Bauchnabel Richtung Boden).",
+        "Mit flachem Rücken 3 s aus der Hüfte nach vorn absenken, Brustbein lang nach vorn-unten.",
+        "2 s am tiefsten Punkt halten, 2 s aktiv aufrichten, 1 s oben.",
+        "Jede Wiederholung einen Hauch tiefer; Zusatzlast erst, wenn die Körpergewichts-Variante sauber ist, und nur so viel, dass sie dich sanft tiefer zieht."
+      ],
+      "dose": {
+        "beginner": "Stehender Pancake 3 × 4 Wdh., Tempo 3-2-2-1, 60 s Pause",
+        "intermediate": "Erhöht sitzend 3 × 4 Wdh., Tempo 3-2-2-1, 60 s Pause",
+        "advanced": "Sitzend 3 × 4–6 Wdh. mit 3 s Pause unten, leichte Zusatzlast (2,5–10 kg vor der Brust)",
+        "expert": "Seated Good Morning 3 × 6 Wdh. mit 3 s Pause unten, Last moderat steigern; 1–2-mal pro Woche"
+      },
+      "cues_de": [
+        "Aus der Hüfte klappen, nicht aus dem Rücken rollen",
+        "Kniescheiben und Zehen zeigen nach oben",
+        "Dem Horizontalen hinterher: Brustbein nach vorn, nicht Kopf nach unten",
+        "Langsam ablassen – das Tempo ist der Reiz"
+      ],
+      "mistakes_de": [
+        "Rundrücken und Kopf zum Boden ziehen: Das fühlt sich tief an, dehnt aber kaum die Zielmuskulatur.",
+        "Zu viel Zusatzlast verkleinert die Reichweite, statt sie zu vergrößern.",
+        "Ziehen in der Kniekehle oder Kribbeln im Bein (Nervenspannung): Reichweite reduzieren, Knie minimal entlasten."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=YliQaq8yvCE",
+        "title": "Pancake - Standing",
+        "channel": "Lattice Performance Coaching"
+      },
+      "sources": [
+        "https://www.latticetraining.com/blog/flexibility-for-climbers-improve-your-pancake",
+        "https://www.youtube.com/watch?v=YliQaq8yvCE",
+        "https://www.youtube.com/watch?v=NzI1kdO1YHk",
+        "https://www.youtube.com/watch?v=rCmrnURw7qI",
+        "https://www.youtube.com/watch?v=3rwc6UPRzRo",
+        "https://www.youtube.com/watch?v=GW0zPK8iapI"
+      ]
+    },
+    {
+      "id": "pancake-leg-lifts",
+      "name_de": "Pancake Leg Lifts (aktive Kompression in der Grätsche)",
+      "group": "hips",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kräftigt Hüftbeuger und Quadrizeps in maximal verkürzter Position – die aktive Gegenseite zum Pancake. Überträgt sich auf das Anheben des Fußes zu hohen, seitlichen Tritten ohne Hüfte von der Wand zu nehmen.",
+      "how_de": [
+        "In der Grätsche am Boden sitzen, Beine gestreckt, Brust offen; nur ausführen, wenn du so bequem sitzen kannst.",
+        "Hände zwischen oder neben den Beinen aufsetzen und leicht nach vorn lehnen.",
+        "Beide gestreckten Beine (oder ein Bein nach dem anderen) aus Hüftbeuger- und Quadrizepskraft vom Boden abheben.",
+        "Oben 1–2 s halten, kontrolliert ablegen, ohne Schwung und ohne dich mit den Händen hochzudrücken.",
+        "Schwerer machen: Hände weiter nach vorn setzen; leichter: Hände neben die Hüfte oder einbeinig arbeiten."
+      ],
+      "dose": {
+        "intermediate": "2 × 6 Wdh. (ggf. einbeinig), 30 s Pause",
+        "advanced": "2–3 × 6–8 Wdh., oben 2 s halten",
+        "expert": "3 × 8 Wdh. mit Händen weit vorn, oben 3 s halten"
+      },
+      "cues_de": [
+        "Knie durchgestreckt, Zehen anziehen",
+        "Brust bleibt lang, nicht nach hinten lehnen",
+        "Heben aus der Leiste, nicht aus dem Schwung"
+      ],
+      "mistakes_de": [
+        "Nach hinten lehnen oder mit den Händen abdrücken, um die Beine hochzubekommen.",
+        "Krämpfe im Hüftbeuger sind anfangs normal – kurz lösen, dann mit kleinerer Reichweite weitermachen, nicht durchquälen."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=P73oMXzukJ0",
+        "title": "Pancake - Leg Lifts",
+        "channel": "Lattice Performance Coaching"
+      },
+      "sources": [
+        "https://www.latticetraining.com/blog/flexibility-for-climbers-improve-your-pancake",
+        "https://www.youtube.com/watch?v=P73oMXzukJ0",
+        "https://latticetraining.com/blog/lattice-training-insights-flexibility-training-for-climbers"
+      ]
+    },
+    {
+      "id": "side-split-iso",
+      "name_de": "Side-Split-Isometrie (stehende Grätsche ohne Hände)",
+      "group": "hips",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Baut Kraft und Vertrauen in der weiten Grätsche auf, statt nur passiv hineinzuhängen. Wichtig für Stemmen in Verschneidungen, breite Volumen-Positionen und weit außen gesetzte Tritte am Board.",
+      "how_de": [
+        "Vorher Vorbeuge prüfen: Erreichst du mit gestreckten Knien nicht mit den Fingern den Boden, zuerst einen Block mit Fokus auf Vorbeuge/Pancake machen.",
+        "Aufwärmen mit Cossack Squats, dann auf rutschigem Boden oder mit Socken in die Grätsche stellen, Füße parallel, Zehen nach vorn.",
+        "Becken leicht nach vorn kippen und die Füße langsam auseinandergleiten lassen, bis ein kräftiger, kontrollierbarer Dehnreiz entsteht.",
+        "Position ohne Abstützen halten und dabei die Fersen gedanklich in den Boden und zueinander ziehen.",
+        "Einstiegsvarianten: Rücken an der Wand mit zwei Yogablöcken unter den Händen (wandgeführt) oder kniend mit einem ausgestreckten Bein (Half Side Split).",
+        "Zum Verlassen Hände aufsetzen und die Füße aktiv zusammenziehen."
+      ],
+      "dose": {
+        "beginner": "Wandgeführter Side Split 3 × 30 s, 30 s Pause",
+        "intermediate": "Half Side Split 3 × 30 s pro Seite, 30 s Pause",
+        "advanced": "Side Split ISO 3 × 30 s frei stehend, 30 s Pause; 1–2-mal pro Woche",
+        "expert": "Side Split ISO 3 × 30–45 s, in den letzten 5 s Fersen maximal zueinander ziehen"
+      },
+      "cues_de": [
+        "Becken nach vorn kippen, Gesäß leicht nach hinten",
+        "Füße ziehen aktiv zusammen – du hältst, du hängst nicht",
+        "Kniescheiben zeigen nach vorn, Knie bleiben gestreckt",
+        "Ruhig weiteratmen"
+      ],
+      "mistakes_de": [
+        "Schmerz an der Knie-Innenseite deutet auf nach außen kippende Füße, zu viel Außenrotation oder fehlende Kraft hin – Reichweite verkleinern und Technik prüfen.",
+        "Unkontrolliert tiefer rutschen: immer Hände bzw. Blöcke in Reichweite haben.",
+        "Zu oft trainieren – das ist Krafttraining und braucht rund 72 h Erholung."
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 30,
+        "rest": 0,
+        "reps": 1,
+        "sets": 3,
+        "setRest": 30
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=M3xFYDhPabo",
+        "title": "Side Split - ISO",
+        "channel": "Lattice Performance Coaching"
+      },
+      "sources": [
+        "https://latticetraining.com/blog/flexibility-for-climbers-how-to-improve-your-side-split",
+        "https://www.youtube.com/watch?v=M3xFYDhPabo",
+        "https://www.youtube.com/watch?v=ycUJFqPiaH8",
+        "https://www.youtube.com/watch?v=7v2QuJ5SshU",
+        "https://www.youtube.com/watch?v=lvErtoi9NCY"
+      ]
+    },
+    {
+      "id": "horse-stance",
+      "name_de": "Horse Stance (Reiterstand)",
+      "group": "hips",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Isometrische Kraft der Adduktoren und Hüftaußenrotatoren in weiter, gebeugter Position. Verbessert Froschpositionen, breites Stehen auf Volumen und das Halten der Hüfte an der Wand bei weiten Tritten.",
+      "how_de": [
+        "Fersen zusammen, Füße ausdrehen, dann abwechselnd über Ballen und Fersen nach außen wandern, bis du deutlich breiter als schulterbreit stehst.",
+        "In die Kniebeuge absenken, Knie zeigen exakt über die Fußspitzen, Oberkörper aufrecht.",
+        "So tief gehen, wie die Knie über den Füßen bleiben – Ziel sind waagerechte Oberschenkel.",
+        "Position halten und die Knie aktiv nach außen drücken.",
+        "Steigerung: nach 4–6 Wochen sauberer Körpergewichts-Holds leichte Zusatzlast (Kettlebell vor der Brust) oder langsame Horse-Stance-Squats mit 3 s Pause unten."
+      ],
+      "dose": {
+        "beginner": "3 × 20–30 s, 30 s Pause",
+        "intermediate": "3 × 30 s, 30 s Pause",
+        "advanced": "3 × 30–45 s oder Horse-Stance-Squats 3 × 6 mit 3 s Pause unten",
+        "expert": "3 × 45–60 s mit Zusatzlast oder gewichtete Horse-Stance-Squats 3 × 6 (3 s Pause)"
+      },
+      "cues_de": [
+        "Knie nach außen über die Zehen schieben",
+        "Becken unter den Oberkörper, Brust aufrecht",
+        "Boden mit den Füßen auseinanderreißen"
+      ],
+      "mistakes_de": [
+        "Knie fallen nach innen – Stand schmaler wählen oder weniger tief gehen.",
+        "Oberkörper kippt weit nach vorn und das Gesäß schiebt nach hinten: dann wird es eine Kniebeuge statt Horse Stance.",
+        "Zu früh Gewicht addieren."
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 30,
+        "rest": 0,
+        "reps": 1,
+        "sets": 3,
+        "setRest": 30
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=5oTeJP6JVSY",
+        "title": "Horse Stance Iso - Weighted",
+        "channel": "Lattice Performance Coaching"
+      },
+      "sources": [
+        "https://latticetraining.com/blog/flexibility-for-climbers-how-to-improve-your-side-split",
+        "https://www.youtube.com/watch?v=5oTeJP6JVSY",
+        "https://www.youtube.com/watch?v=mKUle2yBYq0",
+        "https://www.youtube.com/watch?v=3rwc6UPRzRo"
+      ]
+    },
+    {
+      "id": "cossack-squat",
+      "name_de": "Cossack Squat (tiefer Seitausfallschritt)",
+      "group": "hips",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Dynamische Öffnung der Adduktoren plus Sprunggelenks- und Hüftbeugung unter Last. Bereitet Rock-over, seitliche Hochtritte und das Aufstehen aus tiefen einbeinigen Positionen vor.",
+      "how_de": [
+        "Sehr breiter Stand, Füße leicht ausgedreht.",
+        "Gewicht 3 s lang auf ein Bein verlagern und tief in die Hocke sinken; das andere Bein bleibt gestreckt, dessen Zehen dürfen nach oben drehen.",
+        "Ferse des gebeugten Beins bleibt am Boden, Knie zeigt über die Fußspitze.",
+        "2 s unten halten, 2 s hochdrücken, 1 s in der Mitte – dann Seite wechseln.",
+        "Bei Bedarf an Wand, Stange oder Türrahmen festhalten; mit jeder Wiederholung etwas tiefer."
+      ],
+      "dose": {
+        "beginner": "3 × 4 Wdh. pro Seite mit Festhalten, 60 s Pause",
+        "intermediate": "3 × 4 Wdh. pro Seite, Tempo 3-2-2-1, 60 s Pause",
+        "advanced": "3 × 5–6 Wdh. pro Seite, Tempo 3-2-2-1, optional 5–10 kg vor der Brust",
+        "expert": "3 × 6 Wdh. pro Seite mit Zusatzlast, unten 3 s Pause"
+      },
+      "cues_de": [
+        "Ferse bleibt kleben",
+        "Brust aufrecht, Arme als Gegengewicht nach vorn",
+        "Langsam ablassen, ohne unten zu federn"
+      ],
+      "mistakes_de": [
+        "Ferse hebt ab oder Knie kippt nach innen – weniger tief gehen und Sprunggelenk separat mobilisieren.",
+        "Schwung statt Tempo.",
+        "Wenn Sprunggelenk oder Hüfte die Hocke blockieren: zunächst die Dehnung der hinteren Hüftkapsel (Figure-4 auf Block) als Alternative nutzen."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=XTGViKW-cjM",
+        "title": "Cossack Squat - Bodyweight",
+        "channel": "Lattice Performance Coaching"
+      },
+      "sources": [
+        "https://latticetraining.com/blog/flexibility-for-climbers-how-to-improve-your-side-split",
+        "https://www.youtube.com/watch?v=XTGViKW-cjM",
+        "https://www.youtube.com/watch?v=Te53hjTaHQg"
+      ]
+    },
+    {
+      "id": "hip-90-90-switches",
+      "name_de": "90/90-Sitz mit Seitenwechsel (Hüft-Innen- und Außenrotation)",
+      "group": "hips",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Mobilisiert Außenrotation des vorderen und Innenrotation des hinteren Beins in einer Bewegung. Gute Basis für Drop-Knees, Eindrehen und für seitliches Antreten mit geöffneter Hüfte.",
+      "how_de": [
+        "Am Boden sitzen, vorderes Bein 90° gebeugt vor dem Körper, hinteres Bein 90° gebeugt seitlich nach hinten; beide Knie etwa im rechten Winkel.",
+        "Aufrecht sitzen, Hände wenn nötig hinter dem Körper abstützen.",
+        "Mit langem Rücken über das vordere Schienbein nach vorn lehnen und 2–3 Atemzüge halten.",
+        "Aufrichten, Fersen am Boden lassen und beide Knie kontrolliert zur anderen Seite kippen (Scheibenwischer).",
+        "Mit der Zeit die Hände vom Boden lösen und die Wechsel freihändig ausführen."
+      ],
+      "dose": {
+        "beginner": "2 × 6 Wechsel pro Seite mit Händen am Boden",
+        "intermediate": "2 × 8 Wechsel pro Seite, je 2–3 Atemzüge Vorlehnen",
+        "advanced": "2 × 8 freihändige Wechsel pro Seite, je 5 s aktives Vorlehnen",
+        "expert": "2 × 8 freihändige Wechsel, am Ende je Seite hinteres Knie und Fuß 5 × anheben"
+      },
+      "cues_de": [
+        "Beide Sitzbeinhöcker Richtung Boden",
+        "Wirbelsäule lang, Brustbein nach vorn",
+        "Langsam drehen, Fersen bleiben am Platz"
+      ],
+      "mistakes_de": [
+        "Weit zur Seite wegkippen, um Hüftrotation zu umgehen – lieber erhöht auf einem Kissen sitzen.",
+        "Druck oder Schmerz im Knie: Winkel öffnen, Fuß weiter vom Körper weg platzieren."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=42s8tcC92qQ",
+        "title": "90/90 rotations for complete beginners 💪🏻",
+        "channel": "Tom Morrison"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=42s8tcC92qQ",
+        "https://www.youtube.com/watch?v=5OAsrNU_ZTE",
+        "https://www.youtube.com/watch?v=r3EY2roREOM"
+      ]
+    },
+    {
+      "id": "hip-ir-pails-rails",
+      "name_de": "90/90 Innenrotation: PAILs/RAILs und Lift-offs (Drop-Knee-Prep)",
+      "group": "hips",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Entwickelt aktive Hüft-Innenrotation an der Endposition. Das ist die limitierende Bewegung beim Drop-Knee und beim tiefen Eindrehen an steilen Wänden – und entlastet dabei das Knie.",
+      "how_de": [
+        "90/90-Sitz einnehmen, Fokus auf dem hinteren Bein; Oberkörper aufrecht und leicht zum hinteren Bein drehen, bis die Innenrotation spürbar ansteht.",
+        "60–90 s passiv in dieser Position bleiben und ruhig atmen.",
+        "PAILs: Unterschenkel und Fuß des hinteren Beins 10–15 s lang zunehmend fest in den Boden drücken (langsam auf etwa 70 % steigern).",
+        "RAILs: direkt anschließend 10–15 s lang versuchen, Fuß und Unterschenkel vom Boden abzuheben, ohne dass der Oberkörper wegkippt.",
+        "Lösen, etwas tiefer in die Position rutschen und einen zweiten Zyklus machen.",
+        "Abschluss: 5 langsame Lift-offs des hinteren Fußes, oben je 2 s halten."
+      ],
+      "dose": {
+        "intermediate": "1 Runde pro Seite: 60 s passiv, 2 × (10 s PAILs + 10 s RAILs), 5 Lift-offs",
+        "advanced": "2 Runden pro Seite: 90 s passiv, 2 × (15 s PAILs + 15 s RAILs), 5 Lift-offs mit 2 s Halten",
+        "expert": "2 Runden pro Seite wie Advanced, Lift-offs mit 5 s Halten; 1–2-mal pro Woche"
+      },
+      "cues_de": [
+        "Spannung langsam hochfahren, nie ruckartig",
+        "Rumpf fest, die Bewegung kommt nur aus dem Hüftgelenk",
+        "Auch wenn sich der Fuß kaum bewegt: Absicht zählt"
+      ],
+      "mistakes_de": [
+        "Krämpfe in der Hüftaußenseite sind typisch – Intensität reduzieren, nicht abbrechen.",
+        "Schmerz im Knie des hinteren Beins: Winkel vergrößern oder Knie unterpolstern; die Rotation darf nicht aus dem Knie kommen.",
+        "Mit dem Oberkörper ausweichen, statt die Hüfte arbeiten zu lassen."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=ZusKfH2AJCA",
+        "title": "Exercise of the Week: 90/90 Hip Internal Rotation PAILs/RAILs",
+        "channel": "Garrett McLaughlin"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=ZusKfH2AJCA",
+        "https://www.youtube.com/watch?v=C3SY7eL0WUk",
+        "https://www.youtube.com/watch?v=U0v9xxqEjfY",
+        "https://www.youtube.com/watch?v=fDqotYWElcs",
+        "https://latticetraining.com/blog/lattice-training-insights-flexibility-training-for-climbers"
+      ]
+    },
+    {
+      "id": "high-step-lift-offs",
+      "name_de": "High-Step-Drill (aktive Hüftbeugung an der Endposition)",
+      "group": "hips",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Trainiert die Kraft, das Knie aktiv zur Brust zu ziehen und den Fuß auf einen hohen Tritt zu setzen, ohne mit der Hand nachzuhelfen oder die Hüfte von der Wand zu drücken.",
+      "how_de": [
+        "Frontal vor Wand, Kasten oder Sprossenwand stehen, Standbein gestreckt, Hände leicht zur Balance anlegen.",
+        "Einen Fuß so hoch wie möglich auf Kasten oder Sprosse setzen – wenn nötig mit der Hand in die Position helfen.",
+        "Hand lösen und den Fuß aus eigener Kraft 2–5 cm von der Auflage abheben, 2–3 s halten, kontrolliert absetzen.",
+        "Standbein bleibt lang, Becken bleibt gerade; nicht nach hinten ausweichen.",
+        "Steigerung: Auflage höher wählen oder näher an die Wand treten; danach an der Wand 3–5 echte High Steps und Rock-over klettern."
+      ],
+      "dose": {
+        "beginner": "2 × 5 Lift-offs pro Seite auf Hüfthöhe, 2 s halten",
+        "intermediate": "3 × 5 Lift-offs pro Seite, 3 s halten",
+        "advanced": "3 × 5 pro Seite an maximaler Höhe: 3 s halten, 3 s lösen (3–4 Zyklen pro Wdh.-Block)",
+        "expert": "3 × 5 pro Seite an maximaler Höhe mit Zehen 10–15 cm vor der Wand, 5 s halten"
+      },
+      "cues_de": [
+        "Knie zur Achsel ziehen",
+        "Standbein und Rücken lang",
+        "Hüfte bleibt an der Wand",
+        "Bauch fest, damit das Becken nicht nach hinten kippt"
+      ],
+      "mistakes_de": [
+        "Rundrücken und nach hinten Lehnen täuschen Höhe vor, die du an der Wand nicht nutzen kannst.",
+        "Nur passiv mit der Hand hochziehen, ohne aktiv zu halten.",
+        "Klemmen vorn in der Leiste: Knie etwas nach außen führen und auch die Hüftstreckung des Standbeins (Hüftbeuger-Dehnung) trainieren."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=7hGt7NnOJB8",
+        "title": "High-Step Mobility Drill",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=7hGt7NnOJB8",
+        "https://www.youtube.com/watch?v=f86QMiSMaZ4",
+        "https://www.youtube.com/watch?v=w_EZ1CJkyN8",
+        "https://www.youtube.com/watch?v=3rwc6UPRzRo",
+        "https://www.hoopersbeta.com/library/research-correlates-key-movements-to-climbing-ability"
+      ]
+    },
+    {
+      "id": "hip-flexor-lunge",
+      "name_de": "Hüftbeuger-Dehnung im langen Ausfallschritt (mit Pulsen)",
+      "group": "hips",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Verbessert die Hüftstreckung des Standbeins. Die brauchst du, damit beim High Step die Hüfte nah an der Wand bleibt, und als Ausgleich zum vielen Sitzen und zu Kompressions-/Kernspannungsarbeit am Board.",
+      "how_de": [
+        "Halbkniestand, hinteres Knie gepolstert, vorderer Fuß weit vorn.",
+        "Gesäß der hinteren Seite anspannen und das Becken aufrichten (Schambein Richtung Bauchnabel), bevor du nach vorn schiebst.",
+        "Hüfte langsam nach vorn-unten schieben, Oberkörper aufrecht, bis es vorn in der Leiste des hinteren Beins zieht.",
+        "Entweder ruhig halten oder klein und kontrolliert pulsen (lange Ausfallschritt-Pulses).",
+        "Steigerung: Arm der hinteren Seite über Kopf strecken und zur Gegenseite neigen oder hinteren Fuß an Wand/Sofa hochstellen (Couch Stretch)."
+      ],
+      "dose": {
+        "beginner": "2 × 30 s pro Seite",
+        "intermediate": "2 × 45 s pro Seite oder 2 × 10 langsame Pulses",
+        "advanced": "2 × 60 s pro Seite im Couch Stretch, die letzten 10 s Gesäß maximal anspannen",
+        "expert": "2 × 60–90 s Couch Stretch pro Seite plus 5 × 5 s hinteres Knie aktiv in den Boden drücken"
+      },
+      "cues_de": [
+        "Erst Becken aufrichten, dann schieben",
+        "Gesäß der hinteren Seite fest",
+        "Rippen unten lassen, kein Hohlkreuz"
+      ],
+      "mistakes_de": [
+        "Ins Hohlkreuz ausweichen – dann dehnt der untere Rücken statt des Hüftbeugers.",
+        "Druckschmerz auf der Kniescheibe: dicker polstern oder Knie etwas weiter hinten ablegen."
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 45,
+        "rest": 10,
+        "reps": 2,
+        "sets": 2,
+        "setRest": 20
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=cJSve88Yp4M",
+        "title": "Hip Flexor Stretch | Do It Right!",
+        "channel": "Tom Merrick"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=cJSve88Yp4M",
+        "https://www.youtube.com/watch?v=mKUle2yBYq0",
+        "https://www.youtube.com/watch?v=w_EZ1CJkyN8",
+        "https://www.ukclimbing.com/articles/skills/lattice_training_series_with_tom_randall_-_part_4_conditioning+mobility-11396"
+      ]
+    },
+    {
+      "id": "forward-fold-pike",
+      "name_de": "Vorbeuge / Pike (Halten und Tempo-Variante)",
+      "group": "hamstrings",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Dehnt die gesamte Rückseite von Wade bis unterem Rücken. Voraussetzung für hohe Heel- und Toe-Hooks, Fuß-Hand-Matches und dafür, mit gestrecktem Bein weit zu spreizen.",
+      "how_de": [
+        "Hüftschmal stehen, Knie gestreckt, aber nicht überstreckt verriegelt.",
+        "Aus der Hüfte nach vorn klappen, Bauch Richtung Oberschenkel, Hände zu Boden, Blöcken oder einer Flasche als Zielpunkt führen.",
+        "20–30 s Spannung aufbauen, dann mit jeder Ausatmung etwas tiefer.",
+        "Zielpunkte steigern: Fingerspitzen, Knöchel, Fäuste, Handflächen, später erhöht auf einem Block stehend.",
+        "Tempo-Variante (einbeiniges Good Morning oder beidbeinig): 3 s senken, 3 s unten halten, aktiv aufrichten."
+      ],
+      "dose": {
+        "beginner": "3 × 30 s mit Blöcken als Ziel",
+        "intermediate": "3 × 45 s, Ziel Fingerspitzen bis Knöchel am Boden",
+        "advanced": "2 × 60 s plus 3 × 6 einbeinige Good Mornings mit 3 s Pause unten",
+        "expert": "2 × 60 s auf Erhöhung plus 3 × 6 einbeinige Good Mornings mit leichter Zusatzlast"
+      },
+      "cues_de": [
+        "Sitzbeinhöcker nach hinten-oben schieben",
+        "Bauch auf die Oberschenkel, nicht Stirn zum Knie",
+        "Gewicht auf dem ganzen Fuß, leicht Richtung Ballen"
+      ],
+      "mistakes_de": [
+        "Nur den Rücken rund machen, während das Becken hinten bleibt.",
+        "Wippen und Federn in die Endposition.",
+        "Brennen oder Kribbeln bis in Fuß oder Kniekehle ist Nervenspannung – Kinn anheben, Reichweite verkleinern."
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 45,
+        "rest": 0,
+        "reps": 1,
+        "sets": 3,
+        "setRest": 20
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=Qp3Vl7b_y6o",
+        "title": "Unlock Your Hamstrings! (FOLLOW ALONG)",
+        "channel": "Tom Merrick"
+      },
+      "sources": [
+        "https://latticetraining.com/blog/flexibility-for-climbers-how-to-improve-your-side-split",
+        "https://www.youtube.com/watch?v=Bx9WS9G4DhA",
+        "https://www.youtube.com/watch?v=3rwc6UPRzRo",
+        "https://www.youtube.com/watch?v=Qp3Vl7b_y6o",
+        "https://www.ukclimbing.com/articles/skills/lattice_training_series_with_tom_randall_-_part_4_conditioning+mobility-11396"
+      ]
+    },
+    {
+      "id": "jefferson-curl",
+      "name_de": "Jefferson Curl (belastetes Abrollen)",
+      "group": "hamstrings",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Belastetes Dehnen für hintere Oberschenkel und Rückenstrecker über die volle Wirbelsäulenbeugung. Baut Kraft in gerundeten, zusammengeklappten Positionen auf, wie sie bei weiten Heel Hooks, hohen Tritten unter Dächern und Sitzstarts vorkommen.",
+      "how_de": [
+        "Auf eine stabile Erhöhung stellen, sehr leichtes Gewicht (anfangs leere Hände oder 2–5 kg) vor dem Körper halten, Knie gestreckt.",
+        "Kinn zur Brust und Wirbel für Wirbel von oben nach unten abrollen, das Gewicht gleitet dicht an den Beinen entlang.",
+        "Unten 2–3 s entspannt in die Dehnung hängen, Knie gestreckt lassen.",
+        "Von unten nach oben Wirbel für Wirbel wieder aufrollen, der Kopf kommt zuletzt.",
+        "Last nur in kleinen Schritten über Wochen steigern; Reichweite geht immer vor Gewicht."
+      ],
+      "dose": {
+        "intermediate": "2 × 6 Wdh. ohne oder mit 2–5 kg, je 5 s ab, 2 s unten, 5 s auf",
+        "advanced": "3 × 5–6 Wdh. mit 5–15 kg, unten 3 s Pause; 1–2-mal pro Woche",
+        "expert": "3 × 5 Wdh. mit 15–25 % des Körpergewichts auf Erhöhung, unten 3–5 s Pause"
+      },
+      "cues_de": [
+        "Wirbel für Wirbel, so langsam wie möglich",
+        "Gewicht schleift an den Schienbeinen entlang",
+        "Gewicht auf dem Mittelfuß, nicht auf die Fersen zurücksetzen"
+      ],
+      "mistakes_de": [
+        "Zu schnell zu schwer – der Rücken braucht Wochen, um sich an belastete Beugung zu gewöhnen.",
+        "Mit geradem Rücken abklappen: Das ist ein Kreuzheben mit gestreckten Beinen, kein Jefferson Curl.",
+        "Bei akuten Rückenbeschwerden oder Bandscheibenproblemen weglassen bzw. vorher fachlich abklären."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=y_APeWo643w",
+        "title": "Jefferson Curl | Do It Right!",
+        "channel": "Tom Merrick"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=y_APeWo643w",
+        "https://www.youtube.com/watch?v=mKUle2yBYq0",
+        "https://www.youtube.com/watch?v=3rwc6UPRzRo"
+      ]
+    },
+    {
+      "id": "nordic-curl-regression",
+      "name_de": "Nordic Hamstring Curl – Regressionen (exzentrisch)",
+      "group": "hamstrings",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Exzentrische Kraft der hinteren Oberschenkel in Kniebeugung. Macht harte Heel Hooks belastbarer und schützt Hamstrings und Knie-Außenseite, wenn du an der Ferse voll ziehst.",
+      "how_de": [
+        "Auf einem Polster knien, Fersen unter Sprossenwand, schwerer Hantel oder von einem Partner fixiert, Zehen angezogen.",
+        "Hüfte gestreckt, Gesäß und Bauch anspannen – der Körper ist vom Knie bis zum Kopf eine Linie.",
+        "So langsam wie möglich nach vorn ablassen, zu Beginn nur über einen kleinen Bewegungsweg.",
+        "Regressionen: mit Band um die Brust entlasten, auf eine Erhöhung (Kasten, Sofa) ablassen oder nur die exzentrische Phase machen und mit den Händen zurückdrücken.",
+        "Bewegungsweg erst vergrößern, wenn du die Linie hältst und die Bremsphase mindestens 3–5 s kontrollierst."
+      ],
+      "dose": {
+        "intermediate": "2–3 × 4 langsame Exzentriken über Teilweg oder mit Band, 90 s Pause",
+        "advanced": "3 × 4–5 Exzentriken über 5 s bis zur Erhöhung, 2 min Pause; 1-mal pro Woche",
+        "expert": "3 × 5 volle Exzentriken über 5 s, optional einbeinig betont; 1–2-mal pro Woche"
+      },
+      "cues_de": [
+        "Hüfte bleibt gestreckt, Gesäß fest",
+        "Bremsen, so lange es geht",
+        "Zehen anziehen, Fersen drücken in den Widerstand"
+      ],
+      "mistakes_de": [
+        "In der Hüfte abknicken, um den Hebel zu verkürzen.",
+        "Zu viel Volumen am Anfang – Nordics machen starken Muskelkater; nie am Tag vor einer Heel-Hook-lastigen Session.",
+        "Krampf oder stechender Schmerz in der Kniekehle: abbrechen und leichtere Regression wählen."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=_e9vFU9-tkc",
+        "title": "How to Set Up, Perform, & Program Nordic Hamstring Curls (Progressions | Regressions | Alternatives)",
+        "channel": "E3 Rehab"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=_e9vFU9-tkc",
+        "https://www.hoopersbeta.com/library/proper-warm-up-for-climbers",
+        "https://www.hoopersbeta.com/library/hamstring-rehab-for-climbers",
+        "https://www.youtube.com/watch?v=wmeas5-mrFw"
+      ]
+    },
+    {
+      "id": "heel-hook-isometric",
+      "name_de": "Heel-Hook-Isometrie (Ferse in Kante ziehen)",
+      "group": "hamstrings",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kletterspezifische, gelenkschonende Vorbereitung für Heel Hooks: Hamstrings, Wade und Hüftrotatoren lernen, in der Hook-Position Spannung aufzubauen, bevor an der Wand volle Last darauf kommt.",
+      "how_de": [
+        "Rücklings am Boden oder seitlich an einer Kante liegen bzw. sitzen und eine Ferse auf Kasten, Bank oder großen Griff legen, Knie 60–90° gebeugt.",
+        "Zehen anziehen oder bewusst nach außen drehen – so, wie du den Hook an der Wand setzen würdest.",
+        "Ferse nach unten und zum Gesäß ziehen, als wolltest du die Kante zu dir heranziehen; Spannung über 2–3 s aufbauen.",
+        "Isometrisch halten, Hüfte dabei leicht anheben, um die Last zu erhöhen.",
+        "Steigerung: einbeinige Hüftbrücke aus der Hook-Position, Hamstring-Curls auf Slidern oder am Schlingentrainer; danach 3–4 leichte Heel-Hook-Boulder."
+      ],
+      "dose": {
+        "beginner": "3 × 10 s pro Seite bei ca. 50 % Anstrengung",
+        "intermediate": "3 × 10 s pro Seite bei 70 %, 30 s Pause",
+        "advanced": "3–4 × 10 s pro Seite bei 80–90 % in zwei Kniewinkeln (90° und fast gestreckt)",
+        "expert": "4 × 10 s pro Seite nahe maximal in zwei Kniewinkeln, plus 2 × 6 Slider-Curls einbeinig"
+      },
+      "cues_de": [
+        "Ferse ziehen, nicht nur ablegen",
+        "Spannung langsam hochfahren",
+        "Hüfte öffnen, Knie zeigt nach außen",
+        "Gesäß mit anspannen"
+      ],
+      "mistakes_de": [
+        "Explosiv in die Maximalspannung gehen – Hamstring-Zerrungen beim Heel Hook entstehen genau so.",
+        "Seitlicher Knieschmerz: Knie weniger stark einwärts drehen und Intensität senken."
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 10,
+        "rest": 20,
+        "reps": 3,
+        "sets": 2,
+        "setRest": 30
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=AweS4K8UeQg",
+        "title": "Heel Hook Isometric Exercise (How To)",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=AweS4K8UeQg",
+        "https://www.youtube.com/watch?v=b8sHOSukVi8",
+        "https://www.youtube.com/watch?v=wmeas5-mrFw",
+        "https://www.hoopersbeta.com/library/hamstring-rehab-for-climbers"
+      ]
+    },
+    {
+      "id": "thoracic-extension",
+      "name_de": "BWS-Streckung über Rolle oder Bank",
+      "group": "shoulders",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Mobilisiert die Streckung der Brustwirbelsäule gegen den typischen Kletterer-Rundrücken. Mehr BWS-Streckung bedeutet mehr nutzbare Überkopf-Reichweite und entspanntere Schultern bei langen Zügen und Hängen im Dach.",
+      "how_de": [
+        "Rücklings auf eine Faszienrolle legen, Rolle quer unter der mittleren Brustwirbelsäule, Hände stützen den Hinterkopf, Ellbogen zeigen nach vorn.",
+        "Gesäß am Boden, Rippen unten halten und den oberen Rücken langsam über die Rolle nach hinten strecken.",
+        "2–3 Atemzüge in der Streckung bleiben, dann aufrichten und die Rolle ein Segment höher oder tiefer legen.",
+        "Alternativ 1–2 min mit angehobenem Gesäß über die mittlere BWS rollen.",
+        "Variante ohne Rolle: kniend Ellbogen auf Bank oder Kasten, Hände hinter dem Kopf, Brustbein Richtung Boden sinken lassen."
+      ],
+      "dose": {
+        "beginner": "1–2 min rollen oder 5 Streckungen an 3 Segmenten",
+        "intermediate": "2 × 5 Streckungen an 3 Segmenten, je 2–3 Atemzüge",
+        "advanced": "2 × 6 Streckungen pro Segment plus 2 × 30 s Bank-Variante",
+        "expert": "Bank-Variante 3 × 45 s mit Stab in den Händen, am Ende 5 aktive Lift-offs"
+      },
+      "cues_de": [
+        "Rippen bleiben unten, die Bewegung kommt aus dem oberen Rücken",
+        "Ellbogen nah zusammen",
+        "In die Streckung einatmen, beim Ausatmen sinken"
+      ],
+      "mistakes_de": [
+        "Aus der Lendenwirbelsäule ins Hohlkreuz ausweichen.",
+        "Mit der Rolle auf Nacken oder unteren Rücken gehen."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=X2kVtZ2G2tw",
+        "title": "My Top 3: Thoracic Mobility Exercises",
+        "channel": "Tom Merrick"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=X2kVtZ2G2tw",
+        "https://www.hoopersbeta.com/library/how-to-increase-shoulder-mobility-underrated-skills-for-climbers",
+        "https://www.youtube.com/watch?v=dui0p1vU7_Q",
+        "https://www.youtube.com/watch?v=Hf67yKdR4Zo"
+      ]
+    },
+    {
+      "id": "thoracic-rotation",
+      "name_de": "BWS-Rotation (Open Book / Vierfüßler-Rotation)",
+      "group": "shoulders",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Verbessert die Drehung des Oberkörpers gegenüber dem Becken. Wichtig für eingedrehte Züge, weite Kreuzzüge und dafür, beim Weitergreifen die Hüfte an der Wand zu lassen.",
+      "how_de": [
+        "Seitlage, Knie und Hüfte 90° gebeugt, Knie liegen aufeinander und bleiben am Boden, Arme nach vorn gestreckt.",
+        "Den oberen Arm in großem Bogen nach hinten öffnen und mit Blick und Brustbein folgen.",
+        "Am Ende 2–3 Atemzüge bleiben, die Schulter Richtung Boden sinken lassen, dann zurück.",
+        "Vierfüßler-Variante: eine Hand an den Hinterkopf, Ellbogen erst zum gegenüberliegenden Handgelenk, dann weit zur Decke drehen.",
+        "Fortgeschritten: dieselbe Rotation aus der tiefen Hocke, ein Arm greift zur Decke."
+      ],
+      "dose": {
+        "beginner": "2 × 6 pro Seite, langsam",
+        "intermediate": "2 × 8 pro Seite mit 2–3 Atemzügen am Ende",
+        "advanced": "2 × 8 pro Seite plus 2 × 5 Rotationen aus der tiefen Hocke",
+        "expert": "2 × 8 pro Seite plus 2 × 5 Hock-Rotationen mit 5 s aktivem Halten am Ende"
+      },
+      "cues_de": [
+        "Knie bleiben zusammen und unten",
+        "Brustbein dreht, nicht nur der Arm",
+        "Dem Daumen nachschauen"
+      ],
+      "mistakes_de": [
+        "Das Becken dreht mit – dann rotiert die Lendenwirbelsäule statt der BWS.",
+        "Den Arm nach hinten reißen, statt die Rotation aus dem Brustkorb kommen zu lassen."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=MrmJeKHmOoY",
+        "title": "Improve Your Spinal Rotation (Beginner To Advanced)",
+        "channel": "Tom Merrick"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=MrmJeKHmOoY",
+        "https://www.youtube.com/watch?v=X2kVtZ2G2tw",
+        "https://www.youtube.com/watch?v=x-1OJW3OMb4"
+      ]
+    },
+    {
+      "id": "lat-stretch",
+      "name_de": "Lat-Dehnung (Butcher's Block / hängender Seitzug)",
+      "group": "shoulders",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Ein verkürzter Latissimus bremst die Schulterbeugung über Kopf. Die Dehnung gibt Reichweite für lange gestreckte Züge und entlastet die Schulter, wenn du voll ausgehängt bist.",
+      "how_de": [
+        "Butcher's Block: kniend, Ellbogen schulterbreit auf Bank oder Kasten, Stab oder Handflächen zusammen, Hände Richtung Nacken.",
+        "Gesäß nach hinten schieben und die Brust zwischen den Armen Richtung Boden sinken lassen, Rippen unten halten.",
+        "Einseitige Variante: Türrahmen oder Pfosten mit Daumen nach oben greifen, Bizeps nah am Ohr, Hüfte nach hinten-außen wegschieben und den Rumpf leicht aufdrehen.",
+        "20–30 s Spannung aufbauen, dann pro Ausatmung etwas tiefer.",
+        "Optional am Ende 5 s lang Ellbogen bzw. Hand aktiv in die Auflage drücken und nach dem Lösen nachsinken."
+      ],
+      "dose": {
+        "beginner": "2 × 30 s (einseitig: pro Seite)",
+        "intermediate": "2 × 30–45 s pro Seite",
+        "advanced": "3 × 45 s mit je 2 Contract-Relax-Zyklen (5 s drücken)",
+        "expert": "3 × 45–60 s, zusätzlich 10 langsame Butcher's-Block-Rocks mit leichtem Gewicht in den Händen"
+      },
+      "cues_de": [
+        "Rippen runter, kein Hohlkreuz",
+        "Achsel Richtung Boden",
+        "Gesäß zieht nach hinten"
+      ],
+      "mistakes_de": [
+        "Klemmen oben auf der Schulter statt Dehnung seitlich am Rücken: Arm etwas weiter außen ansetzen und Daumen nach oben drehen.",
+        "Ins Hohlkreuz fallen und damit die Dehnung umgehen."
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 40,
+        "rest": 10,
+        "reps": 2,
+        "sets": 2,
+        "setRest": 20
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=zFNwzRqY7H4",
+        "title": "My Top 3: Lat Stretches",
+        "channel": "Tom Merrick"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=zFNwzRqY7H4",
+        "https://www.hoopersbeta.com/library/how-to-increase-shoulder-mobility-underrated-skills-for-climbers",
+        "https://www.youtube.com/watch?v=6FBEC9SNIbY"
+      ]
+    },
+    {
+      "id": "pec-stretch",
+      "name_de": "Brustmuskel-Dehnung am Türrahmen (3 Armwinkel)",
+      "group": "shoulders",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Öffnet die Brust- und vordere Schultermuskulatur, die durch viel Zugtraining nach vorn zieht. Mehr Öffnung hilft bei weiten Gastons, Kreuzpositionen und breiten Kompressionszügen – und der Haltung.",
+      "how_de": [
+        "Unterarm bzw. Hand an Türrahmen, Wandecke oder Pfosten legen und in Schrittstellung einen kleinen Schritt nach vorn machen.",
+        "Position 1: Arm tief, etwa 45–60° seitlich vom Körper.",
+        "Position 2: 90/90 – Oberarm waagerecht, Ellbogen 90° gebeugt.",
+        "Position 3: Arm über Kopf, etwa 120° abgespreizt.",
+        "In jeder Position den Oberkörper leicht von der Armseite wegdrehen, bis ein sanfter Zug in Brust oder vorderer Schulter entsteht."
+      ],
+      "dose": {
+        "beginner": "Jede Position 1 × 30 s pro Seite",
+        "intermediate": "Jede Position 1 × 30–45 s pro Seite",
+        "advanced": "Jede Position 2 × 45 s pro Seite; mehrmals pro Woche",
+        "expert": "Jede Position 2 × 45 s, zusätzlich 5 × 5 s isometrisch in den Rahmen drücken"
+      },
+      "cues_de": [
+        "Schulterblatt hinten-unten lassen",
+        "Rumpf dreht weg, nicht der Arm nach hinten",
+        "Sanfter Zug, kein Druck in der Schulterspitze"
+      ],
+      "mistakes_de": [
+        "Schulterkopf schiebt nach vorn – dann wird die Gelenkkapsel statt des Muskels gedehnt.",
+        "Bei sehr beweglichen oder instabilen Schultern nicht in die Endposition hängen; erst Beweglichkeit testen.",
+        "Kribbeln im Arm: Winkel verändern oder Intensität zurücknehmen."
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 30,
+        "rest": 5,
+        "reps": 6,
+        "sets": 1,
+        "setRest": 0
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=ZhyBhad0zRM",
+        "title": "How to Increase Shoulder Mobility for Climbers",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://www.hoopersbeta.com/library/how-to-increase-shoulder-mobility-underrated-skills-for-climbers",
+        "https://www.youtube.com/watch?v=ZhyBhad0zRM",
+        "https://www.youtube.com/watch?v=rkhmE6FVeUk",
+        "https://www.hoopersbeta.com/library/shoulder-mobility-tests-for-rock-climbers"
+      ]
+    },
+    {
+      "id": "overhead-shoulder-flexion",
+      "name_de": "Überkopf-Mobilität: Pullover und Lift-offs an der Endposition",
+      "group": "shoulders",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kombiniert belastetes Dehnen und aktive Kraft in voller Schulterbeugung. Das überträgt sich auf maximale Reichweite, das Fixieren weit über Kopf und stabile Schultern, wenn du gestreckt an schlechten Griffen hängst.",
+      "how_de": [
+        "Pullover: rücklings auf Bank oder Boden, Knie angezogen, leichtes Gewicht oder Stab mit fast gestreckten Armen über der Brust halten.",
+        "Gewicht langsam hinter den Kopf absenken, Rippen bleiben unten; 3 s in der Dehnung pausieren und zurückführen.",
+        "Lift-offs: in Bauchlage Arme gestreckt nach vorn, Stirn am Boden, Daumen nach oben.",
+        "Hände bzw. Stab so hoch wie möglich vom Boden heben, ohne dass sich Brust oder Rippen heben; 5 s halten.",
+        "Mit sehr leichtem Gewicht beginnen und nur steigern, wenn die Rippen-Kontrolle bleibt."
+      ],
+      "dose": {
+        "intermediate": "2 × 10 Pullover (3 s Pause unten) mit 2–5 kg, 2 × 5 Lift-offs mit 3 s Halten",
+        "advanced": "3 × 10–12 Pullover (3 s Pause), 3 × 5 Lift-offs mit 5 s Halten",
+        "expert": "3–4 × 10–12 Pullover mit 5–10 kg (3 s Pause), 3–4 × 5 Lift-offs mit 5 s Halten"
+      },
+      "cues_de": [
+        "Rippen an den Boden kleben",
+        "Oberarme neben die Ohren",
+        "Lang nach hinten greifen, nicht nur absenken"
+      ],
+      "mistakes_de": [
+        "Hohlkreuz statt Schulterbeugung.",
+        "Ellbogen stark beugen und damit den Hebel verkürzen.",
+        "Zu schweres Gewicht – in dieser Position ist die Schulter verletzlich."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=6jyk1yswDaw",
+        "title": "Overhead Mobility Routine (End Range Strength)",
+        "channel": "Tom Merrick"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=6jyk1yswDaw",
+        "https://www.youtube.com/watch?v=6FBEC9SNIbY",
+        "https://www.youtube.com/watch?v=tf_FkzgLHp0"
+      ]
+    },
+    {
+      "id": "passive-active-hang",
+      "name_de": "Passives und aktives Hängen (Scapula Pull-ups)",
+      "group": "shoulders",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Passives Hängen dehnt Lat und Schulter über Kopf, der aktive Teil trainiert das Absenken und Stabilisieren der Schulterblätter. Zusammen ergeben sie Kontrolle beim Aushängen, Abfangen von Schwüngen und zu Beginn jedes Zugs.",
+      "how_de": [
+        "An Stange oder große Henkel hängen, schulterbreit, Arme gestreckt.",
+        "Passiv: Schultern Richtung Ohren steigen lassen, Rumpf leicht angespannt, ruhig atmen.",
+        "Aktiv: mit gestreckten Armen die Schulterblätter nach unten-hinten ziehen, Brust hebt sich leicht zur Stange.",
+        "Oben 1–2 s halten und kontrolliert wieder in den passiven Hang ablassen.",
+        "Als Mobility-Variante 10 s aktiv und 10 s passiv im Wechsel hängen."
+      ],
+      "dose": {
+        "beginner": "3 × 15–20 s passiv hängen (Füße dürfen entlasten) plus 2 × 5 Scap Pulls",
+        "intermediate": "2–3 × (10 s aktiv + 10 s passiv) × 2 plus 2 × 8 Scap Pulls",
+        "advanced": "2 × 10 Scap Pulls mit 2 s Halten, 2 × 30 s passiver Hang",
+        "expert": "2 × 6 einarmige Scap Pulls pro Seite (ggf. mit Fußunterstützung), 2 × 30 s passiver Hang"
+      },
+      "cues_de": [
+        "Arme bleiben lang, die Ellbogen beugen nicht",
+        "Schulterblätter in die Gesäßtaschen",
+        "Rippen unten, Beine leicht vor dem Körper"
+      ],
+      "mistakes_de": [
+        "Mit den Armen ziehen, statt nur das Schulterblatt zu bewegen.",
+        "Bei gereizten Fingergelenken an Stange oder großen Henkeln hängen, nicht an Leisten.",
+        "Ruckartig in den passiven Hang fallen lassen; bei Schulterschmerz oder Instabilität nur mit Fußunterstützung."
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 10,
+        "rest": 10,
+        "reps": 4,
+        "sets": 2,
+        "setRest": 60
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=6P9r0UAdwXM",
+        "title": "The Best Climbing Exercise You're Not Doing!",
+        "channel": "Training4climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=6P9r0UAdwXM",
+        "https://www.youtube.com/watch?v=6jyk1yswDaw",
+        "https://www.youtube.com/watch?v=lk3WTOF8SCY"
+      ]
+    },
+    {
+      "id": "wall-slides-band-angels",
+      "name_de": "Wall Slides / Band Angels",
+      "group": "shoulders",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Aktiviert untere Trapezmuskeln, Serratus und Außenrotatoren über den ganzen Überkopf-Bewegungsweg. Bereitet die Schulterblätter auf weite Züge und Gastons vor und wirkt der Zug-Dominanz entgegen.",
+      "how_de": [
+        "Mit dem Rücken an die Wand stellen, Füße eine Fußlänge vor der Wand, unterer Rücken, Schulterblätter und Hinterkopf haben Kontakt.",
+        "Arme in U-Halte: Ellbogen 90°, Handrücken und Unterarme so nah wie möglich an der Wand.",
+        "Arme langsam nach oben schieben, bis sie fast gestreckt sind, ohne dass Rippen oder Handrücken die Wand verlassen.",
+        "Ebenso langsam zurück, Schulterblätter am Ende nach hinten-unten ziehen.",
+        "Band-Variante: leichtes Band zwischen den Händen auf Spannung halten und dieselbe Engel-Bewegung frei stehend ausführen."
+      ],
+      "dose": {
+        "beginner": "2 × 8 langsam",
+        "intermediate": "2 × 10 mit 1 s Halten oben und unten",
+        "advanced": "2 × 10–12 als Band Angels mit leichtem Band",
+        "expert": "2 × 12 Band Angels, anschließend 2 × 8 Y-Lift-offs von der Wand"
+      },
+      "cues_de": [
+        "Rippen runter, unterer Rücken bleibt an der Wand",
+        "Handrücken streben zur Wand",
+        "Schultern weg von den Ohren"
+      ],
+      "mistakes_de": [
+        "Hohlkreuz, um die Arme an die Wand zu bekommen.",
+        "Schultern hochziehen.",
+        "Zu starkes Band – es soll aktivieren, nicht ermüden."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=W-N2Vp_7obs",
+        "title": "A Simple Shoulder Warm-Up for Climbers",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://www.hoopersbeta.com/library/the-best-shoulder-warm-up-for-climbers-with-dr-jason",
+        "https://www.youtube.com/watch?v=W-N2Vp_7obs",
+        "https://www.youtube.com/watch?v=Hf67yKdR4Zo"
+      ]
+    },
+    {
+      "id": "band-external-rotation",
+      "name_de": "Außenrotation mit Band („No Moneys“)",
+      "group": "shoulders",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Weckt die Rotatorenmanschette und die Schulterblatt-Rückzieher. Schützt die Schulter bei Gastons, Schulterzügen und weiten Kreuzzügen und gehört in jedes Warm-up vor dem Board.",
+      "how_de": [
+        "Aufrecht stehen, Band mit beiden Händen greifen, Ellbogen 90° gebeugt und dicht am Körper, Handflächen nach oben.",
+        "Schulterblätter nach hinten-unten ziehen, ohne die Schultern hochzuziehen.",
+        "Beide Unterarme langsam nach außen drehen, Ellbogen bleiben am Rumpf.",
+        "Am Endpunkt mindestens 1 s halten, langsam zurück.",
+        "Bandstärke bzw. Griffabstand so wählen, dass dich das Band bei etwa 45–60° Auswärtsdrehung stoppt; als kletterspezifische Ergänzung Außenrotation mit 90° abgespreiztem Oberarm."
+      ],
+      "dose": {
+        "beginner": "2 × 10 mit leichtem Band",
+        "intermediate": "2 × 10–12 mit 1 s Halten",
+        "advanced": "Warm-up: 1–2 × 10–12; als Kraftreiz 3–4 × 8 mit stärkerem Band",
+        "expert": "Warm-up: 1–2 × 12 plus 1 × 10 in 90°-Abduktion; als Kraftreiz 3–4 × 8 schwer"
+      },
+      "cues_de": [
+        "Ellbogen kleben an den Rippen",
+        "Schulterblätter zusammen und nach unten",
+        "Langsam, vor allem auf dem Rückweg"
+      ],
+      "mistakes_de": [
+        "Schultern zu den Ohren ziehen oder ins Hohlkreuz gehen.",
+        "Aus dem Handgelenk abknicken, statt aus der Schulter zu drehen.",
+        "Zu schweres Band mit Ruck."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=qv9nQhyuKzk",
+        "title": "Top 6 Exercises for Rotator Cuffs | Strong Shoulders Pt. 1",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://www.hoopersbeta.com/library/proper-warm-up-for-climbers",
+        "https://www.hoopersbeta.com/library/the-best-shoulder-warm-up-for-climbers-with-dr-jason",
+        "https://www.youtube.com/watch?v=qv9nQhyuKzk",
+        "https://www.youtube.com/watch?v=T_-kvmqCzbs",
+        "https://www.youtube.com/watch?v=KYxKrY0ewc4"
+      ]
+    },
+    {
+      "id": "shoulder-dislocates",
+      "name_de": "Schulter-Dislocates mit Stab oder Band (Gaston- und Reichweiten-Mobilität)",
+      "group": "shoulders",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Führt die Schulter kontrolliert durch Beugung, Rotation und Streckung. Verbessert die Beweglichkeit für Gastons, weite Schulterzüge und Mantles; als leicht gewichtete Variante ein bewährtes Tool für die Schultergesundheit.",
+      "how_de": [
+        "Stab, Besenstiel oder leichtes Band sehr breit greifen, Arme gestreckt vor der Hüfte.",
+        "Mit gestreckten Armen in großem Bogen über den Kopf bis hinter den Rücken führen.",
+        "Rippen unten und Kopf neutral halten; kurz in der engsten Stelle der Bewegung verweilen.",
+        "Auf demselben Weg zurück nach vorn.",
+        "Griff über Wochen schrittweise enger fassen; Fortgeschrittene nehmen einen leicht gewichteten Stab – die Intensität bleibt bei etwa 2 von 5."
+      ],
+      "dose": {
+        "beginner": "2 × 8 mit Band und sehr breitem Griff",
+        "intermediate": "2 × 10 mit Stab",
+        "advanced": "2–3 × 10 mit Stab, Griff etwas enger, oder 30–60 s am Stück im Warm-up",
+        "expert": "2–3 × 8–10 mit leicht gewichtetem Stab (1–2,5 kg), langsam"
+      },
+      "cues_de": [
+        "Arme lang lassen",
+        "Rippen runter, kein Hohlkreuz",
+        "Gleichmäßiges Tempo, beide Schultern gleichzeitig",
+        "Erkunden statt erzwingen"
+      ],
+      "mistakes_de": [
+        "Ellbogen beugen oder eine Schulter zuerst durchdrehen – dann ist der Griff zu eng.",
+        "Bei Instabilität, früheren Luxationen oder Schmerz vorn in der Schulter weglassen bzw. abklären.",
+        "Zu früh Gewicht addieren."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=vP8YmmRMz6I",
+        "title": "Shoulder Dislocates for Shoulder Flexibility",
+        "channel": "GMB Fitness (Praxis)"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=vP8YmmRMz6I",
+        "https://www.youtube.com/watch?v=2GZUL3H0Nv0",
+        "https://www.youtube.com/watch?v=TKBO0oFQfak",
+        "https://www.youtube.com/watch?v=tf_FkzgLHp0"
+      ]
+    },
+    {
+      "id": "forearm-flexor-stretch",
+      "name_de": "Unterarm-Beuger-Dehnung (FDP/FDS gezielt)",
+      "group": "wrists_fingers",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Dehnt die Fingerbeuger, die beim Bouldern die Hauptlast tragen. Sinnvoll nach der Session und an Ruhetagen, um Tonus zu senken und die Handgelenksstreckung für Mantles und Slopers zu erhalten.",
+      "how_de": [
+        "Arm nach vorn strecken, Ellbogen gestreckt, Handfläche zeigt nach vorn bzw. oben.",
+        "Mit der anderen Hand Handgelenk und alle Fingergrundgelenke sanft in die Streckung führen.",
+        "Tiefer Fingerbeuger (FDP): alle Fingergelenke inklusive der Endgelenke gestreckt halten.",
+        "Oberflächlicher Fingerbeuger (FDS): Grund- und Mittelgelenke gestreckt, die Endgelenke dürfen locker beugen.",
+        "Jeden Finger bei Bedarf einzeln nachdehnen; Ellbogen gebeugt verschiebt den Reiz auf handgelenksnahe Anteile."
+      ],
+      "dose": {
+        "beginner": "2 × 20–30 s pro Seite",
+        "intermediate": "2 × 30 s pro Seite, je einmal FDP- und FDS-Position",
+        "advanced": "2 × 30–45 s pro Seite je Position, danach Extensoren kurz gegendehnen",
+        "expert": "2 × 30–45 s pro Seite je Position plus einzelne Finger je 15 s"
+      },
+      "cues_de": [
+        "Ellbogen ganz strecken",
+        "Sanft und gleichmäßig, kein Wippen",
+        "Dehnreiz im Unterarm, nicht im Fingergelenk"
+      ],
+      "mistakes_de": [
+        "Direkt vor Maximalkraft-Belastung der Finger lange statisch dehnen – lieber danach oder am Ruhetag.",
+        "Bei gereiztem PIP-Gelenk den betroffenen Finger nicht in die Überstreckung hebeln; am Grundgelenk und an der Handfläche ansetzen.",
+        "Kribbeln oder Taubheit: Intensität reduzieren."
+      ],
+      "timer": {
+        "prep": 5,
+        "work": 30,
+        "rest": 5,
+        "reps": 4,
+        "sets": 1,
+        "setRest": 0
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=9aNmCJc-TeY",
+        "title": "Stretch Your Forearms the Right Way (Doctor of PT)",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://www.hoopersbeta.com/library/forearm-stretching-for-climbers",
+        "https://www.youtube.com/watch?v=9aNmCJc-TeY",
+        "https://www.youtube.com/watch?v=JcnOWfgnXM0",
+        "https://www.youtube.com/watch?v=XphfEu8y9oY"
+      ]
+    },
+    {
+      "id": "wrist-dynamic-3way",
+      "name_de": "Dynamische Handgelenk-Dehnung in 3 Richtungen",
+      "group": "wrists_fingers",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Mobilisiert die Handgelenksbeuger dynamisch in mehreren Winkeln. Gut im Warm-up vor Slopern, Mantles und Kompression sowie als tägliche Pflege für die Ellbogen-Innenseite.",
+      "how_de": [
+        "Arme auf Schulterhöhe nach vorn strecken, Handflächen aneinander, Finger weit gespreizt.",
+        "Handgelenke Richtung Bauch ziehen, bis die Dehnung an der Unterarm-Innenseite spürbar wird.",
+        "Die aneinandergelegten Hände langsam nach unten drehen (Fingerspitzen zeigen zum Boden).",
+        "Dann langsam nach oben drehen (Fingerspitzen zeigen zur Decke bzw. zum Körper).",
+        "Fließend zwischen den drei Positionen wechseln, ohne die Handballen voneinander zu lösen."
+      ],
+      "dose": {
+        "beginner": "2 × 10 Wdh.",
+        "intermediate": "3 × 15 Wdh., einmal täglich",
+        "advanced": "3 × 15 Wdh., zusätzlich vor Sloper- und Mantle-Sessions 1 × 15",
+        "expert": "3 × 15 Wdh. plus 2 × 20 s Stütz auf den Handflächen im Vierfüßlerstand mit Vor- und Zurückschaukeln"
+      },
+      "cues_de": [
+        "Handballen bleiben zusammen",
+        "Finger weit spreizen",
+        "Langsam und rund"
+      ],
+      "mistakes_de": [
+        "Schultern hochziehen und die Bewegung aus den Ellbogen holen.",
+        "In Schmerz auf der Kleinfinger-Seite des Handgelenks hineinarbeiten."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=uPVASOKqn50",
+        "title": "Dynamic Climbing Wrist Stretch",
+        "channel": "The Climbing Doctor"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=uPVASOKqn50",
+        "https://www.youtube.com/watch?v=CGu1uHI1XOg",
+        "https://www.youtube.com/watch?v=Lfiyx_DNl2w"
+      ]
+    },
+    {
+      "id": "wrist-extensor-strength",
+      "name_de": "Handgelenk-Stabilität: Extension, Pronation und Supination",
+      "group": "wrists_fingers",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kräftigt die Handgelenksstrecker und Drehmuskeln als Gegenspieler der Beuger. Stabile Handgelenke halten Slopers, Mantles und Kompression besser und beugen Reizungen an Ellbogen und Handgelenk vor.",
+      "how_de": [
+        "Unterarm auf Oberschenkel oder Bank ablegen, Hand ragt frei über die Kante, leichte Hantel oder Band greifen.",
+        "Extension: Handrücken zeigt nach oben, Handgelenk langsam heben, 1 s halten, über 3 s absenken.",
+        "Pronation/Supination: Hantel wie einen Hammer am Ende greifen und den Unterarm langsam nach innen und außen drehen.",
+        "Optional Radial-/Ulnarabduktion: Daumen oben, Hantel hammerartig halten, Handgelenk zur Daumen- und Kleinfingerseite neigen.",
+        "Gewicht so wählen, dass die letzten 2–3 Wiederholungen fordernd, aber sauber sind."
+      ],
+      "dose": {
+        "beginner": "2 × 12–15 pro Richtung mit 1–2 kg",
+        "intermediate": "2–3 × 12 pro Richtung, 3 s exzentrisch",
+        "advanced": "3 × 8–12 pro Richtung mit 3–6 kg, 2-mal pro Woche",
+        "expert": "3 × 8–10 pro Richtung schwer, zusätzlich Sloper-Halten mit schwerem Roller oder Block 3 × 10 s"
+      },
+      "cues_de": [
+        "Unterarm liegt ruhig auf",
+        "Langsam ablassen",
+        "Voller, schmerzfreier Bewegungsweg"
+      ],
+      "mistakes_de": [
+        "Mit Schwung aus Ellbogen oder Schulter arbeiten.",
+        "Direkt vor einer harten Session bis zur Ermüdung trainieren – besser danach oder am Ruhetag.",
+        "Schmerz auf der Kleinfinger-Seite des Handgelenks ignorieren."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=uKtlb-Etxg0",
+        "title": "How to Get Bulletproof Wrists in 15 Minutes",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=uKtlb-Etxg0",
+        "https://www.youtube.com/watch?v=03-Le-fMba8",
+        "https://www.youtube.com/watch?v=XhoFmwMM6Iw",
+        "https://www.youtube.com/watch?v=HypBP4vsj0o"
+      ]
+    },
+    {
+      "id": "finger-extensor-band",
+      "name_de": "Fingerstrecker mit Band (oder Reiseimer)",
+      "group": "wrists_fingers",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Trainiert die Fingerstrecker als Ausgleich zum ständigen Zugreifen. Fördert die Durchblutung, hält die Balance um Finger- und Ellbogengelenke und eignet sich als leichte Pflege-Einheit auch für gereizte Finger.",
+      "how_de": [
+        "Extensor-Band oder dickes Gummiband um Fingerspitzen und Daumen legen.",
+        "Alle Finger gleichzeitig langsam so weit wie möglich öffnen und spreizen.",
+        "1–2 s halten und kontrolliert zurückkehren.",
+        "Handgelenk dabei neutral bis leicht gestreckt halten.",
+        "Reiseimer-Alternative: Hand tief ins Reiskorn stecken und wiederholt öffnen, spreizen und drehen."
+      ],
+      "dose": {
+        "beginner": "2 × 15 pro Hand",
+        "intermediate": "2–3 × 15–20 pro Hand",
+        "advanced": "3 × 15–20 mit stärkerem Band oder 2–3 min Reiseimer",
+        "expert": "3 × 20 mit starkem Band plus 3 min Reiseimer, 2–3-mal pro Woche"
+      },
+      "cues_de": [
+        "Alle Finger gleichmäßig öffnen",
+        "Oben kurz halten",
+        "Unterarm-Rückseite soll warm werden"
+      ],
+      "mistakes_de": [
+        "Reiseimer oder Bänder als vollständiges Warm-up betrachten – sie ersetzen die progressive Fingerbelastung nicht.",
+        "Handgelenk abknicken lassen."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=j8ODTWfc4XI",
+        "title": "Finger Extensor Strength for Climbing",
+        "channel": "The Climbing Doctor"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=j8ODTWfc4XI",
+        "https://www.hoopersbeta.com/library/rice-buckets-and-rock-climbing-climbing-myths",
+        "https://www.youtube.com/watch?v=Pzzt0XK39SY",
+        "https://www.youtube.com/watch?v=JcnOWfgnXM0",
+        "https://www.youtube.com/watch?v=Vkf8-BF56gw"
+      ]
+    },
+    {
+      "id": "tendon-glides",
+      "name_de": "Sehnengleiten (Tendon Glides)",
+      "group": "wrists_fingers",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Bewegt die Beugesehnen durch ihre Sehnenscheiden und Ringbänder und die Fingergelenke durch den vollen Bewegungsweg. Idealer erster Schritt im Finger-Warm-up und tägliche Pflege bei steifen oder gereizten Fingern.",
+      "how_de": [
+        "Start: Finger gerade gestreckt.",
+        "Tischplatte: nur in den Grundgelenken beugen, Mittel- und Endgelenke bleiben gestreckt.",
+        "Gerade Faust: Fingerkuppen flach an den Handballen legen.",
+        "Hakenfaust: Mittel- und Endgelenke beugen, Grundgelenke gestreckt lassen.",
+        "Volle Faust: fest schließen – und nach jeder Position wieder vollständig öffnen und spreizen.",
+        "Zusätzlich das Handgelenk mitbeugen und -strecken; das vergrößert den Gleitweg der Sehnen."
+      ],
+      "dose": {
+        "beginner": "2 × 45 s oder 10 Zyklen pro Hand",
+        "intermediate": "3 × 45 s vor dem Klettern",
+        "advanced": "3 × 45 s vor dem Klettern, zusätzlich 1–2-mal täglich 10 Zyklen",
+        "expert": "3 × 45 s vor dem Klettern, an Ruhetagen 2–3-mal täglich 10 Zyklen"
+      },
+      "cues_de": [
+        "Jede Position bewusst und vollständig",
+        "Fester schließen, weiter öffnen",
+        "Zügig, aber kontrolliert"
+      ],
+      "mistakes_de": [
+        "Positionen nur andeuten – der Nutzen entsteht am Ende des Bewegungswegs.",
+        "Bei geschwollenem Gelenk gegen Schmerz in die volle Faust pressen; schmerzfrei so weit wie möglich arbeiten."
+      ],
+      "timer": {
+        "prep": 5,
+        "work": 45,
+        "rest": 15,
+        "reps": 3,
+        "sets": 1,
+        "setRest": 0
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=7F2Aaycq--g",
+        "title": "Finger Tendon Glide Warm-Up for Climbers",
+        "channel": "The Climbing Doctor"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=7F2Aaycq--g",
+        "https://www.hoopersbeta.com/library/proper-warm-up-for-climbers",
+        "https://www.youtube.com/watch?v=T_-kvmqCzbs",
+        "https://www.youtube.com/watch?v=JcnOWfgnXM0",
+        "https://www.frontiersin.org/articles/10.3389/fspor.2023.1185653/full"
+      ]
+    },
+    {
+      "id": "pip-joint-mobilisation",
+      "name_de": "PIP-Gelenk: sanfte Eigenmobilisation mit Traktion",
+      "group": "wrists_fingers",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Entlastet und mobilisiert ein steifes, gereiztes Fingermittelgelenk. Leichte Traktion mit kleinen Gleitbewegungen kann Steifigkeit senken und die Gelenkbeweglichkeit für offene und halb aufgestellte Griffe erhalten.",
+      "how_de": [
+        "Hand entspannt ablegen. Mit Daumen und Zeigefinger der anderen Hand das Grundglied direkt vor dem Mittelgelenk fixieren.",
+        "Mit der anderen Hand das Mittelglied umfassen und ganz leicht in Längsrichtung ziehen, sodass das Gelenk minimal Raum bekommt.",
+        "Unter dieser leichten Traktion kleine, rhythmische Vor-Zurück-Gleitbewegungen ausführen (etwa 1–2 pro Sekunde) oder sanften Druck rund 30 s halten.",
+        "Auch behutsam in Beugung und Streckung mobilisieren – immer im schmerzfreien Bereich.",
+        "Variante: Finger-Trap (Fingerfalle) über den Finger ziehen und als Griff für die Traktion nutzen.",
+        "Direkt danach aktiv bewegen: 10-mal gestreckte Hand → Hakenfaust."
+      ],
+      "dose": {
+        "beginner": "1–2 × 30–45 s pro betroffenem Gelenk, einmal täglich",
+        "intermediate": "3 × 45 s pro betroffenem Gelenk, einmal täglich",
+        "advanced": "3 × 45 s täglich über ca. 6 Wochen, danach 3-mal pro Woche",
+        "expert": "3 × 45 s täglich über ca. 6 Wochen, danach 3-mal pro Woche; zusätzlich vor jeder Session 1 × 45 s"
+      },
+      "cues_de": [
+        "Sanft – das ist Pflege, kein Training",
+        "Erst Zug, dann Gleiten",
+        "Kleine Amplitude, ruhiger Rhythmus",
+        "Danach aktiv durchbewegen"
+      ],
+      "mistakes_de": [
+        "Mit Kraft hebeln, seitlich knicken oder das Gelenk „knacken“ wollen.",
+        "In ein heißes, frisch stark geschwollenes Gelenk hineinarbeiten.",
+        "Keine Besserung nach 2–4 Wochen, zunehmende Schwellung, Blockaden, Instabilität oder Ruheschmerz: ärztlich bzw. beim Kletter-Physio abklären lassen."
+      ],
+      "timer": {
+        "prep": 5,
+        "work": 45,
+        "rest": 15,
+        "reps": 3,
+        "sets": 1,
+        "setRest": 0
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=_A0KXUZ2zAI",
+        "title": "Joint Mobilizations for Rock Climbing Synovitis",
+        "channel": "The Climbing Doctor"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=_A0KXUZ2zAI",
+        "https://theclimbingdoctor.com/swelling-of-the-finger-joints/",
+        "https://www.frontiersin.org/articles/10.3389/fspor.2023.1185653/full",
+        "https://frontiersin.org/articles/10.3389/fspor.2025.1497110/full"
+      ]
+    },
+    {
+      "id": "pip-load-management",
+      "name_de": "PIP-Gelenk: entlasten und dosiert wieder belasten",
+      "group": "wrists_fingers",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Belastungssteuerung für gereizte Fingermittelgelenke: Reizauslöser reduzieren, Gelenk beweglich halten und mit gelenkschonenden Griffen kontrolliert Last aufbauen, damit Crimps am Board langfristig wieder vertragen werden.",
+      "how_de": [
+        "Auslöser senken: Volumen und Intensität auf kleinen Leisten kürzen, voll aufgestellte Crimps vorerst meiden, kein Nachlegen bei warnendem Gelenk; bei akuter, deutlicher Schwellung 1–2 Wochen stark entlasten.",
+        "Griffwahl: offene Hand und hängende Drei-Finger-Position belasten das Mittelgelenk am wenigsten; halb aufgestellt nur dosiert und mit aktivem kleinen Finger.",
+        "Täglich bewegen: Sehnengleiten und sanfte PIP-Mobilisation; leichte Kompression (Selbsthaft-Bandage) und kurzes Kühlen können bei Schwellung helfen.",
+        "Sanft belasten: Füße am Boden, an 20–40-mm-Kante oder Block in offener Hand ziehen, Kraft langsam aufbauen; Start etwa 5–6 × 10 s mit mindestens 60 s Pause.",
+        "Steuern nach Reaktion: Schmerz während der Belastung höchstens 2–3 von 10 und am nächsten Morgen nicht mehr Schwellung oder Steifigkeit als zuvor – sonst eine Stufe zurück.",
+        "Über Wochen steigern: erst Last, dann kleinere Kanten, dann halb aufgestellt; gründliches Finger-Warm-up vor jeder Session beibehalten."
+      ],
+      "dose": {
+        "beginner": "Sanfte Pulls 5 × 10 s bei ca. 30–40 % Anstrengung, 60 s Pause, an 3 Tagen pro Woche",
+        "intermediate": "5–6 × 10 s bei ca. 50 %, 60 s Pause, an 3 Tagen pro Woche",
+        "advanced": "5–6 × 10 s offen, wöchentlich um etwa 5–10 % steigern, solange die 24-h-Reaktion ruhig bleibt",
+        "expert": "Wie Advanced; ab reizfreien 2 Wochen halb aufgestellte Pulls 3–4 × 10 s ergänzen und Board-Volumen stufenweise zurückholen"
+      },
+      "cues_de": [
+        "Die Reaktion am nächsten Morgen entscheidet",
+        "Offen greifen, Kraft langsam aufbauen",
+        "Lieber häufig und leicht als selten und hart",
+        "Kleinen Finger aktiv mitnehmen"
+      ],
+      "mistakes_de": [
+        "Wochenlang komplett pausieren und dann mit voller Board-Intensität wieder einsteigen.",
+        "Mit Schmerzmitteln weiterklettern und die Schwellung übergehen.",
+        "Anhaltende Schwellung über mehrere Wochen, Morgensteifigkeit, Blockieren oder Schmerz in Ruhe sind ein Fall für Ärztin/Arzt oder spezialisierte Physiotherapie (Ultraschall-Abklärung) – das hier ersetzt keine Diagnose."
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 10,
+        "rest": 60,
+        "reps": 6,
+        "sets": 1,
+        "setRest": 0
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=h-nOPJsBZz8",
+        "title": "Why Are My Finger Joints Swollen and What Can I Do About It?",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://www.hoopersbeta.com/library/why-are-my-finger-joints-swollen-and-what-can-i-do-about-it",
+        "https://www.youtube.com/watch?v=h-nOPJsBZz8",
+        "https://www.frontiersin.org/articles/10.3389/fspor.2023.1185653/full",
+        "https://frontiersin.org/articles/10.3389/fspor.2025.1497110/full",
+        "https://theclimbingdoctor.com/swelling-of-the-finger-joints/",
+        "https://www.youtube.com/watch?v=y4oLoOBeXSE",
+        "https://www.youtube.com/watch?v=Vkf8-BF56gw"
+      ]
+    },
+    {
+      "id": "forearm-self-massage",
+      "name_de": "Unterarm-Selbstmassage mit Ball",
+      "group": "wrists_fingers",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Senkt den Tonus der Fingerbeuger und -strecker und fördert die Durchblutung nach harten Sessions. Angenehme Ergänzung zu Dehnung und Sehnengleiten, wenn sich die Unterarme fest anfühlen.",
+      "how_de": [
+        "Unterarm mit der Innenseite auf einen Massageball (Lacrosse- oder Faszienball) auf Tisch oder Kasten legen.",
+        "Mit mäßigem Druck langsam vom Handgelenk Richtung Ellbogen rollen, die gesamte Beugerseite abdecken.",
+        "An festen Stellen 10–20 s bleiben und dabei Finger und Handgelenk langsam öffnen und schließen.",
+        "Unterarm drehen und die Streckerseite genauso bearbeiten.",
+        "Anschließend kurz dehnen oder Sehnengleiten anhängen."
+      ],
+      "dose": {
+        "beginner": "1 min pro Unterarmseite",
+        "intermediate": "1–2 min pro Arm, Beuger und Strecker",
+        "advanced": "2 min pro Arm nach harten Sessions und an Ruhetagen",
+        "expert": "2–3 min pro Arm, bis zu einmal täglich"
+      },
+      "cues_de": [
+        "Wohlweh, nicht Zähne zusammenbeißen",
+        "Langsam rollen",
+        "Finger dabei bewegen"
+      ],
+      "mistakes_de": [
+        "Direkt auf Knochen, Ellbogen-Innenseite (Nerv) oder ein gereiztes Gelenk drücken.",
+        "So hart massieren, dass blaue Flecken entstehen oder es am Folgetag mehr schmerzt.",
+        "Massage als Ersatz für Belastungssteuerung sehen – sie lindert, baut aber keine Belastbarkeit auf."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=JcnOWfgnXM0",
+        "title": "Finger Care For Climbers",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=JcnOWfgnXM0",
+        "https://www.youtube.com/watch?v=QFE96xxJ010",
+        "https://www.frontiersin.org/articles/10.3389/fspor.2023.1185653/full"
+      ]
+    },
+    {
+      "id": "ankle-dorsiflexion-mobility",
+      "name_de": "Sprunggelenk-Dorsalflexion: Wadendehnung in 3 Richtungen und Knie-vor-Mobilisation",
+      "group": "ankles",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Mehr Dorsalflexion heißt: Ferse tief auf Reibungstritten, Knie weit über den Fuß bei High Steps und Rock-over, stabiler Stand auf Platte und Volumen.",
+      "how_de": [
+        "Fußballen auf Keil, Stufe oder gerolltes Handtuch stellen, Ferse am Boden, hinteres Knie gestreckt.",
+        "Mit dem anderen Bein nach vorn treten: 20 s gerade, 20 s nach vorn-links, 20 s nach vorn-rechts.",
+        "Dann das hintere Knie 20–40° beugen und 30 s halten (tiefer Wadenmuskel).",
+        "Mobilisation: Fuß flach aufstellen, optional starkes Band von hinten tief um die Vorderseite des Sprunggelenks, Knie über die Zehen nach vorn schieben, Ferse bleibt unten.",
+        "3–5 s am Ende halten, zurück und wiederholen; das Knie zeigt dabei über die zweite bis dritte Zehe."
+      ],
+      "dose": {
+        "beginner": "Pro Seite 3 × 20 s gestreckt (3 Richtungen) plus 30 s gebeugt",
+        "intermediate": "Wie Beginner plus 6–8 Knie-vor-Mobilisationen mit 3–5 s Halten",
+        "advanced": "Komplette Abfolge 1–2 Runden pro Seite, 2–4-mal pro Woche; Dehnung bei Bedarf täglich",
+        "expert": "2 Runden pro Seite plus 2 × 30 s tiefe einbeinige Hocke mit Gewicht auf dem Knie"
+      },
+      "cues_de": [
+        "Ferse bleibt am Boden",
+        "Knie über die mittleren Zehen",
+        "Fußgewölbe aktiv, nicht einknicken"
+      ],
+      "mistakes_de": [
+        "Fuß dreht nach außen oder das Gewölbe kollabiert – das täuscht Beweglichkeit vor.",
+        "Klemmen vorn im Gelenk: Band-Mobilisation nutzen statt stärker zu dehnen.",
+        "Sehr bewegliche Sprunggelenke brauchen eher Kraft als Mobilisation."
+      ],
+      "timer": {
+        "prep": 5,
+        "work": 20,
+        "rest": 5,
+        "reps": 4,
+        "sets": 2,
+        "setRest": 15
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=HuEt_eNes3M",
+        "title": "Increase ANKLE MOBILITY & STRENGTH for Massive Footwork Gains",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://www.hoopersbeta.com/library/increase-ankle-mobility-amp-strength-for-massive-footwork-gains",
+        "https://www.youtube.com/watch?v=HuEt_eNes3M",
+        "https://www.youtube.com/watch?v=jy7SSbxcQnw",
+        "https://www.hoopersbeta.com/library/research-correlates-key-movements-to-climbing-ability",
+        "https://latticetraining.com/blog/why-is-flexibility-important-in-climbing"
+      ]
+    },
+    {
+      "id": "calf-raise-eccentric",
+      "name_de": "Wadenheben mit tiefem Fersen-Drop (exzentrisch)",
+      "group": "ankles",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Kraft über den vollen Bewegungsweg des Sprunggelenks: tiefe Ferse für Reibung, kräftiges Hochdrücken auf kleinen Tritten und aus tiefen Positionen, etwa am Ende eines Mantles. Zugleich belastete Wadendehnung.",
+      "how_de": [
+        "Mit den Fußballen auf Stufe oder Keil stellen, Fersen frei, leicht festhalten.",
+        "Beidbeinig so hoch wie möglich auf die Zehenspitzen drücken und oben kurz halten.",
+        "Langsam absenken, bis die Fersen deutlich unter Stufenniveau sind; unten kurz in die Dehnung.",
+        "Eine Wiederholung dauert etwa 8 s.",
+        "Steigerung: Zusatzgewicht, einbeinig, einbeinig mit Gewicht."
+      ],
+      "dose": {
+        "beginner": "2 × 12–15 beidbeinig",
+        "intermediate": "2 × 15 beidbeinig, ca. 8 s pro Wdh.",
+        "advanced": "3 × 10–12 einbeinig, langsam; 1–2-mal pro Woche",
+        "expert": "3 × 8–10 einbeinig mit Zusatzgewicht, unten 2 s Pause"
+      },
+      "cues_de": [
+        "Voller Weg: ganz hoch, ganz tief",
+        "Druck über Großzehenballen",
+        "Langsam ablassen"
+      ],
+      "mistakes_de": [
+        "Federn und halbe Wiederholungen.",
+        "Sprunggelenk kippt nach außen.",
+        "Achillessehnen-Schmerz: Umfang reduzieren und nicht in den tiefsten Punkt fallen lassen."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=mKUle2yBYq0",
+        "title": "The Bare Minimum Flexibility Routine for Climbers",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=mKUle2yBYq0",
+        "https://www.hoopersbeta.com/library/increase-ankle-mobility-amp-strength-for-massive-footwork-gains",
+        "https://www.youtube.com/watch?v=3rwc6UPRzRo",
+        "https://www.youtube.com/watch?v=E2gumQw4LhQ"
+      ]
+    },
+    {
+      "id": "warmup-pulse-raiser",
+      "name_de": "Pulse Raiser (Kreislauf hochfahren)",
+      "group": "warmup",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Hebt Puls, Muskel- und Sehnentemperatur an, bevor mobilisiert und belastet wird. Erster Baustein jedes Warm-ups (das R in RAMP) – macht alle folgenden Schritte wirksamer und die ersten Züge am Board sicherer.",
+      "how_de": [
+        "2–4 min lockere Ganzkörperbewegung wählen: Seilspringen, Hampelmänner, zügiges Treppensteigen, Rudern oder locker traben.",
+        "Tempo so, dass die Atmung deutlich schneller wird, du aber noch sprechen kannst.",
+        "Arme mit einbinden (Armkreisen, lockeres Schattenboxen), damit auch Schultern und Unterarme warm werden.",
+        "Ziel: dir ist spürbar warm, eventuell leichter Schweißfilm – nicht ermüden.",
+        "In kalten Hallen oder draußen länger machen und warme Kleidung anlassen."
+      ],
+      "dose": {
+        "beginner": "3–4 min locker",
+        "intermediate": "2–4 min",
+        "advanced": "2–3 min, bei Kälte 5 min",
+        "expert": "2–3 min, bei Kälte 5 min; zwischen langen Pausen in der Session 1 min wiederholen"
+      },
+      "cues_de": [
+        "Warm werden, nicht müde",
+        "Ganzer Körper, auch die Arme",
+        "Gleichmäßig atmen"
+      ],
+      "mistakes_de": [
+        "Überspringen, weil man motiviert ist und direkt ans Board will.",
+        "So intensiv, dass die Beine schon vor der Session vorermüdet sind."
+      ],
+      "timer": {
+        "prep": 5,
+        "work": 180,
+        "rest": 0,
+        "reps": 1,
+        "sets": 1,
+        "setRest": 0
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=J7XGwKBz-Zk",
+        "title": "Pre-Climbing Warm Up Routine: How to Warm-Up like a Pro!!!",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=J7XGwKBz-Zk",
+        "https://www.youtube.com/watch?v=WY3O2Xv2I-A",
+        "https://latticetraining.com/blog/the-fastest-and-best-way-to-warm-up-for-climbing",
+        "https://www.researchgate.net/publication/280945961_Jeffreys_I_2007_Warm-up_revisited_The_ramp_method_of_optimizing_warm-ups_Professional_Strength_and_Conditioning_6_12-18"
+      ]
+    },
+    {
+      "id": "warmup-dynamic-stretching",
+      "name_de": "Dynamisches Dehnen (Beinschwünge, Rotationen, Ausfallschritte)",
+      "group": "warmup",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Bringt Hüfte, Wirbelsäule und Schultern aktiv in die Bewegungsweiten, die in der Session gebraucht werden, ohne Kraft zu kosten. Verbessert die „kalte“ Beweglichkeit für High Steps, Drop-Knees und weite Züge vom ersten Boulder an.",
+      "how_de": [
+        "Beinschwünge vor und zurück, dann seitlich vor dem Körper kreuzend, mit Festhalten; Zehen leicht ausgedreht.",
+        "Tiefer Ausfallschritt mit Oberkörper-Rotation zum vorderen Knie, im Wechsel.",
+        "Seitliche Gewichtsverlagerungen in breiter Grätsche (flache Cossack-Shifts) und Hüftkreisen.",
+        "Armkreisen vorwärts und rückwärts, Arme weit öffnen und kreuzen, Rumpfrotationen.",
+        "Schwünge kontrolliert beginnen und die Reichweite über die Wiederholungen steigern; kletterspezifische Kicks (hoher Fuß nach vorn und zur Seite) zum Schluss."
+      ],
+      "dose": {
+        "beginner": "Je Übung 1 × 6–8 pro Seite, ca. 4 min",
+        "intermediate": "Je Übung 2 × 6 pro Seite, ca. 4–5 min",
+        "advanced": "Je Übung 2 × 6 pro Seite, ca. 5 min; in jedem Warm-up",
+        "expert": "Je Übung 2 × 6–8 pro Seite plus sessionspezifische Kicks, ca. 5 min"
+      },
+      "cues_de": [
+        "Kontrolliert schwingen, nicht schleudern",
+        "Jede Wiederholung etwas weiter",
+        "Rumpf stabil, Standbein lang"
+      ],
+      "mistakes_de": [
+        "Mit maximalem Schwung kalt in die Endposition reißen.",
+        "Stattdessen lange statische Holds der Zugmuskulatur direkt vor harten Versuchen."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=58fr4fxk5MA",
+        "title": "Dynamic Stretching Warm-Up (Follow Along)",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=58fr4fxk5MA",
+        "https://www.youtube.com/watch?v=pf-KM2eeKdg",
+        "https://www.youtube.com/watch?v=QWErHLEtloc",
+        "https://latticetraining.com/blog/lattice-training-insights-flexibility-training-for-climbers",
+        "https://pubmed.ncbi.nlm.nih.gov/26642915/",
+        "https://www.youtube.com/watch?v=t0Wyo1nvV8s"
+      ]
+    },
+    {
+      "id": "warmup-finger-ladder",
+      "name_de": "Progressives Finger-Warm-up (No-Hangs → Hang-Leiter)",
+      "group": "warmup",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Bereitet Beugesehnen, Ringbänder und Fingergelenke stufenweise auf Maximalkraft an kleinen Board-Leisten vor und aktiviert die Rekrutierung. Wichtigster Teil des Warm-ups vor steilem Bouldern – gerade bei empfindlichen PIP-Gelenken.",
+      "how_de": [
+        "Start mit Sehnengleiten und schnellem Öffnen/Schließen der Hand, bis die Unterarme warm werden.",
+        "No-Hangs: Füße am Boden, an 20–40-mm-Kante oder Block ziehen und die Kraft progressiv steigern – etwa 10 s ziehen, 5–6 Durchgänge, im Wechsel der Hände mit rund 60 s Pause pro Hand.",
+        "Erste Durchgänge leicht (ca. 30–50 %), letzte kurz und kräftig (ca. 80–90 %); zuerst offene Hand, dann halb aufgestellt.",
+        "Alternative Recruitment Pulls: pro Griffart 5 × 5 s so fest wie angenehm möglich mit 1 s Pause, 3–4 Sätze, bevorzugt einarmig.",
+        "Hang-Leiter am Board oder Fingerboard: große Griffe → 35 mm → 25 mm → 20 mm, je 5–10 s, Füße anfangs entlastend.",
+        "Griffarten der Session gezielt einbeziehen; voll aufgestellte Crimps erst am Schluss und nur, wenn die Gelenke ruhig sind."
+      ],
+      "dose": {
+        "beginner": "5 × 10 s No-Hangs pro Hand bis ca. 60 %, dann 3 Hänge à 10 s an großen Griffen",
+        "intermediate": "5–6 × 10 s No-Hangs pro Hand (30 → 80 %), dann Leiter über 3 Kantengrößen",
+        "advanced": "6 × 10 s No-Hangs pro Hand (30 → 90 %), Leiter über 3–4 Kantengrößen, je Griffart 1–2 Hänge",
+        "expert": "Wie Advanced, zum Schluss 2 × 5 s einarmige Recruitment Pulls nahe maximal pro Hand in den Griffarten des Projekts"
+      },
+      "cues_de": [
+        "Kraft über 2–3 s langsam aufbauen",
+        "Jeder Durchgang etwas fester",
+        "Schultern aktiv, Ellbogen leicht gebeugt",
+        "Offen vor aufgestellt"
+      ],
+      "mistakes_de": [
+        "Mit voller Kraft an kleinen Leisten starten oder die Stufen überspringen.",
+        "Das Warm-up zur Trainingseinheit machen – die Finger sollen wach, nicht müde sein.",
+        "Warnsignal im Gelenk übergehen: dann länger offen arbeiten und die Session-Griffe anpassen."
+      ],
+      "timer": {
+        "prep": 10,
+        "work": 10,
+        "rest": 25,
+        "reps": 12,
+        "sets": 1,
+        "setRest": 0
+      },
+      "video": {
+        "url": "https://www.youtube.com/watch?v=Vkf8-BF56gw",
+        "title": "✋CLIMBING FINGER WARM-UP✋ #ClimbingTraining#LatticeTraining #FingerStrength #FingerTraining",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=Vkf8-BF56gw",
+        "https://www.hoopersbeta.com/library/proper-warm-up-for-climbers",
+        "https://www.youtube.com/watch?v=JUdRNZ5_j7k",
+        "https://www.youtube.com/watch?v=yYA3kXgzMPM",
+        "https://www.youtube.com/watch?v=lk3WTOF8SCY",
+        "https://www.youtube.com/watch?v=Ze8JhH8nSWs"
+      ]
+    },
+    {
+      "id": "warmup-open-hip-wall-drill",
+      "name_de": "Wand-Drill: offene Hüfte, High Step und Drop-Knee",
+      "group": "warmup",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Überträgt die Mobilisation direkt in Kletterpositionen: Hüfte öffnen und zur Wand bringen, hoch antreten, eindrehen. Aktiviert die Hüftmuskulatur kletterspezifisch und schärft die Positionswahrnehmung vor harten Zügen.",
+      "how_de": [
+        "An senkrechter bis leicht überhängender Wand mit großen Griffen arbeiten.",
+        "Offene Hüfte: auf zwei weit auseinanderliegenden Tritten frontal stehen, Knie nach außen, Hüfte so nah wie möglich zur Wand schieben und wieder lösen.",
+        "High Step und Durchsteigen: Fuß auf Hüfthöhe oder höher setzen, Gewicht über den Fuß rocken, aufstehen und den anderen Fuß durchsteigen.",
+        "Drop-Knee: seitlich antreten, Knie nach innen-unten drehen, Hüfte an die Wand, kurz „sitzen“ und beidseitig wechseln.",
+        "Bewusst langsam klettern und jede Endposition 1–2 s halten."
+      ],
+      "dose": {
+        "beginner": "2 leichte Boulder oder Quergänge mit je 4–6 Positionen",
+        "intermediate": "2–3 leichte Boulder, jede Position 3–4-mal pro Seite",
+        "advanced": "3 min an leichtem Gelände, jede Position 4–5-mal pro Seite",
+        "expert": "3 min, zuletzt die Positionen an der Session-Wandneigung wiederholen"
+      },
+      "cues_de": [
+        "Hüfte zur Wand",
+        "Erst Position, dann Zug",
+        "Leise und präzise antreten"
+      ],
+      "mistakes_de": [
+        "Zu schweres Gelände wählen und dadurch hastig klettern.",
+        "Drop-Knee mit Ruck und voller Last auf dem eingedrehten Knie."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=MSaI-rBJgFA",
+        "title": "Open Hip Positions (Warm Up Drill)",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=MSaI-rBJgFA",
+        "https://www.youtube.com/watch?v=FzN01EhPqjc",
+        "https://www.youtube.com/watch?v=fDqotYWElcs",
+        "https://www.youtube.com/watch?v=U0v9xxqEjfY"
+      ]
+    },
+    {
+      "id": "warmup-boulder-pyramid",
+      "name_de": "Boulder-Pyramide leicht → hart mit Priming",
+      "group": "warmup",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Der Potentiate-Teil des Warm-ups: Bewegungsmuster, Griffarten und Intensität der Session schrittweise anfahren, bis die ersten harten Versuche wirklich bei 100 % starten. Wird am häufigsten ausgelassen und bringt am meisten.",
+      "how_de": [
+        "2–3 leichte Boulder (weit unter Limit) an großen Griffen, Fokus auf sauberen Füßen und Körperspannung.",
+        "2 mittlere Boulder, die Griffarten und Wandneigung der Session abbilden; 1–2 min Pause dazwischen.",
+        "1–2 fordernde Boulder knapp unter Session-Niveau – Stürze sind hier ausdrücklich in Ordnung.",
+        "Priming: 2–3 kurze, maximal entschlossene Einzelzüge oder Mini-Sequenzen im Stil des Projekts (z. B. weiter Zug an Leisten, Spannungszug), je 3–5 s.",
+        "Danach 3–5 min Pause, bevor der erste Limit-Versuch startet; Ablauf immer gleich halten, um die Tagesform einschätzen zu können."
+      ],
+      "dose": {
+        "beginner": "4–5 Boulder ansteigend, ca. 10 min",
+        "intermediate": "5–6 Boulder ansteigend, 1–2 min Pausen, ca. 10–12 min",
+        "advanced": "3 leichte, 2 mittlere, 1–2 harte Boulder plus 2 Priming-Züge, ca. 12–15 min",
+        "expert": "Wie Advanced, am Board: erst Henkel/große Griffe, dann Leisten in Session-Neigung; 2–3 Priming-Züge, danach 3–5 min Pause"
+      },
+      "cues_de": [
+        "Jeder Boulder eine Stufe härter",
+        "Im Warm-up schon einmal richtig wollen",
+        "Griffarten des Projekts antesten",
+        "Pausen einhalten"
+      ],
+      "mistakes_de": [
+        "Zu viele Boulder – das Warm-up wird zur Ausdauereinheit und die Haut ist verbraucht.",
+        "Von leicht direkt ans Limit springen und die mittlere Stufe auslassen.",
+        "Bei empfindlichen Fingergelenken schon in den ersten Bouldern kleine Leisten aufstellen."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=UWJCUMrss94",
+        "title": "Pre-Climbing Warm Up Routine PART 2: How to Warm-Up like a Pro!!!",
+        "channel": "Paradigm Climbing"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=UWJCUMrss94",
+        "https://www.youtube.com/watch?v=WY3O2Xv2I-A",
+        "https://www.youtube.com/watch?v=9FrGW3gab-k",
+        "https://latticetraining.com/blog/lattice-training-insights-warm-ups",
+        "https://www.researchgate.net/publication/280945961_Jeffreys_I_2007_Warm-up_revisited_The_ramp_method_of_optimizing_warm-ups_Professional_Strength_and_Conditioning_6_12-18"
+      ]
+    },
+    {
+      "id": "recovery-sleep",
+      "name_de": "Schlaf als wichtigste Regeneration",
+      "group": "recovery",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Im Schlaf werden Trainingsreize in Kraft und Technik umgesetzt und Sehnen- und Gelenkgewebe erholt sich. Zu wenig Schlaf drückt Maximalkraft, Koordination und Belastbarkeit – harte Board-Sessions lohnen sich nur ausgeschlafen.",
+      "how_de": [
+        "Als Orientierung 7–9 h pro Nacht anpeilen und den eigenen Bedarf beobachten; an harten Trainingstagen eher mehr.",
+        "Möglichst feste Schlaf- und Aufstehzeiten, auch am Wochenende.",
+        "Abends Licht und Bildschirm reduzieren, Schlafzimmer kühl, dunkel und ruhig halten.",
+        "Koffein ab dem frühen Nachmittag und späte, sehr harte Sessions meiden, wenn das Einschlafen leidet.",
+        "Nach kurzen Nächten Intensität und Volumen der Session reduzieren oder die Limit-Einheit verschieben; ein kurzer Mittagsschlaf (20–30 min) kann helfen."
+      ],
+      "dose": {
+        "beginner": "7–9 h pro Nacht, regelmäßige Zeiten",
+        "intermediate": "7–9 h pro Nacht, regelmäßige Zeiten",
+        "advanced": "7–9 h, vor Limit-Sessions und Felstagen mindestens 2 gute Nächte in Folge",
+        "expert": "8 h+ in harten Blöcken, Schlafdauer und Tagesform kurz mitprotokollieren"
+      },
+      "cues_de": [
+        "Regelmäßigkeit vor Perfektion",
+        "Nach schlechter Nacht: Technik statt Limit",
+        "Schlaf zählt zum Training"
+      ],
+      "mistakes_de": [
+        "Schlafmangel mit Koffein überdecken und trotzdem ans Limit gehen – das erhöht das Verletzungsrisiko für Finger und Schultern.",
+        "Anhaltende Ein- oder Durchschlafprobleme trotz Müdigkeit können ein Zeichen von Überlastung oder zu geringer Energiezufuhr sein."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=4ZGV3STqukw",
+        "title": "Climbing & Training: How to Manage Fatigue and Recovery!",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://researchonline.ljmu.ac.uk/id/eprint/16297/",
+        "https://www.youtube.com/watch?v=4ZGV3STqukw",
+        "https://www.youtube.com/watch?v=O_ezyUE3Wv8"
+      ]
+    },
+    {
+      "id": "recovery-protein-energy",
+      "name_de": "Protein und Energieverfügbarkeit (RED-S im Blick)",
+      "group": "recovery",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Ausreichend Energie und Eiweiß sind die Voraussetzung dafür, dass Muskeln, Sehnen, Ringbänder und Gelenke auf Training mit Anpassung statt mit Reizung reagieren. Chronisch zu wenig Energie (RED-S) kostet Leistung, Gesundheit und Verletzungsresistenz.",
+      "how_de": [
+        "Protein: als Richtwert etwa 1,4–2,0 g pro kg Körpergewicht und Tag, verteilt auf 3–5 Portionen von rund 20–40 g.",
+        "Vor und während langer Sessions Kohlenhydrate zuführen (z. B. Banane, Riegel, Brot), damit die Qualität der letzten Versuche nicht einbricht.",
+        "Nach der Session innerhalb der nächsten Mahlzeit Protein plus Kohlenhydrate essen.",
+        "Gewicht nicht in harten Trainings- oder Projektphasen reduzieren; wenn überhaupt, moderat, zeitlich begrenzt und fachlich begleitet.",
+        "Warnzeichen für zu geringe Energieverfügbarkeit ernst nehmen: anhaltende Müdigkeit, stagnierende oder fallende Leistung, häufige Infekte und Verletzungen, schlechter Schlaf, Stimmungstief, nachlassende Libido bzw. Zyklusstörungen."
+      ],
+      "dose": {
+        "beginner": "Protein ca. 1,4–1,6 g/kg/Tag, 3 Mahlzeiten mit je 20–40 g",
+        "intermediate": "Protein ca. 1,6 g/kg/Tag, Snack mit Kohlenhydraten bei Sessions über 90 min",
+        "advanced": "Protein 1,6–2,0 g/kg/Tag, 4 Portionen; an Trainingstagen bewusst mehr Kohlenhydrate",
+        "expert": "Protein 1,6–2,0 g/kg/Tag, Energiezufuhr an Belastung anpassen; Warnzeichen-Check alle paar Wochen"
+      },
+      "cues_de": [
+        "Erst genug Energie, dann Details",
+        "Zu jeder Mahlzeit eine Proteinquelle",
+        "Harte Session heißt mehr essen, nicht weniger"
+      ],
+      "mistakes_de": [
+        "Leichter sein mit stärker sein verwechseln und über Wochen im Defizit trainieren.",
+        "Symptome als reines Übertraining deuten: Laut IOC-Konsens überlappen sich die Anzeichen stark – zu niedrige Energie- oder Kohlenhydratzufuhr zuerst ausschließen.",
+        "Bei mehreren Warnzeichen ärztliche bzw. sporternährungs-fachliche Abklärung suchen."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=dW4Ht7mRNiQ",
+        "title": "What Should Climbers Eat? Fuelling, Protein and More | Nutrition for Climbing",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=dW4Ht7mRNiQ",
+        "https://www.youtube.com/watch?v=XpkWNOSrLyo",
+        "https://pubmed.ncbi.nlm.nih.gov/28642676/",
+        "https://pubmed.ncbi.nlm.nih.gov/37752011/",
+        "https://www.youtube.com/watch?v=9rhUNHYMo14"
+      ]
+    },
+    {
+      "id": "recovery-skin-care",
+      "name_de": "Hautpflege für Fingerkuppen",
+      "group": "recovery",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Gute Haut entscheidet am Board und am Fels oft über die Zahl der Qualitätsversuche. Ziel ist feste, elastische, glatte Haut ohne Risse, Kanten und Feuchtigkeit.",
+      "how_de": [
+        "Nach der Session Chalk gründlich abwaschen und Hände trocknen.",
+        "Abstehende Hautkanten und beginnende Flapper mit feiner Feile oder Schleifpapier glätten, bevor sie einreißen.",
+        "Abends eine dünne Schicht Handbalsam oder -creme auf die Kuppen; trockene, rissige Haut braucht mehr Pflege, weiche und schwitzige eher weniger.",
+        "Bei stark schwitzender Haut vor Projekttagen sparsam austrocknende Mittel nutzen und früh genug testen.",
+        "In der Session: Haut kühl und trocken halten, Griffe bürsten, Versuche begrenzen, sobald die Kuppen rosa und dünn werden; Splits tapen und entlasten."
+      ],
+      "dose": {
+        "beginner": "Nach jeder Session waschen, feilen bei Bedarf, abends dünn eincremen",
+        "intermediate": "Wie Beginner; Hautzustand vor harten Tagen prüfen",
+        "advanced": "Tägliche Kurzroutine (2 min); 2 Tage vor Felstagen kein Abrieb durch Volumen an rauen Griffen",
+        "expert": "Tägliche Routine, Hauttyp-spezifisch (trocknend oder pflegend), Versuche am Projekt nach Hautfenster planen"
+      },
+      "cues_de": [
+        "Kanten glätten, bevor sie reißen",
+        "Pflege abends, trocken zum Klettern",
+        "Aufhören, bevor die Haut durch ist"
+      ],
+      "mistakes_de": [
+        "Direkt vor dem Klettern eincremen.",
+        "Austrocknende Mittel überdosieren – die Haut wird glasig und reißt.",
+        "Mit offenem Split ohne Tape weiterklettern."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=vHtQrfeE4cE",
+        "title": "Ultimate Guide to Climbing Skin Care",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=vHtQrfeE4cE",
+        "https://www.youtube.com/watch?v=EARlVe_WxTo"
+      ]
+    },
+    {
+      "id": "recovery-active-rest-day",
+      "name_de": "Aktiver Ruhetag",
+      "group": "recovery",
+      "levels": [
+        "beginner",
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Leichte Bewegung fördert Durchblutung und Wohlbefinden, ohne Finger, Schultern und Nervensystem zusätzlich zu belasten. So startet die nächste Board-Session frisch – und der Ruhetag wird zum festen Platz für Mobility.",
+      "how_de": [
+        "20–40 min lockere Bewegung, an die du gewöhnt bist: Spazieren, lockeres Radfahren, Schwimmen – Gesprächstempo.",
+        "Eine Mobility-Routine aus dieser Bibliothek einbauen (Hüfte, Schulter/BWS oder Full Body).",
+        "Finger nur pflegen: Sehnengleiten, sanfte Gelenkmobilisation, lockere Massage – keine Zugbelastung.",
+        "Genug essen und trinken; Ruhetage sind keine Spartage.",
+        "Kurz Bilanz ziehen: Schlaf, Haut, Gelenke, Motivation – und die nächste Session danach ausrichten."
+      ],
+      "dose": {
+        "beginner": "1–2 Ruhetage zwischen Klettertagen, je 20–30 min locker bewegen",
+        "intermediate": "20–40 min locker plus 10–20 min Mobility",
+        "advanced": "Bei 3 Trainingstagen pro Woche: 2–3 aktive Ruhetage mit 15–30 min Mobility, 1–2 Tage ganz frei",
+        "expert": "Wie Advanced; vor Limit- oder Felstagen den Vortag bewusst ruhig halten (nur Spaziergang und leichte Mobility)"
+      },
+      "cues_de": [
+        "Bewegen ja, belasten nein",
+        "Finger haben frei",
+        "Erholt sein ist das Ziel"
+      ],
+      "mistakes_de": [
+        "Lange oder intensive Läufe, schweres Krafttraining oder „nur kurz“ ans Fingerboard – das ist kein Ruhetag.",
+        "Belastetes Dehnen und Nordics am Tag vor einer harten Session.",
+        "Ruhetage streichen, weil man sich gut fühlt."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=nzANLURHZoU",
+        "title": "Rest days: How many do you need? What should they contain?",
+        "channel": "Dave MacLeod"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=nzANLURHZoU",
+        "https://www.youtube.com/watch?v=4ZGV3STqukw",
+        "https://www.youtube.com/watch?v=HT8f6xJj588",
+        "https://www.youtube.com/watch?v=xUsCU23nE7Y"
+      ]
+    },
+    {
+      "id": "recovery-deload",
+      "name_de": "Deload: geplante Entlastung",
+      "group": "recovery",
+      "levels": [
+        "intermediate",
+        "advanced",
+        "expert"
+      ],
+      "purpose_de": "Eine Entlastungsphase baut aufgestaute Ermüdung ab, lässt Sehnen, Ringbänder und Gelenke nachziehen und macht den nächsten Trainingsblock erst produktiv. Besonders wichtig bei viel Board-Volumen und empfindlichen Fingergelenken.",
+      "how_de": [
+        "Planmäßig alle 4–6 Wochen oder reaktiv, sobald Warnzeichen auftreten.",
+        "Volumen um etwa 40–50 % senken: weniger Boulder, weniger Versuche, kürzere Sessions.",
+        "Etwas Intensität behalten: wenige hochwertige Züge nahe Limit halten die Kraft, ohne zu ermüden.",
+        "Zusatztraining (Fingerboard, Gewichte, belastetes Dehnen) deutlich reduzieren; lockere Mobility und Technikarbeit bleiben.",
+        "Warnzeichen für zu hohe Last: fallende Leistung über mehrere Sessions, anhaltend schwere Arme, gereizte Gelenke, schlechter Schlaf, Motivationsloch."
+      ],
+      "dose": {
+        "intermediate": "Alle 5–6 Wochen 5–7 Tage mit halbem Volumen",
+        "advanced": "Alle 4–6 Wochen 5–7 Tage mit ca. 50 % Volumen, 1–2 kurze Qualitäts-Sessions",
+        "expert": "Alle 3–5 Wochen bzw. nach Leistungstrips 5–10 Tage; zusätzlich reaktiv bei zwei oder mehr Warnzeichen"
+      },
+      "cues_de": [
+        "Weniger machen, nicht nichts",
+        "Qualität bleibt, Menge sinkt",
+        "Frisch in den nächsten Block"
+      ],
+      "mistakes_de": [
+        "Die Deload-Woche zum Projektieren nutzen, weil man sich plötzlich stark fühlt.",
+        "Warnzeichen wegtrainieren – gereizte Gelenke werden mit mehr Last nicht besser.",
+        "Komplett pausieren und danach direkt mit vollem Volumen einsteigen."
+      ],
+      "video": {
+        "url": "https://www.youtube.com/watch?v=Vv3MBxpuNfQ",
+        "title": "Do Climbers Really Need Deload Weeks?",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=Vv3MBxpuNfQ",
+        "https://www.youtube.com/watch?v=O_ezyUE3Wv8",
+        "https://www.youtube.com/watch?v=4ZGV3STqukw"
+      ]
+    }
+  ],
+  "routines": [
+    {
+      "id": "warmup-board-session",
+      "name_de": "Warm-up vor Board-Session (20–25 min)",
+      "purpose_de": "RAMP-Ablauf für steiles Bouldern: Kreislauf, Mobilisation, Schulter-Aktivierung, progressive Fingerbelastung und Boulder-Pyramide mit Priming. Finger werden bewusst langsam hochgefahren.",
+      "duration_min": 25,
+      "when_de": "vor dem Bouldern",
+      "follow_along_video": {
+        "url": "https://www.youtube.com/watch?v=WY3O2Xv2I-A",
+        "title": "The FASTEST and BEST Way to Warm Up for Climbing",
+        "channel": "Lattice Training"
+      },
+      "items": [
+        {
+          "exercise_id": "warmup-pulse-raiser",
+          "dose_de": "2–3 min"
+        },
+        {
+          "exercise_id": "tendon-glides",
+          "dose_de": "2 × 45 s"
+        },
+        {
+          "exercise_id": "warmup-dynamic-stretching",
+          "dose_de": "4 min, je Übung 2 × 6 pro Seite"
+        },
+        {
+          "exercise_id": "band-external-rotation",
+          "dose_de": "1 × 10–12 mit 1 s Halten"
+        },
+        {
+          "exercise_id": "passive-active-hang",
+          "dose_de": "2 × 6 Scap Pulls an großen Griffen"
+        },
+        {
+          "exercise_id": "warmup-finger-ladder",
+          "dose_de": "6 × 10 s No-Hangs pro Hand (30 → 90 %), dann 3–4 Hänge über kleiner werdende Kanten"
+        },
+        {
+          "exercise_id": "warmup-open-hip-wall-drill",
+          "dose_de": "2 min an leichtem Gelände"
+        },
+        {
+          "exercise_id": "warmup-boulder-pyramid",
+          "dose_de": "3 leichte, 2 mittlere, 1 harter Boulder plus 2 Priming-Züge, danach 3–5 min Pause"
+        }
+      ]
+    },
+    {
+      "id": "hip-mobility-rest-day",
+      "name_de": "Hüft-Mobility 20 min (Ruhetag)",
+      "purpose_de": "Fokus auf Hüftöffnung, Rotation und aktive Endposition für High Steps, Frosch und Drop-Knee. Mischung aus dynamisch, belastet und isometrisch.",
+      "duration_min": 20,
+      "when_de": "Ruhetag",
+      "follow_along_video": {
+        "url": "https://www.youtube.com/watch?v=FIXJZhQz4V8",
+        "title": "Lower Body Flexibility Follow Along | Lattice Training",
+        "channel": "Lattice Training"
+      },
+      "items": [
+        {
+          "exercise_id": "hip-90-90-switches",
+          "dose_de": "2 × 8 Wechsel pro Seite"
+        },
+        {
+          "exercise_id": "cossack-squat",
+          "dose_de": "3 × 4 pro Seite, Tempo 3-2-2-1"
+        },
+        {
+          "exercise_id": "frog-stretch",
+          "dose_de": "3 × 60 s mit 2 Contract-Relax-Zyklen"
+        },
+        {
+          "exercise_id": "pancake-tempo-hinge",
+          "dose_de": "3 × 4, Tempo 3-2-2-1"
+        },
+        {
+          "exercise_id": "horse-stance",
+          "dose_de": "3 × 30 s"
+        },
+        {
+          "exercise_id": "hip-ir-pails-rails",
+          "dose_de": "1 Runde pro Seite"
+        },
+        {
+          "exercise_id": "high-step-lift-offs",
+          "dose_de": "2 × 5 pro Seite, 3 s halten"
+        }
+      ]
+    },
+    {
+      "id": "shoulder-thoracic-15",
+      "name_de": "Schulter & BWS 15 min",
+      "purpose_de": "Öffnet Brustwirbelsäule, Lat und Brust und schließt mit aktiver Kontrolle über Kopf ab – für Reichweite, Gastons und gesunde Schultern.",
+      "duration_min": 15,
+      "when_de": "Ruhetag oder nach der Session",
+      "follow_along_video": {
+        "url": "https://www.youtube.com/watch?v=tf_FkzgLHp0",
+        "title": "6 Minute Shoulder Mobility - Follow Along | Lattice Training",
+        "channel": "Lattice Training"
+      },
+      "items": [
+        {
+          "exercise_id": "thoracic-extension",
+          "dose_de": "2 × 5 Streckungen an 3 Segmenten"
+        },
+        {
+          "exercise_id": "thoracic-rotation",
+          "dose_de": "2 × 8 pro Seite"
+        },
+        {
+          "exercise_id": "lat-stretch",
+          "dose_de": "2 × 40 s pro Seite"
+        },
+        {
+          "exercise_id": "pec-stretch",
+          "dose_de": "3 Winkel × 30 s pro Seite"
+        },
+        {
+          "exercise_id": "shoulder-dislocates",
+          "dose_de": "2 × 10 langsam"
+        },
+        {
+          "exercise_id": "overhead-shoulder-flexion",
+          "dose_de": "2 × 5 Lift-offs mit 5 s Halten"
+        },
+        {
+          "exercise_id": "wall-slides-band-angels",
+          "dose_de": "2 × 10"
+        }
+      ]
+    },
+    {
+      "id": "post-session-cooldown",
+      "name_de": "Post-Session Cooldown 10 min",
+      "purpose_de": "Kurzer, ruhiger Abschluss: Unterarme und Lat entspannen, Hüfte und Rückseite passiv dehnen. Niedrige Intensität, lange Ausatmung.",
+      "duration_min": 10,
+      "when_de": "nach der Session",
+      "follow_along_video": {
+        "url": "https://www.youtube.com/watch?v=6Dem3-OupYQ",
+        "title": "8 Minute Yoga Routine - For Climbing, Warm Ups and Cool Downs",
+        "channel": "Lattice Training"
+      },
+      "items": [
+        {
+          "exercise_id": "tendon-glides",
+          "dose_de": "1 × 45 s"
+        },
+        {
+          "exercise_id": "forearm-flexor-stretch",
+          "dose_de": "2 × 30 s pro Seite"
+        },
+        {
+          "exercise_id": "lat-stretch",
+          "dose_de": "1 × 40 s pro Seite"
+        },
+        {
+          "exercise_id": "hip-flexor-lunge",
+          "dose_de": "1 × 45 s pro Seite"
+        },
+        {
+          "exercise_id": "frog-stretch",
+          "dose_de": "2 × 60 s passiv"
+        },
+        {
+          "exercise_id": "forward-fold-pike",
+          "dose_de": "2 × 45 s"
+        }
+      ]
+    },
+    {
+      "id": "forearm-finger-care",
+      "name_de": "Unterarm- & Finger-Pflege 8 min",
+      "purpose_de": "Tägliche Pflege für beanspruchte Finger: Sehnen gleiten lassen, gereizte Mittelgelenke sanft mobilisieren, Unterarme lockern und die Strecker aktivieren.",
+      "duration_min": 8,
+      "when_de": "Ruhetag, abends oder nach der Session",
+      "follow_along_video": {
+        "url": "https://www.youtube.com/watch?v=JcnOWfgnXM0",
+        "title": "Finger Care For Climbers",
+        "channel": "Lattice Training"
+      },
+      "items": [
+        {
+          "exercise_id": "tendon-glides",
+          "dose_de": "3 × 45 s"
+        },
+        {
+          "exercise_id": "pip-joint-mobilisation",
+          "dose_de": "3 × 45 s pro betroffenem Gelenk"
+        },
+        {
+          "exercise_id": "forearm-self-massage",
+          "dose_de": "1 min pro Arm"
+        },
+        {
+          "exercise_id": "forearm-flexor-stretch",
+          "dose_de": "1 × 30 s pro Seite je FDP- und FDS-Position"
+        },
+        {
+          "exercise_id": "finger-extensor-band",
+          "dose_de": "2 × 15 pro Hand"
+        },
+        {
+          "exercise_id": "wrist-dynamic-3way",
+          "dose_de": "1 × 15"
+        }
+      ]
+    },
+    {
+      "id": "full-body-flexibility-30",
+      "name_de": "Full-Body Flexibility 30 min (Lattice-Stil)",
+      "purpose_de": "Kraftorientierte Beweglichkeitseinheit nach Lattice-Logik: aufwärmen, Tempo-Wiederholungen unter Last, Isometrien an der Endposition und aktive Gegenspieler. 1–2-mal pro Woche mit rund 72 h Abstand, nicht am Tag vor einer Limit-Session.",
+      "duration_min": 30,
+      "when_de": "Ruhetag",
+      "follow_along_video": {
+        "url": "https://www.youtube.com/watch?v=3rwc6UPRzRo",
+        "title": "A Performance Guide to Flexibility",
+        "channel": "Lattice Training"
+      },
+      "items": [
+        {
+          "exercise_id": "warmup-dynamic-stretching",
+          "dose_de": "3 min"
+        },
+        {
+          "exercise_id": "cossack-squat",
+          "dose_de": "3 × 4 pro Seite, Tempo 3-2-2-1"
+        },
+        {
+          "exercise_id": "pancake-tempo-hinge",
+          "dose_de": "3 × 4–6 mit 3 s Pause unten"
+        },
+        {
+          "exercise_id": "pancake-leg-lifts",
+          "dose_de": "2 × 6"
+        },
+        {
+          "exercise_id": "side-split-iso",
+          "dose_de": "3 × 30 s"
+        },
+        {
+          "exercise_id": "horse-stance",
+          "dose_de": "3 × 30–45 s"
+        },
+        {
+          "exercise_id": "jefferson-curl",
+          "dose_de": "2 × 6 leicht"
+        },
+        {
+          "exercise_id": "hip-flexor-lunge",
+          "dose_de": "2 × 45 s pro Seite"
+        },
+        {
+          "exercise_id": "ankle-dorsiflexion-mobility",
+          "dose_de": "1 Runde pro Seite"
+        },
+        {
+          "exercise_id": "overhead-shoulder-flexion",
+          "dose_de": "2 × 10 Pullover mit 3 s Pause"
+        },
+        {
+          "exercise_id": "thoracic-rotation",
+          "dose_de": "1 × 8 pro Seite"
+        }
+      ]
+    },
+    {
+      "id": "heel-hook-posterior-chain",
+      "name_de": "Heel-Hook- & Rückseiten-Block 15 min",
+      "purpose_de": "Belastbarkeit und Reichweite der hinteren Kette für harte Heel Hooks und hohe Füße: exzentrische Hamstring-Kraft, belastete Vorbeuge und Wadenarbeit.",
+      "duration_min": 15,
+      "when_de": "nach der Session oder am Krafttag, 1-mal pro Woche",
+      "follow_along_video": {
+        "url": "https://www.youtube.com/watch?v=mKUle2yBYq0",
+        "title": "The Bare Minimum Flexibility Routine for Climbers",
+        "channel": "Lattice Training"
+      },
+      "items": [
+        {
+          "exercise_id": "heel-hook-isometric",
+          "dose_de": "3 × 10 s pro Seite bei 70–90 %"
+        },
+        {
+          "exercise_id": "nordic-curl-regression",
+          "dose_de": "3 × 4 Exzentriken über 5 s"
+        },
+        {
+          "exercise_id": "jefferson-curl",
+          "dose_de": "3 × 5 mit 3 s Pause unten"
+        },
+        {
+          "exercise_id": "calf-raise-eccentric",
+          "dose_de": "2 × 12, ca. 8 s pro Wdh."
+        },
+        {
+          "exercise_id": "forward-fold-pike",
+          "dose_de": "2 × 45 s"
+        }
+      ]
+    }
+  ],
+  "assessments": [
+    {
+      "id": "forward-fold-test",
+      "name_de": "Vorbeuge-Test (Forward Fold)",
+      "how_de": "Nach dem Standard-Warm-up barfuß auf die Kante einer Stufe oder eines Kastens stellen, Füße zusammen, Knie gestreckt. Langsam nach vorn beugen, beide Hände übereinander so weit wie möglich nach unten schieben und den tiefsten Punkt 2 s ohne Wippen halten. Ein Maßband oder Lineal an der Kante zeigt die Position der Fingerspitzen. Drei Versuche, bester Wert zählt. Immer gleiche Tageszeit und gleiches Warm-up verwenden.",
+      "measure_de": "Abstand der Fingerspitzen zur Standfläche in cm (negativ = über der Kante, positiv = unter der Kante). Zusätzlich als Stufe notierbar: Fingerspitzen / Knöchel / Faust / Handfläche am Boden.",
+      "video": {
+        "url": "https://www.youtube.com/watch?v=Bx9WS9G4DhA",
+        "title": "Forward fold | Flexibility Assessment",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=Bx9WS9G4DhA",
+        "https://latticetraining.com/blog/flexibility-for-climbers-how-to-improve-your-side-split",
+        "https://latticetraining.com/blog/why-is-flexibility-important-in-climbing",
+        "https://www.latticetraining.com/myflex"
+      ]
+    },
+    {
+      "id": "side-split-test",
+      "name_de": "Side-Split-Test (Fersenabstand)",
+      "how_de": "Nach Aufwärmen (Cossack Squats, 1–2 Durchgänge Side-Split-Isometrie) auf glattem Boden in die Grätsche stellen, Füße parallel, Zehen nach vorn, Becken leicht nach vorn gekippt. Füße langsam auseinandergleiten lassen bis zur tiefsten Position, die 3 s ohne Abstützen der Hände kontrolliert gehalten werden kann. Abstand zwischen den Fersen-Innenseiten messen (Markierungen am Boden oder Maßband). Für den Vergleich über die Zeit durch die Körpergröße teilen. Alle 8–12 Wochen wiederholen.",
+      "measure_de": "Fersenabstand in cm sowie Quotient Fersenabstand ÷ Körpergröße (z. B. 0,85). Optional zusätzlich Abstand Schambein–Boden in cm (kleiner = beweglicher).",
+      "video": {
+        "url": "https://www.youtube.com/watch?v=M3xFYDhPabo",
+        "title": "Side Split - ISO",
+        "channel": "Lattice Performance Coaching"
+      },
+      "sources": [
+        "https://latticetraining.com/blog/flexibility-for-climbers-how-to-improve-your-side-split",
+        "https://www.youtube.com/watch?v=M3xFYDhPabo",
+        "https://latticetraining.com/blog/why-is-flexibility-important-in-climbing",
+        "https://www.youtube.com/watch?v=FRoPVuoZ-uA",
+        "https://www.youtube.com/watch?v=WsQOSW4a-k4"
+      ]
+    },
+    {
+      "id": "pancake-straddle-test",
+      "name_de": "Pancake-Test (Grätschwinkel und Vorbeuge in der Grätsche)",
+      "how_de": "Am Boden in die Grätsche setzen, Knie gestreckt, Kniescheiben nach oben, Becken aufgerichtet und Brust offen. Teil 1: maximalen Grätschwinkel zwischen den Beinen messen, bei dem aufrechtes Sitzen noch möglich ist (Winkelskala einer Matte, großer Winkelmesser oder Foto von oben). Teil 2: mit flachem Rücken aus der Hüfte nach vorn beugen und 2 s halten; Abstand vom Brustbein zum Boden messen oder die erreichte Stufe notieren (Ellbogen, Unterarme, Kopf, Brust, Bauch am Boden). Alle 12 Wochen wiederholen.",
+      "measure_de": "Grätschwinkel in Grad plus Abstand Brustbein–Boden in cm (kleiner = besser) bzw. erreichte Stufe.",
+      "video": {
+        "url": "https://www.youtube.com/watch?v=jxOzVxhUd2I",
+        "title": "Climbing Flexibility with the Flex Mat | Lattice Training",
+        "channel": "Lattice Training"
+      },
+      "sources": [
+        "https://www.latticetraining.com/blog/flexibility-for-climbers-improve-your-pancake",
+        "https://www.youtube.com/watch?v=jxOzVxhUd2I",
+        "https://latticetraining.com/blog/why-is-flexibility-important-in-climbing",
+        "https://www.latticetraining.com/myflex"
+      ]
+    },
+    {
+      "id": "high-step-foot-raise-test",
+      "name_de": "High-Step-Test (kletterspezifischer Foot Raise)",
+      "how_de": "Frontal vor einer Wand stehen, Zehen in festem Abstand zur Wand (in der Literatur 23 cm; entscheidend ist, immer denselben Abstand zu nutzen), Hände auf Schulterhöhe flach an der Wand. Einen Fuß ohne Schwung so hoch wie möglich an die Wand setzen, das Standbein bleibt gestreckt und die Ferse am Boden, die Hüfte bleibt frontal. Höhe der Großzehe über dem Boden markieren und messen. Drei Versuche pro Seite, bester Wert zählt. Für den Vergleich durch die Körpergröße teilen. Angelehnt an den High-Step-Test im Lattice MyFlex und an die in der Kletterforschung genutzten Foot-Raise-Tests; das exakte Lattice-Protokoll ist nicht öffentlich.",
+      "measure_de": "Tritthöhe in cm pro Seite sowie Quotient Tritthöhe ÷ Körpergröße; Seitendifferenz in cm.",
+      "video": {
+        "url": "https://www.youtube.com/watch?v=WsQOSW4a-k4",
+        "title": "Climbing Performance Mobility Assessment",
+        "channel": "The Climbing Doctor"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=WsQOSW4a-k4",
+        "https://theclimbingdoctor.com/climbing-performance-mobility-assessment/",
+        "https://latticetraining.com/blog/why-is-flexibility-important-in-climbing",
+        "https://www.latticetraining.com/myflex",
+        "https://www.hoopersbeta.com/library/research-correlates-key-movements-to-climbing-ability"
+      ]
+    },
+    {
+      "id": "shoulder-mobility-test",
+      "name_de": "Schulter-Mobilitätstest (Hände hinter dem Rücken)",
+      "how_de": "Aufrecht stehen, beide Hände zur Faust schließen. Eine Faust über die Schulter von oben die Wirbelsäule hinunter, die andere von unten die Wirbelsäule hinauf schieben – langsam, ohne Ruck und ohne Hohlkreuz. Eine zweite Person misst den Abstand zwischen beiden Fäusten; dann Seite wechseln. Als Referenz die eigene Handlänge (Handgelenksfalte bis Mittelfingerspitze) messen: Orientierung: Abstand bis etwa eine Handlänge gut, bis etwa anderthalb Handlängen mittel, darüber eingeschränkt; überlappende Fäuste sprechen für sehr bewegliche Schultern. Nicht in Schmerz hineinarbeiten. Optional für Fortgeschrittene: Innen- und Außenrotation bei 90° abgespreiztem Oberarm mit einer Winkel-App messen.",
+      "measure_de": "Abstand zwischen den Fäusten in cm pro Seite (obere Hand rechts / obere Hand links) und Verhältnis zur Handlänge; optional Außen- und Innenrotation in Grad.",
+      "video": {
+        "url": "https://www.youtube.com/watch?v=gsz3BLAkkQ4",
+        "title": "Essential Shoulder Mobility Tests for All Climbers",
+        "channel": "Hooper's Beta"
+      },
+      "sources": [
+        "https://www.hoopersbeta.com/library/shoulder-mobility-tests-for-rock-climbers",
+        "https://www.youtube.com/watch?v=gsz3BLAkkQ4",
+        "https://www.hoopersbeta.com/library/how-to-increase-shoulder-mobility-underrated-skills-for-climbers"
+      ]
+    },
+    {
+      "id": "ankle-knee-to-wall-test",
+      "name_de": "Sprunggelenk-Test (Knie zur Wand)",
+      "how_de": "Barfuß im Ausfallschritt vor eine Wand stellen, vorderer Fuß gerade zur Wand ausgerichtet. Das vordere Knie über die zweite Zehe nach vorn zur Wand schieben, die Ferse bleibt vollständig am Boden. Den Fuß schrittweise weiter von der Wand wegsetzen, bis das Knie die Wand gerade noch berührt, ohne dass die Ferse abhebt oder das Fußgewölbe einknickt. Abstand von der Großzehenspitze zur Wand messen, beide Seiten testen. Entspricht dem Weight-Bearing-Lunge-Test und bildet dieselbe Fähigkeit ab wie der Drop-Heel-Test im Lattice MyFlex.",
+      "measure_de": "Abstand Großzehe–Wand in cm pro Seite; Seitendifferenz in cm.",
+      "video": {
+        "url": "https://www.youtube.com/watch?v=U7woPNLUT3Q",
+        "title": "The Weight Bearing Lunge Test or Wall Test | Ankle Mobility",
+        "channel": "Physiotutors"
+      },
+      "sources": [
+        "https://www.youtube.com/watch?v=U7woPNLUT3Q",
+        "https://www.hoopersbeta.com/library/increase-ankle-mobility-amp-strength-for-massive-footwork-gains",
+        "https://latticetraining.com/blog/why-is-flexibility-important-in-climbing",
+        "https://www.hoopersbeta.com/library/research-correlates-key-movements-to-climbing-ability"
+      ]
+    }
+  ]
+}
