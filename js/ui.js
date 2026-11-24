@@ -177,6 +177,7 @@
       ${moved ? `<p class="hint">Verschoben von ${D.fmt(s.baseDate, { weekday: 'short', day: 'numeric', month: 'short' }).replace(/\.$/, '')}.</p>` : ''}
       <div class="actions">${s.kind === 'mobility' && s.blocks[0].routine && find('routine:' + s.blocks[0].routine)
         ? `<button class="btn btn-primary" data-act="routine-open" data-id="${e(s.blocks[0].routine)}" data-plan="${s.planId}">Routine öffnen</button>`
+        : Plan.dateOf(s) < D.today() ? `<button class="btn btn-primary" data-act="late-log" data-plan="${s.planId}">Nachtragen</button>`
         : `<button class="btn btn-primary" data-act="start" data-plan="${s.planId}">Session starten</button>`}
       <button class="btn btn-ghost" data-act="plan-detail" data-plan="${s.planId}">Details</button>
       <button class="btn btn-ghost" data-act="more" data-plan="${s.planId}" aria-label="Verschieben oder auslassen">⋯</button></div></article>`;
@@ -259,7 +260,15 @@
     let h = `<div class="date-head"><h1>${e(D.parse(today).toLocaleDateString('de-DE', { weekday: 'long' }))}</h1><span>${e(D.fmt(today, { day: 'numeric', month: 'long' }))}</span></div>`;
     h += phaseHead(w, today);
     if (!S().profile.onboarded) return h + onboarding();
-    if (S().draft) h += `<article class="card resume"><h3>Laufende Session: ${e(S().draft.title)}</h3><div class="actions"><button class="btn btn-primary" data-act="resume">Weiter</button><button class="btn btn-ghost" data-act="draft-discard">Verwerfen</button></div></article>`;
+    const dr = S().draft;
+    if (dr) h += dr.date < today
+      ? `<article class="card resume"><span class="eyebrow">Noch nicht abgeschlossen</span><h3>${e(dr.title)} · ${e(D.fmt(dr.date, { weekday: 'long' }))}</h3><p class="hint">Diese Session wurde gestartet, aber nie geloggt. Schließ sie ab – sie wird mit dem richtigen Datum eingetragen.</p><div class="actions"><button class="btn btn-primary" data-act="draft-finish">Abschließen & loggen</button><button class="btn btn-ghost" data-act="draft-discard">Verwerfen</button></div></article>`
+      : `<article class="card resume"><h3>Laufende Session: ${e(dr.title)}</h3><div class="actions"><button class="btn btn-primary" data-act="resume">Weiter</button><button class="btn btn-ghost" data-act="draft-finish">Loggen</button><button class="btn btn-ghost" data-act="draft-discard">Verwerfen</button></div></article>`;
+    // Einheiten der letzten Tage, die weder geloggt noch ausgelassen sind
+    const open = [];
+    for (let i = 1; i <= 4; i++) { const d = D.add(today, -i); Plan.plannedOn(d).forEach(s => { if (!s.optional && s.kind !== 'mobility' && !S().skips[s.planId] && !Store.sessionForPlan(s.planId) && !(dr && dr.planId === s.planId)) open.push({ d, s }); }); }
+    if (open.length) h += `<article class="card"><span class="eyebrow">Noch nicht eingetragen</span>${open.map(o => `<div class="open-row"><span><b>${e(o.s.title)}</b><em>${e(D.fmt(o.d, { weekday: 'long', day: 'numeric', month: 'short' }))}</em></span><span class="actions"><button class="btn btn-primary btn-sm" data-act="late-log" data-plan="${o.s.planId}">Nachtragen</button><button class="btn btn-ghost btn-sm" data-act="skip" data-plan="${o.s.planId}">Ausgelassen</button></span></div>`).join('')}
+      <p class="hint">Nachgetragene Einheiten zählen mit ihrem Datum in Last und ACWR.</p></article>`;
     h += morningCard(today) + retroCard(today);
     const planned = Plan.plannedOn(today);
     const main = planned.filter(s => s.kind !== 'mobility' || !s.optional), opt = planned.filter(s => s.kind === 'mobility' && s.optional);
@@ -352,6 +361,15 @@
       <button class="btn btn-primary btn-block" data-act="post-save">Speichern</button>
       <button class="btn btn-ghost btn-block" data-act="back-run">Zurück zu den Blöcken</button></div>`;
   }
+  // Geplante Einheit ohne Session-Modus eintragen (z. B. gestern trainiert, App nicht benutzt)
+  function postLate(s) {
+    const cs = Plan.counts(s), date = Plan.dateOf(s) <= D.today() ? Plan.dateOf(s) : D.today();
+    return `<div class="form" id="post" data-mode="late" data-plan="${s.planId}"><p class="hint">Trag ein, was du geschafft hast – die Dauer schätzt die App aus deinen Zahlen.</p>
+      ${field('Datum', `<input type="date" name="date" value="${date}" max="${D.today()}">`)}
+      ${cs.map(c => field(c.title, stepper('cnt_' + c.i, c.plan, c.unit, 'Plan ' + c.range))).join('')}
+      ${rpeField()}<p class="load-preview" id="load-preview"></p>${fingerField()}${moreFields({})}
+      <button class="btn btn-primary btn-block" data-act="late-save" data-plan="${s.planId}">Speichern</button></div>`;
+  }
   const FREE_KINDS = [['outdoor', 'Fels'], ['gym', 'Bouldern Halle'], ['limit', 'Board / Limit'], ['strength', 'Kraft'], ['skill', 'Technik locker'], ['other', 'Sonstiges']];
   function postFree(v) {
     return `<div class="form" id="post" data-mode="free"><p class="hint">Alles außerhalb des Plans zählt mit: Die Last fließt in den ACWR, und die nächsten geplanten Einheiten passen sich an.</p>
@@ -382,6 +400,11 @@
       Object.keys(f).forEach(k => { if (k.indexOf('cnt_') === 0 && f[k] != null) r.cnt[k.slice(4)] = f[k]; });
       r.e = Adapt.duration(s, r.cnt, d.startedAt, d.postAt);
       r.minutes = f.minutes || r.e.minutes; r.src = f.minutes ? 'u' : r.e.src; r.climbs = r.e.climbs;
+    } else if (mode === 'late') {
+      const s = Plan.findPlan(post.dataset.plan); r.cnt = {};
+      Object.keys(f).forEach(k => { if (k.indexOf('cnt_') === 0 && f[k] != null) r.cnt[k.slice(4)] = f[k]; });
+      r.e = Object.assign(Adapt.est(s, r.cnt), { src: 'e' });
+      r.minutes = f.minutes || r.e.minutes; r.src = f.minutes ? 'u' : 'e'; r.climbs = r.e.climbs;
     } else if (mode === 'free') {
       r.minutes = f.minutes || Adapt.freeMinutes(f.kind, f.climbs); r.src = f.minutes ? 'u' : 'e'; r.climbs = f.climbs || 0;
     } else { r.minutes = f.minutes; r.src = null; r.climbs = f.climbs; }
@@ -390,7 +413,7 @@
   function paintLoad(root) {
     const r = calcPost(root); if (!r) return;
     const p = $('#load-preview', root); if (!p) return;
-    const how = r.src === 'u' ? 'von dir eingetragen' : r.src === 'm' ? 'in der App gemessen' : r.src === 'e' ? (r.mode === 'plan' ? 'geschätzt aus deinen Zahlen' + (r.e.calibrated ? ', kalibriert an ' + r.e.calibrated + ' gemessenen Sessions' : '') : 'geschätzt aus deinen Climbs') : '';
+    const how = r.src === 'u' ? 'von dir eingetragen' : r.src === 'm' ? 'in der App gemessen' : r.src === 'e' ? (r.mode === 'plan' || r.mode === 'late' ? 'geschätzt aus deinen Zahlen' + (r.e.calibrated ? ', kalibriert an ' + r.e.calibrated + ' gemessenen Sessions' : '') : 'geschätzt aus deinen Climbs') : '';
     p.innerHTML = r.minutes ? `${r.src === 'e' ? '≈ ' : ''}<b>${r.minutes} min</b>${how ? ' (' + how + ')' : ''}${r.f.rpe ? ` · Load <b>${Math.round(r.minutes * r.f.rpe)}</b>` : ' · RPE wählen für die Last'}` : '';
   }
   function collectPost(root) {
@@ -425,9 +448,45 @@
     },
     'morning-save': () => { const f = readForm($('#morning')); S().mornings[D.today()] = { pain: f.pain || 0, stiff: f.stiff, swell: f.swell }; Store.save(); toast(f.pain >= 3 ? 'Notiert. Heute und morgen nicht steigern.' : 'Notiert.'); render(); },
     retro: (el) => { Store.updateSession(el.dataset.id, { color: el.dataset.k }); toast(el.dataset.k === 'green' ? 'Green Day gestapelt.' : 'Notiert – das ist Information, kein Urteil.'); render(); },
-    start: (el) => { if (S().draft && !confirm('Es läuft bereits eine Session. Verwerfen und neu starten?')) return; startSession(el.dataset.plan); },
+    start: (el) => {
+      const d = S().draft, id = el.dataset.plan;
+      $$('.sheet-wrap').forEach(closeSheet);
+      if (!d) return startSession(id);
+      if (d.planId === id) return renderSession();
+      // Statt einer Sperre: klar anbieten, was mit der offenen Session passieren soll
+      sheet('Es ist noch eine Session offen', `<p class="lead">„${e(d.title)}“ vom ${e(D.fmt(d.date, { weekday: 'long', day: 'numeric', month: 'short' }))} wurde gestartet, aber nicht geloggt.</p>
+        <button class="btn btn-primary btn-block" data-act="draft-finish">Erst diese abschließen & loggen</button>
+        <button class="btn btn-ghost btn-block" data-act="draft-replace" data-plan="${e(id)}">Verwerfen und die neue Session starten</button>
+        <p class="hint">Verwerfen betrifft nur die offene, nicht geloggte Session – bereits gespeicherte Einheiten bleiben.</p>`);
+    },
     resume: () => renderSession(),
-    'draft-discard': () => { if (confirm('Laufende Session verwerfen?')) { S().draft = null; Store.save(); renderSession(); render(); } },
+    'draft-finish': () => {
+      const d = S().draft; if (!d) return; $$('.sheet-wrap').forEach(closeSheet);
+      // Alte, nie beendete Session: Dauer nicht aus der Uhr nehmen, sondern schätzen
+      if (!d.postAt) d.postAt = d.date < D.today() || Date.now() - d.startedAt > 5 * 3600000 ? d.startedAt : Date.now();
+      d.stage = 'post'; Store.save(); renderSession(); const b = $('.session-body'); if (b) b.scrollTop = 0;
+    },
+    'draft-replace': (el) => { S().draft = null; Store.save(); $$('.sheet-wrap').forEach(closeSheet); startSession(el.dataset.plan); },
+    'draft-discard': (el) => {
+      if (el && !el.dataset.sure) { el.dataset.sure = '1'; el.textContent = 'Wirklich verwerfen?'; setTimeout(() => { if (document.contains(el)) { el.dataset.sure = ''; el.textContent = 'Verwerfen'; } }, 4000); return; }
+      S().draft = null; Store.save(); renderSession(); render(); toast('Offene Session verworfen.');
+    },
+    'late-log': (el) => {
+      const id = el.dataset.plan, s = Plan.findPlan(id), d = S().draft; if (!s) return;
+      if (Store.sessionForPlan(id)) { toast('Diese Einheit ist schon eingetragen.'); return; }
+      $$('.sheet-wrap').forEach(closeSheet);
+      if (d && d.planId === id) return A['draft-finish']();
+      sheet(s.title + ' nachtragen', postLate(s), { tall: true, mount: (w) => paintLoad(w) });
+    },
+    'late-save': (el) => {
+      const w = el.closest('.sheet-wrap'), r = collectPost(w); if (!r) return;
+      const s = Plan.findPlan(el.dataset.plan), f = r.f;
+      const log = Store.addSession({ date: f.date || Plan.dateOf(s), planId: s.planId, title: s.title, kind: s.kind, minutes: r.minutes, minSrc: r.src, rpe: f.rpe, rpePlan: s.rpe, climbs: r.climbs, counts: r.cnt, pump: f.pump, fingerEnd: f.fingerEnd,
+        hi: Math.round((s.hi || 0) * Math.min(1.5, r.e.ratio)), capMin: r.e.capMin, adaptF: 1, adaptT: false, late: true,
+        board: f.board, improved: f.improved, learned: f.learned, why: f.why, hangs: [], color: null });
+      Adapt.learnFrom(log, r.e); Store.save();
+      closeSheet(w); render(); toast(`Nachgetragen für ${D.fmt(log.date, { weekday: 'long' })} · Load ${Store.sessionLoad(log)}.`);
+    },
     'session-min': () => { $('#session').hidden = true; document.body.classList.remove('in-session'); render(); },
     'pre-go': () => {
       const f = readForm($('#pre')), d = S().draft; d.pre = { recovery: f.recovery, energy: f.energy, finger: f.finger }; d.goal = f.goal;
@@ -501,6 +560,7 @@
       const s = Plan.findPlan(el.dataset.plan);
       sheet(s.title, `<div class="form">${field('Auf anderen Tag verschieben', `<input type="date" name="to" value="${Plan.dateOf(s)}" min="${D.add(s.baseDate, -6)}" max="${D.add(s.baseDate, 6)}">`, 'Harte Fingertage brauchen mindestens 48 h Abstand.')}
         <button class="btn btn-primary btn-block" data-act="move-save" data-plan="${s.planId}">Verschieben</button>
+        <button class="btn btn-ghost btn-block" data-act="late-log" data-plan="${s.planId}">Schon gemacht – ohne Timer eintragen</button>
         <button class="btn btn-ghost btn-block" data-act="skip" data-plan="${s.planId}">Diese Einheit auslassen</button>
         ${s.low ? `<p class="hint"><b>Statt auslassen – Low-Energy-Version:</b> ${e(s.low)}</p>` : ''}</div>`);
     },

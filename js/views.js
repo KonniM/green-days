@@ -296,7 +296,8 @@
       <button class="btn btn-primary btn-block" data-act="mob-log" data-id="${e(r.id)}"${planAttr}>Als erledigt eintragen</button>`, { tall: true });
   };
   A['mob-log'] = (el) => {
-    const r = find('routine:' + el.dataset.id).item, today = D.today();
+    const r = find('routine:' + el.dataset.id).item, now = D.today(), pl = el.dataset.plan ? Plan.findPlan(el.dataset.plan) : null;
+    const today = pl && Plan.dateOf(pl) < now ? Plan.dateOf(pl) : now;   // vergangene Mobility-Einheit: mit ihrem Datum eintragen
     const plan = el.dataset.plan ? Plan.findPlan(el.dataset.plan) : Plan.plannedOn(today).find(s => s.kind === 'mobility' && s.blocks.some(b => b.routine === r.id) && !Store.sessionForPlan(s.planId));
     Store.addSession({ date: today, planId: plan && !Store.sessionForPlan(plan.planId) ? plan.planId : null, title: r.name_de, kind: 'mobility', minutes: r.duration_min + (Plan.ROUTINE_GOALS[r.id] ? 8 : 0), minSrc: 'e', rpe: 2, hi: 0, capMin: 0, hangs: [], color: null });
     $$('.sheet-wrap').forEach(closeSheet); UI.render(); toast('Mobility eingetragen.');
