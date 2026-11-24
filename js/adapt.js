@@ -56,6 +56,8 @@
     const y = S().mornings[D.add(date, -1)];
     if (y && y.pain > v) { v = y.pain; src = 'Finger gestern Morgen'; }
     S().sessions.forEach(s => { const d = D.diff(date, s.date); if (s.kind !== 'mobility' && d >= 0 && d <= 2 && s.fingerEnd > v) { v = s.fingerEnd; src = 'Finger nach der letzten Session'; } });
+    const inj = window.Injury ? Injury.signal(date) : null;
+    if (inj && inj.region === 'finger' && inj.pain > v) { v = inj.pain; src = 'Schmerz an der verletzten Stelle'; }
     return { v, src };
   }
   const real = () => S().sessions.filter(s => s.kind !== 'mobility');
@@ -104,6 +106,13 @@
     else if (fg.v >= 3) { f = Math.min(f, 0.8); out.noHard = !!HARD[s.kind]; why('down', `${fg.src}: ${fg.v}/10 – Umfang −20 %, nichts steigern.`); }
     if (pre && pre.recovery != null && pre.recovery <= 2) { f = Math.min(f, 0.8); why('down', 'Wenig erholt – Umfang −20 %, Qualität vor Menge.'); }
     else if (pre && pre.energy != null && pre.energy <= 2) { f = Math.min(f, 0.9); why('down', 'Wenig Energie – Umfang −10 %. Wird es nach dem Aufwärmen nicht besser, weiter kürzen.'); }
+    // 3b) Aktive Verletzung aus dem Verletzungs-Helfer
+    const inj = window.Injury ? Injury.signal(date) : null;
+    if (inj) {
+      const fingerInj = inj.region === 'finger';
+      if (inj.phase <= 1) { f = Math.min(f, 0.7); out.noHard = true; out.noHang = fingerInj; why('down', `Reha Phase 1 (${inj.name}, ${inj.where}): ${fingerInj ? 'keine Max Hangs, keine harten Fingerreize' : 'kein hartes Ziehen'}, Umfang −30 %. Die Kletterregeln stehen im Reha-Block.`); }
+      else if (inj.phase < inj.phases) { f = Math.min(f, 0.85); if (HARD[s.kind]) out.noHard = true; out.noHang = fingerInj && inj.pain >= 3; why('down', `Reha Phase ${inj.phase} (${inj.name}): Umfang −15 %, harte Züge nur schmerzfrei.`); }
+    }
     // 4) Green-Day-Verlauf
     const rated = real().filter(x => x.color && x.date < date).sort((a, b) => a.date < b.date ? 1 : -1);
     if (rated[0] && D.diff(date, rated[0].date) <= 7) {
@@ -146,12 +155,12 @@
   function today(planId, date) {
     const s = Plan.findPlan(planId); if (!s) return null;
     const d = S().draft;
-    if (d && d.planId === planId && d.f != null) return Object.assign({ adapt: d.adapt || { f: d.f, reasons: [] } }, Plan.scale(s, d.f));
+    if (d && d.planId === planId && d.f != null) return Object.assign({ adapt: d.adapt || { f: d.f, reasons: [] } }, Plan.scale(s, d.f, { noHang: !!(d.adapt && d.adapt.noHang) }));
     date = date || D.today();
     if (Plan.dateOf(s) !== date && !(d && d.planId === planId)) return s;       // nur für heute anpassen
     if (S().adaptOff[planId] || Store.sessionForPlan(planId)) return s;
     const a = factor(s, date);
-    return Object.assign({ adapt: a }, Plan.scale(s, a.f));
+    return Object.assign({ adapt: a }, Plan.scale(s, a.f, { noHang: !!a.noHang }));
   }
 
   // Vorschlag für die Hang-Last aus der letzten Einheit

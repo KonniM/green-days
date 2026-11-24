@@ -209,7 +209,7 @@
   function libCard(x) {
     const sub = x.one_de || x.purpose_de || x.concept_de || '';
     return `<button class="lib-card" data-act="lib-open" data-id="${e(x.id)}"><span class="lib-main"><b>${e(x.name_de)}</b><em>${e(sub)}</em></span>
-      <span class="lib-side">${x.clip ? '<span class="vid">▶ 10 s</span>' : x.video ? '<span class="vid">▶</span>' : ''}<span class="lv">${(x.levels || []).map(l => `<i class="lv-${l}" title="${LEVELS[l]}"></i>`).join('')}</span></span></button>`;
+      <span class="lib-side">${x.clip ? `<span class="vid">▶ ${UI.clipLen(x.clip)}</span>` : x.video ? '<span class="vid">▶</span>' : ''}<span class="lv">${(x.levels || []).map(l => `<i class="lv-${l}" title="${LEVELS[l]}"></i>`).join('')}</span></span></button>`;
   }
   function viewLib() {
     let h = `<div class="date-head"><h1>Wissen</h1><span>Übungen, Skills, Mobility</span></div>${seg('lib', ui.lib, [['ex', 'Kraft'], ['skill', 'Technik'], ['mob', 'Mobility'], ['pr', 'Prinzipien']])}`;

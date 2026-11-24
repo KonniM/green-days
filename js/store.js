@@ -44,6 +44,7 @@
     goals: {},           // goalId -> { step, logs: [{ date, step, value }] }
     tests: [],           // Standortbestimmungen: { date, bw, values: { finger, pull, core, board, cap, mob, tech, max } }
     skillHist: [],       // { id, date, v } – Verlauf der Technik-Selbsteinschätzung
+    injuries: [],        // Verletzungs-Helfer: { id, cond, region, hand, finger, loc, since, phase, pains[], done{}, closed }
     settings: { sound: true, mobilityCounts: false }
   });
 

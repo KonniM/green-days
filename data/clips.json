@@ -1,147 +1,165 @@
 {
  "pancake-tempo-hinge": {
   "video": "YliQaq8yvCE",
-  "start_s": 15,
-  "end_s": 25,
+  "start_s": 2,
+  "end_s": 24,
   "confidence": "high",
-  "note": "Standing wide-leg hinge down and up, repeated tempo folds",
-  "replaced": false
+  "note": "Whole 26 s video is this exercise; no transcript. Frames (1 s) show stepping wide at ~2 s, repeated folds until ~24 s, then standing up/end.",
+  "replaced": false,
+  "needs_sound": false
  },
  "pancake-leg-lifts": {
   "video": "P73oMXzukJ0",
-  "start_s": 18,
-  "end_s": 28,
+  "start_s": 3,
+  "end_s": 30,
   "confidence": "medium",
-  "note": "Seated straddle leaning forward, lifting; only coarse frame view",
-  "replaced": false
+  "note": "Whole 32 s video is this exercise: sits, opens straddle ~3 s, leans forward with leg lifts through ~30 s, then returns to cross-legged. No transcript; lifts hard to resolve in small frames.",
+  "replaced": false,
+  "needs_sound": false
  },
  "side-split-iso": {
   "video": "M3xFYDhPabo",
-  "start_s": 4,
+  "start_s": 2,
   "end_s": 14,
   "confidence": "high",
-  "note": "Standing side split hold, hands free",
-  "replaced": false
+  "note": "16 s video; slides feet apart from 2 s, holds wide stance with hands free to ~13 s, folds to floor at the end. No transcript.",
+  "replaced": false,
+  "needs_sound": false
  },
  "horse-stance": {
   "video": "5oTeJP6JVSY",
-  "start_s": 10,
-  "end_s": 20,
+  "start_s": 6,
+  "end_s": 36,
   "confidence": "high",
-  "note": "Weighted horse stance hold, wide squat",
-  "replaced": false
+  "note": "39 s video: picks up dumbbell ~5 s, widens stance and holds weighted horse stance ~8-36 s, stands and puts weight down ~37 s. 1 s frames; no transcript.",
+  "replaced": false,
+  "needs_sound": false
  },
  "cossack-squat": {
   "video": "XTGViKW-cjM",
-  "start_s": 12,
-  "end_s": 22,
+  "start_s": 3,
+  "end_s": 25,
   "confidence": "high",
-  "note": "Side lunge shifting weight side to side",
-  "replaced": false
+  "note": "27 s video: steps wide at ~2 s, alternates side-to-side deep lunges until ~25 s, then stands. 1 s frames; no transcript.",
+  "replaced": false,
+  "needs_sound": false
  },
  "hip-90-90-switches": {
   "video": "42s8tcC92qQ",
-  "start_s": 119,
-  "end_s": 129,
+  "start_s": 85,
+  "end_s": 113,
   "confidence": "medium",
-  "note": "Seated on couch, legs in 90/90 and rotating; couch demo not floor",
-  "replaced": false
+  "note": "Couch (not floor) variation: from ~85 s he moves up onto the sofa seat, leans over the front shin, sits up with hands, brings both feet down and switches to the other side ('90/90 switches' named at ~100 s), explanation to ~113 s. Earlier 20-85 s is the lower hip-by-hip rocking variant; 2 s frame interval so boundaries approximate.",
+  "replaced": false,
+  "needs_sound": true
  },
  "hip-ir-pails-rails": {
   "video": "ZusKfH2AJCA",
-  "start_s": 148,
-  "end_s": 158,
+  "start_s": 187,
+  "end_s": 232,
   "confidence": "medium",
-  "note": "Seated 90/90 with rotation work, presenter in position",
-  "replaced": false
+  "note": "Presenter in 90/90 rotated to back leg; full protocol is ~2 min hold (119-187 s) + 15 s PAILs (187-238) + RAILs (238-268), too long, so segment = start of PAILs ramp-up with coaching (187-232 s). Visuals nearly static, so audio is essential. Transcript-based, 5 s frame interval.",
+  "replaced": false,
+  "needs_sound": true
  },
  "hip-flexor-lunge": {
   "video": "cJSve88Yp4M",
-  "start_s": 65,
-  "end_s": 75,
+  "start_s": 66,
+  "end_s": 98,
   "confidence": "medium",
-  "note": "Half-kneeling lunge hip flexor stretch demo",
-  "replaced": false
+  "note": "Talking-head form-mistakes video; lunge demos are cut-ins. Segment covers the correct half-kneeling lunge with posterior pelvic tilt (green-check demo ~73-98 s, speech from ~60 s). No pulsing shown; the later bent-leg version (3:22+) is a different stretch. Frames 5 s apart, so edges approximate.",
+  "replaced": false,
+  "needs_sound": true
  },
  "forward-fold-pike": {
   "video": "Qp3Vl7b_y6o",
-  "start_s": 222,
-  "end_s": 232,
+  "start_s": 22,
+  "end_s": 55,
   "confidence": "medium",
-  "note": "Standing forward fold hold with hip tilt, countdown timer",
-  "replaced": false
+  "note": "Old window (222-232) was the stride-stance hinge drill, not the Pike. Chosen: standard standing Pike assessment 23-55 s (fold, fingertips/knuckles/palms progression, block option) per transcript and frames at 24/34/49 s. Timed block holds (countdown) are in the hinge/neural drills, not the plain Pike; ~5 s frame interval.",
+  "replaced": false,
+  "needs_sound": true
  },
  "heel-hook-isometric": {
   "video": "AweS4K8UeQg",
-  "start_s": 40,
-  "end_s": 50,
-  "confidence": "high",
-  "note": "Lying heel hook isometric on bench",
-  "replaced": false
+  "start_s": 17,
+  "end_s": 60,
+  "confidence": "medium",
+  "note": "Vertical 112 s video with burned-in captions, no transcript. 1-15 s intro (three angles 60/90/120 sitting), lying heel-on-bench isometric pulling down from ~17 s with glute/hamstring cues to ~60 s; rest repeats angles/toe variations. Capped at 45 s; no clean cycle boundary.",
+  "replaced": false,
+  "needs_sound": true
  },
  "jefferson-curl": {
   "video": "y_APeWo643w",
   "start_s": 246,
-  "end_s": 258,
-  "confidence": "high",
-  "note": "Jefferson curl on bench with weight, curling down and up",
-  "replaced": false
+  "end_s": 284,
+  "confidence": "medium",
+  "note": "Bench Jefferson curl b-roll: tuck chin and roll down vertebra by vertebra (~246 s), hold at bottom (~265-271), roll back up (~276-283), then talking head at ~285. Cut-in with talking head ~241 so start taken after it. 5 s frame interval, boundaries within ~3 s.",
+  "replaced": false,
+  "needs_sound": true
  },
  "frog-stretch": {
   "video": "6FBEC9SNIbY",
-  "start_s": 574,
-  "end_s": 584,
+  "start_s": 560,
+  "end_s": 605,
   "confidence": "medium",
-  "note": "Frog pose hold on mat, coach beside; contract-relax part (703+) not viewed",
-  "replaced": false
+  "note": "Prone frog pose on mat shown from getting in (~9:20) through hold while coach explains knee comfort/friction; supine weighted frog + contract-relax follows from 10:35 (not included, would exceed length). Frame interval ~10 s so boundaries approximate.",
+  "replaced": false,
+  "needs_sound": true
  },
  "nordic-curl-regression": {
   "video": "_e9vFU9-tkc",
-  "start_s": 133,
-  "end_s": 143,
+  "start_s": 123,
+  "end_s": 168,
   "confidence": "medium",
-  "note": "Nordic curl demo on bench with lowering; regressions mostly infographics",
-  "replaced": false
+  "note": "No transcript (throttled). 'How to perform Nordic curls' bench demo starts ~123 s (kneeling, lowering at 128-143), then REGRESSIONS infographic (148 s) with hip-bend regression footage at ~158-163 s; decrease-ROM and band-assisted variants come later (~173-207). Window capped at 45 s; 5 s frame interval so edges approximate.",
+  "replaced": false,
+  "needs_sound": true
  },
  "thoracic-extension": {
   "video": "X2kVtZ2G2tw",
-  "start_s": 442,
-  "end_s": 454,
+  "start_s": 437,
+  "end_s": 479,
   "confidence": "high",
-  "note": "T-spine extension over foam roller, lying",
-  "replaced": false
+  "note": "T-spine extension smash over foam roller: intro sentence at 7:17, demo with arms crossed ~436-479 s (breathing and core cues in speech), overhead-arm variation starts ~480 s and is excluded. Confirmed by frames at 436/446/466/476 and transcript.",
+  "replaced": false,
+  "needs_sound": true
  },
  "thoracic-rotation": {
   "video": "MrmJeKHmOoY",
-  "start_s": 228,
-  "end_s": 240,
-  "confidence": "high",
-  "note": "Quadruped thoracic rotation, hand behind head",
-  "replaced": false
+  "start_s": 150,
+  "end_s": 195,
+  "confidence": "medium",
+  "note": "Side-lying/supine thoracic circle (open-book style): knees tucked (2:25), reach forward and draw the arm in a big arc (2:31 onward), pause with breath at the restriction (3:02-3:14), hand tracking floor (3:14-3:25 ends ~3:30). Old window 228-240 was the quadruped variant (3:47-4:20), which is not the primary side-lying exercise. Capped at 45 s; frames after 180 s confirm floor arm arc, earlier part from transcript only.",
+  "replaced": false,
+  "needs_sound": true
  },
  "lat-stretch": {
   "video": "zFNwzRqY7H4",
-  "start_s": 316,
-  "end_s": 328,
-  "confidence": "medium",
-  "note": "Hanging side pull lat stretch (variation of butcher's block)",
-  "replaced": false
+  "start_s": 309,
+  "end_s": 352,
+  "confidence": "high",
+  "note": "Hanging side pull section runs 4:51-6:04; chosen 309-352 s: grab rings, support on opposite leg, swing leg behind into the big curve, hang, stool-bar assist cue at ~5:35, hold. Butcher's block variant is 4:00-4:50 (not chosen as the item's old window targeted the hanging pull). Verified by frames every 5 s and transcript.",
+  "replaced": false,
+  "needs_sound": true
  },
  "pec-stretch": {
   "video": "ZhyBhad0zRM",
-  "start_s": 66,
-  "end_s": 77,
-  "confidence": "medium",
-  "note": "Doorway pec stretch demo, arm angles",
-  "replaced": false
+  "start_s": 63,
+  "end_s": 90,
+  "confidence": "high",
+  "note": "Exercise 2 (pectoral stretch in doorway): title card ends ~62 s, then arm-low, 90/90 and overhead doorway positions shown through ~89 s (frames every 2 s), Exercise 3 title card at ~91 s. No transcript, visuals sufficient.",
+  "replaced": false,
+  "needs_sound": false
  },
  "overhead-shoulder-flexion": {
   "video": "6jyk1yswDaw",
-  "start_s": 359,
-  "end_s": 369,
+  "start_s": 366,
+  "end_s": 411,
   "confidence": "high",
-  "note": "Lying on box doing lat pullover with weight, overhead end range",
-  "replaced": false
+  "note": "Lap pullover on bench, back kept flat, dumbbell neutral grip, 3 s pause at bottom; frames 364-418 show it; ends before talking head/weight advice.",
+  "replaced": false,
+  "needs_sound": true
  },
  "high-step-lift-offs": {
   "video": "7hGt7NnOJB8",
@@ -153,99 +171,111 @@
  },
  "passive-active-hang": {
   "video": "6P9r0UAdwXM",
-  "start_s": 74,
-  "end_s": 84,
-  "confidence": "medium",
-  "note": "Climber hanging on bar/holds doing scapular pulls (passive to active hang)",
-  "replaced": false
+  "start_s": 68,
+  "end_s": 108,
+  "confidence": "high",
+  "note": "Scapular pull-up demo (hang, scapula depress, small then larger range); frames 1:08-1:49, intro 1:07, talking head from 1:55.",
+  "replaced": false,
+  "needs_sound": true
  },
  "wrist-dynamic-3way": {
   "video": "uPVASOKqn50",
-  "start_s": 12,
-  "end_s": 22,
-  "confidence": "medium",
-  "note": "Prayer-hands wrist stretch moving through positions, front view",
-  "replaced": false
+  "start_s": 11,
+  "end_s": 28,
+  "confidence": "high",
+  "note": "Sun salute wrist stretch: title card to 0:10, one full cycle (palms together, fingers down, up, arms overhead, pull down) 0:11-0:27 per 1 s frames; later side view and Rx card excluded.",
+  "replaced": false,
+  "needs_sound": false
  },
  "tendon-glides": {
   "video": "7F2Aaycq--g",
-  "start_s": 16,
-  "end_s": 27,
+  "start_s": 15,
+  "end_s": 35,
   "confidence": "high",
-  "note": "Straight, tabletop, hook and full fist glides in close-up",
-  "replaced": false
+  "note": "Whole short video minus intro cards: straight, tabletop, straight fist, hook fist, full fist (labelled), 0:15-0:35; ends as video fades.",
+  "replaced": false,
+  "needs_sound": false
  },
  "warmup-finger-ladder": {
   "video": "Vkf8-BF56gw",
   "start_s": 11,
-  "end_s": 21,
+  "end_s": 37,
   "confidence": "medium",
-  "note": "Finger curls, squeeze and extensor band warm-up sequence; no literal ladder",
-  "replaced": false
+  "note": "Instagram-style montage with captions: finger curls (0:11), squeeze (0:15), extensor band (0:19), no hangs (0:23), bodyweight hangs (0:28), floor traversing (0:33-0:37); pick-ups/other tools after 0:38 excluded. Captions give progression; no transcript.",
+  "replaced": false,
+  "needs_sound": false
  },
  "warmup-open-hip-wall-drill": {
   "video": "MSaI-rBJgFA",
-  "start_s": 5,
-  "end_s": 15,
-  "confidence": "high",
-  "note": "Open hip positions on wall, toe pointed at wall",
-  "replaced": false
+  "start_s": 2,
+  "end_s": 29,
+  "confidence": "medium",
+  "note": "'Open Hip Positions' section: toe-pointed-at-wall (hips far) vs inside-edge (hips close), 0:02-0:29 with voice-over on inside edge; later 'active toes' and knee-over-toe sections (0:31-1:05) are separate cues, excluded. Clip is climbing-footage montage, not an isolated drill.",
+  "replaced": false,
+  "needs_sound": true
  },
  "finger-extensor-band": {
   "video": "j8ODTWfc4XI",
-  "start_s": 57,
-  "end_s": 67,
+  "start_s": 50,
+  "end_s": 72,
   "confidence": "high",
-  "note": "Combined MCP+PIP extension against band",
-  "replaced": false
+  "note": "Band around fingertips (orange ball in hand), 'COMBINED' label from 0:50 = all fingers extending together; earlier 'PIP extension' label (to 0:50) excluded. Repeated slow reps 0:50-0:81; 22 s covers ~4 reps. Transcript throttled, no speech needed.",
+  "replaced": false,
+  "needs_sound": false
  },
  "shoulder-dislocates": {
   "video": "vP8YmmRMz6I",
-  "start_s": 195,
-  "end_s": 206,
-  "confidence": "medium",
-  "note": "Stick held wide overhead with straight arms, lowering after; may not show full pass-through",
-  "replaced": false
+  "start_s": 25,
+  "end_s": 70,
+  "confidence": "high",
+  "note": "First stretch: broomstick wide grip, lift overhead, push up toward ceiling then pull back with hips not forward (transcript 0:27-1:25, frames 0:25-1:14). Old window 195-206 was the second overhead stretch; this first one is the stick pass-over. Capped at 45 s.",
+  "replaced": false,
+  "needs_sound": true
  },
  "wall-slides-band-angels": {
   "video": "W-N2Vp_7obs",
-  "start_s": 291,
-  "end_s": 301,
+  "start_s": 268,
+  "end_s": 310,
   "confidence": "medium",
-  "note": "Standing arm angel movement overhead/out to sides; band not clearly visible",
-  "replaced": false
+  "note": "Standing band angels (snow-angel arm path); title card ~4:21, demo ~4:26-5:30; capped at 42 s; no wall-slide variant seen.",
+  "replaced": false,
+  "needs_sound": true
  },
  "band-external-rotation": {
   "video": "qv9nQhyuKzk",
-  "start_s": 76,
+  "start_s": 64,
   "end_s": 86,
   "confidence": "medium",
-  "note": "Standing rotator cuff band exercise on pole, elbow near body",
-  "replaced": false
+  "note": "Lazy traffic cop band external rotation: setup frame 1:04, caption 'lazy traffic cop' 1:14-1:23, next exercise caption at 1:28. Transcript throttled (429), boundaries from frames only.",
+  "replaced": false,
+  "needs_sound": false
  },
  "forearm-flexor-stretch": {
   "video": "9aNmCJc-TeY",
-  "start_s": 138,
-  "end_s": 148,
+  "start_s": 131,
+  "end_s": 169,
   "confidence": "high",
-  "note": "Close-up wrist flexor stretch with other hand pulling fingers back",
-  "replaced": false
+  "note": "Flexor stretch: fingertip-initiated (FDP) then move to DIP/MCP (FDS) with last bit relaxed; transcript 2:11-2:49, frames 2:13-2:48 show close-up demo; after 2:49 goes to palmaris longus variant.",
+  "replaced": false,
+  "needs_sound": true
  },
  "wrist-extensor-strength": {
   "video": "uKtlb-Etxg0",
-  "start_s": 333,
-  "end_s": 343,
+  "start_s": 331,
+  "end_s": 362,
   "confidence": "medium",
-  "note": "Wrist extension with dumbbell, forearm supported; sparse frames",
-  "replaced": false
+  "note": "Dumbbell wrist extension, forearm supported on bench, thumb-over grip, with rationale; intro sentence 5:31, footage 5:32-5:52, talking head from ~6:02. Frame interval ~10 s so end approximate. Pronation/supination parts are earlier/elsewhere; only extension covered.",
+  "replaced": false,
+  "needs_sound": true
  },
  "pip-joint-mobilisation": {
   "video": "_A0KXUZ2zAI",
-  "start_s": 25,
-  "end_s": 35,
+  "start_s": 17,
+  "end_s": 50,
   "confidence": "high",
-  "note": "Self-applied PIP mobilization close-up on table",
-  "replaced": false
+  "note": "Manual self-mobilization of PIP: thumb under proximal phalanx, grasp middle phalanx, 1-2 Hz oscillation / sustained pressure; close-up footage 0:17-~0:50 (transcript 0:17-0:38), talking head returns ~0:53; finger-trap section later excluded.",
+  "replaced": false,
+  "needs_sound": true
  },
  "pip-load-management": {
   "video": "h-nOPJsBZz8",
@@ -265,35 +295,39 @@
  },
  "ankle-dorsiflexion-mobility": {
   "video": "HuEt_eNes3M",
-  "start_s": 183,
-  "end_s": 194,
-  "confidence": "high",
-  "note": "Knee-over-toe dorsiflexion rocking with forefoot on slant board, side/front view",
-  "replaced": false
+  "start_s": 173,
+  "end_s": 216,
+  "confidence": "medium",
+  "note": "Calf stretch on slant board/towel, straight rear knee, three foot directions with front view insets; frames 2:52-3:36, rep-info card at 3:41, 'Stretch 2' band ankle mobilization from 3:46 excluded (that is the knee-forward mobilization). Frame step ~5 s, transcript throttled.",
+  "replaced": false,
+  "needs_sound": true
  },
  "calf-raise-eccentric": {
   "video": "mKUle2yBYq0",
-  "start_s": 85,
-  "end_s": 97,
-  "confidence": "high",
-  "note": "Standing on step, heel drop and raise, with close-up of heel dropping",
-  "replaced": false
+  "start_s": 80,
+  "end_s": 106,
+  "confidence": "medium",
+  "note": "Calf raise on step with heel drop: setup close-up 1:19, text steps 1:24-1:29 (stand on step, drop heel on edge, lift onto toes), 'add weight' caption 1:39, talking head from 1:48. Transcript throttled; 5 s frame step so +-3 s.",
+  "replaced": false,
+  "needs_sound": false
  },
  "warmup-pulse-raiser": {
   "video": "J7XGwKBz-Zk",
-  "start_s": 70,
-  "end_s": 81,
-  "confidence": "high",
-  "note": "Jumping jacks / seal jacks cardio",
-  "replaced": false
+  "start_s": 62,
+  "end_s": 80,
+  "confidence": "medium",
+  "note": "Jumping jacks (labelled) as pulse-raiser example; talking head until ~0:60, 'Dual/Split Jumping Jacks' label from ~1:23 so ended 0:80. Transcript unavailable (throttled); 5 s frame step.",
+  "replaced": false,
+  "needs_sound": false
  },
  "warmup-dynamic-stretching": {
   "video": "58fr4fxk5MA",
-  "start_s": 138,
-  "end_s": 148,
+  "start_s": 142,
+  "end_s": 160,
   "confidence": "high",
-  "note": "Leg swings side-to-side and forward/back with support",
-  "replaced": false
+  "note": "Leg swings holding a rack: side-to-side (caption 20 Leg Swings, ~2:22-2:30) then forward/backward (~2:32-2:40) incl. 'faster and higher' cue; preceded by inch worm (excluded), followed by 'now go warm up on the wall' card at 2:44. Music only, no speech.",
+  "replaced": false,
+  "needs_sound": false
  },
  "warmup-boulder-pyramid": {
   "video": "UWJCUMrss94",
@@ -305,19 +339,21 @@
  },
  "praezise-leise-tritte": {
   "video": "6IUF1HrYUJ8",
-  "start_s": 489,
-  "end_s": 500,
+  "start_s": 253,
+  "end_s": 296,
   "confidence": "medium",
-  "note": "Weighting-feet drill: climber placing feet deliberately on wall problem; rest of video is talking head",
-  "replaced": false
+  "note": "Lattice 'precision' block: keep eye contact with foot until placed, slow down, take time to place exactly (transcript 4:13-4:56). Frames show talking head with on-wall demo clips at ~266-280s and ~291s; the old 489-500 window was a different drill (weighting/slab) and was dropped. Silent placement is only mentioned in the later session recap (~387s), not in this passage.",
+  "replaced": false,
+  "needs_sound": true
  },
  "kantenwahl-und-zehendruck": {
   "video": "yjFjJZYnqcE",
-  "start_s": 243,
-  "end_s": 254,
+  "start_s": 85,
+  "end_s": 170,
   "confidence": "medium",
-  "note": "Presenter climbing on edges, hips turning, in inside/outside edging section",
-  "replaced": false
+  "note": "Lattice intermediate foot techniques: inside/outside edging demo starts at 1:25 (outside edge keeps hips close, cross-through twist, foot placement slightly forward of the heel) and continues with foot-position/rotation explanation; frames 85-170 show presenter on wall throughout. Full edging section runs to ~272s (inside edge rock-over), capped at 90 s; pressure direction not covered in this part.",
+  "replaced": false,
+  "needs_sound": true
  },
  "gestreckte-arme": {
   "video": "IxySYhdcESM",
@@ -337,11 +373,12 @@
  },
  "flagging": {
   "video": "jLsii8s6acM",
-  "start_s": 104,
-  "end_s": 114,
+  "start_s": 87,
+  "end_s": 176,
   "confidence": "high",
-  "note": "Outside flag section: climber with opposite hand/foot flagging on wall, labelled",
-  "replaced": false
+  "note": "Movement for Climbers 'Outside flag' chapter starts at 1:28 (title card 1:24): opposite hand/foot rule, holds on same vertical plane, foothold ahead of handhold, then pink problem demo of flag moves. Frames confirm on-wall flagging with overlay labels throughout. Chapter runs to ~216 s; capped at 90 s. Back flag (3:45+) and inside flag are later chapters not included.",
+  "replaced": false,
+  "needs_sound": true
  },
  "drop-knee": {
   "video": "U0v9xxqEjfY",
@@ -435,59 +472,66 @@
  },
  "kneebar": {
   "video": "N0Dn6NJ7jCI",
-  "start_s": 382,
-  "end_s": 393,
+  "start_s": 354,
+  "end_s": 408,
   "confidence": "high",
-  "note": "Climber hanging in kneebar on wall demonstrating technique, Ondra coaching",
-  "replaced": false
+  "note": "Ondra introduces Katka (first-time kneebar) at 5:54; she hangs the kneebar, releases hands, goes upside down, calf-only explanation, ends 6:48 before 'common mistakes'. Frames at 357-406 confirm kneebar on wall.",
+  "replaced": false,
+  "needs_sound": true
  },
  "cut-loose-und-wiederaufsetzen": {
   "video": "xjhuDG7oS2g",
-  "start_s": 99,
-  "end_s": 110,
+  "start_s": 578,
+  "end_s": 668,
   "confidence": "medium",
-  "note": "Climber on overhang with feet off the wall / cutting loose and re-placing foot",
-  "replaced": false
+  "note": "Old window (99-110) was the shoes section. Chosen: 'drawn and quartered' drill (9:38-11:08) where he shows cutting loose / losing tension and holding the end position with feet on. Video is about avoiding cut-loose, not a swing-and-replace demo, so topic fit is partial. Frames confirm on-wall demos.",
+  "replaced": false,
+  "needs_sound": true
  },
  "schulter-und-lat-engagement": {
   "video": "APscds32m80",
-  "start_s": 203,
-  "end_s": 214,
-  "confidence": "medium",
-  "note": "Scapular engagement section: climber on wall, engaged vs relaxed scapulae comparison nearby",
-  "replaced": false
+  "start_s": 197,
+  "end_s": 262,
+  "confidence": "high",
+  "note": "'Second technique: scapular engagement' - lowering shoulder blades, lats/rhomboids vs high elbows; engaged vs relaxed scapulae on wall (3:22-3:47), bar hang demo, compression pinches with elbows down; ends ~4:22 before Lattice ad. Boundaries from transcript, frames confirm.",
+  "replaced": false,
+  "needs_sound": true
  },
  "sloper-handgelenk-ellbogen": {
   "video": "q00ImgzAnOI",
-  "start_s": 98,
-  "end_s": 109,
-  "confidence": "medium",
-  "note": "Body position section: climbers on sloper/steep wall demonstrating position",
-  "replaced": false
+  "start_s": 34,
+  "end_s": 118,
+  "confidence": "high",
+  "note": "Mistake 1 'body position': stay low/close to wall; expander demo of pull direction on a round sloper (0:40-1:10), then on-wall example using heel to pull hips up (1:25-1:52); ends 1:58 when speaker moves to point 2 (core tension). Wrist/elbow not explicitly covered; hip/pull-direction is the core content.",
+  "replaced": false,
+  "needs_sound": true
  },
  "small-box": {
   "video": "Vm8kzHUifSM",
-  "start_s": 135,
-  "end_s": 146,
-  "confidence": "medium",
-  "note": "Scrunched-and-bunched drill: presenter on steep wall in compact position, tight reach",
-  "replaced": false
+  "start_s": 63,
+  "end_s": 143,
+  "confidence": "high",
+  "note": "Whole 157s video is the Scrunched-and-Bunched drill. Intro (0:08-0:52) is talking head and 0:49-1:00 is warm-up stretching, so excluded. Segment = on-wall drill demo in compact positions (1:04-1:25), explanation of acute knee angles, contracting harder and clearing the knee to manage space (1:15-2:13), final on-wall heel-hook/bunched demo (2:11-2:25). Frames and transcript confirm.",
+  "replaced": false,
+  "needs_sound": true
  },
  "momentum-aus-huefte-und-beinen": {
   "video": "K-dTaYG-C1M",
-  "start_s": 148,
-  "end_s": 159,
+  "start_s": 45,
+  "end_s": 96,
   "confidence": "high",
-  "note": "Explosive movement / between holds: climbers using hip-leg momentum on steep wall",
-  "replaced": false
+  "note": "'Where is momentum generated': legs/hips as source, arms pull to direct trajectory, carry momentum from hips, arm swing and pogo/ninja kick (0:45-1:36) with alternating talking head and on-wall footage (title card 'Where is momentum carried' at ~1:09). Ends before timing/apex explanation. Old window 148-159 was the explosive-vs-subtle categories.",
+  "replaced": false,
+  "needs_sound": true
  },
  "griff-setup-pregrip-daumen": {
   "video": "EUAiiXK-8iw",
-  "start_s": 143,
-  "end_s": 154,
+  "start_s": 132,
+  "end_s": 186,
   "confidence": "medium",
-  "note": "Pre-gripping section: climber reaching and setting fingers on a wall hold; hand-on-hold demo rather than full movement",
-  "replaced": false
+  "note": "Transcript unavailable (429 throttling) - boundaries from storyboard only. 'Grip #2: PRE-GRIPPING' title card at ~2:12; presenter demonstrates reaching with hand pre-shaped on the wall 2:17-3:02, then cuts to gym discussion at 3:06. Next section 'Grip #3: MCP joint flexion' starts 4:06. Thumb/finger-squeeze parts not covered; boundaries approx +-5s.",
+  "replaced": false,
+  "needs_sound": true
  },
  "deadpoint-timing": {
   "video": "DEoUtCRrrGY",
@@ -499,11 +543,12 @@
  },
  "lag-bouncing": {
   "video": "pvtj681h4O4",
-  "start_s": 121,
-  "end_s": 131,
-  "confidence": "medium",
-  "note": "Footage after 'With Lag Bounce' label, climber with leg swing/drive on wall",
-  "replaced": false
+  "start_s": 56,
+  "end_s": 101,
+  "confidence": "high",
+  "note": "Explains using leg drive from the low foot and pulling with high foot instead of flagging (0:56-1:17), then on-wall comparison: two failed attempts with red X (1:18-1:28) vs successful 'With Lag Bounce' (1:33-1:37). Ends 1:41 before the 'why' theory list (title card 1:47). Old window 121-131 was the theory section.",
+  "replaced": false,
+  "needs_sound": true
  },
  "dyno": {
   "video": "p7jHvrQE-qA",
@@ -515,11 +560,12 @@
  },
  "schwung-erzeugen-und-fangen": {
   "video": "nACAhzRuHWE",
-  "start_s": 574,
-  "end_s": 584,
-  "confidence": "medium",
-  "note": "Climber jumps/dynamic moves on white wall with purple holds (dynamic section)",
-  "replaced": false
+  "start_s": 566,
+  "end_s": 626,
+  "confidence": "high",
+  "note": "Alex's wrap-up of the three elements: outward space then inward momentum, eye position one step ahead, hips at the dead point of the swing (9:26-10:26), with on-wall clips of the dynamic boulder alternating with the speaker. Ends 10:26 before outro. Old window 574-584 was inside this passage.",
+  "replaced": false,
+  "needs_sound": true
  },
  "paddle-dyno": {
   "video": "tqkOFbY_GOk",
@@ -555,122 +601,137 @@
  },
  "slab-fortgeschritten-palming": {
   "video": "naiztooiNpU",
-  "start_s": 565,
-  "end_s": 577,
-  "confidence": "medium",
-  "note": "Palming on volume demo in 'Advanced hand techniques' chapter; mostly static hand demo on wall",
-  "replaced": false
+  "start_s": 502,
+  "end_s": 548,
+  "confidence": "high",
+  "note": "Palm grip on open slab hold: speaker explains why Maddie beats him on slabs, shows pulling vs palming on a volume on the wall. Starts at 'key secret ... palm grip' (8:22), ends at 'both directions' before next point (closed grip, 9:07). Frames confirm wall demo throughout.",
+  "replaced": false,
+  "needs_sound": true
  },
  "no-hands-klettern": {
   "video": "KGOoe3ZDdYw",
-  "start_s": 257,
-  "end_s": 267,
-  "confidence": "medium",
-  "note": "Coach climbing/stepping up on wall without hands in hip-position chapter",
-  "replaced": false
+  "start_s": 245,
+  "end_s": 330,
+  "confidence": "high",
+  "note": "Coach removes hands and tries the mantle-up move no-hands: hips too far out -> fall, then closer hips, higher foot, frogging foot. Starts at 'take my hands out' (4:06), ends before moving hands higher (5:35). Whole section 155-396 s is 4 min, so best continuous 85 s passage. Frames show him on wall.",
+  "replaced": false,
+  "needs_sound": true
  },
  "mantle": {
   "video": "oKrATkvFOck",
-  "start_s": 156,
-  "end_s": 167,
+  "start_s": 98,
+  "end_s": 184,
   "confidence": "high",
-  "note": "Chris Schulte mantles over roof lip of Fontainebleau boulder: hang, press, top out",
-  "replaced": false
+  "note": "Mantle top-out in Fontainebleau: walk feet high below lip, then turn the palm inward to press chest over. Footage cuts between sitting talk and on-rock demos; boundaries from transcript (1:38 start of foot advice, 3:04 ends 'propel you forward'). Full mantle topic 51-230 s too long, so core 86 s.",
+  "replaced": false,
+  "needs_sound": true
  },
  "route-reading": {
   "video": "v22zlz6UEYI",
-  "start_s": null,
-  "end_s": null,
-  "confidence": "low",
-  "note": "Conceptual: talking head plus overhead stills with annotated checkpoint holds; no on-wall demo of technique",
-  "replaced": false
+  "start_s": 246,
+  "end_s": 336,
+  "confidence": "medium",
+  "note": "Conceptual topic: step 3 'work backwards from checkpoint holds' to derive the hand sequence of the crux, alternating talking head with overhead footage of the climber on the wall and annotated holds. Starts at 'working backwards from each checkpoint hold' (4:05-4:10), ends at 'linked together the entire climb' (5:36). Skim and checkpoint steps (28-208 s) are separate; the 90 s cap forced choosing the most distinctive step. Not a pure on-wall demo.",
+  "replaced": false,
+  "needs_sound": true
  },
  "versuchsqualitaet-und-pausen": {
   "video": "K5NLcANk1X8",
-  "start_s": 37,
-  "end_s": 47,
-  "confidence": "medium",
-  "note": "Sub-limit drill: climber making full-quality attempts on yellow wall",
-  "replaced": false
+  "start_s": 8,
+  "end_s": 98,
+  "confidence": "high",
+  "note": "Whole short drill video: voiceover explains sub-limit bouldering (1-4 attempts per boulder, full-quality attempts, stop before quality dips, rest between attempts, falls as data) over continuous footage of climber on yellow board with on-screen captions on falling/quality dip. Starts at voiceover after title card (0:08), ends before the 'choose 4-8 boulders per session' setup advice (~1:25-1:38) is finished; 90 s cap.",
+  "replaced": false,
+  "needs_sound": true
  },
  "projektieren": {
   "video": "fHSnUOD-H5U",
-  "start_s": 831,
-  "end_s": 841,
-  "confidence": "low",
-  "note": "Execution-phase chapter: climber working the roof problem; only one clear climbing frame, rest is talking head",
-  "replaced": false
+  "start_s": 797,
+  "end_s": 885,
+  "confidence": "medium",
+  "note": "Execution phase (third stage) of projecting: shift to 100% effort, lower attempt frequency, bigger rests, one tweak at a time. Mostly talking head/hand gestures with a few climbing cutaways (frames 13:42-14:32); actual attempt footage follows at 885-955 s. Starts at 'And finally we have the execution phase' (13:17), ends at 'little iterations' (14:45). Earlier stages (explore/refine) not included. Boundaries approx +-3 s.",
+  "replaced": false,
+  "needs_sound": true
  },
  "flash-strategie": {
   "video": "oAdQUkh7S78",
-  "start_s": 497,
-  "end_s": 507,
+  "start_s": 416,
+  "end_s": 476,
   "confidence": "medium",
-  "note": "Outdoor boulder climbing footage in 'Executing the climb' chapter (flash attempt)",
-  "replaced": false
+  "note": "Conceptual flash tips (talking head, no on-wall demonstration of technique): last steps before the attempt - calm down heart rate/breathing, then climb with full effort ('try it as hard as you possibly can'). Starts at 'once you've got all that done...' (6:56), ends at 'if you flash the thing great' (7:56). Earlier info-gathering/sequence/visualization steps (146-350 s) are separate and not chosen; only short outdoor b-roll appears nearby (8:16).",
+  "replaced": false,
+  "needs_sound": true
  },
  "klettern-mit-intention": {
   "video": "03hy_n0nees",
-  "start_s": 118,
-  "end_s": 128,
-  "confidence": "medium",
-  "note": "Climber on yellow-hold boulder making a focused attempt with timer overlay, in 'Learning from attempts' section",
-  "replaced": false
+  "start_s": 85,
+  "end_s": 175,
+  "confidence": "high",
+  "note": "Learning from attempts: after a fall she names concrete fixes (hand first, heel, momentum, squeeze harder, hesitation) with on-screen objective checklist, and the next attempts are shown on the yellow boulder. Starts at 'the biggest progress comes with trying to learn' (1:25), ends after second fix attempt (before the successful send at ~2:58). Frames confirm wall footage throughout; 90 s cap.",
+  "replaced": false,
+  "needs_sound": true
  },
  "commitment-drill": {
   "video": "O2SZzi2E94s",
-  "start_s": 86,
+  "start_s": 6,
   "end_s": 96,
   "confidence": "high",
-  "note": "'Finally: commit fully' section, climber commits to a hard move on the wall",
-  "replaced": false
+  "note": "Whole 97 s vertical drill video (Limit Move Commitment): choose intimidating moves, 3 attempts each, ritual of deliberate setup, visualization, smile, mantra, then commit fully. Segment cuts only the 6 s intro line and the last second to meet the 90 s cap. Captions plus on-wall footage throughout (confirmed in frames).",
+  "replaced": false,
+  "needs_sound": true
  },
  "video-selbstanalyse": {
   "video": "A1ySsx3TQTQ",
-  "start_s": 1059,
-  "end_s": 1069,
+  "start_s": 652,
+  "end_s": 742,
   "confidence": "medium",
-  "note": "Example of filmed climbing footage (boulder climber, frame for analysis) with shutter-speed overlay",
-  "replaced": false
+  "note": "Camera-angle section ('Consider perspective') of a long filming tutorial: filming only from behind hides the hands, so move to the side to see foot kick and hand/hold interaction; footage of a climber alongside the coach talking. Starts at 'if you only film from behind' (10:56), ends at 'difficult to learn anything about this move' (12:23). Not on-wall technique but filming advice; old window (1059-1069) was only about shutter speed. Video has no explicit 'two perspectives + close-ups' passage in one place; boundaries approx +-5 s.",
+  "replaced": false,
+  "needs_sound": true
  },
  "atmung-und-koerperspannung": {
   "video": "o5xch0IKTPs",
-  "start_s": null,
-  "end_s": null,
-  "confidence": "low",
-  "note": "Conceptual (breathing timing): podcast talking head with unrelated climbing b-roll; no footage showing breath timing",
-  "replaced": false
+  "start_s": 98,
+  "end_s": 188,
+  "confidence": "medium",
+  "note": "Podcast talking head (Louis Parkinson) with climbing b-roll; conceptual, no demonstration of breathing on the wall. Explains timing: inhale during the move, exhale sharply (pursed lips) on hitting the hold = moment of exertion; benefits: actually breathing, keeping foot/core tension on a hard overhang move. Starts at 'when he hits the hold that's the moment of exertion' (1:38), ends at tension benefit (3:08); focus benefit follows at 3:15-4:28 but 90 s cap. Acceptable conceptual passage; b-roll unrelated to breath timing.",
+  "replaced": false,
+  "needs_sound": true
  },
  "sturzangst-beim-bouldern": {
   "video": "D-vsVNWm2jg",
-  "start_s": 262,
-  "end_s": 274,
+  "start_s": 240,
+  "end_s": 330,
   "confidence": "high",
-  "note": "'Start slow' fall practice: climber on pink wall then falls and lands on mat",
-  "replaced": false
+  "note": "Hazel Findlay fall-practice tips: #6 'Start slow' (jump off low, then fall off from a bit higher, no right/wrong landing) with live demos on the pink wall, flowing into #7 'Build up' (practice falls mid-move, from touching the wall to more momentum). Starts at 'if you're totally new... start jumping off' (3:59/4:00), ends before the end of the build-up talk (~5:30). Frames confirm falls and landings. The later 'break down a scary move' section (9:23-11:19) is an alternative but longer.",
+  "replaced": false,
+  "needs_sound": true
  },
  "kleine-tritte-am-fels": {
   "video": "7n1biTUm87c",
   "start_s": 36,
-  "end_s": 46,
-  "confidence": "high",
-  "note": "Toe Test: climber standing/weighting on small toe footholds on gym wall",
-  "replaced": false
+  "end_s": 126,
+  "confidence": "medium",
+  "note": "Toe Test drill on a gym wall: climber stands on small toe footholds, close-ups of precise toe placement and weighting (arrows on shoe), then continues up with toe-only feet. Transcript was unavailable (429 throttling after retries), so boundaries come from frames only: intro/title cards end ~0:35, climbing demo runs ~0:36-2:15; 90 s cap, spoken captions/voiceover content unverified.",
+  "replaced": false,
+  "needs_sound": true
  },
  "outdoor-session-und-fels-lesen": {
   "video": "aKuDS3r_5l4",
-  "start_s": null,
-  "end_s": null,
-  "confidence": "low",
-  "note": "Conceptual (prep, pads, reading rock): mostly talking/demonstrating gear and boulder prep, no single technique window",
-  "replaced": false
+  "start_s": 692,
+  "end_s": 775,
+  "confidence": "high",
+  "note": "Pad placement demo outdoors on gritstone: set the landing before going, think about fall lines/ledges, stack two pads for a high fall, flip a pad to the softer foam side. Starts at 'before I go I'm going to set my landing' (11:32), ends at 'more comfortable' (12:53-12:55). The item is multi-topic (warm-up, skin, foot placement); the pad demo is the clearest single passage. Frames confirm on-rock pad setup.",
+  "replaced": false,
+  "needs_sound": true
  },
  "haut-und-conditions": {
   "video": "vHtQrfeE4cE",
-  "start_s": null,
-  "end_s": null,
-  "confidence": "low",
-  "note": "Conceptual (skin care/conditions): no on-wall footage can show the idea",
-  "replaced": false
+  "start_s": 966,
+  "end_s": 1056,
+  "confidence": "medium",
+  "note": "Conceptual skin-care topic (no on-wall demo possible). Two Lattice coaches on a couch; this passage covers protective taping: tape sharp-hold areas / pre-tape splits, thin strip, start at fingertip and wrap toward the base (with friction direction), extend past the joint as anchor; close-up of taping at ~16:57. Starts at 'tape over that area' (16:06), ends at 'tape coming off' (17:36). Whole 25 min video covers many skin topics (moisturizer, flannel trick, filing, split balm); taping chosen as the clearest single skill. Boundaries approx +-4 s.",
+  "replaced": false,
+  "needs_sound": true
  }
 }

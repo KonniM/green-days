@@ -41,14 +41,17 @@
   // 10-Sekunden-Clip: Ausschnitt eines YouTube-Videos, stumm in Schleife (eingebettet, nichts wird kopiert).
   function clipHTML(x, cls) {
     const c = x && x.clip; if (!c || c.s == null) return '';
-    return `<button class="clip ${cls || ''}" data-act="clip" data-v="${e(c.v)}" data-s="${c.s}" data-e="${c.e}" style="background-image:url(https://i.ytimg.com/vi/${e(c.v)}/mqdefault.jpg)" aria-label="Kurzclip abspielen"><span class="clip-badge">▶ ${Math.round(c.e - c.s)} s</span></button>`;
+    return `<button class="clip ${cls || ''}" data-act="clip" data-v="${e(c.v)}" data-s="${c.s}" data-e="${c.e}" data-snd="${c.snd ? 1 : ''}" style="background-image:url(https://i.ytimg.com/vi/${e(c.v)}/mqdefault.jpg)" aria-label="Ausschnitt abspielen"><span class="clip-badge">▶ ${clipLen(c)}${c.snd ? ' · mit Erklärung' : ''}</span></button>`;
   }
+  // Länge des Ausschnitts: so lang, wie der Abschnitt im Video wirklich ist
+  function clipLen(c) { const d = Math.max(1, Math.round(c.e - c.s)); return d >= 60 ? Math.floor(d / 60) + ':' + String(d % 60).padStart(2, '0') + ' min' : d + ' s'; }
+  const clipCmd = (rec, func, args) => { try { rec.fr.contentWindow.postMessage(JSON.stringify({ event: 'command', func, args: args || [] }), '*'); } catch (err) {} };
   const clips = [];
   function playClip(el) {
-    const v = el.dataset.v, s0 = +el.dataset.s, e0 = +el.dataset.e;
+    const v = el.dataset.v, s0 = +el.dataset.s, e0 = +el.dataset.e, snd = el.dataset.snd === '1';
     const box = document.createElement('div'); box.className = el.className + ' is-playing';
     const origin = location.origin && location.origin !== 'null' ? '&origin=' + encodeURIComponent(location.origin) : '';
-    box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${v}?playsinline=1&autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&iv_load_policy=3&start=${s0}&enablejsapi=1${origin}" title="Kurzclip" allow="autoplay; encrypted-media; picture-in-picture" loading="lazy"></iframe><a class="clip-full" href="https://www.youtube.com/watch?v=${v}&t=${s0}s" target="_blank" rel="noopener">ganzes Video ↗</a>`;
+    box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${v}?playsinline=1&autoplay=1&mute=1&controls=${snd ? 1 : 0}&rel=0&modestbranding=1&iv_load_policy=3&start=${s0}&enablejsapi=1${origin}" title="Ausschnitt" allow="autoplay; encrypted-media; picture-in-picture" loading="lazy"></iframe>${snd ? '<button class="clip-snd" data-act="clip-snd">Ton an</button>' : ''}<a class="clip-full" href="https://www.youtube.com/watch?v=${v}&t=${s0}s" target="_blank" rel="noopener">ganzes Video ↗</a>`;
     el.replaceWith(box);
     const fr = box.firstChild, rec = { fr, s: s0, e: e0 };
     clips.push(rec);
@@ -63,7 +66,7 @@
     let d; try { d = typeof ev.data === 'string' ? JSON.parse(ev.data) : ev.data; } catch (err) { return; }
     rec.ok = true;
     const info = d && d.info; if (!info) return;
-    const cmd = (func, args) => rec.fr.contentWindow.postMessage(JSON.stringify({ event: 'command', func, args: args || [] }), '*');
+    const cmd = (func, args) => clipCmd(rec, func, args);
     const now = Date.now();
     // Ende des Ausschnitts erreicht → zurück an den Anfang (ohne YouTubes eigenen End-Stopp, der pausieren würde)
     if ((info.playerState === 0 || (typeof info.currentTime === 'number' && info.currentTime >= rec.e - 0.2)) && now - (rec.seekAt || 0) > 900) {
@@ -281,12 +284,14 @@
         ${next ? `<p class="meta">Nächste Einheit: ${e(D.fmt(next.d, { weekday: 'long' }))} · ${e(next.s.title)}</p>` : ''}</article>`;
     }
     h += opt.map(s => sessionCard(s, today)).join('');
+    if (window.Injury) h += Injury.card(today);
     Store.sessionsOn(today).filter(s => !s.planId).forEach(s => {
       h += `<article class="card session is-logged"><header class="card-head">${kindChip(s.kind)}</header><h3>${e(s.title)}</h3><div class="logline">${gdBadge(s.color)}<span>${logLine(s)}</span></div><div class="actions"><button class="btn btn-ghost" data-act="log-edit" data-id="${s.id}">Bearbeiten</button></div></article>`;
     });
     h += acwrCard(today) + skillCard(w);
     if (w && w.week.note) h += `<article class="card"><span class="eyebrow">Notiz zur Woche</span><p>${e(w.week.note)}</p></article>`;
     h += `<button class="btn btn-ghost btn-block" data-act="free-log">＋ Extra-Session eintragen (Fels, Halle …)</button>`;
+    if (window.Injury) h += Injury.linkButton();
     if (window.Progress) h = Progress.todayCards(h, today, w);
     return h;
   }
@@ -324,6 +329,7 @@
       const mins = Math.round((Date.now() - d.startedAt) / 60000);
       body = `<div class="run-meta"><span>${mins} min</span>${d.goal ? `<span class="goal">Ziel: ${e(d.goal)}</span>` : ''}</div>
         ${d.adapt && d.adapt.reasons.length ? `<p class="banner tone-${d.f < 1 ? 'orange' : 'green'}"><b>${d.f < 1 ? 'Heute −' + Math.abs(Math.round((d.f - 1) * 100)) + ' % Umfang' : d.f > 1 ? 'Heute +' + Math.round((d.f - 1) * 100) + ' % Umfang' : 'Hinweis'}:</b> ${e(d.adapt.reasons.map(r => r.text).join(' '))}${d.adapt.noHard && s.low ? ' ' + e(s.low) : ''}</p>` : ''}
+        ${window.Injury ? Injury.sessionCard() : ''}
         ${s.blocks.map((b, i) => blockHTML(b, i, true, d)).join('')}
         <article class="card stop"><span class="eyebrow">Session beenden, wenn …</span><ul>${s.stop.map(x => `<li>${e(x)}</li>`).join('')}</ul></article>
         <button class="btn btn-primary btn-block btn-xl" data-act="to-post">Session beenden & loggen</button>`;
@@ -498,6 +504,7 @@
     step: (el) => { const inp = $('input', el.parentNode); inp.value = Math.max(0, (Number(inp.value) || 0) + (+el.dataset.d)); const post = el.closest('#post'); if (post) paintLoad(post.closest('.sheet-wrap') || post); },
     pick: (el) => { const box = el.parentNode; $('input', box).value = el.dataset.v; $$('button', box).forEach(b => b.setAttribute('aria-pressed', String(b === el))); const post = el.closest('#post'); if (post) paintLoad(post); },
     clip: (el) => playClip(el),
+    'clip-snd': (el) => { const fr = $('iframe', el.parentNode), rec = clips.find(c => c.fr === fr); if (rec) { clipCmd(rec, 'unMute'); clipCmd(rec, 'setVolume', [100]); clipCmd(rec, 'playVideo'); } el.remove(); },
     'adapt-info': (el) => {
       const s = Adapt.today(el.dataset.plan), base = Plan.findPlan(el.dataset.plan), a = s.adapt || { f: 1, reasons: [] };
       sheet('An dich angepasst', `<p class="lead">${a.f === 1 ? 'Umfang wie geplant.' : `Plan ${base.min} min → heute <b>${s.min} min</b> (${a.f > 1 ? '+' : '−'}${Math.abs(Math.round((a.f - 1) * 100))} % Umfang).`}</p>
@@ -611,6 +618,6 @@
   });
   document.addEventListener('input', (ev) => { const post = ev.target.closest('#post'); if (post && ev.target.type === 'number') paintLoad(post.closest('.sheet-wrap') || post); });
 
-  window.UI = { e, $, $$, S, LIB, GD, gd, LEVELS, THEMES, find, chip, kindChip, gdBadge, scale, field, readForm, toast, sheet, closeSheet, skillOfWeek, blockHTML, sessionCard, acwrCard, acwrProjection, render, clipHTML, firstSentence, stepper, skillRate, logLine, nav, views, actions: {}, afterRender: {}, renderSession };
+  window.UI = { e, $, $$, S, LIB, GD, gd, LEVELS, THEMES, find, chip, kindChip, gdBadge, scale, field, readForm, toast, sheet, closeSheet, skillOfWeek, blockHTML, sessionCard, acwrCard, acwrProjection, render, clipHTML, clipLen, firstSentence, stepper, skillRate, logLine, nav, views, actions: {}, afterRender: {}, renderSession };
   document.addEventListener('DOMContentLoaded', () => { render(); if (S().draft) renderSession(); });
 })();

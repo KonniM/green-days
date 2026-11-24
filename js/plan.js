@@ -456,10 +456,14 @@
   const end = () => { const l = layout(); return l[l.length - 1].end; };
 
   // Session mit Umfang × f (0,5–1,15). Blockreihenfolge und Indizes bleiben gleich.
-  function scale(s, f) {
-    if (!s || !f || Math.abs(f - 1) < 0.01) return s;
-    const blocks = s.blocks.map(b => b.re ? b.re(f) : b);
-    return Object.assign({}, s, { blocks, min: blocks.reduce((a, b) => a + (b.min || 0), 0), hi: s.hi ? Math.round(s.hi * Math.min(1, f)) : s.hi, factor: f, base: s });
+  function scale(s, f, o) {
+    const noHang = !!(o && o.noHang), same = !f || Math.abs(f - 1) < 0.01;
+    if (!s || (same && !noHang)) return s;
+    // noHang: Hang-Blöcke fallen ganz aus (aktive Fingerverletzung) – als Hinweis-Block, damit die Reihenfolge gleich bleibt
+    const blocks = s.blocks.map(b => noHang && b.t === 'hang'
+      ? { t: 'info', title: b.title + ' – heute gestrichen', min: 0, lines: ['Wegen der aktiven Fingerverletzung fällt dieser Block aus. Mach stattdessen den Reha-Block oben.'] }
+      : (b.re && !same ? b.re(f) : b));
+    return Object.assign({}, s, { blocks, min: blocks.reduce((a, b) => a + (b.min || 0), 0), hi: s.hi ? Math.round(s.hi * Math.min(1, f || 1) * (noHang ? 0.5 : 1)) : s.hi, factor: f || 1, base: s });
   }
   // Zählbare Blöcke einer Session: was im Log abgefragt wird.
   const counts = (s) => s.blocks.map((b, i) => b.count ? { i, title: b.title, unit: b.count.unit, plan: Math.round(mid(b.count.n)), range: rng(b.count.n), sec: b.count.sec || 0, t: b.t } : null).filter(Boolean);

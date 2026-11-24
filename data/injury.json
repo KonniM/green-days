@@ -1,0 +1,2855 @@
+{
+ "disclaimer_de": "Der Verletzungshelfer ist eine Orientierung und keine Diagnose. Viele Finger- und Ellbogenprobleme fühlen sich ähnlich an und lassen sich sicher nur durch eine Untersuchung (am Finger meist mit Ultraschall) unterscheiden. Bei einem der Warnzeichen unten, oder wenn es trotz angepasster Belastung nach 2–3 Wochen nicht besser wird, lass es von jemandem mit Klettererfahrung ansehen (Sportorthopädie, Handchirurgie oder Physio).",
+ "pain_rules_de": [
+  "Grundregel 2/10: Eine Übung oder Kletterbelastung ist in Ordnung, wenn der Schmerz dabei und in den 24 Stunden danach nicht über 2 von 10 steigt. Sonst Intensität oder Umfang senken oder die Bewegung ändern. (Hooper's Beta, in allen Protokollen)",
+  "Erst schmerzfrei, dann schmerzarm: Belastungsaufbau am Finger beginnt mit Zügen/Hängen bei 0/10. Erst danach sind Reize bis etwa 3/10 erlaubt, die innerhalb von rund 3 Minuten wieder abklingen. (Vagy / The Climbing Doctor nach Cooper & LaStayo)",
+  "Nachwirkung zählt mehr als der Moment: Der Schmerz soll nach der Einheit und am Folgetag nicht höher sein als vorher; keine zusätzliche Steifigkeit oder Schwellung am nächsten Morgen. (The Climbing Doctor, Artikel zu Sehnenscheide und Ringband)",
+  "Dumpf ja, stechend nein: Ein dumpfes Ziehen bis 2–3/10 ist beim Kräftigen akzeptabel, ein scharfer oder stechender Schmerz ist ein Stoppsignal. (The Climbing Doctor, Seitenband)",
+  "Nach Dehnungen darf ein Ziehen kurz nachklingen. Braucht es länger als etwa 30 Sekunden, um zu verschwinden, war es zu viel. (Hooper's Beta, Lumbrikalis)",
+  "Wenn es aufflammt: eine Stufe zurück, Belastung senken, täglich neu einschätzen – weitergehen, halten oder zurückgehen. Weniger Schmerz ist das Signal für die nächste Stufe. (Rock Rehab Pyramid, Vagy)",
+  "Nicht komplett pausieren: Völlige Ruhe über längere Zeit beschleunigt die Heilung meist nicht; angepasste Belastung und das Training anderer Bereiche (Füße, Rumpf, Beweglichkeit) sind besser. Ausnahme sind frische Risse und die grad-abhängigen Kletterpausen beim Ringband. (The Climbing Doctor; Hooper's Beta; Mohn et al. 2022 für die Sehnenscheide)",
+  "Viel Volumen bei niedriger Intensität ist kein Schonprogramm: Auch leichte, sehr lange Einheiten reizen gereiztes Gewebe wiederholt. In der Reha lieber kurz, dosiert und häufig. (The Climbing Doctor, Kapsulitis und Ringband)",
+  "Ellbogen-Sehnen: Hier sind sich die Quellen nicht einig. Hooper's Beta bleibt bei höchstens 2/10, Vagy lässt Exzentrik bei etwa 4/10 zu, und eine von ihm zitierte Übersichtsarbeit (Coombes) nennt beide Lager – Schmerz vermeiden oder bis unter 5/10 zulassen. Vorsichtiger Start: 2/10.",
+  "Führe ein kurzes Protokoll (Schmerz 0–10 während, danach, am nächsten Morgen; Schwellung; Griffarten). So erkennst du Trends, bevor es kippt. (The Climbing Doctor; Hooper's Beta)"
+ ],
+ "red_flags": [
+  {
+   "sign_de": "Hörbarer Knall oder Reißgefühl im Finger, danach Schmerz, Schwellung oder Kraftverlust",
+   "action_de": "Sofort aufhören, nicht weiterklettern. Innerhalb weniger Tage untersuchen lassen, am besten mit Ultraschall – bei Mehrfachrissen hängt die konservative Behandlung davon ab, dass sie in den ersten rund 10 Tagen beginnt (Schöffl/Bamberg)."
+  },
+  {
+   "sign_de": "Die Beugesehne steht beim Anspannen sichtbar oder tastbar von der Fingerunterseite ab (Bogensehnen-Effekt)",
+   "action_de": "Spricht für mehrere gerissene Ringbänder. Zeitnah handchirurgisch oder sportorthopädisch vorstellen – hier steht die OP-Frage im Raum."
+  },
+  {
+   "sign_de": "Bluterguss oder deutliche Schwellung nach einem akuten Ereignis",
+   "action_de": "Untersuchen lassen, bevor du wieder belastest. Ein fehlender Bluterguss schließt einen Riss aber nicht aus."
+  },
+  {
+   "sign_de": "Finger lässt sich nicht mehr ganz beugen oder strecken, blockiert, schnappt oder hakt",
+   "action_de": "Abklären lassen (Ultraschall/MRT). Mögliche Ursachen sind ein eingeschlagener Ringbandstumpf, ein Schnappfinger oder freie Gelenkkörper; eine zunehmende Streckhemmung im Mittelgelenk ist ein Grund für eine chirurgische Beurteilung."
+  },
+  {
+   "sign_de": "Gelenk lässt sich seitlich aufklappen, fühlt sich instabil an oder sieht verformt aus",
+   "action_de": "Nicht selbst behandeln. Spricht für eine höhergradige Seitenband- oder Kapselverletzung oder eine Verrenkung – untersuchen lassen."
+  },
+  {
+   "sign_de": "Taubheit, Kribbeln oder Brennen im Finger, in der Hand oder im Unterarm",
+   "action_de": "Das ist ein Nervenzeichen und keine reine Sehnen- oder Gelenkreizung. Dehnungen stoppen, bis das Gefühl normal ist; bleibt es bestehen oder kommt es regelmäßig, abklären lassen."
+  },
+  {
+   "sign_de": "Schmerz in Ruhe oder nachts, der dich weckt; Gelenk heiß und gerötet; Fieber; mehrere Gelenke geschwollen, auch solche, die du beim Klettern kaum belastest",
+   "action_de": "Passt nicht zu einer reinen Überlastung. Ärztlich abklären lassen (Entzündung, Infekt, rheumatische Ursache)."
+  },
+  {
+   "sign_de": "Du bist unter 18 und hast Schmerzen am Fingergelenk oder am Grundglied",
+   "action_de": "Bis zum Beweis des Gegenteils als mögliche Verletzung der Wachstumsfuge behandeln: kein Leistentraining, kein Board, zeitnah zu einer Fachperson mit Bildgebung."
+  },
+  {
+   "sign_de": "Keine Besserung trotz angepasster Belastung: Gelenkschwellung nach 2–3 Wochen unverändert oder schlimmer; Finger nach 6–8 Wochen Reha noch dick, hakend oder ohne Fortschritt; Sehnenscheide oder Gelenk nach 4–6 Wochen konservativ unverändert",
+   "action_de": "Termin bei einer Fachperson mit Klettererfahrung. Ab hier geht es um Bildgebung und um Optionen, die du nicht selbst entscheiden kannst (z. B. Injektion)."
+  },
+  {
+   "sign_de": "Die Beschwerden schränken dich im Alltag ein (Greifen, Tragen, Tippen) oder die Beweglichkeit nimmt ab",
+   "action_de": "Untersuchen lassen, statt weiter selbst zu dosieren."
+  }
+ ],
+ "finger_locations": [
+  {
+   "id": "a2-grundglied",
+   "name_de": "Grundglied, Handflächenseite (A2)",
+   "hint_de": "Beugeseite des Fingerabschnitts direkt am Handteller, zwischen Fingeransatz und Mittelgelenk – etwa in der Mitte oder am Rand zum Mittelgelenk hin."
+  },
+  {
+   "id": "a4-mittelglied",
+   "name_de": "Mittelglied, Handflächenseite (A4)",
+   "hint_de": "Beugeseite des mittleren Fingerabschnitts, zwischen Mittelgelenk und Endgelenk."
+  },
+  {
+   "id": "beugeseite-gesamt",
+   "name_de": "Ganze Beugeseite des Fingers",
+   "hint_de": "Eher flächig entlang der Fingerunterseite, manchmal bis in die Handfläche oder den Unterarm ziehend."
+  },
+  {
+   "id": "pip-gelenk",
+   "name_de": "Mittelgelenk (PIP), rundherum",
+   "hint_de": "Der mittlere Fingerknöchel – diffus, oft auf dem Rücken und an beiden Seiten des Gelenks, Gelenk wirkt dicker."
+  },
+  {
+   "id": "pip-seite",
+   "name_de": "Mittelgelenk (PIP), eine Seite",
+   "hint_de": "Genau auf einer Seite des mittleren Knöchels, auf Höhe des Gelenkspalts – nur links oder nur rechts."
+  },
+  {
+   "id": "dip-gelenk",
+   "name_de": "Endgelenk (DIP)",
+   "hint_de": "Der letzte Fingerknöchel vor der Fingerkuppe."
+  },
+  {
+   "id": "handflaeche",
+   "name_de": "Handfläche / Fingeransatz",
+   "hint_de": "In der Handfläche unterhalb eines Fingers, oft leicht seitlich neben der Beugesehne, bis an den Fingeransatz heran – typischerweise bei Ring- oder kleinem Finger."
+  }
+ ],
+ "self_check": [
+  {
+   "question_de": "Wie hat es angefangen?",
+   "options": [
+    {
+     "label_de": "Plötzlich, mit Knall oder Reißgefühl, meist auf einer Leiste oder beim Abrutschen",
+     "points_to": [
+      "pulley-injury"
+     ]
+    },
+    {
+     "label_de": "Plötzlich in einem Loch oder Dreifingerzug, ein Nachbarfinger war eingerollt",
+     "points_to": [
+      "lumbrical-strain"
+     ]
+    },
+    {
+     "label_de": "Plötzlich bei einem Seitgriff, Gaston, weiten Zug, Fingerklemmer oder dynamischen Zug zur Seite",
+     "points_to": [
+      "collateral-ligament"
+     ]
+    },
+    {
+     "label_de": "Schleichend über Tage oder Wochen, nach mehr Volumen, Board oder Leistentraining",
+     "points_to": [
+      "pip-synovitis",
+      "flexor-tenosynovitis",
+      "pulley-injury"
+     ]
+    }
+   ]
+  },
+  {
+   "question_de": "Wo sitzt der Schmerz am deutlichsten?",
+   "options": [
+    {
+     "label_de": "Unterseite des Fingers am Grund- oder Mittelglied, auf Druck gut zu finden",
+     "points_to": [
+      "pulley-injury",
+      "flexor-tenosynovitis"
+     ]
+    },
+    {
+     "label_de": "Rund um das Mittelgelenk, eher diffus, Gelenk wirkt dick",
+     "points_to": [
+      "pip-synovitis"
+     ]
+    },
+    {
+     "label_de": "Genau auf einer Seite des Mittelgelenks",
+     "points_to": [
+      "collateral-ligament"
+     ]
+    },
+    {
+     "label_de": "In der Handfläche bzw. am Fingeransatz, leicht seitlich",
+     "points_to": [
+      "lumbrical-strain"
+     ]
+    },
+    {
+     "label_de": "Entlang der ganzen Fingerunterseite, evtl. bis in Handfläche oder Unterarm",
+     "points_to": [
+      "flexor-tenosynovitis"
+     ]
+    }
+   ]
+  },
+  {
+   "question_de": "Was provoziert es am stärksten?",
+   "options": [
+    {
+     "label_de": "Aufgestellte Leiste (halb oder voll) – offene Hand und Sloper gehen deutlich besser",
+     "points_to": [
+      "pulley-injury"
+     ]
+    },
+    {
+     "label_de": "Auch die offene Hand tut weh, ebenso das passive Überstrecken des Fingers",
+     "points_to": [
+      "flexor-tenosynovitis"
+     ]
+    },
+    {
+     "label_de": "Verletzter Finger gestreckt, Nachbarfinger gebeugt (Loch-Stellung); alle Finger gleich gestreckt ist fast schmerzfrei",
+     "points_to": [
+      "lumbrical-strain"
+     ]
+    },
+    {
+     "label_de": "Seitliches Wegbiegen des Fingers oder Züge, bei denen das Handgelenk nicht in Zugrichtung steht",
+     "points_to": [
+      "collateral-ligament"
+     ]
+    },
+    {
+     "label_de": "Zusammendrücken oder Endbeugen des Gelenks; leichter Zug am Finger entlastet",
+     "points_to": [
+      "pip-synovitis"
+     ]
+    }
+   ]
+  },
+  {
+   "question_de": "Schwellung und Steifigkeit?",
+   "options": [
+    {
+     "label_de": "Gelenk rundum geschwollen, morgens steif – vor allem am Morgen nach einem harten Tag",
+     "points_to": [
+      "pip-synovitis"
+     ]
+    },
+    {
+     "label_de": "Schwellung nur auf einer Seite des Gelenks",
+     "points_to": [
+      "collateral-ligament"
+     ]
+    },
+    {
+     "label_de": "Leichte Schwellung oder Fülle auf der Beugeseite bzw. am Fingeransatz",
+     "points_to": [
+      "flexor-tenosynovitis",
+      "pulley-injury"
+     ]
+    },
+    {
+     "label_de": "Keine sichtbare Schwellung",
+     "points_to": [
+      "pulley-injury",
+      "lumbrical-strain",
+      "flexor-tenosynovitis"
+     ]
+    }
+   ]
+  },
+  {
+   "question_de": "Falls es der Ellbogen ist: wo?",
+   "options": [
+    {
+     "label_de": "Innenseite, am Knochenvorsprung zum Körper hin – schlimmer bei Zügen, Blockieren, festem Zugreifen",
+     "points_to": [
+      "medial-epicondylopathy"
+     ]
+    },
+    {
+     "label_de": "Außenseite, am Knochenvorsprung – schlimmer bei Leisten mit überstrecktem Handgelenk, Handgelenk nach oben gegen Widerstand",
+     "points_to": [
+      "lateral-epicondylopathy"
+     ]
+    },
+    {
+     "label_de": "Mit Kribbeln oder Taubheit in den Fingern, oder schlimmer bei lange gebeugtem Ellbogen (z. B. Handy halten)",
+     "points_to": [
+      "medial-epicondylopathy",
+      "lateral-epicondylopathy"
+     ]
+    }
+   ]
+  }
+ ],
+ "conditions": [
+  {
+   "id": "pip-synovitis",
+   "name_de": "Gereiztes Fingermittelgelenk (PIP-Synovitis / Kapsulitis)",
+   "region": "finger",
+   "locations": [
+    "pip-gelenk",
+    "dip-gelenk"
+   ],
+   "what_de": "Eine Reizung der Gelenkinnenhaut und Kapsel eines Fingergelenks: Das Gelenk bildet zu viel Flüssigkeit, wird dick, steif und schmerzt dumpf. In der Kletterliteratur heißt das meist Kapsulitis; am häufigsten trifft es das Mittelgelenk des Mittelfingers.",
+   "mechanism_de": "Beim Aufstellen (halbe und volle Leiste) entsteht im fast maximal gebeugten Mittelgelenk ein hoher Spitzendruck, die Gelenkinnenhaut wird gedehnt und eingeklemmt. Typisch ist die Summe: mehr Volumen oder Intensität ohne genug Erholung, viele Leisten, Löcher, Fingerklemmer, unstrukturiertes Fingerboard-Training oder dieselbe Bewegung in Dauerschleife am Projekt. Etwa die Hälfte der Fälle in Schöffls Serie begann aber akut, einzelne nach einem Einfingerloch.",
+   "typical_signs_de": [
+    "Dumpfer, eher diffuser Schmerz rund um das Gelenk (Rückseite und Seiten), nicht auf der Beugeseite über dem Ringband",
+    "Gelenk sichtbar oder fühlbar geschwollen, auf beiden Seiten",
+    "Morgensteife, am deutlichsten am Morgen nach einem harten Kletter- oder Trainingstag; wird mit Bewegung besser",
+    "Endbeugung eingeschränkt: Fingerkuppe erreicht den Handteller nicht mehr so leicht wie auf der anderen Seite",
+    "Schmerz eher nach dem Training als währenddessen; Druck auf das Gelenk bzw. Zusammenschieben provoziert, leichter Zug entlastet",
+    "Bei langer Dauer kann der Schmerz nachlassen, obwohl die Schwellung bleibt – das ist kein Zeichen von Heilung"
+   ],
+   "not_this_if_de": [
+    "Schmerz und Schwellung nur auf einer Gelenkseite, ausgelöst durch seitliche Belastung, oder das Gelenk lässt sich seitlich aufklappen: spricht eher für das Seitenband",
+    "Druckschmerz auf der Beugeseite über Grund- oder Mittelglied und Schmerz vor allem beim Ziehen gegen Widerstand: spricht eher für Ringband oder Sehnenscheide",
+    "Plötzliches Überstreck- oder Stauchungstrauma: palmare Platte oder Bandverletzung möglich – untersuchen lassen",
+    "Dicke, aber schmerzfreie und frei bewegliche Gelenke nach vielen Kletterjahren sind oft eine Anpassung und nicht automatisch ein Problem",
+    "Schnappen oder Blockieren im Gelenk, Fehlstellung, Schmerzen schon vor dem Klettern oder in vielen Gelenken: andere Ursachen (Arthrose, freie Gelenkkörper, rheumatische Erkrankung) abklären lassen",
+    "Unter 18 Jahren: zuerst an die Wachstumsfuge denken"
+   ],
+   "see_professional_de": [
+    "Beschwerden bestehen seit mehr als 6 Wochen oder werden trotz 4 Wochen konsequenter Entlastung nicht besser: Ab hier sieht Schöffls Stufenschema ärztliche Optionen vor (Injektion ins Gelenk), die eine gesicherte Diagnose brauchen",
+    "Schwellung nimmt zu, Beweglichkeit nimmt ab oder der Alltag ist betroffen",
+    "Nach 2–3 Wochen Selbstmanagement keine Besserung: Physio mit Klettererfahrung (Rock Rehab)",
+    "Zur Sicherung der Diagnose dienen Ultraschall (Erguss, vermehrte Durchblutung der Gelenkhaut) und Röntgen (Gelenkspalt, Arthrosezeichen); sinnvoll, wenn es wiederkehrt oder chronisch wird"
+   ],
+   "grades": [
+    {
+     "id": "stufe-1",
+     "name_de": "Stufe 1 nach Schöffl (Beginn vor weniger als 6 Wochen)",
+     "signs_de": "Schmerz, Schwellung und Bewegungseinschränkung seit weniger als 6 Wochen.",
+     "management_de": "Konservativ: Kühlen, Bewegungstherapie, Traktion des Gelenks, Übungen mit Therapieknete, Handbäder, Akupressurring, Lymphdrainage. Beim Wiedereinstieg Achter-Tape.",
+     "timeline_de": "0–14 Tage Kletterpause, danach schrittweise Steigerung nach Beschwerden."
+    },
+    {
+     "id": "stufe-2",
+     "name_de": "Stufe 2 nach Schöffl (über 6 Wochen oder konservativ über 4 Wochen erfolglos)",
+     "signs_de": "Anhaltender Schmerz und Erguss.",
+     "management_de": "Ärztliche Injektion ins Gelenk (Kortikosteroid, alternativ z. B. PRP). Entscheidung und Durchführung nur durch Fachärzt:innen.",
+     "timeline_de": "Kein Klettern zwischen den Injektionen und mindestens 10 Tage nach der zweiten (bei PRP 48 Stunden), dann schrittweise Steigerung mit Achter-Tape."
+    },
+    {
+     "id": "stufe-3",
+     "name_de": "Stufe 3 nach Schöffl (über 6 Wochen nach zweiter Injektion weiter Schmerz und Erguss)",
+     "signs_de": "Therapieresistenter Verlauf.",
+     "management_de": "Radiosynoviorthese (nuklearmedizinisches Verfahren) – Spezialzentrum.",
+     "timeline_de": "48 Stunden Ruhigstellung, Wiedereinstieg nach etwa 6 Wochen, volle Belastung nach etwa 10 Wochen."
+    },
+    {
+     "id": "stufe-4",
+     "name_de": "Stufe 4 nach Schöffl (über 6 Monate nach Stufe 3 weiter Beschwerden)",
+     "signs_de": "Weiter anhaltend.",
+     "management_de": "Weitere Spezialverfahren bis hin zur operativen Entfernung der Gelenkinnenhaut als letzte Option. In Schöffls Serie brauchte das niemand.",
+     "timeline_de": "Individuell."
+    }
+   ],
+   "phases": [
+    {
+     "n": 1,
+     "name_de": "Entlasten",
+     "goal_de": "Schmerz und Schwellung beruhigen, ohne den Finger stillzulegen.",
+     "enter_de": "Gelenk ist geschwollen, morgens steif und meldet sich nach dem Klettern oder schon im Alltag.",
+     "exit_de": "Schmerz und Schwellung gehen klar zurück, die Morgensteife wird kürzer, Alltag ist beschwerdearm. Die Quellen nennen dafür keinen Messwert; Vagy steuert über den Schmerz 24 Stunden nach Belastung.",
+     "duration_de": "Meist etwa 1–2 Wochen (Schöffl Stufe 1: 0–14 Tage Kletterpause; Vagys Fallbericht: Entlastungsphase Woche 0–2). Je länger es schon besteht, desto länger dauert es.",
+     "climbing_de": "Hier gehen die Quellen auseinander: Schöffl setzt bis zu 14 Tage Kletterpause an, die Physios (Climbing Doctor, Rock Rehab, Hooper's Beta) raten zu relativer Entlastung statt Totalpause – ganz aufhören nur in schweren Fällen. Praktisch: alles weglassen, was das Gelenk reizt (Leisten, Löcher, Fingerklemmer, Board, Campus, Fingerboard an kleinen Kanten); Platte, Fußtechnik, einarmig am gesunden Arm, Rumpf und Beweglichkeit sind erlaubt. Tape: Schöffl empfiehlt beim Wiedereinstieg ein Achter-Tape, Rock Rehab nennt H-Tape als Versuch gegen Schmerz – Belege für eine Wirkung auf das Gelenk gibt es nicht. Kälte oder Wärme: uneinheitlich – Vagy nutzte im Fallbericht 5 Minuten Eis täglich, The Climbing Doctor nennt Eis bei frischer und Wärme bei chronischer Reizung, Rock Rehab sagt: nimm, was Schmerz und Steifigkeit besser macht (10–15 Minuten, 2–3-mal täglich). Entzündungshemmer nennt Schöffl als Option; das gehört in ärztliche Hand.",
+     "exercises": [
+      {
+       "id": "finger-active-rom",
+       "name_de": "Aktive Beweglichkeit: gestreckte Hand – Hakenfaust – Faust",
+       "how_de": [
+        "Handgelenk und Handrücken gerade halten.",
+        "Alle Finger ganz strecken.",
+        "Zur Hakenfaust rollen (nur Mittel- und Endgelenke beugen), dann zur vollen Faust; Fingerkuppen Richtung oberer Handteller.",
+        "Wieder ganz öffnen. Langsam und flüssig, ohne Nachdrücken."
+       ],
+       "dose_de": "3 Durchgänge à 45 Sekunden (Vagy, Fallbericht) oder 3 × 10 Wiederholungen (The Climbing Doctor)",
+       "frequency_de": "täglich; in der Mobilitätsphase bis 3–5-mal am Tag",
+       "pain_limit_de": "Nur bis an die Steifigkeit, kein Hineindrücken in den Schmerz. Kein Nachschmerz.",
+       "timer": {
+        "work": 45,
+        "rest": 15,
+        "reps": 1,
+        "sets": 3
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=598E8Y4QePQ",
+        "title": "Active ROM",
+        "channel": "The Climbing SIG",
+        "start_s": 0,
+        "end_s": 13
+       }
+      },
+      {
+       "id": "compression-wrap",
+       "name_de": "Leichte Kompression (selbsthaftende Binde oder Fingerling)",
+       "how_de": [
+        "Selbsthaftende elastische Binde (Coban) an der Fingerkuppe ansetzen.",
+        "In X-Touren von der Spitze Richtung Hand wickeln, nur leichter Zug.",
+        "Durchblutung prüfen: Kuppe kurz drücken – sie muss sofort wieder rosa werden. Schmerz oder Pochen heißt zu fest.",
+        "Mit der Binde den Finger locker durchbewegen (Faust öffnen und schließen, Finger ausschnipsen).",
+        "Hooper's Beta rät, damit nicht zu schlafen."
+       ],
+       "dose_de": "In den Quellen ohne feste Dauer; Vagy kombiniert die Kompression mit aktiver Bewegung und Finger-Schnipsen in der Entlastungsphase.",
+       "frequency_de": "täglich in der Entlastungsphase",
+       "pain_limit_de": "Darf nicht schmerzen, kribbeln oder die Kuppe blass lassen.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=h-nOPJsBZz8",
+        "title": "Why Are My Finger Joints Swollen and What Can I Do About It?",
+        "channel": "Hooper's Beta",
+        "start_s": 307,
+        "end_s": 385
+       }
+      },
+      {
+       "id": "tendon-glides",
+       "name_de": "Sehnengleiten",
+       "how_de": [
+        "Finger ganz strecken.",
+        "Hakenfaust: Mittel- und Endgelenke beugen, Grundgelenke bleiben gestreckt.",
+        "Volle Faust: Finger ganz einrollen.",
+        "Flache Faust: Grundgelenke und Mittelgelenke gebeugt, Endgelenke gestreckt.",
+        "Zwischen jeder Position wieder ganz strecken."
+       ],
+       "dose_de": "3 × 10 Wiederholungen",
+       "frequency_de": "bis zu 3-mal täglich",
+       "pain_limit_de": "Leichte Bewegung, die Flüssigkeit aus dem Gelenk bewegt – kein Schmerz über 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=BqvhdhFuoZs",
+        "title": "Climbing Pulley Sprain - Tendon Glide",
+        "channel": "The Climbing Doctor",
+        "start_s": 7,
+        "end_s": 49
+       }
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "name_de": "Beweglichkeit",
+     "goal_de": "Gelenk wieder frei bekommen, Flüssigkeitsaustausch fördern.",
+     "enter_de": "Schmerz und Schwellung sind zurückgegangen, das Gelenk ist aber noch steif oder in der Endbeugung eingeschränkt.",
+     "exit_de": "Beugung und Streckung fast wie am gleichen Finger der anderen Hand (Abstand Fingerkuppe–Handteller vergleichen), Zusammenschieben des Gelenks kaum noch schmerzhaft, keine Zunahme der Schwellung am Folgetag.",
+     "duration_de": "Im Fallbericht liefen die Mobilitätsübungen 6 Wochen täglich und danach 3-mal pro Woche weiter. Rechne mit Wochen, nicht Tagen.",
+     "climbing_de": "Leichtes Klettern mit offener Hand an großen Griffen, wenig steil, statisch. Leisten, Löcher und dynamische Züge bleiben draußen. Kurze Einheiten: Auch leichtes Klettern mit viel Volumen reizt das Gelenk erneut.",
+     "exercises": [
+      {
+       "id": "pip-joint-traction",
+       "name_de": "Mittelgelenk selbst mobilisieren (Zug und kleine Schwingungen)",
+       "how_de": [
+        "Daumen der anderen Hand unter das Grundglied des betroffenen Fingers legen und es so festhalten.",
+        "Mit den übrigen Fingern das Mittelglied umfassen; das Gelenk ist nur leicht gebeugt (etwa 10°).",
+        "Sanft in Längsrichtung ziehen und kleine Schwingungen mit 1–2 pro Sekunde machen – oder den Zug etwa 30 Sekunden halten.",
+        "Danach direkt aktiv durchbewegen."
+       ],
+       "dose_de": "3 Durchgänge à 45 Sekunden (Vagy, Fallbericht) bzw. etwa 30 Sekunden gehaltener Zug (The Climbing Doctor)",
+       "frequency_de": "täglich; laut The Climbing Doctor 3–5-mal am Tag möglich",
+       "pain_limit_de": "Muss entlasten. Wenn Zug weh tut statt gut, weglassen.",
+       "timer": {
+        "work": 45,
+        "rest": 15,
+        "reps": 1,
+        "sets": 3
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=_A0KXUZ2zAI",
+        "title": "Joint Mobilizations for Rock Climbing Synovitis",
+        "channel": "The Climbing Doctor",
+        "start_s": 17,
+        "end_s": 37
+       }
+      },
+      {
+       "id": "passive-finger-flexion",
+       "name_de": "Passive Beugung mit sanftem Nachdruck",
+       "how_de": [
+        "Mit der anderen Hand das Endglied Richtung Grundglied führen, bis das Bewegungsende spürbar ist.",
+        "Dort sanft halten, nicht wippen.",
+        "Lösen, kurz ausschütteln, wiederholen.",
+        "Danach aktiv durchbewegen, um den gewonnenen Weg zu nutzen."
+       ],
+       "dose_de": "7–8 Sekunden halten, 3–5 Durchgänge",
+       "frequency_de": "3–5-mal am Tag (The Climbing Doctor)",
+       "pain_limit_de": "Vorsicht: Im Fallbericht von Vagy hat eigenständiges Dehnen in die Beugung die Beschwerden zunächst verschlimmert. Nur einsetzen, wenn das Gelenk schon ruhiger ist; bei Zunahme von Schmerz oder Schwellung weglassen und bei Zug-Mobilisation bleiben.",
+       "timer": {
+        "work": 8,
+        "rest": 5,
+        "reps": 5,
+        "sets": 1
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=lIAvanJCUWM",
+        "title": "Joint over pressure",
+        "channel": "The Climbing SIG",
+        "start_s": 0,
+        "end_s": 14
+       }
+      },
+      {
+       "id": "finger-active-rom",
+       "name_de": "Aktive Beweglichkeit: gestreckte Hand – Hakenfaust – Faust",
+       "how_de": [
+        "Direkt nach der Mobilisation.",
+        "Alle Finger durch den vollen Weg bewegen, Handrücken gerade.",
+        "Langsam, gleichmäßig."
+       ],
+       "dose_de": "3 × 10 Wiederholungen bzw. 3 × 45 Sekunden",
+       "frequency_de": "3–5-mal am Tag",
+       "pain_limit_de": "Schmerzfrei im verfügbaren Weg.",
+       "timer": {
+        "work": 45,
+        "rest": 15,
+        "reps": 1,
+        "sets": 3
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=598E8Y4QePQ",
+        "title": "Active ROM",
+        "channel": "The Climbing SIG",
+        "start_s": 0,
+        "end_s": 13
+       }
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "name_de": "Belastungsaufbau",
+     "goal_de": "Das Gelenk dosiert wieder an Zug gewöhnen – zuerst mit offener Hand, häufig und moderat.",
+     "enter_de": "Gute Beweglichkeit, Alltag schmerzfrei, leichtes Klettern mit offener Hand bleibt ohne Reaktion am nächsten Morgen.",
+     "exit_de": "Hänger mit offener Hand an 20–30 mm bei etwa 75 % ohne Schwellung oder Steifigkeit am Folgetag; erst dann die halbe Leiste dazunehmen. Messbare Kriterien sind nicht publiziert – der nächste Morgen ist dein Test.",
+     "duration_de": "Mehrere Wochen; hängt von Vorgeschichte und Schwere ab.",
+     "climbing_de": "Moderates Klettern mit offener Hand, Slopern und großen Griffen; Leisten nur sparsam, wenig Dynamik. Volumen niedrig halten und mitschreiben.",
+     "exercises": [
+      {
+       "id": "open-hand-long-hangs",
+       "name_de": "Lange Hänger mit offener Hand (entlastet)",
+       "how_de": [
+        "Kante 20–30 mm, offene Hand.",
+        "Intensität etwa 50–75 %: Füße am Boden oder Gewicht über Umlenkrolle abnehmen; alternativ Block mit Gewicht vom Boden heben.",
+        "30 Sekunden halten, Schultern aktiv.",
+        "2–3 Minuten Pause."
+       ],
+       "dose_de": "4 × 30 Sekunden, 2–3 Minuten Pause",
+       "frequency_de": "Häufig und moderat; die Zahl der Einheiten pro Woche lässt die Quelle offen (abhängig von Trainingsalter und Schwere).",
+       "pain_limit_de": "Etwas Schmerz ist in Ordnung, zunehmender Schmerz nicht. Keine Schwellung oder Steifigkeit am Folgetag.",
+       "timer": {
+        "work": 30,
+        "rest": 150,
+        "reps": 1,
+        "sets": 4
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1465,
+        "end_s": 1520
+       }
+      },
+      {
+       "id": "open-hand-repeaters",
+       "name_de": "Repeater mit offener Hand (entlastet)",
+       "how_de": [
+        "Gleicher Aufbau wie bei den langen Hängern.",
+        "7 Sekunden ziehen, 3 Sekunden lösen – das Be- und Entlasten unterstützt den Flüssigkeitswechsel im Gelenk.",
+        "6 Wiederholungen sind ein Satz."
+       ],
+       "dose_de": "7 s Zug / 3 s Pause × 6; 2–3 Minuten Pause zwischen Sätzen. Die Satzzahl nennt die Quelle nicht.",
+       "frequency_de": "wie die langen Hänger, im Wechsel",
+       "pain_limit_de": "Wie oben; mit offener Hand beginnen, Intensität schrittweise steigern, halbe Leiste erst später.",
+       "timer": {
+        "work": 7,
+        "rest": 3,
+        "reps": 6,
+        "sets": 1
+       },
+       "video": null
+      },
+      {
+       "id": "finger-extensor-band",
+       "name_de": "Fingerstrecker mit Gummiband",
+       "how_de": [
+        "Gummiband um alle fünf Fingerkuppen legen.",
+        "Finger zügig aufspreizen und kontrolliert zurückkommen – als Bewegung, nicht als Haltearbeit.",
+        "Variante aus dem Fallbericht für die kleinen Handmuskeln: Band zwischen Ring- und kleinem Finger einklemmen und gegen Zug nach unten festhalten."
+       ],
+       "dose_de": "Im Fallbericht ohne Satz- und Wiederholungszahl; The Climbing Doctor nennt für die Bandstreckung an anderer Stelle 2 × 10.",
+       "frequency_de": "3-mal pro Woche",
+       "pain_limit_de": "Schmerzfrei.",
+       "timer": null,
+       "video": null
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "name_de": "Bewegung und Rückkehr",
+     "goal_de": "Leiste und volle Kletterbelastung zurückholen und die Ursache abstellen: Griffwahl, Technik, Volumen.",
+     "enter_de": "Belastungsaufbau mit offener Hand ohne Reaktion, Gelenk morgens ruhig.",
+     "exit_de": "Normale Einheiten inklusive Leisten ohne Schwellung und Morgensteife danach. Im Fallbericht: uneingeschränktes Klettern nach etwa 6–8 Wochen, völlig schmerzfrei erst im Verlauf eines Jahres.",
+     "duration_de": "Wochen bis Monate. In Schöffls Serie waren 93 % der Finger im Mittel 12,6 Wochen nach Therapieende wieder voll belastbar; der Verlauf gilt als langwierig und neigt zum Wiederkommen.",
+     "climbing_de": "Stufenweise: offene Leiste, Sloper, große Griffe → kleinere Griffe → volle Leiste, Löcher. Leisten bewusst sparsam, kleinen Finger mit auf die Leiste nehmen, Griffarten mischen, nicht übergreifen (nicht jeder Zug braucht Maximalkraft), dynamische Züge erst spät. Vollständig aufwärmen. Intensität, Dauer und Umfang jeder Einheit notieren. Campusboard an kleinen Leisten meiden.",
+     "exercises": [
+      {
+       "id": "half-crimp-reintro-hangs",
+       "name_de": "Halbe Leiste wieder einführen (Hänger, entlastet)",
+       "how_de": [
+        "Gleiches Protokoll wie die Hänger mit offener Hand, jetzt ein Teil der Sätze in halber Leiste.",
+        "Mit deutlich reduzierter Last beginnen und über Wochen steigern.",
+        "Erst wenn das ruhig bleibt, Kante verkleinern oder Last erhöhen."
+       ],
+       "dose_de": "4 × 30 Sekunden oder 7/3 × 6, 2–3 Minuten Pause",
+       "frequency_de": "nach Verträglichkeit, nicht an Tagen mit hartem Leistenklettern",
+       "pain_limit_de": "Keine Zunahme während der Einheit, keine Reaktion am nächsten Morgen.",
+       "timer": {
+        "work": 30,
+        "rest": 150,
+        "reps": 1,
+        "sets": 4
+       },
+       "video": null
+      },
+      {
+       "id": "grip-symmetry-check",
+       "name_de": "Griff-Check: Fingerstellung in der halben Leiste filmen",
+       "how_de": [
+        "An einer Kante, die du in halber Leiste mindestens 10 Sekunden halten kannst, hängen oder ziehen.",
+        "Von vorn filmen oder beobachten lassen.",
+        "Achte auf Finger, die seitlich ausscheren, und darauf, ob der kleine Finger mitarbeitet – im Fallbericht war eine ungleiche Lastverteilung Teil des Problems.",
+        "Lässt sich die Stellung an größeren Kanten nicht korrigieren, mit Trainer:in oder Physio daran arbeiten."
+       ],
+       "dose_de": "Einmal zum Einstieg, dann alle paar Wochen",
+       "frequency_de": "gelegentlich",
+       "pain_limit_de": "Nur mit Last, die schmerzfrei ist.",
+       "timer": null,
+       "video": null
+      },
+      {
+       "id": "tendon-glides",
+       "name_de": "Sehnengleiten",
+       "how_de": [
+        "Vor jeder Einheit die Positionen des Sehnengleitens durchgehen.",
+        "Danach an großen Griffen einklettern, bevor die erste Leiste kommt."
+       ],
+       "dose_de": "1–3 × 10",
+       "frequency_de": "vor jeder Einheit",
+       "pain_limit_de": "Schmerzfrei.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=BqvhdhFuoZs",
+        "title": "Climbing Pulley Sprain - Tendon Glide",
+        "channel": "The Climbing Doctor",
+        "start_s": 7,
+        "end_s": 49
+       }
+      }
+     ]
+    }
+   ],
+   "prevention_de": [
+    "Auf die Frühzeichen hören: Morgensteife und ein dickeres Gelenk am Tag nach der Einheit bedeuten, dass die Belastung zu hoch war – dann reduzieren, nicht durchziehen.",
+    "Volumen und Intensität langsam steigern und mitschreiben; Rock Rehab nennt als Faustregel höchstens etwa 20 % pro Woche. Entlastungswochen einplanen.",
+    "Nicht alles aufstellen: Griffarten mischen, offene Hand trainieren, nicht denselben Leistenzug in Dauerschleife probieren.",
+    "Kein frühes oder häufiges Training an kleinsten Leisten (Campus, Minikanten); vor harten Leisten gründlich aufwärmen."
+   ],
+   "evidence_de": "Dünn. Es gibt eine prospektive Fallserie von Schöffl et al. (2025; 50 Kletternde, 69 Gelenke) zu einem klinikeigenen, erfahrungsbasierten Stufenschema ohne Kontrollgruppe – die Autoren schreiben selbst, dass für die konservativen Maßnahmen Reihenfolge, Häufigkeit und Intensität nicht untersucht sind. Das Übungsprogramm stammt aus einem einzelnen Fallbericht (Vagy 2023) und aus Physio-Empfehlungen; Dosierungen sind klinische Meinung.",
+   "sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11788292/",
+    "https://www.frontiersin.org/articles/10.3389/fspor.2023.1185653",
+    "https://theclimbingdoctor.com/swelling-of-the-finger-joints/",
+    "https://www.youtube.com/watch?v=_A0KXUZ2zAI",
+    "https://www.youtube.com/watch?v=h-nOPJsBZz8",
+    "https://rock-rehab.squarespace.com/blog/pip-and-dip-joint-synovitis-in-rock-climbers-im-calling-you-out",
+    "https://www.hoopersbeta.com/library/collateral-ligament-injury-from-rock-climbing-causes-fix",
+    "https://theclimbingdoctor.com/returning-to-the-fingerboard-after-a-finger-injury-2/"
+   ]
+  },
+  {
+   "id": "pulley-injury",
+   "name_de": "Ringbandverletzung (A2/A4: Zerrung bis Riss)",
+   "region": "finger",
+   "locations": [
+    "a2-grundglied",
+    "a4-mittelglied"
+   ],
+   "what_de": "Die Ringbänder halten die Beugesehnen am Fingerknochen. Bei Überlastung können sie gezerrt werden oder teilweise bis ganz reißen – am häufigsten das A2-Ringband am Grundglied von Mittel- oder Ringfinger. Es ist die häufigste Kletterverletzung am Finger.",
+   "mechanism_de": "Fast immer in der aufgestellten Leiste: Dort wirkt auf das A2-Ringband ein Vielfaches der Kraft, die an der Fingerkuppe anliegt (bei offener Hand nur ein Bruchteil). Akut reißt es typischerweise, wenn ein Fuß wegrutscht oder die Hand unter hoher Last aufgeht. Schleichend entsteht eine Reizung durch viel hartes Leistenklettern, plötzlich mehr Board-Einheiten oder zusätzliches Fingerboard ohne Ausgleich an anderer Stelle. Ein vorgeschädigtes Ringband reißt leichter.",
+   "typical_signs_de": [
+    "Punktueller Druckschmerz auf der Beugeseite des Grundglieds (A2) oder Mittelglieds (A4)",
+    "Schmerz in halber und voller Leiste, während offene Hand und Sloper deutlich besser gehen (bei leichten Graden)",
+    "Akut: plötzlicher Schmerz, oft mit hörbarem Knall oder Reißgefühl",
+    "Schleichend: Schmerz nach hartem Leistenklettern, am nächsten Morgen schlimmer, mit Bewegung besser; kaum Kraftverlust – deshalb wird es oft zu lange ignoriert",
+    "Bei höheren Graden: Schwellung oder Bluterguss möglich (nicht zwingend), Morgensteife, Kraftverlust in allen Griffarten, eingeschränkte Beugung",
+    "Sichtbares Abstehen der Sehne erst bei Mehrfachrissen; ein einzelner kompletter A2-Riss zeigt das mit bloßem Auge meist nicht"
+   ],
+   "not_this_if_de": [
+    "Schmerz auch bei offener Hand, beim passiven Überstrecken des Fingers oder bis in Handfläche/Unterarm ziehend, schleichender Beginn: spricht eher für die Sehnenscheide",
+    "Schmerz in der Handfläche bzw. seitlich am Fingeransatz, ausgelöst in Loch-Stellung (ein Finger gestreckt, Nachbar gebeugt): spricht eher für einen Lumbrikalis",
+    "Schmerz und Schwellung am Gelenk selbst statt am Fingerglied: Gelenkreizung oder Seitenband",
+    "Seit mehr als etwa 8–10 Wochen bestehende Reizung mit tastbar verdicktem Ringband: eigene Kategorie (verletzungsbedingte Ringbandverdickung) – abklären lassen",
+    "Hängenbleiben, Klicken oder Schnappen beim Beugen und Strecken, Schwellung des ganzen Fingers oder Stillstand über Wochen: möglicher eingeschlagener Ringbandstumpf (Flap), braucht Bildgebung",
+    "Unter 18 Jahren gilt Schmerz in dieser Region bis zur Abklärung als mögliche Wachstumsfugenverletzung"
+   ],
+   "see_professional_de": [
+    "Nach jedem Knall oder Reißgefühl: Ultraschall zur Einstufung – er ist der Standard, und der Grad bestimmt Schutz (Tape oder Ring), Kletterpause und Zeitplan",
+    "Ab Grad II (anhaltender Schmerz über Tage, Schwellung, alle Griffarten schmerzhaft): Schöffls Konsens sieht einen thermoplastischen Ringbandschutz-Ring vor, der angepasst werden muss",
+    "Sichtbares Abstehen der Sehne oder Verdacht auf mehrere Ringbänder: zeitnah handchirurgisch – konservativ geht bei Grad IVa nur, wenn die Behandlung in den ersten etwa 10 Tagen beginnt; Grad IVb wird operiert",
+    "Zunehmende Streckhemmung im Mittelgelenk (über 20°) oder anhaltende Sehnenscheidenreizung nach einem Riss: chirurgische Beurteilung",
+    "Nach 6–8 Wochen ordentlicher Reha noch geschwollen, hakend oder ohne Fortschritt: Bildgebung"
+   ],
+   "grades": [
+    {
+     "id": "grad-1",
+     "name_de": "Grad I – Zerrung",
+     "signs_de": "Schmerz mittig am Grundglied oder am Rand des A2 nach intensivem Leistenklettern, am nächsten Tag meist weg, kommt beim Aufstellen sofort wieder. Keine Schwellung, leichter Druckschmerz. Offene Hand kaum betroffen, Leiste schwächer. Klinisch 'mild' nach Cooper & LaStayo: Alltag 0/10, nach dem Klettern höchstens 2/10 und nur in der Leiste, volle Beweglichkeit.",
+     "management_de": "Konservativ, keine Ruhigstellung. Schöffl/Bamberg (Konsens 2019): 2–4 Wochen H-Tape tagsüber oder Ring, funktionelle Therapie. Hooper's Beta: 7–10 Tage Kletterpause, Belastungsaufbau ab Tag 1, Tape optional.",
+     "timeline_de": "Schöffl/Bamberg: leichtes Klettern nach 4 Wochen, volle Belastung nach 6 Wochen, H-Tape beim Klettern 3 Monate. Vagy (nach Cooper): leichtes Klettern Woche 2–3, mittleres Woche 3–4, hartes Woche 5–6. Hooper's Beta: volle Kraft nach etwa 6–8 Wochen."
+    },
+    {
+     "id": "grad-2",
+     "name_de": "Grad II – kompletter Riss A3 oder A4, oder Teilriss A2",
+     "signs_de": "Deutlicherer Schmerz, der nach Auslösung mehrere Tage anhält; schärferer Druckschmerz, manchmal leichte Schwellung (eher fühl- als sichtbar), Morgensteife. Alle Griffarten unter Last schmerzhaft, Finger auch an größeren Griffen schwächer. Klinisch 'moderat': Alltag 3–5/10, Klettern ab 5/10 in allen Griffarten, bis 25 % Bewegungsverlust.",
+     "management_de": "Konservativ. Schöffl/Bamberg: Ruhigstellung optional und unter 5 Tagen, dann 6 Wochen thermoplastischer Ring. Hooper's Beta dagegen: kein Ring, aber H-Tape bei allem, was greift (Reha, Klettern, Kreuzheben, Klimmzüge), 2 Wochen Kletterpause.",
+     "timeline_de": "Schöffl/Bamberg: leichtes Klettern nach 6 Wochen, voll nach 8–10 Wochen, H-Tape beim Klettern 3 Monate. Vagy: leichtes Klettern Woche 4–6, mittleres Woche 6–9, hartes Woche 9–12. Hooper's Beta: etwa 10–12 Wochen bis zur vollen Kraft."
+    },
+    {
+     "id": "grad-3",
+     "name_de": "Grad III – kompletter Riss A2",
+     "signs_de": "Meist Knall oder Reißgefühl. Schmerz sofort oder erst mit der Schwellung nach Stunden; Schwellung und Bluterguss möglich, aber nicht immer. Deutlicher Kraftverlust, eingeschränkte Beugung (morgens schlimmer). Tückisch: manchmal wenig Schmerz, weil kein Ringband mehr da ist, das weh tun könnte. Kein mit bloßem Auge sichtbares Abstehen der Sehne.",
+     "management_de": "Konservativ, keine OP bei isoliertem A2-Riss. Schöffl/Bamberg: Ruhigstellung optional unter 5 Tagen, 6–8 Wochen Ring (täglich 1 Stunde abnehmen, Hautpflege), nie mit Ring klettern. Hooper's Beta: Ring rund um die Uhr für 4–6 Wochen, dann 2 Wochen nur bei Belastungsübungen, 6 Wochen Kletterpause; Ring beim Klettern sieht er als Option – das widerspricht Schöffl ausdrücklich.",
+     "timeline_de": "Schöffl/Bamberg: leichtes Klettern nach 8 Wochen, voll nach 3 Monaten, H-Tape beim Klettern 3 Monate (ältere Schöffl-Fassung: 6 Monate; Hooper's Beta: bis 6 Monate). Vagy: leichtes Klettern Woche 6–9, mittleres 9–12, hartes 12–15. Hooper's Beta: 16–20 Wochen oder etwas länger. Schneeberger & Schweizer: mit 8 Wochen Ring erreichten 88 % ihr altes Niveau."
+    },
+    {
+     "id": "grad-4a",
+     "name_de": "Grad IVa – Mehrfachriss, konservativ behandelbar",
+     "signs_de": "Riss von A2/A3 oder A3/A4 ohne ausgeprägtes sichtbares Abstehen der Sehne; im Ultraschall lässt sich die Sehne an den Knochen zurückdrücken; Behandlungsbeginn innerhalb von 10 Tagen; keine Gelenkkontraktur. Ein oder mehrere Knalle, Schwellung und Bluterguss wahrscheinlich, Kraftverlust auch im Alltag.",
+     "management_de": "Nur in fachärztlicher Hand. Konservativ mit 8 Wochen Ring; entwickelt sich eine Streckhemmung im Mittelgelenk über 20°, wird operiert. Hooper's Beta: Ring plus H-Tape darunter rund um die Uhr für 6–8 Wochen, Belastungsübungen erst nach 2 Wochen, 8 Wochen Kletterpause.",
+     "timeline_de": "Schöffl/Bamberg: leichtes Klettern nach 10 Wochen, voll nach 4 Monaten, H-Tape beim Klettern länger als 12 Monate. Hooper's Beta: 24 Wochen bis zu einem Jahr."
+    },
+    {
+     "id": "grad-4b",
+     "name_de": "Grad IVb – Mehrfachriss, operativ",
+     "signs_de": "A2/A3 oder A3/A4 mit deutlich sichtbarem Abstehen der Sehne, Dreifachriss A2/A3/A4, oder ein Einzelriss mit eingeschlagenem Stumpf (FLIP), zunehmender Kontraktur oder therapieresistenter Sehnenscheidenreizung.",
+     "management_de": "Operative Rekonstruktion, danach 14 Tage Ruhigstellung und 4 Wochen Ring. Nachbehandlung nach Vorgabe des OP-Teams – kein Selbstprogramm.",
+     "timeline_de": "Schöffl/Bamberg: leichtes Klettern nach 4 Monaten, voll nach 6 Monaten, H-Tape beim Klettern länger als 12 Monate."
+    }
+   ],
+   "phases": [
+    {
+     "n": 1,
+     "name_de": "Schützen und bewegen",
+     "goal_de": "Das Ringband schützen (Tape oder Ring je nach Grad), den Finger aber von Anfang an bewegen, damit nichts verklebt.",
+     "enter_de": "Frische Verletzung oder frisch erkannte Reizung; Ruheschmerz, Druckschmerz oder Schmerz bei Alltagsgriffen.",
+     "exit_de": "Kein Ruheschmerz, Alltag höchstens 2/10, volle oder fast volle Beugung (Fingerkuppen erreichen alle drei Zeilen der Handfläche), erste Züge an einer großen Kante mit 0/10 möglich – und die grad-abhängige Kletterpause ist um.",
+     "duration_de": "Kletterpause nach Hooper's Beta: Grad I 7–10 Tage, II 2 Wochen, III 6 Wochen, IVa 8 Wochen. Schöffl/Bamberg ist länger (leichtes Klettern nach 4 / 6 / 8 / 10 Wochen), Vagy kürzer (Woche 2–3 / 4–6 / 6–9). Im Zweifel die vorsichtigere Variante.",
+     "climbing_de": "Kein Klettern. Sonstiges Training läuft weiter, solange der Finger unter 2/10 bleibt; bei Grad III auf alles mit hoher Griffkraft verzichten (Kreuzheben, Klimmzüge) und keinen direkten Druck auf das Ringband (Klimmzugstange). Schutz: Grad I Tape nach Wunsch bzw. H-Tape tagsüber; ab Grad II H-Tape bei jeder Greifbelastung (Hooper's Beta) bzw. Ring (Schöffl); ab Grad III Ring. Den ganzen Finger zu schienen wird in keinem Grad empfohlen. Zur Evidenz: H-Tape verringert das Abheben der Sehne um etwa 15–22 % (niedrige bis moderate Sicherheit); ob es Schmerz, Rückkehrzeit oder Rissrisiko verbessert, ist nicht belegt; bei gesunden Fingern bringt es nichts. Eis und Wechselbäder hält Hooper's Beta hier für verzichtbar; zu Entzündungshemmern geben die Physio-Quellen bewusst keine Empfehlung.",
+     "exercises": [
+      {
+       "id": "finger-rom-three-rows",
+       "name_de": "Beweglichkeit in drei Positionen",
+       "how_de": [
+        "Finger ganz strecken.",
+        "Fingerkuppen in einem Bogen zur unteren Handfläche (handgelenksnah) führen, wieder ganz strecken.",
+        "Dann zur Mitte der Handfläche (Faust), strecken.",
+        "Dann nach oben an die Schwielenlinie, strecken.",
+        "Kommst du bei Grad III/IVa nicht in Position 3, mit der anderen Hand sanft nachhelfen."
+       ],
+       "dose_de": "4–6 Wiederholungen pro Position",
+       "frequency_de": "mehrmals täglich, während der ganzen Reha",
+       "pain_limit_de": "Höchstens 2/10, während und danach.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1365,
+        "end_s": 1406
+       }
+      },
+      {
+       "id": "tendon-glides",
+       "name_de": "Sehnengleiten",
+       "how_de": [
+        "Gestreckte Finger → Hakenfaust → volle Faust → flache Faust, dazwischen jeweils ganz strecken.",
+        "Langsam; die Beugesehnen sollen unter den Ringbändern gleiten.",
+        "Ab Grad II mit Schutz (H-Tape bzw. Ring)."
+       ],
+       "dose_de": "3 × 10 Wiederholungen",
+       "frequency_de": "bis zu 3-mal täglich",
+       "pain_limit_de": "Höchstens 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=BqvhdhFuoZs",
+        "title": "Climbing Pulley Sprain - Tendon Glide",
+        "channel": "The Climbing Doctor",
+        "start_s": 7,
+        "end_s": 49
+       }
+      },
+      {
+       "id": "h-tape",
+       "name_de": "H-Tape anlegen",
+       "how_de": [
+        "Unelastischen Tapestreifen von etwa 8–10 cm Länge und 1,5 cm Breite von beiden Enden her längs einreißen, sodass in der Mitte etwa 1 cm stehen bleibt (H-Form).",
+        "Die Mitte auf die Beugeseite des Mittelgelenks legen.",
+        "Die beiden körpernahen Streifen straff um das Ende des Grundglieds wickeln.",
+        "Finger beugen (Leistenstellung), dann die beiden anderen Streifen straff um den Anfang des Mittelglieds wickeln.",
+        "Es soll in der Beugung stützen; volles Strecken ist damit eingeschränkt."
+       ],
+       "dose_de": "Vor Belastungsübungen und später vor dem Klettern anlegen",
+       "frequency_de": "Grad I–III: beim Klettern etwa 3 Monate (Schöffl/Bamberg 2019; ältere Fassung und Hooper's Beta bei Grad III bis 6 Monate); Grad IV über 12 Monate",
+       "pain_limit_de": "Straff, aber Fingerkuppe bleibt rosa und warm.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=OueqYlZhpCQ",
+        "title": "Taping is the BEST Way to Prevent Finger Injuries | Climbing Myths",
+        "channel": "Hooper's Beta",
+        "start_s": 288,
+        "end_s": 370
+       }
+      },
+      {
+       "id": "finger-self-massage",
+       "name_de": "Selbstmassage am Finger",
+       "how_de": [
+        "Mit Daumen und Zeigefinger der anderen Hand das Gewebe um die schmerzhafte Stelle sanft bearbeiten.",
+        "Je gereizter, desto leichter der Druck."
+       ],
+       "dose_de": "etwa 3 Minuten",
+       "frequency_de": "täglich",
+       "pain_limit_de": "Höchstens 2/10; nicht so fest oder lang, dass es danach gereizter ist. Nutzen laut Hooper's Beta nicht gut belegt, Risiko gering.",
+       "timer": null,
+       "video": null
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "name_de": "Schmerzfreier Belastungsaufbau",
+     "goal_de": "Dem Ringband einen regelmäßigen, niedrigen Reiz geben – erst mit offener Hand, dann mit etwas halber Leiste – ohne Schmerz auszulösen.",
+     "enter_de": "Beginn nach Hooper's Beta: Grad I und II sofort, Grad III nach wenigen Tagen, Grad IVa nach 2 Wochen. Nach Vagy/Cooper: schmerzfreie Hänger Stufe 1 ab Woche 1–2 (mild), 2–4 (moderat), 3–6 (schwer).",
+     "exit_de": "Haltearbeit 30 s in gemischter Griffhaltung und schmerzfreie Repeater mit offener Hand und halber Leiste bei 0/10 ohne Reaktion am Folgetag; volle Beweglichkeit.",
+     "duration_de": "Etwa 1–2 Wochen bei Grad I, 2–4 Wochen bei Grad II, 3–6 Wochen bei Grad III (aus Vagys Tabelle abgeleitet); individuell sehr verschieden.",
+     "climbing_de": "Gegen Ende dieser Phase 'leichtes Klettern' nach Vagy: keine halbe oder volle Leiste, große Griffe, nicht steiler als senkrecht, zwei volle Grade unter Onsight-Niveau (Vagys Beispiel: V8 → V6). Mit H-Tape. Nach Schöffl nie mit dem Ring klettern (Verletzungsgefahr) und in dieser Zeit noch nicht frei am Fingerboard hängen; Hooper's Beta hält den Ring beim Klettern dagegen für eine mögliche Erinnerungsstütze. Kein Board, keine dynamischen Züge.",
+     "exercises": [
+      {
+       "id": "submax-holds",
+       "name_de": "Submaximale Haltezüge (Füße am Boden)",
+       "how_de": [
+        "Kante 20–35 mm, was sich angenehm anfühlt; am Fingerboard mit Füßen am Boden oder mit Block und leichtem Gewicht.",
+        "Ein- oder beidhändig 30 Sekunden ziehen bzw. halten.",
+        "30 Sekunden Pause.",
+        "Die meisten Wiederholungen offen (Drag), einige in halber Leiste; mit der Zeit auf etwa halbe-halbe. Bei Grad IVa anfangs nur offen."
+       ],
+       "dose_de": "8–12 × 30 s Zug / 30 s Pause, Anstrengung etwa 5–6 von 10",
+       "frequency_de": "anfangs 2-mal täglich, später 1-mal täglich; entfällt, sobald die Rekrutierungszüge dazukommen",
+       "pain_limit_de": "Höchstens 2/10 während und danach; du darfst zu Beginn einer Wiederholung nicht ermüdet sein.",
+       "timer": {
+        "work": 30,
+        "rest": 30,
+        "reps": 10,
+        "sets": 1
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1465,
+        "end_s": 1520
+       }
+      },
+      {
+       "id": "no-pain-repeaters",
+       "name_de": "Schmerzfreie Repeater (Stufe 1 offen, Stufe 2 mit halber Leiste)",
+       "how_de": [
+        "Am Fingerboard mit Entlastung (Füße am Boden oder Umlenkrolle) oder am Block.",
+        "7 Sekunden ziehen, 3 Sekunden lösen, 7 Wiederholungen.",
+        "3 Minuten Pause, 3 Sätze.",
+        "Stufe 1 nur mit offener Hand; Stufe 2 mit denselben Zahlen zusätzlich in halber Leiste."
+       ],
+       "dose_de": "3 Sätze × 7 Wiederholungen (7 s / 3 s), 3 Minuten Satzpause",
+       "frequency_de": "3-mal pro Woche",
+       "pain_limit_de": "0/10. Vagy betont: Die Zahlen sind ein Beispiel für schrittweise Steigerung, kein Protokoll ist einem anderen nachweislich überlegen.",
+       "timer": {
+        "work": 7,
+        "rest": 3,
+        "reps": 7,
+        "sets": 3
+       },
+       "video": null
+      },
+      {
+       "id": "mobile-board-rows",
+       "name_de": "Ruderzüge am Griffblock mit Widerstandsband",
+       "how_de": [
+        "Griffblock an ein Widerstandsband hängen, Band in Hüft- bis Brusthöhe fixieren.",
+        "Block an einer angenehmen Kante greifen, Griff halten und den Arm zum Körper rudern, kontrolliert zurück.",
+        "Intensität über Banddicke, Abstand und Tempo steuern.",
+        "Die Hälfte der Sätze offen, die Hälfte in halber Leiste (Grad IVa: zunächst überwiegend offen)."
+       ],
+       "dose_de": "4–6 Sätze × 10–12 Wiederholungen, Anstrengung 6–7 von 10",
+       "frequency_de": "etwa 3-mal pro Woche",
+       "pain_limit_de": "Höchstens 2/10; keine Ermüdung zu Satzbeginn.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1525,
+        "end_s": 1580
+       }
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "name_de": "Kraft – die Leiste kommt zurück",
+     "goal_de": "Kraft in der halben Leiste wieder aufbauen und die Schutzspannung abbauen, mit messbarer Steigerung.",
+     "enter_de": "Schmerzfreie Züge in offener Hand und halber Leiste, leichtes Klettern ohne Reaktion. Nach Vagy/Cooper beginnen schmerzarme Hänger in Woche 3–4 (mild), 6–9 (moderat), 9–12 (schwer).",
+     "exit_de": "Blockzüge und Rekrutierungszüge in halber Leiste steigen über mehrere Einheiten bei höchstens 2/10; die halbe Leiste bleibt über die ganze Wiederholung stabil (Finger gehen nicht auf); mittleres Klettern bleibt ohne Reaktion.",
+     "duration_de": "Mehrere Wochen; bei Grad III deutlich länger als bei Grad I.",
+     "climbing_de": "'Mittleres Klettern' nach Vagy: halbe Leiste wieder einsetzen, leicht überhängend, einen vollen Grad unter Onsight-Niveau – ab Woche 3–4 (mild), 6–9 (moderat), 9–12 (schwer). H-Tape. Volle Leiste, kleine Kanten, Löcher und Sprünge noch nicht. Wenn du dreimal pro Woche kletterst, Blockzüge auf zweimal reduzieren (oder umgekehrt), damit das Gewebe nicht überladen wird.",
+     "exercises": [
+      {
+       "id": "recruitment-pulls",
+       "name_de": "Rekrutierungszüge (überwindende Isometrie)",
+       "how_de": [
+        "Kante 20–25 mm, halbe Leiste, Block am fixen Punkt oder Fingerboard mit Füßen am Boden.",
+        "Über 5–8 Sekunden die Kraft aufbauen: in den ersten Sekunden niedrig, dann steigern.",
+        "Die Kraft kommt aus dem Hineindrücken der Finger in die Kante, nicht aus dem Arm – die Finger bewegen sich nicht.",
+        "1–2 Sekunden lösen, wiederholen."
+       ],
+       "dose_de": "4 Sätze × 3 Wiederholungen à 5–8 s; anfangs Anstrengung 6–7 von 10, später 8",
+       "frequency_de": "etwa 3-mal pro Woche",
+       "pain_limit_de": "Höchstens 2/10.",
+       "timer": {
+        "work": 8,
+        "rest": 2,
+        "reps": 3,
+        "sets": 4
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1634,
+        "end_s": 1684
+       }
+      },
+      {
+       "id": "block-pulls",
+       "name_de": "Blockzüge (No-Hang) mit Gewicht",
+       "how_de": [
+        "Griffblock an Gewichtsstange oder Kabelzug.",
+        "In halber Leiste greifen und das Gewicht durch Strecken der Beine anheben – nicht mit Rücken oder Arm ziehen.",
+        "Oben 1–2 Sekunden halten, kontrolliert absetzen.",
+        "Gewicht so wählen, dass 2–3 Wiederholungen Reserve bleiben und die halbe Leiste nicht aufgeht. Über die Wochen Gewicht steigern."
+       ],
+       "dose_de": "2–3 Aufwärmsätze à 6–10 Wiederholungen, dann 3–4 Arbeitssätze à 3–5 Wiederholungen",
+       "frequency_de": "bis zu 3-mal pro Woche, je nach Klettervolumen eher 2-mal",
+       "pain_limit_de": "Höchstens 2/10; gehen die Finger auf, ist es zu schwer.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1684,
+        "end_s": 1740
+       }
+      },
+      {
+       "id": "low-pain-repeaters",
+       "name_de": "Schmerzarme Repeater mit Griffvarianten",
+       "how_de": [
+        "Gleicher Aufbau wie die schmerzfreien Repeater, jetzt mit mehr Last.",
+        "Griffarten: offene Hand, halbe Leiste, Dreifingerloch (Stufe 1); in Stufe 2 zusätzlich Zweifingerloch.",
+        "7 Sekunden ziehen, 3 Sekunden lösen, 4 Wiederholungen je Griffart."
+       ],
+       "dose_de": "1 Satz × 4 Wiederholungen (7 s / 3 s) je Griffart, 3 Minuten Pause zwischen den Griffarten",
+       "frequency_de": "2-mal pro Woche",
+       "pain_limit_de": "Bis 3/10, wenn es innerhalb von 3 Minuten abklingt.",
+       "timer": {
+        "work": 7,
+        "rest": 3,
+        "reps": 4,
+        "sets": 3
+       },
+       "video": null
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "name_de": "Zurück zu hartem Klettern",
+     "goal_de": "Schnelle Kraftentwicklung und volle Kletterbelastung zurückholen, Volumen kontrolliert steigern.",
+     "enter_de": "Blockzüge steigen, mittleres Klettern mit halber Leiste ist unauffällig. Hartes Klettern nach Vagy ab Woche 5–6 (mild), 9–12 (moderat), 12–15 (schwer); nach Schöffl/Bamberg volle Belastung nach 6 Wochen / 8–10 Wochen / 3 Monaten / 4 Monaten (Grad I / II / III / IVa).",
+     "exit_de": "Volle Beweglichkeit, kein zunehmender Schmerz beim Probieren, Fingerkraft der betroffenen Hand wieder nahe an der anderen (The Climbing Doctor nennt in Anlehnung an die Knie-Reha etwa 90 % als Richtwert – für Finger nicht validiert) und harte Einheiten ohne Reaktion am Folgetag.",
+     "duration_de": "Bis zur vollen Form insgesamt etwa 6–8 Wochen (Grad I), 10–12 Wochen (II), 16–20+ Wochen (III), 24 Wochen bis 1 Jahr (IVa) nach Hooper's Beta.",
+     "climbing_de": "'Hartes Klettern' nach Vagy: Leisten im Überhang, bis Onsight-Niveau. H-Tape beim Klettern weiter: Grad I–III rund 3 Monate ab Verletzung (teils 6 Monate bei Grad III), Grad IV über ein Jahr. Erst jetzt wieder Board, dynamische Züge und volle Leiste – einzeln einführen. Ein guter Tag ist kein Freibrief für doppeltes Volumen. Vermeide wiederholte Versuche an Zügen, bei denen die Hand unter hoher Last aufgeht.",
+     "exercises": [
+      {
+       "id": "rapid-mobile-board-rows",
+       "name_de": "Schnelle Ruderzüge am Griffblock",
+       "how_de": [
+        "Aufbau wie die Ruderzüge mit Band.",
+        "Erst ein paar langsame Züge, dann über einige Wiederholungen das Tempo steigern.",
+        "So schnell ziehen, wie es angenehm geht. Geht das nicht ohne Schmerz, leichteres Band nehmen – auch wenn es langsam problemlos wäre.",
+        "Die Hälfte der Sätze offen, die Hälfte in halber Leiste."
+       ],
+       "dose_de": "4–6 Sätze × 8–10 Wiederholungen, Anstrengung 6–8 von 10",
+       "frequency_de": "etwa 3-mal pro Woche",
+       "pain_limit_de": "Höchstens 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1752,
+        "end_s": 1795
+       }
+      },
+      {
+       "id": "block-pulls",
+       "name_de": "Blockzüge (No-Hang) mit Gewicht",
+       "how_de": [
+        "Wie in Phase 3, Gewicht weiter steigern.",
+        "Auch die Griffhaltungen trainieren, die du an der Wand nutzt – nicht nur eine flache Leiste am Block und dann steile Leisten an der Wand.",
+        "Kraftwerte notieren; ein Abwärtstrend zusammen mit Schmerz ist ein Frühwarnzeichen."
+       ],
+       "dose_de": "2–3 Aufwärmsätze à 6–10, dann 3–4 Arbeitssätze à 3–5 Wiederholungen mit 2–3 Wiederholungen Reserve",
+       "frequency_de": "2–3-mal pro Woche, abgestimmt auf die Klettertage",
+       "pain_limit_de": "Höchstens 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1684,
+        "end_s": 1740
+       }
+      },
+      {
+       "id": "strength-side-compare",
+       "name_de": "Seitenvergleich der Fingerkraft",
+       "how_de": [
+        "Auf einer Waage unter dem Fingerboard stehen, Körpergewicht ablesen.",
+        "Mit gestrecktem Arm einhändig in halber Leiste an einer immer gleichen Kante 3–6 Sekunden maximal nach unten ziehen.",
+        "Körpergewicht minus Waagenanzeige ergibt die Zugkraft.",
+        "Beide Hände testen und vergleichen; alle paar Wochen wiederholen."
+       ],
+       "dose_de": "1–3 Versuche pro Hand nach gründlichem Aufwärmen",
+       "frequency_de": "alle 2–4 Wochen",
+       "pain_limit_de": "Nur testen, wenn Blockzüge schmerzfrei sind; bei Schmerz über 2/10 abbrechen.",
+       "timer": null,
+       "video": null
+      }
+     ]
+    }
+   ],
+   "prevention_de": [
+    "Wiederholte Versuche an Zügen meiden, bei denen die Hand unter hoher Last aufgeht – das gilt als ein Hauptmechanismus.",
+    "Regelmäßiges, messbares Fingertraining mit langsamer Steigerung statt immer derselben Klettereinheit; die Griffhaltungen trainieren, die du an der Wand wirklich nutzt.",
+    "Neue Reize (Board, Fingerboard) nicht obendrauf packen: Wenn etwas dazukommt, muss woanders etwas weg.",
+    "Finger passend zur Einheit aufwärmen (vor harten Leisten in der Leiste aufwärmen) und ein einfaches Log führen. Tape verhindert bei gesunden Fingern keine Ringbandverletzung."
+   ],
+   "evidence_de": "Vergleichsweise gut für eine Kletterverletzung: Die Gradeinteilung und das Behandlungsschema stammen von Schöffl et al. (2003/2006), aktualisiert als Experten-Konsens Bamberg 2019, gestützt auf Fallserien ohne Kontrollgruppen; der Ringbandschutz-Ring durch eine Serie mit 47 Rissen (Schneeberger & Schweizer 2016). Zum Tape gibt es eine systematische Übersicht (2022) mit niedriger Evidenz. Die konkreten Übungsdosierungen von Vagy und Hooper's Beta sind klinische Erfahrung – Vagy sagt ausdrücklich, dass kein Satz-/Wiederholungsschema einem anderen nachweislich überlegen ist.",
+   "sources": [
+    "https://www.sozialstiftung-bamberg.de/fileadmin/default/Klinikum/kliniken-und-experten/orthopaedie/Nachbehandlungschema_Ringband_konservativ_englisch.pdf",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9344739/",
+    "https://www.hoopersbeta.com/library/ultimate-a2-pulley-injury-recovery-guide",
+    "https://www.youtube.com/watch?v=agyqSVMXkp0",
+    "https://theclimbingdoctor.com/how-to-rehab-a-climbing-pulley-injury/",
+    "https://www.youtube.com/watch?v=SFqAbKRYwgw",
+    "https://www.trainingbeta.com/pulley-diagnosis-rehab/",
+    "https://theclimbingdoctor.com/finger-training-recommendations-after-pulley-injury/",
+    "https://theclimbingdoctor.com/trying-hard-after-finger-injuries-2/",
+    "https://theclimbingdoctor.com/returning-to-the-fingerboard-after-a-finger-injury-2/",
+    "https://www.youtube.com/watch?v=OueqYlZhpCQ",
+    "https://pubmed.ncbi.nlm.nih.gov/33966972/"
+   ]
+  },
+  {
+   "id": "flexor-tenosynovitis",
+   "name_de": "Gereizte Beugesehnenscheide (Tenosynovitis FDP/FDS)",
+   "region": "finger",
+   "locations": [
+    "beugeseite-gesamt",
+    "a2-grundglied",
+    "a4-mittelglied"
+   ],
+   "what_de": "Eine Reizung der Hülle, in der die Fingerbeugesehnen (tiefe und oberflächliche Beugesehne) unter den Ringbändern gleiten. Die Sehnenscheide bildet mehr Flüssigkeit und schmerzt – es ist nach der Ringbandverletzung die häufigste Fingerdiagnose bei Kletternden und wird oft mit ihr verwechselt.",
+   "mechanism_de": "Reibung zwischen Sehnenscheide und Ringbändern unter hoher Last, vor allem in halber und voller Leiste. Fast immer Überlastung: plötzlich mehr Volumen oder Intensität, viel Leistenklettern, Campus an kleinen Leisten, lange Phasen ohne Pause – seltener eine einzelne zu harte Einheit. Kann auch nach einem Ringbandriss auftreten, wenn ein Stumpf an der Sehnenscheide reibt.",
+   "typical_signs_de": [
+    "Schmerz auf der Beugeseite des Fingers, etwa auf Höhe von A2 und A4, manchmal bis in Handfläche oder Unterarm",
+    "Leichte Schwellung oder Fülle auf der Beugeseite bzw. am Fingeransatz im Vergleich zur anderen Hand",
+    "Druckschmerz auf der Beugeseite, nicht auf dem Fingerrücken",
+    "Passives Überstrecken des Fingers kann schmerzen; auch die offene Hand tut unter Last weh (halbe Leiste meist mehr)",
+    "Schmerz kommt Minuten bis Stunden nach der Einheit und hält Stunden bis Tage an; Greifen im Alltag ist empfindlich",
+    "Verlauf typischerweise wellenförmig über Wochen bis Monate"
+   ],
+   "not_this_if_de": [
+    "Plötzlicher Beginn mit Knall, oder Schmerz nur in der Leiste bei schmerzfreier offener Hand: eher Ringband",
+    "Schmerz am Sehnenansatz (Fingerkuppe bzw. Unterarm) und in offener Hand genauso stark wie in der Leiste, kein Druckschmerz über A2/A4: eher die Sehne selbst (z. B. Zerrung der tiefen Beugesehne)",
+    "Schmerz in Loch-Stellung in der Handfläche, der verschwindet, wenn alle Finger gleich gestreckt sind: eher Lumbrikalis",
+    "Schnappen oder Hängenbleiben des Fingers: Schnappfinger oder Ringbandstumpf – abklären lassen",
+    "Finger stark geschwollen, gerötet, heiß, evtl. Fieber oder eine kleine Wunde: Verdacht auf Infekt, sofort ärztlich"
+   ],
+   "see_professional_de": [
+    "Zur Abgrenzung vom Ringband ist Ultraschall das Mittel der Wahl (Flüssigkeitssaum um die Sehne statt abstehender Sehne); im Zweifel früh machen lassen, weil sich das Vorgehen unterscheidet",
+    "Keine Besserung nach etwa 4–6 Wochen konsequenter Anpassung: Schöffl sieht ab dann eine Kortison-Injektion neben die Sehne vor; die Zürcher Gruppe (Mohn et al.) hält wegen guter Verläufe ohne Injektion einen längeren konservativen Versuch für gerechtfertigt. Das ist eine ärztliche Abwägung",
+    "Beschwerden nach einem früheren Ringbandriss, die nicht abklingen",
+    "Schmerz im Alltag nimmt zu oder der Finger lässt sich nicht mehr voll bewegen"
+   ],
+   "grades": [],
+   "phases": [
+    {
+     "n": 1,
+     "name_de": "Entlasten",
+     "goal_de": "Reizung abklingen lassen und den Auslöser finden (was hat sich im Training geändert?).",
+     "enter_de": "Frische oder aufgeflammte Reizung: Schmerz beim Greifen im Alltag, Druckschmerz, Schwellung.",
+     "exit_de": "Alltag mit minimalem Schmerz möglich, Schwellung rückläufig.",
+     "duration_de": "Etwa 48 Stunden bis 2 Wochen (The Climbing Doctor); bei starker Reizung meist rund eine Woche, bis Belastungsübungen sinnvoll sind (Hooper's Beta).",
+     "climbing_de": "Uneinheitlich: The Climbing Doctor rät zu einigen Tagen bis 2–3 Wochen Pause vom harten Klettern; in der Zürcher Auswertung von 65 Kletternden brachte eine komplette Pause keinen erkennbaren Vorteil, empfohlen wurde leichtes Klettern an großen Griffen mit offener Hand in wenig steilem Gelände. Praktisch: Leisten, Campus und Board streichen, leichtes Klettern nur, wenn es unter 2/10 bleibt. Kompression: Fingerling oder selbsthaftende Binde, laut Mohn et al. nachts, um die Schwellung zu senken. Tape: unklar – wie ein Gips gewickelt kann es am Aufstellen hindern; ob stützendes H-Tape hier hilft oder durch Druck die Reibung erhöht, ist offen (Hooper's Beta). Eis: The Climbing Doctor nennt 15 Minuten pro Stunde nach Bedarf zur Schmerzlinderung, Hooper's Beta hält wenig davon, außer bei sichtbarer Schwellung.",
+     "exercises": [
+      {
+       "id": "wrist-tenodesis",
+       "name_de": "Handgelenk-Tenodese (Sehnen passiv bewegen)",
+       "how_de": [
+        "Unterarm locker halten.",
+        "Handgelenk beugen – die Finger strecken sich dabei von selbst.",
+        "Handgelenk strecken – die Finger rollen sich von selbst ein.",
+        "Finger dabei entspannt lassen, nicht aktiv greifen."
+       ],
+       "dose_de": "2 × 15 Wiederholungen",
+       "frequency_de": "3-mal täglich, gern auch zwischendurch",
+       "pain_limit_de": "Schmerzfrei; die Symptome dürfen nicht zurückkommen.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=J-PTsP5kS70",
+        "title": "MOBILITY Wrist Tenodesis",
+        "channel": "The Climbing Doctor",
+        "start_s": 0,
+        "end_s": 12
+       }
+      },
+      {
+       "id": "tendon-glides",
+       "name_de": "Sehnengleiten",
+       "how_de": [
+        "Gestreckte Finger → Hakenfaust → volle Faust → flache Faust.",
+        "Jede Position sauber einnehmen, langsam und kontrolliert.",
+        "Die Reihenfolge vorwärts und rückwärts durchgehen."
+       ],
+       "dose_de": "2 × 10 Wiederholungen",
+       "frequency_de": "4-mal täglich",
+       "pain_limit_de": "Sanft, kein Schmerz über 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=LfuX0c1Ard4",
+        "title": "MOBILITY Tendon Glides",
+        "channel": "The Climbing Doctor",
+        "start_s": 0,
+        "end_s": 19
+       }
+      },
+      {
+       "id": "compression-wrap",
+       "name_de": "Leichte Kompression (selbsthaftende Binde oder Fingerling)",
+       "how_de": [
+        "Kompressions-Fingerling überziehen oder selbsthaftende Binde von der Kuppe Richtung Hand mit leichtem Zug wickeln.",
+        "Durchblutung prüfen: Kuppe muss nach kurzem Druck sofort wieder rosa werden.",
+        "Bei Pochen, Kribbeln oder Schmerz sofort lockern."
+       ],
+       "dose_de": "Nachts (Mohn et al.) bzw. über Nacht und im Alltag (Hooper's Beta)",
+       "frequency_de": "täglich, solange geschwollen",
+       "pain_limit_de": "Darf nicht einschnüren. In einem älteren Video rät Hooper's Beta davon ab, mit einer selbst gewickelten Binde zu schlafen, weil man zu festes Wickeln nicht bemerkt – ein Fingerling ist dafür die sicherere Wahl.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=h-nOPJsBZz8",
+        "title": "Why Are My Finger Joints Swollen and What Can I Do About It?",
+        "channel": "Hooper's Beta",
+        "start_s": 307,
+        "end_s": 385
+       }
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "name_de": "Beweglichkeit und leichter Reiz",
+     "goal_de": "Sehnen frei gleiten lassen und die Sehnenscheide an niedrige, gleichmäßige Last gewöhnen.",
+     "enter_de": "Alltag fast schmerzfrei, Schwellung zurückgegangen.",
+     "exit_de": "Haltezüge mit offener Hand über 30 Sekunden bei höchstens 2/10, Schmerz klingt innerhalb von Sekunden ab; volle Beweglichkeit; keine Reaktion am Folgetag.",
+     "duration_de": "Ein bis mehrere Wochen.",
+     "climbing_de": "Leichtes Klettern an großen Griffen mit offener Hand und neutralem Handgelenk, wenig steil, deutlich unter deinem Niveau – wenn es gut vertragen wird. Halbe und volle Leiste weiter meiden.",
+     "exercises": [
+      {
+       "id": "pen-rolling",
+       "name_de": "Stift rollen",
+       "how_de": [
+        "Einen Stift (oder ein dickeres bzw. dünneres Objekt) in die Hand nehmen.",
+        "Mit den Fingern in der Hand vor- und zurückrollen, besonders im Bereich nahe der vollen Beugung.",
+        "Mit Größe des Gegenstands variieren."
+       ],
+       "dose_de": "2 × 1 Minute",
+       "frequency_de": "3–4-mal täglich",
+       "pain_limit_de": "Schmerzfrei bis leichtes Ziehen.",
+       "timer": {
+        "work": 60,
+        "rest": 30,
+        "reps": 1,
+        "sets": 2
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=PKhu9Z07KIw",
+        "title": "MOBILITY Pen Rolling Small Object",
+        "channel": "The Climbing Doctor",
+        "start_s": 0,
+        "end_s": 8
+       }
+      },
+      {
+       "id": "prayer-stretch-finger-taps",
+       "name_de": "Gebetsdehnung mit Fingertippen",
+       "how_de": [
+        "Handflächen vor der Brust aneinanderlegen.",
+        "Hände absenken, bis ein sanfter Zug in Handgelenken und Fingern entsteht; etwa 30 Sekunden halten.",
+        "In dieser Position nacheinander die gegenüberliegenden Finger voneinander lösen und wieder antippen.",
+        "Zum Abschluss noch einmal etwa 30 Sekunden halten."
+       ],
+       "dose_de": "3 × 30 Sekunden",
+       "frequency_de": "2-mal täglich",
+       "pain_limit_de": "Sanfte Dehnung, kein Schmerz; bei Kribbeln lösen.",
+       "timer": {
+        "work": 30,
+        "rest": 15,
+        "reps": 1,
+        "sets": 3
+       },
+       "video": null
+      },
+      {
+       "id": "submax-holds",
+       "name_de": "Submaximale Haltezüge (Füße am Boden)",
+       "how_de": [
+        "Große Kante oder Block mit leichtem Gewicht, offene Hand, Füße am Boden.",
+        "30 Sekunden mit niedriger Intensität halten, 30 Sekunden Pause.",
+        "So viel Last wie möglich, ohne über 2/10 zu kommen."
+       ],
+       "dose_de": "6–10 × 30 s Zug / 30 s Pause",
+       "frequency_de": "Hooper's Beta nennt hier keine feste Häufigkeit; im Ringband-Protokoll setzt er dieselbe Übung anfangs 2-mal täglich an.",
+       "pain_limit_de": "Höchstens 2/10, und der Schmerz darf nach dem Satz nur wenige Sekunden nachklingen.",
+       "timer": {
+        "work": 30,
+        "rest": 30,
+        "reps": 8,
+        "sets": 1
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1465,
+        "end_s": 1520
+       }
+      },
+      {
+       "id": "putty-squeeze",
+       "name_de": "Therapieknete drücken",
+       "how_de": [
+        "Weiche Therapieknete in die Hand nehmen.",
+        "Mit allen Fingern langsam zusammendrücken und wieder öffnen.",
+        "Auch als Aufwärmen der Beuger vor dem Klettern."
+       ],
+       "dose_de": "In der Studie ohne Satz- und Wiederholungszahl ('täglich üben')",
+       "frequency_de": "täglich sowie vor dem Klettern",
+       "pain_limit_de": "Höchstens 2/10.",
+       "timer": null,
+       "video": null
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "name_de": "Kraft",
+     "goal_de": "Sehnen und Sehnenscheide wieder an hohe Lasten gewöhnen – zuerst offen, über Wochen steigern.",
+     "enter_de": "Leichte Haltezüge und leichtes Klettern ohne Reaktion.",
+     "exit_de": "Schwere Haltezüge mit offener Hand und erste Züge in halber Leiste bei höchstens 2/10; Schmerz verschwindet innerhalb von Minuten; keine Mehr-Steifigkeit oder Schmerzzunahme an den Folgetagen.",
+     "duration_de": "Mehrere Wochen. Hooper's Beta sieht viele Fälle nach etwa 6–8 Wochen erledigt; die Zürcher Daten zeigen im Mittel rund 30 Wochen Beschwerdedauer (Spanne 1–120) mit wellenförmigem Verlauf, bei höherem Kletterniveau länger.",
+     "climbing_de": "Moderates Klettern, weiter überwiegend offen; Leisten erst zurückbringen, wenn der Schmerz minimal ist. Die Reizung entsteht durch wiederholte Reibung – ein zu schneller Aufbau fällt oft erst verzögert auf. Die übrige Trainingszeit für Dinge nutzen, die die Finger wenig belasten.",
+     "exercises": [
+      {
+       "id": "open-hand-farmer-holds",
+       "name_de": "Schwere Haltezüge mit offener Hand (Farmer-Hänger)",
+       "how_de": [
+        "Griffblock mit Gewicht oder Fingerboard mit Entlastung, offene Hand.",
+        "10–15 Sekunden halten.",
+        "60–90 Sekunden Pause.",
+        "Last über Wochen schrittweise erhöhen; später einzelne Sätze in halber Leiste."
+       ],
+       "dose_de": "4–6 Sätze × 10–15 s, 60–90 s Pause",
+       "frequency_de": "Bei Hooper's Beta ohne feste Zahl; The Climbing Doctor setzt vergleichbare Hangboard-Isometrie 2-mal pro Woche an.",
+       "pain_limit_de": "Höchstens 2/10; darf nach dem Satz nur Sekunden nachklingen.",
+       "timer": {
+        "work": 12,
+        "rest": 75,
+        "reps": 1,
+        "sets": 5
+       },
+       "video": null
+      },
+      {
+       "id": "hangboard-isometrics",
+       "name_de": "Hangboard-Isometrie (entlastet)",
+       "how_de": [
+        "Kante wählen, die ohne volle Leiste gehalten werden kann.",
+        "Körpergewicht bei Bedarf über eine Umlenkrolle reduzieren.",
+        "5 Wiederholungen à 10 Sekunden bilden einen Satz.",
+        "Last so wählen, dass du im Bereich leichten Unbehagens bleibst."
+       ],
+       "dose_de": "2–3 Sätze × 5 × 10 Sekunden",
+       "frequency_de": "2-mal pro Woche",
+       "pain_limit_de": "Etwa 2/10; muss innerhalb weniger Minuten weg sein, keine zusätzliche Steifigkeit oder Schmerzen an den Folgetagen.",
+       "timer": {
+        "work": 10,
+        "rest": 10,
+        "reps": 5,
+        "sets": 3
+       },
+       "video": null
+      },
+      {
+       "id": "finger-extensor-band",
+       "name_de": "Fingerstrecker mit Gummiband",
+       "how_de": [
+        "Gummiband um einen Finger (mit der anderen Hand halten) oder um alle fünf Fingerkuppen legen.",
+        "Langsam und kontrolliert aus der Beugung in die Streckung öffnen und zurück."
+       ],
+       "dose_de": "2 × 10 Wiederholungen",
+       "frequency_de": "nach dem Hangboard-Programm",
+       "pain_limit_de": "Schmerzfrei.",
+       "timer": null,
+       "video": null
+      },
+      {
+       "id": "rice-bucket",
+       "name_de": "Reiseimer: greifen und spreizen",
+       "how_de": [
+        "Hand mit neutralem Handgelenk bis etwa zur Handfläche in einen Eimer Reis stoßen.",
+        "30 Sekunden Reis greifen und zusammendrücken, Hand herausziehen.",
+        "Dann 30 Sekunden die Finger gegen den Reis aufspreizen (Strecker).",
+        "Beide Hände."
+       ],
+       "dose_de": "3 × 30 Sekunden je Bewegung",
+       "frequency_de": "3-mal pro Woche",
+       "pain_limit_de": "Höchstens leichtes Ziehen.",
+       "timer": {
+        "work": 30,
+        "rest": 30,
+        "reps": 2,
+        "sets": 3
+       },
+       "video": null
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "name_de": "Bewegung und Rückkehr",
+     "goal_de": "Leisten und volles Volumen zurückbringen, ohne die Reibung wieder aufzuschaukeln.",
+     "enter_de": "Krafttraining läuft ohne Reaktion; im Alltag beschwerdefrei.",
+     "exit_de": "Gewohnte Einheiten inklusive Leisten ohne Schmerz in den Stunden und Tagen danach. Gelegentlicher leichter Restschmerz ist nach den Zürcher Daten häufig (rund 80 % hatten ihn noch selten oder gelegentlich) und stand der vollen Rückkehr nicht im Weg.",
+     "duration_de": "Wochen bis Monate; 75 % erreichten in der Zürcher Serie wieder ihr altes Niveau oder mehr.",
+     "climbing_de": "Aufwärmen mit Sehnengleiten, Reiseimer und 5–10 Minuten Ganzkörperbewegung; dann ein paar Henkel bzw. 2–3 Routen klar unter deinem Niveau. Schrittweise steigern, bei Reaktion einen Schritt zurück. Handgelenk möglichst neutral, eher offen greifen, Füße und Körperspannung nutzen, um die Finger zu entlasten. Leisten dosiert zurückbringen.",
+     "exercises": [
+      {
+       "id": "tendon-glides",
+       "name_de": "Sehnengleiten",
+       "how_de": [
+        "Alle Positionen vorwärts und rückwärts durchgehen.",
+        "Danach locker einklettern."
+       ],
+       "dose_de": "2 × 10",
+       "frequency_de": "vor jeder Einheit",
+       "pain_limit_de": "Schmerzfrei.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=LfuX0c1Ard4",
+        "title": "MOBILITY Tendon Glides",
+        "channel": "The Climbing Doctor",
+        "start_s": 0,
+        "end_s": 19
+       }
+      },
+      {
+       "id": "hangboard-isometrics",
+       "name_de": "Hangboard-Isometrie (entlastet)",
+       "how_de": [
+        "Wie in Phase 3, jetzt ein Teil der Sätze in halber Leiste.",
+        "Last und Kantengröße nur einzeln und langsam verändern.",
+        "Volle Leiste bleibt am Board außen vor."
+       ],
+       "dose_de": "2–3 Sätze × 5 × 10 Sekunden",
+       "frequency_de": "2-mal pro Woche",
+       "pain_limit_de": "Etwa 2/10, weg innerhalb von Minuten, nichts am Folgetag.",
+       "timer": {
+        "work": 10,
+        "rest": 10,
+        "reps": 5,
+        "sets": 3
+       },
+       "video": null
+      },
+      {
+       "id": "hanging-leg-lifts",
+       "name_de": "Hängendes Beinheben als Fußplatzierungs-Übung",
+       "how_de": [
+        "Bequem an Henkeln oder der Klimmzugstange hängen.",
+        "Beine anheben, als würdest du einen Fuß präzise auf einen Tritt setzen.",
+        "Rumpf aktiv – mehr Körperspannung nimmt an der Wand Last von den Fingern."
+       ],
+       "dose_de": "In der Quelle ohne Zahlen",
+       "frequency_de": "ergänzend im Rumpftraining",
+       "pain_limit_de": "Nur an Griffen, die der Finger schmerzfrei hält.",
+       "timer": null,
+       "video": null
+      }
+     ]
+    }
+   ],
+   "prevention_de": [
+    "Volumen, Intensität und Häufigkeit beobachten: Die Reizung baut sich über Wochen auf, meist nach einem Sprung im Training oder langen Phasen ohne Pause.",
+    "Leistenanteil dosieren und Griffarten mischen; kein intensives Campusboard an kleinen Leisten in Serie.",
+    "Vor dem Klettern Beuger aufwärmen (Sehnengleiten, Knete, leichte Züge).",
+    "Schmerz, der Stunden bis Tage nach der Einheit anhält, ist das Signal zum Reduzieren – nicht zum Durchtrainieren."
+   ],
+   "evidence_de": "Begrenzt. Es gibt zwei Klinikserien: Schöffl et al. 2019 (Stufenschema mit Kortison-Injektion bei Therapieversagen, gute Ergebnisse, ohne Vergleichsgruppe) und Mohn et al. 2022 (65 Kletternde, rein konservativ, rückblickende Befragung): gute Ergebnisse, aber kein einzelner Therapiebaustein – auch nicht Belastungsreduktion oder Tape – sagte das Ergebnis vorher, und eine komplette Pause brachte keinen Vorteil. Die Übungsdosierungen sind Physio-Empfehlungen (The Climbing Doctor, Hooper's Beta), nicht geprüfte Protokolle.",
+   "sources": [
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC9220062/",
+    "https://www.hoopersbeta.com/library/flexor-tenosynovitis",
+    "https://theclimbingdoctor.com/rock-climbing-finger-tenosynovitis/",
+    "https://www.hoopersbeta.com/library/ultimate-a2-pulley-injury-recovery-guide",
+    "https://www.youtube.com/watch?v=h-nOPJsBZz8",
+    "https://pubmed.ncbi.nlm.nih.gov/36757124/"
+   ]
+  },
+  {
+   "id": "lumbrical-strain",
+   "name_de": "Lumbrikalis-Zerrung (Handflächenschmerz in Loch-Stellung)",
+   "region": "finger",
+   "locations": [
+    "handflaeche",
+    "a2-grundglied"
+   ],
+   "what_de": "Die Lumbrikales sind kleine Muskeln in der Handfläche, die an den tiefen Beugesehnen entspringen. Die Muskeln zu Ring- und kleinem Finger hängen an zwei benachbarten Sehnen und können gezerrt werden oder einreißen, wenn diese Sehnen gegeneinander verschoben werden.",
+   "mechanism_de": "Ein Finger wird gestreckt belastet, während der Nachbarfinger stark gebeugt ist: Ein- und Zweifingerlöcher, Dreifingerzug mit eingerolltem kleinem Finger, oder ein Finger rutscht von einer kleinen Leiste und rollt sich ein. Die beiden Sehnen ziehen den Muskel dann in entgegengesetzte Richtungen. Entscheidend ist hohe Last in dieser Stellung – die Stellung allein ist harmlos.",
+   "typical_signs_de": [
+    "Schmerz in der Handfläche bis an den Fingeransatz, oft leicht seitlich neben der Beugesehne; kann bis in die A1/A2-Region ausstrahlen und sich wie ein Ringband anfühlen",
+    "Meist dumpfes Ziehen, stechend, wenn der Muskel gestresst wird",
+    "Lumbrikalis-Stresstest: betroffenen Finger gestreckt halten und die Nachbarfinger langsam beugen (erst aktiv, dann vorsichtig mit Hilfe der anderen Hand) – das löst den bekannten Schmerz aus",
+    "Sind alle Finger gleich gestreckt oder gleich gebeugt, ist der Zug am Finger kaum oder nicht schmerzhaft",
+    "Löcher und teils Sloper provozieren; Griffe, bei denen alle Finger gleich stehen, deutlich weniger"
+   ],
+   "not_this_if_de": [
+    "Schmerz bleibt gleich, egal ob die Nachbarfinger gebeugt oder gestreckt sind: eher Beugesehne (z. B. Zerrung der tiefen Beugesehne) oder Sehnenscheide",
+    "Schmerz vor allem in der Leiste und punktuell am Grundglied, offene Hand besser: eher Ringband",
+    "Schmerz genau zwischen den Fingergrundgelenken, nicht in der Handfläche: eher eine Bandstruktur zwischen den Mittelhandköpfen",
+    "Schmerz beim Spreizen oder Zusammendrücken der Finger gegen Widerstand: eher Zwischenknochenmuskeln (Interossei)",
+    "Starker Schmerz mit deutlichem Funktionsverlust nach einem heftigen Ereignis: höhergradiger Riss möglich – sofort untersuchen lassen"
+   ],
+   "see_professional_de": [
+    "Schmerz schon beim bloßen Einnehmen der Teststellung plus deutlicher Kraft- oder Funktionsverlust: Verdacht auf höhergradigen Riss – Hand- oder Sportorthopädie, Ultraschall oder MRT zur Einstufung",
+    "Unsicher, ob Ringband, Sehne oder Lumbrikalis: Die Einstufung nach Lutter et al. stützt sich auf Untersuchung plus Bildgebung",
+    "Keine klare Besserung nach einigen Wochen Reha oder anhaltende Schwellung"
+   ],
+   "grades": [
+    {
+     "id": "grad-1",
+     "name_de": "Grad I – Mikrotrauma / leichte Zerrung",
+     "signs_de": "Nach Lutter et al. (2018) Mikrotrauma ohne Faserriss. Selbsttest nach Hooper's Beta: Schmerz erst bei deutlichem Druck oder großem Unterschied zwischen gestrecktem und gebeugten Fingern.",
+     "management_de": "Angepasste funktionelle Therapie. Hooper's Beta: Beweglichkeit sofort, erste Dehnung fast sofort, die stärkere Dehnung ein paar Tage später; leichtes Klettern mit Buddy-Tape ist meist direkt möglich.",
+     "timeline_de": "Lutter et al.: alle kehrten zum Klettern zurück; Grad I und II heilten deutlich schneller als Grad III. Wochenangaben je Grad konnte ich nicht einsehen. Hooper's Beta: Beschwerden können je nach Schwere 2–4 Monate nachklingen."
+    },
+    {
+     "id": "grad-2",
+     "name_de": "Grad II – Muskelfaserriss",
+     "signs_de": "Nach Lutter et al. Unterbrechung von Muskelfasern (in ihrer Serie die häufigste Stufe). Selbsttest: Stellung schmerzfrei einnehmbar, Schmerz bei leichter bis mittlerer Belastung des gestreckten Fingers.",
+     "management_de": "Angepasste funktionelle Therapie. Hooper's Beta: Beweglichkeit sofort, erste Dehnung innerhalb einer Woche, die stärkere Dehnung etwa eine Woche später und erst ohne Ruheschmerz und Schwellung; leichtes Klettern mit Buddy-Tape, keine Löcher, keine fordernden Sloper.",
+     "timeline_de": "Siehe Grad I; etwas länger."
+    },
+    {
+     "id": "grad-3",
+     "name_de": "Grad III – Riss am Muskel-Sehnen-Übergang",
+     "signs_de": "Nach Lutter et al. Unterbrechung am Muskel-Sehnen-Übergang. Selbsttest: Schmerz schon beim Einnehmen der Stellung. Hooper's Beta fasst darunter starke Zerrungen bis mittlere Risse.",
+     "management_de": "Untersuchen lassen. Funktionell: aktive Beweglichkeit vorsichtig nach 1–2 Tagen bis einer Woche, erste Dehnung nach etwa einer Woche, die stärkere Dehnung erst 2–3 Wochen danach; klettern erst mit guter Beweglichkeit und wenig bis keinem Schmerz, dann mit Buddy-Tape.",
+     "timeline_de": "Heilung signifikant länger als bei Grad I/II (Lutter et al.); konkrete Wochenzahl nicht verifiziert."
+    }
+   ],
+   "phases": [
+    {
+     "n": 1,
+     "name_de": "Beruhigen und bewegen",
+     "goal_de": "Den Muskel nicht weiter in die Scherstellung bringen, aber von Anfang an sanft bewegen.",
+     "enter_de": "Frische Verletzung: Schmerz in der Handfläche im Alltag oder bei der Teststellung, evtl. leichte Schwellung.",
+     "exit_de": "Volle aktive Beweglichkeit ohne nennenswerten Schmerz, kein Ruheschmerz, keine sichtbare Schwellung.",
+     "duration_de": "Tage bei Grad I, etwa eine Woche bei Grad II, 1–2 Wochen bei Grad III (aus den Startzeitpunkten von Hooper's Beta).",
+     "climbing_de": "Grad I und II: leichtes Klettern ist fast sofort möglich – mit Buddy-Tape (betroffenen Finger an den Nachbarn tapen, damit nicht einer gestreckt und der andere gebeugt ist), ohne Löcher, ohne kleine Griffe und ohne fordernde Sloper. Grad III: erst klettern, wenn die Beweglichkeit gut und der Schmerz gering ist. Für das Buddy-Tape gibt es keine Studien; es ist die übliche Empfehlung der Kletter-Physios.",
+     "exercises": [
+      {
+       "id": "finger-rom-three-rows-l",
+       "name_de": "Aktive Beweglichkeit in drei Zeilen plus L-Position",
+       "how_de": [
+        "Drei gedachte Zeilen in der Handfläche: nahe den Knöcheln, Mitte, handgelenksnah.",
+        "Fingerkuppen nacheinander zu jeder Zeile führen, dazwischen jedes Mal ganz strecken – tippen, nicht über die Handfläche schleifen.",
+        "Zusätzlich die L-Position: Finger gestreckt lassen und nur in den Grundgelenken beugen.",
+        "Je mehr es zieht, desto kleiner und leichter die Bewegung."
+       ],
+       "dose_de": "1 Satz mit 10–20 Wiederholungen",
+       "frequency_de": "mehrmals täglich, jeden Tag",
+       "pain_limit_de": "Höchstens 2–3/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=zyz8y0Ccuqo",
+        "title": "How to Fix Lumbrical Pain (Lumbrical Injury, Pocket Climbing Injury)",
+        "channel": "Hooper's Beta",
+        "start_s": 78,
+        "end_s": 100
+       }
+      },
+      {
+       "id": "palm-self-massage",
+       "name_de": "Selbstmassage der Handfläche",
+       "how_de": [
+        "Mit dem Daumen der anderen Hand (oder einem Massagewerkzeug) das Gewebe in der Handfläche bearbeiten.",
+        "Druck umgekehrt zur Empfindlichkeit: tut es stark weh, nur leicht; tut es nicht weh, etwas fester.",
+        "Beginn 1–2 Tage nach der Verletzung bzw. sobald eine Schwellung abgeklungen ist."
+       ],
+       "dose_de": "3–5 Minuten, höchstens 12 Minuten",
+       "frequency_de": "ein- bis mehrmals täglich",
+       "pain_limit_de": "Darf den Schmerz nicht provozieren.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=zyz8y0Ccuqo",
+        "title": "How to Fix Lumbrical Pain (Lumbrical Injury, Pocket Climbing Injury)",
+        "channel": "Hooper's Beta",
+        "start_s": 128,
+        "end_s": 160
+       }
+      },
+      {
+       "id": "lumbrical-table-isometric",
+       "name_de": "Lumbrikalis-Isometrie am Tisch",
+       "how_de": [
+        "Frühe Variante: lange, leichte Halte.",
+        "Hand wie eine flache Pyramide auf den Tisch stellen: nur Handgelenk und Fingerkuppen berühren die Platte, Finger gestreckt.",
+        "Fingerkuppen in die Platte drücken und so tun, als wolltest du sie zu dir heranziehen – die Reibung verhindert die Bewegung.",
+        "Leicht beginnen."
+       ],
+       "dose_de": "30 s halten / 30 s Pause, 5–10 Wiederholungen, 1 Satz",
+       "frequency_de": "2–3-mal täglich",
+       "pain_limit_de": "Nur so fest, wie es angenehm ist.",
+       "timer": {
+        "work": 30,
+        "rest": 30,
+        "reps": 8,
+        "sets": 1
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=zyz8y0Ccuqo",
+        "title": "How to Fix Lumbrical Pain (Lumbrical Injury, Pocket Climbing Injury)",
+        "channel": "Hooper's Beta",
+        "start_s": 527,
+        "end_s": 558
+       }
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "name_de": "Dehnen",
+     "goal_de": "Das heilende Gewebe wieder verschieblich machen – erst allgemein, dann gezielt in der Verletzungsstellung.",
+     "enter_de": "Kaum bis kein Ruheschmerz, keine sichtbare Schwellung, aktive Beweglichkeit frei. Start der ersten Dehnung: Grad I fast sofort, Grad II innerhalb einer Woche, Grad III nach etwa einer Woche oder später.",
+     "exit_de": "Beide Dehnungen über 20–30 Sekunden schmerzfrei; Druck auf die Stelle ist unauffällig.",
+     "duration_de": "Die gezielte 'Feder-Dehnung' beginnt bei Grad I nach wenigen Tagen, bei Grad II etwa eine Woche nach der ersten Dehnung, bei Grad III 2–3 Wochen danach.",
+     "climbing_de": "Wie Phase 1: leicht, mit Buddy-Tape, keine Löcher, vorsichtig bei Slopern. Nach dem Klettern darf kein Schmerz nachklingen.",
+     "exercises": [
+      {
+       "id": "lumbrical-general-stretch",
+       "name_de": "Allgemeine Lumbrikalis-Dehnung (alle vier Finger)",
+       "how_de": [
+        "Fingerkuppen bzw. -nägel der betroffenen Hand an den Handballen der anderen Hand legen.",
+        "Mittel- und Endgelenke sind gebeugt, die Grundgelenke neutral.",
+        "Nun die Grundgelenke weiter strecken, während Mittel- und Endgelenke gebeugt bleiben.",
+        "Immer alle vier Finger gemeinsam."
+       ],
+       "dose_de": "Erst 5 s, dann 10 s, dann auf 20–30 s steigern; den langen Halt 2–3-mal",
+       "frequency_de": "2–3-mal täglich",
+       "pain_limit_de": "Sanfter Zug, kein Schmerz.",
+       "timer": {
+        "work": 30,
+        "rest": 15,
+        "reps": 1,
+        "sets": 3
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=zyz8y0Ccuqo",
+        "title": "How to Fix Lumbrical Pain (Lumbrical Injury, Pocket Climbing Injury)",
+        "channel": "Hooper's Beta",
+        "start_s": 207,
+        "end_s": 256
+       }
+      },
+      {
+       "id": "lumbrical-feather-stretch",
+       "name_de": "Gezielte 'Feder-Dehnung' (Verletzungsstellung)",
+       "how_de": [
+        "Erst beginnen, wenn die allgemeine Dehnung schmerzfrei ist.",
+        "Den betroffenen Finger mit der anderen Hand gestreckt halten.",
+        "Die Nachbarfinger mit Unterstützung der anderen Hand in die Beugung führen – nur so weit, bis ein sanfter Zug spürbar ist.",
+        "Zum Eingewöhnen 3–5 Sekunden halten, lösen, ein paar Mal wiederholen; dann 20–30 Sekunden halten."
+       ],
+       "dose_de": "2–3 × 20–30 Sekunden, wenn schmerzfrei; bei leichtem Unbehagen 1–2 ×",
+       "frequency_de": "2–3-mal täglich, bei Unbehagen 1–2-mal",
+       "pain_limit_de": "Höchstens 1–2/10, keine Schutzspannung. Klingt ein Ziehen länger als 30 Sekunden nach, war es zu viel.",
+       "timer": {
+        "work": 30,
+        "rest": 15,
+        "reps": 1,
+        "sets": 3
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=zyz8y0Ccuqo",
+        "title": "How to Fix Lumbrical Pain (Lumbrical Injury, Pocket Climbing Injury)",
+        "channel": "Hooper's Beta",
+        "start_s": 264,
+        "end_s": 312
+       }
+      },
+      {
+       "id": "finger-rom-three-rows-l",
+       "name_de": "Aktive Beweglichkeit in drei Zeilen plus L-Position",
+       "how_de": [
+        "Wie in Phase 1, jetzt im vollen Bewegungsumfang."
+       ],
+       "dose_de": "1 × 10–20",
+       "frequency_de": "mehrmals täglich",
+       "pain_limit_de": "Schmerzfrei.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=zyz8y0Ccuqo",
+        "title": "How to Fix Lumbrical Pain (Lumbrical Injury, Pocket Climbing Injury)",
+        "channel": "Hooper's Beta",
+        "start_s": 78,
+        "end_s": 100
+       }
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "name_de": "Wieder aufbauen",
+     "goal_de": "Zusammenspiel von Beugern und Streckern und den Muskel selbst kräftigen.",
+     "enter_de": "Volle Beweglichkeit, sanfte Dehnung und Druck auf die Stelle ohne nennenswerten Schmerz.",
+     "exit_de": "Pinch-Haltezüge mit Gewicht schmerzfrei, normales Klettern ohne Löcher ohne Reaktion.",
+     "duration_de": "Wochen; der längste Abschnitt der Reha.",
+     "climbing_de": "Locker klettern, zunächst einige Grade unter dem Maximum, und langsam hocharbeiten. Löcher und kleine Griffe anfangs meiden, bei Slopern aufpassen. Kein Nachschmerz nach der Einheit.",
+     "exercises": [
+      {
+       "id": "iron-claw",
+       "name_de": "Eisenkralle mit Stift",
+       "how_de": [
+        "Einen dicken Stift oder weichen Rundstab zwischen Fingerbeeren und Fingeransatz klemmen.",
+        "Mäßig zudrücken (Mittel- und Endgelenke gebeugt).",
+        "Unter Spannung die Grundgelenke strecken, bis die Hand eine Kralle bildet.",
+        "1–2 Sekunden halten, zurück."
+       ],
+       "dose_de": "2 × 10 Wiederholungen mit 1–2 s Halt",
+       "frequency_de": "1–2-mal täglich",
+       "pain_limit_de": "Nur so fest, wie es angenehm ist.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=zyz8y0Ccuqo",
+        "title": "How to Fix Lumbrical Pain (Lumbrical Injury, Pocket Climbing Injury)",
+        "channel": "Hooper's Beta",
+        "start_s": 391,
+        "end_s": 433
+       }
+      },
+      {
+       "id": "lumbrical-table-isometric",
+       "name_de": "Lumbrikalis-Isometrie am Tisch",
+       "how_de": [
+        "Spätere Variante: kurze, kräftigere Halte, auch mit Schaumstoff oder Knete.",
+        "Wie in Phase 1, jetzt mit ansteigender Intensität.",
+        "Steigerung: Schaumstoff oder Knete zwischen gestreckten Fingern und Daumen in L-Form zusammendrücken.",
+        "5 Sekunden halten, 1 Sekunde lösen."
+       ],
+       "dose_de": "2–3 Sätze × 10 Wiederholungen à 5 s",
+       "frequency_de": "1–2-mal täglich",
+       "pain_limit_de": "Schmerzfrei bis leichtes Ziehen.",
+       "timer": {
+        "work": 5,
+        "rest": 1,
+        "reps": 10,
+        "sets": 3
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=zyz8y0Ccuqo",
+        "title": "How to Fix Lumbrical Pain (Lumbrical Injury, Pocket Climbing Injury)",
+        "channel": "Hooper's Beta",
+        "start_s": 581,
+        "end_s": 627
+       }
+      },
+      {
+       "id": "reverse-curl",
+       "name_de": "Reverse Curl (Obergriff)",
+       "how_de": [
+        "Hantel oder Stange im Obergriff (Handrücken oben).",
+        "Ellbogen beugen und kontrolliert senken.",
+        "Gleichmäßig und sauber, kein Schwung."
+       ],
+       "dose_de": "2–3 Sätze × 8–12 Wiederholungen",
+       "frequency_de": "2–3-mal pro Woche, je nach Klettervolumen",
+       "pain_limit_de": "Erst beginnen, wenn die Eisenkralle schmerzfrei ist.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=zyz8y0Ccuqo",
+        "title": "How to Fix Lumbrical Pain (Lumbrical Injury, Pocket Climbing Injury)",
+        "channel": "Hooper's Beta",
+        "start_s": 433,
+        "end_s": 461
+       }
+      },
+      {
+       "id": "farmer-pinch",
+       "name_de": "Pinch-Haltezüge in L-Stellung (Farmer Pinch)",
+       "how_de": [
+        "Pinch-Block oder ein anderes Gerät, das die Hand in die L-Stellung bringt (Finger gestreckt, Grundgelenke gebeugt), mit Gewicht.",
+        "Vom Boden anheben und halten.",
+        "Gewicht mit der Zeit steigern."
+       ],
+       "dose_de": "Früh: 20 s / 40 s Pause, 6–10 Wiederholungen. Später: 10–15 s / 45–50 s Pause, 6–10 Wiederholungen.",
+       "frequency_de": "früh 2-mal täglich; später 1-mal täglich bzw. 3–4-mal pro Woche",
+       "pain_limit_de": "Schmerzfrei; anfangs so leicht, dass 20 Sekunden locker gehen.",
+       "timer": {
+        "work": 20,
+        "rest": 40,
+        "reps": 8,
+        "sets": 1
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=zyz8y0Ccuqo",
+        "title": "How to Fix Lumbrical Pain (Lumbrical Injury, Pocket Climbing Injury)",
+        "channel": "Hooper's Beta",
+        "start_s": 627,
+        "end_s": 663
+       }
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "name_de": "Loch-Training zurückholen",
+     "goal_de": "Das Gewebe an genau die Belastung gewöhnen, die es verletzt hat – dosiert und abseits der Wand zuerst.",
+     "enter_de": "Du kletterst wieder gut, Pinches sind kräftig, kein Schmerz.",
+     "exit_de": "Loch-Haltezüge mit steigendem Gewicht schmerzfrei; erste Löcher an der Wand ohne Reaktion. Danach das Loch-Volumen über mehrere Einheiten langsam steigern – ein schmerzfreier Versuch heißt nicht, dass eine ganze Loch-Session geht.",
+     "duration_de": "Wochen. Insgesamt kann die Sache je nach Schwere 2–4 Monate nachhängen; ohne Reha länger.",
+     "climbing_de": "Löcher an der Wand zuerst statisch und mit guten Tritten, Volumen niedrig. Handstellung: Grundglieder möglichst parallel halten (Grundgelenke ähnlich gebeugt) und die Beugung aus Mittel- und Endgelenken holen; freie Finger eher mit strecken als ganz einrollen. Keine Loch-Sprünge, bis alles andere stabil ist.",
+     "exercises": [
+      {
+       "id": "farmer-pockets",
+       "name_de": "Loch-Haltezüge mit Gewicht (Farmer Pockets)",
+       "how_de": [
+        "Griffblock oder Trainingsring mit Loch an ein leichtes Gewicht hängen.",
+        "Mit zwei oder drei Fingern greifen, Grundglieder der Finger parallel halten.",
+        "Vom Boden anheben und halten.",
+        "Über die drei Stufen steigern: lange leichte Halte → mittlere → kurze schwere."
+       ],
+       "dose_de": "Stufe A: 30 s / 30 s Pause, 6–10 Wiederholungen. Stufe B: 20 s / 40 s, 10 Wiederholungen, 2 Sätze. Stufe C: 6 Sätze à 10 s mit 60–90 s Pause.",
+       "frequency_de": "Stufe A und B 2-mal täglich; Stufe C 1-mal am Tag, 2–3-mal pro Woche",
+       "pain_limit_de": "Schmerzfrei; bei Ziehen in der Handfläche Gewicht senken oder eine Stufe zurück.",
+       "timer": {
+        "work": 30,
+        "rest": 30,
+        "reps": 8,
+        "sets": 1
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=zyz8y0Ccuqo",
+        "title": "How to Fix Lumbrical Pain (Lumbrical Injury, Pocket Climbing Injury)",
+        "channel": "Hooper's Beta",
+        "start_s": 698,
+        "end_s": 740
+       }
+      },
+      {
+       "id": "farmer-pinch",
+       "name_de": "Pinch-Haltezüge in L-Stellung (Farmer Pinch)",
+       "how_de": [
+        "Wie in Phase 3 mit mehr Gewicht und kürzeren Halten."
+       ],
+       "dose_de": "6–10 × 10–15 s, 45–50 s Pause",
+       "frequency_de": "3–4-mal pro Woche",
+       "pain_limit_de": "Schmerzfrei.",
+       "timer": {
+        "work": 12,
+        "rest": 48,
+        "reps": 8,
+        "sets": 1
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=zyz8y0Ccuqo",
+        "title": "How to Fix Lumbrical Pain (Lumbrical Injury, Pocket Climbing Injury)",
+        "channel": "Hooper's Beta",
+        "start_s": 627,
+        "end_s": 663
+       }
+      }
+     ]
+    }
+   ],
+   "prevention_de": [
+    "Löcher nicht meiden und dann plötzlich am Limit ziehen: regelmäßig dosiert trainieren, bevor du sie am Projekt brauchst.",
+    "In Löchern die Grundglieder parallel halten und freie Finger nicht maximal einrollen; auf kleinen Leisten alle Finger sauber platzieren.",
+    "Pinch- und Sloper-Arbeit (z. B. Farmer Pinch) gelegentlich einbauen – sie fordert die Lumbrikales.",
+    "Nach einer Verletzung das Loch-Volumen über mehrere Einheiten steigern statt an einem guten Tag alles nachzuholen."
+   ],
+   "evidence_de": "Die Verletzung und ihre Einteilung in drei Grade sind durch eine Fallserie belegt (Lutter et al. 2018, 60 Patient:innen, davon 57 Kletternde; alle wurden mit angepasster funktioneller Therapie wieder kletterfähig). Ein geprüftes Übungsprotokoll gibt es nicht; die Stufen, Dosierungen und Zeitpunkte hier stammen aus der klinischen Erfahrung von Hooper's Beta. Dessen Selbsttest-Schweregrade sind nicht identisch mit der bildgebungsgestützten Einteilung von Lutter.",
+   "sources": [
+    "https://www.hoopersbeta.com/library/how-to-heal-from-a-lumbrical-injury-5-simple-stages-to-recover",
+    "https://www.youtube.com/watch?v=zyz8y0Ccuqo",
+    "https://www.hoopersbeta.com/library/lumbricals-strange-and-important-muscles-for-climbers-anatomy-injuries-rehab-and-more",
+    "https://pubmed.ncbi.nlm.nih.gov/29591320/",
+    "https://pubmed.ncbi.nlm.nih.gov/38924964/",
+    "https://www.mendcolorado.com/physical-therapy-blog/2023/3/27/lumbrical-strains-in-rock-climbers-how-do-they-happen-and-how-they-can-be-treated/",
+    "https://theclimbingdoctor.com/trying-hard-after-finger-injuries-2/"
+   ]
+  },
+  {
+   "id": "collateral-ligament",
+   "name_de": "Seitenband am Fingermittelgelenk (PIP-Kollateralband)",
+   "region": "finger",
+   "locations": [
+    "pip-seite",
+    "dip-gelenk"
+   ],
+   "what_de": "Die Seitenbänder sitzen links und rechts an jedem Fingergelenk und sichern es gegen seitliches Aufklappen. Bei seitlicher Überlastung können sie gezerrt werden oder teilweise bis ganz reißen – beim Klettern meist am Mittelgelenk, seltener am Endgelenk.",
+   "mechanism_de": "Seitliche Kraft auf den Finger: Seitgriffe (vor allem, wenn du darunter stehst oder dynamisch weit weiterziehst), Gastons weit über Kopf oder weit außen, weite Züge, Fingerklemmer und Risse, dynamische Züge zur Seite. Gemeinsamer Nenner: Das Handgelenk steht nicht in Zugrichtung, sondern ist zur Seite abgeknickt. Häufiger bei dynamischen als bei statischen Zügen; auch viele Versuche am selben Zug können reichen. Ein Verrenkungstrauma schädigt das Band ebenfalls.",
+   "typical_signs_de": [
+    "Schmerz auf einer Seite eines einzelnen Gelenks, meist plötzlich beim Klettern aufgetreten",
+    "Druckschmerz genau dort, auf Höhe des Gelenkspalts",
+    "Schwellung, eventuell Rötung – bei leichten Fällen nur auf der betroffenen Seite",
+    "Seitliches Wegbiegen des Fingers schmerzt auf der gegenüberliegenden (gedehnten) Seite",
+    "Beugung eingeschränkt oder am Ende schmerzhaft"
+   ],
+   "not_this_if_de": [
+    "Schmerz und Schwellung auf beiden Seiten oder rund um das Gelenk, schleichend entstanden, kein Aufklappen: eher Gelenkreizung (Synovitis). Beides kann auch gleichzeitig vorliegen",
+    "Schmerz vor allem beim Ziehen gegen Widerstand auf der Beugeseite: eher Ringband",
+    "Gelenk lässt sich seitlich deutlich weiter aufklappen als am gleichen Finger der anderen Hand: höhergradige Verletzung – untersuchen lassen",
+    "Sichtbare Fehlstellung, Verrenkung oder Sturz auf den Finger: Bruch, knöcherner Bandausriss oder Verletzung der palmaren Platte möglich – Röntgen",
+    "Schmerz auf dem Gelenkrücken mit Streckproblem: Streckapparat – braucht eine Fachperson"
+   ],
+   "see_professional_de": [
+    "Jede Instabilität beim seitlichen Stresstest (Gelenk klappt auf): Einstufung und Schutz gehören in fachliche Hand; bei Grad III steht die OP-Frage im Raum",
+    "Ruheschmerz oder Schmerz bei einfacher Bewegung über 3/10",
+    "Nach einer Verrenkung oder bei sichtbarer Fehlstellung: Bildgebung",
+    "Unklar, ob Seitenband oder Synovitis, oder keine Besserung über mehrere Wochen: Physio oder Ärzt:in mit Klettererfahrung; MRT ist möglich, bei den meisten leichten Fällen aber nicht nötig"
+   ],
+   "grades": [
+    {
+     "id": "grad-1",
+     "name_de": "Grad 1 – Zerrung, stabil",
+     "signs_de": "Schwellung und Druckschmerz direkt über dem betroffenen Band; der seitliche Stresstest kann unangenehm sein, das Gelenk klappt aber nicht auf.",
+     "management_de": "Selbstmanagement möglich: auslösende Züge weglassen, Tape, Beweglichkeit, später Kräftigung. Sanfte Gelenktraktion ist hier erlaubt.",
+     "timeline_de": "Sehr gute Prognose; es kann trotzdem 8–12 Wochen dauern, bis es sich normal anfühlt."
+    },
+    {
+     "id": "grad-2",
+     "name_de": "Grad 2 – Teilriss, leichte Instabilität",
+     "signs_de": "Mehr Schwellung, oft im ganzen Gelenk. Beim Stresstest klappt das Gelenk etwas auf (unter 20°), mit festem Anschlag.",
+     "management_de": "Von einer Fachperson begleiten lassen, auch für zusätzliche Stabilitätsarbeit. Klettern erst nach Freigabe bzw. wenn die Symptome deutlich besser sind. Keine Gelenktraktion.",
+     "timeline_de": "Gute Prognose; etwa 12–16 Wochen, bis der Großteil der Kraft zurück ist."
+    },
+    {
+     "id": "grad-3",
+     "name_de": "Grad 3 – Riss, deutliche Instabilität",
+     "signs_de": "Deutliche Schwellung; das Gelenk klappt um mehr als 20° auf, eventuell noch mit festem Anschlag.",
+     "management_de": "Ärztlich abklären. Bei Problemen im Alltag kann eine Operation nötig sein; sonst zunächst konservativ. Kein Selbstprogramm.",
+     "timeline_de": "Individuell; mit passender Reha gute Aussichten."
+    }
+   ],
+   "phases": [
+    {
+     "n": 1,
+     "name_de": "Entlasten",
+     "goal_de": "Seitliche Kräfte vom Band nehmen und Reizung abklingen lassen.",
+     "enter_de": "Frische Verletzung: einseitiger Schmerz, Schwellung, Schmerz bei Alltagsbewegungen.",
+     "exit_de": "Ruhe und einfache Bewegung höchstens 2–3/10, Schwellung rückläufig, keine Instabilität.",
+     "duration_de": "Tage bis wenige Wochen, je nach Grad.",
+     "climbing_de": "Grad 2 und 3, spürbare Instabilität oder mehr als 3/10 in Ruhe bzw. bei einfacher Bewegung: nicht klettern, bis es besser ist oder eine Fachperson freigibt. Ohne Instabilität und mit erträglichem Schmerz ist Klettern möglich, wenn du Seitgriffe ohne gerade Zuglinie, weite Züge, dynamische Züge zu oder von kleinen Griffen (Henkel gehen meist), Fingerklemmer und alles mit seitlich abgeknicktem Handgelenk weglässt. Tape: stützend um das Gelenk oder als Buddy-Tape an den Nachbarfinger, um seitliche Kräfte zu verringern – das ist Expertenmeinung, Studien dazu gibt es nicht. Eis in den ersten Tagen oder bei starker Schwellung in Ordnung, sonst laut Hooper's Beta verzichtbar; Wärme kann die Beweglichkeit erleichtern.",
+     "exercises": [
+      {
+       "id": "finger-rom-two-lines",
+       "name_de": "Aktive Beweglichkeit zu zwei Linien",
+       "how_de": [
+        "Zwei gedachte Linien: Mitte der Handfläche (leichter) und Ansatz der Finger (mehr Beugung).",
+        "Finger ganz strecken, Fingerkuppen zur Linie führen, wieder ganz öffnen.",
+        "Geht nur die mittlere Linie schmerzarm, dabei bleiben und über die Tage zur zweiten vorarbeiten."
+       ],
+       "dose_de": "6–10 Wiederholungen",
+       "frequency_de": "mehrmals täglich",
+       "pain_limit_de": "Vor oder bei 2/10 stoppen.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=ZChT7Q7Dsc8",
+        "title": "Collateral Ligament Injury from Rock Climbing (Causes & Fix)",
+        "channel": "Hooper's Beta",
+        "start_s": 461,
+        "end_s": 495
+       }
+      },
+      {
+       "id": "passive-finger-rom",
+       "name_de": "Passives Beugen und Strecken",
+       "how_de": [
+        "Mit der anderen Hand den Finger abwechselnd beugen und strecken.",
+        "Langsam und sanft, gerade in der Beuge-Streck-Ebene – nicht zur Seite."
+       ],
+       "dose_de": "20–30 Wiederholungen",
+       "frequency_de": "mehrmals täglich (The Climbing Doctor: z. B. zu jeder vollen Stunde)",
+       "pain_limit_de": "Sanft, kein Hineindrücken in den Schmerz.",
+       "timer": null,
+       "video": null
+      },
+      {
+       "id": "collateral-tape",
+       "name_de": "Seitenband tapen bzw. Buddy-Tape",
+       "how_de": [
+        "Stütz-Tape: Tape so um das Gelenk führen, dass es das seitliche Aufklappen bremst (siehe Video).",
+        "Buddy-Tape: betroffenen Finger ober- und unterhalb des Gelenks an den Nachbarfinger tapen.",
+        "Beugen soll noch möglich sein."
+       ],
+       "dose_de": "Beim Klettern und bei Belastung",
+       "frequency_de": "solange seitliche Belastung schmerzt",
+       "pain_limit_de": "Nicht einschnüren.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=DgtNQyis42I",
+        "title": "Climber's Finger: How to Tape Your Collateral Ligaments",
+        "channel": "Focus Physical Therapy",
+        "start_s": null,
+        "end_s": null
+       }
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "name_de": "Beweglichkeit",
+     "goal_de": "Volle Beugung und Streckung zurückholen und das Band leicht stimulieren, ohne es zu reizen.",
+     "enter_de": "Schmerz in Ruhe gering, Bewegung zur mittleren Linie schmerzarm.",
+     "exit_de": "Fingerkuppen erreichen schmerzfrei den Fingeransatz, Beweglichkeit wie auf der anderen Seite, Druck auf das Band nur noch leicht empfindlich.",
+     "duration_de": "Wochen; Bandgewebe heilt langsam.",
+     "climbing_de": "Wie Phase 1: Handgelenk in Zugrichtung halten, kontrolliert belasten, Position sofort verlassen, wenn sie schmerzt. Zeit für Technik: mehr über die Füße, ausbalancierte Körperpositionen. Übriges Training (Grundübungen, auch dosiertes Fingertraining in gerader Zugrichtung bei leichten Fällen) ist erwünscht, solange der Finger nicht schmerzt.",
+     "exercises": [
+      {
+       "id": "tendon-glides",
+       "name_de": "Sehnengleiten",
+       "how_de": [
+        "Gestreckte Finger → Hakenfaust → volle Faust → flache Faust, dazwischen strecken.",
+        "Langsam und vollständig."
+       ],
+       "dose_de": "3 × 10 Wiederholungen",
+       "frequency_de": "bis zu 3-mal täglich",
+       "pain_limit_de": "Höchstens 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=BqvhdhFuoZs",
+        "title": "Climbing Pulley Sprain - Tendon Glide",
+        "channel": "The Climbing Doctor",
+        "start_s": 7,
+        "end_s": 49
+       }
+      },
+      {
+       "id": "cross-friction-massage",
+       "name_de": "Sanfte Querfriktion am Band",
+       "how_de": [
+        "Mit einem Finger der anderen Hand leichten Druck auf die schmerzhafte Stelle an der Gelenkseite geben.",
+        "Kleine Bewegungen auf und ab sowie quer."
+       ],
+       "dose_de": "2–3 Minuten",
+       "frequency_de": "täglich, bis zu 2–3-mal am Tag",
+       "pain_limit_de": "Nur leichter Druck, kein deutlicher Schmerz.",
+       "timer": {
+        "work": 150,
+        "rest": 0,
+        "reps": 1,
+        "sets": 1
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=ZChT7Q7Dsc8",
+        "title": "Collateral Ligament Injury from Rock Climbing (Causes & Fix)",
+        "channel": "Hooper's Beta",
+        "start_s": 530,
+        "end_s": 545
+       }
+      },
+      {
+       "id": "gentle-joint-traction",
+       "name_de": "Sanfte Gelenktraktion (nur Grad 1)",
+       "how_de": [
+        "Finger direkt jenseits des betroffenen Gelenks fassen, Gelenk gerade bzw. neutral.",
+        "Sanft gerade vom Gelenk wegziehen, kurz halten, lösen.",
+        "Vor oder nach der aktiven Beweglichkeit."
+       ],
+       "dose_de": "Hooper's Beta nennt keine Wiederholungszahl",
+       "frequency_de": "bis zu 2-mal täglich, bis die Beschwerden weg sind bzw. die Beweglichkeit normal ist",
+       "pain_limit_de": "Nur sanft, ohne Schmerz. Nicht bei Grad 2 oder 3, nicht bei lockerem oder instabilem Gelenk.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=ZChT7Q7Dsc8",
+        "title": "Collateral Ligament Injury from Rock Climbing (Causes & Fix)",
+        "channel": "Hooper's Beta",
+        "start_s": 545,
+        "end_s": 585
+       }
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "name_de": "Kraft",
+     "goal_de": "Finger in gerader Zugrichtung wieder belastbar machen und die kleinen Handmuskeln kräftigen.",
+     "enter_de": "Volle, schmerzarme Beweglichkeit; keine Instabilität.",
+     "exit_de": "Haltezüge am Board bei höchstens 2–3/10 dumpfem Ziehen ohne stechenden Schmerz, keine Reaktion am Folgetag; seitlicher Druck auf das Gelenk kaum noch empfindlich.",
+     "duration_de": "Mehrere Wochen.",
+     "climbing_de": "Statisch klettern, Hand präzise setzen. Füße setzen, bevor du an seitlich orientierten Griffen ziehst. Seitgriffe mit gerader Zuglinie sind in Ordnung; Gastons, weite Züge und Sprünge an kleine Griffe noch nicht.",
+     "exercises": [
+      {
+       "id": "putty-squeeze",
+       "name_de": "Therapieknete drücken",
+       "how_de": [
+        "Therapieknete oder weichen Ball mit der ganzen Hand zusammendrücken.",
+        "6 Sekunden halten, lösen."
+       ],
+       "dose_de": "10 × 6 Sekunden",
+       "frequency_de": "In der Quelle ohne Angabe",
+       "pain_limit_de": "Höchstens 2–3/10 dumpf.",
+       "timer": {
+        "work": 6,
+        "rest": 4,
+        "reps": 10,
+        "sets": 1
+       },
+       "video": null
+      },
+      {
+       "id": "finger-abduction-band",
+       "name_de": "Finger spreizen und schließen gegen Gummiband",
+       "how_de": [
+        "Gummiband um die Finger legen.",
+        "Finger gegen das Band auseinanderspreizen und kontrolliert zurück.",
+        "Kontrolliert und klein beginnen – die Übung belastet das Band seitlich."
+       ],
+       "dose_de": "In der Quelle ohne Zahlen",
+       "frequency_de": "In der Quelle ohne Angabe",
+       "pain_limit_de": "Schmerzfrei; bei Schmerz an der Gelenkseite weglassen.",
+       "timer": null,
+       "video": null
+      },
+      {
+       "id": "dumbbell-carry-hold",
+       "name_de": "Hantel halten (Tragegriff)",
+       "how_de": [
+        "Kurzhantel aufnehmen und mit festem Griff neben dem Körper halten.",
+        "10 Sekunden halten, absetzen.",
+        "Gewicht so wählen, dass ein dumpfes Ziehen von 2–3/10 entsteht."
+       ],
+       "dose_de": "10-Sekunden-Halte; die Zahl der Wiederholungen nennt die Quelle nicht",
+       "frequency_de": "In der Quelle ohne Angabe",
+       "pain_limit_de": "2–3/10 dumpf, kein stechender Schmerz.",
+       "timer": {
+        "work": 10,
+        "rest": 0,
+        "reps": 1,
+        "sets": 1
+       },
+       "video": null
+      },
+      {
+       "id": "hangboard-holds-straight",
+       "name_de": "Haltezüge am Fingerboard in gerader Zugrichtung",
+       "how_de": [
+        "Kante, an der höchstens 2–3/10 entsteht; bei Bedarf Füße am Boden.",
+        "Handgelenk und Unterarm in einer Linie mit der Zugrichtung.",
+        "10 Sekunden halten, 1 Minute Pause."
+       ],
+       "dose_de": "5 × 10 Sekunden, 1 Minute Pause",
+       "frequency_de": "In der Quelle ohne Angabe",
+       "pain_limit_de": "Bis 2–3/10 dumpf.",
+       "timer": {
+        "work": 10,
+        "rest": 60,
+        "reps": 1,
+        "sets": 5
+       },
+       "video": null
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "name_de": "Bewegung und Rückkehr",
+     "goal_de": "Seitliche Belastungen schrittweise wieder zulassen und die Technik so anpassen, dass das Band nicht wieder überrascht wird.",
+     "enter_de": "Kraftübungen ohne Reaktion; gerades Ziehen an der Wand schmerzfrei.",
+     "exit_de": "Seitgriffe, Gastons und weite Züge ohne Schmerz während und nach der Einheit; dann dynamische Züge.",
+     "duration_de": "Bis zum normalen Gefühl bei Grad 1 insgesamt etwa 8–12 Wochen, bei Grad 2 etwa 12–16 Wochen.",
+     "climbing_de": "Reihenfolge: statische Seitgriffe mit guten Tritten → Gastons und weite Züge → dynamische Züge an große Griffe → dynamisch an kleine Griffe, Fingerklemmer. Handgelenk in Zugrichtung ausrichten, wo es geht. Nicht denselben seitlichen Zug in Serie probieren.",
+     "exercises": [
+      {
+       "id": "static-sidepull-progression",
+       "name_de": "Seitgriff-Aufbau an der Wand",
+       "how_de": [
+        "Leichte Boulder mit Seitgriffen wählen.",
+        "Füße setzen, dann langsam Last auf den Griff geben; Handgelenk in Zugrichtung.",
+        "Statisch weiterziehen, kontrolliert lösen.",
+        "Über Einheiten hinweg Griffe kleiner, Züge weiter, dann dynamischer."
+       ],
+       "dose_de": "Kein festes Schema in den Quellen",
+       "frequency_de": "in den normalen Klettereinheiten",
+       "pain_limit_de": "Position verlassen, sobald es an der Gelenkseite schmerzt; höchstens 2/10 danach.",
+       "timer": null,
+       "video": null
+      },
+      {
+       "id": "hangboard-holds-straight",
+       "name_de": "Haltezüge am Fingerboard in gerader Zugrichtung",
+       "how_de": [
+        "Wie in Phase 3, Last schrittweise erhöhen."
+       ],
+       "dose_de": "5 × 10 Sekunden, 1 Minute Pause",
+       "frequency_de": "In der Quelle ohne Angabe",
+       "pain_limit_de": "Bis 2–3/10 dumpf, nichts am Folgetag.",
+       "timer": {
+        "work": 10,
+        "rest": 60,
+        "reps": 1,
+        "sets": 5
+       },
+       "video": null
+      }
+     ]
+    }
+   ],
+   "prevention_de": [
+    "Bei Seitgriffen, Gastons und weiten Zügen zuerst die Füße setzen und das Handgelenk möglichst in Zugrichtung bringen.",
+    "Dynamische Züge an kleine, seitlich belastete Griffe und viele Versuche am selben Zug dosieren.",
+    "Fingerklemmer und Risse mit guter Fuß- und Handgelenkposition entlasten.",
+    "Schlaf, Ernährung und Stress zählen: Bandgewebe braucht Zeit, es gibt keine Abkürzung."
+   ],
+   "evidence_de": "Schwach, was Kletternde angeht. Die Gradeinteilung und Grundsätze stammen aus der handchirurgischen Literatur zu PIP-Verletzungen; die Reha-Empfehlungen von Hooper's Beta und The Climbing Doctor sind nach deren eigener Aussage überwiegend Expertenmeinung, und Häufigkeiten fehlen bei mehreren Übungen.",
+   "sources": [
+    "https://www.hoopersbeta.com/library/collateral-ligament-injury-from-rock-climbing-causes-fix",
+    "https://www.youtube.com/watch?v=ZChT7Q7Dsc8",
+    "https://theclimbingdoctor.com/collateral-ligament-finger-injuries-in-climbers/",
+    "https://www.youtube.com/watch?v=h-nOPJsBZz8",
+    "https://pubmed.ncbi.nlm.nih.gov/42215818/"
+   ]
+  },
+  {
+   "id": "medial-epicondylopathy",
+   "name_de": "Kletterellbogen innen (mediale Epikondylopathie / Golferellbogen)",
+   "region": "elbow",
+   "locations": [],
+   "what_de": "Eine Überlastung der Sehnen, die am inneren Knochenvorsprung des Ellbogens ansetzen – vor allem der Handgelenk- und Fingerbeuger und des Einwärtsdrehers (Pronator teres). Es ist die häufigste Ellbogenbeschwerde bei Kletternden. Ähnliche Schmerzen können auch von einem eingeengten Nerv kommen.",
+   "mechanism_de": "Die Sehnen bekommen wiederholt mehr Arbeit, als sie bis zur nächsten Einheit verarbeiten können: viel Ziehen, Blockieren und hartes Zugreifen, zusätzliches Klimmzug- oder Board-Training, zu wenig Pause. Muskeln erholen sich schneller als Sehnen, deshalb fühlt man sich fit, obwohl die Sehne noch nicht so weit ist. Ungünstig sind laut Vagy Übergreifen (fester als nötig), Greifen mit gebeugtem Handgelenk und eine weit von der Wand weghängende Hüfte.",
+   "typical_signs_de": [
+    "Dumpfer, diffuser oder punktueller Schmerz am und um den inneren Knochenvorsprung, manchmal stechend unter Last",
+    "Schlimmer bei Zügen, Blockieren, festem Greifen, Handgelenkbeugung oder Einwärtsdrehen gegen Widerstand",
+    "Schleichender Beginn über Wochen, oft nach einer Phase mit mehr Volumen oder neuem Zusatztraining"
+   ],
+   "not_this_if_de": [
+    "Kribbeln, Taubheit oder Brennen (Ring- und kleiner Finger: Ellennerv; Daumen bis Mittelfinger: Mittelnerv) – dann ist ein Nerv beteiligt. Achtung: Nerveneinengung kann auch nur dumpf oder stechend schmerzen und eine Sehnenreizung vortäuschen",
+    "Beschwerden vor allem bei lange gebeugtem Ellbogen (Handy halten, Schlafen mit angewinkeltem Arm) oder Veränderung durch Kopf- und Schulterposition: spricht für Nervenbeteiligung",
+    "Plötzliches Ereignis mit Instabilitätsgefühl, Schnappen am Ellbogen, Blockieren oder Schwellung: Band, Gelenk oder Knochen – das ist nicht Thema dieses Programms"
+   ],
+   "see_professional_de": [
+    "Taubheit, Kribbeln oder Kraftverlust in der Hand, die anhalten oder zunehmen",
+    "Keine Besserung nach mehreren Wochen mit Belastungssteuerung, Kräftigung und Nervenmobilisation: individuelle Abklärung; dann kommen auch ärztliche Optionen wie Stoßwelle oder Injektionen zur Sprache",
+    "Schmerz nach einem akuten Ereignis (Sturz, Knacken), Schwellung, Instabilität oder Blockieren",
+    "Nervenmobilisationen verschlimmern die Beschwerden deutlich, obwohl du sie sanft ausführst"
+   ],
+   "grades": [],
+   "phases": [
+    {
+     "n": 1,
+     "name_de": "Reizfaktoren senken",
+     "goal_de": "Die Last auf die Sehne so weit reduzieren, dass sie sich beruhigt – ohne alles zu streichen – und Muskeln und Nerven beweglich halten.",
+     "enter_de": "Schmerz bei oder nach dem Klettern über 2/10, oder Schmerz, der länger als 24 Stunden nach der Einheit anhält.",
+     "exit_de": "Alltag und angepasstes Klettern bleiben während und 24 Stunden danach bei höchstens 2/10.",
+     "duration_de": "Tage bis wenige Wochen. Wenn vor allem ein Nerv beteiligt war, bessert es sich oft innerhalb von Tagen bis wenigen Wochen.",
+     "climbing_de": "Weiterklettern ist erlaubt, wenn es bei höchstens 2/10 bleibt (während und 24 Stunden danach). Sonst Intensität senken, Volumen senken oder den Stil ändern: weniger steil, weniger Blockieren, keine Zusatz-Klimmzüge, kein Campus. Nicht übergreifen, Handgelenk neutral statt gebeugt, Hüfte an die Wand. Eine Ellbogenbandage kann nachts helfen, wenn eine bestimmte Schlafposition die Beschwerden auslöst. Eis nach der Belastung oder Wärme sind Optionen ohne klaren Wirknachweis.",
+     "exercises": [
+      {
+       "id": "flexor-stretch-nerve-glide",
+       "name_de": "Beugerdehnung mit Nervengleiten",
+       "how_de": [
+        "Arm vor dem Körper, Handfläche nach unten, Finger gestreckt, Ellbogen leicht gebeugt.",
+        "Mit der anderen Hand Finger und Handgelenk nach oben ziehen, bis ein angenehmer Zug im Unterarm entsteht.",
+        "Diese Dehnung halten und den Ellbogen langsam strecken, 2–5 Sekunden halten.",
+        "Dann den Ellbogen ganz beugen, 2–5 Sekunden halten.",
+        "Zwischen beiden Positionen wechseln; Intensität über den Zug an den Fingern steuern."
+       ],
+       "dose_de": "2–3 Sätze × 3–5 Wiederholungen (eine Wiederholung = einmal gestreckt und einmal gebeugt), je 2–5 s halten",
+       "frequency_de": "mehrmals täglich möglich",
+       "pain_limit_de": "Milder Zug, höchstens 1–2/10, nie schmerzhaft.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=fuFyPHI4he4",
+        "title": "How to Fix Medial Elbow Pain (Golfer's / Climber's Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 581,
+        "end_s": 618
+       }
+      },
+      {
+       "id": "pec-doorway-stretch",
+       "name_de": "Brustdehnung im Türrahmen (90° und 120°)",
+       "how_de": [
+        "Schrittstellung, das gegenüberliegende Bein vorn.",
+        "Unterarm an den Türrahmen: Ellbogen auf Schulterhöhe, 90° gebeugt (Variante 2: Hand über Kopfhöhe, Arm etwa 120°).",
+        "Kleinen Schritt nach vorn und den Brustkorb leicht nach unten und vom Arm wegdrehen, bis es in Brust oder vorderer Schulter zieht.",
+        "Den oberen Rücken locker lassen, nicht zusammenziehen.",
+        "Bei Kribbeln oder Taubheit im Arm lösen und warten, bis das Gefühl normal ist."
+       ],
+       "dose_de": "1 Satz mit 2–3 Wiederholungen à 20–30 Sekunden je Position und Seite",
+       "frequency_de": "mehrmals täglich möglich",
+       "pain_limit_de": "Milder Zug, höchstens 1–2/10.",
+       "timer": {
+        "work": 30,
+        "rest": 10,
+        "reps": 3,
+        "sets": 1
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=fuFyPHI4he4",
+        "title": "How to Fix Medial Elbow Pain (Golfer's / Climber's Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 646,
+        "end_s": 690
+       }
+      },
+      {
+       "id": "median-ulnar-nerve-floss",
+       "name_de": "Nervengleiten für Mittel- und Ellennerv",
+       "how_de": [
+        "Mittelnerv, Hände tief: Ellbogen gebeugt, lockere Fäuste an den Schultern. Arme strecken, Hände öffnen und Handgelenke nach hinten strecken, als wolltest du die Handflächen hinter dir auf den Boden legen; dabei zu einer Hand schauen. Zurück, dann zur anderen Seite schauen.",
+        "Ellennerv, Stufe 1: Handflächen vor der Brust aneinander und langsam absenken, bis es an der Unterarm-Innenseite oder am Ring-/kleinen Finger leicht zieht; 2–5 Sekunden halten und wieder lösen.",
+        "Steigerung: in der Position den Kopf von Seite zu Seite drehen.",
+        "Zu intensiv? Dann nur die sanfte Variante mit einem Arm, bei der der Kopf zur bewegten Seite mitgeht."
+       ],
+       "dose_de": "Kombi-Technik: 1–2 Sätze × 3–4 Wiederholungen je Übung. Sanftes Gleiten: 1–2 Sätze × 6.",
+       "frequency_de": "Kombi-Technik anfangs 2–3-mal pro Woche, später bis 4–5-mal; sanftes Gleiten täglich",
+       "pain_limit_de": "Leichter Zug in jeweils einem Arm, kein Schmerz. Symptome dürfen höchstens ein paar Minuten leicht zunehmen. Bei Taubheit oder scharfem Kribbeln Bewegungsumfang verkleinern oder aufhören.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=fuFyPHI4he4",
+        "title": "How to Fix Medial Elbow Pain (Golfer's / Climber's Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 835,
+        "end_s": 875
+       }
+      },
+      {
+       "id": "forearm-self-massage",
+       "name_de": "Selbstmassage der Unterarmbeuger (optional)",
+       "how_de": [
+        "Mit der Hand oder einem Werkzeug über die schmerzhafte Region und die Beugermuskulatur streichen.",
+        "Sanfter Druck.",
+        "Wird es dadurch schlechter oder ändert sich nichts, weglassen – es kann sein, dass du einen Nerv reizt."
+       ],
+       "dose_de": "3–5 Minuten",
+       "frequency_de": "täglich bis mehrmals täglich bei sanftem Druck; kräftiger mit Werkzeug höchstens etwa 3-mal pro Woche",
+       "pain_limit_de": "Höchstens 2/10, während und danach.",
+       "timer": null,
+       "video": null
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "name_de": "Gezielter Belastungsaufbau",
+     "goal_de": "Die Sehnen mit dosierter, messbarer Last zur Anpassung bringen – als Ersatz für einen Teil der Kletterlast, nicht obendrauf.",
+     "enter_de": "Beschwerden sind unter Kontrolle (höchstens 2/10 im Alltag und beim angepassten Klettern).",
+     "exit_de": "Zwei Durchgänge beider Übungen mit sauberer Technik bei höchstens 2/10 während und 24 Stunden danach, über mehrere Einheiten stabil.",
+     "duration_de": "Einige Wochen.",
+     "climbing_de": "Angepasstes Klettern wie in Phase 1. Wenn das Krafttraining dazukommt, an den Klettertagen entsprechend kürzen – die Gesamtlast auf die Sehne soll nicht steigen.",
+     "exercises": [
+      {
+       "id": "forearm-pronation",
+       "name_de": "Unterarm-Einwärtsdrehung mit einseitigem Gewicht",
+       "how_de": [
+        "Hammer am Stielende, einseitig beladene Kurzhantel oder Hebelstange senkrecht in der Hand, Ellbogen etwa 90° gebeugt.",
+        "Das Gewicht kontrolliert nach außen absinken lassen (Handfläche dreht nach oben), so weit es angenehm geht.",
+        "Zurück und weiter in die Einwärtsdrehung (Handfläche nach unten), durch den ganzen verfügbaren Weg.",
+        "Knickt das Handgelenk stark ein oder hilft der Ellbogen deutlich mit, ist es zu schwer."
+       ],
+       "dose_de": "8–10 Wiederholungen, 2 Durchgänge (im Supersatz mit der Handgelenkbeugung); später 3",
+       "frequency_de": "2–3-mal pro Woche",
+       "pain_limit_de": "Etwa 2 Wiederholungen Reserve, höchstens 2/10 während und danach; anfangs leichter.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=fuFyPHI4he4",
+        "title": "How to Fix Medial Elbow Pain (Golfer's / Climber's Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 1177,
+        "end_s": 1232
+       }
+      },
+      {
+       "id": "wrist-flexion-dumbbell",
+       "name_de": "Handgelenkbeugung mit Kurzhantel",
+       "how_de": [
+        "Unterarm auf Bank, Tisch oder Oberschenkel ablegen, Handfläche nach oben, Ellbogen etwa 90°.",
+        "Handgelenk kontrolliert nach unten in die Streckung absenken, kurz halten.",
+        "Wieder so hoch beugen, wie es angenehm geht. Unterarm bleibt liegen, Hantel bleibt waagerecht."
+       ],
+       "dose_de": "8–10 Wiederholungen, 2 Durchgänge; später 3",
+       "frequency_de": "2–3-mal pro Woche",
+       "pain_limit_de": "Etwa 2 Wiederholungen Reserve, höchstens 2/10 während und danach.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=fuFyPHI4he4",
+        "title": "How to Fix Medial Elbow Pain (Golfer's / Climber's Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 1232,
+        "end_s": 1297
+       }
+      },
+      {
+       "id": "flexor-stretch-nerve-glide",
+       "name_de": "Beugerdehnung mit Nervengleiten",
+       "how_de": [
+        "Zwischen den Durchgängen statt reiner Pause eine der Dehnungen oder Nervenmobilisationen aus Phase 1 einbauen."
+       ],
+       "dose_de": "2–3 Sätze × 3–5 Wiederholungen",
+       "frequency_de": "an Trainingstagen in den Pausen, sonst mehrmals täglich",
+       "pain_limit_de": "Höchstens 1–2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=fuFyPHI4he4",
+        "title": "How to Fix Medial Elbow Pain (Golfer's / Climber's Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 581,
+        "end_s": 618
+       }
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "name_de": "Kraft ausbauen",
+     "goal_de": "Belastbarkeit über das alte Niveau heben: alle beteiligten Muskeln, mehr Durchgänge, mehr Gewicht.",
+     "enter_de": "Phase-2-Übungen werden gut vertragen.",
+     "exit_de": "Drei Durchgänge beider Supersätze mit steigendem Gewicht bei höchstens 2/10; Klimmzüge und Blockieren im Alltagstraining ohne Reaktion am Folgetag.",
+     "duration_de": "Mehrere Wochen; eine reine Sehnenreizung braucht laut Hooper's Beta insgesamt etwa 2–4 Monate.",
+     "climbing_de": "Schrittweise wieder steiler und härter, solange die 2/10-Regel hält. Lange Blockier-Züge, Campus und hohes Zugvolumen zuletzt.",
+     "exercises": [
+      {
+       "id": "forearm-pronation",
+       "name_de": "Unterarm-Einwärtsdrehung mit einseitigem Gewicht",
+       "how_de": [
+        "Im Supersatz mit der Handgelenkbeugung (wrist-flexion-dumbbell): beide Übungen direkt nacheinander.",
+        "Beide Übungen aus Phase 2 direkt nacheinander.",
+        "Kurze Pause oder eine Dehnung, dann der nächste Durchgang.",
+        "Erst alle Durchgänge von Supersatz 1, dann Supersatz 2."
+       ],
+       "dose_de": "je 8–10 Wiederholungen, 3 Durchgänge",
+       "frequency_de": "2–3-mal pro Woche",
+       "pain_limit_de": "2 Wiederholungen Reserve, höchstens 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=fuFyPHI4he4",
+        "title": "How to Fix Medial Elbow Pain (Golfer's / Climber's Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 1177,
+        "end_s": 1232
+       }
+      },
+      {
+       "id": "supinating-bicep-curl",
+       "name_de": "Bizeps-Curl mit Auswärtsdrehung",
+       "how_de": [
+        "Kurzhanteln neben dem Körper, Daumen zeigen nach vorn.",
+        "Beugen und dabei so drehen, dass die Handfläche oben zur Schulter zeigt.",
+        "Kontrolliert ablassen und zurückdrehen. Kein Schwung aus Rücken oder Schulter."
+       ],
+       "dose_de": "8–10 Wiederholungen, 2–3 Durchgänge (Supersatz 2 mit den Finger-Curls)",
+       "frequency_de": "2–3-mal pro Woche",
+       "pain_limit_de": "2 Wiederholungen Reserve, höchstens 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=fuFyPHI4he4",
+        "title": "How to Fix Medial Elbow Pain (Golfer's / Climber's Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 1297,
+        "end_s": 1336
+       }
+      },
+      {
+       "id": "finger-curls-dumbbell",
+       "name_de": "Finger-Curls mit Kurzhanteln",
+       "how_de": [
+        "Hanteln neben dem Körper halten, Arme locker.",
+        "Finger öffnen und die Hantel Richtung Fingerspitzen rollen lassen – nur so weit, dass der kleine Finger gerade noch Kontakt hat.",
+        "Kurz halten, dann wieder zur Faust einrollen.",
+        "Die Bewegung kommt aus den Fingern, nicht aus dem Handgelenk."
+       ],
+       "dose_de": "8–10 Wiederholungen, 2–3 Durchgänge",
+       "frequency_de": "2–3-mal pro Woche",
+       "pain_limit_de": "2 Wiederholungen Reserve, höchstens 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=fuFyPHI4he4",
+        "title": "How to Fix Medial Elbow Pain (Golfer's / Climber's Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 1336,
+        "end_s": 1375
+       }
+      },
+      {
+       "id": "eccentric-wrist-flexor-bar",
+       "name_de": "Exzentrische Handgelenkbeuger mit Gummistab (Alternative)",
+       "how_de": [
+        "Elastischen Übungsstab (FlexBar) mit beiden Händen fassen.",
+        "Mit der gesunden Hand den Stab durch Handgelenkbeugung verdrehen.",
+        "Die Verdrehung dann langsam mit der betroffenen Hand nachgeben lassen – deren Beuger arbeiten bremsend.",
+        "Zurück in die Ausgangsstellung, wiederholen."
+       ],
+       "dose_de": "3 × 15 Wiederholungen",
+       "frequency_de": "2-mal täglich (Studienprotokoll von Tyler et al.; mittlere Behandlungsdauer etwa 6 Wochen)",
+       "pain_limit_de": "Die Studie nennt keine Schmerzgrenze; vorsichtig mit 2/10 beginnen. Nicht zusätzlich zum vollen Hantelprogramm, sondern stattdessen.",
+       "timer": null,
+       "video": null
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "name_de": "Rückkehr und Ursachen abstellen",
+     "goal_de": "Volle Kletterlast wieder aufnehmen und die Bewegungs- und Planungsfehler ändern, die es ausgelöst haben.",
+     "enter_de": "Krafttraining läuft mit steigenden Gewichten, Klettern auf mittlerem Niveau ist reaktionsfrei.",
+     "exit_de": "Normale Einheiten inklusive steilem Gelände und Blockieren ohne Schmerz über 2/10 während und am Folgetag.",
+     "duration_de": "Gesamtverlauf typischerweise 2–4 Monate, je nach Ausgangslage und Konsequenz.",
+     "climbing_de": "Volumen und Intensität einzeln steigern. Auf die drei Muster achten: locker greifen statt übergreifen, Handgelenk nicht einknicken, Hüfte an der Wand und Füße arbeiten lassen. Das Kraftprogramm weiterführen (Hooper's Beta: 2–3-mal pro Woche nach Verträglichkeit). Nicht jede Zusatzbelastung (Klimmzüge, Board, Campus) gleichzeitig zurückbringen.",
+     "exercises": [
+      {
+       "id": "hammer-rotation-antagonist",
+       "name_de": "Hammer-Rotation für Auswärtsdreher und Strecker",
+       "how_de": [
+        "Hammer am Stiel fassen, Ellbogen am Körper und 90° gebeugt, Handfläche zeigt nach unten.",
+        "Den Hammer nach oben drehen, bis er senkrecht steht.",
+        "Kontrolliert zurück."
+       ],
+       "dose_de": "3 × 15 Wiederholungen",
+       "frequency_de": "1-mal täglich",
+       "pain_limit_de": "Schmerzfrei bis leichtes Ziehen.",
+       "timer": null,
+       "video": null
+      },
+      {
+       "id": "forearm-pronation",
+       "name_de": "Unterarm-Einwärtsdrehung mit einseitigem Gewicht",
+       "how_de": [
+        "Als Erhaltungsprogramm: Supersatz 1 (Einwärtsdrehung + Handgelenkbeugung) und Supersatz 2 (Bizeps-Curl + Finger-Curls).",
+        "Supersatz 1 und 2 aus Phase 3 weiterführen.",
+        "Gewicht so anpassen, dass etwa 2 Wiederholungen Reserve bleiben."
+       ],
+       "dose_de": "je 8–10 Wiederholungen, 2–3 Durchgänge",
+       "frequency_de": "2–3-mal pro Woche, abgestimmt auf die Klettertage",
+       "pain_limit_de": "Höchstens 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=fuFyPHI4he4",
+        "title": "How to Fix Medial Elbow Pain (Golfer's / Climber's Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 1177,
+        "end_s": 1232
+       }
+      }
+     ]
+    }
+   ],
+   "prevention_de": [
+    "Belastungssteuerung ist der Kern: Schmerz nicht ignorieren, Erholung als Teil des Trainings planen, Zusatztraining gegen Kletterlast tauschen statt addieren.",
+    "Unterarm, Finger- und Ellbogenbeuger auch abseits der Wand gezielt kräftigen – Klettern allein reicht dafür oft nicht.",
+    "Technik: nicht fester greifen als nötig, Handgelenk neutral, Hüfte an der Wand.",
+    "Brust- und Schulterbeweglichkeit sowie Nervengleiten beibehalten, wenn sie dir geholfen haben."
+   ],
+   "evidence_de": "Für Kletternde gibt es keine geprüften Protokolle. Dass dosierte Belastung bei Sehnenüberlastung hilft, ist allgemein gut gestützt; für die exzentrische Übung mit Gummistab gibt es eine kleine Studie ohne Kontrollgruppe (Tyler et al. 2014, 20 Personen, überwiegend Golfer). Das hier beschriebene Programm ist die klinische Erfahrung von Hooper's Beta, ergänzt um Hinweise von Vagy; die Aufteilung in vier Phasen ist eine Strukturierung für die App – im Original laufen die Bausteine parallel.",
+   "sources": [
+    "https://www.hoopersbeta.com/library/fix-stubborn-medial-elbow-pain",
+    "https://www.youtube.com/watch?v=fuFyPHI4he4",
+    "https://theclimbingdoctor.com/portfolio-items/medial-epicondylosis-golfers-elbow/",
+    "https://theclimbingdoctor.com/portfolio-items/how-to-heal-elbow-injuries-in-climbers/",
+    "https://pubmed.ncbi.nlm.nih.gov/24944855/",
+    "https://pubmed.ncbi.nlm.nih.gov/36757124/"
+   ]
+  },
+  {
+   "id": "lateral-epicondylopathy",
+   "name_de": "Ellbogen außen (laterale Epikondylopathie / Tennisellbogen)",
+   "region": "elbow",
+   "locations": [],
+   "what_de": "Eine Überlastung der Sehnen am äußeren Knochenvorsprung des Ellbogens – dort setzen die Handgelenk- und Fingerstrecker und der Auswärtsdreher (Supinator) an; am häufigsten betroffen ist ein kurzer Handgelenkstrecker (ECRB). Ähnliche Beschwerden kann eine Einengung des Speichennervs machen.",
+   "mechanism_de": "Beim Greifen stabilisieren die Strecker das Handgelenk gegen den Zug der Beuger; bei viel Leistenklettern mit überstrecktem Handgelenk, 'Chicken Wing' (hochgezogener Ellbogen), breiten Rissen oder generell zu viel Volumen kommt die Sehne mit der Erholung nicht nach. Vagy beschreibt zusätzlich ein Greifmuster, bei dem erst das Handgelenk gestreckt und dann zugegriffen wird, sowie verspannte Handgelenkbeuger, gegen die die Strecker anarbeiten müssen.",
+   "typical_signs_de": [
+    "Dumpfer, diffuser oder punktueller Schmerz am äußeren Knochenvorsprung, manchmal stechend",
+    "Druckschmerz am Sehnenansatz der Streckermuskeln",
+    "Schmerz, wenn du Handgelenk oder einzelne Finger gegen Widerstand nach oben streckst oder den Unterarm gegen Widerstand nach außen drehst",
+    "Schmerz beim passiven Dehnen: Ellbogen gestreckt, Handgelenk gebeugt und zur Kleinfingerseite geneigt",
+    "Schleichender Beginn, schlimmer nach Einheiten mit vielen Leisten"
+   ],
+   "not_this_if_de": [
+    "Kribbeln, Taubheit oder Brennen am Handrücken oder Unterarm – oder Beschwerden, die sich mit Nervenmobilisation und Brustdehnung verändern: Speichennerv beteiligt. Auch hier kann eine Nerveneinengung nur dumpf schmerzen",
+    "Beschwerden vor allem bei lange gebeugtem Ellbogen: spricht ebenfalls für Nervenbeteiligung",
+    "Akutes Ereignis, Schwellung, Blockieren, Schnappen oder Instabilität: Gelenk, Band oder Knochen – abklären lassen",
+    "Einklemmgefühl oder Klacken im Handgelenk bei den Übungen: eher ein Handgelenkthema, das eigene Stabilitätsarbeit braucht"
+   ],
+   "see_professional_de": [
+    "Anhaltende Taubheit, Kribbeln oder Schwäche beim Strecken von Handgelenk oder Fingern",
+    "Keine Besserung nach mehreren Wochen mit Belastungssteuerung, Kräftigung und Nervenmobilisation – dann individuell abklären; ärztliche Optionen sind unter anderem Stoßwelle oder Injektionen",
+    "Schmerz nach Sturz oder akutem Ereignis, Schwellung, Blockieren",
+    "Frühere Physio oder ein Exzentrik-Programm haben nichts gebracht: Diagnose und Ausführung überprüfen lassen (genau so ein Fall ist Vagys Beispiel)"
+   ],
+   "grades": [],
+   "phases": [
+    {
+     "n": 1,
+     "name_de": "Reizfaktoren senken",
+     "goal_de": "Sehne beruhigen, ohne alles zu streichen; Strecker, Beuger und Nerv beweglich halten.",
+     "enter_de": "Schmerz bei oder nach dem Klettern über 2/10, oder länger als 24 Stunden anhaltend.",
+     "exit_de": "Alltag und angepasstes Klettern bleiben während und 24 Stunden danach bei höchstens 2/10.",
+     "duration_de": "Tage bis wenige Wochen; bei reiner Nervenbeteiligung oft rasche Besserung in Tagen bis wenigen Wochen.",
+     "climbing_de": "Klettern ist erlaubt, wenn es bei höchstens 2/10 bleibt (während und 24 Stunden danach); sonst Intensität, Volumen oder Stil anpassen: weniger Leisten mit überstrecktem Handgelenk, Ellbogen nicht hochziehen, keine breiten Risse. Tape: Vagy entlastet den Ansatz mit einem rautenförmig geklebten festen Tape oder einem Kinesio-Tape mit Loch über dem Knochenvorsprung und hat Kletternde damit weiterklettern lassen – das ist Praxiserfahrung, keine belegte Wirkung. Eis nach Belastung oder Wärme: möglich, ohne klaren Nachweis.",
+     "exercises": [
+      {
+       "id": "wrist-extensor-stretch-3way",
+       "name_de": "Streckerdehnung in drei Richtungen",
+       "how_de": [
+        "Lockere Faust (nicht fest, nicht ganz offen), Ellbogen strecken.",
+        "Mit der anderen Hand die Faust in die Handgelenkbeugung ziehen: gerade nach unten.",
+        "Dann nach unten und zur Kleinfingerseite, dann nach unten und zur Daumenseite.",
+        "Der Zug soll im Unterarm ankommen. Spürst du nur ein Kneifen im Handgelenk, die Faust etwas fester machen – bleibt es dabei, diese Dehnung weglassen."
+       ],
+       "dose_de": "1–2 Wiederholungen, jede Richtung 10–20 Sekunden",
+       "frequency_de": "mehrmals täglich nach Verträglichkeit",
+       "pain_limit_de": "Milder Zug, höchstens 2/10 während und danach.",
+       "timer": {
+        "work": 20,
+        "rest": 5,
+        "reps": 3,
+        "sets": 2
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=NJKMGyL2iks",
+        "title": "How to Fix Lateral Elbow Pain (Tennis Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 528,
+        "end_s": 560
+       }
+      },
+      {
+       "id": "radial-nerve-floss",
+       "name_de": "Nervengleiten für den Speichennerv",
+       "how_de": [
+        "Start wie am Ende eines Bizeps-Curls: Ellbogen gebeugt, Hand an der Schulter, Schulter bleibt unten.",
+        "Arm nach unten strecken und dabei so weiterdrehen, dass die Handfläche nach hinten oben zeigt; Handgelenk beugen.",
+        "Ellbogen wirklich ganz strecken; mit der Drehung spielen, bis ein leichter Zug an der Außenseite des Unterarms spürbar ist.",
+        "Zurück in die Ausgangsstellung. Zu viel Zug: Ellbogen etwas gebeugt lassen."
+       ],
+       "dose_de": "Kombi-Technik (Gleiten plus Spannung): 1–2 Sätze × 3–4 Wiederholungen. Reines sanftes Gleiten: 1–2 Sätze × 6.",
+       "frequency_de": "Kombi-Technik anfangs 2–3-mal pro Woche, später bis 4–5-mal; sanftes Gleiten 1-mal täglich, dann steigern",
+       "pain_limit_de": "Höchstens 2/10; kein Taubheitsgefühl, kein scharfes Kribbeln.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=NJKMGyL2iks",
+        "title": "How to Fix Lateral Elbow Pain (Tennis Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 773,
+        "end_s": 821
+       }
+      },
+      {
+       "id": "pec-doorway-stretch",
+       "name_de": "Brustdehnung im Türrahmen (90° und 120°)",
+       "how_de": [
+        "Schrittstellung, Unterarm an den Türrahmen: Ellbogen auf Schulterhöhe und 90° gebeugt; zweite Variante mit der Hand über Kopfhöhe.",
+        "Kleinen Schritt nach vorn, Brustkorb leicht nach unten und vom Arm wegdrehen.",
+        "Oberen Rücken locker lassen.",
+        "Bei Kribbeln oder Taubheit lösen, bis das Gefühl normal ist."
+       ],
+       "dose_de": "1 Satz mit 2–3 Wiederholungen à 20–30 Sekunden je Position und Seite",
+       "frequency_de": "mehrmals täglich nach Verträglichkeit",
+       "pain_limit_de": "Höchstens 2/10.",
+       "timer": {
+        "work": 30,
+        "rest": 10,
+        "reps": 3,
+        "sets": 1
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=fuFyPHI4he4",
+        "title": "How to Fix Medial Elbow Pain (Golfer's / Climber's Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 646,
+        "end_s": 690
+       }
+      },
+      {
+       "id": "flexor-pin-and-stretch",
+       "name_de": "Handgelenkbeuger: drücken und dehnen",
+       "how_de": [
+        "Mit dem Daumen der anderen Hand auf einen verspannten Punkt im Muskelbauch der Unterarmbeuger drücken, während Handgelenk und Ellbogen gebeugt sind.",
+        "Druck halten und Handgelenk und Ellbogen strecken.",
+        "Lösen, nächsten Punkt suchen."
+       ],
+       "dose_de": "In der Quelle ohne Zahlen",
+       "frequency_de": "In der Quelle ohne Angabe",
+       "pain_limit_de": "Wohltuender Druck, kein scharfer Schmerz, kein Kribbeln.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=C9X3vaF0qXA",
+        "title": "A Complete Program For Climbing Lateral Elbow Pain",
+        "channel": "The Climbing Doctor",
+        "start_s": 84,
+        "end_s": 122
+       }
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "name_de": "Gezielter Belastungsaufbau",
+     "goal_de": "Die Strecker mit dosierter, messbarer Last zur Anpassung bringen.",
+     "enter_de": "Beschwerden unter Kontrolle (höchstens 2/10 im Alltag und beim angepassten Klettern).",
+     "exit_de": "Beide Handgelenk-Übungen mit 2–3 Sätzen bei höchstens 2/10 während und 24 Stunden danach, über mehrere Einheiten stabil.",
+     "duration_de": "Einige Wochen. In der Studie von Tyler et al. dauerte die Behandlung mit zusätzlicher Exzentrik im Mittel etwa 7 Wochen.",
+     "climbing_de": "Angepasst wie in Phase 1. Nicht zu viel Zusatzlast auf einmal: mit weniger Sätzen oder geringerer Häufigkeit beginnen und an Klettertagen kürzen.",
+     "exercises": [
+      {
+       "id": "wrist-extension-bent-elbow",
+       "name_de": "Handgelenkstreckung mit gebeugtem Ellbogen",
+       "how_de": [
+        "Unterarm auf Bank oder Tisch ablegen, Handrücken nach oben, Ellbogen etwa 90°.",
+        "Hantel mit dem Daumen auf der Fingerseite greifen.",
+        "Handgelenk kontrolliert nach unten absenken, durch den ganzen verfügbaren Weg.",
+        "Wieder nach oben strecken. Unterarm bleibt liegen. Bei Klacken einen kleineren Weg wählen."
+       ],
+       "dose_de": "2–3 Sätze × 8–10 Wiederholungen",
+       "frequency_de": "2–3-mal pro Woche",
+       "pain_limit_de": "2 Wiederholungen Reserve (anfangs leichter), höchstens 2/10 während und danach.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=NJKMGyL2iks",
+        "title": "How to Fix Lateral Elbow Pain (Tennis Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 1051,
+        "end_s": 1102
+       }
+      },
+      {
+       "id": "wrist-extension-straight-elbow",
+       "name_de": "Handgelenkstreckung mit gestrecktem Ellbogen",
+       "how_de": [
+        "Gleicher Aufbau, aber der Ellbogen ist ganz gestreckt – das betont den langen Handgelenkstrecker, der bei Zügen über Kopf arbeitet.",
+        "Voller Weg, wenn möglich; sonst kurz davor stoppen."
+       ],
+       "dose_de": "2–3 Sätze × 8–10 Wiederholungen",
+       "frequency_de": "2–3-mal pro Woche",
+       "pain_limit_de": "2 Wiederholungen Reserve, höchstens 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=NJKMGyL2iks",
+        "title": "How to Fix Lateral Elbow Pain (Tennis Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 1102,
+        "end_s": 1152
+       }
+      },
+      {
+       "id": "wrist-extensor-stretch-3way",
+       "name_de": "Streckerdehnung in drei Richtungen",
+       "how_de": [
+        "Zwischen den Sätzen eine der Dehnungen oder das Nervengleiten aus Phase 1 einbauen."
+       ],
+       "dose_de": "1–2 Wiederholungen à 10–20 Sekunden je Richtung",
+       "frequency_de": "an Trainingstagen in den Pausen, sonst mehrmals täglich",
+       "pain_limit_de": "Höchstens 2/10.",
+       "timer": {
+        "work": 20,
+        "rest": 5,
+        "reps": 3,
+        "sets": 1
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=NJKMGyL2iks",
+        "title": "How to Fix Lateral Elbow Pain (Tennis Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 528,
+        "end_s": 560
+       }
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "name_de": "Kraft ausbauen",
+     "goal_de": "Alle Muskeln rund um den äußeren Ellbogen kräftigen: Auswärtsdreher, Oberarmspeichenmuskel, Strecker in Kletterstellung.",
+     "enter_de": "Handgelenk-Übungen werden gut vertragen.",
+     "exit_de": "Alle Übungen mit 2–3 Sätzen und steigendem Gewicht bei höchstens 2/10; Leisten-Einheiten ohne Reaktion am Folgetag.",
+     "duration_de": "Mehrere Wochen; eine reine Sehnenreizung braucht laut Hooper's Beta insgesamt etwa 2–4 Monate.",
+     "climbing_de": "Schrittweise mehr Leisten und Intensität, solange die 2/10-Regel hält. Zur Schmerzgrenze beim Training gibt es zwei Lager: Hooper's Beta bleibt bei 2/10, Vagy lässt seine Exzentrik-Übungen bei etwa 4/10 ausführen; die von ihm zitierte Übersicht hält beides für vertretbar und Dosis, Häufigkeit und Übungsart für nicht geklärt.",
+     "exercises": [
+      {
+       "id": "forearm-supination",
+       "name_de": "Unterarm-Auswärtsdrehung mit einseitigem Gewicht",
+       "how_de": [
+        "Hammer am Stielende, einseitig beladene Hantel oder Hebelstange senkrecht halten, Oberarm am Körper.",
+        "Gewicht kontrolliert nach innen absinken lassen (Handfläche nach unten).",
+        "Nach außen drehen (Handfläche nach oben), am Ende kurz halten, zurück.",
+        "Kein Ausweichen über Schulter oder Bizeps; Arm bleibt nah am Körper."
+       ],
+       "dose_de": "2–3 Sätze × 8–10 Wiederholungen",
+       "frequency_de": "2–3-mal pro Woche",
+       "pain_limit_de": "2 Wiederholungen Reserve, höchstens 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=NJKMGyL2iks",
+        "title": "How to Fix Lateral Elbow Pain (Tennis Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 1184,
+        "end_s": 1231
+       }
+      },
+      {
+       "id": "hammer-curls",
+       "name_de": "Hammer-Curls",
+       "how_de": [
+        "Kurzhanteln, Kabel oder Band; Daumen zeigen nach vorn bzw. oben.",
+        "Beide Ellbogen beugen, bis die Daumenseite zur Schulter zeigt.",
+        "Kontrolliert ablassen, kein Schwung."
+       ],
+       "dose_de": "2–3 Sätze × 8–12 Wiederholungen",
+       "frequency_de": "2–3-mal pro Woche",
+       "pain_limit_de": "2 Wiederholungen Reserve, höchstens 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=NJKMGyL2iks",
+        "title": "How to Fix Lateral Elbow Pain (Tennis Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 1152,
+        "end_s": 1184
+       }
+      },
+      {
+       "id": "supinator-eccentric-band",
+       "name_de": "Exzentrik für den Auswärtsdreher mit Band (Alternative nach Vagy)",
+       "how_de": [
+        "Band um den Unterarm nahe dem Handgelenk schlingen und so wickeln, dass es in die Einwärtsdrehung zieht; Band an der Wand fixieren.",
+        "Nah an der Wand bei wenig Spannung nach außen drehen.",
+        "So weit zurückgehen, dass das Band kräftig zieht.",
+        "Langsam und kontrolliert in die Einwärtsdrehung nachgeben. Wieder vorgehen, neu ansetzen."
+       ],
+       "dose_de": "3 × 15 Wiederholungen",
+       "frequency_de": "In der Quelle ohne Angabe",
+       "pain_limit_de": "Vagy wählte einen Widerstand, der etwa 4/10 auslöst; wer nach der 2/10-Regel arbeitet, nimmt weniger Bandspannung.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=C9X3vaF0qXA",
+        "title": "A Complete Program For Climbing Lateral Elbow Pain",
+        "channel": "The Climbing Doctor",
+        "start_s": 601,
+        "end_s": 628
+       }
+      },
+      {
+       "id": "wrist-extensor-eccentric-open-grip",
+       "name_de": "Exzentrik für die Handgelenkstrecker mit offenem Griff (Alternative nach Vagy)",
+       "how_de": [
+        "Statt einer Hantel eine Flasche greifen, die die Hand so öffnet wie ein Griff an der Wand; ein Widerstandsband daran befestigen.",
+        "Handgelenk mit Hilfe der anderen Hand nach oben bringen.",
+        "Langsam gegen den Bandzug absenken.",
+        "Einmal mit gebeugtem und einmal mit gestrecktem Ellbogen ausführen."
+       ],
+       "dose_de": "Vagy nennt für diese Übung nur die Intensität; für die Exzentrik insgesamt nutzt er 3 × 15.",
+       "frequency_de": "In der Quelle ohne Angabe",
+       "pain_limit_de": "Bei Vagy etwa 4/10; vorsichtige Variante 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=C9X3vaF0qXA",
+        "title": "A Complete Program For Climbing Lateral Elbow Pain",
+        "channel": "The Climbing Doctor",
+        "start_s": 630,
+        "end_s": 668
+       }
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "name_de": "Bewegung und Rückkehr",
+     "goal_de": "Volle Kletterlast und ein Greifmuster, das die Strecker nicht überfordert.",
+     "enter_de": "Krafttraining läuft mit steigenden Gewichten; Klettern auf mittlerem Niveau ist reaktionsfrei.",
+     "exit_de": "Normale Einheiten inklusive Leisten ohne Schmerz über 2/10 während und am Folgetag.",
+     "duration_de": "Gesamtverlauf typischerweise 2–4 Monate.",
+     "climbing_de": "Leistenanteil und Intensität einzeln steigern. Beim Zugreifen zuerst die Finger schließen und das Handgelenk folgen lassen, statt das Handgelenk vorab zu überstrecken; Ellbogen unten halten. Kraftprogramm 2–3-mal pro Woche nach Verträglichkeit weiterführen.",
+     "exercises": [
+      {
+       "id": "table-finger-curl-grip-drill",
+       "name_de": "Greifmuster üben: Finger rollen am Tisch",
+       "how_de": [
+        "Hand flach bzw. mit den Fingerkuppen auf einen Tisch legen.",
+        "Die Finger langsam einrollen, als würdest du eine Leiste greifen.",
+        "Dabei die Muskeln am Handgelenk bewusst locker lassen – die Arbeit kommt aus den langen Fingerbeugern, das Handgelenk streckt sich nur so weit mit, wie es von selbst folgt."
+       ],
+       "dose_de": "In der Quelle ohne Zahlen",
+       "frequency_de": "als Technikübung vor dem Klettern",
+       "pain_limit_de": "Schmerzfrei.",
+       "timer": null,
+       "video": null
+      },
+      {
+       "id": "reverse-curl",
+       "name_de": "Reverse Curl (Obergriff)",
+       "how_de": [
+        "Gerade Stange im Obergriff (Handrücken oben).",
+        "Ellbogen beugen und kontrolliert strecken; die Handgelenkstrecker halten dabei das Handgelenk stabil.",
+        "Kein Schwung."
+       ],
+       "dose_de": "2–3 Sätze × 6–10 Wiederholungen",
+       "frequency_de": "2–3-mal pro Woche",
+       "pain_limit_de": "2 Wiederholungen Reserve, höchstens 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=NJKMGyL2iks",
+        "title": "How to Fix Lateral Elbow Pain (Tennis Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 1231,
+        "end_s": 1263
+       }
+      },
+      {
+       "id": "wrist-extension-bent-elbow",
+       "name_de": "Handgelenkstreckung mit gebeugtem Ellbogen",
+       "how_de": [
+        "Wie in Phase 2; Gewicht so wählen, dass etwa 2 Wiederholungen Reserve bleiben."
+       ],
+       "dose_de": "2–3 Sätze × 8–10 Wiederholungen",
+       "frequency_de": "2–3-mal pro Woche",
+       "pain_limit_de": "Höchstens 2/10.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=NJKMGyL2iks",
+        "title": "How to Fix Lateral Elbow Pain (Tennis Elbow) in 26 Minutes!",
+        "channel": "Hooper's Beta",
+        "start_s": 1051,
+        "end_s": 1102
+       }
+      }
+     ]
+    }
+   ],
+   "prevention_de": [
+    "Belastung steuern: Leistenvolumen und Zusatztraining langsam steigern, Schmerz nicht übergehen.",
+    "Die Handgelenkstrecker als Gegenspieler der Beuger regelmäßig kräftigen – sie arbeiten bei jedem Griff mit.",
+    "Greifen, ohne das Handgelenk vorab zu überstrecken; Ellbogen nicht hochziehen.",
+    "Unterarmbeuger, Brust und Schulter beweglich halten, wenn Dehnung und Nervengleiten bei dir geholfen haben."
+   ],
+   "evidence_de": "Besser als bei den meisten Kletterthemen, aber nicht kletterspezifisch: Eine kleine randomisierte Studie (Tyler et al. 2010, 21 Personen) zeigte deutlich bessere Ergebnisse, wenn zur Standardtherapie eine exzentrische Streckerübung kam; andere Studien stützen konzentrische, exzentrische oder kombinierte Programme. Welche Übungsart, Dosis und Schmerzgrenze am besten ist, ist laut der von Vagy zitierten Übersicht (Coombes) offen. Das Programm hier ist klinische Erfahrung von Hooper's Beta und Vagy; die vier Phasen sind eine Strukturierung für die App.",
+   "sources": [
+    "https://www.hoopersbeta.com/library/lateral-elbow-pain",
+    "https://www.youtube.com/watch?v=NJKMGyL2iks",
+    "https://theclimbingdoctor.com/a-complete-program-for-climbing-lateral-elbow-pain/",
+    "https://theclimbingdoctor.com/lateral-elbow-pain-diagnostics-climbing/",
+    "https://pubmed.ncbi.nlm.nih.gov/20579907/"
+   ]
+  }
+ ],
+ "notes": "UMFANG: Bedingungen 1–7 sind vollständig (je 4 Phasen, 2–4 Übungen pro Phase). Schulter (optional, Nr. 8) wurde nicht bearbeitet. | QUELLENLAGE: Gelesen wurden die Originalseiten von The Climbing Doctor, Hooper's Beta, Rock Rehab (Ingerson), TrainingBeta, das aktuelle Nachbehandlungsschema der Klinik von Schöffl (Sozialstiftung Bamberg, Stand 01/2026, inkl. Konsens-Tabelle 2019), Volltexte aus PubMed Central (Schöffl et al. 2025 Kapsulitis, DOI 10.3389/fspor.2025.1497110; Mohn et al. 2022 Tenosynovitis, DOI 10.3390/biology11060815; Larsson et al. 2022 Tape-Review, DOI 10.1186/s13102-022-00539-6) sowie der Fallbericht Vagy 2023 (DOI 10.3389/fspor.2023.1185653). Nur als Abstract verfügbar: Lutter et al. 2018 Lumbrikalis (DOI 10.1177/1753193418765716), Tyler et al. 2010 (DOI 10.1016/j.jse.2010.04.041) und 2014 (PMID 24944855), Cooper & LaStayo 2019 (nur über Vagys Wiedergabe), Schöffl 2019 Tenosynovitis-Injektion (nur über Mohn und Hooper's Beta), Schneeberger & Schweizer 2016 (nur über Vagy). Keine verwertbaren eigenen Protokolle gefunden bzw. gelesen von Lattice Training, Tyler Nelson/Camp4 und Eva López – sie sind nicht eingeflossen. | NICHT VERIFIZIERT: (1) Wochenangaben je Grad bei Lumbrikalis-Rissen nach Lutter – Volltext nicht zugänglich; die Zeitpunkte stammen von Hooper's Beta. (2) Dosierung der exzentrischen Streckerübung in Tyler 2010 (im Abstract nicht genannt) – deshalb nicht als Übung aufgenommen. (3) Vagys Zeitplan-Tabelle (leichtes/mittleres/hartes Klettern je Schweregrad) stammt aus seinem Artikel; die Zuordnung 'mild/moderat/schwer = Grad I/II/III' nennt er selbst als nicht durch Forschung belegt. (4) Das kostenpflichtige Rock-Rehab-Protokoll und die grad-spezifischen Zeitpläne von Hooper's Beta (Google-Drive-Ordner) wurden nicht gelesen. (5) Im A2-Video von Hooper's Beta nennt die Einblendung für Grad IVa 'nur offen für 4 Wochen', Text und Ton sagen '2 Wochen'. | EXPERTENKONVENTION STATT PUBLIZIERT: die 2/10-Regel (Hooper's Beta), 0/10 dann bis 3/10 mit Abklingen in 3 Minuten (Vagy), '20 % pro Woche' (Rock Rehab), 90 % Seitenvergleich (aus der Knie-Reha entlehnt), sämtliche Satz-/Wiederholungszahlen der Physio-Quellen, alle exit_de-Kriterien (die Quellen steuern überwiegend über Schmerz und Zeit; messbare Übergangskriterien sind nirgends publiziert) sowie die Phasendauern, soweit sie nicht ausdrücklich einer Quelle zugeschrieben sind. | EIGENE STRUKTURIERUNG: Hooper's Beta beschreibt für Ellbogen, Seitenband und Lumbrikalis Bausteine, keine nummerierten Phasen; die Einteilung in vier Phasen, die Reihenfolge der Griffe bei der Rückkehr (Seitenband Phase 4, 'static-sidepull-progression') und der 'grip-symmetry-check' (aus Vagys Fallbericht und seinem Fingerboard-Artikel abgeleitet) sind Strukturierungen für die App. Der Selbstcheck (self_check) ist aus den Differenzialhinweisen der Quellen zusammengesetzt und nicht validiert; Hooper's Beta bietet ein eigenes Online-Tool (hoopersbeta.com/finger-tool), das nicht ausgewertet wurde. Die Warnzeichen 'Ruhe-/Nachtschmerz, heißes rotes Gelenk, Fieber, mehrere Gelenke' und 'Infektverdacht an der Sehnenscheide' sind allgemeine medizinische Vorsicht und stammen nicht aus den Kletterquellen (Schöffl schließt rheumatische Ursachen lediglich aus seiner Serie aus). | TIMER: Wo die Quelle einen Bereich nennt, steht im Timer ein Wert aus dem Bereich (z. B. 12 s für 10–15 s, 75 s für 60–90 s, 150 s für 2–3 min, 8 Wiederholungen für 6–10). Pausenwerte ohne Quellenangabe sind Platzhalter für die App: finger-active-rom (15 s), pip-joint-traction (15 s), passive-finger-flexion (5 s), pen-rolling (30 s), prayer-stretch-finger-taps (15 s), hangboard-isometrics (10 s zwischen Wiederholungen), rice-bucket (30 s), lumbrical-general-stretch und lumbrical-feather-stretch (15 s), putty-squeeze (4 s), pec-doorway-stretch (10 s), wrist-extensor-stretch-3way (5 s). Bei open-hand-repeaters nennt die Quelle keine Satzzahl (Timer: 1 Satz), bei dumbbell-carry-hold keine Wiederholungszahl (Timer: 1 × 10 s). | VIDEOS: Alle URLs wurden über YouTube-oEmbed geprüft (Titel und Kanal von dort). Segmente wurden per Transkript und/oder Storyboard bestimmt; nur per Transkript (ohne Bildkontrolle): Hooper's Beta Lateral-Video (NJKMGyL2iks), die Dehn-/Nerven-Segmente im Medial-Video (fuFyPHI4he4, 581–875), H-Tape (OueqYlZhpCQ), Kompression (h-nOPJsBZz8) und 'rapid-mobile-board-rows' (agyqSVMXkp0 1752–1795). Nur per Storyboard (Untertitel-Abruf gedrosselt): Seitenband-Video (ZChT7Q7Dsc8) und The-Climbing-Doctor-Lateral-Video (C9X3vaF0qXA). Ohne Segment (start_s/end_s = null): Seitenband-Tape (DgtNQyis42I, Kanal Focus Physical Therapy, von The Climbing Doctor verlinkt; 751 s, Transkript nicht abrufbar). Kurzclips von 'The Climbing SIG' (598E8Y4QePQ, lIAvanJCUWM) sind die im Climbing-Doctor-Artikel eingebetteten Demos. Für das Sehnenscheiden-Video von Hooper's Beta (McVyToh_feU) war kein Transkript abrufbar; dort wird ersatzweise das gleiche Übungsprinzip aus dem A2-Video gezeigt. Keine Videos für: Repeater, Farmer-Haltezüge, Reiseimer, Gummiband-Strecker, Knete, Gummistab-Exzentrik, Hammer-Rotation."
+}
