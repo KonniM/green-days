@@ -390,35 +390,39 @@
  },
  "backstep-aussenkante": {
   "video": "UZlGKEs31Cc",
-  "start_s": 91,
-  "end_s": 101,
+  "start_s": 69,
+  "end_s": 125,
   "confidence": "high",
-  "note": "Climber in 'Correct' demo turning onto outside edge on overhanging wall (Outside Edge technique video)",
-  "replaced": false
+  "note": "Neil Gresham outside-edge video: after the 'wrong' inside-edge examples (17-68 s), 'how can this be avoided' at 1:09 introduces the correct move: step through, outside edge of the left foot on the right-side hold, right foot braced flat on the wall, twist in, tripod, more push because foot is under you (to ~1:54). Frames 72-123 s show the 'Correct' demo on the overhanging wall. End at ~2:05 before the next exercise section.",
+  "replaced": false,
+  "needs_sound": true
  },
  "rockover-high-step": {
   "video": "37q54HXMa9E",
-  "start_s": 75,
-  "end_s": 86,
-  "confidence": "medium",
-  "note": "Climber rocking over onto high foot on wall during rock-over drill",
-  "replaced": false
+  "start_s": 52,
+  "end_s": 112,
+  "confidence": "high",
+  "note": "Paradigm rockover drill: narration 0:52-1:50 gives the key points (plantar-flex and claw into hold, quad/glute load, hips over foot, knee out, chest over foot, controlled reverse) while frames 51-125 s show the climber rocking over on the steep wall. Intro (0-50 s talking head) and later warm-up/second demo (2:08+) excluded.",
+  "replaced": false,
+  "needs_sound": true
  },
  "smearing-und-reibung": {
   "video": "uDm_sm7uz0s",
-  "start_s": 70,
-  "end_s": 80,
-  "confidence": "medium",
-  "note": "Climber on slab pressing feet on wall in tips section",
-  "replaced": false
+  "start_s": 24,
+  "end_s": 107,
+  "confidence": "high",
+  "note": "Lattice/Anna Hazelnutt smearing tips: 0:24 start of smear explanation (round hold, maximise rubber, drop heels), butt out of the wall vs hips in demo (1:00-1:30), baby steps and 'smear box' hips-to-knees (1:36-1:47). Frames 24-118 s confirm she demonstrates on the slab. Edging is a separate later chapter (4:22+) and not included; segment covers the smearing side of the contrast.",
+  "replaced": false,
+  "needs_sound": true
  },
  "zugrichtung-und-gegendruck": {
   "video": "a8DTOztiuLM",
-  "start_s": 147,
+  "start_s": 68,
   "end_s": 157,
   "confidence": "medium",
-  "note": "Direction of pull section: climber hanging on wall pulling against a strap/hold with coach pointing",
-  "replaced": false
+  "note": "Lattice movement concepts, 'direction of pull': from 1:08 (force perpendicular to the best position on a sloper, band over the hold, hips into wall vs body low slides off) to the layback demo with Jen (2:18-2:42 and ~2:47-2:59). Frames 68-157 confirm hold/band demo then climber laying back. Section continues to ~4:50 (heel hook, undercut), capped at 90 s. Counter-pressure/compression is not covered as such; this is the direction-of-pull part only.",
+  "replaced": false,
+  "needs_sound": true
  },
  "koerperspannung-ueber-die-fuesse": {
   "video": "bex5jR5BORQ",
@@ -430,11 +434,12 @@
  },
  "toe-screwing": {
   "video": "GPKXFotN5lc",
-  "start_s": 71,
-  "end_s": 82,
-  "confidence": "medium",
-  "note": "Climber on wall then close-up of toe on foot chip, maximizing-friction section",
-  "replaced": false
+  "start_s": 43,
+  "end_s": 123,
+  "confidence": "high",
+  "note": "Paradigm toe-screwing video: 0:44 'three major tasks' (friction, toe-to-hip chain tension, micro-edge feedback), friction explanation, hip rotator engagement and preloading the foot-to-core chain (ends ~2:03 before the tactile-scanning part). Frames 71-122 s show on-wall toe screwing close-ups; talking head interleaved. Definition at 0:17-0:30 excluded to stay under 90 s.",
+  "replaced": false,
+  "needs_sound": true
  },
  "anchoring": {
   "video": "RZoWFlUXVbw",
@@ -446,21 +451,23 @@
  },
  "toe-hook": {
   "video": "nANlqVWUgcM",
-  "start_s": 84,
-  "end_s": 95,
+  "start_s": 42,
+  "end_s": 129,
   "confidence": "high",
-  "note": "Presenter toe hooking on steep wall with toe hook labelled, 'use hips to weight the toe hook' section",
-  "replaced": false
+  "note": "Lattice toe hook technique lab: point 2 'active position, tension from toe to core' (0:42), point 3 'use hips to weight the toe hook' (1:16-1:52), point 4 'apply an opposing force' with other foot/clamp (1:52-2:08). Frames show wall demos with overlay graphics throughout. Point 1 (foot contact, 0:13-0:42) and when-to-use (2:25+) excluded to fit 90 s.",
+  "replaced": false,
+  "needs_sound": true
  },
  "heel-hook": {
   "video": "EMxmirtsRP4",
-  "start_s": 95,
-  "end_s": 106,
+  "start_s": 6,
+  "end_s": 96,
   "confidence": "high",
-  "note": "Original video unavailable; replacement Lattice heel hook tips. Climber heel hooking on steep wall with force lines",
+  "note": "Lattice heel hook technique lab: key point 1 heel placement against the hold direction (side of heel, toe out, 0:06-1:06) and key point 2 weighting the heel by pulling hips to the heel (1:06-1:47); frames 5-97 s are all close-ups/wall demos with overlays. Point 3 (changing foot angle, 1:53-2:44) is outside the 90 s cap.",
   "replaced": true,
   "title": "3 Heel Hook Tips: Mechanics, Physics & Technique",
-  "channel": "Lattice Training"
+  "channel": "Lattice Training",
+  "needs_sound": true
  },
  "bicycle-und-klemmen": {
   "video": "bHj76733_dk",
@@ -552,11 +559,12 @@
  },
  "dyno": {
   "video": "p7jHvrQE-qA",
-  "start_s": 292,
-  "end_s": 301,
+  "start_s": 53,
+  "end_s": 143,
   "confidence": "medium",
-  "note": "Climber executes dyno on arete boulder right after 'Let's do a dyno' card",
-  "replaced": false
+  "note": "No transcript available (429 throttling); storyboard only (4.9 s/frame). Section card 'DYNOS - Execution' at ~0:48, followed by repeated on-wall dyno demos with the presenter on an arete/prow boulder (0:53-2:41); 'MISTAKES - pumping too much' card at ~2:51. Took the first 90 s of the execution section (hard cap); old window 292-301 was the 'Let's do a dyno' practice attempts. Spoken content not verified.",
+  "replaced": false,
+  "needs_sound": true
  },
  "schwung-erzeugen-und-fangen": {
   "video": "nACAhzRuHWE",
@@ -569,35 +577,39 @@
  },
  "paddle-dyno": {
   "video": "tqkOFbY_GOk",
-  "start_s": 1058,
-  "end_s": 1068,
-  "confidence": "low",
-  "note": "Climber lunges dynamically on overhang (1059s); stills do not clearly show a paddle",
-  "replaced": false
+  "start_s": 1037,
+  "end_s": 1091,
+  "confidence": "medium",
+  "note": "Whole video is a Catalyst paddle-dyno lesson (defined at 0:41 as swinging from an insecure hand position into a secure one). Chosen: final multi-move sequence 'jump, catch, swing, catch, foot on wall' - coach cues 'swing out, look up and left, catch, put foot on wall' and 'point chest and hips at the target hold', attempts shown on wall (17:17-18:11). Alternative good passage: pink V4 demo 689-750. Frames of the catch itself are small, so boundaries approximate.",
+  "replaced": false,
+  "needs_sound": true
  },
  "koordinationszuege-run-and-jump": {
   "video": "m0kUtgw3aTM",
-  "start_s": 868,
-  "end_s": 879,
+  "start_s": 822,
+  "end_s": 872,
   "confidence": "medium",
-  "note": "Climber works a multi-limb coordination/complex move on gym wall in 'complex boulder movements' section",
-  "replaced": false
+  "note": "Whole video is Paradigm coordination-move coaching on a gym wall; no explicit run-and-jump section found by transcript keyword search. Chosen passage: rehearsal cues for a coordination move (snap in, pull, shoot hips in, get second hand there fast, feel it on the ground first), successful attempt, then 'directional push of smearing foot tells you where you go' (13:42-14:32). Boundaries approx; frames at 14:07 show coaching on wall.",
+  "replaced": false,
+  "needs_sound": true
  },
  "rhythmus-und-flow": {
   "video": "c8Rr5msTBL4",
-  "start_s": 49,
-  "end_s": 59,
+  "start_s": 31,
+  "end_s": 83,
   "confidence": "medium",
-  "note": "Fast-laps drill footage: climber repeatedly climbing the boulder at speed",
-  "replaced": false
+  "note": "No transcript available (429 throttling); boundaries from storyboard (2 s/frame). 'FAST LAPS' title card at ~0:29, presenter explains drill 0:31-0:44, then repeated fast laps on the boulder 0:45-1:21; 'Reminders' slides start ~1:22 and are excluded. Spoken content not verified.",
+  "replaced": false,
+  "needs_sound": true
  },
  "slab-vertrauen-und-gewichtsverlagerung": {
   "video": "xsLfrOg7QiE",
-  "start_s": 50,
-  "end_s": 60,
-  "confidence": "medium",
-  "note": "Climber on slab wall with yellow holds, standing on feet in demo",
-  "replaced": false
+  "start_s": 5,
+  "end_s": 61,
+  "confidence": "high",
+  "note": "Slab tip #1: move all weight over the foot you are stepping onto ('nose over toes'), weight leaves the lagging foot (0:05-0:40, talking head), followed by on-wall slab climbing footage with yellow holds (0:41-1:01). Tip #2 starts at 1:03 (shoe placement), excluded. Skipped the title card 0-4s.",
+  "replaced": false,
+  "needs_sound": true
  },
  "slab-fortgeschritten-palming": {
   "video": "naiztooiNpU",
