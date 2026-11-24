@@ -357,19 +357,21 @@
  },
  "gestreckte-arme": {
   "video": "IxySYhdcESM",
-  "start_s": 130,
-  "end_s": 141,
+  "start_s": 113,
+  "end_s": 167,
   "confidence": "medium",
-  "note": "Climber on wall demonstrating arm use (bent-arm habit vs straight)",
-  "replaced": false
+  "note": "Grenzen nur aus Standbildern (Transkript nicht abrufbar); enthält das zuvor geprüfte Kurzfenster. No captions available (transcript tool returned none after retries), so boundaries come from storyboard only: presenter in red shirt explains/demonstrates arm use on wall between ~113-167s, with on-screen text overlay at ~142-150s; then a fall/other clips follow at 172s+. Video is silent-style with text overlays, so sound is not essential. Boundaries approximate.",
+  "replaced": false,
+  "needs_sound": false
  },
  "hueftposition-offen-geschlossen": {
   "video": "wBGjh6ZvBZ0",
-  "start_s": 99,
-  "end_s": 110,
+  "start_s": 94,
+  "end_s": 178,
   "confidence": "medium",
-  "note": "Presenter demonstrating hip positions on steep wall in demo section",
-  "replaced": false
+  "note": "Grenzen nur aus Standbildern (Transkript nicht abrufbar); enthält das zuvor geprüfte Kurzfenster. No transcript obtainable (HTTP 429 throttling on every retry). From storyboard: 0-94 s is talking head intro in front of wall; from ~94 s presenter demonstrates hip positions standing/hanging on a steep wall (94-178 s), then end card at ~182 s. Boundaries between open/closed hips not verified.",
+  "replaced": false,
+  "needs_sound": true
  },
  "flagging": {
   "video": "jLsii8s6acM",
@@ -382,11 +384,12 @@
  },
  "drop-knee": {
   "video": "U0v9xxqEjfY",
-  "start_s": 104,
-  "end_s": 114,
+  "start_s": 68,
+  "end_s": 135,
   "confidence": "medium",
-  "note": "Drop knee effects section: climbers on steep wall with knee dropped, hips in",
-  "replaced": false
+  "note": "Grenzen nur aus Standbildern (Transkript nicht abrufbar); enthält das zuvor geprüfte Kurzfenster. No transcript obtainable (YouTube HTTP 429 on every retry over ~1 h), so boundaries come from storyboard frames only. Movement for Climbers drop-knee video: title card '3 effects of a drop knee' at ~49 s, then wall clips of climbers with knee dropped and a 'HIPS SQUARE' overlay at ~112 s; segment 68-135 s should cover the first effect demonstrations. A later 'another technique for hip in' clip starts ~142 s. Boundaries uncertain, needs manual check.",
+  "replaced": false,
+  "needs_sound": true
  },
  "backstep-aussenkante": {
   "video": "UZlGKEs31Cc",
@@ -426,11 +429,12 @@
  },
  "koerperspannung-ueber-die-fuesse": {
   "video": "bex5jR5BORQ",
-  "start_s": 340,
-  "end_s": 351,
+  "start_s": 337,
+  "end_s": 375,
   "confidence": "medium",
-  "note": "Boulder 3: climber on steep kilterboard with foot pulling/tension (arrow on foot)",
-  "replaced": false
+  "note": "Grenzen nur aus Standbildern (Transkript nicht abrufbar); enthält das zuvor geprüfte Kurzfenster. No transcript obtainable (YouTube HTTP 429 on every retry over ~1 h), so boundaries come from storyboard frames only. Paradigm tension video: ~300-335 s presenter beside the steep board explaining, 340-355 s demo climb with arrows marking the feet (foot pulling), 359-374 s climber on the board. Segment 337-375 s covers the foot-tension demo; later parts (379+) are further talking-head/drill clips. Boundaries uncertain, needs manual check.",
+  "replaced": false,
+  "needs_sound": true
  },
  "toe-screwing": {
   "video": "GPKXFotN5lc",
@@ -443,11 +447,12 @@
  },
  "anchoring": {
   "video": "RZoWFlUXVbw",
-  "start_s": 214,
-  "end_s": 225,
+  "start_s": 36,
+  "end_s": 108,
   "confidence": "high",
-  "note": "Climber on moonboard-style wall with anchoring foot/lagging foot labelled",
-  "replaced": false
+  "note": "Charlie Schreiber anchoring video: 0:36 shows the problem (releasing the lagging foot swings you off, finger load), 1:13-1:30 the three fixes (move close to the kept foothold, contract leg/back, release lagging foot subtly), then bad vs good attempt on the steep wall (1:30-1:43). Frames 37-107 s mix talking head with on-wall clips. Explanation of why it works (1:43+) excluded.",
+  "replaced": false,
+  "needs_sound": true
  },
  "toe-hook": {
   "video": "nANlqVWUgcM",
@@ -471,11 +476,12 @@
  },
  "bicycle-und-klemmen": {
   "video": "bHj76733_dk",
-  "start_s": 1126,
-  "end_s": 1138,
-  "confidence": "high",
-  "note": "Bicycle section: climber on overhang with one foot toe-hooking from below, other pressing above",
-  "replaced": false
+  "start_s": 1116,
+  "end_s": 1160,
+  "confidence": "medium",
+  "note": "Grenzen nur aus Standbildern (Transkript nicht abrufbar); enthält das zuvor geprüfte Kurzfenster. No transcript obtainable (YouTube HTTP 429 on every retry over ~1 h), so boundaries come from storyboard frames only. Long video (1581 s). Frames at 1086-1146 s show climbers on an overhang using one foot toe hooking/pressing the same hold (bicycle) on pink holds; 1156 s switches to a different setting and 1165-1195 s to other climbers/coaching. Earlier rough window (1126-1138) was rated high; segment widened to 1116-1160 s. Exact start/end of the bicycle explanation not verified.",
+  "replaced": false,
+  "needs_sound": true
  },
  "kneebar": {
   "video": "N0Dn6NJ7jCI",
@@ -542,11 +548,12 @@
  },
  "deadpoint-timing": {
   "video": "DEoUtCRrrGY",
-  "start_s": 437,
-  "end_s": 446,
+  "start_s": 414,
+  "end_s": 476,
   "confidence": "medium",
-  "note": "Climber on overhang wall reaching/hanging during deadpoint demo section; stills not unmistakable",
-  "replaced": false
+  "note": "Grenzen nur aus Standbildern (Transkript nicht abrufbar); enthält das zuvor geprüfte Kurzfenster. No transcript available (429 throttling); storyboard only (~10 s/frame). Climber hangs on steep overhang and reaches repeatedly (6:56-7:45), then coach talks with climber at 7:55. Frames cannot confirm this is the deadpoint demo or its exact boundaries; could be wrong section. Re-check with transcript.",
+  "replaced": false,
+  "needs_sound": true
  },
  "lag-bouncing": {
   "video": "pvtj681h4O4",
