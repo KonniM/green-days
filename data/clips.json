@@ -1,0 +1,676 @@
+{
+ "pancake-tempo-hinge": {
+  "video": "YliQaq8yvCE",
+  "start_s": 15,
+  "end_s": 25,
+  "confidence": "high",
+  "note": "Standing wide-leg hinge down and up, repeated tempo folds",
+  "replaced": false
+ },
+ "pancake-leg-lifts": {
+  "video": "P73oMXzukJ0",
+  "start_s": 18,
+  "end_s": 28,
+  "confidence": "medium",
+  "note": "Seated straddle leaning forward, lifting; only coarse frame view",
+  "replaced": false
+ },
+ "side-split-iso": {
+  "video": "M3xFYDhPabo",
+  "start_s": 4,
+  "end_s": 14,
+  "confidence": "high",
+  "note": "Standing side split hold, hands free",
+  "replaced": false
+ },
+ "horse-stance": {
+  "video": "5oTeJP6JVSY",
+  "start_s": 10,
+  "end_s": 20,
+  "confidence": "high",
+  "note": "Weighted horse stance hold, wide squat",
+  "replaced": false
+ },
+ "cossack-squat": {
+  "video": "XTGViKW-cjM",
+  "start_s": 12,
+  "end_s": 22,
+  "confidence": "high",
+  "note": "Side lunge shifting weight side to side",
+  "replaced": false
+ },
+ "hip-90-90-switches": {
+  "video": "42s8tcC92qQ",
+  "start_s": 119,
+  "end_s": 129,
+  "confidence": "medium",
+  "note": "Seated on couch, legs in 90/90 and rotating; couch demo not floor",
+  "replaced": false
+ },
+ "hip-ir-pails-rails": {
+  "video": "ZusKfH2AJCA",
+  "start_s": 148,
+  "end_s": 158,
+  "confidence": "medium",
+  "note": "Seated 90/90 with rotation work, presenter in position",
+  "replaced": false
+ },
+ "hip-flexor-lunge": {
+  "video": "cJSve88Yp4M",
+  "start_s": 65,
+  "end_s": 75,
+  "confidence": "medium",
+  "note": "Half-kneeling lunge hip flexor stretch demo",
+  "replaced": false
+ },
+ "forward-fold-pike": {
+  "video": "Qp3Vl7b_y6o",
+  "start_s": 222,
+  "end_s": 232,
+  "confidence": "medium",
+  "note": "Standing forward fold hold with hip tilt, countdown timer",
+  "replaced": false
+ },
+ "heel-hook-isometric": {
+  "video": "AweS4K8UeQg",
+  "start_s": 40,
+  "end_s": 50,
+  "confidence": "high",
+  "note": "Lying heel hook isometric on bench",
+  "replaced": false
+ },
+ "jefferson-curl": {
+  "video": "y_APeWo643w",
+  "start_s": 246,
+  "end_s": 258,
+  "confidence": "high",
+  "note": "Jefferson curl on bench with weight, curling down and up",
+  "replaced": false
+ },
+ "frog-stretch": {
+  "video": "6FBEC9SNIbY",
+  "start_s": 574,
+  "end_s": 584,
+  "confidence": "medium",
+  "note": "Frog pose hold on mat, coach beside; contract-relax part (703+) not viewed",
+  "replaced": false
+ },
+ "nordic-curl-regression": {
+  "video": "_e9vFU9-tkc",
+  "start_s": 133,
+  "end_s": 143,
+  "confidence": "medium",
+  "note": "Nordic curl demo on bench with lowering; regressions mostly infographics",
+  "replaced": false
+ },
+ "thoracic-extension": {
+  "video": "X2kVtZ2G2tw",
+  "start_s": 442,
+  "end_s": 454,
+  "confidence": "high",
+  "note": "T-spine extension over foam roller, lying",
+  "replaced": false
+ },
+ "thoracic-rotation": {
+  "video": "MrmJeKHmOoY",
+  "start_s": 228,
+  "end_s": 240,
+  "confidence": "high",
+  "note": "Quadruped thoracic rotation, hand behind head",
+  "replaced": false
+ },
+ "lat-stretch": {
+  "video": "zFNwzRqY7H4",
+  "start_s": 316,
+  "end_s": 328,
+  "confidence": "medium",
+  "note": "Hanging side pull lat stretch (variation of butcher's block)",
+  "replaced": false
+ },
+ "pec-stretch": {
+  "video": "ZhyBhad0zRM",
+  "start_s": 66,
+  "end_s": 77,
+  "confidence": "medium",
+  "note": "Doorway pec stretch demo, arm angles",
+  "replaced": false
+ },
+ "overhead-shoulder-flexion": {
+  "video": "6jyk1yswDaw",
+  "start_s": 359,
+  "end_s": 369,
+  "confidence": "high",
+  "note": "Lying on box doing lat pullover with weight, overhead end range",
+  "replaced": false
+ },
+ "high-step-lift-offs": {
+  "video": "7hGt7NnOJB8",
+  "start_s": null,
+  "end_s": null,
+  "confidence": "low",
+  "note": "Storyboard tool returns NO METADATA (oembed still resolves: Paradigm Climbing); no replacement ID found",
+  "replaced": false
+ },
+ "passive-active-hang": {
+  "video": "6P9r0UAdwXM",
+  "start_s": 74,
+  "end_s": 84,
+  "confidence": "medium",
+  "note": "Climber hanging on bar/holds doing scapular pulls (passive to active hang)",
+  "replaced": false
+ },
+ "wrist-dynamic-3way": {
+  "video": "uPVASOKqn50",
+  "start_s": 12,
+  "end_s": 22,
+  "confidence": "medium",
+  "note": "Prayer-hands wrist stretch moving through positions, front view",
+  "replaced": false
+ },
+ "tendon-glides": {
+  "video": "7F2Aaycq--g",
+  "start_s": 16,
+  "end_s": 27,
+  "confidence": "high",
+  "note": "Straight, tabletop, hook and full fist glides in close-up",
+  "replaced": false
+ },
+ "warmup-finger-ladder": {
+  "video": "Vkf8-BF56gw",
+  "start_s": 11,
+  "end_s": 21,
+  "confidence": "medium",
+  "note": "Finger curls, squeeze and extensor band warm-up sequence; no literal ladder",
+  "replaced": false
+ },
+ "warmup-open-hip-wall-drill": {
+  "video": "MSaI-rBJgFA",
+  "start_s": 5,
+  "end_s": 15,
+  "confidence": "high",
+  "note": "Open hip positions on wall, toe pointed at wall",
+  "replaced": false
+ },
+ "finger-extensor-band": {
+  "video": "j8ODTWfc4XI",
+  "start_s": 57,
+  "end_s": 67,
+  "confidence": "high",
+  "note": "Combined MCP+PIP extension against band",
+  "replaced": false
+ },
+ "shoulder-dislocates": {
+  "video": "vP8YmmRMz6I",
+  "start_s": 195,
+  "end_s": 206,
+  "confidence": "medium",
+  "note": "Stick held wide overhead with straight arms, lowering after; may not show full pass-through",
+  "replaced": false
+ },
+ "wall-slides-band-angels": {
+  "video": "W-N2Vp_7obs",
+  "start_s": 291,
+  "end_s": 301,
+  "confidence": "medium",
+  "note": "Standing arm angel movement overhead/out to sides; band not clearly visible",
+  "replaced": false
+ },
+ "band-external-rotation": {
+  "video": "qv9nQhyuKzk",
+  "start_s": 76,
+  "end_s": 86,
+  "confidence": "medium",
+  "note": "Standing rotator cuff band exercise on pole, elbow near body",
+  "replaced": false
+ },
+ "forearm-flexor-stretch": {
+  "video": "9aNmCJc-TeY",
+  "start_s": 138,
+  "end_s": 148,
+  "confidence": "high",
+  "note": "Close-up wrist flexor stretch with other hand pulling fingers back",
+  "replaced": false
+ },
+ "wrist-extensor-strength": {
+  "video": "uKtlb-Etxg0",
+  "start_s": 333,
+  "end_s": 343,
+  "confidence": "medium",
+  "note": "Wrist extension with dumbbell, forearm supported; sparse frames",
+  "replaced": false
+ },
+ "pip-joint-mobilisation": {
+  "video": "_A0KXUZ2zAI",
+  "start_s": 25,
+  "end_s": 35,
+  "confidence": "high",
+  "note": "Self-applied PIP mobilization close-up on table",
+  "replaced": false
+ },
+ "pip-load-management": {
+  "video": "h-nOPJsBZz8",
+  "start_s": null,
+  "end_s": null,
+  "confidence": "low",
+  "note": "Talking head and text slides only; no exercise/movement shown",
+  "replaced": false
+ },
+ "forearm-self-massage": {
+  "video": "JcnOWfgnXM0",
+  "start_s": null,
+  "end_s": null,
+  "confidence": "low",
+  "note": "Couch talk, rice bucket; no massage ball forearm self-massage shown",
+  "replaced": false
+ },
+ "ankle-dorsiflexion-mobility": {
+  "video": "HuEt_eNes3M",
+  "start_s": 183,
+  "end_s": 194,
+  "confidence": "high",
+  "note": "Knee-over-toe dorsiflexion rocking with forefoot on slant board, side/front view",
+  "replaced": false
+ },
+ "calf-raise-eccentric": {
+  "video": "mKUle2yBYq0",
+  "start_s": 85,
+  "end_s": 97,
+  "confidence": "high",
+  "note": "Standing on step, heel drop and raise, with close-up of heel dropping",
+  "replaced": false
+ },
+ "warmup-pulse-raiser": {
+  "video": "J7XGwKBz-Zk",
+  "start_s": 70,
+  "end_s": 81,
+  "confidence": "high",
+  "note": "Jumping jacks / seal jacks cardio",
+  "replaced": false
+ },
+ "warmup-dynamic-stretching": {
+  "video": "58fr4fxk5MA",
+  "start_s": 138,
+  "end_s": 148,
+  "confidence": "high",
+  "note": "Leg swings side-to-side and forward/back with support",
+  "replaced": false
+ },
+ "warmup-boulder-pyramid": {
+  "video": "UWJCUMrss94",
+  "start_s": null,
+  "end_s": null,
+  "confidence": "low",
+  "note": "Video unavailable (NO METADATA). Searched replacements (Lattice WY3O2Xv2I-A RAMP warm-up) but none shows a boulder pyramid with priming; left null.",
+  "replaced": false
+ },
+ "praezise-leise-tritte": {
+  "video": "6IUF1HrYUJ8",
+  "start_s": 489,
+  "end_s": 500,
+  "confidence": "medium",
+  "note": "Weighting-feet drill: climber placing feet deliberately on wall problem; rest of video is talking head",
+  "replaced": false
+ },
+ "kantenwahl-und-zehendruck": {
+  "video": "yjFjJZYnqcE",
+  "start_s": 243,
+  "end_s": 254,
+  "confidence": "medium",
+  "note": "Presenter climbing on edges, hips turning, in inside/outside edging section",
+  "replaced": false
+ },
+ "gestreckte-arme": {
+  "video": "IxySYhdcESM",
+  "start_s": 130,
+  "end_s": 141,
+  "confidence": "medium",
+  "note": "Climber on wall demonstrating arm use (bent-arm habit vs straight)",
+  "replaced": false
+ },
+ "hueftposition-offen-geschlossen": {
+  "video": "wBGjh6ZvBZ0",
+  "start_s": 99,
+  "end_s": 110,
+  "confidence": "medium",
+  "note": "Presenter demonstrating hip positions on steep wall in demo section",
+  "replaced": false
+ },
+ "flagging": {
+  "video": "jLsii8s6acM",
+  "start_s": 104,
+  "end_s": 114,
+  "confidence": "high",
+  "note": "Outside flag section: climber with opposite hand/foot flagging on wall, labelled",
+  "replaced": false
+ },
+ "drop-knee": {
+  "video": "U0v9xxqEjfY",
+  "start_s": 104,
+  "end_s": 114,
+  "confidence": "medium",
+  "note": "Drop knee effects section: climbers on steep wall with knee dropped, hips in",
+  "replaced": false
+ },
+ "backstep-aussenkante": {
+  "video": "UZlGKEs31Cc",
+  "start_s": 91,
+  "end_s": 101,
+  "confidence": "high",
+  "note": "Climber in 'Correct' demo turning onto outside edge on overhanging wall (Outside Edge technique video)",
+  "replaced": false
+ },
+ "rockover-high-step": {
+  "video": "37q54HXMa9E",
+  "start_s": 75,
+  "end_s": 86,
+  "confidence": "medium",
+  "note": "Climber rocking over onto high foot on wall during rock-over drill",
+  "replaced": false
+ },
+ "smearing-und-reibung": {
+  "video": "uDm_sm7uz0s",
+  "start_s": 70,
+  "end_s": 80,
+  "confidence": "medium",
+  "note": "Climber on slab pressing feet on wall in tips section",
+  "replaced": false
+ },
+ "zugrichtung-und-gegendruck": {
+  "video": "a8DTOztiuLM",
+  "start_s": 147,
+  "end_s": 157,
+  "confidence": "medium",
+  "note": "Direction of pull section: climber hanging on wall pulling against a strap/hold with coach pointing",
+  "replaced": false
+ },
+ "koerperspannung-ueber-die-fuesse": {
+  "video": "bex5jR5BORQ",
+  "start_s": 340,
+  "end_s": 351,
+  "confidence": "medium",
+  "note": "Boulder 3: climber on steep kilterboard with foot pulling/tension (arrow on foot)",
+  "replaced": false
+ },
+ "toe-screwing": {
+  "video": "GPKXFotN5lc",
+  "start_s": 71,
+  "end_s": 82,
+  "confidence": "medium",
+  "note": "Climber on wall then close-up of toe on foot chip, maximizing-friction section",
+  "replaced": false
+ },
+ "anchoring": {
+  "video": "RZoWFlUXVbw",
+  "start_s": 214,
+  "end_s": 225,
+  "confidence": "high",
+  "note": "Climber on moonboard-style wall with anchoring foot/lagging foot labelled",
+  "replaced": false
+ },
+ "toe-hook": {
+  "video": "nANlqVWUgcM",
+  "start_s": 84,
+  "end_s": 95,
+  "confidence": "high",
+  "note": "Presenter toe hooking on steep wall with toe hook labelled, 'use hips to weight the toe hook' section",
+  "replaced": false
+ },
+ "heel-hook": {
+  "video": "EMxmirtsRP4",
+  "start_s": 95,
+  "end_s": 106,
+  "confidence": "high",
+  "note": "Original video unavailable; replacement Lattice heel hook tips. Climber heel hooking on steep wall with force lines",
+  "replaced": true,
+  "title": "3 Heel Hook Tips: Mechanics, Physics & Technique",
+  "channel": "Lattice Training"
+ },
+ "bicycle-und-klemmen": {
+  "video": "bHj76733_dk",
+  "start_s": 1126,
+  "end_s": 1138,
+  "confidence": "high",
+  "note": "Bicycle section: climber on overhang with one foot toe-hooking from below, other pressing above",
+  "replaced": false
+ },
+ "kneebar": {
+  "video": "N0Dn6NJ7jCI",
+  "start_s": 382,
+  "end_s": 393,
+  "confidence": "high",
+  "note": "Climber hanging in kneebar on wall demonstrating technique, Ondra coaching",
+  "replaced": false
+ },
+ "cut-loose-und-wiederaufsetzen": {
+  "video": "xjhuDG7oS2g",
+  "start_s": 99,
+  "end_s": 110,
+  "confidence": "medium",
+  "note": "Climber on overhang with feet off the wall / cutting loose and re-placing foot",
+  "replaced": false
+ },
+ "schulter-und-lat-engagement": {
+  "video": "APscds32m80",
+  "start_s": 203,
+  "end_s": 214,
+  "confidence": "medium",
+  "note": "Scapular engagement section: climber on wall, engaged vs relaxed scapulae comparison nearby",
+  "replaced": false
+ },
+ "sloper-handgelenk-ellbogen": {
+  "video": "q00ImgzAnOI",
+  "start_s": 98,
+  "end_s": 109,
+  "confidence": "medium",
+  "note": "Body position section: climbers on sloper/steep wall demonstrating position",
+  "replaced": false
+ },
+ "small-box": {
+  "video": "Vm8kzHUifSM",
+  "start_s": 135,
+  "end_s": 146,
+  "confidence": "medium",
+  "note": "Scrunched-and-bunched drill: presenter on steep wall in compact position, tight reach",
+  "replaced": false
+ },
+ "momentum-aus-huefte-und-beinen": {
+  "video": "K-dTaYG-C1M",
+  "start_s": 148,
+  "end_s": 159,
+  "confidence": "high",
+  "note": "Explosive movement / between holds: climbers using hip-leg momentum on steep wall",
+  "replaced": false
+ },
+ "griff-setup-pregrip-daumen": {
+  "video": "EUAiiXK-8iw",
+  "start_s": 143,
+  "end_s": 154,
+  "confidence": "medium",
+  "note": "Pre-gripping section: climber reaching and setting fingers on a wall hold; hand-on-hold demo rather than full movement",
+  "replaced": false
+ },
+ "deadpoint-timing": {
+  "video": "DEoUtCRrrGY",
+  "start_s": 437,
+  "end_s": 446,
+  "confidence": "medium",
+  "note": "Climber on overhang wall reaching/hanging during deadpoint demo section; stills not unmistakable",
+  "replaced": false
+ },
+ "lag-bouncing": {
+  "video": "pvtj681h4O4",
+  "start_s": 121,
+  "end_s": 131,
+  "confidence": "medium",
+  "note": "Footage after 'With Lag Bounce' label, climber with leg swing/drive on wall",
+  "replaced": false
+ },
+ "dyno": {
+  "video": "p7jHvrQE-qA",
+  "start_s": 292,
+  "end_s": 301,
+  "confidence": "medium",
+  "note": "Climber executes dyno on arete boulder right after 'Let's do a dyno' card",
+  "replaced": false
+ },
+ "schwung-erzeugen-und-fangen": {
+  "video": "nACAhzRuHWE",
+  "start_s": 574,
+  "end_s": 584,
+  "confidence": "medium",
+  "note": "Climber jumps/dynamic moves on white wall with purple holds (dynamic section)",
+  "replaced": false
+ },
+ "paddle-dyno": {
+  "video": "tqkOFbY_GOk",
+  "start_s": 1058,
+  "end_s": 1068,
+  "confidence": "low",
+  "note": "Climber lunges dynamically on overhang (1059s); stills do not clearly show a paddle",
+  "replaced": false
+ },
+ "koordinationszuege-run-and-jump": {
+  "video": "m0kUtgw3aTM",
+  "start_s": 868,
+  "end_s": 879,
+  "confidence": "medium",
+  "note": "Climber works a multi-limb coordination/complex move on gym wall in 'complex boulder movements' section",
+  "replaced": false
+ },
+ "rhythmus-und-flow": {
+  "video": "c8Rr5msTBL4",
+  "start_s": 49,
+  "end_s": 59,
+  "confidence": "medium",
+  "note": "Fast-laps drill footage: climber repeatedly climbing the boulder at speed",
+  "replaced": false
+ },
+ "slab-vertrauen-und-gewichtsverlagerung": {
+  "video": "xsLfrOg7QiE",
+  "start_s": 50,
+  "end_s": 60,
+  "confidence": "medium",
+  "note": "Climber on slab wall with yellow holds, standing on feet in demo",
+  "replaced": false
+ },
+ "slab-fortgeschritten-palming": {
+  "video": "naiztooiNpU",
+  "start_s": 565,
+  "end_s": 577,
+  "confidence": "medium",
+  "note": "Palming on volume demo in 'Advanced hand techniques' chapter; mostly static hand demo on wall",
+  "replaced": false
+ },
+ "no-hands-klettern": {
+  "video": "KGOoe3ZDdYw",
+  "start_s": 257,
+  "end_s": 267,
+  "confidence": "medium",
+  "note": "Coach climbing/stepping up on wall without hands in hip-position chapter",
+  "replaced": false
+ },
+ "mantle": {
+  "video": "oKrATkvFOck",
+  "start_s": 156,
+  "end_s": 167,
+  "confidence": "high",
+  "note": "Chris Schulte mantles over roof lip of Fontainebleau boulder: hang, press, top out",
+  "replaced": false
+ },
+ "route-reading": {
+  "video": "v22zlz6UEYI",
+  "start_s": null,
+  "end_s": null,
+  "confidence": "low",
+  "note": "Conceptual: talking head plus overhead stills with annotated checkpoint holds; no on-wall demo of technique",
+  "replaced": false
+ },
+ "versuchsqualitaet-und-pausen": {
+  "video": "K5NLcANk1X8",
+  "start_s": 37,
+  "end_s": 47,
+  "confidence": "medium",
+  "note": "Sub-limit drill: climber making full-quality attempts on yellow wall",
+  "replaced": false
+ },
+ "projektieren": {
+  "video": "fHSnUOD-H5U",
+  "start_s": 831,
+  "end_s": 841,
+  "confidence": "low",
+  "note": "Execution-phase chapter: climber working the roof problem; only one clear climbing frame, rest is talking head",
+  "replaced": false
+ },
+ "flash-strategie": {
+  "video": "oAdQUkh7S78",
+  "start_s": 497,
+  "end_s": 507,
+  "confidence": "medium",
+  "note": "Outdoor boulder climbing footage in 'Executing the climb' chapter (flash attempt)",
+  "replaced": false
+ },
+ "klettern-mit-intention": {
+  "video": "03hy_n0nees",
+  "start_s": 118,
+  "end_s": 128,
+  "confidence": "medium",
+  "note": "Climber on yellow-hold boulder making a focused attempt with timer overlay, in 'Learning from attempts' section",
+  "replaced": false
+ },
+ "commitment-drill": {
+  "video": "O2SZzi2E94s",
+  "start_s": 86,
+  "end_s": 96,
+  "confidence": "high",
+  "note": "'Finally: commit fully' section, climber commits to a hard move on the wall",
+  "replaced": false
+ },
+ "video-selbstanalyse": {
+  "video": "A1ySsx3TQTQ",
+  "start_s": 1059,
+  "end_s": 1069,
+  "confidence": "medium",
+  "note": "Example of filmed climbing footage (boulder climber, frame for analysis) with shutter-speed overlay",
+  "replaced": false
+ },
+ "atmung-und-koerperspannung": {
+  "video": "o5xch0IKTPs",
+  "start_s": null,
+  "end_s": null,
+  "confidence": "low",
+  "note": "Conceptual (breathing timing): podcast talking head with unrelated climbing b-roll; no footage showing breath timing",
+  "replaced": false
+ },
+ "sturzangst-beim-bouldern": {
+  "video": "D-vsVNWm2jg",
+  "start_s": 262,
+  "end_s": 274,
+  "confidence": "high",
+  "note": "'Start slow' fall practice: climber on pink wall then falls and lands on mat",
+  "replaced": false
+ },
+ "kleine-tritte-am-fels": {
+  "video": "7n1biTUm87c",
+  "start_s": 36,
+  "end_s": 46,
+  "confidence": "high",
+  "note": "Toe Test: climber standing/weighting on small toe footholds on gym wall",
+  "replaced": false
+ },
+ "outdoor-session-und-fels-lesen": {
+  "video": "aKuDS3r_5l4",
+  "start_s": null,
+  "end_s": null,
+  "confidence": "low",
+  "note": "Conceptual (prep, pads, reading rock): mostly talking/demonstrating gear and boulder prep, no single technique window",
+  "replaced": false
+ },
+ "haut-und-conditions": {
+  "video": "vHtQrfeE4cE",
+  "start_s": null,
+  "end_s": null,
+  "confidence": "low",
+  "note": "Conceptual (skin care/conditions): no on-wall footage can show the idea",
+  "replaced": false
+ }
+}

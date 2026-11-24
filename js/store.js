@@ -39,6 +39,11 @@
     assessments: [],     // { id, date, value }
     benchmarks: [],      // { date, label, rounds, pump, rpe, recovery, note }
     draft: null,         // laufende Session
+    adaptOff: {},        // planId -> true: Original-Plan statt angepasster Version
+    learn: { pace: {}, ratio: {}, perClimb: {} }, // gelernte Werte: Tempo je Session-Art, Ist/Plan-Umfang, Minuten je Climb
+    goals: {},           // goalId -> { step, logs: [{ date, step, value }] }
+    tests: [],           // Standortbestimmungen: { date, bw, values: { finger, pull, core, board, cap, mob, tech, max } }
+    skillHist: [],       // { id, date, v } – Verlauf der Technik-Selbsteinschätzung
     settings: { sound: true, mobilityCounts: false }
   });
 
@@ -54,6 +59,7 @@
         state.profile.baseline = Object.assign(defaults().profile.baseline, (s.profile || {}).baseline || {});
         state.profile.levels = Object.assign(defaults().profile.levels, (s.profile || {}).levels || {});
         state.settings = Object.assign(defaults().settings, s.settings || {});
+        state.learn = Object.assign(defaults().learn, s.learn || {});
       }
     } catch (e) { console.warn('State konnte nicht geladen werden', e); }
   }
@@ -134,6 +140,19 @@
   }
   function removeSession(id) { state.sessions = state.sessions.filter(x => x.id !== id); invalidate(); save(); }
 
+  // ---------- Lernen aus den eigenen Daten ----------
+  // Gleitender Mittelwert: neue Beobachtungen zählen 30 %, die ersten beiden mehr.
+  function learn(bucket, key, value) {
+    if (!isFinite(value) || value <= 0) return;
+    const b = state.learn[bucket] || (state.learn[bucket] = {});
+    const cur = b[key];
+    if (!cur) b[key] = { v: value, n: 1 };
+    else { const a = cur.n < 2 ? 0.5 : 0.3; cur.v = cur.v + a * (value - cur.v); cur.n++; }
+  }
+  const learned = (bucket, key, min) => { const c = (state.learn[bucket] || {})[key]; return c && c.n >= (min || 1) ? c : null; };
+  const CLIMB_UNITS = { Runden: 1, Boulder: 1, Versuche: 1 };
+  function totalClimbs(from) { return state.sessions.reduce((a, s) => a + ((!from || s.date >= from) ? (s.climbs || 0) : 0), 0); }
+
   function exportJSON() { return JSON.stringify(state, null, 2); }
   function importJSON(text) {
     const s = JSON.parse(text);
@@ -149,6 +168,7 @@
     get saveFailed() { return saveFailed; },
     sessionLoad, dayLoad, rangeLoad, acwr, acwrZone, weekLoad, baselineDaily,
     sessionsOn, sessionForPlan, lastSession, addSession, updateSession, removeSession,
+    learn, learned, totalClimbs, CLIMB_UNITS,
     exportJSON, importJSON, reset
   };
 })();

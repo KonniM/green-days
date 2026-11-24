@@ -1,7 +1,7 @@
 /* Green Days — Ansichten: Plan (Zyklen + Kalender), Timer, Statistik, Wissen, Einstellungen. */
 (function () {
   'use strict';
-  const { e, $, $$, S, LIB, GD, LEVELS, THEMES, find, kindChip, gdBadge, field, readForm, toast, sheet, closeSheet, sessionCard } = UI;
+  const { e, $, $$, S, LIB, GD, LEVELS, THEMES, find, kindChip, gdBadge, field, readForm, toast, sheet, closeSheet, sessionCard, clipHTML, firstSentence, skillRate, logLine } = UI;
   const A = UI.actions;
   const ui = { planTab: 'cycles', month: null, lib: 'ex', libGroup: 'all', libLevel: 'all', openPhase: null };
   const fmtRange = (a, b) => D.fmt(a, { day: 'numeric', month: 'short' }) + ' – ' + D.fmt(b, { day: 'numeric', month: 'short', year: '2-digit' });
@@ -99,7 +99,8 @@
     sheet(D.long(d), `${w ? `<p class="meta">${e(w.phase.name)} · Woche ${w.n} · ${e(w.week.label)}</p>` : ''}
       ${mo ? `<p class="meta">Finger am Morgen: ${mo.pain}/10${mo.stiff ? ' · steif' : ''}${mo.swell ? ' · geschwollen' : ''}</p>` : ''}
       ${ps.map(s => sessionCard(s, d)).join('') || (free.length ? '' : '<p class="hint">Ruhetag – nichts geplant.</p>')}
-      ${free.map(s => `<article class="card session is-logged"><header class="card-head">${kindChip(s.kind)}</header><h3>${e(s.title)}</h3><div class="logline">${gdBadge(s.color)}<span>${s.minutes} min · RPE ${s.rpe} · Load ${Store.sessionLoad(s)}</span></div><div class="actions"><button class="btn btn-ghost" data-act="log-edit" data-id="${s.id}">Bearbeiten</button></div></article>`).join('')}`, { tall: true });
+      ${free.map(s => `<article class="card session is-logged"><header class="card-head">${kindChip(s.kind)}</header><h3>${e(s.title)}</h3><div class="logline">${gdBadge(s.color)}<span>${logLine(s)}</span></div><div class="actions"><button class="btn btn-ghost" data-act="log-edit" data-id="${s.id}">Bearbeiten</button></div></article>`).join('')}
+      ${d <= D.today() ? `<button class="btn btn-ghost btn-block" data-act="free-log" data-d="${d}">＋ Extra-Session an diesem Tag</button>` : ''}`, { tall: true });
   };
 
   // =============================== TIMER ===============================
@@ -191,7 +192,7 @@
   };
   A['log-list'] = () => {
     const list = S().sessions.slice().sort((a, b) => a.date < b.date ? 1 : -1);
-    sheet('Alle Einheiten', list.length ? `<table class="tbl tbl-log"><thead><tr><th>Datum</th><th>Einheit</th><th>min</th><th>RPE</th><th>Load</th><th></th></tr></thead><tbody>${list.map(s => `<tr data-act="log-edit" data-id="${s.id}"><td>${e(D.fmt(s.date))}</td><td>${e(s.title)}</td><td>${s.minutes}</td><td>${s.rpe}</td><td>${Store.sessionLoad(s)}</td><td><i class="mk done gd-${s.color || 'none'}"></i></td></tr>`).join('')}</tbody></table>` : '<p class="empty">Noch keine Einheiten geloggt.</p>', { tall: true });
+    sheet('Alle Einheiten', list.length ? `<table class="tbl tbl-log"><thead><tr><th>Datum</th><th>Einheit</th><th>min</th><th>RPE</th><th>Load</th><th></th></tr></thead><tbody>${list.map(s => `<tr data-act="log-edit" data-id="${s.id}"><td>${e(D.fmt(s.date))}</td><td>${e(s.title)}${s.climbs ? ` <span class="meta">· ${s.climbs} Climbs</span>` : ''}</td><td>${s.minutes}</td><td>${s.rpe}</td><td>${Store.sessionLoad(s)}</td><td><i class="mk done gd-${s.color || 'none'}"></i></td></tr>`).join('')}</tbody></table>` : '<p class="empty">Noch keine Einheiten geloggt.</p>', { tall: true });
   };
   A['bench-add'] = () => sheet('Benchmark eintragen', `<div class="form">${field('Test', `<input type="text" name="label" value="40-s-Circuit · TB2 40°" >`)}
     <div class="grid3">${field('Runden', `<input type="number" name="rounds" inputmode="numeric">`)}${field('Pump nach R10', `<input type="number" name="pump" min="0" max="10" inputmode="numeric">`)}${field('Session-RPE', `<input type="number" name="rpe" min="1" max="10" inputmode="numeric">`)}</div>
@@ -206,9 +207,9 @@
   };
   const ytId = (u) => { const m = /(?:v=|youtu\.be\/|embed\/|shorts\/)([\w-]{11})/.exec(u || ''); return m ? m[1] : null; };
   function libCard(x) {
-    const sub = x.purpose_de || x.concept_de || '';
+    const sub = x.one_de || x.purpose_de || x.concept_de || '';
     return `<button class="lib-card" data-act="lib-open" data-id="${e(x.id)}"><span class="lib-main"><b>${e(x.name_de)}</b><em>${e(sub)}</em></span>
-      <span class="lib-side">${x.video ? '<span class="vid">▶</span>' : ''}<span class="lv">${(x.levels || []).map(l => `<i class="lv-${l}" title="${LEVELS[l]}"></i>`).join('')}</span></span></button>`;
+      <span class="lib-side">${x.clip ? '<span class="vid">▶ 10 s</span>' : x.video ? '<span class="vid">▶</span>' : ''}<span class="lv">${(x.levels || []).map(l => `<i class="lv-${l}" title="${LEVELS[l]}"></i>`).join('')}</span></span></button>`;
   }
   function viewLib() {
     let h = `<div class="date-head"><h1>Wissen</h1><span>Übungen, Skills, Mobility</span></div>${seg('lib', ui.lib, [['ex', 'Kraft'], ['skill', 'Technik'], ['mob', 'Mobility'], ['pr', 'Prinzipien']])}`;
@@ -250,35 +251,54 @@
     const f = find(el.dataset.id); if (!f) { toast('Eintrag nicht gefunden.'); return; }
     const x = f.item;
     let h = `<div class="lv-row">${(x.levels || []).map(l => `<span class="chip"><i class="lv-${l}"></i>${LEVELS[l]}</span>`).join('')}</div>`;
-    h += `<p class="lead">${e(x.purpose_de || x.concept_de || '')}</p>${videoHTML(x.video)}`;
     if (f.type === 'skill') {
-      const lvl = S().skillLevels[x.id] || 0;
-      h += ul('Cues an der Wand', x.cues_de, 'cues');
-      h += (x.drills || []).length ? `<h4 class="sec-h">Drills</h4>${x.drills.map(d => `<div class="drill"><b>${e(d.name_de)}</b><p>${e(d.how_de)}</p><span class="meta">${e(d.dose_de || '')}</span></div>`).join('')}` : '';
-      h += ul('Mögliche Session-Ziele', x.goal_examples_de) + ul('Typische Fehler', x.mistakes_de, 'points not');
-      h += `<h4 class="sec-h">Mein Stand</h4><div class="scale scale-wide skill-lv" data-id="${e(x.id)}"><input type="hidden" name="lv" value="${lvl}">${['neu', 'bewusst', 'sicher', 'automatisch'].map((t, i) => `<button type="button" data-act="skill-lv" data-id="${e(x.id)}" data-v="${i + 1}" aria-checked="${lvl === i + 1}">${t}</button>`).join('')}</div>`;
+      // Minimal: ein Satz, ein Clip – alles Weitere zum Aufklappen
+      h += `<p class="one one-lg">${e(x.one_de || firstSentence(x.concept_de))}</p>${clipHTML(x)}
+        <details class="more" ${x.clip ? '' : 'open'}><summary>Was ist gemeint?</summary><p>${e(x.concept_de || '')}</p></details>
+        <details class="more"><summary>Worauf achten</summary><ul class="cues">${(x.cues_de || []).map(c => `<li>${e(c)}</li>`).join('')}</ul></details>
+        ${(x.drills || []).length ? `<details class="more"><summary>Drills (${x.drills.length})</summary>${x.drills.map(d => `<div class="drill"><b>${e(d.name_de)}</b><p>${e(d.how_de)}</p><span class="meta">${e(d.dose_de || '')}</span></div>`).join('')}</details>` : ''}
+        ${(x.goal_examples_de || []).length ? `<details class="more"><summary>Mögliche Session-Ziele</summary><ul class="points">${x.goal_examples_de.map(c => `<li>${e(c)}</li>`).join('')}</ul></details>` : ''}
+        ${(x.mistakes_de || []).length ? `<details class="more"><summary>Typische Fehler</summary><ul class="points not">${x.mistakes_de.map(c => `<li>${e(c)}</li>`).join('')}</ul></details>` : ''}
+        <h4 class="sec-h">Wie gut sitzt es?</h4>${skillRate(x)}${skillTrend(x.id)}
+        <h4 class="sec-h">Ganzes Video</h4>${videoHTML(x.video)}`;
     } else {
+      h += `<p class="lead">${e(x.purpose_de || '')}</p>${clipHTML(x)}${x.clip ? '' : videoHTML(x.video)}`;
       h += ul('So geht’s', x.how_de, 'steps') + doseHTML(x.dose, f.type === 'mob' ? 'mobility' : 'strength') + ul('Cues', x.cues_de, 'cues') + ul('Fehler & Sicherheit', x.mistakes_de, 'points not');
       if (x.timer && x.timer.work) h += `<button class="btn btn-primary btn-block" data-act="lib-timer" data-id="${e(x.id)}">⏱ Timer für diese Übung</button>`;
       if (x.equipment && x.equipment.length) h += `<p class="meta">Material: ${e(x.equipment.join(', '))}</p>`;
+      if (x.clip) h += `<h4 class="sec-h">Ganzes Video</h4>${videoHTML(x.video)}`;
     }
     sheet(x.name_de, h + srcs(x.sources), { tall: true });
   };
-  A['skill-lv'] = (el) => { S().skillLevels[el.dataset.id] = +el.dataset.v; Store.save(); $$('button', el.parentNode).forEach(b => b.setAttribute('aria-checked', String(b === el))); };
+  function skillTrend(id) {
+    const hist = S().skillHist.filter(x => x.id === id); if (hist.length < 2) return '';
+    const names = ['', 'neu', 'bewusst', 'sicher', 'automatisch'];
+    return `<p class="meta">Verlauf: ${hist.slice(-4).map(x => `${names[x.v]} (${e(D.fmt(x.date))})`).join(' → ')}</p>`;
+  }
+  A['skill-lv'] = (el) => {
+    const id = el.dataset.id, v = +el.dataset.v, old = S().skillLevels[id] || 0, hist = S().skillHist, last = hist.filter(x => x.id === id).slice(-1)[0];
+    S().skillLevels[id] = v;
+    if (last && last.date === D.today()) last.v = v; else hist.push({ id, date: D.today(), v });
+    Store.save(); $$('button', el.parentNode).forEach(b => b.setAttribute('aria-checked', String(b === el)));
+    if (v > old && old) toast('Eine Stufe besser – notiert.');
+  };
   A['lib-timer'] = (el) => { const x = find(el.dataset.id).item, t = x.timer; Timer.open({ label: x.name_de, prep: t.prep == null ? 10 : t.prep, work: t.work, rest: t.rest || 0, reps: t.reps || 1, sets: t.sets || 1, setRest: t.setRest || 0, showSets: (t.sets || 1) > 1 }); };
   A['routine-open'] = (el) => {
     const f = find('routine:' + el.dataset.id); if (!f) { toast('Routine nicht gefunden.'); return; }
     const r = f.item, planAttr = el.dataset.plan ? ` data-plan="${e(el.dataset.plan)}"` : '';
-    sheet(r.name_de, `<p class="meta">${e(r.when_de || '')} · ca. ${r.duration_min} min</p><p class="lead">${e(r.purpose_de || '')}</p>
-      ${r.follow_along_video ? `<h4 class="sec-h">Zum Mitmachen (ähnliche Session)</h4>${videoHTML(r.follow_along_video)}<h4 class="sec-h">Ablauf</h4>` : ''}
-      ${r.items.map((it, i) => { const x = find(it.exercise_id); return `<button class="lib-card" ${x ? `data-act="lib-open" data-id="${e(it.exercise_id)}"` : ''}><span class="num">${i + 1}</span><span class="lib-main"><b>${e(x ? x.item.name_de : it.exercise_id)}</b><em>${e(it.dose_de || '')}</em></span><span class="lib-side">${x && x.item.video ? '<span class="vid">▶</span>' : ''}</span></button>`; }).join('')}
+    const goals = (Plan.ROUTINE_GOALS[r.id] || []).map(id => window.Goals && Goals.cur(id)).filter(Boolean);
+    sheet(r.name_de, `<p class="meta">${e(r.when_de || '')} · ca. ${r.duration_min} min${goals.length ? ' + 8–10 min Ziele' : ''}</p><p class="lead">${e(r.purpose_de || '')}</p>
+      <h4 class="sec-h">Ablauf</h4>
+      ${r.items.map((it, i) => { const x = find(it.exercise_id); return `<div class="rt-item"><button class="lib-card" ${x ? `data-act="lib-open" data-id="${e(it.exercise_id)}"` : ''}><span class="num">${i + 1}</span><span class="lib-main"><b>${e(x ? x.item.name_de : it.exercise_id)}</b><em>${e(it.dose_de || '')}</em></span><span class="lib-side"><span class="vid">›</span></span></button>${x ? clipHTML(x.item, 'clip-sm') : ''}</div>`; }).join('')}
+      ${goals.length ? `<h4 class="sec-h">Danach: deine Ziele</h4>${goals.map(c => `<div class="rt-item"><button class="lib-card" data-act="goal-open" data-id="${e(c.goal.id)}"><span class="num">★</span><span class="lib-main"><b>${e(c.goal.name_de)} · Stufe ${c.n}/${c.total}</b><em>${e(c.step.name_de)} – ${e(c.step.dose_de || '')}</em></span><span class="lib-side"><span class="vid">›</span></span></button>${clipHTML(c.step, 'clip-sm')}</div>`).join('')}` : ''}
+      ${r.follow_along_video ? `<details class="more"><summary>Video zum Mitmachen (ähnliche Session)</summary>${videoHTML(r.follow_along_video)}</details>` : ''}
       <button class="btn btn-ghost btn-block" data-act="rest-timer" data-sec="60">⏱ 60-s-Timer</button>
       <button class="btn btn-primary btn-block" data-act="mob-log" data-id="${e(r.id)}"${planAttr}>Als erledigt eintragen</button>`, { tall: true });
   };
   A['mob-log'] = (el) => {
     const r = find('routine:' + el.dataset.id).item, today = D.today();
     const plan = el.dataset.plan ? Plan.findPlan(el.dataset.plan) : Plan.plannedOn(today).find(s => s.kind === 'mobility' && s.blocks.some(b => b.routine === r.id) && !Store.sessionForPlan(s.planId));
-    Store.addSession({ date: today, planId: plan && !Store.sessionForPlan(plan.planId) ? plan.planId : null, title: r.name_de, kind: 'mobility', minutes: r.duration_min, rpe: 2, hi: 0, capMin: 0, hangs: [], color: null });
+    Store.addSession({ date: today, planId: plan && !Store.sessionForPlan(plan.planId) ? plan.planId : null, title: r.name_de, kind: 'mobility', minutes: r.duration_min + (Plan.ROUTINE_GOALS[r.id] ? 8 : 0), minSrc: 'e', rpe: 2, hi: 0, capMin: 0, hangs: [], color: null });
     $$('.sheet-wrap').forEach(closeSheet); UI.render(); toast('Mobility eingetragen.');
   };
   A['assess-open'] = (el) => {
@@ -303,6 +323,8 @@
       <label class="toggle"><input type="checkbox" name="sound" ${S().settings.sound ? 'checked' : ''}><span>Timer-Töne</span></label>
       <label class="toggle"><input type="checkbox" name="mobilityCounts" ${S().settings.mobilityCounts ? 'checked' : ''}><span>Mobility in die Trainingslast einrechnen</span></label>
       <button class="btn btn-primary btn-block" data-act="settings-save">Speichern</button>
+      <span class="eyebrow">Was die App über dich gelernt hat</span>
+      <p class="hint">${learnedText()}</p>
       <span class="eyebrow">Datensicherung</span>
       <p class="hint">Alle Daten liegen nur auf diesem Gerät. Sichere sie regelmäßig als Datei.</p>
       <button class="btn btn-ghost btn-block" data-act="export">Sicherung exportieren</button>
@@ -318,6 +340,13 @@
       }
     });
   };
+  function learnedText() {
+    const L = S().learn, out = [];
+    Object.keys(L.pace || {}).forEach(k => out.push(`${Plan.KINDS[k] ? Plan.KINDS[k].label : k}: dauert bei dir ${Math.round(L.pace[k].v * 100)} % der Planzeit (${L.pace[k].n} gemessen)`));
+    Object.keys(L.ratio || {}).forEach(k => out.push(`${Plan.KINDS[k] ? Plan.KINDS[k].label : k}: du schaffst im Schnitt ${Math.round(L.ratio[k].v * 100)} % des Umfangs (${L.ratio[k].n} Einheiten)`));
+    Object.keys(L.perClimb || {}).forEach(k => out.push(`${Plan.KINDS[k] ? Plan.KINDS[k].label : k}: ca. ${String(Math.round(L.perClimb[k].v * 10) / 10).replace('.', ',')} min pro Climb`));
+    return out.length ? e(out.join(' · ')) : 'Noch nichts – mit jeder geloggten Session werden Dauer- und Last-Schätzung genauer. Am genauesten: Session in der App starten und am Ende dort beenden, dann wird die Dauer gemessen.';
+  }
   A['settings-save'] = (el) => {
     const w = el.closest('.sheet-wrap'), f = readForm(w), p = S().profile;
     if (f.planStart) p.planStart = D.monday(f.planStart);

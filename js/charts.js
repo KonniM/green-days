@@ -96,5 +96,46 @@
     svg.addEventListener('pointerleave', () => { t.hidden = true; });
   }
 
-  window.Charts = { line, bars, esc };
+  /* Netzdiagramm: opts { axes:[{label, v:number|null, prev?, tip?, est?}], min, max, rings:[..], fmt, goal:{v,label}, ref:{v,label} }
+     Ein Maßstab für alle Achsen. Ringe = Level, gestrichelter Ring = Ziel, Fläche = heute, dünne Linie = vorher. */
+  function radar(host, o) {
+    const W = 340, H = 320, cx = W / 2, cy = 158, R = 104, ax = o.axes, n = ax.length;
+    const fmt = o.fmt || (v => String(Math.round(v)));
+    const rad = (v) => R * Math.max(0, Math.min(1, (v - o.min) / (o.max - o.min)));
+    const ang = (i) => -Math.PI / 2 + i * 2 * Math.PI / n;
+    const pt = (i, r) => [cx + Math.cos(ang(i)) * r, cy + Math.sin(ang(i)) * r];
+    const poly = (r) => ax.map((_, i) => pt(i, r).map(x => x.toFixed(1)).join(',')).join(' ');
+    let s = `<svg viewBox="0 0 ${W} ${H}" class="chart radar" role="img" aria-label="${esc(o.label || 'Profil')}">`;
+    (o.rings || []).forEach(v => { s += `<polygon points="${poly(rad(v))}" class="r-ring"/><text x="${cx + 4}" y="${cy - rad(v) + 3.5}" class="c-axis r-ringlabel">${esc(fmt(v))}</text>`; });
+    ax.forEach((_, i) => { const p = pt(i, R); s += `<line x1="${cx}" y1="${cy}" x2="${p[0].toFixed(1)}" y2="${p[1].toFixed(1)}" class="r-spoke"/>`; });
+    if (o.ref && o.ref.v != null) s += `<polygon points="${poly(rad(o.ref.v))}" class="r-ref"/>`;
+    if (o.goal) s += `<polygon points="${poly(rad(o.goal.v))}" class="r-goal"/>`;
+    const shape = (key, cls) => {
+      const have = ax.map((a, i) => a[key] != null ? i : -1).filter(i => i >= 0);
+      if (have.length < 3) return '';
+      return `<polygon points="${ax.map((a, i) => pt(i, a[key] != null ? rad(a[key]) : 0).map(x => x.toFixed(1)).join(',')).join(' ')}" class="${cls}"/>`;
+    };
+    s += shape('prev', 'r-prev') + shape('v', 'r-area');
+    ax.forEach((a, i) => {
+      if (a.v != null) { const p = pt(i, rad(a.v)); s += `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="4.5" class="c-dot r-dot" data-i="${i}"/>`; }
+      const lp = pt(i, R + 16), c = Math.cos(ang(i));
+      const anchor = Math.abs(c) < 0.2 ? 'middle' : c > 0 ? 'start' : 'end';
+      const up = Math.sin(ang(i)) < -0.5 ? -9 : Math.sin(ang(i)) > 0.5 ? 4 : -2;
+      s += `<text x="${lp[0].toFixed(1)}" y="${(lp[1] + up).toFixed(1)}" text-anchor="${anchor}" class="r-label">${esc(a.label)}</text><text x="${lp[0].toFixed(1)}" y="${(lp[1] + up + 13).toFixed(1)}" text-anchor="${anchor}" class="r-val">${a.v != null ? (a.est ? '≈ ' : '') + esc(fmt(a.v)) : '–'}</text>`;
+      const hp = pt(i, R * 0.62); s += `<circle cx="${hp[0].toFixed(1)}" cy="${hp[1].toFixed(1)}" r="${Math.min(46, R * Math.sin(Math.PI / n) * 0.95).toFixed(0)}" fill="transparent" data-i="${i}"/>`;
+    });
+    s += '</svg>';
+    host.innerHTML = s + (o.legend ? `<div class="chart-legend">${o.legend}</div>` : ''); host.classList.add('chart-host');
+    const svg = host.querySelector('svg'), t = tip(host);
+    const hit = (ev) => {
+      const el = ev.target.closest('[data-i]'); if (!el) { t.hidden = true; return; }
+      const a = ax[+el.dataset.i], r = svg.getBoundingClientRect(), p = pt(+el.dataset.i, R * 0.7);
+      showTip(host, t, a.tip || `<b>${a.v != null ? esc(fmt(a.v)) : '–'}</b> · ${esc(a.label)}`, p[0] / W * r.width);
+      t.style.top = Math.max(0, p[1] / H * r.height - 34) + 'px';
+    };
+    svg.addEventListener('pointerdown', hit); svg.addEventListener('pointermove', hit);
+    svg.addEventListener('pointerleave', () => { t.hidden = true; });
+  }
+
+  window.Charts = { line, bars, radar, esc };
 })();

@@ -36,6 +36,40 @@
     for (let i = min; i <= max; i++) h += `<button type="button" role="radio" aria-checked="${val === i}" data-v="${i}">${i}</button>`;
     return h + '</div>' + (o.ends ? `<div class="scale-ends"><span>${e(o.ends[0])}</span><span>${e(o.ends[1])}</span></div>` : '');
   }
+  const stepper = (name, val, unit, hint) => `<div class="stepper"><button type="button" data-act="step" data-d="-1" aria-label="weniger">−</button><input type="number" name="${name}" value="${val == null ? '' : val}" min="0" max="199" inputmode="numeric" aria-label="${e(unit)}"><button type="button" data-act="step" data-d="1" aria-label="mehr">+</button><span class="unit"><b>${e(unit)}</b>${hint ? `<em>${e(hint)}</em>` : ''}</span></div>`;
+  const firstSentence = (t) => { const m = /^(.{20,170}?[.!?])(\s|$)/.exec(t || ''); return m ? m[1] : (t || ''); };
+  // 10-Sekunden-Clip: Ausschnitt eines YouTube-Videos, stumm in Schleife (eingebettet, nichts wird kopiert).
+  function clipHTML(x, cls) {
+    const c = x && x.clip; if (!c || c.s == null) return '';
+    return `<button class="clip ${cls || ''}" data-act="clip" data-v="${e(c.v)}" data-s="${c.s}" data-e="${c.e}" style="background-image:url(https://i.ytimg.com/vi/${e(c.v)}/mqdefault.jpg)" aria-label="Kurzclip abspielen"><span class="clip-badge">▶ ${Math.round(c.e - c.s)} s</span></button>`;
+  }
+  const clips = [];
+  function playClip(el) {
+    const v = el.dataset.v, s0 = +el.dataset.s, e0 = +el.dataset.e;
+    const box = document.createElement('div'); box.className = el.className + ' is-playing';
+    const origin = location.origin && location.origin !== 'null' ? '&origin=' + encodeURIComponent(location.origin) : '';
+    box.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${v}?playsinline=1&autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&iv_load_policy=3&start=${s0}&enablejsapi=1${origin}" title="Kurzclip" allow="autoplay; encrypted-media; picture-in-picture" loading="lazy"></iframe><a class="clip-full" href="https://www.youtube.com/watch?v=${v}&t=${s0}s" target="_blank" rel="noopener">ganzes Video ↗</a>`;
+    el.replaceWith(box);
+    const fr = box.firstChild, rec = { fr, s: s0, e: e0 };
+    clips.push(rec);
+    // Der Player meldet seine Zeit erst, nachdem er „listening“ empfangen hat – so lange wiederholen, bis er antwortet.
+    let tries = 0;
+    const hello = () => { if (rec.ok || !document.contains(fr) || tries++ > 40) return clearInterval(rec.iv); try { fr.contentWindow.postMessage(JSON.stringify({ event: 'listening', id: 1, channel: 'widget' }), '*'); } catch (err) {} };
+    rec.iv = setInterval(hello, 700);
+  }
+  window.addEventListener('message', (ev) => {
+    if (!/youtube(-nocookie)?\.com$/.test((ev.origin || '').replace(/^https?:\/\/(www\.)?/, ''))) return;
+    const rec = clips.find(c => c.fr.contentWindow === ev.source); if (!rec || !document.contains(rec.fr)) return;
+    let d; try { d = typeof ev.data === 'string' ? JSON.parse(ev.data) : ev.data; } catch (err) { return; }
+    rec.ok = true;
+    const info = d && d.info; if (!info) return;
+    const cmd = (func, args) => rec.fr.contentWindow.postMessage(JSON.stringify({ event: 'command', func, args: args || [] }), '*');
+    const now = Date.now();
+    // Ende des Ausschnitts erreicht → zurück an den Anfang (ohne YouTubes eigenen End-Stopp, der pausieren würde)
+    if ((info.playerState === 0 || (typeof info.currentTime === 'number' && info.currentTime >= rec.e - 0.2)) && now - (rec.seekAt || 0) > 900) {
+      rec.seekAt = now; cmd('seekTo', [rec.s, true]); cmd('playVideo');
+    } else if (info.playerState === 2 && now - (rec.seekAt || 0) < 2500) cmd('playVideo'); // Pause direkt nach dem Sprung: weiterlaufen
+  });
   const field = (label, inner, hint) => `<div class="field"><label>${e(label)}</label>${inner}${hint ? `<p class="hint">${e(hint)}</p>` : ''}</div>`;
   function readForm(root) {
     const o = {};
@@ -89,12 +123,19 @@
   function blockHTML(b, i, live, draft) {
     const done = live && draft.checks && draft.checks[i];
     const ex = b.ex && find(b.ex), rt = b.routine && find('routine:' + b.routine);
-    let extra = '';
+    let extra = '', lines = b.lines || [];
+    if (b.t === 'goal' && window.Goals) {
+      const g = Goals.cur(b.goal);
+      if (g) {
+        lines = [`Stufe ${g.n}/${g.total}: ${g.step.name_de}`, g.step.dose_de || '', g.step.criterion_de ? 'Weiter, wenn: ' + g.step.criterion_de : ''].filter(Boolean).concat(lines);
+        extra += (live ? clipHTML(g.step, 'clip-sm') : '') + `<button class="link-row" data-act="goal-open" data-id="${e(b.goal)}"><span>${live ? 'Ergebnis eintragen · Cues' : 'Stufen & Cues'}</span><span>›</span></button>`;
+      }
+    }
     if (b.t === 'tech' && live) {
       const sk = skillOfWeek(Plan.weekAt(draft.date));
-      if (sk) extra += `<button class="link-row" data-act="lib-open" data-id="${e(sk.id)}"><span>Fokus: <b>${e(sk.name_de)}</b></span><span>Cues & Video ›</span></button>`;
+      if (sk) extra += `<p class="one">${e(sk.one_de || firstSentence(sk.concept_de))}</p>` + clipHTML(sk, 'clip-sm') + `<button class="link-row" data-act="lib-open" data-id="${e(sk.id)}"><span>Fokus: <b>${e(sk.name_de)}</b></span><span>Drills ›</span></button>`;
     }
-    if (ex) extra += `<button class="link-row" data-act="lib-open" data-id="${e(b.ex)}"><span>${e(ex.item.name_de)}</span><span>Cues & Video ›</span></button>`;
+    if (ex && !(b.t === 'goal' && window.Goals && Goals.cur(b.goal))) extra += `<button class="link-row" data-act="lib-open" data-id="${e(b.ex)}"><span>${e(ex.item.name_de)}</span><span>Cues & Video ›</span></button>`;
     if (rt) extra += `<button class="link-row" data-act="routine-open" data-id="${e(b.routine)}"><span>${e(rt.item.name_de)}</span><span>Routine ›</span></button>`;
     let ctrl = '';
     if (live) {
@@ -109,22 +150,31 @@
     return `<article class="block${done ? ' is-done' : ''} bt-${b.t}">
       <header>${b.t === 'info' ? '<span class="num">i</span>' : live ? `<button class="check" data-act="block-check" data-i="${i}" aria-pressed="${!!done}" aria-label="Erledigt">${done ? '✓' : ''}</button>` : `<span class="num">${i + 1}</span>`}
         <h4>${e(b.title)}</h4>${b.min ? `<span class="meta">${b.min} min</span>` : ''}</header>
-      <ul>${(b.lines || []).map(l => `<li>${e(l)}</li>`).join('')}</ul>${extra}${ctrl ? `<div class="block-ctrl">${ctrl}</div>` : ''}
+      <ul>${lines.map(l => `<li>${e(l)}</li>`).join('')}</ul>${extra}${ctrl ? `<div class="block-ctrl">${ctrl}</div>` : ''}
     </article>`;
   }
 
-  function sessionCard(s, date) {
+  const cnt = (b) => b.count ? ` · ${Array.isArray(b.count.n) ? b.count.n[0] + '–' + b.count.n[1] : b.count.n} ${b.count.unit}` : '';
+  const logLine = (log) => `${log.climbs ? log.climbs + ' Climbs · ' : ''}${log.minSrc === 'e' ? '≈ ' : ''}${log.minutes} min · RPE ${log.rpe} · Load ${Store.sessionLoad(log)}`;
+  function adaptLine(s) {
+    if (S().adaptOff[s.planId]) return `<button class="adapt tone-muted" data-act="adapt-toggle" data-plan="${s.planId}"><b>Original-Plan gewählt</b><span>Tippen, um die Anpassung wieder einzuschalten.</span></button>`;
+    const a = s.adapt; if (!a || !a.reasons.length) return '';
+    const pct = Math.round((a.f - 1) * 100);
+    return `<button class="adapt tone-${pct < 0 ? 'orange' : pct > 0 ? 'green' : 'muted'}" data-act="adapt-info" data-plan="${s.planId}"><b>${pct < 0 ? '▼ An dich angepasst: −' + Math.abs(pct) + ' %' : pct > 0 ? '▲ An dich angepasst: +' + pct + ' %' : 'Hinweis für heute'}</b><span>${e(a.reasons[0].text)}</span></button>`;
+  }
+  function sessionCard(s0, date) {
+    const s = Adapt.today(s0.planId, date) || s0;
     const log = Store.sessionForPlan(s.planId), skipped = S().skips[s.planId];
     const moved = S().moves[s.planId] && S().moves[s.planId] !== s.baseDate;
     const head = `<header class="card-head">${kindChip(s.kind)}<span class="meta">${s.optional ? 'optional · ' : ''}ca. ${s.min} min · RPE ${s.rpe[0]}–${s.rpe[1]}</span></header>
       <h3>${e(s.title)}</h3><p class="focus">${e(s.focus)}</p>`;
     if (log) return `<article class="card session is-logged">${head}
-      <div class="logline">${gdBadge(log.color)}<span>${log.minutes} min · RPE ${log.rpe} · Load ${Store.sessionLoad(log)}</span></div>
+      <div class="logline">${gdBadge(log.color)}<span>${logLine(log)}</span></div>
       <div class="actions"><button class="btn btn-ghost" data-act="log-edit" data-id="${log.id}">Bearbeiten</button><button class="btn btn-ghost" data-act="plan-detail" data-plan="${s.planId}">Plan ansehen</button></div></article>`;
     if (skipped) return `<article class="card session is-skipped">${head}<p class="hint">Ausgelassen.</p><div class="actions"><button class="btn btn-ghost" data-act="unskip" data-plan="${s.planId}">Wieder einplanen</button></div></article>`;
-    return `<article class="card session">${head}
-      <ol class="mini">${s.blocks.filter(b => b.t !== 'info').map(b => `<li><span>${e(b.title)}</span>${b.min ? `<span>${b.min}′</span>` : ''}</li>`).join('')}</ol>
-      ${moved ? `<p class="hint">Verschoben von ${D.fmt(s.baseDate, { weekday: 'short', day: 'numeric', month: 'short' })}.</p>` : ''}
+    return `<article class="card session">${head}${adaptLine(s)}
+      <ol class="mini">${s.blocks.filter(b => b.t !== 'info').map(b => `<li><span>${e(b.title)}${e(cnt(b))}</span>${b.min ? `<span>${b.min}′</span>` : ''}</li>`).join('')}</ol>
+      ${moved ? `<p class="hint">Verschoben von ${D.fmt(s.baseDate, { weekday: 'short', day: 'numeric', month: 'short' }).replace(/\.$/, '')}.</p>` : ''}
       <div class="actions">${s.kind === 'mobility' && s.blocks[0].routine && find('routine:' + s.blocks[0].routine)
         ? `<button class="btn btn-primary" data-act="routine-open" data-id="${e(s.blocks[0].routine)}" data-plan="${s.planId}">Routine öffnen</button>`
         : `<button class="btn btn-primary" data-act="start" data-plan="${s.planId}">Session starten</button>`}
@@ -182,12 +232,17 @@
       ${field('Gewicht kg (optional)', `<input type="number" name="bodyweight" step="0.5" value="${p.bodyweight || ''}" inputmode="decimal">`)}</div>
       <button class="btn btn-primary" data-act="onb-save">Los geht’s</button></article>`;
   }
+  const SKILL_LV = ['neu', 'bewusst', 'sicher', 'automatisch'];
+  const skillRate = (sk) => { const lvl = S().skillLevels[sk.id] || 0; return `<div class="scale scale-wide skill-lv"><input type="hidden" name="lv" value="${lvl}">${SKILL_LV.map((t, i) => `<button type="button" data-act="skill-lv" data-id="${e(sk.id)}" data-v="${i + 1}" aria-checked="${lvl === i + 1}">${t}</button>`).join('')}</div>`; };
   function skillCard(w) {
     const sk = skillOfWeek(w); if (!sk) return '';
     return `<article class="card skill"><header class="card-head"><span class="eyebrow">Technik-Fokus der Woche</span><span class="meta">${e(THEMES[sk.theme] || sk.theme)}</span></header>
-      <h3>${e(sk.name_de)}</h3><p>${e(sk.concept_de)}</p>
-      <ul class="cues">${(sk.cues_de || []).slice(0, 3).map(c => `<li>${e(c)}</li>`).join('')}</ul>
-      <div class="actions"><button class="btn btn-ghost" data-act="lib-open" data-id="${e(sk.id)}">Drills & Video</button><button class="btn btn-ghost" data-act="skill-swap" data-mon="${w.monday}">Anderen Fokus wählen</button></div></article>`;
+      <h3>${e(sk.name_de)}</h3><p class="one">${e(sk.one_de || firstSentence(sk.concept_de))}</p>
+      ${clipHTML(sk)}
+      <details class="more"><summary>Was ist gemeint?</summary><p>${e(firstSentence(sk.concept_de))}</p></details>
+      <details class="more"><summary>Worauf achten</summary><ul class="cues">${(sk.cues_de || []).slice(0, 3).map(c => `<li>${e(c)}</li>`).join('')}</ul></details>
+      <span class="eyebrow">Wie gut sitzt es?</span>${skillRate(sk)}
+      <div class="actions"><button class="btn btn-ghost" data-act="lib-open" data-id="${e(sk.id)}">Drills</button><button class="btn btn-ghost" data-act="skill-swap" data-mon="${w.monday}">Anderer Fokus</button></div></article>`;
   }
   function phaseHead(w, today) {
     if (!w) {
@@ -218,11 +273,12 @@
     }
     h += opt.map(s => sessionCard(s, today)).join('');
     Store.sessionsOn(today).filter(s => !s.planId).forEach(s => {
-      h += `<article class="card session is-logged"><header class="card-head">${kindChip(s.kind)}</header><h3>${e(s.title)}</h3><div class="logline">${gdBadge(s.color)}<span>${s.minutes} min · RPE ${s.rpe} · Load ${Store.sessionLoad(s)}</span></div><div class="actions"><button class="btn btn-ghost" data-act="log-edit" data-id="${s.id}">Bearbeiten</button></div></article>`;
+      h += `<article class="card session is-logged"><header class="card-head">${kindChip(s.kind)}</header><h3>${e(s.title)}</h3><div class="logline">${gdBadge(s.color)}<span>${logLine(s)}</span></div><div class="actions"><button class="btn btn-ghost" data-act="log-edit" data-id="${s.id}">Bearbeiten</button></div></article>`;
     });
     h += acwrCard(today) + skillCard(w);
     if (w && w.week.note) h += `<article class="card"><span class="eyebrow">Notiz zur Woche</span><p>${e(w.week.note)}</p></article>`;
-    h += `<button class="btn btn-ghost btn-block" data-act="free-log">＋ Freie Einheit eintragen</button>`;
+    h += `<button class="btn btn-ghost btn-block" data-act="free-log">＋ Extra-Session eintragen (Fels, Halle …)</button>`;
+    if (window.Progress) h = Progress.todayCards(h, today, w);
     return h;
   }
 
@@ -230,13 +286,15 @@
   function startSession(planId) {
     const s = Plan.findPlan(planId); if (!s) return;
     const w = Plan.weekAt(D.today()), sk = skillOfWeek(w);
-    S().draft = { planId, date: D.today(), title: s.title, kind: s.kind, startedAt: Date.now(), stage: 'pre', checks: {}, hangs: [], capSec: 0, pre: {}, goal: sk && sk.goal_examples_de ? sk.goal_examples_de[0] : '' };
+    const a = S().adaptOff[planId] ? { f: 1, reasons: [] } : Adapt.factor(s, D.today());
+    S().draft = { planId, date: D.today(), title: s.title, kind: s.kind, startedAt: Date.now(), stage: 'pre', checks: {}, hangs: [], capSec: 0, done: {}, pre: {}, f: a.f, adapt: a, goal: sk && sk.goal_examples_de ? sk.goal_examples_de[0] : '' };
     Store.save(); renderSession();
   }
+  const curS = () => Adapt.today(S().draft.planId);
   function renderSession() {
     const root = $('#session'), d = S().draft;
     if (!d) { root.hidden = true; root.innerHTML = ''; document.body.classList.remove('in-session'); return; }
-    const s = Plan.findPlan(d.planId);
+    const s = curS();
     document.body.classList.add('in-session');
     root.hidden = false;
     let body = '';
@@ -245,73 +303,102 @@
         <h3>Bin ich erholt genug, um mit Absicht zu trainieren?</h3>
         ${field('Erholung', scale('recovery', 1, 5, d.pre.recovery || null, { wide: true, ends: ['platt', 'frisch'] }))}
         ${field('Energie & Fokus', scale('energy', 1, 5, d.pre.energy || null, { wide: true, ends: ['niedrig', 'hoch'] }))}
-        ${field('Finger gerade', scale('finger', 0, 10, d.pre.finger == null ? 0 : d.pre.finger, { ends: ['ruhig', 'schmerzhaft'] }))}
+        ${field('Finger gerade', scale('finger', 0, 10, d.pre.finger == null ? Math.min(10, Adapt.finger(d.date).v) : d.pre.finger, { ends: ['ruhig', 'schmerzhaft'] }))}
         ${field('Ein klares Ziel für heute', `<textarea name="goal" rows="2" placeholder="z. B. Hüfte vor jedem Zug vorbereiten">${e(d.goal || '')}</textarea>`, 'Ein Prozessziel, kein Ergebnisziel.')}
         <div id="pre-advice"></div>
-        <button class="btn btn-primary btn-block" data-act="pre-go">Session beginnen</button></div>
+        <button class="btn btn-primary btn-block" data-act="pre-go">Session beginnen</button>
+        <button class="btn btn-ghost btn-block" data-act="pre-skip">Alles gut – direkt starten</button></div>
         <article class="card"><span class="eyebrow">Hauptreiz heute</span><h3>${e(s.focus)}</h3>
         <p class="meta">Ziel-RPE ${s.rpe[0]}–${s.rpe[1]} · ca. ${s.min} min</p>
         ${s.low ? `<p class="hint"><b>Low-Energy-Version:</b> ${e(s.low)}</p>` : ''}</article>`;
     } else if (d.stage === 'run') {
       const mins = Math.round((Date.now() - d.startedAt) / 60000);
       body = `<div class="run-meta"><span>${mins} min</span>${d.goal ? `<span class="goal">Ziel: ${e(d.goal)}</span>` : ''}</div>
-        ${d.advice ? `<p class="banner tone-orange">${e(d.advice)}</p>` : ''}
+        ${d.adapt && d.adapt.reasons.length ? `<p class="banner tone-${d.f < 1 ? 'orange' : 'green'}"><b>${d.f < 1 ? 'Heute −' + Math.abs(Math.round((d.f - 1) * 100)) + ' % Umfang' : d.f > 1 ? 'Heute +' + Math.round((d.f - 1) * 100) + ' % Umfang' : 'Hinweis'}:</b> ${e(d.adapt.reasons.map(r => r.text).join(' '))}${d.adapt.noHard && s.low ? ' ' + e(s.low) : ''}</p>` : ''}
         ${s.blocks.map((b, i) => blockHTML(b, i, true, d)).join('')}
         <article class="card stop"><span class="eyebrow">Session beenden, wenn …</span><ul>${s.stop.map(x => `<li>${e(x)}</li>`).join('')}</ul></article>
         <button class="btn btn-primary btn-block btn-xl" data-act="to-post">Session beenden & loggen</button>`;
     } else {
-      body = postForm({ minutes: Math.max(10, Math.min(300, Math.round((Date.now() - d.startedAt) / 60000))), hi: s.hi || d.hangs.reduce((a, h) => a + (h.rpe >= 7 ? h.sets : 0), 0), capMin: Math.round(d.capSec / 60) || null }, { planned: s });
+      body = postPlanned(s, d);
     }
     root.innerHTML = `<header class="session-head"><button class="icon-btn" data-act="session-min" aria-label="Minimieren">⌄</button>
       <div><span class="eyebrow">${e(Plan.KINDS[s.kind].label)}</span><h2>${e(s.title)}</h2></div>
       <span class="stage">${d.stage === 'pre' ? '1/3' : d.stage === 'run' ? '2/3' : '3/3'}</span></header>
       <div class="session-body">${body}</div>`;
     if (d.stage === 'pre') updateAdvice();
+    if (d.stage === 'post') paintLoad(root);
   }
   function updateAdvice() {
-    const f = readForm($('#pre')), s = Plan.findPlan(S().draft.planId), box = $('#pre-advice');
-    let msg = '';
-    if (f.finger >= 3) msg = 'Finger ≥ 3/10: heute keine harten Fingerreize. ' + (s.low || 'Leichter klettern, Umfang kürzen.');
-    else if (f.recovery != null && f.recovery <= 2) msg = 'Wenig erholt: Nimm die Low-Energy-Version. ' + (s.low || '');
-    else if (f.energy != null && f.energy <= 2) msg = 'Wenig Energie: Wenn es sich nach dem Aufwärmen 1–2 Stufen härter anfühlt als erwartet, kürze den Umfang.';
-    S().draft.advice = msg;
-    box.innerHTML = msg ? `<p class="banner tone-orange">${e(msg)}</p>` : '';
+    const f = readForm($('#pre')), d = S().draft, base = Plan.findPlan(d.planId), box = $('#pre-advice');
+    if (S().adaptOff[d.planId]) { box.innerHTML = ''; return; }
+    const a = Adapt.factor(base, d.date, f), pct = Math.round((a.f - 1) * 100);
+    box.innerHTML = a.reasons.length ? `<p class="banner tone-${pct < 0 ? 'orange' : 'green'}"><b>${pct ? (pct > 0 ? '+' : '−') + Math.abs(pct) + ' % Umfang heute' : 'Hinweis'}:</b> ${e(a.reasons.map(r => r.text).join(' '))}${a.noHard && base.low ? ' <b>Low-Energy-Version:</b> ' + e(base.low) : ''}</p>` : '';
   }
-  function postForm(v, o) {
-    o = o || {};
-    const kinds = ['outdoor', 'limit', 'strength', 'power', 'submax', 'arc', 'skill', 'mobility', 'other'];
-    return `<div class="card form" id="post"><span class="eyebrow">${o.edit ? 'Einheit bearbeiten' : 'Nach der Session'}</span>
-      ${o.free ? `${field('Titel', `<input type="text" name="title" value="${e(v.title || '')}" placeholder="z. B. Fels: Projekt ausbouldern">`)}
-        <div class="grid2">${field('Datum', `<input type="date" name="date" value="${v.date || D.today()}" max="${D.today()}">`)}
-        ${field('Art', `<select name="kind">${kinds.map(k => `<option value="${k}"${v.kind === k ? ' selected' : ''}>${e(Plan.KINDS[k].label)}</option>`).join('')}</select>`)}</div>` : ''}
-      ${field('Dauer in Minuten', `<input type="number" name="minutes" min="5" max="600" value="${v.minutes || ''}" inputmode="numeric">`)}
-      ${field('Session-RPE', scale('rpe', 1, 10, v.rpe || null, { ends: ['sehr leicht', 'maximal'] }), 'Wie anstrengend war die Einheit insgesamt?')}
-      <p class="load-preview" id="load-preview"></p>
+  // ---------- Log ----------
+  const moreFields = (v, o) => `<details class="more"><summary>Mehr notieren (optional)</summary>
+      ${o && o.noMin ? '' : field('Dauer in Minuten', `<input type="number" name="minutes" min="5" max="600" value="${v.minSrc === 'u' ? v.minutes : ''}" placeholder="automatisch" inputmode="numeric">`, 'Leer lassen: die App misst oder schätzt die Dauer.')}
       ${field('Maximaler Pump', scale('pump', 0, 10, v.pump == null ? null : v.pump))}
-      ${field('Finger am Ende', scale('fingerEnd', 0, 10, v.fingerEnd == null ? 0 : v.fingerEnd, { ends: ['ruhig', 'schmerzhaft'] }))}
-      <div class="grid2">${field('Harte Fingerbelastungen', `<input type="number" name="hi" min="0" max="99" value="${v.hi == null ? '' : v.hi}" inputmode="numeric">`, 'Schwere Hang-Sätze + harte Boardversuche')}
-      ${field('Capacity-Kletterminuten', `<input type="number" name="capMin" min="0" max="240" value="${v.capMin == null ? '' : v.capMin}" inputmode="numeric">`, 'Tatsächliche Zeit an der Wand')}</div>
-      <label class="toggle"><input type="checkbox" name="sharp" ${v.sharp ? 'checked' : ''}><span>Aufgehört, solange es sich noch gut anfühlte</span></label>
-      ${field('Board, Winkel, Grade, Circuits', `<input type="text" name="board" value="${e(v.board || '')}" placeholder="z. B. TB2 40°, V2–V3">`)}
-      <span class="eyebrow">Journal · 5 Minuten</span>
+      ${field('Board, Winkel, Grade', `<input type="text" name="board" value="${e(v.board || '')}" placeholder="z. B. TB2 40°, V2–V3">`)}
       ${field('Eine Sache, die besser wurde', `<textarea name="improved" rows="2">${e(v.improved || '')}</textarea>`)}
       ${field('Eine Sache, die ich gelernt habe', `<textarea name="learned" rows="2">${e(v.learned || '')}</textarea>`)}
-      ${field('Warum das wichtig ist', `<textarea name="why" rows="2">${e(v.why || '')}</textarea>`)}
-      ${o.edit ? field('Green-Day-Farbe', `<select name="color"><option value="">Offen</option>${GD.map(g => `<option value="${g.k}"${v.color === g.k ? ' selected' : ''}>${g.label} – ${e(g.sub)}</option>`).join('')}</select>`) : ''}
-      <button class="btn btn-primary btn-block" data-act="${o.act || 'post-save'}" ${o.id ? `data-id="${o.id}"` : ''}>Speichern</button>
-      ${o.edit ? `<button class="btn btn-danger btn-block" data-act="log-delete" data-id="${o.id}">Einheit löschen</button>` : ''}
-      ${!o.edit && !o.free ? `<button class="btn btn-ghost btn-block" data-act="back-run">Zurück zu den Blöcken</button>` : ''}</div>`;
+      ${field('Warum das wichtig ist', `<textarea name="why" rows="2">${e(v.why || '')}</textarea>`)}</details>`;
+  const rpeField = (v) => field('Wie anstrengend war es insgesamt?', scale('rpe', 1, 10, v || null, { ends: ['sehr leicht', 'maximal'] }));
+  const fingerField = (v) => field('Finger am Ende', scale('fingerEnd', 0, 10, v == null ? 0 : v, { ends: ['ruhig', 'schmerzhaft'] }));
+  function postPlanned(s, d) {
+    const cs = Plan.counts(s);
+    return `<div class="card form" id="post" data-mode="plan"><span class="eyebrow">Nach der Session</span><h3>Was hast du geschafft?</h3>
+      ${cs.length ? cs.map(c => field(c.title, stepper('cnt_' + c.i, d.done && d.done[c.i] != null ? d.done[c.i] : c.plan, c.unit, 'Plan ' + c.range))).join('') : '<p class="hint">Diese Einheit hat nichts zum Zählen – RPE genügt.</p>'}
+      ${rpeField()}<p class="load-preview" id="load-preview"></p>${fingerField()}${moreFields({})}
+      <button class="btn btn-primary btn-block" data-act="post-save">Speichern</button>
+      <button class="btn btn-ghost btn-block" data-act="back-run">Zurück zu den Blöcken</button></div>`;
+  }
+  const FREE_KINDS = [['outdoor', 'Fels'], ['gym', 'Bouldern Halle'], ['limit', 'Board / Limit'], ['strength', 'Kraft'], ['skill', 'Technik locker'], ['other', 'Sonstiges']];
+  function postFree(v) {
+    return `<div class="form" id="post" data-mode="free"><p class="hint">Alles außerhalb des Plans zählt mit: Die Last fließt in den ACWR, und die nächsten geplanten Einheiten passen sich an.</p>
+      <div class="chips pick"><input type="hidden" name="kind" value="${v.kind}">${FREE_KINDS.map(k => `<button type="button" class="chip chip-btn" data-act="pick" data-v="${k[0]}" aria-pressed="${v.kind === k[0]}">${k[1]}</button>`).join('')}</div>
+      ${field('Wie viele Climbs?', stepper('climbs', v.climbs == null ? 8 : v.climbs, 'Boulder / Versuche'), 'Grob reicht: alles, was dich angestrengt hat. Aufwärm-Boulder nicht mitzählen.')}
+      ${rpeField()}<p class="load-preview" id="load-preview"></p>${fingerField()}
+      <details class="more"><summary>Datum, Titel, Dauer (optional)</summary>
+      <div class="grid2">${field('Datum', `<input type="date" name="date" value="${v.date || D.today()}" max="${D.today()}">`)}${field('Dauer in Minuten', `<input type="number" name="minutes" min="5" max="600" placeholder="automatisch" inputmode="numeric">`)}</div>
+      ${field('Titel', `<input type="text" name="title" placeholder="z. B. Fels: Projekt ausbouldern">`)}</details>
+      <button class="btn btn-primary btn-block" data-act="free-save">Speichern</button></div>`;
+  }
+  function postEdit(v) {
+    return `<div class="form" id="post" data-mode="edit">
+      ${v.planId ? '' : `${field('Titel', `<input type="text" name="title" value="${e(v.title || '')}">`)}${field('Datum', `<input type="date" name="date" value="${v.date}" max="${D.today()}">`)}`}
+      <div class="grid2">${field('Climbs', `<input type="number" name="climbs" min="0" max="300" value="${v.climbs == null ? '' : v.climbs}" inputmode="numeric">`)}${field('Dauer in Minuten', `<input type="number" name="minutes" min="5" max="600" value="${v.minutes || ''}" inputmode="numeric">`)}</div>
+      ${rpeField(v.rpe)}<p class="load-preview" id="load-preview"></p>${fingerField(v.fingerEnd)}
+      ${field('Green-Day-Farbe', `<select name="color"><option value="">Offen</option>${GD.map(g => `<option value="${g.k}"${v.color === g.k ? ' selected' : ''}>${g.label} – ${e(g.sub)}</option>`).join('')}</select>`)}
+      ${moreFields(v, { noMin: true })}
+      <button class="btn btn-primary btn-block" data-act="log-update" data-id="${v.id}">Speichern</button>
+      <button class="btn btn-danger btn-block" data-act="log-delete" data-id="${v.id}">Einheit löschen</button></div>`;
+  }
+  // Liest das Log-Formular und rechnet Dauer + Last aus
+  function calcPost(root) {
+    const post = root.id === 'post' ? root : $('#post', root); if (!post) return null;
+    const f = readForm(post), mode = post.dataset.mode, r = { f, mode };
+    if (mode === 'plan') {
+      const d = S().draft, s = curS(); r.cnt = {};
+      Object.keys(f).forEach(k => { if (k.indexOf('cnt_') === 0 && f[k] != null) r.cnt[k.slice(4)] = f[k]; });
+      r.e = Adapt.duration(s, r.cnt, d.startedAt, d.postAt);
+      r.minutes = f.minutes || r.e.minutes; r.src = f.minutes ? 'u' : r.e.src; r.climbs = r.e.climbs;
+    } else if (mode === 'free') {
+      r.minutes = f.minutes || Adapt.freeMinutes(f.kind, f.climbs); r.src = f.minutes ? 'u' : 'e'; r.climbs = f.climbs || 0;
+    } else { r.minutes = f.minutes; r.src = null; r.climbs = f.climbs; }
+    return r;
   }
   function paintLoad(root) {
-    const f = readForm(root), p = $('#load-preview', root); if (!p) return;
-    p.textContent = f.minutes && f.rpe ? `Session Load = ${f.minutes} min × RPE ${f.rpe} = ${Math.round(f.minutes * f.rpe)}` : '';
+    const r = calcPost(root); if (!r) return;
+    const p = $('#load-preview', root); if (!p) return;
+    const how = r.src === 'u' ? 'von dir eingetragen' : r.src === 'm' ? 'in der App gemessen' : r.src === 'e' ? (r.mode === 'plan' ? 'geschätzt aus deinen Zahlen' + (r.e.calibrated ? ', kalibriert an ' + r.e.calibrated + ' gemessenen Sessions' : '') : 'geschätzt aus deinen Climbs') : '';
+    p.innerHTML = r.minutes ? `${r.src === 'e' ? '≈ ' : ''}<b>${r.minutes} min</b>${how ? ' (' + how + ')' : ''}${r.f.rpe ? ` · Load <b>${Math.round(r.minutes * r.f.rpe)}</b>` : ' · RPE wählen für die Last'}` : '';
   }
   function collectPost(root) {
-    const f = readForm(root);
-    if (!f.minutes || !f.rpe) { toast('Dauer und Session-RPE fehlen noch.'); return null; }
-    return f;
+    const r = calcPost(root);
+    if (!r || !r.f.rpe) { toast('Bitte noch die Anstrengung (RPE) wählen.'); return null; }
+    if (!r.minutes) { toast('Dauer fehlt.'); return null; }
+    return r;
   }
-
   // ---------- Render ----------
   let view = 'today';
   const views = { today: viewToday };
@@ -323,7 +410,7 @@
     if (UI.afterRender[view]) UI.afterRender[view](m);
     $('#save-warn').hidden = !Store.saveFailed;
   }
-  function nav(v) { view = v; render(); $('#view').scrollTop = 0; window.scrollTo(0, 0); }
+  function nav(v) { view = v; render(); const m = $('#view'); m.classList.remove('enter'); void m.offsetWidth; m.classList.add('enter'); m.scrollTop = 0; window.scrollTo(0, 0); }
 
   // ---------- Aktionen ----------
   const A = {
@@ -342,14 +429,31 @@
     resume: () => renderSession(),
     'draft-discard': () => { if (confirm('Laufende Session verwerfen?')) { S().draft = null; Store.save(); renderSession(); render(); } },
     'session-min': () => { $('#session').hidden = true; document.body.classList.remove('in-session'); render(); },
-    'pre-go': () => { const f = readForm($('#pre')), d = S().draft; d.pre = { recovery: f.recovery, energy: f.energy, finger: f.finger }; d.goal = f.goal; d.stage = 'run'; d.startedAt = Date.now(); Store.save(); renderSession(); $('.session-body').scrollTop = 0; },
-    'to-post': () => { S().draft.stage = 'post'; Store.save(); renderSession(); paintLoad($('#post')); $('.session-body').scrollTop = 0; },
+    'pre-go': () => {
+      const f = readForm($('#pre')), d = S().draft; d.pre = { recovery: f.recovery, energy: f.energy, finger: f.finger }; d.goal = f.goal;
+      if (!S().adaptOff[d.planId]) { const a = Adapt.factor(Plan.findPlan(d.planId), d.date, f); d.f = a.f; d.adapt = a; }
+      d.stage = 'run'; d.startedAt = Date.now(); Store.save(); renderSession(); $('.session-body').scrollTop = 0;
+    },
+    'pre-skip': () => { const p = $('#pre'); [['recovery', 4], ['energy', 4]].forEach(x => { const i = $(`input[name=${x[0]}]`, p); if (!i.value) i.value = x[1]; }); A['pre-go'](); },
+    'to-post': () => { const d = S().draft; d.stage = 'post'; d.postAt = d.postAt || Date.now(); Store.save(); renderSession(); $('.session-body').scrollTop = 0; },
+    step: (el) => { const inp = $('input', el.parentNode); inp.value = Math.max(0, (Number(inp.value) || 0) + (+el.dataset.d)); const post = el.closest('#post'); if (post) paintLoad(post.closest('.sheet-wrap') || post); },
+    pick: (el) => { const box = el.parentNode; $('input', box).value = el.dataset.v; $$('button', box).forEach(b => b.setAttribute('aria-pressed', String(b === el))); const post = el.closest('#post'); if (post) paintLoad(post); },
+    clip: (el) => playClip(el),
+    'adapt-info': (el) => {
+      const s = Adapt.today(el.dataset.plan), base = Plan.findPlan(el.dataset.plan), a = s.adapt || { f: 1, reasons: [] };
+      sheet('An dich angepasst', `<p class="lead">${a.f === 1 ? 'Umfang wie geplant.' : `Plan ${base.min} min → heute <b>${s.min} min</b> (${a.f > 1 ? '+' : '−'}${Math.abs(Math.round((a.f - 1) * 100))} % Umfang).`}</p>
+        <ul class="points">${a.reasons.map(r => `<li>${e(r.text)}</li>`).join('')}</ul>
+        ${a.noHard && base.low ? `<article class="card"><span class="eyebrow">Empfohlen: Low-Energy-Version</span><p>${e(base.low)}</p></article>` : ''}
+        <p class="hint">Die App rechnet mit deinem Fingerstatus, dem ACWR, Extra-Sessions, deinen Green Days und deinem üblichen Pensum. Sie kürzt schnell und steigert langsam (höchstens +10 % pro Schritt).</p>
+        <button class="btn btn-ghost btn-block" data-act="adapt-toggle" data-plan="${e(el.dataset.plan)}">Heute trotzdem den Original-Plan nehmen</button>`);
+    },
+    'adapt-toggle': (el) => { const id = el.dataset.plan; if (S().adaptOff[id]) delete S().adaptOff[id]; else S().adaptOff[id] = true; Store.save(); $$('.sheet-wrap').forEach(closeSheet); render(); },
     'back-run': () => { S().draft.stage = 'run'; Store.save(); renderSession(); },
     'block-check': (el) => { const d = S().draft; d.checks[el.dataset.i] = !d.checks[el.dataset.i]; Store.save(); renderSession(); },
     'block-timer': (el) => {
-      const d = S().draft, i = +el.dataset.i, b = Plan.findPlan(d.planId).blocks[i];
+      const d = S().draft, i = +el.dataset.i, b = curS().blocks[i];
       Timer.open(b.timer, { onDone: (res) => {
-        if (b.log === 'cap') { d.capSec += res.workSec; d.checks[i] = true; Store.save(); renderSession(); toast(`${Timer.mmss(res.workSec)} Kletterzeit notiert.`); }
+        if (b.log === 'cap') { d.capSec += res.workSec; d.done = d.done || {}; d.done[i] = (d.done[i] || 0) + (res.reps || 0); d.checks[i] = true; Store.save(); renderSession(); toast(`${res.reps} ${b.count ? b.count.unit : ''} · ${Timer.mmss(res.workSec)} Kletterzeit notiert.`); }
         else if (b.log === 'hang') hangSheet(i, res.reps);
         else { d.checks[i] = true; Store.save(); renderSession(); }
       } });
@@ -357,33 +461,39 @@
     'rest-timer': (el) => Timer.open({ label: 'Pause', prep: 0, work: +el.dataset.sec, reps: 1, workName: 'Pause', tone: 'rest', repName: 'Pause' }),
     'hang-log': (el) => hangSheet(+el.dataset.i),
     'hang-save': (el) => {
-      const w = el.closest('.sheet-wrap'), f = readForm(w), d = S().draft, i = +el.dataset.i, b = Plan.findPlan(d.planId).blocks[i];
+      const w = el.closest('.sheet-wrap'), f = readForm(w), d = S().draft, i = +el.dataset.i, b = curS().blocks[i];
       if (f.kg == null || !f.rpe) { toast('Last und RPE eintragen.'); return; }
       d.hangs.push({ block: i, title: b.title, grip: b.hang.grip, edge: b.hang.edge, secs: b.hang.secs, sets: f.sets || b.hang.sets, kg: f.kg, rpe: f.rpe });
       d.checks[i] = true; Store.save(); closeSheet(w); renderSession();
       if (f.rpe >= 9) toast('RPE 9+: nächste Woche Last halten oder senken.');
     },
     'post-save': () => {
-      const f = collectPost($('#post')); if (!f) return;
-      const d = S().draft;
-      Store.addSession({ date: d.date, planId: d.planId, title: d.title, kind: d.kind, minutes: f.minutes, rpe: f.rpe, pump: f.pump, fingerEnd: f.fingerEnd, hi: f.hi || 0, capMin: f.capMin || 0, sharp: f.sharp, board: f.board, improved: f.improved, learned: f.learned, why: f.why, pre: d.pre, goal: d.goal, hangs: d.hangs, color: null });
+      const r = collectPost($('#post')); if (!r) return;
+      const d = S().draft, s = curS(), f = r.f;
+      const log = Store.addSession({ date: d.date, planId: d.planId, title: d.title, kind: d.kind, minutes: r.minutes, minSrc: r.src, rpe: f.rpe, rpePlan: s.rpe, climbs: r.climbs, counts: r.cnt, pump: f.pump, fingerEnd: f.fingerEnd,
+        hi: Math.round((s.hi || 0) * Math.min(1.5, r.e.ratio)), capMin: Math.max(r.e.capMin, Math.round((d.capSec || 0) / 60)), adaptF: d.f == null ? 1 : d.f, adaptT: !!(d.adapt && d.adapt.transient),
+        board: f.board, improved: f.improved, learned: f.learned, why: f.why, pre: d.pre, goal: d.goal, hangs: d.hangs, color: null });
+      Adapt.learnFrom(log, r.e);
       S().draft = null; Store.save(); renderSession(); nav('today');
-      toast('Gespeichert. Ob es ein Green Day war, zeigt die nächste Session.');
+      toast(`Gespeichert · Load ${Store.sessionLoad(log)}. Ob es ein Green Day war, zeigt die nächste Session.`);
     },
-    'free-log': () => sheet('Freie Einheit', postForm({ date: D.today(), kind: 'outdoor' }, { free: true, act: 'free-save' }), { tall: true }),
+    'free-log': (el) => sheet('Extra-Session', postFree({ date: (el && el.dataset.d) || D.today(), kind: 'outdoor' }), { tall: true, mount: (w) => { if (el && el.dataset.d && el.dataset.d !== D.today()) $('details', w).open = true; paintLoad(w); } }),
     'free-save': (el) => {
-      const w = el.closest('.sheet-wrap'), f = collectPost(w); if (!f) return;
-      Store.addSession({ date: f.date || D.today(), planId: null, title: f.title || Plan.KINDS[f.kind].label, kind: f.kind, minutes: f.minutes, rpe: f.rpe, pump: f.pump, fingerEnd: f.fingerEnd, hi: f.hi || 0, capMin: f.capMin || 0, sharp: f.sharp, board: f.board, improved: f.improved, learned: f.learned, why: f.why, hangs: [], color: null });
-      closeSheet(w); render(); toast('Einheit gespeichert.');
+      const w = el.closest('.sheet-wrap'), r = collectPost(w); if (!r) return; const f = r.f;
+      const log = Store.addSession({ date: f.date || D.today(), planId: null, title: f.title || (FREE_KINDS.find(k => k[0] === f.kind) || [0, Plan.KINDS[f.kind].label])[1], kind: f.kind, minutes: r.minutes, minSrc: r.src, rpe: f.rpe, climbs: r.climbs, fingerEnd: f.fingerEnd,
+        hi: f.kind === 'outdoor' || f.kind === 'limit' || f.kind === 'gym' ? Math.round((r.climbs || 0) * (f.rpe >= 7 ? 1 : 0.4)) : 0, capMin: 0, hangs: [], color: null });
+      Adapt.learnFrom(log, null); Store.save();
+      closeSheet(w); render(); toast(`Extra-Session gespeichert · Load ${Store.sessionLoad(log)}. Die nächsten Einheiten rechnen damit.`);
     },
     'log-edit': (el) => {
       const s = S().sessions.find(x => x.id === el.dataset.id); if (!s) return;
-      sheet(s.title, postForm(s, { edit: true, free: !s.planId, act: 'log-update', id: s.id }), { tall: true, mount: (w) => paintLoad(w) });
+      sheet(s.title, postEdit(s), { tall: true, mount: (w) => paintLoad(w) });
     },
     'log-update': (el) => {
-      const w = el.closest('.sheet-wrap'), f = collectPost(w); if (!f) return;
-      const patch = { minutes: f.minutes, rpe: f.rpe, pump: f.pump, fingerEnd: f.fingerEnd, hi: f.hi || 0, capMin: f.capMin || 0, sharp: f.sharp, board: f.board, improved: f.improved, learned: f.learned, why: f.why, color: f.color || null };
-      if (f.title != null) { patch.title = f.title; patch.kind = f.kind; patch.date = f.date; }
+      const w = el.closest('.sheet-wrap'), r = collectPost(w); if (!r) return; const f = r.f;
+      const old = S().sessions.find(x => x.id === el.dataset.id);
+      const patch = { minutes: f.minutes, minSrc: old && old.minutes !== f.minutes ? 'u' : old && old.minSrc, climbs: f.climbs || 0, rpe: f.rpe, pump: f.pump, fingerEnd: f.fingerEnd, board: f.board, improved: f.improved, learned: f.learned, why: f.why, color: f.color || null };
+      if (f.title != null) { patch.title = f.title || old.title; patch.date = f.date || old.date; }
       Store.updateSession(el.dataset.id, patch); $$('.sheet-wrap').forEach(closeSheet); render(); toast('Aktualisiert.');
     },
     'log-delete': (el) => { if (!confirm('Diese Einheit endgültig löschen?')) return; Store.removeSession(el.dataset.id); $$('.sheet-wrap').forEach(closeSheet); render(); },
@@ -398,8 +508,8 @@
     skip: (el) => { S().skips[el.dataset.plan] = true; Store.save(); $$('.sheet-wrap').forEach(closeSheet); render(); },
     unskip: (el) => { delete S().skips[el.dataset.plan]; Store.save(); render(); },
     'plan-detail': (el) => {
-      const s = Plan.findPlan(el.dataset.plan); if (!s) return;
-      sheet(s.title, `<p class="focus">${e(s.focus)}</p><p class="meta">${e(D.long(Plan.dateOf(s)))} · ca. ${s.min} min · Ziel-RPE ${s.rpe[0]}–${s.rpe[1]}</p>
+      const s = Adapt.today(el.dataset.plan) || Plan.findPlan(el.dataset.plan); if (!s) return;
+      sheet(s.title, `<p class="focus">${e(s.focus)}</p><p class="meta">${e(D.long(Plan.dateOf(s)))} · ca. ${s.min} min · Ziel-RPE ${s.rpe[0]}–${s.rpe[1]}${s.factor ? ' · angepasst' : ''}</p>
         ${s.blocks.map((b, i) => blockHTML(b, i, false)).join('')}
         ${s.low ? `<article class="card"><span class="eyebrow">Low-Energy-Version</span><p>${e(s.low)}</p></article>` : ''}
         <article class="card stop"><span class="eyebrow">Session beenden, wenn …</span><ul>${s.stop.map(x => `<li>${e(x)}</li>`).join('')}</ul></article>
@@ -413,10 +523,12 @@
   A['skill-set'] = (el) => { S().skillOverride[el.dataset.mon] = el.dataset.id; Store.save(); closeSheet(el.closest('.sheet-wrap')); render(); };
 
   function hangSheet(i, reps) {
-    const d = S().draft, b = Plan.findPlan(d.planId).blocks[i];
-    const prev = S().sessions.slice().reverse().map(s => (s.hangs || []).find(h => h.grip === b.hang.grip && h.title === b.title)).find(Boolean);
+    const d = S().draft, b = curS().blocks[i];
+    const prev = S().sessions.slice().sort((x, y) => x.date < y.date ? 1 : -1).map(s => (s.hangs || []).find(h => h.grip === b.hang.grip)).find(Boolean);
+    const sug = Adapt.hangSuggest(prev, d.date);
     sheet(b.title + ' eintragen', `<div class="form"><p class="meta">${e(b.hang.grip)} · ${b.hang.edge} mm · ${b.hang.secs} s${prev ? ` · zuletzt ${prev.kg >= 0 ? '+' : ''}${prev.kg} kg bei RPE ${prev.rpe}` : ''}</p>
-      <div class="grid2">${field('Zusatzlast in kg', `<input type="number" name="kg" step="0.25" value="${prev ? prev.kg : 30}" inputmode="decimal">`, 'Negativ = entlastet')}
+      ${sug ? `<p class="banner tone-green"><b>Vorschlag ${sug.kg >= 0 ? '+' : ''}${String(sug.kg).replace('.', ',')} kg:</b> ${e(sug.text)}</p>` : ''}
+      <div class="grid2">${field('Zusatzlast in kg', `<input type="number" name="kg" step="0.25" value="${sug ? sug.kg : 30}" inputmode="decimal">`, 'Negativ = entlastet')}
       ${field('Sätze', `<input type="number" name="sets" min="1" max="10" value="${reps || b.hang.sets}" inputmode="numeric">`)}</div>
       ${field('RPE der Sätze', scale('rpe', 5, 10, null, { wide: true }), 'Ziel 7–8. Bei 9+ war die Last zu hoch.')}
       <button class="btn btn-primary btn-block" data-act="hang-save" data-i="${i}">Speichern</button></div>`);
@@ -437,8 +549,8 @@
     const fn = A[el.dataset.act] || UI.actions[el.dataset.act];
     if (fn) { ev.preventDefault(); fn(el, ev); }
   });
-  document.addEventListener('input', (ev) => { const post = ev.target.closest('#post'); if (post && ev.target.name === 'minutes') paintLoad(post); });
+  document.addEventListener('input', (ev) => { const post = ev.target.closest('#post'); if (post && ev.target.type === 'number') paintLoad(post.closest('.sheet-wrap') || post); });
 
-  window.UI = { e, $, $$, S, LIB, GD, gd, LEVELS, THEMES, find, chip, kindChip, gdBadge, scale, field, readForm, toast, sheet, closeSheet, skillOfWeek, blockHTML, sessionCard, acwrCard, acwrProjection, postForm, render, nav, views, actions: {}, afterRender: {}, renderSession };
+  window.UI = { e, $, $$, S, LIB, GD, gd, LEVELS, THEMES, find, chip, kindChip, gdBadge, scale, field, readForm, toast, sheet, closeSheet, skillOfWeek, blockHTML, sessionCard, acwrCard, acwrProjection, render, clipHTML, firstSentence, stepper, skillRate, logLine, nav, views, actions: {}, afterRender: {}, renderSession };
   document.addEventListener('DOMContentLoaded', () => { render(); if (S().draft) renderSession(); });
 })();
