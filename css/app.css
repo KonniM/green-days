@@ -454,3 +454,14 @@ details.more .field + .field { margin-top: 10px; }
 .btn, .chip-btn, .lib-card, .link-row, .scale button, .tabbar button { transition: transform .08s ease, background-color .12s ease; }
 .btn:active, .lib-card:active, .link-row:active { transform: scale(.985); }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* Physio-Tab */
+.tabbar button { min-width: 0; }
+.tabbar span { max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.phy-list { display: grid; gap: 8px; }
+.phy-list .lib-card { text-align: left; }
+.phy-list .lib-card b { display: block; font-size: 16px; }
+.phy-list .lib-card em { display: block; font-style: normal; color: var(--muted); font-size: 13px; margin-top: 2px; }
+.phy-list .lib-card.is-hit { border-color: var(--chalk); }
+.rx.rx-view { grid-template-columns: 1fr auto; }
+.plan-switch { border-top: 1px solid var(--line); padding-top: 6px; margin-top: 4px; }
