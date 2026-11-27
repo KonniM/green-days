@@ -95,6 +95,15 @@
   const anta = (min) => ({ t: 'acc', title: 'Antagonisten & Schulter', min: min || 10, ex: EX.antagonist, lines: ['2–3 Sätze Push-ups oder Dips, Außenrotation, I-Y-T, Handgelenkstrecker.', 'Locker, 2–3 Wiederholungen in Reserve.'] });
   const cool = (min) => ({ t: 'mob', title: 'Cooldown & Mobility', min: min || 8, routine: RT.cooldown, lines: ['Kurz runterfahren, Unterarme lockern, 2–3 Positionen aus der Mobility-Routine.'] });
   const info = (title, lines, min) => ({ t: 'info', title, min: min || 0, lines });
+  // Explosive Fingerbelastung stufenweise zurückholen: schnelle Züge am Griffblock (Hooper's Beta, Ringband Phase 4).
+  // Fällt weg, sobald die App die Session wegen eines Fingersignals kürzt.
+  const fast = (sets, rpe, note) => ({ t: 'str', title: 'Schnelle Block-Züge (Finger)', min: sets * 2, phy: ['pulley-injury', 4, 'rapid-mobile-board-rows', 'Schnelle Ruderzüge am Griffblock'],
+    lines: [`${sets} × 8 Züge · 90 s Pause · RPE ${rpe}`,
+      'Griffblock (20 mm) an Band oder Kabelzug als Ruderzug – ohne Band: mit leichtem Gewicht zügig vom Boden heben.',
+      'Erst 2–3 langsame Züge, dann das Tempo steigern. Die Hälfte der Sätze offen (3 Finger), die Hälfte in halber Leiste – nie voll aufstellen.',
+      'Schmerz höchstens 2/10 und am nächsten Morgen ruhig. Sonst leichter, auch wenn es langsam problemlos ginge.'].concat(note ? [note] : []),
+    re: (f) => f <= 0.85 ? info('Schnelle Block-Züge – heute gestrichen', ['Die Finger melden sich oder die Session ist gekürzt: heute keine schnellen Züge.']) : fast(sets, rpe, note) });
+  const FINGER_RULE = 'Finger-Regel: statisch und kontrolliert greifen – kein Springen, kein Nachschnappen, nicht voll aufstellen. Schmerzt ein Zug über 2/10: anderen Boulder nehmen.';
   // Ziel-Blöcke: Inhalt (aktuelle Stufe, Dosis) kommt zur Laufzeit aus deinem Fortschritt.
   const GOAL_TITLES = { 'one-arm-pull-up': 'One-Arm-Pull-up', 'front-lever': 'Front Lever', pancake: 'Pancake', 'middle-split': 'Mittelspagat', handstand: 'Handstand' };
   const GOAL_EX = { 'one-arm-pull-up': 'one-arm-pull-up-progression', 'front-lever': 'front-lever-progression' };
@@ -137,12 +146,15 @@
     { mo: [20, 22], mi: [14, 15], fr: [3, 8], label: 'Höchstes Volumen, nicht höchste Intensität' },
     { mo: [12, 15], mi: [8, 10], fr: [2, [5, 6]], label: 'Taper und Benchmark', test: true }
   ];
+  // Schnelle Block-Züge: [Sätze Mo, RPE, Sätze Fr] je Woche – Tempo und Last steigen nur, wenn der Finger ruhig bleibt.
+  const FAST = [[3, '4–5', 0], [3, '4–5', 0], [4, '5–6', 2], [2, '4', 0], [4, '6–7', 2], [4, '6–7', 2], [5, '6–8', 2], [2, '6–7', 0]];
   function maltaWeek(i) {
-    const w = MALTA[Math.min(i, MALTA.length - 1)];
+    const w = MALTA[Math.min(i, MALTA.length - 1)], fq = FAST[Math.min(i, FAST.length - 1)];
     const light = w.deload || w.test;
     const mo = S(0, 'mo', 'submax', 'Max Hangs + Submax Circuits', 'Wiederholbare submaximale Arbeit – Maxkraft nur erhalten', [4, 6], [
       warm(18, ['Vor den Max Hangs einige progressive, kontrollierte Aufwärmhänge.']),
-      hangs(light ? 1 : 2, { lines: ['Start +30 kg nur bei RPE 7–8 und sauberer Technik, sonst reduzieren.', 'Kein Muskelversagen, kein erzwungenes +2,5 kg pro Woche.'].concat(light ? ['Deload/Test: nur 1 Satz bzw. Last halten.'] : []) }),
+      hangs(light ? 1 : 2, { lines: ['Ziel RPE 7, nie über 8. Liegst du darunter (z. B. +30 kg bei RPE 5–6), darfst du alle zwei Wochen +2,5 kg nehmen.', 'Finger-Regel: Die Hänger bleiben nur drin, solange sie währenddessen und am nächsten Morgen schmerzfrei sind (höchstens 1–2/10). Halbe Leiste, nicht voll aufstellen.', 'Kein Muskelversagen, kein erzwungenes +2,5 kg pro Woche.'].concat(light ? ['Deload/Test: nur 1 Satz bzw. Last halten.'] : []) }),
+      fast(fq[0], fq[1], w.test ? 'Check: Wie hoch ist der Schmerz bei schnellen Zügen in halber Leiste? 0–1/10 heißt: bereit für dynamische Züge am Board im nächsten Block.' : w.deload ? 'Deload: leicht und locker.' : i >= 4 ? 'Wenn die letzten zwei Wochen bei höchstens 2/10 lagen: etwas mehr Widerstand, gleiches Tempo.' : 'Einstieg: leichter Widerstand. Es geht um Tempo ohne Schmerz, nicht um Last.'),
       oap(light ? 6 : 8, light ? 'Deload: 2 Sätze pro Seite, locker.' : 'Hauptreiz der Woche für dieses Ziel. Technisch sauber, RPE höchstens 7–8 – in dieser Phase kein Maximalversuch.'),
       circuits(w.mo, w.test ? { lines: ['Benchmark: derselbe Circuit wie in Woche 1 – gleicher Winkel, gleiche Griffe, gleiches Tempo. Runden, Pump nach Runde 5/10 und Erholung nach 5 min notieren.'] } : null),
       info('Technik-Cues in den Circuits', ['Fußkraft in die passende Richtung · Hüfte vor der Greifhand vorbereiten', 'Zugrichtung der Haltehand nutzen · unnötige Griffspannung abbauen']),
@@ -152,7 +164,7 @@
       warm(15, ['Sehr leichtes Bouldern, allmählich längere Bewegungsfolgen.']),
       hs(),
       arc(2, w.mi),
-      tech(18, ['15–20 min leichte Comp- und Slab-Technik – keine maximalen Dynos, keine harten Fingerzüge.', 'Achte auf Hüftposition, Momentum, Fußdruck, präzise Lastverteilung.']),
+      tech(18, ['15–20 min leichte Comp- und Slab-Technik – keine maximalen Dynos, keine harten Fingerzüge.', 'Achte auf Hüftposition, Momentum, Fußdruck, präzise Lastverteilung.', 'Dynamik nur an großen Griffen und aus den Beinen – die Finger fangen nichts ab.']),
       fl(light ? 5 : 7, light ? 'Deload: 2 Sätze.' : 'Hauptreiz der Woche für dieses Ziel.'),
       cool()
     ], { low: '1 × ARC statt 2, danach nur 10 min lockere Technik.' });
@@ -160,7 +172,8 @@
     const fr = S(4, 'fr', 'long', 'Moderates TB2 + Long Circuits', 'Boardbewegung erhalten, längere Capacity', [5, 7], [
       warm(18),
       light ? null : oap(6, 'Zweiter, kurzer Reiz: 2 Sätze pro Seite, bevor du ans Board gehst.'),
-      board('Moderates Board-Bouldern', light ? 10 : 15, [light ? '{n} Boulder V3 bei 40°, RPE max. 6.' : '{n} Boulder V3–V4 bei 40°, RPE max. 6–7.', '2–3 min Pause, keine V6-Limit-Projekte, kein wiederholtes Abfallen.', 'Zweck: boardtypische Bewegung und etwas höhere Griffbelastung erhalten.'], { ex: EX.flash, rest: [120, 150, 180], n: light ? [2, 3] : [3, 5] }),
+      fq[2] ? fast(fq[2], fq[1], 'Kurze zweite Dosis als Aktivierung vor dem Board.') : null,
+      board('Moderates Board-Bouldern', light ? 10 : 15, [light ? '{n} Boulder V3 bei 40°, RPE max. 6.' : '{n} Boulder V3–V4 bei 40°, RPE max. 6–7.', '2–3 min Pause, keine V6-Limit-Projekte, kein wiederholtes Abfallen.', 'Zweck: boardtypische Bewegung und etwas höhere Griffbelastung erhalten.', FINGER_RULE].concat(i >= 4 && !light ? ['Neu ab Woche 5: 2–3 kontrollierte Deadpoints an große Griffe – nur wenn die schnellen Block-Züge bei höchstens 1/10 liegen.'] : []), { ex: EX.flash, rest: [120, 150, 180], n: light ? [2, 3] : [3, 5] }),
       longC(frN, frMin),
       light ? null : fl(5, 'Zweiter, kurzer Reiz: 2–3 Sätze.'),
       cool()
@@ -218,11 +231,12 @@
       ].filter(Boolean), { low: 'Nur Hangs (2 Sätze) + Pull-ups (2 Sätze), Rest streichen. Bei Fingersignal: statt Hangs Block-Lifts mit 70 %.', hi: sets + (pick(T.second, st) ? 2 : 0) });
       fr = S(4, 'fr', 'limit', o.board + ' Limit Boulder', 'Maximalkraft an der Wand – kurze, harte Boulder mit langen Pausen', pick(T.frRpe, st), [
         warm(two || st >= 4 ? 24 : 22, ['3–4 Boulder am Board mit steigender Schwierigkeit, letzte 2 mit vollem Einsatz aber sicher machbar.']),
+        !two && st <= 3 ? fast(2, '6–7', 'Aktivierung und Finger-Check: Liegt der Schmerz hier über 1/10, heute nur statische Boulder – keine dynamischen Züge an Leisten.') : null,
         lim === 0
           ? board('Einstieg: Board kennenlernen', pick(T.limMin, st), ['{n} Boulder zwei Grade unter dem Limit, RPE 7, je max. 3 Versuche.', 'Griffe, Tritte und Stil des Boards lesen lernen – noch kein Limit.'], { rest: [180, 240], n: [4, 5] })
-          : board('Limit Bouldern', pick(T.limMin, st), [`{n} Boulder mit 3–6 Zügen (oder Einzelzüge härterer Boulder), je 3–5 Versuche, RPE ${pick(T.frRpe, st)[1] >= 9 ? '8–10' : '8–9'}.`, 'Pause mindestens 1 min pro gekletterten Zug (3–5 min).', 'Grifftypen mischen: 1 Leisten-, 1 Pinch-, 1 Sloper-/Weitzug-Boulder' + (two ? ' + 1 Anti-Style-Boulder.' : '.'), 'Aufhören, solange du dich noch scharf fühlst.'], { n: lim }),
+          : board('Limit Bouldern', pick(T.limMin, st), [`{n} Boulder mit 3–6 Zügen (oder Einzelzüge härterer Boulder), je 3–5 Versuche, RPE ${pick(T.frRpe, st)[1] >= 9 ? '8–10' : '8–9'}.`, 'Pause mindestens 1 min pro gekletterten Zug (3–5 min).', 'Grifftypen mischen: 1 Leisten-, 1 Pinch-, 1 Sloper-/Weitzug-Boulder' + (two ? ' + 1 Anti-Style-Boulder.' : '.'), 'Aufhören, solange du dich noch scharf fühlst.'].concat(!two && st <= 3 ? ['Finger: Dynamische Züge und volle Leiste einzeln und nur schmerzfrei dazunehmen. Reagiert ein Finger am nächsten Morgen, eine Woche zurück zu statischen Bouldern.'] : []), { n: lim }),
         anta(late ? 10 : 8), cool(6)
-      ], { low: 'Statt Limit: 5 Boulder am Flash-Level mit vollem Fokus auf saubere Ausführung, dann Schluss.', hi: Math.max(6, lim * 4) });
+      ].filter(Boolean), { low: 'Statt Limit: 5 Boulder am Flash-Level mit vollem Fokus auf saubere Ausführung, dann Schluss.', hi: Math.max(6, lim * 4) });
     }
     const lightMi = p.deload || p.test;
     mi = S(2, 'mi', 'skill', 'Skill Day + Capacity erhalten', 'Technik frisch üben, aerobe Basis mit kleiner Dosis halten', [3, 5], [
@@ -254,7 +268,7 @@
         : light
         ? board('Lockere dynamische Boulder', 20, ['{n} dynamische Boulder am Flash-Level, RPE 6. Schnell, aber entspannt.'], { ex: EX.flash, rest: [120, 180], n: [4, 5] })
         : campusOk
-          ? str('Campus / explosive Züge', 25, [`${pick([4, 5, 6, 6], st - (pe ? 0 : 2))} Sätze Ladders (z. B. 1-3-5) an großen Sprossen, 2–3 min Pause.`, 'Nur wenn Finger am Morgen 0–1/10 und kein PIP-Signal in der Vorwoche – sonst dynamische Board-Boulder.', 'Jeder Satz maximal schnell. Sobald die Geschwindigkeit fällt: Ende.'], EX.campus)
+          ? str('Campus / explosive Züge', 25, [`${pick([4, 5, 6, 6], st - (pe ? 0 : 2))} Sätze Ladders (z. B. 1-3-5) an großen Sprossen, 2–3 min Pause.`, 'Nur wenn Finger am Morgen 0–1/10, kein PIP-Signal in der Vorwoche und dynamische Züge an Leisten schmerzfrei sind – sonst dynamische Board-Boulder an guten Griffen.', 'Jeder Satz maximal schnell. Sobald die Geschwindigkeit fällt: Ende.'], EX.campus)
           : str('Explosive Pull-ups + dynamische Boulder', 25, ['4 × 3 explosive Pull-ups (so hoch wie möglich), 2 min Pause.', '6–8 Versuche an weiten, dynamischen Board-Zügen mit guten Griffen. Volle Pause.'], EX.explosive),
       fl(8, '3 Sätze der aktuellen Stufe.'),
       anta(8)
@@ -354,8 +368,8 @@
   const PHASES = [
     { id: 'malta', name: 'Malta Capacity / Base', short: 'Capacity', type: 'cap', weeks: 8, where: 'Malta · Tension Board 2',
       goal: 'Aerobe Unterarmkapazität und wiederholbare submaximale Belastung aufbauen, Maxkraft nur erhalten.',
-      points: ['3 Einheiten pro Woche: Mo Submax Circuits, Mi ARC + Technik, Fr Board + Long Circuits', 'Erst Umfang steigern, nicht gleichzeitig Schwierigkeit und Spitzenlast', 'Woche 4 Deload, Woche 8 Taper + Benchmark gegen Woche 1', 'Nebenziele in kleinen Dosen: One-Arm-Pull-up (Mo, Fr), Front Lever (Mi, Fr), Handstand (Mi, Do), Pancake und Spagat an den Ruhetagen'],
-      not: ['Keine 7:3-Repeaters, keine Density Hangs', 'Keine maximalen Weighted Pull-ups – die One-Arm-Stufen bleiben bei RPE 7–8 und wenigen Sätzen', 'Keine regelmäßigen Limit-Sessions, kein Campus, kein Pump 8–9/10'],
+      points: ['3 Einheiten pro Woche: Mo Submax Circuits, Mi ARC + Technik, Fr Board + Long Circuits', 'Erst Umfang steigern, nicht gleichzeitig Schwierigkeit und Spitzenlast', 'Finger: Max Hangs bleiben, solange sie schmerzfrei sind. Explosive Belastung kommt stufenweise zurück – schnelle Block-Züge Mo und ab Woche 3 auch Fr, Schmerz höchstens 2/10', 'Woche 4 Deload, Woche 8 Taper + Benchmark gegen Woche 1', 'Nebenziele in kleinen Dosen: One-Arm-Pull-up (Mo, Fr), Front Lever (Mi, Fr), Handstand (Mi, Do), Pancake und Spagat an den Ruhetagen'],
+      not: ['Kein Springen, kein Nachschnappen und kein voller Aufsteller an kleinen Griffen, solange Mittel- oder Ringfinger dabei schmerzen', 'Keine 7:3-Repeaters, keine Density Hangs', 'Keine maximalen Weighted Pull-ups – die One-Arm-Stufen bleiben bei RPE 7–8 und wenigen Sätzen', 'Keine regelmäßigen Limit-Sessions, kein Campus, kein Pump 8–9/10'],
       themes: ['foundations', 'slab', 'tension'], week: maltaWeek },
     { id: 'strength1', name: 'Max Strength & Recruitment', short: 'Maxkraft', type: 'str', weeks: 10, where: 'Ravensburg · MoonBoard, Hangboard + Gewichte',
       goal: 'Finger- und Zugkraft kontrolliert aufbauen. Aerobes Volumen sinkt auf Erhaltungsdosis, schwere Fingerlast steigt schrittweise.',

@@ -139,6 +139,7 @@
       if (sk) extra += `<p class="one">${e(sk.one_de || firstSentence(sk.concept_de))}</p>` + clipHTML(sk, 'clip-sm') + `<button class="link-row" data-act="lib-open" data-id="${e(sk.id)}"><span>Fokus: <b>${e(sk.name_de)}</b></span><span>Drills ›</span></button>`;
     }
     if (ex && !(b.t === 'goal' && window.Goals && Goals.cur(b.goal))) extra += `<button class="link-row" data-act="lib-open" data-id="${e(b.ex)}"><span>${e(ex.item.name_de)}</span><span>Cues & Video ›</span></button>`;
+    if (b.phy) extra += `<button class="link-row" data-act="phy-ex" data-c="${e(b.phy[0])}" data-p="${b.phy[1]}" data-ex="${e(b.phy[2])}"><span>${e(b.phy[3] || 'So geht die Übung')}</span><span>Ablauf & Video ›</span></button>`;
     if (rt) extra += `<button class="link-row" data-act="routine-open" data-id="${e(b.routine)}"><span>${e(rt.item.name_de)}</span><span>Routine ›</span></button>`;
     let ctrl = '';
     if (live) {
