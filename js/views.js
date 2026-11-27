@@ -25,6 +25,7 @@
     const daysLeft = D.diff(Plan.end(), today);
     let h = `<div class="date-head"><h1>Plan</h1><span>${daysLeft > 0 ? `noch ${Math.ceil(daysLeft / 7)} Wochen bis zum Ziel` : ''}</span></div>
       <div class="goal-card card"><span class="eyebrow">Ziel</span><h3>Outdoor 8A im November 2027</h3>
+      <p class="meta">Plan-Stand ${e(self.GD_VERSION || '')} · ${total} Wochen · Ende ${e(D.fmt(Plan.end(), { day: 'numeric', month: 'long', year: 'numeric' }))}</p>
       ${window.Grades ? `<p class="meta">Grad-Leiter: Limit jetzt <b>${e(Grades.fmtLevel(Grades.level(today)))}</b> → letzte Woche <b>${e(Grades.fmt(Grades.GOAL))}</b>. Alle Grade im Plan hängen daran.</p>` : ''}
       <div class="macro" aria-label="Jahresplan">${list.map(p => `<button class="macro-seg ph-${p.type}${cur && cur.phase.id === p.id ? ' is-cur' : ''}" style="flex:${p.weeks}" data-act="phase-open" data-id="${p.id}" aria-label="${e(p.name)}"><span>${p.idx + 1}</span></button>`).join('')}</div>
       <div class="macro-axis"><span>${e(D.fmt(list[0].start, { month: 'short', year: 'numeric' }))}</span><span>${e(D.fmt(Plan.end(), { month: 'short', year: 'numeric' }))}</span></div>
@@ -334,6 +335,9 @@
       <button class="btn btn-primary btn-block" data-act="settings-save">Speichern</button>
       <span class="eyebrow">Was die App über dich gelernt hat</span>
       <p class="hint">${learnedText()}</p>
+      <span class="eyebrow">App</span>
+      <p class="hint">Version ${e(self.GD_VERSION || '–')} · Plan: ${Plan.layout().reduce((a, x) => a + x.weeks, 0)} Wochen bis ${e(D.fmt(Plan.end(), { day: 'numeric', month: 'long', year: 'numeric' }))}. Beim Aktualisieren bleiben deine Daten erhalten.</p>
+      <button class="btn btn-ghost btn-block" data-act="app-update">Neueste Version laden</button>
       <span class="eyebrow">Datensicherung</span>
       <p class="hint">Alle Daten liegen nur auf diesem Gerät. Sichere sie regelmäßig als Datei.</p>
       <button class="btn btn-ghost btn-block" data-act="export">Sicherung exportieren</button>
