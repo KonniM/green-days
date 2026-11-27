@@ -1,5 +1,5 @@
 /* Green Days — Jahresplan in Zyklen: Malta Capacity → Max Strength (Ravensburg) → Power →
-   Test-Woche → Strength II → Power/PE → Spezifität → Taper & Perform (Oktober 2027).
+   Test-Woche → Strength II → Power/PE → Spezifität → Taper & Perform (November 2027).
    Aufbau nach Paradigm (eine Hauptanpassung pro Phase/Session, Green Days, ACWR) und Lattice
    (Capacity vor Intensität, Erhaltungsdosen, Deloads). */
 (function () {
@@ -213,7 +213,7 @@
     lim: [0, 3, 3, 3, 4, 4, 4, 4, 4], limMin: [35, 38, 40, 42, 48, 50, 50, 50, 50], frRpe: [[6, 7], [6, 8], [7, 8], [7, 8], [7, 8], [7, 9], [7, 9], [8, 9], [8, 9]] };
   const ST2 = { sets: [4, 4, 4, 4, 5, 5, 5, 5], secs: [7, 7, 10, 10, 10, 10, 10, 10], pull: ['4 × 3', '4 × 3', '5 × 3', '5 × 3', '5 × 2', '5 × 2', '4 × 2', '4 × 2'], pullRpe: [8, 8, 8, 8, 8, 8, 8, 8],
     moRpe: [[6, 7], [6, 7], [6, 7], [6, 8], [6, 8], [6, 8], [6, 8], [6, 8]], second: [1, 1, 1, 1, 1, 1, 1, 1], core: [1, 1, 1, 1, 1, 1, 1, 1],
-    lim: [4, 4, 4, 4, 5, 5, 5, 5], limMin: [44, 46, 47, 48, 50, 50, 50, 50], frRpe: [[7, 9], [8, 9], [8, 9], [8, 9], [8, 9], [8, 9], [8, 9], [8, 9]] };
+    lim: [4, 4, 4, 4, 4, 5, 5, 5], limMin: [44, 46, 47, 48, 48, 50, 50, 50], frRpe: [[7, 9], [8, 9], [8, 9], [8, 9], [8, 9], [8, 9], [8, 9], [8, 9]] };
   // Zweiter Griff: Kraftblock I ab Stufe 4 (Woche 5) im Wechsel volle Leiste / offene Hand / Loch, Kraftblock II Pinch / volle Leiste / Loch
   function secondGrip(st, two, o) {
     const base = hangs(2, { target: 7, title: two ? o.gripTitle : 'Open Hand / 3-Finger-Drag', ex: two ? EX.blockLift : EX.openHang, grip: two ? o.grip : '3-Finger-Drag', secs: 7, rest: 180, lines: ['Grip-Rotation: anderer Gelenkwinkel, damit nicht immer dieselbe Struktur (PIP, A2) die Last trägt.', 'RPE 7 – das ist Ergänzung, kein zweiter Maxreiz.'] });
@@ -290,6 +290,8 @@
   // =====================================================================
   function powerWeek(i, n, o) {
     const p = pattern(n)[i], st = p.step, pe = !!o.pe, light = !!p.deload, test = !!p.test;
+    // Langer zweiter Block (ab 7 Wochen): erste Hälfte Kontaktkraft und Limit-Züge, nach dem Deload Power Endurance
+    const split = pe && n >= 7, peFri = pe && (!split || st >= 3), ps = split ? st - 3 : st;
     const campusOk = st >= (pe ? 0 : 2);
     const mo = S(0, 'mo', 'power', 'Power + Kraft erhalten', 'Kraft in schnelle Bewegung umsetzen – wenige, explosive Versuche', light ? [5, 6] : test ? [6, 8] : [7, 9], [
       warm(22, ['Aufwärm-Leiter an der Leiste, dann 2–3 dynamische Züge an guten Griffen.']),
@@ -319,21 +321,21 @@
         board('Benchmark-Vergleich', 40, ['2–3 Boulder aus den ersten Wochen wiederholen: weniger Versuche? Kontrollierter?', 'Danach 2 neue Boulder am Flash-Level ({g:flash}). Kein Limit-Projektieren.'], { rest: [180, 240, 300], ex: EX.bench, n: 5 }),
         anta(), cool(6)
       ], { hi: 8 })
-      : pe
+      : peFri
       ? S(4, 'fr', 'pe', 'Lange Boulder & Linkups', 'Kraft wiederholt abrufen – Qualität bleibt der Maßstab', light ? [5, 6] : [7, 9], [
         warm(22),
         light
           ? board('Moderate längere Boulder', 25, ['{n} Boulder mit 8–12 Zügen am Flash-Level ({g:flash}).'], { ex: EX.flash, rest: [180], n: 4 })
-          : st < 2
+          : ps < 2
             ? board('Lange Boulder', 45, ['{n} Boulder mit 6–12 Zügen ({g:near}) bei RPE 8, je 2–3 Versuche, 4–5 min Pause.', 'Oder Linkups: Boulder A direkt in Boulder B.'], { ex: EX.long, rest: [240, 300], n: [4, 5] })
-            : board('Boulder Triples', 45, ['{n} Sätze: denselben fordernden Boulder ({g:flash} bis {g:near}) 3 × klettern, 90 s zwischen den Gos, 6–8 min Satzpause.', 'Pump bis 6–7/10 ist hier okay – aber kein Versuch mit schlechter Technik.'], { ex: EX.triples, rest: [90, 360, 480], n: pick([3, 3, 4, 4], st - 2), unit: 'Sätze' }),
+            : board('Boulder Triples', 45, ['{n} Sätze: denselben fordernden Boulder ({g:flash} bis {g:near}) 3 × klettern, 90 s zwischen den Gos, 6–8 min Satzpause.', 'Pump bis 6–7/10 ist hier okay – aber kein Versuch mit schlechter Technik.'], { ex: EX.triples, rest: [90, 360, 480], n: pick([3, 3, 4, 4], ps - 2), unit: 'Sätze' }),
         anta(), cool(6)
       ], { low: '3 längere Boulder am Flash-Level ({g:flash}), lange Pausen.', hi: light ? 0 : 10 })
       : S(4, 'fr', 'limit', 'Limit Boulder: weite Züge & Kontaktkraft', 'Harte Einzelzüge mit vollem Einsatz', light ? [5, 6] : [8, 9], [
         warm(24),
         light
           ? board('Moderates Board-Bouldern', 25, ['{n} Boulder am Flash-Level ({g:flash}), RPE 6.'], { ex: EX.flash, rest: [120, 180], n: 5 })
-          : board('Limit Bouldern', 50, ['{n} Boulder mit 3–6 Zügen, je 3–5 Versuche, RPE 8–10.', 'Zielgrad: {g:limit}.', 'Schwerpunkt: weite, schnelle Züge und Griffe, die du im Flug treffen musst.', 'Zusätzlich 1 Boulder als echter Flash-Versuch: lesen, visualisieren, ein Go.', 'Pause mindestens 1 min pro gekletterten Zug.'], { n: pick([3, 4, 4, 4], st) }),
+          : board('Limit Bouldern', 50, ['{n} Boulder mit 3–6 Zügen, je 3–5 Versuche, RPE 8–10.', 'Zielgrad: {g:limit}.', 'Schwerpunkt: weite, schnelle Züge und Griffe, die du im Flug treffen musst.', 'Zusätzlich 1 Boulder als echter Flash-Versuch: lesen, visualisieren, ein Go.', 'Pause mindestens 1 min pro gekletterten Zug.'], { n: pick([3, 3, 4, 4], st) }),
         anta(), cool(6)
       ], { low: '5 Boulder am Flash-Level ({g:flash}), sauber und schnell.', hi: light ? 0 : 14 });
     return { label: p.test ? 'Power-Check & Taper' : p.deload ? 'Deload' : 'Aufbau ' + (st + 1), deload: !!p.deload, test: !!p.test, sessions: [mo, mi, fr].concat(restDays(false)) };
@@ -431,9 +433,9 @@
       points: ['Elf Wochen mit acht Aufbauwochen: Die Zeit des gekürzten Frühjahrsblocks steckt hier, weil Fingerkraft dein Engpass ist', 'Max Hangs 4–5 Sätze, 7–10 s, plus zweiter Grifftyp im Wechsel: Pinch-Block, volle Leiste, Löcher', 'Pro Übung steigt pro Woche nur eine Größe: In Wochen mit mehr Sätzen, längeren Hängern oder neuem Schema bleibt die Last gleich', 'Weighted Pull-ups schwerer und kürzer', 'Fr Limit Boulder mit einem Anti-Style-Boulder pro Session'],
       not: ['Kein Campus', 'Keine Pump-Einheiten'],
       themes: ['tension', 'foundations', 'slab'], week: (i, n) => strengthWeek(i, n, { board: 'Board', second: true, grip: 'Pinch', gripTitle: 'Pinch-Block Lifts' }) },
-    { id: 'power2', name: 'Power & Power Endurance', short: 'Power / PE', type: 'pow', weeks: 4, flex: true, where: 'Ort offen · Board, Campusboard',
-      goal: 'Kraft wiederholt und über längere Boulder abrufen. Rhythmus, Snap und Flow entstehen hier.',
-      points: ['Mo Power (Campus / explosive Züge) + Hang-Erhalt', 'Fr lange Boulder (6–12 Züge), Linkups, später Boulder Triples', 'Mi Skill Day: Taktik, Pacing, Flash-Strategie'],
+    { id: 'power2', name: 'Power & Power Endurance', short: 'Power / PE', type: 'pow', weeks: 8, flex: true, where: 'Ort offen · Board, Campusboard',
+      goal: 'Die aufgebaute Kraft in schnelle, harte Züge umsetzen und sie dann wiederholt über längere Boulder abrufen. Rhythmus, Snap und Flow entstehen hier.',
+      points: ['Acht Wochen in zwei Hälften, dazwischen ein Deload', 'Woche 1–3 Kontaktkraft: Mo Power (Campus / explosive Züge) + Hang-Erhalt, Fr Limit Boulder mit weiten, schnellen Zügen', 'Woche 5–7 Power Endurance: Mo Power bleibt, Fr lange Boulder (6–12 Züge), Linkups, dann Boulder Triples', 'Mi Skill Day: Taktik, Pacing, Flash-Strategie', 'Woche 8 Power-Check – danach beginnt die Projekt-Vorbereitung'],
       not: ['Kein Versuch mit schlechter Technik – Qualität bleibt der Maßstab'],
       themes: ['dynamic', 'tactics', 'mental'], week: (i, n) => powerWeek(i, n, { pe: true }) },
     { id: 'spec', name: 'Spezifität & Simulation', short: 'Spezifisch', type: 'perf', weeks: 4, flex: true, where: 'Ort offen · Projektgebiet',
@@ -442,7 +444,7 @@
       not: ['Keine neuen Trainingsreize', 'Kein hohes Volumen'],
       themes: ['outdoor', 'tactics', 'mental'], week: specWeek },
     { id: 'taper', name: 'Taper & Perform', short: '8A', type: 'perf', weeks: 5, flex: true, where: 'Projektgebiet',
-      goal: 'Frisch und gefährlich auftauchen. Weniger Einheiten, mehr Ruhe, beste Felsqualität.',
+      goal: 'Frisch und gefährlich auftauchen. Weniger Einheiten, mehr Ruhe, beste Felsqualität. Das Performance-Fenster liegt im November.',
       points: ['Mo kurzer Primer, Mi Mobility + Visualisierung', 'Sa Projekt-Tag mit festem Versuchsplan', 'Haut, Schlaf und Bedingungen haben Priorität'],
       not: ['Nichts Neues ausprobieren', 'Kein „Tank leeren“'],
       themes: ['mental', 'outdoor', 'tactics'], week: taperWeek }

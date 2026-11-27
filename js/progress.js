@@ -218,7 +218,7 @@
     const ts = techShare();
     const themes = Object.keys(THEMES).map(t => { const l = LIB.skills.filter(s => s.theme === t); return { t, n: l.length, rated: l.filter(s => S().skillLevels[s.id]).length, avg: l.length ? l.reduce((a, s) => a + (S().skillLevels[s.id] || 0), 0) / l.length : 0 }; }).filter(x => x.n);
     const tile = (big, label, sub) => `<div class="tile"><b>${big}</b><span>${e(label)}</span>${sub ? `<em>${e(sub)}</em>` : ''}</div>`;
-    return `<article class="card hero-goal"><span class="eyebrow">Auf dem Weg zu 8A · Oktober 2027</span>
+    return `<article class="card hero-goal"><span class="eyebrow">Auf dem Weg zu 8A · November 2027</span>
         <h3>${wk ? `Woche ${wk} von ${total}` : 'Der Plan startet am ' + e(D.long(list[0].start))}${w ? ` · ${e(w.phase.short)}` : ''}</h3>
         <div class="macro">${list.map(p => `<span class="macro-seg ph-${p.type}${w && w.phase.id === p.id ? ' is-cur' : ''}" style="flex:${p.weeks}"></span>`).join('')}</div>
         <span class="pbar pbar-lg"><i style="width:${Math.round(wk / total * 100)}%"></i></span></article>
