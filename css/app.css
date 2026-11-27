@@ -465,3 +465,18 @@ details.more .field + .field { margin-top: 10px; }
 .phy-list .lib-card.is-hit { border-color: var(--chalk); }
 .rx.rx-view { grid-template-columns: 1fr auto; }
 .plan-switch { border-top: 1px solid var(--line); padding-top: 6px; margin-top: 4px; }
+
+/* Bewegungsprinzipien */
+.lib-card.is-week { border-color: var(--chalk); }
+.drill .tag { display: inline-block; font-size: 11px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
+.block.bt-prin { border-style: dashed; }
+
+/* Grad-Log */
+.ggrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin: 6px 0 10px; }
+.gcell { display: grid; grid-template-columns: 1fr 34px; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--surface); overflow: hidden; }
+.gcell.on { border-color: var(--chalk); }
+.gnum { display: grid; justify-items: start; gap: 1px; padding: 8px 10px; min-height: 58px; text-align: left; }
+.gnum b { font: 700 15px var(--display); } .gnum em { font-style: normal; font-size: 11.5px; color: var(--muted); }
+.gnum i { font-style: normal; font: 800 18px var(--display); font-variant-numeric: tabular-nums; color: var(--muted); }
+.gcell.on .gnum i { color: var(--text); }
+.gdec { border-left: 1px solid var(--line); color: var(--muted); font-size: 20px; }

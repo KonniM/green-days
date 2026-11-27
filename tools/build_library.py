@@ -51,6 +51,21 @@ for k in ('skills', 'mobility', 'exercises'):
             x['clip'] = {'v': c['video'], 's': int(c['start_s']), 'e': int(c['end_s'])}
             if c.get('needs_sound'):
                 x['clip']['snd'] = 1
+# --- Bewegungsprinzipien und genauere Prüfpunkte je Technik ---
+moves = load('technique_principles.json', {})
+skill_ids = {x['id'] for x in lib['skills']}
+lib['moves'] = []
+for p in moves.get('principles', []):
+    p = dict(p)
+    p['skills'] = [s for s in p.get('skills', []) if s in skill_ids]
+    lib['moves'].append(p)
+watch = load('skills_watch.json', {}).get('skills', {})
+for x in lib['skills']:
+    w = watch.get(x['id'])
+    if w:
+        for k in ('what_de', 'watch_de', 'right_de', 'elite_de', 'when_de'):
+            if w.get(k):
+                x[k] = w[k]
 goals = load('goals.json', {})
 lib['goals'] = []
 for g in goals.get('goals', []):
@@ -89,5 +104,6 @@ with open(os.path.join(ROOT, 'js', 'library.js'), 'w', encoding='utf-8') as f:
     json.dump(lib, f, ensure_ascii=False, separators=(',', ':'))
     f.write(';\n')
 print({k: (len(v.get('conditions', [])) if k == 'injury' else len(v)) for k, v in lib.items()})
+print('Skills mit Prüfpunkten:', sum(1 for x in lib['skills'] if x.get('watch_de')))
 print('Clips:', {k: sum(1 for x in lib[k] if x.get('clip')) for k in ('skills', 'mobility')}, 'Ziel-Clips:', sum(1 for g in lib['goals'] for st in g.get('steps', []) if st.get('clip')))
 print('mit Video:', {k: sum(1 for x in lib[k] if x.get('video')) for k in ('exercises', 'skills', 'mobility', 'assessments')})

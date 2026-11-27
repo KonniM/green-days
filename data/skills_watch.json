@@ -1,0 +1,1015 @@
+{
+ "skills": {
+  "praezise-leise-tritte": {
+   "what_de": "Du setzt jeden Fuß genau einmal, gezielt und ohne Geräusch auf die beste Stelle des Tritts. Dann trägt er sofort, und du verlierst keine Kraft durch Nachrutschen oder Nachjustieren.",
+   "watch_de": [
+    "Vor dem Lösen: Tritt ansehen und die beste Stelle festlegen (Kante, Delle, höchster Punkt). Du zielst auf einen Punkt so groß wie ein Daumennagel, nicht auf »den Tritt«.",
+    "Auf dem Weg: Fuß über das Knie führen und kurz vor dem Tritt abbremsen. Die Spitze kommt von oben auf den Tritt, sie schleift nicht von unten an der Wand entlang.",
+    "Beim Aufsetzen: vorderster Rand der Großzehe auf den Punkt. Der Blick bleibt am Fuß, bis du Druck im Zeh spürst – erst dann wandert er zum nächsten Griff.",
+    "Direkt danach: Druck auf den Fuß bringen, bevor die Hand zieht. Unter Last steht der Fuß still; dreht oder rutscht er, war die Stelle oder der Winkel falsch."
+   ],
+   "right_de": [
+    "Im Video bewegt sich der Fuß nach dem ersten Kontakt nicht mehr: kein Antippen, kein Nachrutschen.",
+    "Du hörst nichts, auch nicht im Steilen.",
+    "Du kannst nach dem Boulder sagen, welcher Teil der Zehe auf welcher Stelle des Tritts stand."
+   ],
+   "elite_de": [
+    "Fehler passieren meist beim Abbremsen, nicht beim Zielen: Wer den Fuß erst am Tritt stoppt, prallt ab. Nimm das Tempo eine Handbreit vorher raus.",
+    "Bei tiefen oder seitlichen Tritten die Hüfte kurz von der Wand lösen, damit du den Tritt wirklich siehst. Blind setzen ist am Board der häufigste Grund fürs Nachjustieren.",
+    "Setz den Fuß gleich in dem Winkel und auf der Kante, die du am Ende des Zugs brauchst – nicht so, wie es jetzt gerade bequem ist.",
+    "Unter Ermüdung wird der Blick als Erstes kürzer. In den letzten Zügen bewusst länger auf den Fuß schauen."
+   ],
+   "when_de": "Bei jedem Tritt, vor allem auf kleinen Tritten und am Board, wo ein nachgerutschter Fuß sofort Spannung kostet; nur bei Sprüngen und Anläufen ist Tempo wichtiger als lautloses Setzen."
+  },
+  "kantenwahl-und-zehendruck": {
+   "what_de": "Du entscheidest, welcher Teil des Schuhs auf dem Tritt steht (Innenkante, Spitze, Außenkante) und in welche Richtung du drückst. Die Kante legt fest, wohin sich die Hüfte drehen kann; die Druckrichtung, ob der Fuß hält.",
+   "watch_de": [
+    "Vor dem Setzen: Wohin zeigt die Hüfte am Ende des Zugs? Bleibt sie frontal: Innenkante an der Großzehe. Dreht sie ein: Außenkante an der Kleinzehe. Brauchst du beides: Spitze.",
+    "Beim Setzen: nur den vordersten Teil des Schuhs auf den Tritt. Steht der halbe Vorfuß drauf, blockiert der Schuh die Drehung und du musst später umsetzen.",
+    "Beim Belasten: Druck senkrecht in die Trittfläche. Ist sie nach außen geneigt, muss die Hüfte näher über den Fuß, bis der Druck in den Tritt zeigt statt an ihm entlang.",
+    "Im Überhang, bevor die Hand loslässt: Zehen krallen, Ferse leicht senken und den Tritt Richtung Hüfte ziehen. Das ist Zug, kein Druck – er hält die Hüfte an der Wand.",
+    "Wenn der Körper dreht: auf dem Punkt unter der Großzehe drehen. Die Ferse schwenkt, der Druck bleibt. Nicht abheben und neu setzen."
+   ],
+   "right_de": [
+    "Du musst im Zug nicht umsetzen: Die Kante passt am Anfang und am Ende.",
+    "Beim Drehen bleibt die Zehe auf demselben Punkt des Tritts.",
+    "Im Steilen spürst du Zug in Wade und hinterem Oberschenkel, nicht nur Druck in der Zehe."
+   ],
+   "elite_de": [
+    "Fersenhöhe ist eine Stellschraube: tiefer bringt mehr Gummi und mehr Zug zur Wand (schräge Tritte, steil), höher bringt Druck auf eine scharfe Kante. Vor dem Belasten wählen, unter Last nicht mehr ändern.",
+    "Auf runden Board-Tritten die Spitze so ansetzen, dass die Zehe hinter die höchste Stelle greift. Steht sie auf der Vorderseite, zieht dich dein eigener Zug vom Tritt.",
+    "Außenkante heißt: vorn an der Kleinzehe, nicht die Schuhseite in Fußmitte. Zu weit hinten kannst du nicht mehr auf die Zehen hochdrücken.",
+    "Plane die Kante für zwei Züge: Wenn du erst eindrehst und danach wieder frontal greifst, ist die Spitze oft besser als eine der beiden Kanten."
+   ],
+   "when_de": "Bei jedem Tritt, der kleiner ist als dein Vorfuß, und immer wenn sich die Hüftposition im Zug ändert; auf großen Tritten und Volumen zählt eher die Auflagefläche als die Kante."
+  },
+  "gestreckte-arme": {
+   "what_de": "Du hängst zwischen den Zügen am langen Arm und holst die Höhe aus Beinen und Hüftdrehung. So trägt das Skelett statt des Bizeps; gebeugt wird nur kurz für den Zug selbst.",
+   "watch_de": [
+    "In der Ausgangsposition: Arm lang, aber Schulterblatt leicht nach unten gezogen. Der Kopf sinkt nicht zwischen die Schultern – lang heißt nicht schlaff.",
+    "Vor dem Zug: erst die Füße höher setzen, während die Arme lang bleiben. Die Hüfte sinkt dabei kurz nach unten-außen; das ist richtig so.",
+    "Im Zug: Beine strecken und die Hüfte der Greifhand zur Wand drehen. Der Haltearm ist die Achse, um die du drehst; er beugt erst am Ende, wenn die Beine nicht mehr schieben.",
+    "Nach dem Greifen: wieder in den langen Arm sinken und die Hüfte unter den neuen Griff bringen, bevor du die Füße sortierst."
+   ],
+   "right_de": [
+    "Im Profil-Video ist der Ellbogen fast gestreckt, während du Füße setzt.",
+    "Die Hüfte steigt vor der Schulter: erst kommen die Beine, dann der Arm.",
+    "Bei gleicher Beta kommst du oben mit weniger Pump im Bizeps an."
+   ],
+   "elite_de": [
+    "Am 40°-Board gilt das nur zwischen den Zügen. Auf schlechten Griffen und Tritten brauchst du oft leicht gebeugte Arme und eine hohe Hüfte, damit die Füße Druck behalten – ein langer Arm mit hängender Hüfte zieht sie vom Tritt.",
+    "Sink in den langen Arm, indem du die Knie beugst, nicht indem du die Schulter loslässt.",
+    "Aus dem langen Arm zu starten gibt dir Weg zum Beschleunigen. Wer schon angewinkelt startet, hat für einen weiten Zug nur noch Armkraft.",
+    "Wenn du merkst, dass du dauernd blockierst, such den Fehler zuerst bei Tritt und Hüfte: Fuß zu tief oder auf der falschen Seite erzwingt den gebeugten Arm."
+   ],
+   "when_de": "Zum Füßesetzen, Ruhen und in allen Zügen, in denen die Beine schieben können; nicht starr daran festhalten, wenn im Steilen nur ein angewinkelter Arm die Hüfte hoch und die Füße auf dem Tritt hält."
+  },
+  "hueftposition-offen-geschlossen": {
+   "what_de": "Offen heißt: beide Knie zeigen nach außen, das Becken liegt frontal an der Wand. Geschlossen heißt: eine Hüftseite ist zur Wand gedreht. Die Wahl bestimmt Reichweite, Balance und wie viel Last die Finger tragen.",
+   "watch_de": [
+    "Vor dem Zug: Tritte ansehen. Stehen sie breit und etwa gleich hoch, geht offen. Liegen sie auf einer Seite oder übereinander, drehst du ein. Entscheiden, bevor du die Füße setzt.",
+    "Offen: Füße auf Innenkante oder Spitze, Knie weit nach außen, Schambein zur Wand schieben. So kannst du das Gewicht zwischen den Füßen verschieben, ohne umzusetzen.",
+    "Geschlossen: erst den Fuß auf die Außenkante drehen, dann die Hüfte der Greifhand zur Wand, dann die Schulter. Das Knie dieser Seite zeigt nach innen-unten.",
+    "Im Zug: Die Hüfte bewegt sich zuerst Richtung Zielgriff, die Hand löst sich danach. Dreht nur die Schulter, bleibt das Becken draußen und die Finger zahlen.",
+    "Beim Ankommen: prüfen, ob du die Position am neuen Griff halten kannst oder die Hüfte sofort zurückmuss. Das zeigt, ob die Wahl gepasst hat."
+   ],
+   "right_de": [
+    "Im Profil bleibt das Becken nah an der Wand, das Gesäß steht nicht heraus.",
+    "Der Zielgriff kommt mit fast gestrecktem Haltearm in Reichweite.",
+    "Du kannst nach beiden Varianten desselben Zugs sagen, welche weniger Fingerkraft gebraucht hat."
+   ],
+   "elite_de": [
+    "Offen wird am Board unterschätzt: Mit breiten Füßen und Knien außen bleibt das Becken nah, und du kannst nach beiden Seiten greifen. Fehlt die Hüftbeweglichkeit, schiebt das Gesäß raus – dann lieber eindrehen.",
+    "Geschlossen verlängert die Reichweite, macht aber den nächsten Zug zur anderen Seite teuer, weil du erst zurückdrehen musst. Lies zwei Züge voraus.",
+    "Die Hüfthöhe zählt genauso wie die Drehung: Tief eingedreht bringt Reichweite zur Seite, hoch eingedreht Reichweite nach oben.",
+    "Halb eingedreht ist meist die schlechteste Lösung: Die Füße blockieren und der Arm muss beugen. Entscheide dich ganz und stell die Füße passend."
+   ],
+   "when_de": "Offen bei breiten Tritten, Kompression und wenn es danach zur anderen Seite weitergeht; geschlossen bei weiten Zügen und Tritten auf nur einer Seite – falsch ist jede Variante, die dich zum Umtreten zwingt."
+  },
+  "flagging": {
+   "what_de": "Du streckst das freie Bein als Gegengewicht zur Seite oder hinter das Standbein, statt einen zweiten Tritt zu suchen. Das verhindert, dass du wie eine offene Tür von der Wand wegdrehst.",
+   "watch_de": [
+    "Vor dem Zug: eine senkrechte Linie vom Haltegriff nach unten denken. Steht dein Fuß auf dieser Linie, bist du stabil. Je weiter die Greifhand rausgeht, desto mehr Gegengewicht brauchst du.",
+    "Flag wählen: Steht der Fuß gegenüber der Haltehand, geht das freie Bein weit zur Seite (Outside Flag). Steht der Fuß auf der Seite der Haltehand: hinter dem Standbein durch (Back Flag) oder davor (Inside Flag).",
+    "Bevor die Hand loslässt: Flag-Bein strecken und Zehen oder Schuhkante gegen die Wand drücken. Der Druck gegen die Wand stabilisiert, nicht nur das Gewicht des Beins.",
+    "Im Zug: Das Bein bleibt lang und wandert gegen die Greifrichtung – je weiter die Hand, desto weiter das Bein. Knickt es ein, geht die Tür auf.",
+    "Nach dem Greifen: Flag erst lösen, wenn die neue Hand belastet ist. Dann das Bein direkt zum nächsten Tritt führen."
+   ],
+   "right_de": [
+    "Du kannst die Greifhand kurz über dem Zielgriff schweben lassen, ohne wegzudrehen.",
+    "Im Video von hinten bilden Greifarm und Flag-Bein eine gestreckte Linie durch den Körper.",
+    "Du kommst ohne Fußwechsel aus, wo vorher zwei nötig waren."
+   ],
+   "elite_de": [
+    "Am steilen Board muss das Flag-Bein aus Gesäß und hinterem Oberschenkel aktiv lang gehalten werden. Hängt es nur, sackt die Hüfte durch und der Standfuß verliert Druck.",
+    "Back Flag bringt die Hüfte an die Wand und verlängert die Reichweite; Inside Flag hält dich tiefer und frontaler. Inside lohnt sich, wenn der Standfuß hoch ist oder das Bein danach direkt weitertreten soll.",
+    "Die Position des Flag-Fußes ist eine Stellschraube: je weiter zur Seite, desto mehr Gegengewicht. Teste beim selben Zug zwei Positionen und vergleiche die Last an der Haltehand.",
+    "Auf der Spitze stehen, damit der Standfuß drehen kann. Steht die ganze Innenkante auf dem Tritt, blockiert das Knie den Back Flag."
+   ],
+   "when_de": "Wenn nur ein brauchbarer Tritt da ist oder Umtreten zwei Extrabewegungen kostet; nicht, wenn ein zweiter Tritt echten Schub oder Zug geben würde – ein belasteter Fuß ist besser als ein Gegengewicht."
+  },
+  "drop-knee": {
+   "what_de": "Du stellst einen Fuß auf die Außenkante und drehst das Knie nach innen-unten, bis beide Füße gegeneinander drücken. Das zieht die Hüfte an die Wand, verlängert die Reichweite und nimmt im Steilen Last von den Fingern.",
+   "watch_de": [
+    "Fuß setzen: Der Drop-Knee-Fuß steht seitlich, etwa auf Knie- bis Hüfthöhe, nur mit der Spitze auf dem Tritt, damit er drehen kann. Der andere Fuß steht als Gegenlager auf der anderen Seite.",
+    "Eindrehen: auf der Zehe drehen, bis die Außenkante trägt. Das Knie sinkt nach innen-unten und die Hüfte dieser Seite dreht mit zur Wand – nie das Knie allein.",
+    "Verspannen, bevor die Hand loslässt: Beide Füße drücken auseinander, als wolltest du die Tritte voneinander wegschieben. Dieser Druck hält dich, nicht die Kniestellung.",
+    "Im Zug: aus dem Drop-Knee-Bein nach oben schieben und die Hüfte unter den Zielgriff bringen. Die Hand geht erst los, wenn die Hüfte steigt.",
+    "Ankommen: Spannung zwischen den Füßen halten, bis der Griff sitzt. Dann kontrolliert zurückdrehen, nicht herausfallen."
+   ],
+   "right_de": [
+    "Die Haltehand wird in der Position spürbar leichter; du könntest die Greifhand kurz schweben lassen.",
+    "Im Profil ist die Hüfte näher an der Wand als die Schultern.",
+    "Beide Füße bleiben beim Greifen stehen."
+   ],
+   "elite_de": [
+    "Die Tiefe dosieren: Ein halber Drop Knee (Knie zeigt nur zur Seite) reicht oft für Stabilität und lässt dich schneller weiter. Der tiefe bringt mehr Reichweite, kostet aber Zeit und belastet das Knie.",
+    "Der Gegenfuß ist die halbe Technik: Er muss in die Gegenrichtung drücken können. Lassen sich die Tritte nicht auseinanderdrücken, verspannt nichts – dann eher Backstep oder Flag.",
+    "Am Board die Hüfte nicht nur drehen, sondern anheben. Wer in den Drop Knee hineinsackt, hängt tiefer und verliert die Reichweite, die er gewinnen wollte.",
+    "Je höher und weiter der Drop-Knee-Tritt, desto mehr Drehkraft im Knie. Nur warm und langsam eindrehen; bei Ziehen an der Knie-Innenseite sofort raus."
+   ],
+   "when_de": "Bei weiten Zügen im Steilen mit zwei Tritten, die sich auseinanderdrücken lassen, besonders an Seit- und Untergriffen; nicht bei nur einem guten Tritt, nicht kalt und nicht, wenn es sofort frontal weitergeht."
+  },
+  "backstep-aussenkante": {
+   "what_de": "Du stehst mit der Außenkante (Kleinzehenseite) auf dem Tritt und drehst die Hüfte seitlich zur Wand. Im Überhang kommt so die Schulter der Greifhand näher an die Wand, der Haltearm bleibt lang und die Beine schieben den Zug.",
+   "watch_de": [
+    "Fuß wählen: Greift die rechte Hand, tritt der rechte Fuß mit der Außenkante an – am besten auf einen Tritt unter der linken Haltehand, also quer unter dem Körper durch.",
+    "Setzen: Außenkante vorn an der Kleinzehe auf den Tritt, die Zehen zeigen zur Seite der Haltehand. Erst wenn der Fuß so steht, kann die Hüfte drehen.",
+    "Eindrehen: Hüfte der Greifhand zur Wand, bis Hüftknochen und Schulter dieser Seite fast die Wand berühren. Der Haltearm bleibt lang, du drehst um ihn wie um eine Türangel.",
+    "Schieben: Das Bein auf der Außenkante streckt und schiebt die Hüfte nach oben; der andere Fuß drückt auf der Innenkante oder flaggt. Die Hand geht los, wenn die Hüfte steigt.",
+    "Ankommen: Hüfte bleibt an der Wand, bis der Griff sitzt. Erst dann zurück in die Frontale drehen."
+   ],
+   "right_de": [
+    "Der Zielgriff ist mit fast gestrecktem Haltearm erreichbar.",
+    "Im Profil-Video bleibt die Hüfte an der Wand; die Schulter der Greifhand ist der wandnächste Punkt.",
+    "Du spürst die Arbeit im Oberschenkel des schiebenden Beins statt im Bizeps."
+   ],
+   "elite_de": [
+    "Der beste Tritt für den Backstep liegt oft weiter innen als gedacht: Je näher er unter der Haltehand ist, desto stabiler die Diagonale und desto kleiner der Türeffekt.",
+    "Am 40°-Board lohnt der volle Backstep vor allem bei weiten Zügen. Bei kurzen Zügen kostet das Rein- und Rausdrehen mehr Spannung, als es spart – dort frontal mit ziehenden Zehen bleiben.",
+    "Die Außenkante muss ziehen können: Kleinzehe einkrallen und Ferse leicht senken, sonst rutscht der Fuß beim Schieben nach außen vom Tritt.",
+    "Backstep oder Back Flag: Backstep, wenn ein Tritt Schub nach oben liefert; Back Flag, wenn keiner da ist oder das Bein danach sofort weitertreten muss."
+   ],
+   "when_de": "Für weite Züge im leichten bis mittleren Überhang und überall, wo du Armkraft sparen willst; ungeeignet, wenn die Tritte nur frontal belastbar sind oder der nächste Zug sofort zur anderen Seite geht."
+  },
+  "rockover-high-step": {
+   "what_de": "Du setzt einen Fuß hoch an, schiebst dein ganzes Gewicht über diesen Fuß und stehst dann aus dem Bein auf. So gewinnst du Höhe mit dem Bein statt mit den Armen, auch wenn die Griffe schlecht sind.",
+   "watch_de": [
+    "Fuß hochsetzen: Hüfte kurz von der Wand weg und zur Gegenseite schieben, damit Knie und Fuß Platz haben. Zehe präzise auf die beste Stelle des Tritts.",
+    "Verlagern: Zehen krallen und die Hüfte seitlich über den Fuß ziehen, bis das Knie vor der Fußspitze steht und das Becken über der Ferse ist. Bis hierhin nicht aufstehen.",
+    "Kontrollpunkt: Der untere Fuß wird leicht. Kannst du ihn abheben, ohne dass die Hände mehr halten müssen, ist das Gewicht drüber.",
+    "Aufstehen: aus dem Bein drücken, Hüfte und Brust bleiben nah an der Wand. Die Hände halten die Balance oder stützen, sie ziehen dich nicht hoch.",
+    "Oben: erst ganz strecken und ruhig stehen, dann die nächste Hand lösen."
+   ],
+   "right_de": [
+    "Der untere Fuß löst sich von selbst, ohne dass du dich abstoßen musst.",
+    "Im Video bewegt sich die Hüfte erst seitlich, dann nach oben – wie ein L, nicht schräg.",
+    "Du kannst den Zug in Zeitlupe rückwärts abklettern."
+   ],
+   "elite_de": [
+    "Knie des hohen Beins nach außen öffnen statt nach vorn: So kommt das Becken näher an die Wand und über den Fuß. Zeigt das Knie frontal, drückt dich der Oberschenkel weg.",
+    "Solange die Hüfte hinter dem Tritt ist, schiebst du den Fuß nach außen vom Tritt. Auf schlechten Tritten deshalb erst rüber, dann den Druck erhöhen.",
+    "Ein kleiner Abdruck vom unteren Fuß hilft, wenn die Beweglichkeit fehlt. Genau dosieren: Zu viel, und du schießt am Balancepunkt vorbei.",
+    "Der Blick bleibt beim Verlagern am Fuß. Wer früh zum Zielgriff hochschaut, steht zu früh auf."
+   ],
+   "when_de": "Wenn der nächste Tritt hoch liegt und die Griffe zum Durchziehen zu schlecht sind – typisch auf Platte, in der Senkrechten und am Ausstieg; im Steilen nur mit Griffen, an denen du dich an den Tritt heranziehen kannst."
+  },
+  "smearing-und-reibung": {
+   "what_de": "Beim Smearen stehst du ohne Kante auf einer Fläche und hältst nur über die Reibung zwischen Gummi und Wand. Das funktioniert, wenn viel Sohle aufliegt und dein Gewicht senkrecht in die Fläche drückt.",
+   "watch_de": [
+    "Stelle wählen: die flachste, raueste Stelle oder eine kleine Delle suchen. Sohle vorher abwischen – Staub und Chalk kosten mehr Reibung, als Technik zurückholt.",
+    "Setzen: Fußballen flach auflegen, Zehen zeigen nach oben, Ferse tief. Je tiefer die Ferse, desto mehr Gummi liegt auf und desto senkrechter drückst du in die Fläche.",
+    "Belasten: Hüfte weg von der Wand und über den Fuß bringen. Gewicht langsam und stetig aufbauen, bis es ganz draufsteht – ohne Ruck.",
+    "Stehen: Fuß absolut ruhig halten. Jede Drehung oder Fersenbewegung unter Last schmiert das Gummi ab.",
+    "Weitergehen: erst das Gewicht auf den neuen Fuß verlagern, dann den alten gerade abheben, nicht abziehen."
+   ],
+   "right_de": [
+    "Der Fuß bleibt stehen, während du Hände oder den anderen Fuß bewegst.",
+    "Im Profil liegt die Ferse tiefer als die Zehen und das Gesäß ist deutlich von der Wand weg.",
+    "Du hörst kein Quietschen oder Schaben."
+   ],
+   "elite_de": [
+    "Hüfte raus reicht nicht: Sie muss über dem Fuß stehen. Zu weit hinten ziehst du an den Händen, zu nah an der Wand fehlt der Druck. Such den Punkt, an dem die Hände fast nichts halten.",
+    "Reibung braucht Druck: Halb belastet rutscht ein Smear, der voll belastet hält. Wenn du rutschst, war es meist zu wenig Gewicht, nicht zu viel.",
+    "Auf winzigen Kanten in der Platte die Kante setzen und die Ferse trotzdem senken, sodass Gummi über der Kante mitträgt (Smedging).",
+    "Dasselbe Prinzip gilt für große, runde Tritte am Board und am Fels: Ferse senken und Fläche auflegen, statt mit der Spitze obendrauf zu stehen."
+   ],
+   "when_de": "Auf Platten, Volumen und runden Felsstrukturen ohne Kante; sobald eine echte Kante dein Gewicht trägt, ist Edging mit der Hüfte näher an der Wand die sicherere Wahl."
+  },
+  "zugrichtung-und-gegendruck": {
+   "what_de": "Jeder Griff und jeder Tritt hält nur in eine Richtung gut. Du stellst den Körper so, dass dein Gewicht genau in diese Richtung zieht, und nutzt die Füße als Gegenlager. So hältst du schlechte Griffe mit weniger Fingerkraft.",
+   "watch_de": [
+    "Vor dem Zug: am Griff die beste Fläche finden und senkrecht dazu eine Linie denken. Deine Hüfte gehört auf diese Linie, auf die Seite, von der aus du in die Fläche hineinziehst.",
+    "Körper stellen: Seitgriff – Hüfte seitlich weg vom Griff. Untergriff – Füße hoch, Hüfte nah, Griff auf Hüft- bis Brusthöhe. Sloper – Körper tief darunter.",
+    "Ellbogen ausrichten: Der Unterarm zeigt vom Griff genau dorthin, wo die Hüfte ist. Steht der Ellbogen quer dazu ab, hebeln sich die Finger aus dem Griff.",
+    "Gegendruck aufbauen: Ein Fuß drückt in die Gegenrichtung der Hand. Zieht die Hand am Seitgriff nach rechts, drückt der Fuß nach links. Erst wenn das steht, die andere Hand lösen.",
+    "Im Zug: Die Zugrichtung ändert sich, wenn du höher kommst. Hüfte so mitführen, dass der Griff bis zum Loslassen in seiner guten Richtung belastet bleibt."
+   ],
+   "right_de": [
+    "Der Griff fühlt sich in der richtigen Position deutlich besser an als frontal.",
+    "Im Video von hinten liegen Unterarm und die Linie vom Griff zur Hüfte übereinander.",
+    "Du rutschst nicht mehr aus Seit- und Untergriffen, wenn die andere Hand loslässt."
+   ],
+   "elite_de": [
+    "Auch Tritte haben eine Richtung: Ein schräger Tritt hält nur, wenn dein Druck senkrecht auf seine Fläche geht. Oft ist nicht der Griff das Problem, sondern ein falsch belasteter Fuß.",
+    "Am Board zeigen viele Griffe leicht zur Seite. Schon eine Handbreit Hüftversatz macht daraus einen haltbaren Griff – im Hang testen, indem du die Hüfte hin- und herschiebst.",
+    "Beim Weitergreifen aus einem Seitgriff kippt die Zugrichtung von seitlich nach unten. Plane, ab welcher Höhe der Griff nicht mehr hält, und sei vorher am nächsten.",
+    "Kompression wird von den Füßen gehalten: Ohne Zehen- oder Fersenzug nach innen pressen die Arme gegen nichts und du rutschst nach unten heraus."
+   ],
+   "when_de": "Immer wenn ein Griff nicht nach unten zeigt – Seitgriffe, Untergriffe, Sloper, Kompression; auf positiven Leisten nach unten bringt die Feinarbeit wenig, dort zählt eher die Spannung über die Füße."
+  },
+  "koerperspannung-ueber-die-fuesse": {
+   "what_de": "Im Überhang bleiben die Füße nur auf dem Tritt, wenn sie aktiv daran ziehen: Zehen krallen, Bein und Gesäß ziehen die Hüfte zur Wand. Das nimmt Gewicht von den Fingern und verhindert, dass die Füße beim Greifen wegfliegen.",
+   "watch_de": [
+    "Fuß setzen: Zehenspitze so auf den Tritt, dass die Großzehe hinter die höchste Stelle greifen kann. Ferse leicht unter Zehenhöhe – so kannst du ziehen, nicht nur draufstehen.",
+    "Bevor die Hand loslässt: Zehen krallen und den Tritt Richtung Hüfte ziehen, als wolltest du ihn aus der Wand reißen. Du spürst es in Wade und hinterem Oberschenkel.",
+    "Hüfte: Gesäß anspannen und das Becken zur Wand und nach oben schieben. Zwischen Schulter, Hüfte und Fuß entsteht eine gespannte Linie ohne Knick in der Hüfte.",
+    "Während die Hand greift: Der Zug am Fuß wird stärker, nicht schwächer. Je weiter die Hand rausgeht, desto mehr will der Fuß abheben – genau dann nachziehen.",
+    "Beim Ankommen: Spannung noch eine Sekunde halten, bis die neue Hand voll belastet ist. Die meisten Füße kommen im Moment des Zugreifens, nicht davor."
+   ],
+   "right_de": [
+    "Die Füße bleiben beim Greifen und beim Fangen stehen, ohne dass du nachtreten musst.",
+    "Die Haltehand wird leichter, sobald du am Fuß ziehst. Teste es im Hang: Zug an- und ausschalten.",
+    "Im Profil bleibt die Hüfte beim Greifen gleich nah an der Wand; sie pendelt nicht raus."
+   ],
+   "elite_de": [
+    "Der Fuß gegenüber der Haltehand macht die Hauptarbeit: Linke Hand hält, rechter Fuß zieht. Diese Diagonale stoppt die Drehung. Weißt du vor dem Zug nicht, welcher Fuß das ist, ist die Spannung Zufall.",
+    "Je gestreckter du bist, desto schwerer wird es, am Tritt zu ziehen. Kommen die Füße bei einem weiten Zug immer, teste erst einen höheren oder näheren Tritt, bevor du mehr Kraft suchst.",
+    "Spannung ist eine Richtung, keine Härte: Wer alles maximal anspannt, wird langsam und verliert das Timing. Der Zug am Fuß ist stark, der Rest so locker wie möglich.",
+    "Beim Umsetzen hält der andere Fuß die Hüfte aktiv nah. Lässt er kurz nach, hängst du tiefer, und der neue Fuß kommt schlechter und mit weniger Druck an."
+   ],
+   "when_de": "In jedem Zug ab leichtem Überhang, besonders an kleinen Tritten am Board; nicht erzwingen, wenn ein Tritt so weit weg ist, dass er dich vom Zielgriff zurückhält – dann ist ein geplanter Cut besser."
+  },
+  "toe-screwing": {
+   "what_de": "Du drückst die Großzehe in den Tritt und drehst den Fuß dabei aktiv ein, wie eine Schraube. Die Drehung spannt Bein und Hüfte vor: Der Fuß sitzt fester und du kannst stärker am Tritt ziehen.",
+   "watch_de": [
+    "Setzen: Großzehe auf die beste Stelle und in den Tritt hineindrücken, so wie ein Finger in eine Leiste greift. Der Schuh sitzt, bevor du drehst.",
+    "Schrauben: den Fuß gegen den Widerstand des Tritts drehen, ohne dass er sich sichtbar bewegt. Die Zehe bleibt der feste Punkt, die Ferse will ein paar Grad schwenken.",
+    "Richtung: Die Drehung folgt der Hüftposition, die du brauchst. Ferse nach innen, wenn das Knie außen bleiben soll (frontal); Ferse nach außen, wenn du eindrehst.",
+    "Kette schließen: Die Drehung muss im Gesäß und an der Innenseite des Oberschenkels ankommen. Spürst du sie nur im Knie, kommt sie nicht aus der Hüfte.",
+    "Halten: Die Schraubspannung bleibt, während die Hand loslässt, greift und belastet. Erst dann lösen."
+   ],
+   "right_de": [
+    "Derselbe Tritt fühlt sich besser an: Du kannst härter daran ziehen, ohne abzurutschen.",
+    "Die Hüfte bleibt nah an der Wand, ohne dass du sie mit den Armen heranziehen musst.",
+    "Im direkten Vergleich mit und ohne Schraube ist die Last an den Fingern spürbar verschieden."
+   ],
+   "elite_de": [
+    "Es ist eine Drehkraft, keine Bewegung: Wer den Fuß wirklich dreht, verliert die beste Stelle. Die Sohle verformt sich minimal, mehr nicht.",
+    "Erst drücken, dann schrauben. Drehst du, bevor Druck drauf ist, schabst du die Zehe vom Tritt.",
+    "Am meisten bringt es auf schlechten, abschüssigen Board-Tritten und bei weit seitlich stehenden Füßen, wo reines Ziehen den Fuß vom Tritt hebeln würde.",
+    "Mach daraus einen festen Auslöser: Schraube an, kurz ausatmen, Hand geht. Dann musst du im Zug nicht mehr daran denken."
+   ],
+   "when_de": "Im Steilen, wenn der Fuß trotz aktivem Ziehen abrutscht oder die Hüfte wegsackt; auf Platten und Reibungstritten nicht drehen – dort schmiert jede Drehung das Gummi ab."
+  },
+  "anchoring": {
+   "what_de": "Bevor du einen Fuß löst, verriegelst du den Körper über dem anderen Fuß: Hüfte nah an diesen Ankertritt, alles fest. Dann schwingt das gelöste Bein nicht raus und reißt weder die Hüfte von der Wand noch Last in die Finger.",
+   "watch_de": [
+    "Anker wählen: Welcher Fuß bleibt? Am besten der, der nah unter dem Körper steht. Je weiter seitlich der Anker, desto stärker dreht der Körper, wenn der andere Fuß geht.",
+    "Hüfte zum Anker: Becken an den Ankertritt heranschieben, solange noch beide Füße stehen – bis der Fuß, der gleich geht, fast kein Gewicht mehr trägt.",
+    "Verriegeln: Zehen des Ankerfußes krallen, Gesäß und hinterer Oberschenkel dieser Seite fest, Ellbogen der Haltehand Richtung Hüfte ziehen. Kurz ausatmen.",
+    "Lösen: den freien Fuß zügig und gerade vom Tritt abheben und nah am Körper führen – Knie zur Brust. Das Bein nicht lang nach hinten fallen lassen.",
+    "Neu setzen oder flaggen: Der Anker hält die Spannung, bis der andere Fuß wieder Druck hat. Erst dann den Anker entlasten."
+   ],
+   "right_de": [
+    "Im Video bewegt sich die Hüfte nicht, wenn der Fuß geht: kein Pendeln, kein Absacken.",
+    "Die Last an den Fingern bleibt gleich, während der Fuß in der Luft ist.",
+    "Du kannst den gelösten Fuß zwei Sekunden in der Luft halten, ohne zu schwingen."
+   ],
+   "elite_de": [
+    "Test vor dem Lösen: Kannst du den Fuß, der gehen soll, entlasten, ohne dass sich etwas ändert? Wenn nicht, hängt noch Gewicht daran – die Hüfte ist noch nicht am Anker.",
+    "Das gelöste Bein ist Masse an einem langen Hebel. Knie anziehen macht den Hebel kurz und den Schwung klein; lang und langsam nachschleifen ist die schlechteste Variante.",
+    "Reihenfolge bei weit auseinander stehenden Füßen: erst Hüfte zum Anker, dann die Hand, dann der Fuß. Wer Hand und Fuß gleichzeitig bewegt, hat keinen Anker.",
+    "Manchmal ist der schlechtere Tritt der bessere Anker: Ein kleiner Tritt nah unter dir hält die Hüfte ruhiger als ein großer weit draußen."
+   ],
+   "when_de": "Immer wenn du im Steilen einen Fuß löst, um umzusetzen, zu flaggen oder hochzutreten; nicht nötig, wenn du den Schwung des Beins bewusst nutzen willst (Pogo, geplanter Cut)."
+  },
+  "toe-hook": {
+   "what_de": "Du hakst den Fußrücken hinter eine Kante, einen Griff oder ein Volumen und ziehst die Zehen zum Schienbein. Der Haken zieht dich zur Wand oder zur Seite und verhindert, dass du beim Greifen aufschwingst.",
+   "watch_de": [
+    "Setzen: Oberseite der Zehen und möglichst viel Fußrücken an die Struktur legen. Der Haken sitzt auf der Seite, von der aus er gegen dein Wegdrehen ziehen kann.",
+    "Aktivieren: Zehen kräftig zum Schienbein ziehen und das Bein lang machen. Der Haken hält durch den Zug zwischen Fußrücken und gestrecktem Bein, nicht durch Einhängen.",
+    "Gegenlager: Eine Hand oder der andere Fuß drückt in die Gegenrichtung. Ohne etwas, wogegen der Haken zieht, dreht der Körper einfach mit.",
+    "Hüfte: Gesäß fest, Hüfte gestreckt und hoch. Knickt sie ein, ändert sich der Winkel am Fuß und der Haken rollt ab.",
+    "Im Zug und danach: Zug am Haken halten, bis die neue Hand belastet ist und der Körper ruhig hängt. Dann kontrolliert lösen – nie herausrutschen lassen."
+   ],
+   "right_de": [
+    "Du spürst die Arbeit vorn am Schienbein und im Hüftbeuger, nicht nur in den Händen.",
+    "Der Körper dreht nicht auf, wenn die Hand loslässt.",
+    "Im Video bleibt der Winkel im Sprunggelenk während des ganzen Zugs gleich."
+   ],
+   "elite_de": [
+    "Der Zug kommt aus dem ganzen Bein: Zehen hoch (Schienbein), Knie gestreckt (Oberschenkel), Bein zum Körper gezogen (Hüftbeuger, Bauch). Fehlt eines davon, bleibt nur ein eingehängter Schuh.",
+    "Der Haken hält, solange dein Bein senkrecht zur gehakten Fläche zieht. Wandert die Hüfte weit weg, zieht das Bein schräg und der Fuß rollt ab – rechtzeitig umsetzen.",
+    "Das freie Bein hat eine Aufgabe: Es drückt auf einen Tritt oder flaggt gespannt und stabilisiert so die Hüfte. Hängt es schlaff, zieht sein Gewicht am Haken.",
+    "Am Board fängt ein Toe Hook seitlich an einem Griff den Schwung nach einem Deadpoint ab. Dafür den Fuß schon vor dem Zug als Haken setzen statt als Tritt."
+   ],
+   "when_de": "An Kanten, Volumen und im Dach, wenn der Körper bei einem Zug seitlich oder nach außen wegdrehen will; falsch, wenn du über dem Fuß Höhe gewinnen willst – ein Toe Hook hält, er schiebt nicht."
+  },
+  "heel-hook": {
+   "what_de": "Du setzt die Ferse auf einen Tritt oder eine Kante und ziehst mit der Beinrückseite, als wolltest du die Ferse zum Gesäß holen. Das Bein arbeitet wie ein dritter Arm: Es zieht die Hüfte hoch und zur Wand und entlastet die Hände.",
+   "watch_de": [
+    "Setzen: Fersenkappe genau auf die beste Stelle, die Zehen zeigen nach außen, weg vom Körper. So klappt das Knie zur Seite und die Hüfte kann an die Wand.",
+    "Fuß verriegeln: Zehen nach außen-unten drücken, bis das Sprunggelenk fest ist – bevor Last draufkommt. Ein weiches Gelenk lässt die Ferse vom Tritt oder aus dem Schuh rollen.",
+    "Hüfte ran: Becken zur Ferse drehen und heranschieben, bis die Hüfte neben oder über dem Fuß ist. Erst dann trägt die Ferse wirklich Gewicht.",
+    "Ziehen: Ferse Richtung Gesäß ziehen; hinterer Oberschenkel und Gesäß arbeiten. Die Hand greift in dem Moment weiter, in dem der Zug am stärksten ist.",
+    "Abrollen: Kommt die Hüfte über den Fuß, kippt das Knie nach vorn und du rollst von der Ferse auf den Vorfuß, um aufzustehen."
+   ],
+   "right_de": [
+    "Du spürst den Zug im hinteren Oberschenkel, und die Haltehand wird leichter.",
+    "Die Hüfte steigt beim Ziehen sichtbar, statt dass nur der Arm blockiert.",
+    "Die Ferse bleibt bis zum Lösen auf demselben Punkt."
+   ],
+   "elite_de": [
+    "Drei Arten, drei Aufgaben: ziehen (Ferse seitlich oder über dir holt die Hüfte ran), drüberrollen (Ferse auf Hüfthöhe, du stehst darauf auf), halten (Ferse um eine Kante stoppt das Rausschwingen). Vorher entscheiden, welche du brauchst.",
+    "Die Stelle an der Ferse zählt: auf kleinen Tritten die untere-hintere Kante der Fersenkappe, auf runden Strukturen eher die Seite. Wenige Zentimeter entscheiden, ob er abrollt.",
+    "Der andere Fuß kann stören: Drückt er weiter in seinen Tritt, nimmt er Gewicht von der Ferse und sie rutscht. Oft hält der Hook erst, wenn der andere Fuß gelöst ist oder flaggt.",
+    "Spannung langsam aufbauen und das Knie nach außen fallen lassen. Zieht es hinten oder außen im Knie, ist der Hook zu verdreht oder zu ruckartig belastet."
+   ],
+   "when_de": "Wenn ein Tritt hoch oder seitlich liegt und du die Hüfte heranziehen oder darüber aufstehen willst, auch an Kanten und Lippen; falsch bei Tritten weit unter dir und auf sehr kleinen Leisten, wo die Zehe präziser ist."
+  },
+  "bicycle-und-klemmen": {
+   "what_de": "Beim Bicycle drückt ein Fuß mit der Sohle auf einen Griff, während der andere denselben oder einen nahen Griff von der Gegenseite mit dem Fußrücken hakt. Die Füße klemmen wie eine Zange und halten dich im Dach, wenn ein Tritt allein nicht reicht.",
+   "watch_de": [
+    "Drückfuß zuerst: Zehenspitze auf den Griff und aktiv ziehen wie bei jedem steilen Tritt. Er ist die Basis der Zange.",
+    "Hakenfuß dazu: Fußrücken von unten oder von der Gegenseite an denselben Griff oder einen direkt daneben legen. Zehen zum Schienbein ziehen.",
+    "Zange schließen, bevor die Hand geht: Ein Fuß drückt, der andere zieht – gegeneinander. Du spürst Spannung an der Innenseite beider Oberschenkel.",
+    "Hüfte: Gesäß fest und die Hüfte auf Höhe der Füße halten. Sackt sie ab, öffnet sich die Zange und der Haken rutscht.",
+    "Im Zug: Klemmdruck halten, bis die neue Hand belastet ist. Danach zuerst den Hakenfuß lösen und neu setzen; der Drückfuß bleibt als Anker."
+   ],
+   "right_de": [
+    "Beide Füße bleiben beim Greifen stehen, auch im Dach.",
+    "Du kannst die Greifhand lösen, ohne dass die Hüfte absackt.",
+    "Beide Beine arbeiten: Du spürst Schienbein und Wade, nicht nur ein Bein."
+   ],
+   "elite_de": [
+    "Die Zange braucht zwei Seiten: Druckpunkt und Hakenpunkt müssen sich gegenüberliegen, etwa Ober- und Unterseite eines Griffs. Zwei Füße auf derselben Seite klemmen nichts.",
+    "Klemmen geht auch ohne Toe Hook: Füße oder Knie von beiden Seiten gegen ein Volumen, eine Kante oder zwei Seitgriffe pressen. Die Innenseiten der Oberschenkel halten, die Hände greifen um.",
+    "Früh setzen: Das Bicycle gehört in die ruhige Position vor dem Zug. Wer es erst sucht, wenn die Hüfte schon fällt, findet es nicht mehr.",
+    "Am Board gibt es oft nur die kleine Version: ein Fuß auf dem Tritt, der andere als Toe Hook seitlich an einem Griff daneben. Das reicht, um weite Züge über Kopf zu stabilisieren."
+   ],
+   "when_de": "Im Dach und in sehr steilem Gelände an großen Griffen oder Volumen, wenn ein Fuß allein beim Greifen abhebt; unnötig und langsam, wenn ein sauber gezogener Einzeltritt hält."
+  },
+  "kneebar": {
+   "what_de": "Du verkeilst den Unterschenkel zwischen einem Tritt (Fuß) und einer Struktur darüber (unterer Oberschenkel am Knie). Die Wade drückt die Klemme fest. So kannst du eine oder beide Hände entlasten oder einen harten Zug stabilisieren.",
+   "watch_de": [
+    "Abstand lesen: Die Lücke zwischen Tritt und Struktur muss etwa so lang sein wie dein Unterschenkel. Etwas zu kurz ist gut, zu lang hält nicht.",
+    "Fuß zuerst: Zehe oder Ballen präzise auf den Tritt, Ferse noch tief. Dann erst das Knie unter oder hinter die Struktur schieben.",
+    "Verkeilen: Ferse hochdrücken, die Wade spannt. Das presst den Oberschenkel knapp über dem Knie flächig gegen die Struktur.",
+    "Hüfte ausrichten: Becken so drehen, dass der Oberschenkel flach anliegt und das Knie nicht seitlich herausrutschen kann.",
+    "Testen: Rumpf fest, eine Hand langsam entlasten. Hält es, erst dann greifen oder schütteln. Die Wade bleibt die ganze Zeit an."
+   ],
+   "right_de": [
+    "Eine Hand lässt sich ganz lösen, ohne dass du absinkst.",
+    "Der Druck liegt flächig auf dem Oberschenkel über dem Knie, nicht auf der Kniescheibe.",
+    "Die Klemme wird fester, wenn du die Ferse hebst."
+   ],
+   "elite_de": [
+    "Zentimeter entscheiden: Fuß minimal verschieben oder von Zehe auf Ballen wechseln ändert die Länge der Klemme. Systematisch testen und die beste Stelle merken.",
+    "Ein Kneebar ist nicht nur Rastpunkt: Im Zug hält er die Hüfte an der Wand, während die Hand weit greift. Dafür drückt die Wade im Moment des Greifens am härtesten.",
+    "Das Auflösen planen: erst die Hand am nächsten Griff belasten, dann die Wade lösen. Viele Stürze passieren beim Herausgehen, nicht im Kneebar.",
+    "Mit Kneepad oder fester Hose üben. Wer wegen Schmerz nur halb belastet, lernt die Position nie richtig kennen."
+   ],
+   "when_de": "Am Fels in Dächern, an Sintern und großen Strukturen, in der Halle an Volumen; am Board praktisch nie – und falsch, wenn das Einrichten länger dauert und mehr Kraft kostet als der Zug ohne ihn."
+  },
+  "cut-loose-und-wiederaufsetzen": {
+   "what_de": "Manchmal lösen sich die Füße im Steilen, geplant oder ungeplant. Die Technik ist, den Schwung mit aktiven Schultern zu kontrollieren, nur einmal zu pendeln und die Füße im richtigen Moment gezielt wieder zu setzen.",
+   "watch_de": [
+    "Vor dem Zug entscheiden: Bleiben die Füße oder kommen sie? Wenn sie kommen: Wohin schwingen die Beine, und auf welchen Tritt setzt du danach?",
+    "Im Moment des Lösens: Schulterblätter nach unten, Arme leicht gebeugt, Bauch fest, Beine zusammen. So schwingt ein kompakter Körper und kein loses Pendel.",
+    "Im Schwung: nicht dagegen strampeln. Den Körper rausschwingen lassen und am äußeren Umkehrpunkt die Knie anziehen – das verkürzt das Pendel.",
+    "Aufsetzen: auf dem Rückweg zur Wand den Zieltritt ansehen und einen Fuß gezielt setzen, wenn die Füße der Wand am nächsten sind. Sofort mit den Zehen ziehen.",
+    "Danach: Hüfte über den gesetzten Fuß zurück an die Wand holen, zweiten Fuß setzen, erst dann weitergreifen."
+   ],
+   "right_de": [
+    "Ein Schwung, ein Aufsetzer – kein zweites Pendeln.",
+    "Im Video bleiben die Schultern tief; es gibt keinen Ruck in gestreckte Arme.",
+    "Der Fuß trifft den Tritt beim ersten Versuch und hält sofort."
+   ],
+   "elite_de": [
+    "Die Größe des Schwungs entscheidest du vor dem Cut: Je näher die Hüfte an der Wand ist, wenn die Füße gehen, desto kleiner das Pendel. Füße nacheinander statt gleichzeitig lösen dämpft den Ruck.",
+    "Der richtige Moment zum Setzen ist kurz: Die Füße sind der Wand am nächsten und stehen fast still. Zu früh trittst du ins Leere, zu spät schwingst du wieder raus.",
+    "Kommen die Füße ungeplant, prüf in dieser Reihenfolge: Stand der Fuß präzise? Hat er gezogen? War der Tritt zu tief oder zu weit weg? Passt der Schuh? Erst danach ist es ein Kraftthema.",
+    "Ein geplanter Cut kann die bessere Beta sein: Hält ein Tritt dich vom Zielgriff zurück, lieber bewusst lösen, sauber fangen und höher neu setzen, als mit halbem Fußdruck zu kämpfen."
+   ],
+   "when_de": "Wenn ein Zug die Füße zwangsläufig löst (weite Züge im Steilen, Sprünge) oder ein bewusster Cut Kraft spart; falsch als Dauerlösung für Züge, bei denen die Füße mit besserem Tritt oder mehr Zehenzug bleiben könnten."
+  },
+  "schulter-und-lat-engagement": {
+   "what_de": "Bevor du ziehst, stellst du das Schulterblatt fest: nach unten und leicht zur Wirbelsäule. Dann arbeiten die großen Rückenmuskeln, die Schulter bleibt stabil und die Finger müssen weniger halten – vor allem bei weiten Zügen.",
+   "watch_de": [
+    "Im Hang vor dem Zug: Schulter weg vom Ohr ziehen, ohne den Arm zu beugen. Der Körper hebt sich dabei ein kleines Stück – das ist die Startposition.",
+    "Ziehen: Ellbogen Richtung Hüfte führen, nicht nach außen. Wandert der Ellbogen nach oben-außen (Chicken Wing), übernimmt die Schulter statt des Rückens.",
+    "Blockieren: Brust dreht zum Haltegriff, Schulterblatt bleibt unten, Hüfte nah an der Wand. Ohne nahe Hüfte hängt die ganze Last im Arm.",
+    "Am Ende der Reichweite: erst die Position stabil machen (Füße ziehen, Hüfte ran, ausatmen), dann die Hand ruhig zum Griff führen. Kannst du sie kurz darüber halten, stimmt die Position.",
+    "Beim Fangen: Schulter der Fanghand schon vor dem Kontakt anspannen. Du fängst mit leicht gebeugtem Arm und festem Schulterblatt, nicht in den gestreckten Arm."
+   ],
+   "right_de": [
+    "Im Video von hinten bleibt die Schulter beim Anziehen tief und der Ellbogen läuft nah am Körper.",
+    "Bei weiten Zügen bleiben die Füße stehen, weil der Oberkörper nicht wegkippt.",
+    "Du spürst die Arbeit unter der Achsel und zwischen den Schulterblättern, weniger im Bizeps."
+   ],
+   "elite_de": [
+    "Aktiv heißt nicht dauerhaft zurückgezogen: Für weite Züge muss das Schulterblatt kontrolliert mit nach oben gehen, sonst fehlt Reichweite. Es geht um Kontrolle am Ende der Bewegung.",
+    "Der Chicken Wing ist ein Positionssignal: Hebt der Ellbogen ab, ist meist die Hüfte zu weit weg oder der Fuß zu tief. Erst die Position korrigieren, dann an die Schulter denken.",
+    "Rücken und Fuß arbeiten diagonal: Die Rückenseite der Haltehand und der gegenüberliegende Fuß spannen den Rumpf. Schaltet einer ab, dreht der Körper auf.",
+    "Der Schwebetest sagt dir die Wahrheit: Kannst du die Hand nicht eine Sekunde über dem Zielgriff halten, ist der Zug für dich dynamisch. Dann sauber als Deadpoint klettern, statt halb statisch zu schnappen."
+   ],
+   "when_de": "Bei Blockierzügen, weiten statischen Zügen und beim Fangen dynamischer Züge; in guten Ruhepositionen darf die Schulter länger werden, solange sie nicht ganz passiv im Gelenk hängt."
+  },
+  "sloper-handgelenk-ellbogen": {
+   "what_de": "Sloper sind runde, abschüssige Griffe ohne Kante. Du hältst sie über Reibung und Position: viel Haut auf dem Griff, Handgelenk und Ellbogen tief, Körper unter dem Griff, sodass dein Gewicht in die Fläche drückt.",
+   "watch_de": [
+    "Hand auflegen: die flachste Stelle oder eine kleine Welle finden, ganze Hand samt Handballen aufsetzen, Finger geschlossen. Daumen seitlich oder unten anpressen, wenn es eine Stelle gibt.",
+    "Handgelenk: tief und leicht gebeugt, sodass der Unterarm senkrecht von der haltbaren Fläche wegzieht. Hebt sich der Handballen, verlierst du die halbe Reibfläche.",
+    "Körper: Hüfte tief und nah an der Wand, unter oder gegenüber der Fläche. Der Ellbogen hängt unter dem Griff und zeigt Richtung Hüfte.",
+    "Im Zug: so lange wie möglich tief bleiben. Füße setzen und aus den Beinen schieben, während der Winkel am Handgelenk gleich bleibt.",
+    "Kritischer Moment: Kommt die Schulter auf Griffhöhe, kippt die Zugrichtung nach außen. Bis dahin muss die andere Hand am nächsten Griff sein – oder du wechselst bewusst ins Stützen."
+   ],
+   "right_de": [
+    "Die Hand liegt still und rutscht nicht langsam nach.",
+    "Im Profil bleibt der Ellbogen unter dem Griff, bis du loslässt.",
+    "Der Sloper fühlt sich tief hängend deutlich besser an als hochgezogen."
+   ],
+   "elite_de": [
+    "Aktiv greifen statt auflegen: die Grundgelenke der Finger beugen und die Fingerkuppen in die Fläche drücken, als wolltest du den Griff eindellen. Das erhöht den Druck auf derselben Fläche.",
+    "Oft gibt das Handgelenk vor den Fingern nach. Wenn es aufklappt, sobald du höher kommst, ist genau das der Punkt, an dem der Zug scheitert – dort ansetzen.",
+    "Sloper vertragen keine Schocklast: Dynamisch ankommen heißt, die Hand im Totpunkt ablegen und sofort tief gehen. Wer im Fallen ankommt, rutscht ab.",
+    "Die Füße bestimmen den Sloper: Zu hohe Füße schieben die Hüfte raus, zu tiefe strecken dich. Richtig ist der Tritt, bei dem die Hüfte nah und tief bleibt."
+   ],
+   "when_de": "An allen runden, kantenlosen Griffen und Volumen; die tiefe Position ist falsch, sobald du über den Griff hinausmusst – dann ist Stützen oder Mantle das richtige Werkzeug."
+  },
+  "griff-setup-pregrip-daumen": {
+   "what_de": "Du bereitest die Hand vor, bevor sie den Griff belastet: schon in der Luft in die passende Form bringen, Finger zusammendrücken, Daumen dazunehmen. So kommt deine Fingerkraft sofort an, statt dass du nachfassen musst.",
+   "watch_de": [
+    "Vor dem Zug: Zielgriff ansehen und festlegen – welche Stelle, welche Finger, wo liegt der Daumen, offen oder aufgestellt? Das entscheidest du vorher, nicht im Flug.",
+    "In der Luft: Hand in genau dieser Form vorspannen. Finger liegen aneinander, Handgelenk im passenden Winkel. Die Hand kommt als fertiges Werkzeug an.",
+    "Kontakt: Zeige- und Mittelfinger treffen die beste Stelle, die anderen schließen an. Im Totpunkt ankommen, damit die Finger Zeit zum Schließen haben, bevor Last kommt.",
+    "Schließen: Finger seitlich aneinanderpressen und den Daumen sofort setzen – auf den Zeigefinger, an eine Kante oder als Zange. Das passiert vor dem Ziehen.",
+    "Belasten: Last weich aufbauen. Mit Beinen und Schulter abbremsen und die Hüfte so nachführen, dass der Griff in seiner besten Richtung belastet wird."
+   ],
+   "right_de": [
+    "Kein Nachfassen: Die Hand sitzt beim ersten Kontakt so, wie du sie belastest.",
+    "In Zeitlupe siehst du die fertige Handform schon vor dem Griff.",
+    "Dein Daumen hat an fast jedem Griff eine Aufgabe."
+   ],
+   "elite_de": [
+    "Die Körperposition bestimmt die Griffposition: Eine Leiste, die du von weit unten nur offen erreichst, kannst du erst aufstellen, wenn die Hüfte höher ist. Plane, ob du offen fängst und dann umstellst.",
+    "Auf Board-Leisten den kleinen Finger bewusst mitnehmen und die Finger zusammenpressen. Gespreizte Finger arbeiten einzeln, geschlossene als Block.",
+    "Fast jeder Board-Griff hat eine Seite oder Unterkante für den Daumen. Die Zange hält auch Zug nach außen – genau die Richtung, die im Steilen fehlt.",
+    "Dasselbe gilt am Start: Nimm dir Zeit, beide Hände perfekt zu setzen, bevor du abhebst. Ein schlecht gesetzter Startgriff kostet in jedem folgenden Zug."
+   ],
+   "when_de": "Bei jedem Griff am Limit und besonders bei dynamischen Zügen auf kleine Griffe; bei langsamen statischen Zügen kannst du die Hand am Griff sortieren – dort ist die richtige Stelle wichtiger als das Vorformen."
+  },
+  "small-box": {
+   "what_de": "Eine kleine Box ist eine Position, in der Hände und Füße eng beieinanderliegen und du dich gestaucht fühlst. Die Technik ist, mit Hüftposition, Knierichtung und aktiven hohen Füßen Platz zu schaffen, statt den Zug von tiefen Tritten aus zu überstrecken.",
+   "watch_de": [
+    "Füße hoch setzen: bewusst den hohen Tritt nehmen, auch wenn er unbequem ist. Dazu die Hüfte kurz nach außen oder zur Seite schieben, damit Knie und Fuß Platz haben.",
+    "Knie aus dem Weg: entweder weit nach außen (Froschposition) oder nach innen eindrehen (Drop Knee). Ein Knie, das frontal nach vorn zeigt, drückt dich von der Wand.",
+    "Hüfte platzieren: seitlich neben oder unter die Hände drehen, nicht mittig zwischen Händen und Füßen einklemmen. Meist dreht eine Hüftseite zur Wand.",
+    "Hohe Füße belasten: mit den Zehen ziehen und aus der tiefen Hocke schieben. Der Zug startet aus den Beinen; die Arme halten nur die Hüfte nah.",
+    "Im Zug: Die Hüfte steigt eng an der Wand entlang. Spannung halten, bis die Hand sitzt – aus engen Positionen kippst du sonst nach hinten weg."
+   ],
+   "right_de": [
+    "Der Zielgriff ist aus der gestauchten Position näher als erwartet; der Arm muss weniger weit.",
+    "Im Profil bleibt das Gesäß trotz hoher Füße nah an der Wand.",
+    "Du kannst die enge Position zwei Sekunden halten, ohne dass ein Fuß rutscht."
+   ],
+   "elite_de": [
+    "Hohe Füße bringen im Steilen mehr Gewicht auf die Füße – aber nur, wenn die Hüfte nah bleibt. Schiebt das Gesäß raus, ziehst du die Griffe nach außen und sie werden schlechter.",
+    "Was fehlt, ist meist Beweglichkeit in der Hüfte (Knie nach außen, tiefe Beugung), nicht Kraft. Kommst du in der Froschposition nicht tief, dreh ein.",
+    "Wenn du groß bist: nicht automatisch den tiefen Tritt nehmen. Die enge Variante ist oft kraftsparender, weil der Zug kürzer wird und die Füße Druck behalten.",
+    "Aus der kleinen Box kommt der Zug aus der Hüftstreckung: kurz absinken, dann die Hüfte hochtreiben. Statisch herausdrücken kostet am meisten."
+   ],
+   "when_de": "Wenn Tritte hoch und nah an den Händen liegen, besonders vor weiten Zügen aus enger Position; falsch, wenn ein tieferer Tritt den Zug erlaubt, ohne dass du dich überstreckst und die Füße verlierst."
+  },
+  "momentum-aus-huefte-und-beinen": {
+   "what_de": "Momentum heißt: Du bringst den Körper mit Beinen und Hüfte in Bewegung und nutzt diesen Schwung, um einen Griff zu erreichen. Der Körper wird für einen Moment leicht, und die Hand kann greifen, ohne dass der Arm alles ziehen muss.",
+   "watch_de": [
+    "Ausholen: die Hüfte von der Wand weg und nach unten sinken lassen, die Arme werden lang. Das ist der Anlauf – ohne ihn gibt es keinen Weg zum Beschleunigen.",
+    "Starten: Die Beine drücken zuerst. Die Hüfte fährt auf einem Bogen nach oben und zur Wand. Die Arme lenken und ziehen erst mit, wenn die Hüfte schon unterwegs ist.",
+    "Kein Stopp: Ausholen und Abdrücken sind eine Bewegung. Wer unten wartet, verliert den Schwung und zieht doch aus den Armen.",
+    "Greifen: Ist die Hüfte am höchsten und wandnächsten Punkt, bist du kurz gewichtslos. In diesem Moment löst sich die Hand und geht zum Griff.",
+    "Ankommen: Füße drücken weiter und die Hüfte bleibt an der Wand, während die neue Hand Last aufnimmt."
+   ],
+   "right_de": [
+    "Im Video bewegt sich die Hüfte zuerst und die Hand zuletzt.",
+    "Die Haltehand wird im Moment des Greifens leichter; der Zug fühlt sich weniger hart an als statisch.",
+    "Du kommst am Griff an, ohne ihn zu überschießen oder durchzusacken."
+   ],
+   "elite_de": [
+    "Die Richtung des Hüftschubs entscheidet: zur Wand und nach oben. Nur nach oben, und du fällst am Ende von der Wand weg; nur zur Wand, und es fehlt die Höhe.",
+    "Die eigentliche Fähigkeit ist das kleine Momentum: ein Hüftimpuls von wenigen Zentimetern bei kurzen Zügen. Sehr gute Kletterer klettern fast keinen Zug ganz statisch.",
+    "Pogo: Das freie Bein schwingt zurück und kickt in Zugrichtung. Wenn es abbremst, geht sein Schwung auf die Hüfte über – in diesem Moment geht die Hand los.",
+    "Am Board mit schlechten Tritten nur so weit ausholen, dass die Zehen Druck behalten. Ein großer Ausholer, der den Fuß löst, ist verschenkt."
+   ],
+   "when_de": "Für Züge am Ende oder jenseits deiner statischen Reichweite und um auf leichteren Zügen Kraft zu sparen; so wenig Schwung wie möglich, wenn der Zielgriff nur langsam genau zu treffen ist (enge Löcher, sehr kleine Leisten)."
+  },
+  "deadpoint-timing": {
+   "what_de": "Ein Deadpoint ist ein kurzer dynamischer Zug, bei dem die Hand genau dann am Griff ankommt, wenn dein Körper am höchsten Punkt kurz stillsteht. In diesem Moment bist du fast schwerelos und kannst auch schlechte Griffe genau fassen.",
+   "watch_de": [
+    "Setup: Füße ziehen aktiv, die Hüfte sinkt leicht von der Wand weg, der Blick liegt fest auf der Stelle des Zielgriffs, die du treffen willst.",
+    "Auslösen: Beine drücken, die Hüfte fährt zur Wand und Richtung Zielgriff. Die Greifhand bleibt am alten Griff, bis die Hüfte fast oben ist.",
+    "Totpunkt: Die Hand löst sich spät und schnell und ist am Griff, wenn die Hüfte am höchsten Punkt stillsteht. Die Hand ist schon geformt.",
+    "Füße: Die Zehen ziehen während des ganzen Zugs am Tritt. Im Moment des Kontakts ziehen sie am stärksten – genau dann will die Hüfte rausfallen.",
+    "Nach dem Kontakt: Finger schließen, Schulter fest, Hüfte bleibt an der Wand. Kontrolliert absinken, nicht in den Griff fallen."
+   ],
+   "right_de": [
+    "Die Hand kommt lautlos an: kein Klatschen, kein Nachrutschen.",
+    "In Zeitlupe steht die Hüfte am höchsten Punkt, genau dann berührt die Hand den Griff.",
+    "Die Füße bleiben stehen."
+   ],
+   "elite_de": [
+    "Die häufigste Ursache für »zu spät« ist zu frühes Loslassen: Die Hand ist lange unterwegs und der Körper fällt schon. Später loslassen, schneller greifen.",
+    "Die Hüfte zielt, nicht die Hand: Der Hüftschub geht dorthin, von wo der Zielgriff belastet werden will. Bei einem Seitgriff heißt das seitlich darunter, nicht gerade nach oben.",
+    "Genau so viel Schwung wie nötig: Der ideale Deadpoint endet mit der Hand auf Griffhöhe. Wer überschießt, kommt von oben und im Fallen an.",
+    "Am steilen Board hält der Haltearm dich am Ende des Zugs an der Wand. Arm leicht gebeugt und Schulter fest lassen – ein ganz durchgestreckter Haltearm lässt die Hüfte rausfallen."
+   ],
+   "when_de": "Wenn ein Griff statisch nicht oder nur mit teurem Blockieren erreichbar ist und die Füße an der Wand bleiben können; nicht, wenn der Zug so weit ist, dass du ohnehin springen musst (Dyno)."
+  },
+  "lag-bouncing": {
+   "what_de": "Beim Lag Bouncing bleibt der tiefe, hintere Fuß auf seinem Tritt und federt dich kurz ab, statt dass du ihn zum Flaggen löst. Der kleine Abdruck schiebt die Hüfte hoch, erhält den Schwung und nimmt Arbeit von den Fingern.",
+   "watch_de": [
+    "Position: ein Fuß hoch (er zieht), ein Fuß tief und eher hinten mit fast gestrecktem Bein. Den tiefen Fuß bewusst stehen lassen und mit der Zehe Druck halten.",
+    "Vorspannen: das tiefe Bein leicht beugen – Sprunggelenk, Knie und Hüfte geben ein paar Zentimeter nach. Der hohe Fuß krallt.",
+    "Bounce: kurz und elastisch aus dem tiefen Fuß abdrücken, wie ein kleiner Sprung von der Zehe. Im selben Moment zieht der hohe Fuß die Hüfte hoch und heran.",
+    "Greifen: Die Hand geht los, während die Hüfte durch den Abdruck steigt. Der tiefe Fuß darf sich lösen – aber erst, nachdem er seinen Impuls gegeben hat.",
+    "Ankommen: Der hohe Fuß hält die Spannung; der tiefe wird sofort neu gesetzt oder flaggt."
+   ],
+   "right_de": [
+    "Im Video steigt die Hüfte sichtbar, bevor die Hand loslässt.",
+    "Der Zug fühlt sich an der Haltehand leichter an als mit Flag.",
+    "Der Abdruck ist eine einzige kurze Bewegung, kein Wippen mit Pause."
+   ],
+   "elite_de": [
+    "Auch ein fast gestrecktes Bein kann noch schieben: Die letzten Zentimeter kommen aus dem Sprunggelenk, indem du dich auf die Zehe hochdrückst. Das wird fast immer verschenkt.",
+    "Der Bounce verbessert den Winkel an der Haltehand: Mit höherer Hüfte ziehst du mehr nach unten und weniger nach außen. Darum hilft er vor allem an schlechten Haltegriffen im Steilen.",
+    "Timing vor Kraft: Abdruck des tiefen und Zug des hohen Fußes kommen gleichzeitig. Nacheinander heben sie sich auf – erst schiebst du dich raus, dann ziehst du dich zurück.",
+    "Lieber Flag, wenn der tiefe Tritt so weit seitlich liegt, dass sein Abdruck dich dreht statt hebt, oder wenn du die Ruhe eines Flags zum genauen Greifen brauchst."
+   ],
+   "when_de": "Bei Zügen nach oben im Steilen, wenn ein tiefer Tritt unter oder hinter dir noch Druck annimmt; falsch, wenn der Tritt so tief liegt, dass er die Hüfte unten hält, oder du die Balance eines Flags brauchst."
+  },
+  "dyno": {
+   "what_de": "Ein Dyno ist ein Sprung zum nächsten Griff, bei dem die Hände oder alle Kontaktpunkte kurz die Wand verlassen. Die Höhe kommt aus den Beinen; die Arme führen den Körper auf der richtigen Bahn und fangen ihn am Ziel.",
+   "watch_de": [
+    "Setup: Füße so hoch, dass die Knie tief beugen können. Arme lang, Hüfte tief und etwas von der Wand weg, Blick auf den Zielgriff.",
+    "Ausholen: ein- bis zweimal locker in die Hocke sinken, um den Rhythmus zu finden. Der letzte Ausholer geht ohne Pause in den Absprung über.",
+    "Absprung: Beine strecken explosiv, die Hüfte fährt nach oben und zur Wand. Die Arme ziehen erst, wenn die Beine fast gestreckt sind, und drücken die Griffe dann nach unten weg.",
+    "Flug: Die Füße drücken bis zum letzten Kontakt über die Zehen ab. Blick bleibt am Zielgriff, die Hand ist vorgeformt.",
+    "Fangen: am höchsten Punkt greifen, Schultern fest, Arme leicht gebeugt. Die Beine kommen kontrolliert zur Wand und bremsen den Schwung."
+   ],
+   "right_de": [
+    "Im Profil-Video sind die Beine gestreckt, bevor die Hände loslassen.",
+    "Du erreichst den Griff am höchsten Punkt, nicht im Steigen oder Fallen.",
+    "Der Schwung nach dem Fangen ist klein und zieht dich nicht von der Wand weg."
+   ],
+   "elite_de": [
+    "Im Überhang musst du zur Wand hin abspringen, sonst trägt dich der Sprung vom Zielgriff weg. Zielpunkt der Hüfte ist unter dem Griff, nah an der Wand.",
+    "Die Hände schieben am Ende mit: Wenn die Startgriffe von Zug auf Druck wechseln, drückst du dich daran weiter nach oben. Wer schon bei gestrecktem Arm loslässt, verschenkt Höhe.",
+    "Der Fuß, der zuletzt abdrückt, bestimmt die Richtung. Steht er seitlich, drehst du im Flug. Wenn du am Ziel immer wegdrehst, ändere den Absprungfuß, nicht den Fangarm.",
+    "Pro Versuch ein Fokus: Fußhöhe, Absprungrichtung oder Timing der Arme. Im Profil-Video prüfen, wo die Hüfte am höchsten Punkt war – das zeigt, ob Höhe oder Nähe zur Wand fehlt."
+   ],
+   "when_de": "Wenn der Zielgriff weiter weg ist als jede Deadpoint-Reichweite und gut genug zum Fangen; falsch, wenn es mit höheren Füßen statisch oder als Deadpoint geht oder die Landung beim Fehlversuch unsicher ist."
+  },
+  "schwung-erzeugen-und-fangen": {
+   "what_de": "Bei komplexen dynamischen Zügen schwingt der Körper wie ein Pendel. Du erzeugst den Schwung gezielt (erst weg von der Wand, dann hinein) und greifst oder setzt die Füße im Umkehrpunkt, wo der Körper kurz stillsteht und wenig Kraft zum Halten braucht.",
+   "watch_de": [
+    "Raum schaffen: Hüfte von der Wand weg und entgegen der Zielrichtung bewegen. Ohne diesen Weg nach außen gibt es keinen Schwung nach innen.",
+    "Blick: schon beim Ausholen am nächsten Griff, beim Greifen bereits am übernächsten Griff oder Tritt. Die Augen sind immer einen Kontaktpunkt voraus.",
+    "Einschwingen: Beine und Hüfte treiben den Körper auf einem Bogen zur Wand und zum Ziel. Die Arme bleiben lang und führen.",
+    "Umkehrpunkt: Steht die Hüfte am Ende des Schwungs kurz still, greifst du oder setzt den Fuß – weder früher noch später.",
+    "Fangen: Schwung mit Hüfte und Beinen aufnehmen – Fuß an die Wand, Toe Hook oder Knie anziehen. Schultern fest; die Finger halten nur den Rest."
+   ],
+   "right_de": [
+    "Im Video steht die Hüfte im Moment des Kontakts kurz still.",
+    "Nach dem Fangen pendelst du höchstens einmal nach.",
+    "Dein Blick ist sichtbar früher am nächsten Griff als deine Hand."
+   ],
+   "elite_de": [
+    "Den Restschwung einplanen: Wohin trägt dich die Bewegung nach dem Kontakt? Stell einen Fuß oder das Flag-Bein schon vorher dorthin, wo es den Schwung stoppt.",
+    "Schwung umlenken statt stoppen: In Zugfolgen wird der Restschwung des ersten Zugs zum Anlauf des zweiten. Wer nach jedem Fangen erst stabilisiert, zahlt doppelt.",
+    "Die Pendellänge steuerst du selbst: Lang und gestreckt schwingst du langsam und weit, angezogen schnell und kurz. Damit triffst du den Umkehrpunkt.",
+    "Jeder Schwung hat zwei Umkehrpunkte, außen und innen. Für Züge zur Wand nutzt du den inneren, für das Wiederaufsetzen der Füße den Rückweg zur Wand."
+   ],
+   "when_de": "Bei seitlichen Sprüngen, Schwungzügen an guten Griffen und allen Zügen, nach denen der Körper pendelt; bei kurzen Zügen mit Füßen an der Wand reicht ein normaler Deadpoint."
+  },
+  "paddle-dyno": {
+   "what_de": "Ein Paddle Dyno ist ein Sprung, bei dem die Hand einen Zwischengriff nur kurz antippt und wegdrückt, um Richtung und Höhe zu holen, und dann sofort zum eigentlichen Zielgriff weitergeht. Der Körper bleibt die ganze Zeit in Bewegung.",
+   "watch_de": [
+    "Lesen: Flugbahn der Hüfte festlegen – sie zielt auf die Position unter dem Endgriff, nicht auf den Zwischengriff. Den Rhythmus der Hände am Boden durchspielen.",
+    "Absprung: wie beim Dyno aus den Beinen, mit Höhe und Richtung für den Endgriff. Der Zwischengriff liegt nur auf dem Weg.",
+    "Paddle: Die Hand trifft den Zwischengriff, während du noch steigst, drückt ihn kurz nach unten weg und löst sich sofort. Der Blick ist dabei schon am Endgriff.",
+    "Zweite Phase: Der Druck am Zwischengriff verlängert oder lenkt den Flug. Die Hüfte fährt weiter zur Wand, die Fanghand ist vorgeformt.",
+    "Fangen: im Totpunkt den Endgriff greifen, Schultern fest. Die Beine bremsen den Schwung an der Wand."
+   ],
+   "right_de": [
+    "Der Kontakt am Zwischengriff dauert im Video nur wenige Bilder.",
+    "Die Hüfte läuft auf einer durchgehenden Kurve, ohne Knick am Zwischengriff.",
+    "Du kommst am Endgriff mit Resthöhe an, nicht im Fallen."
+   ],
+   "elite_de": [
+    "Du musst den Zwischengriff im Steigen treffen. Wer ihn erst im Totpunkt erreicht, hat keinen Schwung mehr für den zweiten Teil – der häufigste Grund fürs »Kleben«.",
+    "Der Zwischengriff wird gedrückt, nicht gezogen: Die Hand schiebt ihn nach unten weg, der Arm streckt sich. So gibt er Höhe, statt dich zu bremsen.",
+    "Die Füße gehören zur Sequenz: Oft läuft ein Fuß während des Paddles an der Wand mit oder tritt einmal nach. Plane diese Fußaktion mit ein.",
+    "In Stufen lernen: erst nur abspringen und den Zwischengriff berühren, dann drücken und den Endgriff antippen, dann fangen. Jede Stufe, bis sie zuverlässig klappt."
+   ],
+   "when_de": "Bei Comp-Bouldern, in denen der Zwischengriff zu schlecht zum Halten und der Endgriff zu weit für einen direkten Sprung ist; am Fels und am Board kaum gefragt – dort höchstens als Koordinationstraining."
+  },
+  "koordinationszuege-run-and-jump": {
+   "what_de": "Koordinationszüge sind Bewegungen, bei denen mehrere Aktionen schnell und in fester Reihenfolge ablaufen, zum Beispiel über Volumen anlaufen, abspringen und fangen. Sie gelingen über Rhythmus und Timing, nicht über Kraft.",
+   "watch_de": [
+    "Am Boden: Schritte und Handkontakte laut zählen und festlegen (zum Beispiel links – rechts – ab – fang). Entscheiden, welcher Fuß abspringt.",
+    "Anlauf: nur so schnell, dass du den letzten Schritt noch gezielt setzt. Oberkörper aufrecht, Blick immer einen Tritt voraus.",
+    "Letzter Schritt: Der Absprungfuß drückt nach oben und in die Wand, nicht nach vorn. Die Hüfte steigt, statt an der Wand entlangzulaufen.",
+    "Flugphase: Der Blick springt früh zum Zielgriff, die Hände sind vorgeformt, die Arme schwingen mit nach oben.",
+    "Fangen: im höchsten Punkt greifen; die Füße suchen sofort Kontakt und bremsen den Schwung. Erst stabil werden, dann weiter."
+   ],
+   "right_de": [
+    "Der Rhythmus ist bei jedem Versuch gleich; du könntest ihn mitklatschen.",
+    "Du kommst mit Resthöhe am Zielgriff an.",
+    "Fehlversuche scheitern am selben Punkt, sodass du weißt, welches Teilstück du üben musst."
+   ],
+   "elite_de": [
+    "Das Tempo ist selten das Problem, meist die Richtung des letzten Schritts. Im Profil-Video prüfen, ob die Hüfte beim Absprung steigt oder nur vorwärts läuft.",
+    "Der vorletzte Schritt bereitet den Absprung vor: etwas kürzer und tiefer, damit das Absprungbein gebeugt ankommt. Wer gestreckt in den letzten Schritt läuft, kann nicht mehr abdrücken.",
+    "Auf Volumen den Fuß flach mit viel Gummi setzen und senkrecht belasten. Wer sich zu nah an die Wand lehnt, schiebt den Fuß weg.",
+    "Verlässlichkeit üben, nicht den Glückstreffer: ein Teilstück erst erschweren, wenn es mehrmals hintereinander klappt und sich dabei leichter anfühlt."
+   ],
+   "when_de": "Für Comp-Style-Boulder in der Halle und als Timing-Training für Deadpoints und Sprünge; am Fels und am Board selten direkt gefragt – dosiert einsetzen und nicht müde üben."
+  },
+  "rhythmus-und-flow": {
+   "what_de": "Rhythmus ist das Tempo, in dem du Züge aneinanderreihst. Flüssig klettern heißt: Der Schwung eines Zugs geht in den nächsten über, und du startest nicht nach jedem Griff neu. Das spart Haltezeit und damit Kraft.",
+   "watch_de": [
+    "Vor dem Einstieg: das Tempo pro Abschnitt festlegen – wo zügig durch (steil, schlechte Griffe), wo langsam und genau (kleine Tritte, Balance), wo Pause.",
+    "Im Zug: Sobald die Hand hält, geht der Blick zum nächsten Tritt, und der Fuß wird gesetzt. Kein Warten am neuen Griff.",
+    "Übergang: den Rest des Hüftschwungs aus dem letzten Zug nutzen, um den nächsten einzuleiten. Nicht dazwischen in den gestreckten Arm durchhängen, außer du willst ruhen.",
+    "Gangwechsel: vor technischen Stellen bewusst abbremsen – einmal ausatmen, Fuß genau setzen – und danach wieder beschleunigen.",
+    "Atmung: gleichmäßig weiteratmen und harte Züge mit dem Ausatmen koppeln. Stockt der Atem, stockt der Rhythmus."
+   ],
+   "right_de": [
+    "Im Video gibt es keine Standbilder zwischen den Zügen, außer an geplanten Ruhepunkten.",
+    "Dieselbe Sequenz dauert weniger Sekunden, ohne dass ein Fuß lauter oder ungenauer wird.",
+    "Du kommst oben mit mehr Reserve an."
+   ],
+   "elite_de": [
+    "Zeit an schlechten Griffen ist die Währung: Am 40°-Board kostet jede Sekunde Zögern mehr als ein leicht unsauberer Zug. Entscheidungen fallen am Boden, nicht an der Wand.",
+    "Schnell klettern heißt nicht schnell treten: Hände und Hüfte bewegen sich zügig, der Fuß wird trotzdem ruhig und einmal gesetzt. Das Tempo kommt aus den Übergängen.",
+    "Lerne den Boulder in Blöcken von zwei bis drei Zügen als eine Einheit. Im Durchstieg denkst du dann nur noch an den Anfang jedes Blocks.",
+    "Stell die Erregung auf den Stil ein: hoch und aggressiv für kurze steile Kraftboulder, ruhig für Platte – über Atmung und Tempo der Vorbereitung."
+   ],
+   "when_de": "Bei Durchstiegsversuchen und allen Bouldern, die du schon ausgecheckt hast; nicht beim ersten Ausarbeiten von Einzelzügen – dort erst die Position klären, dann Tempo aufbauen."
+  },
+  "slab-vertrauen-und-gewichtsverlagerung": {
+   "what_de": "Auf der Platte (Wand flacher als senkrecht) trägst du dein Gewicht fast ganz auf den Füßen. Ein Tritt hält nur, wenn das Gewicht voll darauf steht – deshalb wandert die Hüfte erst ganz über den Standfuß, bevor der andere Fuß sich bewegt.",
+   "watch_de": [
+    "Stand: aufrecht, Hüfte über den Füßen und weg von der Wand, Fersen eher tief. Die Hände liegen auf Brust- bis Schulterhöhe und halten nur die Balance.",
+    "Verlagern: Hüfte seitlich über den Standfuß schieben, bis der Hüftknochen über der Großzehe steht. Der andere Fuß wird dabei von selbst leicht.",
+    "Test: den freien Fuß einen Zentimeter anheben. Ändert sich an den Händen nichts, stehst du richtig. Musst du fester zugreifen, ist die Hüfte noch nicht drüber.",
+    "Schritt: neuen Fuß höchstens auf Kniehöhe setzen, genau und nur einmal. Dann Knie über die Zehe schieben und das Gewicht langsam und stetig darauf bringen.",
+    "Aufstehen: aus dem Bein strecken, die Hüfte bleibt über dem Fuß. Die Hände wandern erst nach, wenn du stehst."
+   ],
+   "right_de": [
+    "Du kannst in jeder Position eine Hand lösen, ohne dass sich etwas ändert.",
+    "Im Profil stehst du aufrecht über den Füßen: Gesäß weg von der Wand, Arme locker.",
+    "Die Füße stehen nach dem Belasten still; kein Nachrutschen, kein Zittern."
+   ],
+   "elite_de": [
+    "Die Verlagerung ist erst fertig, wenn sie sich »zu weit« anfühlt. Die meisten stoppen kurz vor dem Balancepunkt und müssen sich dann abstoßen – genau das schiebt den Standfuß weg.",
+    "Hände drücken statt ziehen: Wer auf der Platte an Griffen zieht, holt die Hüfte zur Wand und entlastet die Füße. Fingerspitzen oder Handballen auf Hüft- bis Brusthöhe halten dich aufrecht.",
+    "Der Blick steuert die Haltung: Schau auf die Füße und den nächsten Tritt. Wer nach oben zu den Griffen schaut, lehnt sich zur Wand.",
+    "Zitternde Waden kommen von hochgezogenen Fersen und halbem Belasten. Ferse senken, ausatmen, Gewicht ganz drauf – zögern macht es schlimmer."
+   ],
+   "when_de": "Auf allen Platten und in der Senkrechten mit schlechten Griffen; das langsame Verlagern ist falsch, wo ein Tritt nur kurz hält und du mit Tempo drüberlaufen musst."
+  },
+  "slab-fortgeschritten-palming": {
+   "what_de": "Auf harten Platten fehlen Griffe zum Ziehen. Stattdessen drückst du mit Handflächen und Fingern gegen Flächen, Kanten und Volumen (Palming, Stützen) und legst dich auf Züge fest, die nur ganz oder gar nicht funktionieren.",
+   "watch_de": [
+    "Entscheiden: Geht der Zug langsam (Gewicht kontrolliert verlagern) oder nur mit Tempo (der Tritt hält nur kurz)? Vor dem Zug festlegen und mittendrin nicht wechseln.",
+    "Hand setzen: Handballen flach auf die Fläche, Finger zeigen nach unten oder zur Seite, etwa auf Hüft- bis Brusthöhe. Druck senkrecht in die Fläche – die Reibung des Ballens hält.",
+    "Stützen: Arm strecken und die Schulter über die Hand bringen. Nach unten drücken, bis die Hüfte steigt und ein Fuß frei wird zum Hochsetzen.",
+    "Gegendruck: Stützhand und gegenüberliegender Fuß drücken gegeneinander. Du stehst dann zwischen zwei Druckpunkten, ohne etwas festzuhalten.",
+    "Durchziehen: Hüfte über den neuen Fuß bringen und aufstehen, ohne zu bremsen. Der Blick bleibt am Fuß, bis du stehst."
+   ],
+   "right_de": [
+    "Die Finger sind entspannt; du spürst die Arbeit in Trizeps, Schulter und Beinen.",
+    "Der Zug läuft in einem Stück durch, ohne Stocken auf halber Höhe.",
+    "Am Ende stehst du ruhig über dem neuen Fuß und könntest die Hände lösen."
+   ],
+   "elite_de": [
+    "Ein Griff ändert seine Aufgabe mit deiner Höhe: erst ziehen (über Kopf), dann seitlich halten (Brusthöhe), dann stützen (unter der Hüfte). Dreh die Hand im Zug um, statt den Griff aufzugeben.",
+    "Stützen läuft über die Schulter: Je gestreckter der Arm und je genauer die Schulter über der Hand, desto mehr Gewicht nimmt er. Ein gebeugter Ellbogen drückt dich von der Wand weg.",
+    "Schnelle Platten: Der Fuß wird nicht hingestellt, sondern überlaufen. Die Hüfte ist schon unterwegs zum nächsten Tritt, wenn er aufsetzt. Bremsen in der Mitte ist die Variante, die sicher scheitert.",
+    "Wirst du im Video am kritischen Punkt langsamer, hast du gebremst. Dann denselben Zug mit einem festen Auslöser wiederholen: ausatmen, los."
+   ],
+   "when_de": "Auf Platten und Volumen ohne positive Griffe und bei Zügen, die nur mit vollem Durchziehen gehen; nicht nötig, wo echte Griffe ruhiges Stehen erlauben – dort ist langsames Verlagern sicherer."
+  },
+  "no-hands-klettern": {
+   "what_de": "Du kletterst leichte Platten oder einzelne Züge ganz ohne Hände. Das ist eine Übung: Ohne Hände kannst du nichts durch Ziehen ausgleichen, also müssen Hüftposition, Schwerpunkt und Fußdruck stimmen.",
+   "watch_de": [
+    "Stand: aufrecht über beiden Füßen, Arme locker seitlich oder vor dem Körper als Balancehilfe. Blick auf den nächsten Tritt.",
+    "Verlagern: Hüfte über den Standfuß schieben, bis der andere Fuß gewichtslos ist. Der Oberkörper bleibt aufrecht – die Hüfte wandert, nicht die Schultern.",
+    "Hochtreten: Fuß setzen, Knie über die Zehe schieben, Hüfte nach vorn-oben über den neuen Fuß bringen. Erst wenn der Schwerpunkt drüber ist, streckt das Bein.",
+    "Bei hohen Schritten: Ein kleiner Abdruck vom unteren Bein und ein Armschwung nach vorn-oben bringen die Hüfte über den Tritt. Nur so viel, dass du oben zum Stehen kommst.",
+    "Ankommen: einen Atemzug lang ruhig stehen, bevor du weitergehst. Kippst du, war der Schwerpunkt nicht über dem Fuß."
+   ],
+   "right_de": [
+    "Du kannst in jeder Position drei Sekunden stehen, ohne mit den Armen zu rudern.",
+    "Jeder Schritt ist leise und nur einmal gesetzt.",
+    "Du kannst dieselbe Sequenz auch rückwärts absteigen."
+   ],
+   "elite_de": [
+    "Die Arme sind Gewichte: Ein nach vorn gestreckter Arm verschiebt den Schwerpunkt zur Wand, ein seitlicher gleicht seitliches Kippen aus. Gezielt einsetzen statt wild zu balancieren.",
+    "Der Standfuß arbeitet mit: Sprunggelenk und Zehen gleichen kleine Schwankungen aus. Wer steif steht, fällt beim ersten Wackler.",
+    "Für den Übertrag dieselbe Sequenz danach mit Händen klettern, aber nur mit zwei Fingern pro Hand. Die Hüftposition soll dieselbe bleiben.",
+    "Steigern über die Tritte, nicht über die Höhe: kleinere, schrägere Tritte und höhere Schritte in Bodennähe. So übst du an der Grenze der Balance ohne Sturzrisiko."
+   ],
+   "when_de": "Als Übung im Aufwärmen und in Technikeinheiten auf flachen Platten in Bodennähe; nicht hoch über dem Boden und nicht als Ersatz für harte Slab-Boulder, sondern als Vorbereitung darauf."
+  },
+  "mantle": {
+   "what_de": "Mit dem Mantle kommst du über eine Kante oder auf ein Volumen, über dem keine Griffe mehr sind. Du wechselst vom Ziehen ins Stützen: Hand umdrehen, Körper über die Hand bringen, Fuß hochsetzen und aufstehen – wie beim Aussteigen aus einem Schwimmbecken.",
+   "watch_de": [
+    "Hochziehen: mit Schwung so hoch, dass die Brust über die Kante kommt. Die Füße laufen dabei so hoch wie möglich mit.",
+    "Umdrehen: Eine Hand wechselt vom Zug in den Stütz – Handballen auf die Kante, Finger zeigen nach innen. Der Ellbogen klappt nach oben über das Handgelenk.",
+    "Über die Hand: Schulter und Brust über die Stützhand schieben, Oberkörper weit über die Kante lehnen. Die zweite Hand dreht nach oder hält weiter oben.",
+    "Fuß hoch: Fuß oder Ferse auf die Kante setzen, möglichst nah neben die Stützhand. Die Hüfte dreht dabei seitlich über diesen Fuß.",
+    "Aufstehen: Gewicht auf den hohen Fuß rollen, der Stützarm streckt durch. Erst wenn du über dem Fuß stehst, die Hände lösen."
+   ],
+   "right_de": [
+    "Der Wechsel von Zug zu Stütz passiert in einer Bewegung, ohne Hängenbleiben auf Brusthöhe.",
+    "Im Video ist der Ellbogen über dem Handgelenk, bevor der Fuß kommt.",
+    "Du stehst auf, statt auf Bauch oder Knie über die Kante zu rutschen."
+   ],
+   "elite_de": [
+    "Der Schwung aus dem Hochziehen trägt dich durch den schwachen Punkt zwischen Ziehen und Stützen. Wer dort anhält, muss aus der schwächsten Position drücken.",
+    "Fuß oder Ferse vorher entscheiden: Die Ferse kommt früher hoch und zieht die Hüfte heran (gut bei runden Ausstiegen); die Zehe braucht mehr Höhe, ist danach aber sofort belastbar.",
+    "Bei runden, griffarmen Ausstiegen am Fels Handballen und Unterarm flächig auflegen, nah am Fels bleiben und langsam verlagern. Hier zählt Reibung: trockene Hände, gebürstete Fläche.",
+    "Den Ausstieg vorher von oben ansehen und putzen: Wo ist die beste Stützfläche, wo steht der Fuß? Oben blind zu suchen kostet Kraft, die du dann nicht mehr hast."
+   ],
+   "when_de": "An Ausstiegen, Blockkanten und Volumen ohne Griffe darüber; falsch, wenn weiter oben ein guter Griff erreichbar ist – dann durchziehen und hoch antreten, das ist sicherer als Stützen."
+  },
+  "route-reading": {
+   "what_de": "Du planst den Boulder vom Boden aus: welche Hand an welchen Griff, welche Füße, welche Körperposition – und wo es schwer wird. Ein guter Plan spart Versuche, Haut und Kraft, weil du an der Wand nicht mehr suchen musst.",
+   "watch_de": [
+    "Erste 30 Sekunden: Start, Top, Wandneigung und alle Griffe und Tritte finden. Auch von der Seite ansehen, um Tiefe und Winkel der Griffe zu erkennen.",
+    "Griffe lesen: bei jedem Griff die beste Stelle, die Zugrichtung und die Hand festlegen. Chalk- und Gummispuren zeigen, wie andere ihn nutzen.",
+    "Rückwärts planen: vom Top oder vom letzten sicheren Griff aus die Handfolge zurückverfolgen. So merkst du früh, ob du an der Crux mit der falschen Hand ankommst.",
+    "Füße und Hüfte ergänzen: für jeden Zug den Tritt und die Hüftposition benennen (frontal, eingedreht, Flag). Die Crux mit den Händen in der Luft nachstellen.",
+    "Vor dem Einstieg: den ganzen Boulder einmal in Echtzeit im Kopf durchgehen, dazu ein Wenn-dann für den unsichersten Zug."
+   ],
+   "right_de": [
+    "Du kannst die ganze Sequenz samt Füßen ansagen, bevor du einsteigst.",
+    "An der Wand gibt es keine Stelle, an der du Tritte suchst.",
+    "Nach dem Versuch kannst du genau sagen, wo Plan und Wirklichkeit abgewichen sind."
+   ],
+   "elite_de": [
+    "Lies Positionen, nicht Griffe: Die Frage ist nicht nur »welche Hand?«, sondern »wo ist meine Hüfte, wenn ich diesen Griff halte, und erreiche ich von dort den nächsten?«",
+    "Denk wie der Schrauber: Warum sitzt dieser Tritt hier, warum zeigt der Griff so? Ein scheinbar nutzloser Tritt ist oft der Schlüssel (Toe Hook, Zwischentritt, Knieposition).",
+    "Plane Tempo und Anstrengung mit: Wo musst du schnell sein, wo kannst du chalken, wo atmest du? Ein Plan ohne Tempo ist nur die halbe Beta.",
+    "Am Board zuerst die Füße lesen: Welche Tritte sind erlaubt, welcher passt zu welcher Hand? Erst danach die Handfolge – dort entscheidet meist der Tritt, nicht der Griff."
+   ],
+   "when_de": "Vor jedem ersten Versuch und nach jedem Sturz mit unklarer Ursache; kürzer fassen bei Bouldern weit unter deinem Limit – dort ist schnelles Lesen im Klettern das bessere Training."
+  },
+  "projektieren": {
+   "what_de": "Projektieren ist die Arbeit an einem Boulder, den du nicht in einer Session schaffst. Du zerlegst ihn in Einzelzüge, findest für jeden die beste Lösung, verbindest sie zu immer längeren Abschnitten und gehst erst dann auf den Durchstieg.",
+   "watch_de": [
+    "Erste Session: jeden Zug einzeln probieren, auch die obersten. Für jeden Zug festhalten: geht, geht fast oder geht nicht – und woran es liegt.",
+    "Nach jedem Sturz, vor dem nächsten Einstieg: Ausführung oder Beta? Stimmte die Position und du warst ungenau, wiederholen. Stimmte die Position nicht, genau eine Sache ändern.",
+    "Top sichern: den letzten Abschnitt so oft klettern, bis er auch müde zuverlässig geht. Oben willst du nicht mehr nachdenken müssen.",
+    "Links bauen: von oben nach unten verlängern – immer einen Zug tiefer einsteigen und bis zum Top klettern. So sind auch die Übergänge geübt.",
+    "Durchstieg: erst wenn alle Züge einzeln und zwei überlappende Hälften am Stück gehen. Dann wenige Versuche mit voller Pause, jeder mit einem klaren Fokus."
+   ],
+   "right_de": [
+    "Du hast für jeden Zug eine feste Beta samt Füßen und Hüftposition.",
+    "Von Session zu Session wandert dein höchster Punkt nach oben oder die Links werden länger.",
+    "Im Durchstieg stürzt du an neuen Stellen, nicht immer am selben ungelösten Zug."
+   ],
+   "elite_de": [
+    "Die Übergänge sind die versteckte Crux: Ein Zug, der einzeln geht, scheitert im Durchstieg oft, weil du mit anderer Hüftposition oder anderem Fuß ankommst. Züge immer mit dem Zug davor üben.",
+    "Mikrobeta festhalten: welcher Finger wo, Daumen, Fußwinkel, Blickpunkt. Aufschreiben oder ins Video sprechen – nach einer Woche Pause weißt du es sonst nicht mehr.",
+    "Session einteilen: frisch die Crux, danach Links, am Ende nichts mehr erzwingen. Geht die Crux zweimal schlechter als am Anfang, ist für heute Schluss mit Durchstiegsversuchen.",
+    "Ein Beta-Wechsel ist eine bewusste Entscheidung: Eine neue Variante bekommt wenige ernsthafte Versuche. Ist sie nicht klar besser, zurück zur alten und diese verfeinern."
+   ],
+   "when_de": "Bei Bouldern am oder über deinem Limit, die mehrere Sessions brauchen; nicht bei Bouldern, die in wenigen Versuchen gehen können – dort erst sauber lesen und auf Flash oder schnellen Durchstieg gehen."
+  },
+  "versuchsqualitaet-und-pausen": {
+   "what_de": "Jeder Versuch soll mit voller Kraft, klarem Fokus und genug Pause davor stattfinden. Wenige gute Versuche bringen mehr Lernreiz und mehr Durchstiege als viele müde – und schonen Haut und Finger.",
+   "watch_de": [
+    "Direkt nach dem Versuch: Uhr starten, Schuhe aus, Video ansehen. Bei harten Versuchen mehrere Minuten Pause, bis Atmung und Unterarme wirklich bereit sind.",
+    "In der Pause: eine Erkenntnis aus dem letzten Versuch formulieren und daraus einen Fokus für den nächsten machen, zum Beispiel »linker Fuß zieht bis zum Kontakt«.",
+    "Eine Minute vorher: Griffe bürsten, Hände trocknen und chalken, Schuhe sauber anziehen, Sohlen abwischen.",
+    "30 Sekunden vorher: Sequenz einmal im Kopf durchgehen, zwei ruhige Atemzüge, Fokus-Satz. Dann einsteigen, ohne an den Startgriffen zu warten.",
+    "Limit einhalten: nach der festgelegten Zahl Versuche (zum Beispiel vier) zum nächsten Boulder wechseln. Fällt die Leistung sichtbar ab, endet der harte Teil der Session."
+   ],
+   "right_de": [
+    "Deine besten Versuche liegen nicht nur am Anfang der Session.",
+    "Du kannst zu jedem Versuch sagen, was der Fokus war und was passiert ist.",
+    "Du gehst mit intakter Haut und ohne taube Finger nach Hause."
+   ],
+   "elite_de": [
+    "Bei kurzen Maximalzügen fühlst du dich nach einer Minute bereit, bist es aber nicht: Ohne Pump fehlt das Warnsignal. Die Uhr entscheidet, nicht das Gefühl.",
+    "Qualität messen: pro Versuch den höchsten Punkt notieren oder ob der Fokus umgesetzt wurde. Zwei Versuche ohne Fortschritt und ohne neue Idee sind das Signal zu wechseln.",
+    "In langen Pausen warm bleiben: Jacke an, und vor dem nächsten harten Versuch ein, zwei leichte Züge oder kurz an einem guten Griff hängen.",
+    "Ärger ist kein Fokus: Der schnelle Wiedereinstieg nach einem knappen Sturz ist fast immer schlechter. Erst die Routine, dann der Versuch."
+   ],
+   "when_de": "In allen Limit- und Projekt-Sessions; nicht nötig bei bewusst hohem Volumen auf leichten Bouldern (Wiederholungen, Fast Laps), wo kurze Pausen Teil des Reizes sind."
+  },
+  "flash-strategie": {
+   "what_de": "Flash heißt, einen Boulder im allerersten Versuch zu klettern. Dafür sammelst du vorher alle Informationen, legst eine komplette Sequenz fest und kletterst dann so entschlossen, als wäre es ein Durchstiegsversuch.",
+   "watch_de": [
+    "Informationen sammeln: Griffe von unten und von der Seite ansehen, erreichbare Griffe anfassen und bürsten. Am Fels auch von oben schauen und Tritte suchen.",
+    "Beta holen: anderen zusehen oder Videos nutzen und auf deine Größe und Stärken übersetzen. Festlegen, wo du bewusst abweichst.",
+    "Sequenz festlegen: jede Hand, jeder Fuß, die Hüftposition an der Crux. Dazu ein Plan B für den unsichersten Zug – eine Alternative, nicht fünf.",
+    "Visualisieren: zweimal in Echtzeit durchgehen, mit dem erwarteten Kraftaufwand. An der Crux bewusst vorstellen, dass es sich schwer anfühlt und du trotzdem weitergehst.",
+    "Start: voll erholt, Haut trocken, Sohlen sauber. Einsteigen und bis zum Griff gehen – kein Antesten, kein Abspringen bei Unsicherheit."
+   ],
+   "right_de": [
+    "Du triffst an der Wand keine Entscheidung, die du nicht am Boden vorbereitet hast.",
+    "Wenn du stürzt, dann im vollen Zug und nicht beim Zögern.",
+    "Nach dem Versuch weißt du sofort, ob der Plan oder die Ausführung nicht gepasst hat."
+   ],
+   "elite_de": [
+    "Rechne mit Überraschungen: Ein Griff ist schlechter als gedacht. Leg die Regel dafür vorher fest – weitergehen und im Zug anpassen, nicht stoppen und neu überlegen.",
+    "Der Flash-Versuch beginnt beim Aufwärmen: gleiche Griffarten und Wandneigung vorher belasten, ein paar harte Einzelzüge machen. Kalt in einen Flash zu gehen verschenkt ihn.",
+    "Fremde Beta prüfen: Reichweite, Fingerkraft und Beweglichkeit des anderen mit deinen vergleichen. Die beste Quelle ist jemand mit deiner Größe und deinem Stil.",
+    "Misslingt der Flash, ist der zweite Versuch der wertvollste: sofort festhalten, was anders war als geplant, eine Sache ändern, voll pausieren."
+   ],
+   "when_de": "Bei Bouldern etwas unter deinem Maximum, die du realistisch im ersten Versuch schaffen kannst, und am Fels, wenn Haut oder Zeit knapp sind; echte Limit-Projekte lieber gleich Zug für Zug ausarbeiten."
+  },
+  "video-selbstanalyse": {
+   "what_de": "Du filmst deine Versuche und vergleichst, was du zu tun glaubst, mit dem, was wirklich passiert. Dann änderst du pro Versuch genau eine Sache und prüfst im nächsten Video, ob sie geholfen hat.",
+   "watch_de": [
+    "Aufbau: Handy auf ein Stativ, ganzer Körper und alle Griffe im Bild, kein digitaler Zoom. Eine Perspektive von hinten, eine im Profil.",
+    "Vor dem Versuch: Aufnahme starten und kurz den Fokus ansagen. So weißt du später, was du vorhattest.",
+    "In der Pause, erster Durchgang in normaler Geschwindigkeit: Welcher Kontaktpunkt geht zuerst verloren, und in welche Richtung fällt die Hüfte?",
+    "Zweiter Durchgang in Zeitlupe, ab zwei Sekunden vor dem Sturz: Fußposition, Abstand der Hüfte zur Wand, Moment des Loslassens, Handform beim Ankommen.",
+    "Eine Stellschraube wählen (Hüfte weiter links, Fuß einen Tritt höher, später loslassen), den nächsten Versuch filmen und vergleichen."
+   ],
+   "right_de": [
+    "Du kannst die Sturzursache als Beobachtung sagen (»Hüfte fällt nach rechts raus, bevor die Hand ankommt«), nicht nur als Gefühl.",
+    "Jeder Versuch testet genau eine Änderung.",
+    "Du hast Vorher-Nachher-Clips desselben Zugs."
+   ],
+   "elite_de": [
+    "Die Ursache liegt meist einen Schritt vor dem Symptom: Kommt der Fuß beim Greifen, schau auf das Setup davor – Tritt, Hüfte, Moment des Loslassens.",
+    "Das Profil zeigt, was von hinten unsichtbar ist: Abstand der Hüfte zur Wand, Flugbahn beim Deadpoint, ob du im Steigen oder Fallen greifst. Am Board ist es oft die wichtigere Perspektive.",
+    "Vergleiche mit einem Referenzvideo im Standbild: gleicher Moment (Hand löst sich), dann Hüfthöhe, Knierichtung und Fußstellung nebeneinander.",
+    "Sammle, was funktioniert, als eigene Checkliste je Wandneigung und Grifftyp. Nach ein paar Wochen siehst du deine wiederkehrenden Muster."
+   ],
+   "when_de": "Bei jedem ernsthaften Versuch an Projekt- und Limit-Zügen und bei Technikübungen; nicht die ganze Pause am Bildschirm verbringen – eine Beobachtung, eine Änderung, dann wieder klettern."
+  },
+  "klettern-mit-intention": {
+   "what_de": "Du gehst mit einem konkreten Ziel in die Session und in jeden Versuch, wertest jeden Sturz aus und legst dich bei harten Zügen voll fest. Voller Einsatz (Try-Hard) ist dabei eine Fähigkeit, die du gezielt üben kannst.",
+   "watch_de": [
+    "Vor der Session, noch bevor du die Schuhe anziehst: ein Ziel als Handlung formulieren (»im Steilen zieht bei jedem Zug der gegenüberliegende Fuß«), nicht als Ergebnis (»Projekt schaffen«).",
+    "Vor jedem Versuch: einen Fokus für genau diesen Versuch wählen und in einem Satz sagen.",
+    "Am Einstieg: entscheiden »Ich gehe bis zum Griff«. Kannst du das nicht ehrlich sagen, noch nicht einsteigen.",
+    "Im harten Zug: ausatmen, Blick am Zielgriff, weiterziehen, bis du hältst oder fällst. Solange die Landung sicher ist, wird nicht losgelassen.",
+    "Direkt nach dem Sturz: eine Antwort geben – Spannung, Momentum, Füße oder Position? Daraus den nächsten Fokus ableiten."
+   ],
+   "right_de": [
+    "Am Ende der Session kannst du sagen, was du geübt hast und was besser wurde.",
+    "Deine Stürze passieren im vollen Zug, nicht durch Abspringen.",
+    "Auf jeden Sturz folgt eine konkrete Änderung."
+   ],
+   "elite_de": [
+    "Übe bewusst Versuche mit vollem Einsatz an Zügen, bei denen du nicht sicher bist. Wer nur gibt, was sich kontrolliert anfühlt, kennt sein Maximum nicht.",
+    "Der Moment, in dem du normalerweise loslässt, ist der Übungsmoment: noch eine Sekunde halten, noch einen Zug einleiten. Das verschiebt die Grenze.",
+    "Intention heißt auch, den Stil vorzugeben: einen Boulder absichtlich mit Füßen an der Wand, eingedreht oder statisch klettern, auch wenn es anders leichter wäre. So übst du die Schwäche statt der Lieblingsbeta.",
+    "Erregung dosieren: Für einen Maximalzug darfst du laut und aggressiv sein, für eine Platte brauchst du Ruhe. Stell das vor dem Versuch ein."
+   ],
+   "when_de": "In jeder Session und besonders bei Limit-Zügen; voller Einsatz ist falsch bei unsicherer Landung, bei Schmerz in Fingern oder Schulter und in bewusst lockeren Einheiten."
+  },
+  "commitment-drill": {
+   "what_de": "Commitment heißt, einen schwierigen oder einschüchternden Zug ohne Zögern und mit voller Überzeugung auszulösen. Du übst das mit einem festen Ablauf vor dem Zug – und misst den Erfolg am entschlossenen Start, nicht am Halten des Griffs.",
+   "watch_de": [
+    "Am Boden: den Zug einmal klar visualisieren – Startposition, Weg der Hüfte, Moment des Kontakts. Landung prüfen, damit der Kopf frei ist.",
+    "In der Startposition: drei Dinge kurz prüfen – Füße sitzen und ziehen, Hüfte in Position, Hand richtig am Griff. Höchstens zwei bis drei Sekunden.",
+    "Auslöser: ein festes Signal, immer gleich – ausatmen plus ein Wort (»los«) oder 3-2-1. Auf das Signal folgt die Bewegung, ohne weitere Prüfung.",
+    "Im Zug: Blick am Zielgriff, voll durchziehen bis zum Kontakt. Der Versuch zählt als Erfolg, wenn du ohne Bremsen ausgelöst hast.",
+    "Danach: kurz bewerten (Start entschlossen: ja oder nein), volle Pause, Kopf zurücksetzen. Der nächste Versuch läuft mit demselben Ritual."
+   ],
+   "right_de": [
+    "Die Zeit zwischen Startposition und Auslösen ist bei jedem Versuch ähnlich kurz.",
+    "Im Video gibt es kein Anzucken, kein doppeltes Ausholen und kein Bremsen vor dem Kontakt.",
+    "Du kannst den entschlossenen Start auch direkt nach einem Sturz wieder abrufen."
+   ],
+   "elite_de": [
+    "Zögern kostet doppelt: Kraft in der Startposition und Vertrauen. Hängst du länger als dein Ritual dauert, steig ab und starte neu – nicht noch länger hängen.",
+    "Halbes Commitment erkennst du am Körper, nicht am Gefühl: Die Hüfte bleibt hinten, die Hand geht zu früh los, die Füße lösen sich vor dem Kontakt. Such das im Video.",
+    "Trenne Entscheidung und Ausführung: Entschieden wird am Boden. An der Wand wird nur noch geprüft und ausgelöst.",
+    "Übe an Zügen, die körperlich klar gehen, aber unangenehm sind (hoch, weit, unsicherer Fuß). So trainierst du den Zustand und nicht die Kraft."
+   ],
+   "when_de": "Bei Deadpoints, Sprüngen, hohen Füßen und allen Zügen, an denen du zögerst, obwohl du sie körperlich kannst; nicht bei unsicherer Landung oder wenn Angst der eigentliche Engpass ist – dann erst Sturztraining."
+  },
+  "sturzangst-beim-bouldern": {
+   "what_de": "Sturzangst lässt dich verkrampfen und bei unsicheren Zügen bremsen. Du baust sie ab, indem du sicheres Fallen als Technik übst: erst niedrig und kontrolliert, dann schrittweise höher und aus echten Kletterpositionen.",
+   "watch_de": [
+    "Vor jedem Boulder: Landezone prüfen – wohin fällst du bei welchem Zug, liegen dort Pads, sind Lücken und Kanten abgedeckt, ist der Bereich frei?",
+    "Beim Fallen: Blick zur Landestelle, auf beiden Füßen etwa schulterbreit landen und sofort weich tief in die Knie gehen.",
+    "Abrollen: den Schwung über Gesäß und runden Rücken nach hinten weiterführen, Kinn zur Brust. Arme vor dem Körper halten – nie nach hinten abstützen.",
+    "In Stufen üben: erst aus niedriger Höhe abspringen, dann höher, dann aus Kletterpositionen (seitlich, eingedreht, ein Fuß hoch), dann aus dem echten Zug loslassen.",
+    "Dosieren: vor jedem Übungssturz die Angst von 1 bis 10 einschätzen. Im Bereich 4 bis 6 üben, darüber eine Stufe zurück. Vor dem Loslassen einmal ausatmen."
+   ],
+   "right_de": [
+    "Du landest leise auf den Füßen und rollst ab, ohne dass eine Hand den Boden stützt.",
+    "Die Angstzahl für dieselbe Höhe sinkt über mehrere Sessions.",
+    "Du ziehst unsichere Züge durch, statt vorher abzuspringen."
+   ],
+   "elite_de": [
+    "Die Angst hängt oft am Zug, nicht an der Höhe: ein hoher Heel Hook, ein Sprung von der Wand weg. Übe den Sturz aus genau dieser Position, bevor du den Zug voll versuchst.",
+    "Unkontrollierte Stürze vorbereiten: Fällst du bei einem Zug seitlich oder mit dem Rücken voraus? Diese Richtung niedrig üben und das Pad genau dorthin legen.",
+    "Wenig und oft: Zwei, drei Übungsstürze im Aufwärmen jeder Session wirken besser als ein großer Sturztag. Nach längeren Pausen kommt die Angst zurück.",
+    "Am Fels gehört der Spotter dazu: vor dem Einstieg absprechen, was er tut – Hüfte führen, Kopf schützen, Pad nachziehen."
+   ],
+   "when_de": "Wenn du an hohen, weiten oder schrägen Zügen bremst oder abspringst; nicht mit Gewalt durch Angst von 8 bis 10 gehen, und bei wirklich gefährlicher Landung ist Absteigen die richtige Entscheidung."
+  },
+  "atmung-und-koerperspannung": {
+   "what_de": "Viele halten bei harten Zügen die Luft an und verlieren dadurch Rhythmus, Lockerheit und am Ende Spannung. Du steuerst die Atmung bewusst: ruhig einatmen in guten Positionen, kurz und kräftig ausatmen genau im harten Zug.",
+   "watch_de": [
+    "Vor dem Einstieg: zwei tiefe Atemzüge in den Bauch, lang ausatmen. Die Hände gehen erst beim zweiten Ausatmen an die Startgriffe.",
+    "In der Position vor dem harten Zug: einatmen, während du Füße und Hüfte einrichtest.",
+    "Im Auslösen: kurz und hörbar durch den Mund ausatmen (»tss« oder »ha«). Der Bauch wird dabei fest – das verriegelt den Rumpf im Moment des Kontakts.",
+    "Nach dem Kontakt: sofort wieder einatmen, sobald der Griff sitzt. Nicht bis zum nächsten Zug die Luft anhalten.",
+    "Nach dem Versuch: erst die Atmung beruhigen (länger aus- als einatmen), dann Video und Analyse."
+   ],
+   "right_de": [
+    "Du hörst dich bei jedem harten Zug ausatmen.",
+    "Im Video bleiben die Schultern tief und das Gesicht läuft nicht rot an.",
+    "Du kommst am Top oder nach dem Sturz nicht völlig außer Atem an."
+   ],
+   "elite_de": [
+    "Ausatmen heißt nicht, die Spannung loszulassen: Gegen fast geschlossene Lippen oder Zähne ausatmen hält den Druck im Bauch. Langes, offenes Ausatmen macht dich weich.",
+    "Bei sehr kurzen Maximalzügen ist kurzes Pressen normal. Entscheidend ist, dass du danach sofort weiteratmest und nicht drei Züge am Stück anhältst.",
+    "Der Atem zeigt dein Erregungsniveau: Wird er flach und schnell, bist du zu hoch. Ein langer Ausatmer an der nächsten guten Stelle bringt dich zurück.",
+    "Leg Atempunkte in die Beta: An welchem Griff atmest du bewusst? Das gehört genauso zum Plan wie Hände und Füße."
+   ],
+   "when_de": "In jedem Boulder mit mehreren harten Zügen und vor jedem Versuch; bei einem einzelnen Maximalzug reicht der scharfe Ausatmer im Auslösen – dort nicht künstlich ruhig atmen wollen."
+  },
+  "outdoor-session-und-fels-lesen": {
+   "what_de": "Am Fels gibt es keine markierten Tritte, keine weichen Böden und keine gleichbleibenden Bedingungen. Du bereitest die Session deshalb selbst vor: aufwärmen, putzen, Tritte suchen, Pads und Spotter für jede Sturzrichtung einrichten.",
+   "watch_de": [
+    "Bei der Ankunft: den Boulder ganz ansehen – Linie, Ausstieg, Abstieg, Landezone. Den Ausstieg wenn möglich von oben ansehen und putzen.",
+    "Aufwärmen: Puls hoch, Schultern und Hüfte beweglich machen, Finger stufenweise an einer Leiste belasten, dann leichte Züge am Fels.",
+    "Fels lesen: mit Augen und Fingern jeden möglichen Tritt abtasten – Kanten, Kristalle, Dellen, Reibungsflächen. Die besten merken oder dezent markieren.",
+    "Putzen: alle Griffe und Tritte bürsten, Chalk und Gummiabrieb entfernen. Sohlen sauber und trocken; vom Pad oder einer Matte aus starten.",
+    "Pads: für die Crux den wahrscheinlichsten Sturzpunkt bestimmen, Pad dorthin, Lücken schließen, Steine abdecken. Für jeden neuen Abschnitt neu ausrichten und mit dem Spotter absprechen."
+   ],
+   "right_de": [
+    "Vor dem ersten ernsthaften Versuch kennst du alle Tritte, die du nutzen wirst.",
+    "Die Pads liegen dort, wo du wirklich landest – nach dem ersten Sturz nachjustiert.",
+    "Beim ersten harten Versuch bist du warm und die Finger sind vorbereitet."
+   ],
+   "elite_de": [
+    "Tritte am Fels sind oft besser, als sie aussehen, und woanders, als du suchst: tiefer, seitlicher, kleiner. Die halbe Beta eines Felsboulders ist die Fußfolge – nimm dir dafür eigene Zeit.",
+    "Die Sturzrichtung ändert sich mit dem Zug: Bei steilen Bouldern landest du weiter hinten als gedacht, bei Sprüngen seitlich. Einmal aus der Position loslassen, bevor du voll gehst.",
+    "Erst Einzelzüge, dann Versuche vom Start: Am Fels kostet jeder Versuch Haut. Züge einzeln testen, etwa von einem Pad-Stapel aus, bevor du von unten kletterst.",
+    "Bedingungen einplanen: Sonne, Wind und Temperatur am Block für die Tageszeit prüfen und die harten Versuche in das beste Zeitfenster legen."
+   ],
+   "when_de": "Bei jeder Fels-Session, am gründlichsten bei hohen oder steilen Bouldern und unebener Landung; abkürzen darfst du nur bei bekannten, niedrigen Bouldern – aber nie beim Aufwärmen und bei den Pads."
+  },
+  "haut-und-conditions": {
+   "what_de": "Am Limit entscheidet oft die Reibung zwischen Haut und Griff. Du steuerst sie über den Zustand deiner Haut (fest, glatt und trocken, aber nicht spröde) und über die Bedingungen (kühl, trocken) – und teilst die Haut wie eine begrenzte Zahl von Versuchen ein.",
+   "watch_de": [
+    "Am Abend davor und am Morgen: Haut prüfen. Zu trocken und rissig – dünn eincremen. Zu weich und feucht – nicht cremen, Hände trocken halten, vor der Session kein langes Wasser.",
+    "Vor der Session: lose Hautkanten und harte Ränder flach feilen, damit nichts einreißt.",
+    "Zwischen den Versuchen: Chalk abklopfen, Hände an der Luft trocknen und kühlen lassen, Fingerkuppen ansehen. Erst wieder einsteigen, wenn die Haut trocken und kühl ist.",
+    "Während der Session: Rosa, glänzende oder brennende Kuppen sind das Warnsignal. Dann die restlichen Versuche festlegen oder auf andere Griffarten wechseln.",
+    "Danach: Hände waschen, feilen, dünn pflegen. Risse sofort versorgen, nicht erst am nächsten Klettertag."
+   ],
+   "right_de": [
+    "Du rutschst nicht wegen Schweiß oder glatter Haut von Griffen ab.",
+    "Du beendest Sessions ohne Löcher oder Risse in der Haut.",
+    "Am zweiten Tag eines Trips kannst du noch an kleinen Griffen ziehen."
+   ],
+   "elite_de": [
+    "Die Temperatur der Haut zählt mehr als die der Luft: Nach einem Versuch sind die Finger warm und feucht. Länger warten, bis sie wieder kühl sind, bringt mehr Reibung als mehr Chalk.",
+    "Zu trockene, glasige Haut rutscht auch, vor allem bei Kälte. Dann hilft es, die Kuppen vor dem Chalken leicht anzuhauchen oder sie mit feinem Schleifpapier minimal anzurauen.",
+    "Haut als Budget am scharfen Griff: vorher festlegen, wie viele Versuche du an dieser Leiste hast, und sie nur für Versuche mit echter Durchstiegschance nutzen.",
+    "Griffe bürsten ist Hautpflege: Eine Schicht aus Chalk und Gummi senkt die Reibung, du drückst fester zu, und das kostet Haut."
+   ],
+   "when_de": "Bei allen Limit-Versuchen an kleinen Leisten, Slopern und rauem Fels sowie auf Trips; in der Halle an großen Griffen weniger kritisch – dort reicht trockene, gepflegte Haut."
+  },
+  "kleine-tritte-am-fels": {
+   "what_de": "Am Fels stehst du oft auf Kanten und Kristallen von wenigen Millimetern oder auf reiner Reibung. Die Technik ist, die beste Stelle zu finden, die Zehe ganz genau darauf zu setzen und den Druck so zu dosieren und zu richten, dass der Tritt hält.",
+   "watch_de": [
+    "Finden: Tritt mit Auge und Fingerkuppe untersuchen. Wo ist die Kante am schärfsten oder die Fläche am flachsten, und in welche Richtung zeigt sie? Putzen, bei Bedarf dezent markieren.",
+    "Setzen: Schuhspitze langsam von oben auf die Stelle führen, mit dem vordersten Rand der Sohle an der Großzehe. Der Blick bleibt drauf. Einmal setzen, nicht schieben.",
+    "Fuß formen: Zehen im Schuh krümmen und festmachen, Fußgewölbe gespannt. Die Ferse auf einer Höhe festlegen – auf Kanten etwa waagerecht, auf Reibung tief.",
+    "Belasten: Hüfte so stellen, dass der Druck senkrecht auf die Trittfläche geht – meist näher über den Fuß. Gewicht stetig aufbauen, ohne Ruck.",
+    "Unter Last: Ferse und Knie absolut ruhig halten, während du greifst. Jede Bewegung der Ferse dreht die Kante vom Tritt."
+   ],
+   "right_de": [
+    "Der Fuß bleibt beim Weitergreifen unverändert stehen.",
+    "Du spürst die Arbeit in Zehen, Fußsohle und Wade; nach der Session sind die Füße müde.",
+    "Du stehst auf dem Tritt auf, statt dich mit den Armen an ihm vorbeizuziehen."
+   ],
+   "elite_de": [
+    "Fester ist nicht immer besser: Auf winzigen Kanten schert zu viel Druck nach außen das Gummi ab. Der Druck geht in den Fels hinein und nach unten – ausprobieren, ab wann er hält.",
+    "Die Hüfte bestimmt die Druckrichtung: Ist sie zu weit draußen, schiebst du den Fuß nach außen vom Tritt. Im leichten Überhang heißt das Hüfte ran und mit der Zehe ziehen, auf der Platte Hüfte über den Fuß.",
+    "Kante oder Reibung bewusst wählen: Auf scharfen Mini-Leisten trägt die steife Schuhkante, auf runden Kristallen und Dellen trägt mehr Gummi mit gesenkter Ferse.",
+    "Der Fuß ermüdet wie die Finger: Nach langen Sessions lässt die Zehenkraft nach, und Tritte, die morgens hielten, rutschen. Die schwersten Fußzüge früh einplanen – mit Schuhen, deren Kante noch scharf ist."
+   ],
+   "when_de": "An Felsbouldern mit kleinen oder schlechten Tritten, auf Platte, in der Senkrechten und im leichten Überhang; das langsame, tastende Antreten ist falsch bei dynamischen Zügen im Steilen, wo der Tritt nur kurz Druck annehmen muss."
+  }
+ },
+ "notes": "Written from general coaching knowledge and the concept/cues in research_technique.json; no web sources were fetched for this pass, so nothing is quoted. Points to review: (1) backstep-aussenkante: the existing cue 'rechte Hand greift, linke Aussenkante steht' looks wrong or at least ambiguous. Standard teaching (e.g. Gresham) is: right hand reaches -> right hip to the wall -> RIGHT foot on its outside edge, ideally on a hold under the left (holding) hand, i.e. diagonal to the holding hand. I wrote it that way; consider fixing cues_de. (2) hueftposition-offen-geschlossen: skills_min.json says 'frontal fuer Stabilitaet, eingedreht fuer Reichweite' while concept_de says open = fluid weight shift, closed = stability/control. I described both without picking one slogan (open: pelvis close, easy lateral shifts, needs hip mobility; closed: more reach, costs a re-twist for the next move). The two input files should be aligned. (3) toe-screwing: the source text does not say which way to rotate. I wrote it as an isometric torque (no visible movement) whose direction follows the hip position needed (heel inward for knee-out/frontal, heel outward when twisting in). Please verify against the Paradigm video. (4) flagging: flag names differ between sources. I used: Outside Flag = standing foot opposite the holding hand, free leg out to the side; Back Flag / Inside Flag = standing foot on the same side as the holding hand, free leg crossing behind / in front of the standing leg. Check against the Movement for Climbers video the page links to. (5) gestreckte-arme: I added the limit that on a 40 degree board with poor holds and feet, slightly bent arms and a high hip are often needed to keep pressure on the feet. This narrows concept_de, it does not contradict it. (6) Hip distance on slab vs rockover: concept texts say 'Huefte weg von der Wand' (slab/smear) and 'Huefte nah an die Wand' (rockover/edging). I reconciled them with one criterion: hip over the standing foot, pressure perpendicular to the foothold surface. (7) Heel height on small edges (kantenwahl, kleine-tritte): I kept the existing cue (lower heel for surface/friction, higher for pressure on an edge) and wrote 'about level' for edges; some coaches teach a slightly dropped heel on edges as well. (8) Heuristics not taken from a cited source: 'several minutes' rest between limit attempts, the 2-3 second limit in the start position, practice falls in the warm-up, lightly moistening or sanding glassy skin. The 1-10 fear scale with 4-6 as practice zone and the 4-attempt limit come from the input file. (9) Applicability flags written into when_de: kneebar, paddle-dyno and run-and-jump are marked as rarely relevant on a board or for the outdoor goal. Limits checked: what_de <= 260 chars, each watch_de item <= 220 chars, 3-5 watch items, 2-3 right items, 4 elite items per skill."
+}

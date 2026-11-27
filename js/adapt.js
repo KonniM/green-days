@@ -1,7 +1,9 @@
 /* Green Days — Anpassung an dein tatsächliches Training.
    1) Last schätzen: aus der Zahl deiner Climbs statt aus Minuten; gemessene Sessions kalibrieren die Schätzung.
    2) Sessions anpassen: Fingerstatus, ACWR, Extra-Sessions, Green-Day-Verlauf und dein übliches Pensum
-      ergeben einen Faktor (0,5–1,15) für den Umfang der heutigen Einheit. Nie mehr als +10–15 %. */
+      ergeben einen Faktor (0,5–1,2) für den Umfang der heutigen Einheit.
+   Grundsatz: beim Gesamtumfang zügig steigern, solange Einheiten grün sind; gebremst wird dort, wo das
+   Verletzungsrisiko sitzt – bei Fingersignalen und bei zu vielen harten Fingerbelastungen. */
 (function () {
   'use strict';
   const S = () => Store.s;
@@ -89,17 +91,20 @@
     // 1) Dein übliches Pensum bei dieser Art Session
     const pr = Store.learned('ratio', s.kind, 2);
     if (pr && Math.abs(pr.v - 1) >= 0.07) {
-      const k = clamp(1 + 0.6 * (pr.v - 1), 0.8, 1.1);
+      const k = clamp(1 + 0.6 * (pr.v - 1), 0.8, 1.15);
       f *= k; why(k < 1 ? 'down' : 'up', `Du schaffst bei dieser Einheit im Schnitt ${Math.round(pr.v * 100)} % des Plans – das Ziel ist daran angepasst.`, false);
     }
-    // 2) Bereit für mehr? Zwei Green Days in Folge bei dieser Art, RPE im Rahmen
+    // 2) Bereit für mehr? Schon ein Green Day im RPE-Rahmen reicht für den ersten Schritt
     let fg = finger(date);
     if (pre && pre.finger != null && pre.finger >= fg.v) fg = { v: pre.finger, src: 'Finger vor der Session' };
     const same = real().filter(x => x.kind === s.kind && x.planId && x.date < date).sort((a, b) => a.date < b.date ? 1 : -1).slice(0, 2);
     const a0 = Store.acwr(date, { [date]: Plan.plannedLoad(s) });
-    if (!easyWeek && same.length === 2 && same.every(x => x.color === 'green' && x.rpePlan && x.rpe <= x.rpePlan[1]) && fg.v <= 1 && (a0.ratio == null || a0.ratio <= 1.2)) {
+    const okDay = (x) => x.color === 'green' && x.rpePlan && x.rpe <= x.rpePlan[1];
+    if (!easyWeek && same.length && okDay(same[0]) && fg.v <= 2 && (a0.ratio == null || a0.ratio <= 1.3)) {
+      const two = same.length === 2 && okDay(same[1]);
       const easy = same.every(x => x.rpe <= (x.rpePlan[0] + x.rpePlan[1]) / 2);
-      f *= easy ? 1.1 : 1.05; why('up', `Zwei Green Days in Folge bei dieser Einheit${easy ? ' und RPE unter dem Ziel' : ''} – ${easy ? '+10' : '+5'} % Umfang.`);
+      const k = two ? (easy ? 1.15 : 1.1) : 1.05;
+      f *= k; why('up', `${two ? 'Zwei Green Days in Folge' : 'Letztes Mal ein Green Day'} bei dieser Einheit${two && easy ? ' und RPE unter dem Ziel' : ''} – +${Math.round((k - 1) * 100)} % Umfang.`);
     }
     // 3) Finger
     if (fg.v >= 5) { f = Math.min(f, 0.6); out.noHard = true; why('down', `${fg.src}: ${fg.v}/10 – keine harten Fingerreize heute, Umfang deutlich runter.`); }
@@ -136,17 +141,27 @@
       const k = clamp(1 - 0.7 * extra / rem, 0.6, 1);
       if (k < 0.97) { f = Math.min(f, f * k); why('down', `Diese Woche schon ${extra} Load zusätzlich zum Plan – der Rest der Woche wird ${k < 0.8 ? 'deutlich' : 'etwas'} kürzer.`); }
     }
-    // 8) ACWR mit dieser Session
+    // 8) Harte Fingerbelastungen der letzten 7 Tage – die eigentliche Risikogröße für Ringbänder und Gelenke
+    if (HARD[s.kind]) {
+      let done = 0, planned = 0;
+      for (let k = 1; k <= 7; k++) {
+        const dd = D.add(date, -k);
+        real().forEach(x => { if (x.date === dd) done += x.hi || 0; });
+        Plan.plannedOn(dd).forEach(p => { planned += p.hi || 0; });
+      }
+      if (done >= 10 && done > Math.max(planned * 1.4, planned + 6)) { f = Math.min(f, 0.85); why('down', `In den letzten 7 Tagen ${done} harte Fingerbelastungen statt geplant ${planned} – heute weniger harte Versuche, gleiche Qualität.`); }
+    }
+    // 9) Gesamtlast: erst ein echter Spike (über 1,5) wird gekürzt. Zwischen 1,3 und 1,5 wird nur nicht weiter gesteigert.
     const pl = Plan.plannedLoad(s);
     if (pl > 0) {
       const a = Store.acwr(date, { [date]: pl * f });
-      if (a.ratio != null && a.ratio > 1.3 && a.chronic > 0) {
-        const allowed = 1.3 * a.chronic - (a.acute - pl * f);
+      if (a.ratio != null && a.ratio > 1.5 && a.chronic > 0) {
+        const allowed = 1.5 * a.chronic - (a.acute - pl * f);
         const k = clamp(allowed / pl, 0.6, f);
-        if (k < f - 0.02) { why('down', `Mit der vollen Einheit läge dein ACWR bei ${num(a.ratio)} – gekürzt, damit du nahe 1,3 bleibst.`); f = k; }
-      }
+        if (k < f - 0.02) { why('down', `Mit der vollen Einheit läge deine Wochenlast beim ${num(a.ratio)}-Fachen deines 4-Wochen-Schnitts – gekürzt, damit es kein Spike über 1,5 wird.`); f = k; }
+      } else if (a.ratio != null && a.ratio > 1.3 && f > 1) { f = 1; why('down', `Wochenlast beim ${num(a.ratio)}-Fachen deines 4-Wochen-Schnitts – heute Plan-Umfang, keine zusätzliche Steigerung.`, false); }
     }
-    out.f = clamp(Math.round(f * 20) / 20, 0.5, 1.15);
+    out.f = clamp(Math.round(f * 20) / 20, 0.5, 1.2);
     if (easyWeek && out.f > 1) out.f = 1;
     return out;
   }
@@ -164,13 +179,16 @@
   }
 
   // Vorschlag für die Hang-Last aus der letzten Einheit
-  function hangSuggest(prev, date) {
+  // h = { target: Ziel-RPE, step: kleinster Schritt in kg, lift: true für Übungen ohne Fingerlast }
+  function hangSuggest(prev, date, h) {
     if (!prev) return null;
-    const fg = finger(date).v;
-    if (fg >= 3) return { kg: prev.kg, text: `Finger ${fg}/10: Last halten oder 2,5–5 kg runter.` };
-    if (prev.rpe >= 9) return { kg: prev.kg - 2.5, text: 'Letztes Mal RPE 9+: 2,5 kg weniger.' };
-    if (prev.rpe <= 7) return { kg: prev.kg + 1.25, text: 'Letztes Mal RPE ≤ 7 und Finger ruhig: +1,25 kg möglich.' };
-    return { kg: prev.kg, text: 'Letztes Mal RPE 8: Last halten.' };
+    h = h || {}; const target = h.target || 8, step = h.step || 1.25, kgs = (v) => String(v).replace('.', ',');
+    const fg = h.lift ? 0 : finger(date).v;
+    if (fg >= 3) return { kg: prev.kg, text: `Finger ${fg}/10: Last halten oder ${kgs(step * 2)}–${kgs(step * 4)} kg runter.` };
+    if (prev.rpe >= 9 && target < 9) return { kg: prev.kg - step * 2, text: `Letztes Mal RPE 9+: ${kgs(step * 2)} kg weniger.` };
+    if (prev.rpe <= target - 2) return { kg: prev.kg + step * 2, text: `Letztes Mal RPE ${prev.rpe} – deutlich unter dem Ziel (${target}): +${kgs(step * 2)} kg.` };
+    if (prev.rpe < target) return { kg: prev.kg + step, text: `Letztes Mal RPE ${prev.rpe}, Ziel ${target}: +${kgs(step)} kg.` };
+    return { kg: prev.kg, text: `Letztes Mal RPE ${prev.rpe}: Last halten, bis sie sich wie RPE ${target - 1} anfühlt.` };
   }
 
   window.Adapt = { est, duration, freeMinutes, learnFrom, finger, factor, today, hangSuggest, weekExtra, PER_CLIMB };

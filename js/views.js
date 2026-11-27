@@ -25,6 +25,7 @@
     const daysLeft = D.diff(Plan.end(), today);
     let h = `<div class="date-head"><h1>Plan</h1><span>${daysLeft > 0 ? `noch ${Math.ceil(daysLeft / 7)} Wochen bis zum Ziel` : ''}</span></div>
       <div class="goal-card card"><span class="eyebrow">Ziel</span><h3>Outdoor 8A bis Oktober 2027</h3>
+      ${window.Grades ? `<p class="meta">Grad-Leiter: Limit jetzt <b>${e(Grades.fmtLevel(Grades.level(today)))}</b> → letzte Woche <b>${e(Grades.fmt(Grades.GOAL))}</b>. Alle Grade im Plan hängen daran.</p>` : ''}
       <div class="macro" aria-label="Jahresplan">${list.map(p => `<button class="macro-seg ph-${p.type}${cur && cur.phase.id === p.id ? ' is-cur' : ''}" style="flex:${p.weeks}" data-act="phase-open" data-id="${p.id}" aria-label="${e(p.name)}"><span>${p.idx + 1}</span></button>`).join('')}</div>
       <div class="macro-axis"><span>${e(D.fmt(list[0].start, { month: 'short', year: 'numeric' }))}</span><span>${e(D.fmt(Plan.end(), { month: 'short', year: 'numeric' }))}</span></div>
       <p class="hint">Aufbauen → in Power umsetzen → am Fels anwenden → zurücknehmen und performen. Eine Hauptanpassung pro Phase.</p></div>
@@ -37,6 +38,7 @@
         <button class="phase-top" data-act="phase-toggle" data-id="${p.id}" aria-expanded="${isOpen}">
           <span class="ph-num">${p.idx + 1}</span><span class="ph-title"><b>${e(p.name)}</b><em>${e(fmtRange(p.start, p.end))} · ${p.weeks} Wochen</em></span><span class="chev">${isOpen ? '−' : '+'}</span></button>
         ${isOpen ? `<div class="phase-body"><p class="meta">${e(p.where)}</p><p>${e(p.goal)}</p>
+          ${window.Grades ? `<p class="meta">Grade am Ende dieser Phase: Limit <b>${e(Grades.fmtLevel(Grades.level(p.end)))}</b> · Flash <b>${e(Grades.fmtLevel(Grades.level(p.end) - 2))}</b></p>` : ''}
           <ul class="points">${p.points.map(x => `<li>${e(x)}</li>`).join('')}</ul>
           <details><summary>Bewusst nicht Teil dieser Phase</summary><ul class="points not">${p.not.map(x => `<li>${e(x)}</li>`).join('')}</ul></details>
           ${p.flex ? `<div class="flex-weeks"><span>Dauer anpassen</span><button class="chip chip-btn" data-act="phase-weeks" data-id="${p.id}" data-d="-1" aria-label="Eine Woche kürzer">−</button><b>${p.weeks} Wo.</b><button class="chip chip-btn" data-act="phase-weeks" data-id="${p.id}" data-d="1" aria-label="Eine Woche länger">+</button></div>` : ''}
@@ -227,7 +229,7 @@
       h += '<h3 class="list-h">Übungen</h3>';
     }
     const f = list.filter(x => (ui.libGroup === 'all' || x[key] === ui.libGroup) && (ui.libLevel === 'all' || (x.levels || []).indexOf(ui.libLevel) >= 0));
-    return h + (f.length ? f.map(libCard).join('') : '<p class="empty">Nichts gefunden für diese Filter.</p>');
+    return h + (ui.lib === 'skill' && ui.libGroup === 'all' && ui.libLevel === 'all' && window.Tech ? Tech.listHTML() : '') + (f.length ? f.map(libCard).join('') : '<p class="empty">Nichts gefunden für diese Filter.</p>');
   }
   A['lib-group'] = (el) => { ui.libGroup = el.dataset.v; UI.render(); };
   A['lib-level'] = (el) => { ui.libLevel = el.dataset.v; UI.render(); };
@@ -253,9 +255,14 @@
     let h = `<div class="lv-row">${(x.levels || []).map(l => `<span class="chip"><i class="lv-${l}"></i>${LEVELS[l]}</span>`).join('')}</div>`;
     if (f.type === 'skill') {
       // Minimal: ein Satz, ein Clip – alles Weitere zum Aufklappen
-      h += `<p class="one one-lg">${e(x.one_de || firstSentence(x.concept_de))}</p>${clipHTML(x)}
-        <details class="more" ${x.clip ? '' : 'open'}><summary>Was ist gemeint?</summary><p>${e(x.concept_de || '')}</p></details>
-        <details class="more"><summary>Worauf achten</summary><ul class="cues">${(x.cues_de || []).map(c => `<li>${e(c)}</li>`).join('')}</ul></details>
+      h += `<p class="one one-lg">${e(x.one_de || firstSentence(x.concept_de))}</p>${x.what_de ? `<p class="lead">${e(x.what_de)}</p>` : ''}${clipHTML(x)}
+        ${x.watch_de ? `<h4 class="sec-h">Worauf genau achten – in dieser Reihenfolge</h4><ul class="steps">${x.watch_de.map(c => `<li>${e(c)}</li>`).join('')}</ul>` : ''}
+        ${x.right_de ? ul('Daran merkst du, dass es stimmt', x.right_de) : ''}
+        ${x.elite_de ? `<details class="more" open><summary>Feinheiten für Fortgeschrittene</summary><ul class="cues">${x.elite_de.map(c => `<li>${e(c)}</li>`).join('')}</ul></details>` : ''}
+        ${x.when_de ? `<p class="meta"><b>Wann einsetzen:</b> ${e(x.when_de)}</p>` : ''}
+        ${window.Tech ? Tech.skillLinks(x.id) : ''}
+        <details class="more" ${x.clip || x.watch_de ? '' : 'open'}><summary>Hintergrund</summary><p>${e(x.concept_de || '')}</p></details>
+        <details class="more"${x.watch_de ? '' : ' open'}><summary>Kurz-Cues für die Wand</summary><ul class="cues">${(x.cues_de || []).map(c => `<li>${e(c)}</li>`).join('')}</ul></details>
         ${(x.drills || []).length ? `<details class="more"><summary>Drills (${x.drills.length})</summary>${x.drills.map(d => `<div class="drill"><b>${e(d.name_de)}</b><p>${e(d.how_de)}</p><span class="meta">${e(d.dose_de || '')}</span></div>`).join('')}</details>` : ''}
         ${(x.goal_examples_de || []).length ? `<details class="more"><summary>Mögliche Session-Ziele</summary><ul class="points">${x.goal_examples_de.map(c => `<li>${e(c)}</li>`).join('')}</ul></details>` : ''}
         ${(x.mistakes_de || []).length ? `<details class="more"><summary>Typische Fehler</summary><ul class="points not">${x.mistakes_de.map(c => `<li>${e(c)}</li>`).join('')}</ul></details>` : ''}
@@ -317,6 +324,7 @@
     sheet('Einstellungen', `<div class="form" id="settings">
       <span class="eyebrow">Plan</span>
       <div class="grid2">${field('Planstart (Montag)', `<input type="date" name="planStart" value="${p.planStart}">`)}${field('Körpergewicht kg', `<input type="number" name="bodyweight" step="0.5" value="${p.bodyweight || ''}" inputmode="decimal">`)}</div>
+      ${window.Grades ? field('Aktuelles Limit am Board', `<select name="gradeLevel" data-num><option value="">unverändert (${e(Grades.fmtLevel(Grades.ref().level))})</option>${[4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11].map(v => `<option value="${v}">${e(Grades.fmtLevel(v))}</option>`).join('')}</select>`, 'Der härteste Boulder, den du in einer Session schaffst. Startpunkt der Grad-Leiter bis 8A – die App zieht ihn nach, wenn du härtere Boulder einträgst.') : ''}
       <span class="eyebrow">Baseline vor dem Start (für den ACWR)</span>
       <div class="grid3">${field('Einheiten / Wo.', `<input type="number" name="perWeek" step="0.5" value="${p.baseline.perWeek}" inputmode="decimal">`)}${field('Ø Minuten', `<input type="number" name="minutes" value="${p.baseline.minutes}" inputmode="numeric">`)}${field('Ø RPE', `<input type="number" name="rpe" step="0.5" value="${p.baseline.rpe}" inputmode="decimal">`)}</div>
       <span class="eyebrow">Mein Level (hebt die passende Dosierung hervor)</span>
@@ -351,6 +359,7 @@
   A['settings-save'] = (el) => {
     const w = el.closest('.sheet-wrap'), f = readForm(w), p = S().profile;
     if (f.planStart) p.planStart = D.monday(f.planStart);
+    if (f.gradeLevel && window.Grades) Grades.set(f.gradeLevel, D.today());
     p.bodyweight = f.bodyweight || null;
     p.baseline = { perWeek: f.perWeek || 0, minutes: f.minutes || 0, rpe: f.rpe || 0 };
     p.levels = { strength: f.strength, technique: f.technique, mobility: f.mobility };

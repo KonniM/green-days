@@ -41,13 +41,13 @@
   const mid = (v) => Array.isArray(v) ? (v[0] + v[1]) / 2 : v;
   const scaleN = (v, f) => { if (Array.isArray(v)) { const a = Math.max(1, Math.round(v[0] * f)), b = Math.max(a, Math.round(v[1] * f)); return a === b ? a : [a, b]; } return Math.max(1, Math.round(v * f)); };
   const fill = (tpl, n) => tpl.map(l => l.replace('{n}', rng(n)));
-  const warm = (min, extra) => ({ t: 'warmup', title: 'Aufwärmen', min, routine: RT.warmup, ex: extra && /Leiter|Aufwärmhänge/.test(extra.join(' ')) ? EX.warmHang : undefined, lines: ['Puls hoch, Schultern/Hüfte mobilisieren, leichte Boulder V0–V2 mit steigender Schwierigkeit.'].concat(extra || []) });
+  const warm = (min, extra) => ({ t: 'warmup', title: 'Aufwärmen', min, routine: RT.warmup, ex: extra && /Leiter|Aufwärmhänge/.test(extra.join(' ')) ? EX.warmHang : undefined, lines: ['Puls hoch, Schultern/Hüfte mobilisieren, leichte Boulder {g:warm} mit steigender Schwierigkeit.'].concat(extra || []) });
   const hangs = (sets, o) => {
     o = o || {};
     const secs = o.secs || 7, rest = o.rest || 240;
     return {
       t: 'hang', title: o.title || 'Max Hangs', min: Math.round((sets * (secs + rest)) / 60) + 6, ex: o.ex === null ? undefined : (o.ex || EX.maxHang), phy: o.phy, log: 'hang',
-      hang: { sets, secs, grip: o.grip || 'Half Crimp', edge: o.edge || 20 },
+      hang: { sets, secs, grip: o.grip || 'Half Crimp', edge: o.edge || 20, target: o.target || 8, step: o.step || 1.25, label: o.label, hold: o.hold },
       lines: [`${sets} × ${secs} s · ${o.grip || 'Half Crimp'} · ${o.edge || 20} mm · ${Math.round(rest / 60)} min Pause`].concat(o.lines || []),
       timer: { label: o.title || 'Max Hangs', prep: 10, work: secs, rest, reps: sets, repName: 'Hang', workName: 'Hängen', repLabel: 'Hangs' },
       // Hangs werden nie hochskaliert – nur bei Warnsignalen reduziert.
@@ -55,7 +55,7 @@
     };
   };
   const circuits = (rounds, o) => {
-    const tpl = ['{n} Runden × 40 s Klettern / 45 s Pause', '8–15 Züge pro Circuit, große bis mittlere Griffe · RPE 4–6', 'Orientierung: V2–V3 bei 40°, sonst leichter oder flacher.'].concat((o && o.lines) || []);
+    const tpl = ['{n} Runden × 40 s Klettern / 45 s Pause', '8–15 Züge pro Circuit, große bis mittlere Griffe · RPE 4–6', 'Grad: {g:circ} bei 40°, sonst leichter oder flacher.'].concat((o && o.lines) || []);
     return {
       t: 'cap', title: 'Submax Boulder Circuits', min: Math.round(lo(rounds) * 85 / 60) + 3, ex: EX.submax, log: 'cap',
       count: { n: rounds, unit: 'Runden', sec: 40 }, lines: fill(tpl, rounds),
@@ -66,14 +66,14 @@
   const arc = (n, mins, o) => ({
     t: 'cap', title: 'ARC – sehr leichtes Dauerklettern', min: n * lo(mins) + (n - 1) * 4 + 2, ex: EX.arc, log: 'cap',
     count: { n, unit: 'Sätze', sec: lo(mins) * 60 },
-    lines: [`${n} × ${rng(mins)} min fast durchgängig klettern, 4 min Satzpause`, 'Pump 0–2/10, RPE 2–3, keine schweren Einzelzüge', 'Board flach (20–25°), Traverse oder Wand mit großen Griffen.'].concat((o && o.lines) || []),
+    lines: [`${n} × ${rng(mins)} min fast durchgängig klettern, 4 min Satzpause`, 'Pump 0–2/10, RPE 2–3, keine schweren Einzelzüge', 'Board flach (20–25°), Traverse oder Wand mit großen Griffen. Grad höchstens {g:easy}.'].concat((o && o.lines) || []),
     timer: { label: 'ARC', prep: 15, work: lo(mins) * 60, rest: 240, reps: n, repName: 'Satz', workName: 'Klettern', repLabel: 'Sätze', note: `Plan: ${n} × ${rng(mins)} min.` },
     re: (f) => arc(n, scaleN(mins, f), o)
   });
   const longC = (n, mins) => ({
     t: 'cap', title: 'Long Circuits', min: n * lo(mins) + (n - 1) * 3 + 2, ex: EX.longEasy, log: 'cap',
     count: { n, unit: 'Sätze', sec: lo(mins) * 60 },
-    lines: [`${n} × ${rng(mins)} min leichte, zusammenhängende Sequenzen, 3 min Satzpause`, 'Pump 2–4/10, gleichmäßiges Tempo', 'Letzter Satz in gleicher Qualität wie der erste.'],
+    lines: [`${n} × ${rng(mins)} min leichte, zusammenhängende Sequenzen, 3 min Satzpause`, 'Grad: {g:circ} · Pump 2–4/10, gleichmäßiges Tempo', 'Letzter Satz in gleicher Qualität wie der erste.'],
     timer: { label: 'Long Circuits', prep: 15, work: lo(mins) * 60, rest: 180, reps: n, repName: 'Satz', workName: 'Klettern', repLabel: 'Sätze', note: `Plan: ${n} × ${rng(mins)} min.` },
     re: (f) => longC(n, scaleN(mins, f))
   });
@@ -89,9 +89,11 @@
     return b;
   };
   const tech = (min, lines) => ({ t: 'tech', title: 'Technik-Fokus der Woche', min, count: { n: Math.max(3, Math.round(min / 4)), unit: 'Boulder' },
-    lines: lines || ['2–3 Grade unter deinem Maximum, damit Kopf und Körper Kapazität für die Bewegung haben.', 'Ein Prozessziel wählen, ein paar Versuche filmen, nach jedem Go: Was hat sich verändert?'],
+    lines: lines || ['Grad: {g:tech} – zwei bis drei Grade unter deinem Limit, damit Kopf und Körper Kapazität für die Bewegung haben.', 'Ein Prozessziel wählen, ein paar Versuche filmen, nach jedem Go: Was hat sich verändert?'],
     re: (f) => tech(Math.max(10, Math.round(min * f)), lines) });
   const str = (title, min, lines, ex) => ({ t: 'str', title, min, lines, ex });
+  // Kraftübung mit Gewichts-Log und Steigerungsvorschlag (gleiche Mechanik wie bei den Hängern)
+  const lift = (title, min, lines, ex, name, target, step, reps, hold) => Object.assign(str(title, min, lines.concat(['Gewicht und RPE eintragen – die App schlägt daraus die Last für nächstes Mal vor.']), ex), { log: 'hang', hang: { grip: name, lift: true, target: target || 8, step: step || 2.5, label: 'Zusatzgewicht in kg', reps, hold } });
   const anta = (min) => ({ t: 'acc', title: 'Antagonisten & Schulter', min: min || 10, ex: EX.antagonist, lines: ['2–3 Sätze Push-ups oder Dips, Außenrotation, I-Y-T, Handgelenkstrecker.', 'Locker, 2–3 Wiederholungen in Reserve.'] });
   const cool = (min) => ({ t: 'mob', title: 'Cooldown & Mobility', min: min || 8, routine: RT.cooldown, lines: ['Kurz runterfahren, Unterarme lockern, 2–3 Positionen aus der Mobility-Routine.'] });
   const info = (title, lines, min) => ({ t: 'info', title, min: min || 0, lines });
@@ -114,10 +116,12 @@
   const care = () => ({ t: 'mob', title: 'Finger-Pflege', min: 8, routine: RT.forearm, lines: ['8 min: Sehnengleiten, Mittelgelenke mobilisieren, Fingerstrecker mit Band, Unterarme lockern.', 'An jedem Ruhetag. Hält gereizte Gelenke beweglich – kein Kraftreiz.'] });
   // Zweiter Griff im Kraftblock: Positionen dosiert trainieren, die Ringbänder und Lumbrikales am stärksten fordern
   const GRIP_GATE = 'Nur wenn die schnellen Block-Züge schmerzfrei sind und der Finger am Folgetag ruhig bleibt – sonst diese Woche offene Hand.';
-  const fullCrimp = () => hangs(2, { title: 'Volle Leiste – Block-Züge', ex: null, phy: ['pulley-injury', 4, 'block-pulls', 'Blockzüge (No-Hang) mit Gewicht'], grip: 'volle Leiste (Daumen drauf)', secs: 7, rest: 180,
+  const fullCrimp = () => hangs(2, { title: 'Volle Leiste – Block-Züge', ex: null, phy: ['pulley-injury', 4, 'block-pulls', 'Blockzüge (No-Hang) mit Gewicht'], grip: 'volle Leiste (Daumen drauf)', secs: 7, rest: 180, target: 7, label: 'Gewicht am Block in kg',
     lines: ['Block mit Gewicht vom Boden heben, nicht hängen. RPE 6–7: mit etwa 60–70 % deiner Half-Crimp-Last starten, pro Woche höchstens +2,5 kg.', 'Zweck: Ringbänder an die Position gewöhnen, die sie am stärksten belastet – kontrolliert statt erst am Limit-Boulder.', GRIP_GATE] });
-  const pockets = () => hangs(2, { title: 'Loch-Haltezüge', ex: null, phy: ['lumbrical-strain', 4, 'farmer-pockets', 'Loch-Haltezüge mit Gewicht'], grip: 'Dreifingerloch', secs: 10, rest: 120,
+  const pockets = () => hangs(2, { title: 'Loch-Haltezüge', ex: null, phy: ['lumbrical-strain', 4, 'farmer-pockets', 'Loch-Haltezüge mit Gewicht'], grip: 'Dreifingerloch', secs: 10, rest: 120, target: 7, label: 'Gewicht am Block in kg',
     lines: ['Block oder Ring mit Gewicht vom Boden heben. RPE 6–7. Erst drei Finger (ohne kleinen Finger); nach zwei schmerzfreien Einheiten Zweifinger (Mittel + Ring).', 'Grundglieder parallel halten, freie Finger nicht maximal einrollen – das schont die Lumbrikales.', 'Zweck: Löcher dosiert trainieren, bevor du sie am Projekt brauchst.', 'Zieht es in der Handfläche oder schmerzt ein Finger über 2/10: Gewicht runter.'] });
+  // Technik-Prinzip der Woche: lenkt die Aufmerksamkeit im Aufwärmen, kostet keine Extra-Zeit
+  const prin = () => ({ t: 'prin', title: 'Technik-Prinzip der Woche', min: 0, lines: ['Wende es auf zwei deiner Aufwärm-Boulder an: erst bewusst langsam, dann im normalen Tempo.', 'Kostet keine Extra-Zeit – es lenkt nur, worauf du beim Aufwärmen achtest. Wenn du magst: einen Versuch filmen.'] });
   const FINGER_RULE = 'Finger-Regel: statisch und kontrolliert greifen – kein Springen, kein Nachschnappen, nicht voll aufstellen. Schmerzt ein Zug über 2/10: anderen Boulder nehmen.';
   // Ziel-Blöcke: Inhalt (aktuelle Stufe, Dosis) kommt zur Laufzeit aus deinem Fortschritt.
   const GOAL_TITLES = { 'one-arm-pull-up': 'One-Arm-Pull-up', 'front-lever': 'Front Lever', pancake: 'Pancake', 'middle-split': 'Mittelspagat', handstand: 'Handstand' };
@@ -169,7 +173,7 @@
     const light = w.deload || w.test;
     const mo = S(0, 'mo', 'submax', 'Max Hangs + Submax Circuits', 'Wiederholbare submaximale Arbeit – Maxkraft nur erhalten', [4, 6], [
       warm(18, ['Vor den Max Hangs einige progressive, kontrollierte Aufwärmhänge.']),
-      hangs(light ? 1 : 2, { lines: ['Ziel RPE 7, nie über 8. Liegst du darunter (z. B. +30 kg bei RPE 5–6), darfst du alle zwei Wochen +2,5 kg nehmen.', 'Finger-Regel: Die Hänger bleiben nur drin, solange sie währenddessen und am nächsten Morgen schmerzfrei sind (höchstens 1–2/10). Halbe Leiste, nicht voll aufstellen.', 'Kein Muskelversagen, kein erzwungenes +2,5 kg pro Woche.'].concat(light ? ['Deload/Test: nur 1 Satz bzw. Last halten.'] : []) }),
+      hangs(light ? 1 : 2, { target: 7, hold: light, lines: ['Ziel RPE 7, nie über 8. Liegst du darunter (z. B. +30 kg bei RPE 5–6), nimm jede Woche +1,25 bis +2,5 kg – die App schlägt den Schritt aus deinem letzten Eintrag vor.', 'Finger-Regel: Die Hänger bleiben nur drin, solange sie währenddessen und am nächsten Morgen schmerzfrei sind (höchstens 1–2/10). Halbe Leiste, nicht voll aufstellen.', 'Kein Muskelversagen, kein erzwungenes +2,5 kg pro Woche.'].concat(light ? ['Deload/Test: nur 1 Satz bzw. Last halten.'] : []) }),
       fast(fq[0], fq[1], w.test ? 'Check: Wie hoch ist der Schmerz bei schnellen Zügen in halber Leiste? 0–1/10 heißt: bereit für dynamische Züge am Board im nächsten Block.' : w.deload ? 'Deload: leicht und locker.' : i >= 4 ? 'Wenn die letzten zwei Wochen bei höchstens 2/10 lagen: etwas mehr Widerstand, gleiches Tempo.' : 'Einstieg: leichter Widerstand. Es geht um Tempo ohne Schmerz, nicht um Last.'),
       oap(light ? 6 : 8, light ? 'Deload: 2 Sätze pro Seite, locker.' : 'Hauptreiz der Woche für dieses Ziel. Technisch sauber, RPE höchstens 7–8 – in dieser Phase kein Maximalversuch.'),
       circuits(w.mo, w.test ? { lines: ['Benchmark: derselbe Circuit wie in Woche 1 – gleicher Winkel, gleiche Griffe, gleiches Tempo. Runden, Pump nach Runde 5/10 und Erholung nach 5 min notieren.'] } : null),
@@ -190,7 +194,7 @@
       warm(18),
       light ? null : oap(6, 'Zweiter, kurzer Reiz: 2 Sätze pro Seite, bevor du ans Board gehst.'),
       fq[2] ? fast(fq[2], fq[1], 'Kurze zweite Dosis als Aktivierung vor dem Board.') : null,
-      board('Moderates Board-Bouldern', light ? 10 : 15, [light ? '{n} Boulder V3 bei 40°, RPE max. 6.' : '{n} Boulder V3–V4 bei 40°, RPE max. 6–7.', '2–3 min Pause, keine V6-Limit-Projekte, kein wiederholtes Abfallen.', 'Zweck: boardtypische Bewegung und etwas höhere Griffbelastung erhalten.', FINGER_RULE].concat(i >= 4 && !light ? ['Neu ab Woche 5: 2–3 kontrollierte Deadpoints an große Griffe – nur wenn die schnellen Block-Züge bei höchstens 1/10 liegen.'] : []), { ex: EX.flash, rest: [120, 150, 180], n: light ? [2, 3] : [3, 5] }),
+      board('Moderates Board-Bouldern', light ? 10 : 15, [light ? '{n} Boulder {g:mod} bei 40°, eher der leichtere Grad, RPE max. 6.' : '{n} Boulder {g:mod} bei 40°, RPE max. 6–7.', '2–3 min Pause, nichts ab {g:limit}, kein wiederholtes Abfallen.', 'Zweck: boardtypische Bewegung und etwas höhere Griffbelastung erhalten.', FINGER_RULE].concat(i >= 4 && !light ? ['Neu ab Woche 5: 2–3 kontrollierte Deadpoints an große Griffe – nur wenn die schnellen Block-Züge bei höchstens 1/10 liegen.'] : []), { ex: EX.flash, rest: [120, 150, 180], n: light ? [2, 3] : [3, 5] }),
       longC(frN, frMin),
       light ? null : fl(5, 'Zweiter, kurzer Reiz: 2–3 Sätze.'),
       cool()
@@ -211,7 +215,7 @@
     lim: [4, 4, 5, 5, 5], limMin: [44, 47, 50, 50, 50], frRpe: [[7, 9], [8, 9], [8, 9], [8, 9], [8, 9]] };
   // Zweiter Griff: Kraftblock I ab Stufe 4 (Woche 5) im Wechsel volle Leiste / offene Hand / Loch, Kraftblock II Pinch / volle Leiste / Loch
   function secondGrip(st, two, o) {
-    const base = hangs(2, { title: two ? o.gripTitle : 'Open Hand / 3-Finger-Drag', ex: two ? EX.blockLift : EX.openHang, grip: two ? o.grip : '3-Finger-Drag', secs: 7, rest: 180, lines: ['Grip-Rotation: anderer Gelenkwinkel, damit nicht immer dieselbe Struktur (PIP, A2) die Last trägt.', 'RPE 7 – das ist Ergänzung, kein zweiter Maxreiz.'] });
+    const base = hangs(2, { target: 7, title: two ? o.gripTitle : 'Open Hand / 3-Finger-Drag', ex: two ? EX.blockLift : EX.openHang, grip: two ? o.grip : '3-Finger-Drag', secs: 7, rest: 180, lines: ['Grip-Rotation: anderer Gelenkwinkel, damit nicht immer dieselbe Struktur (PIP, A2) die Last trägt.', 'RPE 7 – das ist Ergänzung, kein zweiter Maxreiz.'] });
     if (two) return [base, fullCrimp(), pockets()][st % 3];
     return st < 3 ? base : [fullCrimp(), base, pockets()][(st - 3) % 3];
   }
@@ -223,32 +227,32 @@
       mo = S(0, 'mo', 'test', 'Test: Max Hang + Zugkraft', 'Standortbestimmung – frisch, wenige Versuche', [7, 8], [
         warm(22, ['Aufwärm-Leiter an der Leiste: 3–4 Hänge mit steigender Last.']),
         hangs(3, { title: 'Max-Hang-Test', lines: ['In 3 Versuchen zu einem sauberen 7-s-Hang bei RPE 9–9,5 hocharbeiten. Kein Abrutschen, kein Versagen.', 'Beste Last notieren – das ist dein neuer Referenzwert.'] }),
-        str('Weighted Pull-up Test', 15, ['Zu einer schweren 3er-Serie hocharbeiten (RPE 9). 3–4 min Pause.'], EX.pull),
+        lift('Weighted Pull-up Test', 15, ['Zu einer schweren 3er-Serie hocharbeiten (RPE 9). 3–4 min Pause.'], EX.pull, 'Weighted Pull-up', 9, 2.5, 3),
         cool()
       ], { low: 'Test um eine Woche verschieben – ein Test ist nur frisch etwas wert.', hi: 3 });
       fr = S(4, 'fr', 'test', o.board + ' Benchmark-Session', 'Boulder aus den ersten Wochen wiederholen und vergleichen', [7, 8], [
         warm(22),
-        board('Benchmark-Vergleich', 40, ['2–3 Boulder aus Woche 1–3 wiederholen: weniger Versuche? Kontrollierter?', 'Danach 2 neue Boulder am Flash-Level. Kein Limit-Projektieren.'], { rest: [180, 240, 300], ex: EX.bench, n: 5 }),
+        board('Benchmark-Vergleich', 40, ['2–3 Boulder aus Woche 1–3 wiederholen: weniger Versuche? Kontrollierter?', 'Danach 2 neue Boulder am Flash-Level ({g:flash}). Kein Limit-Projektieren.'], { rest: [180, 240, 300], ex: EX.bench, n: 5 }),
         anta(), cool()
       ], { hi: 8 });
     } else if (p.deload) {
       mo = S(0, 'mo', 'strength', 'Fingerkraft + Zugkraft (Deload)', 'Reiz halten, Umfang runter', [5, 6], [
         warm(20, ['Aufwärm-Leiter an der Leiste: 3–4 Hänge mit steigender Last.']),
-        hangs(2, { lines: ['Deload: Last der Vorwoche halten, nur 2 Sätze.'] }),
-        str('Weighted Pull-ups', 12, ['2 × 3 mit der Last der Vorwoche.'], EX.pull),
+        hangs(2, { hold: true, lines: ['Deload: Last der Vorwoche halten, nur 2 Sätze.'] }),
+        lift('Weighted Pull-ups', 12, ['2 × 3 mit der Last der Vorwoche.'], EX.pull, 'Weighted Pull-up', 8, 2.5, 3, true),
         anta(8)
       ], { low: 'Nur Aufwärmen + 2 Hangs.', hi: 2 });
       fr = S(4, 'fr', 'limit', o.board + ' moderat (Deload)', 'Bewegung am Board erhalten – kein Projektieren', [5, 6], [
         warm(22),
-        board('Moderates Board-Bouldern', 25, ['{n} Boulder am Flash-Level, RPE 6. Kein Projektieren.'], { ex: EX.flash, rest: [120, 180], n: [5, 6] }),
+        board('Moderates Board-Bouldern', 25, ['{n} Boulder am Flash-Level ({g:flash}), RPE 6. Kein Projektieren.'], { ex: EX.flash, rest: [120, 180], n: [5, 6] }),
         anta(8), cool(6)
       ], { low: '3 leichte Boulder, dann Mobility.', hi: 0 });
     } else {
       mo = S(0, 'mo', 'strength', 'Fingerkraft + Zugkraft', 'Maximalkraft und Rekrutierung – wenig Volumen, volle Qualität', pick(T.moRpe, st), [
         warm(20, ['Aufwärm-Leiter an der Leiste: 3–4 Hänge mit steigender Last (ca. 50 / 70 / 85 %).']),
-        hangs(sets, { secs, lines: ['Last nur erhöhen (+1,25–2,5 kg), wenn letzte Woche alle Sätze ≤ RPE 7,5 waren und die Finger am Folgetag ruhig blieben.', 'Jeder Satz endet 1–2 s vor dem Versagen.'].concat(!two && st === 0 ? ['Woche 1: mit der Malta-Last starten – neu ist nur der dritte Satz.'] : []) }),
+        hangs(sets, { secs, lines: ['Ziel RPE 8. Lag die letzte Einheit darunter und blieben die Finger am Folgetag ruhig: +1,25 kg, bei RPE 6 oder weniger +2,5 kg. Die App schlägt den Schritt vor.', 'Jeder Satz endet 1–2 s vor dem Versagen.'].concat(!two && st === 0 ? ['Woche 1: mit der Malta-Last starten – neu ist nur der dritte Satz.'] : []) }),
         pick(T.second, st) ? secondGrip(st, two, o) : null,
-        str('Weighted Pull-ups', late ? 15 : 12, [`${pick(T.pull, st)} · RPE ${pick(T.pullRpe, st)} · 3 min Pause`, 'Volle Bewegungsamplitude, explosiv hoch, kontrolliert runter.', 'Das ist auch die Kraftbasis für den One-Arm-Pull-up.'], EX.pull),
+        lift('Weighted Pull-ups', late ? 15 : 12, [`${pick(T.pull, st)} · RPE ${pick(T.pullRpe, st)} · 3 min Pause`, 'Volle Bewegungsamplitude, explosiv hoch, kontrolliert runter.', 'Das ist auch die Kraftbasis für den One-Arm-Pull-up.'], EX.pull, 'Weighted Pull-up', pick(T.pullRpe, st) + 1, 2.5, parseInt(pick(T.pull, st).split('×')[1], 10)),
         pick(T.core, st) ? fl(8, '3 Sätze der aktuellen Stufe.') : null,
         anta(8)
       ].filter(Boolean), { low: 'Nur Hangs (2 Sätze) + Pull-ups (2 Sätze), Rest streichen. Bei Fingersignal: statt Hangs Block-Lifts mit 70 %.', hi: sets + (pick(T.second, st) ? 2 : 0) });
@@ -256,10 +260,10 @@
         warm(two || st >= 4 ? 24 : 22, ['3–4 Boulder am Board mit steigender Schwierigkeit, letzte 2 mit vollem Einsatz aber sicher machbar.']),
         !two && st <= 3 ? fast(2, '6–7', 'Aktivierung und Finger-Check: Liegt der Schmerz hier über 1/10, heute nur statische Boulder – keine dynamischen Züge an Leisten.') : null,
         lim === 0
-          ? board('Einstieg: Board kennenlernen', pick(T.limMin, st), ['{n} Boulder zwei Grade unter dem Limit, RPE 7, je max. 3 Versuche.', 'Griffe, Tritte und Stil des Boards lesen lernen – noch kein Limit.'], { rest: [180, 240], n: [4, 5] })
-          : board('Limit Bouldern', pick(T.limMin, st), [`{n} Boulder mit 3–6 Zügen (oder Einzelzüge härterer Boulder), je 3–5 Versuche, RPE ${pick(T.frRpe, st)[1] >= 9 ? '8–10' : '8–9'}.`, 'Pause mindestens 1 min pro gekletterten Zug (3–5 min).', 'Grifftypen mischen: 1 Leisten-, 1 Pinch-, 1 Sloper-/Weitzug-Boulder' + (two ? ' + 1 Anti-Style-Boulder.' : '.'), 'Aufhören, solange du dich noch scharf fühlst.'].concat(!two && st <= 3 ? ['Finger: Dynamische Züge und volle Leiste einzeln und nur schmerzfrei dazunehmen. Reagiert ein Finger am nächsten Morgen, eine Woche zurück zu statischen Bouldern.'] : []), { n: lim }),
+          ? board('Einstieg: Board kennenlernen', pick(T.limMin, st), ['{n} Boulder {g:flash} (zwei Grade unter dem Limit), RPE 7, je max. 3 Versuche.', 'Griffe, Tritte und Stil des Boards lesen lernen – noch kein Limit.'], { rest: [180, 240], n: [4, 5] })
+          : board('Limit Bouldern', pick(T.limMin, st), [`{n} Boulder mit 3–6 Zügen (oder Einzelzüge härterer Boulder), je 3–5 Versuche, RPE ${pick(T.frRpe, st)[1] >= 9 ? '8–10' : '8–9'}.`, 'Zielgrad: {g:limit}. Einzelzüge dürfen einen Grad härter sein.', 'Pause mindestens 1 min pro gekletterten Zug (3–5 min).', 'Grifftypen mischen: 1 Leisten-, 1 Pinch-, 1 Sloper-/Weitzug-Boulder' + (two ? ' + 1 Anti-Style-Boulder.' : '.'), 'Aufhören, solange du dich noch scharf fühlst.'].concat(!two && st <= 3 ? ['Finger: Dynamische Züge und volle Leiste einzeln und nur schmerzfrei dazunehmen. Reagiert ein Finger am nächsten Morgen, eine Woche zurück zu statischen Bouldern.'] : []), { n: lim }),
         anta(late ? 10 : 8), cool(6)
-      ].filter(Boolean), { low: 'Statt Limit: 5 Boulder am Flash-Level mit vollem Fokus auf saubere Ausführung, dann Schluss.', hi: Math.max(6, lim * 4) });
+      ].filter(Boolean), { low: 'Statt Limit: 5 Boulder am Flash-Level ({g:flash}) mit vollem Fokus auf saubere Ausführung, dann Schluss.', hi: Math.max(6, lim * 4) });
     }
     const lightMi = p.deload || p.test;
     mi = S(2, 'mi', 'skill', 'Skill Day + Capacity erhalten', 'Technik frisch üben, aerobe Basis mit kleiner Dosis halten', [3, 5], [
@@ -285,17 +289,17 @@
     const campusOk = st >= (pe ? 0 : 2);
     const mo = S(0, 'mo', 'power', 'Power + Kraft erhalten', 'Kraft in schnelle Bewegung umsetzen – wenige, explosive Versuche', light ? [5, 6] : test ? [6, 8] : [7, 9], [
       warm(22, ['Aufwärm-Leiter an der Leiste, dann 2–3 dynamische Züge an guten Griffen.']),
-      hangs(2, { lines: ['Erhaltungsdosis mit aktueller Last – dient hier auch als Aktivierung.'] }),
+      hangs(2, { hold: true, lines: ['Erhaltungsdosis mit aktueller Last – dient hier auch als Aktivierung.'] }),
       test
         ? str('Power-Check', 20, ['3 Benchmark-Züge oder -Boulder aus Woche 1 wiederholen: höher, kontrollierter, weniger Versuche?', 'Maximal 8 Versuche insgesamt, volle Pausen.'], EX.explosive)
         : light
-        ? board('Lockere dynamische Boulder', 20, ['{n} dynamische Boulder am Flash-Level, RPE 6. Schnell, aber entspannt.'], { ex: EX.flash, rest: [120, 180], n: [4, 5] })
+        ? board('Lockere dynamische Boulder', 20, ['{n} dynamische Boulder am Flash-Level ({g:flash}), RPE 6. Schnell, aber entspannt.'], { ex: EX.flash, rest: [120, 180], n: [4, 5] })
         : campusOk
           ? str('Campus / explosive Züge', 25, [`${pick([4, 5, 6, 6], st - (pe ? 0 : 2))} Sätze Ladders (z. B. 1-3-5) an großen Sprossen, 2–3 min Pause.`, 'Nur wenn Finger am Morgen 0–1/10, kein PIP-Signal in der Vorwoche und dynamische Züge an Leisten schmerzfrei sind – sonst dynamische Board-Boulder an guten Griffen.', 'Jeder Satz maximal schnell. Sobald die Geschwindigkeit fällt: Ende.'], EX.campus)
           : str('Explosive Pull-ups + dynamische Boulder', 25, ['4 × 3 explosive Pull-ups (so hoch wie möglich), 2 min Pause.', '6–8 Versuche an weiten, dynamischen Board-Zügen mit guten Griffen. Volle Pause.'], EX.explosive),
       fl(8, '3 Sätze der aktuellen Stufe.'),
       anta(8)
-    ], { low: 'Hangs 2 Sätze + 4 dynamische Boulder am Flash-Level, kein Campus.', hi: light ? 2 : 8 });
+    ], { low: 'Hangs 2 Sätze + 4 dynamische Boulder am Flash-Level ({g:flash}), kein Campus.', hi: light ? 2 : 8 });
     const mi = S(2, 'mi', 'skill', 'Skill Day: Dynamik & Timing', 'Koordination und Momentum frisch üben', [3, 5], [
       warm(15),
       hs(),
@@ -308,26 +312,26 @@
     const fr = test
       ? S(4, 'fr', 'test', 'Benchmark-Session', 'Boulder aus Woche 1 wiederholen und vergleichen', [7, 8], [
         warm(24),
-        board('Benchmark-Vergleich', 40, ['2–3 Boulder aus den ersten Wochen wiederholen: weniger Versuche? Kontrollierter?', 'Danach 2 neue Boulder am Flash-Level. Kein Limit-Projektieren.'], { rest: [180, 240, 300], ex: EX.bench, n: 5 }),
+        board('Benchmark-Vergleich', 40, ['2–3 Boulder aus den ersten Wochen wiederholen: weniger Versuche? Kontrollierter?', 'Danach 2 neue Boulder am Flash-Level ({g:flash}). Kein Limit-Projektieren.'], { rest: [180, 240, 300], ex: EX.bench, n: 5 }),
         anta(), cool(6)
       ], { hi: 8 })
       : pe
       ? S(4, 'fr', 'pe', 'Lange Boulder & Linkups', 'Kraft wiederholt abrufen – Qualität bleibt der Maßstab', light ? [5, 6] : [7, 9], [
         warm(22),
         light
-          ? board('Moderate längere Boulder', 25, ['{n} Boulder mit 8–12 Zügen am Flash-Level.'], { ex: EX.flash, rest: [180], n: 4 })
+          ? board('Moderate längere Boulder', 25, ['{n} Boulder mit 8–12 Zügen am Flash-Level ({g:flash}).'], { ex: EX.flash, rest: [180], n: 4 })
           : st < 2
-            ? board('Lange Boulder', 45, ['{n} Boulder mit 6–12 Zügen bei RPE 8, je 2–3 Versuche, 4–5 min Pause.', 'Oder Linkups: Boulder A direkt in Boulder B.'], { ex: EX.long, rest: [240, 300], n: [4, 5] })
-            : board('Boulder Triples', 45, ['{n} Sätze: denselben fordernden Boulder 3 × klettern, 90 s zwischen den Gos, 6–8 min Satzpause.', 'Pump bis 6–7/10 ist hier okay – aber kein Versuch mit schlechter Technik.'], { ex: EX.triples, rest: [90, 360, 480], n: pick([3, 3, 4, 4], st - 2), unit: 'Sätze' }),
+            ? board('Lange Boulder', 45, ['{n} Boulder mit 6–12 Zügen ({g:near}) bei RPE 8, je 2–3 Versuche, 4–5 min Pause.', 'Oder Linkups: Boulder A direkt in Boulder B.'], { ex: EX.long, rest: [240, 300], n: [4, 5] })
+            : board('Boulder Triples', 45, ['{n} Sätze: denselben fordernden Boulder ({g:flash} bis {g:near}) 3 × klettern, 90 s zwischen den Gos, 6–8 min Satzpause.', 'Pump bis 6–7/10 ist hier okay – aber kein Versuch mit schlechter Technik.'], { ex: EX.triples, rest: [90, 360, 480], n: pick([3, 3, 4, 4], st - 2), unit: 'Sätze' }),
         anta(), cool(6)
-      ], { low: '3 längere Boulder am Flash-Level, lange Pausen.', hi: light ? 0 : 10 })
+      ], { low: '3 längere Boulder am Flash-Level ({g:flash}), lange Pausen.', hi: light ? 0 : 10 })
       : S(4, 'fr', 'limit', 'Limit Boulder: weite Züge & Kontaktkraft', 'Harte Einzelzüge mit vollem Einsatz', light ? [5, 6] : [8, 9], [
         warm(24),
         light
-          ? board('Moderates Board-Bouldern', 25, ['{n} Boulder am Flash-Level, RPE 6.'], { ex: EX.flash, rest: [120, 180], n: 5 })
-          : board('Limit Bouldern', 50, ['{n} Boulder mit 3–6 Zügen, je 3–5 Versuche, RPE 8–10.', 'Schwerpunkt: weite, schnelle Züge und Griffe, die du im Flug treffen musst.', 'Zusätzlich 1 Boulder als echter Flash-Versuch: lesen, visualisieren, ein Go.', 'Pause mindestens 1 min pro gekletterten Zug.'], { n: pick([3, 4, 4, 4], st) }),
+          ? board('Moderates Board-Bouldern', 25, ['{n} Boulder am Flash-Level ({g:flash}), RPE 6.'], { ex: EX.flash, rest: [120, 180], n: 5 })
+          : board('Limit Bouldern', 50, ['{n} Boulder mit 3–6 Zügen, je 3–5 Versuche, RPE 8–10.', 'Zielgrad: {g:limit}.', 'Schwerpunkt: weite, schnelle Züge und Griffe, die du im Flug treffen musst.', 'Zusätzlich 1 Boulder als echter Flash-Versuch: lesen, visualisieren, ein Go.', 'Pause mindestens 1 min pro gekletterten Zug.'], { n: pick([3, 4, 4, 4], st) }),
         anta(), cool(6)
-      ], { low: '5 Boulder am Flash-Level, sauber und schnell.', hi: light ? 0 : 14 });
+      ], { low: '5 Boulder am Flash-Level ({g:flash}), sauber und schnell.', hi: light ? 0 : 14 });
     return { label: p.test ? 'Power-Check & Taper' : p.deload ? 'Deload' : 'Aufbau ' + (st + 1), deload: !!p.deload, test: !!p.test, sessions: [mo, mi, fr].concat(restDays(false)) };
   }
 
@@ -336,14 +340,14 @@
   // =====================================================================
   const primer = (title) => S(0, 'mo', 'primer', title || 'Primer', 'Kurz, scharf, frisch rausgehen', [5, 6], [
     warm(20),
-    hangs(2, { lines: ['Aktuelle Last, sauber. Kein Zusatzsatz.'] }),
-    board('Wenige harte, bekannte Züge', 20, ['{n} harte, aber bekannte Boulder, je 1–2 Versuche.', 'Nach 45–60 min ist Schluss – du sollst dich danach besser fühlen als davor.'], { rest: [180, 240], n: [3, 4] }),
+    hangs(2, { hold: true, lines: ['Aktuelle Last, sauber. Kein Zusatzsatz.'] }),
+    board('Wenige harte, bekannte Züge', 20, ['{n} harte, aber bekannte Boulder ({g:near}), je 1–2 Versuche.', 'Nach 45–60 min ist Schluss – du sollst dich danach besser fühlen als davor.'], { rest: [180, 240], n: [3, 4] }),
     cool(8)
   ], { low: 'Nur Aufwärmen + 2 Hangs + 2 Boulder.', hi: 6 });
   const perfDay = (title, lines, kind, rpe, focus) => S(5, 'sa', kind || 'perf', title, focus || 'Leistung abrufen – wenige Versuche mit voller Absicht', rpe || [8, 9], [
     info('Vorher festlegen', ['1–2 Prozessziele (z. B. „ruhig durch die Crux atmen“).', 'Versuchs-Limit und Endpunkt: Was beendet die Session?']),
     warm(30, ['Am Fels: Schultern, Hüfte, Finger progressiv – erst große Griffe, dann Einzelzüge des Projekts.']),
-    board('Versuche', 90, lines, { rest: [300, 480, 600], n: [5, 8], unit: 'Versuche' }),
+    board('Versuche', 90, lines.concat(['Zielgrad: {g:limit}.']), { rest: [300, 480, 600], n: [5, 8], unit: 'Versuche' }),
     info('Nachher (5 min)', ['Was hat sich verbessert? Was habe ich gelernt? Warum ist das wichtig?', 'Fehler als Daten: Technik – was löste sich zuerst? Physis – was ermüdete zuerst? Kopf – wo zögerte ich?'])
   ], { low: 'Tag in einen Erkundungstag verwandeln: Züge ausbouldern, Beta filmen, keine Durchstiegsversuche.', hi: 12, movable: true });
 
@@ -366,7 +370,7 @@
       label: last ? 'Spezifität – Volumen sinkt' : 'Spezifität ' + (i + 1), sessions: [
         S(0, 'mo', 'sim', 'Kraft erhalten + Simulation', 'Projektanforderungen nachbauen', [7, 8], [
           warm(22),
-          hangs(last ? 2 : 3, { lines: ['Erhaltungsdosis. Grifftyp des Projekts bevorzugen.'] }),
+          hangs(last ? 2 : 3, { hold: true, lines: ['Erhaltungsdosis. Grifftyp des Projekts bevorzugen.'] }),
           board('Projekt-Simulatoren', 40, ['{n} Nachbauten der Schlüsselstellen (Winkel, Grifftyp, Zugweite) an Spraywall oder Board.', 'Je 3–5 Versuche, volle Pause. Dann 1–2 Links unter leichter Vorermüdung.'], { rest: [240, 300], n: [2, 3] }),
           anta(8)
         ], { low: '2 Hangs + 1 Simulator, 3 Versuche.', hi: 12 }),
@@ -459,6 +463,9 @@
       const i = Math.round(D.diff(mon, ph.start) / 7);
       const w = ph.week(i, ph.weeks);
       w.sessions.forEach(s => {
+        if ((s.key === 'mo' || s.key === 'fr') && s.kind !== 'mobility' && s.kind !== 'test' && !s.blocks.some(b => b.t === 'prin')) {
+          const k = s.blocks.findIndex(b => b.t === 'warmup'); if (k >= 0) s.blocks.splice(k + 1, 0, prin());
+        }
         s.planId = ph.id + '-w' + (i + 1) + '-' + s.key;
         s.baseDate = D.add(mon, s.dow);
         s.phaseId = ph.id;

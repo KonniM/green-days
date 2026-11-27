@@ -123,7 +123,17 @@
   }
 
   // ---------- Block-Darstellung ----------
-  function blockHTML(b, i, live, draft) {
+  const gfill = (t, date) => window.Grades && t ? Grades.fill(t, date) : t;
+  // Harte Fingerbelastungen einer Einheit: aus Graden und Hängern, wenn eingetragen – sonst aus dem Plan geschätzt
+  const hiFor = (s, r, hangs, date) => {
+    const est = Math.round(((s && s.hi) || 0) * Math.min(1.5, r.e ? r.e.ratio : 1));
+    if (!window.Grades || !Grades.has(r.grades, r.tries)) return est;
+    const hs = hangs && hangs.length ? Loads.hiFromHangs(hangs) : (s ? s.blocks.filter(b => b.t === 'hang').reduce((a, b) => a + ((b.hang && b.hang.sets) || 0), 0) : 0);
+    return Grades.hiOf(r.grades, r.tries, date) + hs;
+  };
+  const gradeForm = (cs, v, date) => window.Grades && (!cs || cs.some(c => /Boulder|Versuche/.test(c.unit))) ? Grades.formHTML(v, date, true) : '';
+  function blockHTML(b, i, live, draft, date) {
+    const dt = date || (draft && draft.date) || D.today();
     const done = live && draft.checks && draft.checks[i];
     const ex = b.ex && find(b.ex), rt = b.routine && find('routine:' + b.routine);
     let extra = '', lines = b.lines || [];
@@ -134,6 +144,11 @@
         extra += (live ? clipHTML(g.step, 'clip-sm') : '') + `<button class="link-row" data-act="goal-open" data-id="${e(b.goal)}"><span>${live ? 'Ergebnis eintragen · Cues' : 'Stufen & Cues'}</span><span>›</span></button>`;
       }
     }
+    if (b.t === 'prin' && window.Tech) {
+      const w = Plan.weekAt(live ? draft.date : D.today()), p = Tech.ofWeek(w);
+      if (p && live) extra += Tech.blockExtra(w); else if (p) lines = [`Diese Woche: ${p.name_de} – ${p.one_de}`].concat(lines);
+    }
+    if (b.t === 'tech' && live && window.Tech) extra += Tech.weekRow(Plan.weekAt(draft.date));
     if (b.t === 'tech' && live) {
       const sk = skillOfWeek(Plan.weekAt(draft.date));
       if (sk) extra += `<p class="one">${e(sk.one_de || firstSentence(sk.concept_de))}</p>` + clipHTML(sk, 'clip-sm') + `<button class="link-row" data-act="lib-open" data-id="${e(sk.id)}"><span>Fokus: <b>${e(sk.name_de)}</b></span><span>Drills ›</span></button>`;
@@ -141,25 +156,26 @@
     if (ex && !(b.t === 'goal' && window.Goals && Goals.cur(b.goal))) extra += `<button class="link-row" data-act="lib-open" data-id="${e(b.ex)}"><span>${e(ex.item.name_de)}</span><span>Cues & Video ›</span></button>`;
     if (b.phy) extra += `<button class="link-row" data-act="phy-ex" data-c="${e(b.phy[0])}" data-p="${b.phy[1]}" data-ex="${e(b.phy[2])}"><span>${e(b.phy[3] || 'So geht die Übung')}</span><span>Ablauf & Video ›</span></button>`;
     if (rt) extra += `<button class="link-row" data-act="routine-open" data-id="${e(b.routine)}"><span>${e(rt.item.name_de)}</span><span>Routine ›</span></button>`;
+    if (b.log === 'hang' && window.Loads) { const wl = Loads.line(b, dt); if (wl) lines = [wl].concat(lines); }
     let ctrl = '';
     if (live) {
       if (b.timer) ctrl += `<button class="btn btn-primary" data-act="block-timer" data-i="${i}">⏱ Timer starten</button>`;
       if (b.rest) ctrl += `<div class="rest-row"><span>Pause</span>${b.rest.map(r => `<button class="chip chip-btn" data-act="rest-timer" data-sec="${r}">${Timer.mmss(r)}</button>`).join('')}</div>`;
       if (b.log === 'hang') {
         const hs = (draft.hangs || []).filter(h => h.block === i);
-        if (hs.length) ctrl += `<p class="logged">${hs.map(h => `${h.sets} × ${h.secs} s · ${h.kg >= 0 ? '+' : ''}${h.kg} kg · RPE ${h.rpe}`).join('<br>')}</p>`;
+        if (hs.length) ctrl += `<p class="logged">${hs.map(h => `${h.secs ? `${h.sets} × ${h.secs} s · ` : ''}${h.kg >= 0 && !b.hang.label ? '+' : ''}${h.kg} kg · RPE ${h.rpe}`).join('<br>')}</p>`;
         ctrl += `<button class="btn btn-ghost" data-act="hang-log" data-i="${i}">Last eintragen</button>`;
       }
     }
     return `<article class="block${done ? ' is-done' : ''} bt-${b.t}">
       <header>${b.t === 'info' ? '<span class="num">i</span>' : live ? `<button class="check" data-act="block-check" data-i="${i}" aria-pressed="${!!done}" aria-label="Erledigt">${done ? '✓' : ''}</button>` : `<span class="num">${i + 1}</span>`}
         <h4>${e(b.title)}</h4>${b.min ? `<span class="meta">${b.min} min</span>` : ''}</header>
-      <ul>${lines.map(l => `<li>${e(l)}</li>`).join('')}</ul>${extra}${ctrl ? `<div class="block-ctrl">${ctrl}</div>` : ''}
+      <ul>${lines.map(l => `<li>${e(gfill(l, dt))}</li>`).join('')}</ul>${extra}${ctrl ? `<div class="block-ctrl">${ctrl}</div>` : ''}
     </article>`;
   }
 
   const cnt = (b) => b.count ? ` · ${Array.isArray(b.count.n) ? b.count.n[0] + '–' + b.count.n[1] : b.count.n} ${b.count.unit}` : '';
-  const logLine = (log) => `${log.climbs ? log.climbs + ' Climbs · ' : ''}${log.minSrc === 'e' ? '≈ ' : ''}${log.minutes} min · RPE ${log.rpe} · Load ${Store.sessionLoad(log)}`;
+  const logLine = (log) => `${log.climbs ? log.climbs + ' Climbs · ' : ''}${log.minSrc === 'e' ? '≈ ' : ''}${log.minutes} min · RPE ${log.rpe} · Load ${Store.sessionLoad(log)}${window.Grades && log.grades && Grades.summary(log.grades) ? ' · ' + Grades.summary(log.grades) : ''}`;
   function adaptLine(s) {
     if (S().adaptOff[s.planId]) return `<button class="adapt tone-muted" data-act="adapt-toggle" data-plan="${s.planId}"><b>Original-Plan gewählt</b><span>Tippen, um die Anpassung wieder einzuschalten.</span></button>`;
     const a = s.adapt; if (!a || !a.reasons.length) return '';
@@ -245,7 +261,8 @@
       <h3>${e(sk.name_de)}</h3><p class="one">${e(sk.one_de || firstSentence(sk.concept_de))}</p>
       ${clipHTML(sk)}
       <details class="more"><summary>Was ist gemeint?</summary><p>${e(firstSentence(sk.concept_de))}</p></details>
-      <details class="more"><summary>Worauf achten</summary><ul class="cues">${(sk.cues_de || []).slice(0, 3).map(c => `<li>${e(c)}</li>`).join('')}</ul></details>
+      <details class="more"><summary>Worauf genau achten</summary><ul class="${sk.watch_de ? 'steps' : 'cues'}">${(sk.watch_de || (sk.cues_de || []).slice(0, 3)).map(c => `<li>${e(c)}</li>`).join('')}</ul></details>
+      ${window.Tech ? Tech.weekRow(w) : ''}
       <span class="eyebrow">Wie gut sitzt es?</span>${skillRate(sk)}
       <div class="actions"><button class="btn btn-ghost" data-act="lib-open" data-id="${e(sk.id)}">Drills</button><button class="btn btn-ghost" data-act="skill-swap" data-mon="${w.monday}">Anderer Fokus</button></div></article>`;
   }
@@ -325,7 +342,7 @@
         <button class="btn btn-ghost btn-block" data-act="pre-skip">Alles gut – direkt starten</button></div>
         <article class="card"><span class="eyebrow">Hauptreiz heute</span><h3>${e(s.focus)}</h3>
         <p class="meta">Ziel-RPE ${s.rpe[0]}–${s.rpe[1]} · ca. ${s.min} min</p>
-        ${s.low ? `<p class="hint"><b>Low-Energy-Version:</b> ${e(s.low)}</p>` : ''}</article>`;
+        ${s.low ? `<p class="hint"><b>Low-Energy-Version:</b> ${e(gfill(s.low, Plan.dateOf(s)))}</p>` : ''}</article>`;
     } else if (d.stage === 'run') {
       const mins = Math.round((Date.now() - d.startedAt) / 60000);
       body = `<div class="run-meta"><span>${mins} min</span>${d.goal ? `<span class="goal">Ziel: ${e(d.goal)}</span>` : ''}</div>
@@ -363,7 +380,7 @@
   function postPlanned(s, d) {
     const cs = Plan.counts(s);
     return `<div class="card form" id="post" data-mode="plan"><span class="eyebrow">Nach der Session</span><h3>Was hast du geschafft?</h3>
-      ${cs.length ? cs.map(c => field(c.title, stepper('cnt_' + c.i, d.done && d.done[c.i] != null ? d.done[c.i] : c.plan, c.unit, 'Plan ' + c.range))).join('') : '<p class="hint">Diese Einheit hat nichts zum Zählen – RPE genügt.</p>'}
+      ${cs.length ? cs.map(c => field(c.title, stepper('cnt_' + c.i, d.done && d.done[c.i] != null ? d.done[c.i] : c.plan, c.unit, 'Plan ' + c.range))).join('') : '<p class="hint">Diese Einheit hat nichts zum Zählen – RPE genügt.</p>'}${gradeForm(cs, {}, d.date)}
       ${rpeField()}<p class="load-preview" id="load-preview"></p>${fingerField()}${moreFields({})}
       <button class="btn btn-primary btn-block" data-act="post-save">Speichern</button>
       <button class="btn btn-ghost btn-block" data-act="back-run">Zurück zu den Blöcken</button></div>`;
@@ -373,7 +390,7 @@
     const cs = Plan.counts(s), date = Plan.dateOf(s) <= D.today() ? Plan.dateOf(s) : D.today();
     return `<div class="form" id="post" data-mode="late" data-plan="${s.planId}"><p class="hint">Trag ein, was du geschafft hast – die Dauer schätzt die App aus deinen Zahlen.</p>
       ${field('Datum', `<input type="date" name="date" value="${date}" max="${D.today()}">`)}
-      ${cs.map(c => field(c.title, stepper('cnt_' + c.i, c.plan, c.unit, 'Plan ' + c.range))).join('')}
+      ${cs.map(c => field(c.title, stepper('cnt_' + c.i, c.plan, c.unit, 'Plan ' + c.range))).join('')}${gradeForm(cs, {}, date)}
       ${rpeField()}<p class="load-preview" id="load-preview"></p>${fingerField()}${moreFields({})}
       <button class="btn btn-primary btn-block" data-act="late-save" data-plan="${s.planId}">Speichern</button></div>`;
   }
@@ -381,7 +398,7 @@
   function postFree(v) {
     return `<div class="form" id="post" data-mode="free"><p class="hint">Alles außerhalb des Plans zählt mit: Die Last fließt in den ACWR, und die nächsten geplanten Einheiten passen sich an.</p>
       <div class="chips pick"><input type="hidden" name="kind" value="${v.kind}">${FREE_KINDS.map(k => `<button type="button" class="chip chip-btn" data-act="pick" data-v="${k[0]}" aria-pressed="${v.kind === k[0]}">${k[1]}</button>`).join('')}</div>
-      ${field('Wie viele Climbs?', stepper('climbs', v.climbs == null ? 8 : v.climbs, 'Boulder / Versuche'), 'Grob reicht: alles, was dich angestrengt hat. Aufwärm-Boulder nicht mitzählen.')}
+      ${field('Wie viele Climbs?', stepper('climbs', v.climbs == null ? 8 : v.climbs, 'Boulder / Versuche'), 'Grob reicht: alles, was dich angestrengt hat. Aufwärm-Boulder nicht mitzählen. Trägst du unten Grade ein, zählt die App daraus.')}${window.Grades ? Grades.formHTML({}, v.date || D.today(), false) : ''}
       ${rpeField()}<p class="load-preview" id="load-preview"></p>${fingerField()}
       <details class="more"><summary>Datum, Titel, Dauer (optional)</summary>
       <div class="grid2">${field('Datum', `<input type="date" name="date" value="${v.date || D.today()}" max="${D.today()}">`)}${field('Dauer in Minuten', `<input type="number" name="minutes" min="5" max="600" placeholder="automatisch" inputmode="numeric">`)}</div>
@@ -394,6 +411,7 @@
       <div class="grid2">${field('Climbs', `<input type="number" name="climbs" min="0" max="300" value="${v.climbs == null ? '' : v.climbs}" inputmode="numeric">`)}${field('Dauer in Minuten', `<input type="number" name="minutes" min="5" max="600" value="${v.minutes || ''}" inputmode="numeric">`)}</div>
       ${rpeField(v.rpe)}<p class="load-preview" id="load-preview"></p>${fingerField(v.fingerEnd)}
       ${field('Green-Day-Farbe', `<select name="color"><option value="">Offen</option>${GD.map(g => `<option value="${g.k}"${v.color === g.k ? ' selected' : ''}>${g.label} – ${e(g.sub)}</option>`).join('')}</select>`)}
+      ${window.Grades ? Grades.formHTML(v, v.date, Grades.has(v.grades, v.tries)) : ''}
       ${moreFields(v, { noMin: true })}
       <button class="btn btn-primary btn-block" data-act="log-update" data-id="${v.id}">Speichern</button>
       <button class="btn btn-danger btn-block" data-act="log-delete" data-id="${v.id}">Einheit löschen</button></div>`;
@@ -415,6 +433,10 @@
     } else if (mode === 'free') {
       r.minutes = f.minutes || Adapt.freeMinutes(f.kind, f.climbs); r.src = f.minutes ? 'u' : 'e'; r.climbs = f.climbs || 0;
     } else { r.minutes = f.minutes; r.src = null; r.climbs = f.climbs; }
+    if (window.Grades) {
+      const g = Grades.collect(f); r.grades = g.grades; r.tries = g.tries;
+      if (mode === 'free' && g.n > 0) { r.climbs = g.n; if (!f.minutes) r.minutes = Adapt.freeMinutes(f.kind, g.n); }
+    }
     return r;
   }
   function paintLoad(root) {
@@ -489,9 +511,9 @@
       const w = el.closest('.sheet-wrap'), r = collectPost(w); if (!r) return;
       const s = Plan.findPlan(el.dataset.plan), f = r.f;
       const log = Store.addSession({ date: f.date || Plan.dateOf(s), planId: s.planId, title: s.title, kind: s.kind, minutes: r.minutes, minSrc: r.src, rpe: f.rpe, rpePlan: s.rpe, climbs: r.climbs, counts: r.cnt, pump: f.pump, fingerEnd: f.fingerEnd,
-        hi: Math.round((s.hi || 0) * Math.min(1.5, r.e.ratio)), capMin: r.e.capMin, adaptF: 1, adaptT: false, late: true,
+        hi: hiFor(s, r, null, f.date || Plan.dateOf(s)), grades: r.grades, tries: r.tries, capMin: r.e.capMin, adaptF: 1, adaptT: false, late: true,
         board: f.board, improved: f.improved, learned: f.learned, why: f.why, hangs: [], color: null });
-      Adapt.learnFrom(log, r.e); Store.save();
+      Adapt.learnFrom(log, r.e); if (window.Grades) Grades.learn(r.grades, log.date); Store.save();
       closeSheet(w); render(); toast(`Nachgetragen für ${D.fmt(log.date, { weekday: 'long' })} · Load ${Store.sessionLoad(log)}.`);
     },
     'session-min': () => { $('#session').hidden = true; document.body.classList.remove('in-session'); render(); },
@@ -510,8 +532,8 @@
       const s = Adapt.today(el.dataset.plan), base = Plan.findPlan(el.dataset.plan), a = s.adapt || { f: 1, reasons: [] };
       sheet('An dich angepasst', `<p class="lead">${a.f === 1 ? 'Umfang wie geplant.' : `Plan ${base.min} min → heute <b>${s.min} min</b> (${a.f > 1 ? '+' : '−'}${Math.abs(Math.round((a.f - 1) * 100))} % Umfang).`}</p>
         <ul class="points">${a.reasons.map(r => `<li>${e(r.text)}</li>`).join('')}</ul>
-        ${a.noHard && base.low ? `<article class="card"><span class="eyebrow">Empfohlen: Low-Energy-Version</span><p>${e(base.low)}</p></article>` : ''}
-        <p class="hint">Die App rechnet mit deinem Fingerstatus, dem ACWR, Extra-Sessions, deinen Green Days und deinem üblichen Pensum. Sie kürzt schnell und steigert langsam (höchstens +10 % pro Schritt).</p>
+        ${a.noHard && base.low ? `<article class="card"><span class="eyebrow">Empfohlen: Low-Energy-Version</span><p>${e(gfill(base.low, D.today()))}</p></article>` : ''}
+        <p class="hint">Die App rechnet mit deinem Fingerstatus, dem ACWR, Extra-Sessions, deinen Green Days und deinem üblichen Pensum. Sie steigert, sobald eine Einheit grün und im RPE-Rahmen war (+5 bis +15 %, insgesamt höchstens +20 % über Plan), und bremst bei Fingersignalen, zu vielen harten Fingerbelastungen oder einem Last-Spike über dem 1,5-Fachen.</p>
         <button class="btn btn-ghost btn-block" data-act="adapt-toggle" data-plan="${e(el.dataset.plan)}">Heute trotzdem den Original-Plan nehmen</button>`);
     },
     'adapt-toggle': (el) => { const id = el.dataset.plan; if (S().adaptOff[id]) delete S().adaptOff[id]; else S().adaptOff[id] = true; Store.save(); $$('.sheet-wrap').forEach(closeSheet); render(); },
@@ -530,17 +552,17 @@
     'hang-save': (el) => {
       const w = el.closest('.sheet-wrap'), f = readForm(w), d = S().draft, i = +el.dataset.i, b = curS().blocks[i];
       if (f.kg == null || !f.rpe) { toast('Last und RPE eintragen.'); return; }
-      d.hangs.push({ block: i, title: b.title, grip: b.hang.grip, edge: b.hang.edge, secs: b.hang.secs, sets: f.sets || b.hang.sets, kg: f.kg, rpe: f.rpe });
+      d.hangs.push({ block: i, title: b.title, grip: b.hang.grip, edge: b.hang.edge, secs: b.hang.secs, sets: f.sets || b.hang.sets, reps: b.hang.reps, kg: f.kg, rpe: f.rpe });
       d.checks[i] = true; Store.save(); closeSheet(w); renderSession();
-      if (f.rpe >= 9) toast('RPE 9+: nächste Woche Last halten oder senken.');
+      if (f.rpe >= 9 && (b.hang.target || 8) < 9) toast('RPE 9+: nächste Woche Last halten oder senken.');
     },
     'post-save': () => {
       const r = collectPost($('#post')); if (!r) return;
       const d = S().draft, s = curS(), f = r.f;
       const log = Store.addSession({ date: d.date, planId: d.planId, title: d.title, kind: d.kind, minutes: r.minutes, minSrc: r.src, rpe: f.rpe, rpePlan: s.rpe, climbs: r.climbs, counts: r.cnt, pump: f.pump, fingerEnd: f.fingerEnd,
-        hi: Math.round((s.hi || 0) * Math.min(1.5, r.e.ratio)), capMin: Math.max(r.e.capMin, Math.round((d.capSec || 0) / 60)), adaptF: d.f == null ? 1 : d.f, adaptT: !!(d.adapt && d.adapt.transient),
+        hi: hiFor(s, r, d.hangs, d.date), grades: r.grades, tries: r.tries, capMin: Math.max(r.e.capMin, Math.round((d.capSec || 0) / 60)), adaptF: d.f == null ? 1 : d.f, adaptT: !!(d.adapt && d.adapt.transient),
         board: f.board, improved: f.improved, learned: f.learned, why: f.why, pre: d.pre, goal: d.goal, hangs: d.hangs, color: null });
-      Adapt.learnFrom(log, r.e);
+      Adapt.learnFrom(log, r.e); if (window.Grades) Grades.learn(r.grades, log.date);
       S().draft = null; Store.save(); renderSession(); nav('today');
       toast(`Gespeichert · Load ${Store.sessionLoad(log)}. Ob es ein Green Day war, zeigt die nächste Session.`);
     },
@@ -548,8 +570,9 @@
     'free-save': (el) => {
       const w = el.closest('.sheet-wrap'), r = collectPost(w); if (!r) return; const f = r.f;
       const log = Store.addSession({ date: f.date || D.today(), planId: null, title: f.title || (FREE_KINDS.find(k => k[0] === f.kind) || [0, Plan.KINDS[f.kind].label])[1], kind: f.kind, minutes: r.minutes, minSrc: r.src, rpe: f.rpe, climbs: r.climbs, fingerEnd: f.fingerEnd,
-        hi: f.kind === 'outdoor' || f.kind === 'limit' || f.kind === 'gym' ? Math.round((r.climbs || 0) * (f.rpe >= 7 ? 1 : 0.4)) : 0, capMin: 0, hangs: [], color: null });
-      Adapt.learnFrom(log, null); Store.save();
+        hi: window.Grades && Grades.has(r.grades, r.tries) ? Grades.hiOf(r.grades, r.tries, f.date || D.today()) : (f.kind === 'outdoor' || f.kind === 'limit' || f.kind === 'gym' ? Math.round((r.climbs || 0) * (f.rpe >= 7 ? 1 : 0.4)) : 0),
+        grades: r.grades, tries: r.tries, capMin: 0, hangs: [], color: null });
+      Adapt.learnFrom(log, null); if (window.Grades) Grades.learn(r.grades, log.date); Store.save();
       closeSheet(w); render(); toast(`Extra-Session gespeichert · Load ${Store.sessionLoad(log)}. Die nächsten Einheiten rechnen damit.`);
     },
     'log-edit': (el) => {
@@ -561,6 +584,7 @@
       const old = S().sessions.find(x => x.id === el.dataset.id);
       const patch = { minutes: f.minutes, minSrc: old && old.minutes !== f.minutes ? 'u' : old && old.minSrc, climbs: f.climbs || 0, rpe: f.rpe, pump: f.pump, fingerEnd: f.fingerEnd, board: f.board, improved: f.improved, learned: f.learned, why: f.why, color: f.color || null };
       if (f.title != null) { patch.title = f.title || old.title; patch.date = f.date || old.date; }
+      if (window.Grades && (Grades.has(r.grades, r.tries) || Grades.has(old.grades, old.tries))) { patch.grades = r.grades; patch.tries = r.tries; if (Grades.has(r.grades, r.tries)) { patch.hi = Grades.hiOf(r.grades, r.tries, patch.date || old.date) + Loads.hiFromHangs(old.hangs); Grades.learn(r.grades, patch.date || old.date); } }
       Store.updateSession(el.dataset.id, patch); $$('.sheet-wrap').forEach(closeSheet); render(); toast('Aktualisiert.');
     },
     'log-delete': (el) => { if (!confirm('Diese Einheit endgültig löschen?')) return; Store.removeSession(el.dataset.id); $$('.sheet-wrap').forEach(closeSheet); render(); },
@@ -570,7 +594,7 @@
         <button class="btn btn-primary btn-block" data-act="move-save" data-plan="${s.planId}">Verschieben</button>
         <button class="btn btn-ghost btn-block" data-act="late-log" data-plan="${s.planId}">Schon gemacht – ohne Timer eintragen</button>
         <button class="btn btn-ghost btn-block" data-act="skip" data-plan="${s.planId}">Diese Einheit auslassen</button>
-        ${s.low ? `<p class="hint"><b>Statt auslassen – Low-Energy-Version:</b> ${e(s.low)}</p>` : ''}</div>`);
+        ${s.low ? `<p class="hint"><b>Statt auslassen – Low-Energy-Version:</b> ${e(gfill(s.low, Plan.dateOf(s)))}</p>` : ''}</div>`);
     },
     'move-save': (el) => { const w = el.closest('.sheet-wrap'), f = readForm(w); if (f.to) { S().moves[el.dataset.plan] = f.to; Store.save(); } closeSheet(w); render(); },
     skip: (el) => { S().skips[el.dataset.plan] = true; Store.save(); $$('.sheet-wrap').forEach(closeSheet); render(); },
@@ -578,8 +602,8 @@
     'plan-detail': (el) => {
       const s = Adapt.today(el.dataset.plan) || Plan.findPlan(el.dataset.plan); if (!s) return;
       sheet(s.title, `<p class="focus">${e(s.focus)}</p><p class="meta">${e(D.long(Plan.dateOf(s)))} · ca. ${s.min} min · Ziel-RPE ${s.rpe[0]}–${s.rpe[1]}${s.factor ? ' · angepasst' : ''}</p>
-        ${s.blocks.map((b, i) => blockHTML(b, i, false)).join('')}
-        ${s.low ? `<article class="card"><span class="eyebrow">Low-Energy-Version</span><p>${e(s.low)}</p></article>` : ''}
+        ${s.blocks.map((b, i) => blockHTML(b, i, false, null, Plan.dateOf(s))).join('')}
+        ${s.low ? `<article class="card"><span class="eyebrow">Low-Energy-Version</span><p>${e(gfill(s.low, Plan.dateOf(s)))}</p></article>` : ''}
         <article class="card stop"><span class="eyebrow">Session beenden, wenn …</span><ul>${s.stop.map(x => `<li>${e(x)}</li>`).join('')}</ul></article>
         ${Store.sessionForPlan(s.planId) ? '' : `<button class="btn btn-primary btn-block" data-act="start" data-plan="${s.planId}">Session starten</button>`}`, { tall: true });
     },
@@ -592,13 +616,13 @@
 
   function hangSheet(i, reps) {
     const d = S().draft, b = curS().blocks[i];
-    const prev = S().sessions.slice().sort((x, y) => x.date < y.date ? 1 : -1).map(s => (s.hangs || []).find(h => h.grip === b.hang.grip)).find(Boolean);
-    const sug = Adapt.hangSuggest(prev, d.date);
-    sheet(b.title + ' eintragen', `<div class="form"><p class="meta">${e(b.hang.grip)} · ${b.hang.edge} mm · ${b.hang.secs} s${prev ? ` · zuletzt ${prev.kg >= 0 ? '+' : ''}${prev.kg} kg bei RPE ${prev.rpe}` : ''}</p>
-      ${sug ? `<p class="banner tone-green"><b>Vorschlag ${sug.kg >= 0 ? '+' : ''}${String(sug.kg).replace('.', ',')} kg:</b> ${e(sug.text)}</p>` : ''}
-      <div class="grid2">${field('Zusatzlast in kg', `<input type="number" name="kg" step="0.25" value="${sug ? sug.kg : 30}" inputmode="decimal">`, 'Negativ = entlastet')}
-      ${field('Sätze', `<input type="number" name="sets" min="1" max="10" value="${reps || b.hang.sets}" inputmode="numeric">`)}</div>
-      ${field('RPE der Sätze', scale('rpe', 5, 10, null, { wide: true }), 'Ziel 7–8. Bei 9+ war die Last zu hoch.')}
+    const h = b.hang, sug = window.Loads ? Loads.next(h, d.date) : null, prev = sug ? sug.prev : null, tg = h.target || 8, plain = !!h.label && !/Zusatz/.test(h.label);
+    const sign = (v) => (v >= 0 && !plain ? '+' : '') + String(v).replace('.', ',');
+    sheet(b.title + ' eintragen', `<div class="form"><p class="meta">${e(h.grip)}${h.edge ? ` · ${h.edge} mm` : ''}${h.secs ? ` · ${h.secs} s` : ''}${prev ? ` · zuletzt ${sign(prev.kg)} kg bei RPE ${prev.rpe}` : ''}</p>
+      ${sug ? `<p class="banner tone-green"><b>Vorschlag ${sign(sug.kg)} kg:</b> ${e(sug.text)}</p>` : ''}
+      <div class="grid2">${field(h.label || 'Zusatzlast in kg', `<input type="number" name="kg" step="0.25" value="${sug ? sug.kg : (plain || h.lift ? '' : 30)}" inputmode="decimal">`, plain ? '' : 'Negativ = entlastet')}
+      ${field('Sätze', `<input type="number" name="sets" min="1" max="10" value="${reps || h.sets || ''}" inputmode="numeric">`)}</div>
+      ${field('RPE der Sätze', scale('rpe', 5, 10, null, { wide: true }), `Ziel ${tg - 1}–${tg}.${tg < 9 ? ' Bei 9+ war die Last zu hoch.' : ''}`)}
       <button class="btn btn-primary btn-block" data-act="hang-save" data-i="${i}">Speichern</button></div>`);
   }
 
