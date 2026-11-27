@@ -66,6 +66,23 @@ for x in lib['skills']:
         for k in ('what_de', 'watch_de', 'right_de', 'elite_de', 'when_de'):
             if w.get(k):
                 x[k] = w[k]
+# --- Konkrete Hinweise aus Videos (Hooper's Beta, Lattice Training): Tipps mit Videostelle, je Video eine Lektion ---
+vt = load('video_tips.json', {})
+move_ids = {p['id'] for p in lib['moves']}
+tips, guides = [], []
+for vid, v in (vt.get('videos') or {}).items():
+    ids = []
+    for i, t in enumerate(v.get('tips', [])):
+        if t.get('start_s') is None or t.get('end_s') is None or t['end_s'] <= t['start_s'] or not t.get('do_de'):
+            continue
+        t = dict(t); t['id'] = '%s-%d' % (vid, i + 1); t['video'] = vid
+        t['start_s'], t['end_s'] = int(t['start_s']), int(min(t['end_s'], t['start_s'] + 90))
+        t['skills'] = [s for s in t.get('skills', []) if s in skill_ids]
+        t['principles'] = [s for s in t.get('principles', []) if s in move_ids]
+        tips.append(t); ids.append(t['id'])
+    if ids:
+        guides.append({'id': vid, 'name_de': v.get('name_de') or v.get('title'), 'title': v.get('title'), 'channel': v.get('channel'), 'summary_de': v.get('summary_de', ''), 'topic': v.get('topic', 'technik'), 'tips': ids})
+lib['vtips'] = {'tips': tips, 'guides': guides}
 goals = load('goals.json', {})
 lib['goals'] = []
 for g in goals.get('goals', []):
@@ -103,7 +120,7 @@ with open(os.path.join(ROOT, 'js', 'library.js'), 'w', encoding='utf-8') as f:
     f.write('/* Generiert von tools/build_library.py – nicht von Hand bearbeiten. */\nwindow.LIB = ')
     json.dump(lib, f, ensure_ascii=False, separators=(',', ':'))
     f.write(';\n')
-print({k: (len(v.get('conditions', [])) if k == 'injury' else len(v)) for k, v in lib.items()})
-print('Skills mit Prüfpunkten:', sum(1 for x in lib['skills'] if x.get('watch_de')))
+print({k: (len(v.get('conditions', [])) if k == 'injury' else len(v)) for k, v in lib.items() if k != 'vtips'})
+print('Skills mit Prüfpunkten:', sum(1 for x in lib['skills'] if x.get('watch_de')), '| Video-Hinweise:', len(tips), 'aus', len(guides), 'Videos')
 print('Clips:', {k: sum(1 for x in lib[k] if x.get('clip')) for k in ('skills', 'mobility')}, 'Ziel-Clips:', sum(1 for g in lib['goals'] for st in g.get('steps', []) if st.get('clip')))
 print('mit Video:', {k: sum(1 for x in lib[k] if x.get('video')) for k in ('exercises', 'skills', 'mobility', 'assessments')})

@@ -484,3 +484,8 @@ details.more .field + .field { margin-top: 10px; }
 /* Aktualisierung */
 #update-banner { position: fixed; top: calc(var(--safe-t) + 6px); left: 8px; right: 60px; z-index: 59; display: flex; align-items: center; justify-content: space-between; gap: 10px; background: var(--surface-3); box-shadow: 0 6px 24px rgba(0, 0, 0, .5); }
 #update-banner[hidden] { display: none; }
+
+/* Video-Hinweise */
+.vtip { margin-top: 8px; }
+.vtip .clip { margin-top: 4px; }
+.vtip .link-row { margin-top: 4px; }

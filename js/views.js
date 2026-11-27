@@ -261,6 +261,7 @@
         ${x.right_de ? ul('Daran merkst du, dass es stimmt', x.right_de) : ''}
         ${x.elite_de ? `<details class="more" open><summary>Feinheiten für Fortgeschrittene</summary><ul class="cues">${x.elite_de.map(c => `<li>${e(c)}</li>`).join('')}</ul></details>` : ''}
         ${x.when_de ? `<p class="meta"><b>Wann einsetzen:</b> ${e(x.when_de)}</p>` : ''}
+        ${window.Tech ? Tech.tipsSection('skills', x.id) : ''}
         ${window.Tech ? Tech.skillLinks(x.id) : ''}
         <details class="more" ${x.clip || x.watch_de ? '' : 'open'}><summary>Hintergrund</summary><p>${e(x.concept_de || '')}</p></details>
         <details class="more"${x.watch_de ? '' : ' open'}><summary>Kurz-Cues für die Wand</summary><ul class="cues">${(x.cues_de || []).map(c => `<li>${e(c)}</li>`).join('')}</ul></details>

@@ -118,7 +118,8 @@
      "points_to": [
       "pip-synovitis",
       "flexor-tenosynovitis",
-      "pulley-injury"
+      "pulley-injury",
+      "pulley-thickening"
      ]
     }
    ]
@@ -130,7 +131,8 @@
      "label_de": "Unterseite des Fingers am Grund- oder Mittelglied, auf Druck gut zu finden",
      "points_to": [
       "pulley-injury",
-      "flexor-tenosynovitis"
+      "flexor-tenosynovitis",
+      "pulley-thickening"
      ]
     },
     {
@@ -191,6 +193,13 @@
      "points_to": [
       "pip-synovitis"
      ]
+    },
+    {
+     "label_de": "Langsames, kontrolliertes Aufstellen geht – schnelle, dynamische Züge und direkter Druck auf die Stelle (Henkel, Stange) tun weh",
+     "points_to": [
+      "pulley-thickening"
+     ],
+     "added_thick": true
     }
    ]
   },
@@ -223,6 +232,13 @@
       "lumbrical-strain",
       "flexor-tenosynovitis"
      ]
+    },
+    {
+     "label_de": "Fester, harter Knubbel oder eine Verdickung auf der Beugeseite – im Vergleich mit anderen Fingern tastbar",
+     "points_to": [
+      "pulley-thickening"
+     ],
+     "added_thick": true
     }
    ]
   },
@@ -661,7 +677,8 @@
     "Schmerz und Schwellung am Gelenk selbst statt am Fingerglied: Gelenkreizung oder Seitenband",
     "Seit mehr als etwa 8–10 Wochen bestehende Reizung mit tastbar verdicktem Ringband: eigene Kategorie (verletzungsbedingte Ringbandverdickung) – abklären lassen",
     "Hängenbleiben, Klicken oder Schnappen beim Beugen und Strecken, Schwellung des ganzen Fingers oder Stillstand über Wochen: möglicher eingeschlagener Ringbandstumpf (Flap), braucht Bildgebung",
-    "Unter 18 Jahren gilt Schmerz in dieser Region bis zur Abklärung als mögliche Wachstumsfugenverletzung"
+    "Unter 18 Jahren gilt Schmerz in dieser Region bis zur Abklärung als mögliche Wachstumsfugenverletzung",
+    "Kontrolliertes Aufstellen geht, aber schnelle Züge und direkter Druck auf die Stelle schmerzen, evtl. mit tastbarer harter Verdickung: spricht für eine Ringbandverdickung nach Überlastung"
    ],
    "see_professional_de": [
     "Nach jedem Knall oder Reißgefühl: Ultraschall zur Einstufung – er ist der Standard, und der Grad bestimmt Schutz (Tape oder Ring), Kletterpause und Zeitplan",
@@ -1042,6 +1059,382 @@
    ]
   },
   {
+   "id": "pulley-thickening",
+   "name_de": "Ringbandverdickung nach Überlastung (verdicktes A2/A4)",
+   "region": "finger",
+   "locations": [
+    "a2-grundglied",
+    "a4-mittelglied"
+   ],
+   "what_de": "Ein Ringband, das nach wiederholter Überlastung oder einem nicht sauber ausgeheilten Anriss dicker und steifer geworden ist. Hooper’s Beta nennt es „verletzungsbedingte Ringbandverdickung“, um es von der normalen, schmerzfreien Verdickung durch jahrelanges Klettern zu unterscheiden. Laut Hooper’s Beta ist es eine der häufigsten Ursachen für hartnäckige Fingerschmerzen bei Kletternden – und kaum bekannt.",
+   "mechanism_de": "Viele Belastungen nahe am Limit erzeugen kleine Risse im Ringband. Der Körper repariert sie – wenn aber mehr Schaden dazukommt, als zwischen den Einheiten heilen kann, wird das neue Gewebe ungeordnet eingebaut (Fibrose): Das Band wird dicker, aber weniger belastbar und weniger elastisch. Derselbe Verlauf entsteht, wenn ein Teilriss im ersten Monat nicht richtig aufgebaut wird.",
+   "typical_signs_de": [
+    "Beginnt als leichtes Unbehagen nahe A2 (Grundglied) oder A4 (Mittelglied) auf der Beugeseite",
+    "Schmerz beim Aufstellen und bei direktem Druck auf die Stelle – etwa durch einen Henkel oder eine Hantel- bzw. Klimmzugstange",
+    "Langsames, kontrolliertes Aufstellen geht oft noch gut; schlimmer wird es bei dynamischen Zügen, wenn das Ringband schnell belastet wird",
+    "Anfangs erst Stunden nach der Einheit spürbar, später auch währenddessen und am nächsten Morgen",
+    "Tastbarer fester, harter Knubbel oder eine flächige Verdickung unter der Haut: am A2 meist deutlich, am A4 eher eine diffuse Erhöhung. Mit mehreren anderen Fingern vergleichen – derselbe Finger der anderen Hand kann auch verdickt sein",
+    "Im Verlauf lassen Kraft und Leistung nach"
+   ],
+   "not_this_if_de": [
+    "Der Knubbel ist rund, eindrückbar und verschieblich: eher eine Zyste (Ganglion), keine Verdickung",
+    "Plötzlicher Beginn mit Knall oder Reißgefühl: frische Ringbandverletzung – zuerst einstufen lassen",
+    "Schmerz auch bei offener Hand, beim passiven Überstrecken oder bis in die Handfläche ziehend, ohne tastbare Verdickung: eher Sehnenscheide",
+    "Schmerz und Schwellung am Gelenk selbst statt am Fingerglied: Gelenkreizung",
+    "Hängenbleiben, Klicken oder Schnappen beim Beugen und Strecken: abklären lassen (Schnappfinger oder Ringbandstumpf)"
+   ],
+   "see_professional_de": [
+    "Wenn du es nicht sicher einordnen kannst: Ultraschall bei jemandem mit Klettererfahrung – die Verdickung ist dort gut zu sehen",
+    "Wenn nach 8–12 Wochen sauberem Aufbau keine Besserung da ist",
+    "Bei Schnappen, Hängenbleiben, Streckhemmung oder zunehmendem Alltagsschmerz"
+   ],
+   "grades": [
+    {
+     "id": "leicht-mittel",
+     "name_de": "Leicht bis mittel",
+     "signs_de": "Schmerz bis etwa 2–4/10 beim Aufstellen oder bei schnellen Zügen, kontrollierte Belastung geht, Kraft kaum eingeschränkt.",
+     "management_de": "Weiterklettern mit angepasster Last (höchstens 2/10 während und danach), dazu sofort der gezielte Belastungsaufbau abseits der Wand.",
+     "timeline_de": "Laut Hooper’s Beta typischerweise 8–12 Wochen bis zur vollen Leistung."
+    },
+    {
+     "id": "schwer",
+     "name_de": "Schwer",
+     "signs_de": "Deutlicher Schmerz auch bei kontrollierter Belastung, am Morgen danach, spürbarer Kraftverlust.",
+     "management_de": "Etwa eine Woche Kletterpause, um die Reizung zu senken – der Belastungsaufbau abseits der Wand beginnt trotzdem sofort.",
+     "timeline_de": "Laut Hooper’s Beta 13–18 Wochen; wird es verschleppt, eher 6–9 Monate."
+    }
+   ],
+   "phases": [
+    {
+     "n": 1,
+     "name_de": "Reizung senken, sofort belasten",
+     "goal_de": "Das abstellen, was das Ringband überfordert hat – und gleichzeitig mit kontrollierter, leichter Last den Umbau anstoßen.",
+     "enter_de": "Sofort. Kein Abwarten nötig: Die Haltezüge sind bewusst leicht.",
+     "exit_de": "Haltezüge über mehrere Einheiten bei höchstens 2/10, keine Ermüdung zu Beginn der Wiederholungen, kein stärkerer Schmerz am Folgetag.",
+     "duration_de": "Im Video ohne feste Dauer – der Schmerz steuert.",
+     "climbing_de": "Nicht komplett pausieren (nur bei schweren Fällen etwa eine Woche). Alles reduzieren, was mehr als etwa 2/10 auslöst – während oder nach dem Klettern: Umfang, Intensität oder Häufigkeit, notfalls alle drei. Direkten Druck auf die Stelle meiden (dicke Henkel, Hantel- und Klimmzugstange).",
+     "exercises": [
+      {
+       "id": "finger-rom-three-rows",
+       "name_de": "Beweglichkeit in drei Positionen",
+       "how_de": [
+        "Finger ganz strecken.",
+        "Fingerkuppen in einem Bogen zur unteren Handfläche (handgelenksnah) führen, wieder ganz strecken.",
+        "Dann zur Mitte der Handfläche (Faust), strecken.",
+        "Dann nach oben an die Schwielenlinie, strecken.",
+        "Kommst du bei Grad III/IVa nicht in Position 3, mit der anderen Hand sanft nachhelfen."
+       ],
+       "dose_de": "4–6 Wiederholungen pro Position",
+       "frequency_de": "mehrmals täglich, während der ganzen Reha",
+       "pain_limit_de": "Höchstens 2/10, während und danach.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1365,
+        "end_s": 1406
+       }
+      },
+      {
+       "id": "finger-self-massage",
+       "name_de": "Selbstmassage am Finger",
+       "how_de": [
+        "Mit Daumen und Zeigefinger der anderen Hand das Gewebe um die schmerzhafte Stelle sanft bearbeiten.",
+        "Je gereizter, desto leichter der Druck."
+       ],
+       "dose_de": "etwa 3 Minuten",
+       "frequency_de": "täglich",
+       "pain_limit_de": "Höchstens 2/10; nicht so fest oder lang, dass es danach gereizter ist. Nutzen laut Hooper's Beta nicht gut belegt, Risiko gering.",
+       "timer": null,
+       "video": null
+      },
+      {
+       "id": "submax-holds",
+       "name_de": "Submaximale Haltezüge (Füße am Boden)",
+       "how_de": [
+        "Kante 20–35 mm, was sich angenehm anfühlt; am Fingerboard mit Füßen am Boden oder mit Block und leichtem Gewicht.",
+        "Ein- oder beidhändig 30 Sekunden ziehen bzw. halten.",
+        "30 Sekunden Pause.",
+        "Die meisten Wiederholungen offen (Drag), einige in halber Leiste; mit der Zeit auf etwa halbe-halbe. Bei Grad IVa anfangs nur offen."
+       ],
+       "dose_de": "30 s ziehen / 30 s Pause an einer 20–25-mm-Kante, ein- oder beidhändig. Im Video ohne feste Wiederholungszahl; im A2-Protokoll von Hooper’s Beta 8–12.",
+       "frequency_de": "anfangs 2-mal täglich, später 1-mal täglich; entfällt, sobald die Rekrutierungszüge dazukommen",
+       "pain_limit_de": "Höchstens 2/10. So leicht, dass du zu Beginn jeder Wiederholung nicht ermüdet bist.",
+       "timer": {
+        "work": 30,
+        "rest": 30,
+        "reps": 10,
+        "sets": 1
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1465,
+        "end_s": 1520
+       }
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "name_de": "Dynamisch belasten",
+     "goal_de": "Das Ringband an Bewegung und wechselnde Last gewöhnen.",
+     "enter_de": "Haltezüge laufen ruhig.",
+     "exit_de": "Ruderzüge über mehrere Einheiten bei höchstens 2/10, keine Ermüdung zu Beginn eines Satzes.",
+     "duration_de": "Im Video ohne feste Dauer.",
+     "climbing_de": "Leichtes bis mittleres Klettern, solange es bei höchstens 2/10 bleibt. Dynamische Züge an kleinen Griffen bleiben draußen.",
+     "exercises": [
+      {
+       "id": "mobile-board-rows",
+       "name_de": "Ruderzüge am Griffblock mit Widerstandsband",
+       "how_de": [
+        "Griffblock an ein Widerstandsband hängen, Band in Hüft- bis Brusthöhe fixieren.",
+        "Block an einer angenehmen Kante greifen, Griff halten und den Arm zum Körper rudern, kontrolliert zurück.",
+        "Intensität über Banddicke, Abstand und Tempo steuern.",
+        "Die Hälfte der Sätze offen, die Hälfte in halber Leiste (Grad IVa: zunächst überwiegend offen)."
+       ],
+       "dose_de": "4–6 Sätze × 10–12 Wiederholungen, Anstrengung 6–7 von 10",
+       "frequency_de": "etwa 3-mal pro Woche",
+       "pain_limit_de": "Höchstens 2/10. Widerstand über Banddicke, Vordehnung und Tempo steuern; keine Ermüdung zu Beginn eines Satzes.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1525,
+        "end_s": 1580
+       }
+      },
+      {
+       "id": "submax-holds",
+       "name_de": "Submaximale Haltezüge (Füße am Boden)",
+       "how_de": [
+        "Kante 20–35 mm, was sich angenehm anfühlt; am Fingerboard mit Füßen am Boden oder mit Block und leichtem Gewicht.",
+        "Ein- oder beidhändig 30 Sekunden ziehen bzw. halten.",
+        "30 Sekunden Pause.",
+        "Die meisten Wiederholungen offen (Drag), einige in halber Leiste; mit der Zeit auf etwa halbe-halbe. Bei Grad IVa anfangs nur offen."
+       ],
+       "dose_de": "8–12 × 30 s Zug / 30 s Pause, Anstrengung etwa 5–6 von 10",
+       "frequency_de": "anfangs 2-mal täglich, später 1-mal täglich; entfällt, sobald die Rekrutierungszüge dazukommen",
+       "pain_limit_de": "Höchstens 2/10 während und danach; du darfst zu Beginn einer Wiederholung nicht ermüdet sein.",
+       "timer": {
+        "work": 30,
+        "rest": 30,
+        "reps": 10,
+        "sets": 1
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1465,
+        "end_s": 1520
+       }
+      },
+      {
+       "id": "finger-rom-three-rows",
+       "name_de": "Beweglichkeit in drei Positionen",
+       "how_de": [
+        "Finger ganz strecken.",
+        "Fingerkuppen in einem Bogen zur unteren Handfläche (handgelenksnah) führen, wieder ganz strecken.",
+        "Dann zur Mitte der Handfläche (Faust), strecken.",
+        "Dann nach oben an die Schwielenlinie, strecken.",
+        "Kommst du bei Grad III/IVa nicht in Position 3, mit der anderen Hand sanft nachhelfen."
+       ],
+       "dose_de": "4–6 Wiederholungen pro Position",
+       "frequency_de": "mehrmals täglich, während der ganzen Reha",
+       "pain_limit_de": "Höchstens 2/10, während und danach.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1365,
+        "end_s": 1406
+       }
+      },
+      {
+       "id": "finger-self-massage",
+       "name_de": "Selbstmassage am Finger",
+       "how_de": [
+        "Mit Daumen und Zeigefinger der anderen Hand das Gewebe um die schmerzhafte Stelle sanft bearbeiten.",
+        "Je gereizter, desto leichter der Druck."
+       ],
+       "dose_de": "etwa 3 Minuten",
+       "frequency_de": "täglich",
+       "pain_limit_de": "Höchstens 2/10; nicht so fest oder lang, dass es danach gereizter ist. Nutzen laut Hooper's Beta nicht gut belegt, Risiko gering.",
+       "timer": null,
+       "video": null
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "name_de": "Rekrutieren",
+     "goal_de": "Wieder hart ansteuern: Die Kraft kommt aus dem aktiven Einrollen der Finger, nicht nur aus dem Halten.",
+     "enter_de": "Ruderzüge laufen ruhig.",
+     "exit_de": "Rekrutierungszüge bei hoher Anstrengung mit höchstens 2/10.",
+     "duration_de": "Im Video ohne feste Dauer.",
+     "climbing_de": "Mittleres Klettern mit halber Leiste. Schnelle, harte Züge an Leisten einzeln und nur schmerzfrei testen.",
+     "exercises": [
+      {
+       "id": "recruitment-pulls",
+       "name_de": "Rekrutierungszüge (überwindende Isometrie)",
+       "how_de": [
+        "Kante 20–25 mm, halbe Leiste, Block am fixen Punkt oder Fingerboard mit Füßen am Boden.",
+        "Über 5–8 Sekunden die Kraft aufbauen: in den ersten Sekunden niedrig, dann steigern.",
+        "Die Kraft kommt aus dem Hineindrücken der Finger in die Kante, nicht aus dem Arm – die Finger bewegen sich nicht.",
+        "1–2 Sekunden lösen, wiederholen."
+       ],
+       "dose_de": "4 Sätze × 3 Wiederholungen à 5–8 s; anfangs Anstrengung 6–7 von 10, später 8",
+       "frequency_de": "etwa 3-mal pro Woche",
+       "pain_limit_de": "Höchstens 2/10.",
+       "timer": {
+        "work": 8,
+        "rest": 2,
+        "reps": 3,
+        "sets": 4
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1634,
+        "end_s": 1684
+       }
+      },
+      {
+       "id": "mobile-board-rows",
+       "name_de": "Ruderzüge am Griffblock mit Widerstandsband",
+       "how_de": [
+        "Griffblock an ein Widerstandsband hängen, Band in Hüft- bis Brusthöhe fixieren.",
+        "Block an einer angenehmen Kante greifen, Griff halten und den Arm zum Körper rudern, kontrolliert zurück.",
+        "Intensität über Banddicke, Abstand und Tempo steuern.",
+        "Die Hälfte der Sätze offen, die Hälfte in halber Leiste (Grad IVa: zunächst überwiegend offen)."
+       ],
+       "dose_de": "4–6 Sätze × 10–12 Wiederholungen, Anstrengung 6–7 von 10",
+       "frequency_de": "etwa 3-mal pro Woche",
+       "pain_limit_de": "Höchstens 2/10; keine Ermüdung zu Satzbeginn.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1525,
+        "end_s": 1580
+       }
+      },
+      {
+       "id": "finger-self-massage",
+       "name_de": "Selbstmassage am Finger",
+       "how_de": [
+        "Mit Daumen und Zeigefinger der anderen Hand das Gewebe um die schmerzhafte Stelle sanft bearbeiten.",
+        "Je gereizter, desto leichter der Druck."
+       ],
+       "dose_de": "etwa 3 Minuten",
+       "frequency_de": "täglich",
+       "pain_limit_de": "Höchstens 2/10; nicht so fest oder lang, dass es danach gereizter ist. Nutzen laut Hooper's Beta nicht gut belegt, Risiko gering.",
+       "timer": null,
+       "video": null
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "name_de": "Kraft aufbauen",
+     "goal_de": "Messbar schwerer werden – der Reha-Zug wird zum Krafttraining.",
+     "enter_de": "Rekrutierungszüge laufen ruhig.",
+     "exit_de": "Blockzüge steigen über Wochen, die halbe Leiste bleibt stabil, Klettern am Limit ohne Reaktion am Folgetag.",
+     "duration_de": "Bis zur vollen Leistung insgesamt 8–12 Wochen (leicht bis mittel) bzw. 13–18 Wochen (schwer).",
+     "climbing_de": "Zurück zu hartem Klettern. Achte darauf, nicht wieder mehr zu belasten, als zwischen den Einheiten heilen kann – genau das hat die Verdickung ausgelöst. Tape ist freiwillig: Manchen nimmt es Schmerz, anderen drückt es zusätzlich auf die Stelle. Ausprobieren.",
+     "exercises": [
+      {
+       "id": "block-pulls",
+       "name_de": "Blockzüge (No-Hang) mit Gewicht",
+       "how_de": [
+        "Griffblock an Gewichtsstange oder Kabelzug.",
+        "In halber Leiste greifen und das Gewicht durch Strecken der Beine anheben – nicht mit Rücken oder Arm ziehen.",
+        "Oben 1–2 Sekunden halten, kontrolliert absetzen.",
+        "Gewicht so wählen, dass 2–3 Wiederholungen Reserve bleiben und die halbe Leiste nicht aufgeht. Über die Wochen Gewicht steigern."
+       ],
+       "dose_de": "2–3 Aufwärmsätze à 6–10 Wiederholungen, dann 3–4 Arbeitssätze à 3–5 Wiederholungen",
+       "frequency_de": "bis zu 3-mal pro Woche; weniger, wenn du viel und hart kletterst",
+       "pain_limit_de": "Höchstens 2/10; gehen die Finger auf, ist es zu schwer.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1684,
+        "end_s": 1740
+       }
+      },
+      {
+       "id": "recruitment-pulls",
+       "name_de": "Rekrutierungszüge (überwindende Isometrie)",
+       "how_de": [
+        "Kante 20–25 mm, halbe Leiste, Block am fixen Punkt oder Fingerboard mit Füßen am Boden.",
+        "Über 5–8 Sekunden die Kraft aufbauen: in den ersten Sekunden niedrig, dann steigern.",
+        "Die Kraft kommt aus dem Hineindrücken der Finger in die Kante, nicht aus dem Arm – die Finger bewegen sich nicht.",
+        "1–2 Sekunden lösen, wiederholen."
+       ],
+       "dose_de": "4 Sätze × 3 Wiederholungen à 5–8 s; anfangs Anstrengung 6–7 von 10, später 8",
+       "frequency_de": "etwa 3-mal pro Woche",
+       "pain_limit_de": "Höchstens 2/10.",
+       "timer": {
+        "work": 8,
+        "rest": 2,
+        "reps": 3,
+        "sets": 4
+       },
+       "video": {
+        "url": "https://www.youtube.com/watch?v=agyqSVMXkp0",
+        "title": "Ultimate A2 Pulley Injury Recovery Guide (PT's Full Protocol)",
+        "channel": "Hooper's Beta",
+        "start_s": 1634,
+        "end_s": 1684
+       }
+      },
+      {
+       "id": "h-tape",
+       "name_de": "H-Tape anlegen",
+       "how_de": [
+        "Unelastischen Tapestreifen von etwa 8–10 cm Länge und 1,5 cm Breite von beiden Enden her längs einreißen, sodass in der Mitte etwa 1 cm stehen bleibt (H-Form).",
+        "Die Mitte auf die Beugeseite des Mittelgelenks legen.",
+        "Die beiden körpernahen Streifen straff um das Ende des Grundglieds wickeln.",
+        "Finger beugen (Leistenstellung), dann die beiden anderen Streifen straff um den Anfang des Mittelglieds wickeln.",
+        "Es soll in der Beugung stützen; volles Strecken ist damit eingeschränkt."
+       ],
+       "dose_de": "Vor Belastungsübungen und später vor dem Klettern anlegen",
+       "frequency_de": "freiwillig – testen, ob es den Schmerz senkt oder durch den Druck verstärkt",
+       "pain_limit_de": "Straff, aber Fingerkuppe bleibt rosa und warm.",
+       "timer": null,
+       "video": {
+        "url": "https://www.youtube.com/watch?v=OueqYlZhpCQ",
+        "title": "Taping is the BEST Way to Prevent Finger Injuries | Climbing Myths",
+        "channel": "Hooper's Beta",
+        "start_s": 288,
+        "end_s": 370
+       }
+      }
+     ]
+    }
+   ],
+   "prevention_de": [
+    "Die Ursache ist fast immer: mehr Belastung am Ringband, als zwischen den Einheiten heilen kann. Harte Leisten- und Board-Tage zählen und dosieren.",
+    "Nach jedem Ringband-Anriss den Aufbau im ersten Monat ernst nehmen – ein halb ausgeheilter Teilriss ist der häufigste Weg in die Verdickung.",
+    "Regelmäßiges, messbares Fingertraining mit langsamer Steigerung statt nur Klettern am Limit.",
+    "Frühzeichen ernst nehmen: Unbehagen an der Stelle am Abend oder Morgen nach der Einheit."
+   ],
+   "evidence_de": "Schwach belegt. Beschreibung, Zeitangaben und das Protokoll stammen aus der klinischen Praxis von Hooper’s Beta (Physiotherapeut, eigene Ultraschallbefunde); kontrollierte Studien zur Behandlung gibt es nicht. Zur Massage sagt die Quelle selbst, dass der Nutzen wenig belegt ist. Die Abgrenzung zur normalen, schmerzfreien Ringbandverdickung bei Kletternden ist im Einzelfall nur mit Ultraschall sicher.",
+   "sources": [
+    "https://www.youtube.com/watch?v=9yJbA7_qxlY",
+    "https://www.hoopersbeta.com"
+   ]
+  },
+  {
    "id": "flexor-tenosynovitis",
    "name_de": "Gereizte Beugesehnenscheide (Tenosynovitis FDP/FDS)",
    "region": "finger",
@@ -1065,7 +1458,8 @@
     "Schmerz am Sehnenansatz (Fingerkuppe bzw. Unterarm) und in offener Hand genauso stark wie in der Leiste, kein Druckschmerz über A2/A4: eher die Sehne selbst (z. B. Zerrung der tiefen Beugesehne)",
     "Schmerz in Loch-Stellung in der Handfläche, der verschwindet, wenn alle Finger gleich gestreckt sind: eher Lumbrikalis",
     "Schnappen oder Hängenbleiben des Fingers: Schnappfinger oder Ringbandstumpf – abklären lassen",
-    "Finger stark geschwollen, gerötet, heiß, evtl. Fieber oder eine kleine Wunde: Verdacht auf Infekt, sofort ärztlich"
+    "Finger stark geschwollen, gerötet, heiß, evtl. Fieber oder eine kleine Wunde: Verdacht auf Infekt, sofort ärztlich",
+    "Kontrolliertes Aufstellen geht, aber schnelle Züge und direkter Druck auf die Stelle schmerzen, evtl. mit tastbarer harter Verdickung: spricht für eine Ringbandverdickung nach Überlastung"
    ],
    "see_professional_de": [
     "Zur Abgrenzung vom Ringband ist Ultraschall das Mittel der Wahl (Flüssigkeitssaum um die Sehne statt abstehender Sehne); im Zweifel früh machen lassen, weil sich das Vorgehen unterscheidet",

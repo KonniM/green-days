@@ -22,13 +22,49 @@
   const det = (title, body, open) => body ? `<details class="more"${open ? ' open' : ''}><summary>${e(title)}</summary>${body}</details>` : '';
   const host = (u) => String(u).replace(/^https?:\/\/(www\.)?/, '').split('/')[0];
 
+  // ---------- Konkrete Hinweise aus Videos ----------
+  const VT = LIB.vtips || { tips: [], guides: [] };
+  const tipById = {}; VT.tips.forEach(t => { tipById[t.id] = t; });
+  const guideOf = {}; VT.guides.forEach(g => { guideOf[g.id] = g; });
+  const TOPICS = { board: 'Board & steil', fuss: 'Füße & Platte', dynamik: 'Dynamik', griff: 'Griffe & Hände', koerper: 'Körperposition', taktik: 'Taktik & Projektieren', technik: 'Technik allgemein' };
+  const CTX = { board: 3, steep: 3, slab: 3, all: 2, vertical: 1, rock: 1 }, LV = { elite: 3, fortgeschritten: 2, basis: 1 };
+  // Reihenfolge: deine Schwerpunkte (Board/steil, Platte) und die feineren Hinweise zuerst
+  const rank = (t) => (CTX[t.context] || 1) * 10 + (LV[t.level] || 1);
+  const tipsFor = (kind, id) => VT.tips.filter(t => (t[kind] || []).indexOf(id) >= 0).sort((a, b) => rank(b) - rank(a));
+  function tipHTML(t, noSource) {
+    const g = guideOf[t.video] || {};
+    return `<div class="drill vtip"><b>${e(t.title_de || '')}</b><p>${e(t.do_de)}</p>
+      ${t.why_de ? `<p><span class="tag">Warum</span> ${e(t.why_de)}</p>` : ''}${t.check_de ? `<p><span class="tag">Prüfen</span> ${e(t.check_de)}</p>` : ''}
+      ${t.mistake_de ? `<p><span class="tag">Fehler</span> ${e(t.mistake_de)}</p>` : ''}${t.drill_de ? `<p><span class="tag">Übung</span> ${e(t.drill_de)}</p>` : ''}
+      ${UI.clipHTML({ clip: { v: t.video, s: t.start_s, e: t.end_s, snd: 1 } }, 'clip-sm')}
+      ${noSource ? '' : `<button class="link-row" data-act="guide-open" data-id="${e(t.video)}"><span>${e(g.channel || '')}: ${e(g.name_de || g.title || '')}</span><span>ganze Lektion ›</span></button>`}</div>`;
+  }
+  function tipsSection(kind, id) {
+    const ts = tipsFor(kind, id); if (!ts.length) return '';
+    const first = ts.slice(0, 4), rest = ts.slice(4);
+    return `<h4 class="sec-h">Konkrete Hinweise aus Videos (${ts.length})</h4><p class="hint">Jeder Hinweis hat die passende Stelle im Video – antippen zum Abspielen.</p>${first.map(t => tipHTML(t)).join('')}
+      ${rest.length ? det(`Weitere ${rest.length} Hinweise`, rest.map(t => tipHTML(t)).join('')) : ''}`;
+  }
+  function guidesHTML() {
+    if (!VT.guides.length) return '';
+    const groups = {}; VT.guides.forEach(g => { (groups[g.topic] = groups[g.topic] || []).push(g); });
+    return `<h3 class="list-h">Video-Lektionen</h3><p class="hint">${VT.guides.length} Videos von Hooper’s Beta und Lattice Training, zerlegt in ${VT.tips.length} konkrete Hinweise mit der passenden Videostelle.</p>
+      ${Object.keys(TOPICS).filter(k => groups[k]).map(k => det(`${TOPICS[k]} (${groups[k].length})`, groups[k].map(g => `<button class="lib-card" data-act="guide-open" data-id="${e(g.id)}"><span class="lib-main"><b>${e(g.name_de || g.title)}</b><em>${e(g.channel)} · ${g.tips.length} Hinweise</em></span><span class="lib-side"><span class="vid">▶</span></span></button>`).join(''), k === 'board' || k === 'fuss')).join('')}`;
+  }
+  A['guide-open'] = (el) => {
+    const g = guideOf[el.dataset.id]; if (!g) return;
+    sheet(g.name_de || g.title, `<p class="meta">${e(g.channel)} · „${e(g.title)}“</p>${g.summary_de ? `<p class="lead">${e(g.summary_de)}</p>` : ''}
+      ${g.tips.map(id => tipById[id]).filter(Boolean).map(t => tipHTML(t, true)).join('')}
+      <a class="video-link" href="https://www.youtube.com/watch?v=${e(g.id)}" target="_blank" rel="noopener">Ganzes Video in YouTube öffnen ↗</a>`, { tall: true });
+  };
+
   // ---------- Liste im Wissen-Tab (Technik) ----------
   function listHTML() {
     if (!P.length) return '';
     const cur = ofWeek(Plan.weekAt(D.today()));
     return `<h3 class="list-h">Bewegungsprinzipien</h3><p class="hint">Die ${P.length} Prinzipien hinter allen Einzeltechniken. Wer sie versteht, findet Lösungen selbst – auch für Züge, die in keiner Liste stehen.</p>
       ${P.map(p => `<button class="lib-card${cur && cur.id === p.id ? ' is-week' : ''}" data-act="prin-open" data-id="${e(p.id)}"><span class="lib-main"><b>${e(p.name_de)}</b><em>${e(p.one_de || '')}</em></span><span class="lib-side"><span class="vid">${cur && cur.id === p.id ? 'diese Woche' : '›'}</span></span></button>`).join('')}
-      <h3 class="list-h">Einzeltechniken</h3>`;
+      ${guidesHTML()}<h3 class="list-h">Einzeltechniken</h3>`;
   }
 
   // ---------- Detail ----------
@@ -46,6 +82,7 @@
       ${det('Stufe 3 – Feinheiten auf Elite-Niveau', list(p.elite_de, 'cues'), true)}
       ${det(`Wenn es schiefgeht (${(p.faults || []).length})`, (p.faults || []).map(f => `<div class="drill"><b>${e(f.sign_de)}</b><p><span class="tag">Ursache</span> ${e(f.cause_de)}</p><p><span class="tag">Ändern</span> ${e(f.fix_de)}</p></div>`).join(''))}
       ${det(`Übungen (${(p.drills || []).length})`, (p.drills || []).map(d => `<div class="drill"><b>${e(d.name_de)}</b><p>${e(d.how_de)}</p>${d.focus_de ? `<p><span class="tag">Fokus</span> ${e(d.focus_de)}</p>` : ''}<span class="meta">${e(d.dose_de || '')}</span></div>`).join(''))}
+      ${tipsSection('principles', p.id)}
       ${skills.length ? `<h4 class="sec-h">Techniken, die darauf aufbauen</h4>${skills.map(s => `<button class="link-row" data-act="lib-open" data-id="${e(s.item.id)}"><span>${e(s.item.name_de)}</span><span>›</span></button>`).join('')}` : ''}
       ${det('Wie belastbar ist das?', `<p>${e(p.evidence_de || '')}</p>${(p.sources || []).length ? `<p class="src">Quellen: ${p.sources.map(u => `<a href="${e(u)}" target="_blank" rel="noopener">${e(host(u))}</a>`).join(' · ')}</p>` : ''}`)}`;
   }
@@ -63,5 +100,5 @@
   }
   const skillLinks = (id) => { const ps = forSkill(id); return ps.length ? `<h4 class="sec-h">Dahinter steht</h4>${ps.map(p => row(p)).join('')}` : ''; };
 
-  window.Tech = { list: P, ofWeek, forSkill, listHTML, weekRow, blockExtra, skillLinks };
+  window.Tech = { list: P, ofWeek, forSkill, listHTML, weekRow, blockExtra, skillLinks, tipsSection, tipsFor };
 })();
