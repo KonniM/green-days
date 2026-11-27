@@ -135,6 +135,23 @@
   const fpost = () => ({ t: 'acc', title: 'Finger nachbereiten (Reha)', min: 3,
     phyList: [['pulley-thickening', 1, 'finger-self-massage', 'Selbstmassage am Finger'], ['flexor-tenosynovitis', 1, 'compression-wrap', 'Leichte Kompression']],
     lines: ['3 min Selbstmassage um die schmerzhafte Stelle am Mittelfinger, mit leichtem Druck (höchstens 2/10).', 'Schmerz-Check jetzt und morgen früh: Liegt er über 2/10, war es zu viel – die App kürzt dann die nächste Einheit.', 'Ist ein Finger abends dick oder steif: über Nacht eine leichte Kompression anlegen.', 'Drückt die Klimmzugstange auf die Stelle am Mittelfinger: dickere Stange, Ringe oder Schlaufen nehmen.'] });
+  // Reha-Leiter Stufe 1: submaximale Haltezüge (30 s / 30 s) – leicht, lange unter Spannung, Last messbar steigern
+  const subHold = (reps, note, hold) => ({ t: 'str', title: 'Submaximale Haltezüge (Reha)', min: reps + 1, phy: ['pulley-thickening', 1, 'submax-holds', 'Submaximale Haltezüge'],
+    log: 'hang', hang: { grip: 'Submax-Haltezug', sets: reps, secs: 30, target: 6, step: 2.5, label: 'Gewicht am Block in kg (am Hangboard: negativ = entlastet)', hold: !!hold },
+    lines: [`${reps} × 30 s ziehen / 30 s Pause · 20–25 mm · Anstrengung 5–6 von 10`,
+      'Abwechselnd halbe Leiste und offene Hand. Am Hangboard mit Füßen am Boden oder Block mit Gewicht vom Boden heben.',
+      'So leicht, dass du zu Beginn jeder Wiederholung nicht ermüdet bist. Schmerz höchstens 2/10 während und danach.',
+      'Gewicht und Anstrengung eintragen – die App schlägt daraus den nächsten Schritt vor.'].concat(note ? [note] : []),
+    timer: { label: 'Haltezüge', prep: 10, work: 30, rest: 30, reps, repName: 'Zug', workName: 'Ziehen', repLabel: 'Züge' },
+    re: (f) => f <= 0.65 ? info('Haltezüge – heute gestrichen', ['Die Session ist stark gekürzt: heute keine zusätzliche Fingerlast.']) : subHold(reps, note, hold) });
+  // Reha-Leiter Stufe 4: Blockzüge mit Gewicht – die messbare Kraftstufe, je Hand
+  const blockPull = (sets, reps, note, hold) => ({ t: 'str', title: 'Blockzüge mit Gewicht (Reha)', min: sets * 3, phy: ['pulley-thickening', 4, 'block-pulls', 'Blockzüge (No-Hang) mit Gewicht'],
+    log: 'hang', hang: { grip: 'Blockzug halbe Leiste', sets, reps, target: 8, step: 2.5, label: 'Gewicht am Block in kg', hold: !!hold },
+    lines: [`${sets} Sätze × ${reps} Wiederholungen je Hand · 2 min Pause · 2–3 Wiederholungen Reserve`,
+      'Griffblock mit Gewicht, halbe Leiste. Durch Strecken der Beine anheben, oben 1–2 s halten, kontrolliert absetzen – nicht mit Rücken oder Arm ziehen.',
+      'So schwer wie möglich, solange die halbe Leiste nicht aufgeht und der Schmerz bei höchstens 2/10 bleibt. Vorher 1–2 leichte Aufwärmsätze.',
+      'Gewicht und Anstrengung eintragen – die App schlägt daraus den nächsten Schritt vor. Beide Hände notieren: Der Unterschied zeigt, wie weit der Finger ist.'].concat(note ? [note] : []),
+    re: (f) => f <= 0.65 ? info('Blockzüge – heute gestrichen', ['Die Session ist stark gekürzt: heute keine schwere Fingerlast.']) : blockPull(sets, reps, note, hold) });
   const FINGER_RULE = 'Finger-Regel: statisch und kontrolliert greifen – kein Springen, kein Nachschnappen, nicht voll aufstellen. Schmerzt ein Zug über 2/10: anderen Boulder nehmen.';
   // Ziel-Blöcke: Inhalt (aktuelle Stufe, Dosis) kommt zur Laufzeit aus deinem Fortschritt.
   const GOAL_TITLES = { 'one-arm-pull-up': 'One-Arm-Pull-up', 'front-lever': 'Front Lever', pancake: 'Pancake', 'middle-split': 'Mittelspagat', handstand: 'Handstand' };
@@ -183,45 +200,47 @@
   const FAST_NOTE = ['Einstieg: leichter Widerstand. Es geht um Tempo ohne Schmerz, nicht um Last.', 'Neu diese Woche: etwas mehr Tempo und Widerstand, gleiche Satzzahl.', 'Neu diese Woche: ein Satz mehr, sonst alles gleich.', 'Neu diese Woche: die kurze zweite Dosis am Freitag. Montag bleibt gleich.', 'Neu diese Woche: etwas mehr Widerstand, gleiche Satzzahl.', 'Wie letzte Woche – festigen.', 'Neu diese Woche: ein Satz mehr, Widerstand bleibt gleich.'];
   const LONG = [[3, 30], [3, 30], [3, 40], [3, 40], [3, 45], [3, 45], [4, 45], [2, 30]]; // lange Halte: [Sätze, Sekunden] je Woche
   // Rekrutierungszüge: [Sätze Mi, Anstrengung, Sätze Fr] je Woche – wieder nur eine Änderung pro Woche
-  const REC = [[4, '6–7', 0], [4, '6–7', 3], [4, '7', 3], [4, '7', 3], [4, '7–8', 3], [4, '7–8', 3], [4, '8', 3], [2, '7', 0]];
+  const REC = [[4, '6–7', 0], [4, '6–7', 3], [4, '7', 3], [4, '7', 3], [4, '7–8', 0], [4, '7–8', 0], [4, '8', 0], [2, '7', 0]];
+  // Haltezüge: [Wiederholungen, Last halten?]; Blockzüge ab Woche 5: [Sätze, Wiederholungen, Last halten?]
+  const SUB = [[6, 0], [8, 1], [8, 0], [10, 1], [10, 0], [10, 0], [10, 0], [4, 1]];
+  const BP = [null, null, null, null, [3, 5, 0], [3, 5, 0], [4, 5, 1], [2, 5, 1]];
+  const BP_NOTE = ['', '', '', '', 'Neu ab dieser Woche – die schwere Stufe der Reha-Leiter. Start: ein Gewicht, das sich nach 7 von 10 anfühlt.', 'Sätze wie letzte Woche – heute steigt nur die Last.', 'Neu diese Woche: ein Satz mehr, die Last bleibt gleich.', 'Test-Woche: 2 Sätze mit der Last der Vorwoche. Rechte und linke Hand vergleichen und eintragen.'];
   const REC_NOTE = ['Einstieg: lieber zu leicht als zu hart.', 'Neu diese Woche: eine kurze zweite Dosis am Freitag.', 'Neu diese Woche: etwas härter ziehen.', 'Wie letzte Woche – festigen.', 'Neu diese Woche: etwas härter ziehen.', 'Wie letzte Woche – festigen.', 'Neu diese Woche: härter ziehen, nahe an das, was schmerzfrei geht.', 'Test-Woche: wenige, leichte Sätze.'];
   // Wochen, in denen bei der Übung der Umfang steigt (Sätze, Sekunden, zweiter Tag) oder Test ist: Last halten. Sonst darf die Last steigen.
   const FAST_HOLD = [0, 0, 1, 1, 0, 0, 1, 1], LONG_HOLD = [0, 0, 1, 0, 1, 0, 1, 1];
   function maltaWeek(i) {
-    const w = MALTA[Math.min(i, MALTA.length - 1)], fq = FAST[Math.min(i, FAST.length - 1)], rq = REC[Math.min(i, REC.length - 1)], rn = REC_NOTE[Math.min(i, REC_NOTE.length - 1)];
+    const w = MALTA[Math.min(i, MALTA.length - 1)], fq = FAST[Math.min(i, FAST.length - 1)], rq = REC[Math.min(i, REC.length - 1)], rn = REC_NOTE[Math.min(i, REC_NOTE.length - 1)], sq = SUB[Math.min(i, SUB.length - 1)], bq = BP[Math.min(i, BP.length - 1)];
     const light = w.deload || w.test;
     const mo = S(0, 'mo', 'submax', 'Max Hangs + Submax Circuits', 'Wiederholbare submaximale Arbeit – Maxkraft nur erhalten', [4, 6], [
       warm(18, ['Vor den Max Hangs einige progressive, kontrollierte Aufwärmhänge.']),
-      fprep(),
       hangs(light ? 1 : 2, { target: 7, hold: light, lines: ['Ziel RPE 7, nie über 8. Liegst du darunter (z. B. +30 kg bei RPE 5–6), nimm jede Woche +1,25 bis +2,5 kg – die App schlägt den Schritt aus deinem letzten Eintrag vor.', 'Finger-Regel: Die Hänger bleiben nur drin, solange sie währenddessen und am nächsten Morgen schmerzfrei sind (höchstens 1–2/10). Halbe Leiste, nicht voll aufstellen.', 'Kein Muskelversagen, kein erzwungenes +2,5 kg pro Woche.'].concat(light ? ['Deload/Test: nur 1 Satz bzw. Last halten.'] : []) }),
       fast(fq[0], fq[1], w.test ? 'Check: Wie hoch ist der Schmerz bei schnellen Zügen in halber Leiste? 0–1/10 heißt: bereit für dynamische Züge am Board im nächsten Block.' : w.deload ? 'Deload: leicht und locker.' : FAST_NOTE[Math.min(i, FAST_NOTE.length - 1)] + (i > 0 ? ' Nur weitergehen, wenn die letzte Woche bei höchstens 2/10 lag – sonst die Vorwoche wiederholen.' : ''), !!FAST_HOLD[Math.min(i, 7)]),
       oap(light ? 6 : 8, light ? 'Deload: 2 Sätze pro Seite, locker.' : 'Hauptreiz der Woche für dieses Ziel. Technisch sauber, RPE höchstens 7–8 – in dieser Phase kein Maximalversuch.'),
       circuits(w.mo, w.test ? { lines: ['Benchmark: derselbe Circuit wie in Woche 1 – gleicher Winkel, gleiche Griffe, gleiches Tempo. Runden, Pump nach Runde 5/10 und Erholung nach 5 min notieren.'] } : null),
       info('Technik-Cues in den Circuits', ['Fußkraft in die passende Richtung · Hüfte vor der Greifhand vorbereiten', 'Zugrichtung der Haltehand nutzen · unnötige Griffspannung abbauen']),
-      cool(), fpost()
+      cool()
     ], { low: 'Hangs weglassen oder nur 1 Satz, Circuits auf 8–10 Runden kürzen und einen Grad leichter klettern.', bench: !!w.test });
     const mi = S(2, 'mi', 'arc', 'ARC + Movement Quality', 'Aerobe Basis und Bewegungsökonomie', [2, 4], [
       warm(15, ['Sehr leichtes Bouldern, allmählich längere Bewegungsfolgen.']),
-      fprep(),
       hs(),
       recruit(rq[0], rq[1], rn),
-      longHold(LONG[Math.min(i, LONG.length - 1)][0], LONG[Math.min(i, LONG.length - 1)][1], light ? 'Test-Woche: kürzer, Last wie zuletzt.' : LONG_HOLD[Math.min(i, 7)] ? 'Diese Woche steigt die Haltezeit oder die Satzzahl – die Last bleibt gleich.' : i === 0 ? 'Einstieg: Last so wählen, dass es sich nach 4–5 von 10 anfühlt, und eintragen.' : 'Zeit wie letzte Woche – heute darf die Last einen Schritt steigen, wenn es zuletzt leicht und schmerzfrei war.', !!LONG_HOLD[Math.min(i, 7)]),
+      subHold(sq[0], w.test ? 'Test-Woche: wenige Wiederholungen, Last wie zuletzt.' : sq[1] ? 'Diese Woche kommen Wiederholungen dazu – die Last bleibt gleich.' : i === 0 ? 'Einstieg: Last so wählen, dass es sich nach 5–6 von 10 anfühlt, und eintragen.' : 'Wiederholungen wie letzte Woche – heute steigt nur die Last, wenn es zuletzt leicht und schmerzfrei war.', !!sq[1]),
       arc(2, w.mi),
       tech(18, ['15–20 min leichte Comp- und Slab-Technik – keine maximalen Dynos, keine harten Fingerzüge.', 'Achte auf Hüftposition, Momentum, Fußdruck, präzise Lastverteilung.', 'Dynamik nur an großen Griffen und aus den Beinen – die Finger fangen nichts ab.']),
       fl(light ? 5 : 7, light ? 'Deload: 2 Sätze.' : 'Hauptreiz der Woche für dieses Ziel.'),
-      cool(), fpost()
+      cool()
     ], { low: '1 × ARC statt 2, danach nur 10 min lockere Technik.' });
     const frN = w.fr[0], frMin = w.fr[1];
     const fr = S(4, 'fr', 'long', 'Moderates TB2 + Long Circuits', 'Boardbewegung erhalten, längere Capacity', [5, 7], [
       warm(18),
-      fprep(),
       light ? null : oap(6, 'Zweiter, kurzer Reiz: 2 Sätze pro Seite, bevor du ans Board gehst.'),
       rq[2] ? recruit(rq[2], rq[1], 'Kurze zweite Dosis vor dem Board.') : null,
+      bq ? blockPull(bq[0], bq[1], BP_NOTE[Math.min(i, BP_NOTE.length - 1)], !!bq[2]) : null,
       fq[2] ? fast(fq[2], fq[1], 'Kurze zweite Dosis als Aktivierung vor dem Board – gleiche Last wie am Montag.', true) : null,
       board('Moderates Board-Bouldern', light ? 10 : 15, [light ? '{n} Boulder {g:mod} bei 40°, eher der leichtere Grad, RPE max. 6.' : '{n} Boulder {g:mod} bei 40°, RPE max. 6–7.', '2–3 min Pause, nichts ab {g:limit}, kein wiederholtes Abfallen.', 'Zweck: boardtypische Bewegung und etwas höhere Griffbelastung erhalten.', FINGER_RULE].concat(i >= 4 && !light ? ['Neu ab Woche 5: 2–3 kontrollierte Deadpoints an große Griffe – nur wenn die schnellen Block-Züge bei höchstens 1/10 liegen.'] : []), { ex: EX.flash, rest: [120, 150, 180], n: light ? [2, 3] : [3, 5] }),
       longC(frN, frMin),
       light ? null : fl(5, 'Zweiter, kurzer Reiz: 2–3 Sätze.'),
-      cool(), fpost()
+      cool()
     ].filter(Boolean), { low: 'Board-Teil auf 2 leichte Boulder kürzen, Long Circuits 2 × 5 min.' });
     return { label: w.label, deload: !!w.deload, test: !!w.test, sessions: [mo, mi, fr].concat(restDays(false)) };
   }
@@ -433,7 +452,7 @@
   const PHASES = [
     { id: 'malta', name: 'Malta Capacity / Base', short: 'Capacity', type: 'cap', weeks: 8, where: 'Malta · Tension Board 2',
       goal: 'Aerobe Unterarmkapazität und wiederholbare submaximale Belastung aufbauen, Maxkraft nur erhalten.',
-      points: ['3 Einheiten pro Woche: Mo Submax Circuits, Mi ARC + Technik, Fr Board + Long Circuits', 'Erst Umfang steigern, nicht gleichzeitig Schwierigkeit und Spitzenlast', 'Finger: Max Hangs bleiben, solange sie schmerzfrei sind. Explosive Belastung kommt stufenweise zurück – schnelle Block-Züge Mo und ab Woche 4 auch Fr, Schmerz höchstens 2/10', 'Pro Übung steigt pro Woche nur eine Größe: bei den Hängern die Last (Sätze bleiben), bei Circuits und ARC der Umfang (Grad bleibt)', 'Die Reha-Lasten steigen messbar: Max Hangs, schnelle Block-Züge und lange Halte haben ein Gewichts-Log mit Steigerungsvorschlag, die Rekrutierungszüge steigen über die Anstrengung (6–7 → 8)', 'Reha in jeder Einheit: Finger vorbereiten (5 min), Rekrutierungszüge Mi und ab Woche 2 auch Fr, Finger nachbereiten (3 min). Zusammen mit Hängern, schnellen Block-Zügen und langen Halten deckt das Ringbandreizung, Ringbandverdickung, Sehnenscheide und Mittelgelenk ab', 'Robuste Finger: Mi lange Halte mit offener Hand, an jedem Ruhetag 8 min Finger-Pflege', 'Kein fester Deload: Die Last liegt unter deinem gewohnten Pensum, und die App kürzt bei Warnsignalen von selbst. Woche 8 Taper + Benchmark gegen Woche 1', 'Nebenziele in kleinen Dosen: One-Arm-Pull-up (Mo, Fr), Front Lever (Mi, Fr), Handstand (Mi, Do), Pancake und Spagat an den Ruhetagen'],
+      points: ['3 Einheiten pro Woche: Mo Submax Circuits, Mi ARC + Technik, Fr Board + Long Circuits', 'Erst Umfang steigern, nicht gleichzeitig Schwierigkeit und Spitzenlast', 'Finger: Max Hangs bleiben, solange sie schmerzfrei sind. Explosive Belastung kommt stufenweise zurück – schnelle Block-Züge Mo und ab Woche 4 auch Fr, Schmerz höchstens 2/10', 'Pro Übung steigt pro Woche nur eine Größe: bei den Hängern die Last (Sätze bleiben), bei Circuits und ARC der Umfang (Grad bleibt)', 'Reha-Leiter über 8 Wochen, jede Stufe mit steigender Last: Haltezüge 30 s / 30 s (Mi) → Ruderzüge am Block, erst ruhig, dann schnell (Mo, ab Woche 4 auch Fr) → Rekrutierungszüge (Mi, Woche 2–4 auch Fr) → ab Woche 5 Blockzüge mit Gewicht (Fr)', 'Haltezüge, Ruderzüge, Blockzüge und Max Hangs haben ein Gewichts-Log mit Steigerungsvorschlag; die Rekrutierungszüge steigen über die Anstrengung (6–7 → 8)', 'An jedem Ruhetag 8 min Finger-Pflege', 'Kein fester Deload: Die Last liegt unter deinem gewohnten Pensum, und die App kürzt bei Warnsignalen von selbst. Woche 8 Taper + Benchmark gegen Woche 1', 'Nebenziele in kleinen Dosen: One-Arm-Pull-up (Mo, Fr), Front Lever (Mi, Fr), Handstand (Mi, Do), Pancake und Spagat an den Ruhetagen'],
       not: ['Kein Springen, kein Nachschnappen und kein voller Aufsteller an kleinen Griffen, solange Mittel- oder Ringfinger dabei schmerzen', 'Keine 7:3-Repeaters, keine Density Hangs', 'Keine maximalen Weighted Pull-ups – die One-Arm-Stufen bleiben bei RPE 7–8 und wenigen Sätzen', 'Keine regelmäßigen Limit-Sessions, kein Campus, kein Pump 8–9/10'],
       themes: ['foundations', 'slab', 'tension'], week: maltaWeek },
     { id: 'strength1', name: 'Max Strength & Recruitment', short: 'Maxkraft', type: 'str', weeks: 12, where: 'Ravensburg · MoonBoard, Hangboard + Gewichte',

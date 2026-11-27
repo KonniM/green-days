@@ -78,6 +78,7 @@
     const hc = next({ grip: 'Half Crimp', target: 8, step: 1.25 }, date), w = bw();
     if (h.grip === '3-Finger-Drag') return { kg: snap(hc.kg - 10, 1.25), text: 'Startwert geschätzt: etwa 10 kg unter deiner Half-Crimp-Last. Ab dem ersten Eintrag rechnet die App mit deinem Wert.' };
     if (w && /volle Leiste/.test(h.grip)) return { kg: snap((w + hc.kg) / 2 * 0.65, 2.5), text: 'Startwert geschätzt: 65 % deiner Half-Crimp-Last pro Hand.' };
+    if (w && h.grip === 'Blockzug halbe Leiste') return { kg: snap((w + hc.kg) / 2 * 0.7, 2.5), text: 'Startwert geschätzt: 70 % deiner Half-Crimp-Last pro Hand – lieber etwas leichter beginnen.' };
     if (w && /loch/i.test(h.grip)) return { kg: snap((w + hc.kg) / 2 * 0.45, 2.5), text: 'Startwert geschätzt: 45 % deiner Half-Crimp-Last pro Hand.' };
     return null;
   }
