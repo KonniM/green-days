@@ -103,6 +103,7 @@
     const h = b.hang; if (!h || !window.Adapt) return null;
     const today = D.today(); date = date || today; if (date < today) return null;
     const now = next(h, today); if (!now) return null;
+    if (h.test) return now.prev ? `Test: Deine letzte Trainingslast war ${(now.prev.kg >= 0 ? '+' : '') + kgs(now.prev.kg)} kg bei RPE ${now.prev.rpe}. Arbeite dich in drei Versuchen darüber hinaus.` : null;
     const plus = !h.label || /Zusatz/.test(h.label), sign = (v) => (plus && v >= 0 ? '+' : '') + kgs(v);
     if (D.diff(date, today) <= 6) return `Ziel heute: ${sign(now.kg)} kg – ${now.text}`;
     const goal = goalKg(h), kNow = absWeek(today), k = absWeek(date), p2 = lay().find(p => p.id === 'power2');
