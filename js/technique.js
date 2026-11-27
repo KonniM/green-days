@@ -41,9 +41,10 @@
   }
   function tipsSection(kind, id) {
     const ts = tipsFor(kind, id); if (!ts.length) return '';
-    const first = ts.slice(0, 4), rest = ts.slice(4);
-    return `<h4 class="sec-h">Konkrete Hinweise aus Videos (${ts.length})</h4><p class="hint">Jeder Hinweis hat die passende Stelle im Video – antippen zum Abspielen.</p>${first.map(t => tipHTML(t)).join('')}
-      ${rest.length ? det(`Weitere ${rest.length} Hinweise`, rest.map(t => tipHTML(t)).join('')) : ''}`;
+    // Lange Listen kürzen: die 4 wichtigsten offen, die nächsten 16 zum Aufklappen – der Rest steht in den Video-Lektionen
+    const first = ts.slice(0, 4), rest = ts.slice(4, 20), more = ts.length - first.length - rest.length;
+    return `<h4 class="sec-h">Konkrete Hinweise aus Videos (${ts.length})</h4><p class="hint">Jeder Hinweis hat die passende Stelle im Video – antippen zum Abspielen. Hinweise für steiles Board und Platte stehen oben.</p>${first.map(t => tipHTML(t)).join('')}
+      ${rest.length ? det(`Weitere ${rest.length} Hinweise`, rest.map(t => tipHTML(t)).join('') + (more > 0 ? `<p class="hint">Dazu kommen ${more} weitere Hinweise – du findest sie in den Video-Lektionen im Wissen-Tab unter Technik.</p>` : '')) : ''}`;
   }
   function guidesHTML() {
     if (!VT.guides.length) return '';
