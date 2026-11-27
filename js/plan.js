@@ -1,5 +1,5 @@
 /* Green Days — Jahresplan in Zyklen: Malta Capacity → Max Strength (Ravensburg) → Power →
-   Frühjahrs-Performance → Strength II → Power/PE → Spezifität → Taper & Perform (Oktober 2027).
+   Test-Woche → Strength II → Power/PE → Spezifität → Taper & Perform (Oktober 2027).
    Aufbau nach Paradigm (eine Hauptanpassung pro Phase/Session, Green Days, ACWR) und Lattice
    (Capacity vor Intensität, Erhaltungsdosen, Deloads). */
 (function () {
@@ -211,9 +211,9 @@
   const ST1 = { sets: [3, 3, 4, 4, 4, 5, 5, 5, 4], secs: [7, 7, 7, 7, 7, 7, 10, 10, 10], pull: ['3 × 5', '3 × 5', '4 × 5', '4 × 4', '4 × 4', '5 × 4', '5 × 3', '5 × 3', '4 × 2'], pullRpe: [7, 7, 7, 8, 8, 8, 8, 8, 8],
     moRpe: [[5, 7], [5, 7], [6, 7], [6, 7], [6, 7], [6, 8], [6, 8], [6, 8], [6, 8]], second: [0, 1, 1, 1, 1, 1, 1, 1, 1], core: [0, 0, 0, 0, 1, 1, 1, 1, 1],
     lim: [0, 3, 3, 3, 4, 4, 4, 4, 4], limMin: [35, 38, 40, 42, 48, 50, 50, 50, 50], frRpe: [[6, 7], [6, 8], [7, 8], [7, 8], [7, 8], [7, 9], [7, 9], [8, 9], [8, 9]] };
-  const ST2 = { sets: [4, 4, 5, 5, 5], secs: [7, 10, 10, 10, 10], pull: ['4 × 3', '4 × 3', '5 × 3', '5 × 2', '4 × 2'], pullRpe: [8, 8, 8, 8, 8],
-    moRpe: [[6, 7], [6, 7], [6, 8], [6, 8], [6, 8]], second: [1, 1, 1, 1, 1], core: [1, 1, 1, 1, 1],
-    lim: [4, 4, 5, 5, 5], limMin: [44, 47, 50, 50, 50], frRpe: [[7, 9], [8, 9], [8, 9], [8, 9], [8, 9]] };
+  const ST2 = { sets: [4, 4, 4, 4, 5, 5, 5, 5], secs: [7, 7, 10, 10, 10, 10, 10, 10], pull: ['4 × 3', '4 × 3', '5 × 3', '5 × 3', '5 × 2', '5 × 2', '4 × 2', '4 × 2'], pullRpe: [8, 8, 8, 8, 8, 8, 8, 8],
+    moRpe: [[6, 7], [6, 7], [6, 7], [6, 8], [6, 8], [6, 8], [6, 8], [6, 8]], second: [1, 1, 1, 1, 1, 1, 1, 1], core: [1, 1, 1, 1, 1, 1, 1, 1],
+    lim: [4, 4, 4, 4, 5, 5, 5, 5], limMin: [44, 46, 47, 48, 50, 50, 50, 50], frRpe: [[7, 9], [8, 9], [8, 9], [8, 9], [8, 9], [8, 9], [8, 9], [8, 9]] };
   // Zweiter Griff: Kraftblock I ab Stufe 4 (Woche 5) im Wechsel volle Leiste / offene Hand / Loch, Kraftblock II Pinch / volle Leiste / Loch
   function secondGrip(st, two, o) {
     const base = hangs(2, { target: 7, title: two ? o.gripTitle : 'Open Hand / 3-Finger-Drag', ex: two ? EX.blockLift : EX.openHang, grip: two ? o.grip : '3-Finger-Drag', secs: 7, rest: 180, lines: ['Grip-Rotation: anderer Gelenkwinkel, damit nicht immer dieselbe Struktur (PIP, A2) die Last trägt.', 'RPE 7 – das ist Ergänzung, kein zweiter Maxreiz.'] });
@@ -356,6 +356,15 @@
   ], { low: 'Tag in einen Erkundungstag verwandeln: Züge ausbouldern, Beta filmen, keine Durchstiegsversuche.', hi: 12, movable: true });
 
   function springWeek(i, n) {
+    if (n === 1) {   // nur eine Woche: Standort testen, dann direkt weiter trainieren
+      return {
+        label: 'Test-Woche', test: true, note: 'Was hat dich begrenzt – Finger, Zugkraft, Technik oder Kopf? Das legt den Schwerpunkt für den zweiten Kraftblock fest.', sessions: [
+          primer(),
+          S(2, 'mi', 'skill', 'Skill & Mobility leicht', 'Beweglich und scharf bleiben', [3, 4], [warm(12), tech(30), oap(6, 'Erhalt: 2 Sätze pro Seite.'), fl(5, 'Erhalt: 2 Sätze.'), cool(15)], { core: false, optional: true, low: 'Nur Mobility.' }),
+          perfDay('Test-Tag (Fels oder Halle)', ['2–3 Boulder am oder knapp über deinem Limit auswählen. 5–8 Qualitätsversuche insgesamt, 5–10 min Pause dazwischen.', 'Kein Fels in Reichweite? Send-Session am Board oder an neu geschraubten Bouldern in der Halle – der Test funktioniert dort genauso.', 'Danach auswerten und die Standortbestimmung im Fortschritt-Tab eintragen.'])
+        ].concat(restDays(true))
+      };
+    }
     if (i === n - 1) {
       const easy = (dow, key) => S(dow, key, 'skill', 'Lockeres Bewegen', 'Erholen und auswerten', [4, 5], [warm(12), tech(45, ['Klettern, was Spaß macht – 3+ Grade unter dem Limit.', 'Mobility-Tests wiederholen und eintragen.']), cool(12)], { low: 'Spaziergang und Mobility.' });
       return { label: 'Übergang & Auswertung', deload: true, sessions: [easy(0, 'mo'), easy(2, 'mi'), easy(4, 'fr')].concat(restDays(false)), note: 'Was hat dich am Fels wirklich limitiert? Das legt den Schwerpunkt für Strength II fest.' };
@@ -412,14 +421,14 @@
       points: ['Vier Wochen: Power baut sich schnell auf und belastet die Finger am stärksten', 'Mo Power (explosive Züge, in Woche 3 Campus nur bei ruhigen Fingern)', 'Fr Limit Boulder mit weiten Zügen und Flash-Versuch', 'Mi Skill Day: Dynamik, Timing, Koordination'],
       not: ['Kein Campus bei Fingersignalen', 'Keine Marathon-Sessions – Power braucht Frische'],
       themes: ['dynamic', 'mental', 'tension'], week: (i, n) => powerWeek(i, n, {}) },
-    { id: 'spring', name: 'Frühjahrs-Performance', short: 'Fels I', type: 'perf', weeks: 4, flex: true, where: 'Ort offen · Fels oder Halle',
-      goal: 'Erster Leistungstest des Jahres: Kraft an echten Projekten abrufen und herausfinden, was am Fels limitiert.',
-      points: ['Mo kurzer Primer, Sa Performance Day (verschiebbar)', 'Wenige Versuche mit voller Absicht, klare Endpunkte', 'Letzte Woche: Übergang, Mobility-Tests, Auswertung'],
+    { id: 'spring', name: 'Test-Woche', short: 'Test', type: 'perf', weeks: 1, flex: true, where: 'Ort offen · Fels oder Halle',
+      goal: 'Eine Woche Standortbestimmung nach dem ersten Kraft- und Power-Block: Kraft an harten Bouldern abrufen und sehen, was begrenzt. Danach geht es direkt mit Training weiter.',
+      points: ['Mo kurzer Primer, Sa Test-Tag (verschiebbar) – am Fels, wenn es passt, sonst am Board oder in der Halle', 'Wenige Versuche mit voller Absicht, klare Endpunkte', 'Danach Standortbestimmung eintragen: Sie zeigt, woran der zweite Kraftblock arbeiten soll'],
       not: ['Kein zusätzliches Training „weil es gut läuft“', 'Kein Projektieren bis die Haut durch ist'],
       themes: ['tactics', 'outdoor', 'mental'], week: springWeek },
-    { id: 'strength2', name: 'Strength II', short: 'Maxkraft II', type: 'str', weeks: 8, flex: true, where: 'Ort offen · Board, Hangboard + Gewichte',
-      goal: 'Zweiter Kraftblock auf höherem Niveau – gezielt an den Schwächen, die das Frühjahr gezeigt hat.',
-      points: ['Max Hangs 4–5 Sätze, 7–10 s, plus zweiter Grifftyp im Wechsel: Pinch-Block, volle Leiste, Löcher', 'Weighted Pull-ups schwerer und kürzer', 'Fr Limit Boulder mit einem Anti-Style-Boulder pro Session'],
+    { id: 'strength2', name: 'Strength II', short: 'Maxkraft II', type: 'str', weeks: 11, flex: true, where: 'Ort offen · Board, Hangboard + Gewichte',
+      goal: 'Zweiter Kraftblock auf höherem Niveau – gezielt an den Schwächen, die die Test-Woche gezeigt hat.',
+      points: ['Elf Wochen mit acht Aufbauwochen: Die Zeit des gekürzten Frühjahrsblocks steckt hier, weil Fingerkraft dein Engpass ist', 'Max Hangs 4–5 Sätze, 7–10 s, plus zweiter Grifftyp im Wechsel: Pinch-Block, volle Leiste, Löcher', 'Pro Übung steigt pro Woche nur eine Größe: In Wochen mit mehr Sätzen, längeren Hängern oder neuem Schema bleibt die Last gleich', 'Weighted Pull-ups schwerer und kürzer', 'Fr Limit Boulder mit einem Anti-Style-Boulder pro Session'],
       not: ['Kein Campus', 'Keine Pump-Einheiten'],
       themes: ['tension', 'foundations', 'slab'], week: (i, n) => strengthWeek(i, n, { board: 'Board', second: true, grip: 'Pinch', gripTitle: 'Pinch-Block Lifts' }) },
     { id: 'power2', name: 'Power & Power Endurance', short: 'Power / PE', type: 'pow', weeks: 4, flex: true, where: 'Ort offen · Board, Campusboard',
@@ -447,7 +456,7 @@
     if (cache && cache.sig === sig) return cache.list;
     let start = D.monday(ps);
     const list = PHASES.map((p, idx) => {
-      const weeks = Math.max(2, Math.min(16, ov[p.id] || p.weeks));
+      const weeks = Math.max(p.id === 'spring' ? 1 : 2, Math.min(16, ov[p.id] || p.weeks));
       const o = Object.assign({}, p, { idx, weeks, start, end: D.add(start, weeks * 7 - 1) });
       start = D.add(start, weeks * 7);
       return o;

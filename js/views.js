@@ -51,7 +51,7 @@
   A['phase-open'] = (el) => { ui.openPhase = el.dataset.id; ui.planTab = 'cycles'; UI.nav('plan'); const t = $(`.phase.is-open`); if (t) t.scrollIntoView({ block: 'start' }); };
   A['phase-weeks'] = (el) => {
     const p = S().profile, ph = Plan.layout().find(x => x.id === el.dataset.id);
-    p.phaseWeeks = p.phaseWeeks || {}; p.phaseWeeks[ph.id] = Math.max(2, Math.min(16, ph.weeks + (+el.dataset.d)));
+    p.phaseWeeks = p.phaseWeeks || {}; p.phaseWeeks[ph.id] = Math.max(ph.id === 'spring' ? 1 : 2, Math.min(16, ph.weeks + (+el.dataset.d)));
     Plan.reset(); Store.save(); UI.render();
   };
   // Geplanter ACWR einer Woche: Plan-Last / Schnitt der 4 Wochen davor (vergangene Wochen mit echter Last)
