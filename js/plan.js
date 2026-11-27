@@ -203,9 +203,9 @@
   // =====================================================================
   // Stufentabellen: Umfang und Ziel-RPE steigen so, dass die Wochenlast beim Phasenwechsel
   // höchstens ~10–15 % wächst und der geplante ACWR im Bereich 0,8–1,3 bleibt.
-  const ST1 = { sets: [3, 3, 4, 4, 4, 5, 4], secs: [7, 7, 7, 7, 7, 10, 10], pull: ['3 × 5', '3 × 5', '4 × 4', '4 × 3', '4 × 3', '5 × 3', '4 × 2'], pullRpe: [7, 7, 7, 8, 8, 8, 8],
-    moRpe: [[5, 7], [5, 7], [6, 7], [6, 7], [6, 7], [6, 8], [6, 8]], second: [0, 1, 1, 1, 1, 1, 1], core: [0, 0, 0, 0, 1, 1, 1],
-    lim: [0, 3, 3, 4, 4, 4, 4], limMin: [35, 38, 45, 46, 48, 50, 50], frRpe: [[6, 7], [6, 8], [6, 8], [7, 8], [7, 8], [7, 9], [8, 9]] };
+  const ST1 = { sets: [3, 3, 4, 4, 4, 5, 5, 5, 4], secs: [7, 7, 7, 7, 7, 7, 10, 10, 10], pull: ['3 × 5', '3 × 5', '4 × 4', '4 × 3', '4 × 3', '5 × 3', '5 × 3', '5 × 2', '4 × 2'], pullRpe: [7, 7, 7, 8, 8, 8, 8, 8, 8],
+    moRpe: [[5, 7], [5, 7], [6, 7], [6, 7], [6, 7], [6, 8], [6, 8], [6, 8], [6, 8]], second: [0, 1, 1, 1, 1, 1, 1, 1, 1], core: [0, 0, 0, 0, 1, 1, 1, 1, 1],
+    lim: [0, 3, 3, 4, 4, 4, 4, 4, 4], limMin: [35, 38, 45, 46, 48, 50, 50, 50, 50], frRpe: [[6, 7], [6, 8], [6, 8], [7, 8], [7, 8], [7, 9], [7, 9], [8, 9], [8, 9]] };
   const ST2 = { sets: [4, 4, 5, 5, 5], secs: [7, 10, 10, 10, 10], pull: ['4 × 3', '4 × 3', '5 × 3', '5 × 2', '4 × 2'], pullRpe: [8, 8, 8, 8, 8],
     moRpe: [[6, 7], [6, 7], [6, 8], [6, 8], [6, 8]], second: [1, 1, 1, 1, 1], core: [1, 1, 1, 1, 1],
     lim: [4, 4, 5, 5, 5], limMin: [44, 47, 50, 50, 50], frRpe: [[7, 9], [8, 9], [8, 9], [8, 9], [8, 9]] };
@@ -213,7 +213,7 @@
   function secondGrip(st, two, o) {
     const base = hangs(2, { title: two ? o.gripTitle : 'Open Hand / 3-Finger-Drag', ex: two ? EX.blockLift : EX.openHang, grip: two ? o.grip : '3-Finger-Drag', secs: 7, rest: 180, lines: ['Grip-Rotation: anderer Gelenkwinkel, damit nicht immer dieselbe Struktur (PIP, A2) die Last trägt.', 'RPE 7 – das ist Ergänzung, kein zweiter Maxreiz.'] });
     if (two) return [base, fullCrimp(), pockets()][st % 3];
-    return st < 3 ? base : [fullCrimp(), base, pockets(), fullCrimp()][Math.min(st - 3, 3)];
+    return st < 3 ? base : [fullCrimp(), base, pockets()][(st - 3) % 3];
   }
   function strengthWeek(i, n, o) {
     const p = pattern(n)[i], st = p.step, two = !!o.second, T = two ? ST2 : ST1;
@@ -394,14 +394,14 @@
       points: ['3 Einheiten pro Woche: Mo Submax Circuits, Mi ARC + Technik, Fr Board + Long Circuits', 'Erst Umfang steigern, nicht gleichzeitig Schwierigkeit und Spitzenlast', 'Finger: Max Hangs bleiben, solange sie schmerzfrei sind. Explosive Belastung kommt stufenweise zurück – schnelle Block-Züge Mo und ab Woche 3 auch Fr, Schmerz höchstens 2/10', 'Robuste Finger: Mi lange Halte mit offener Hand, an jedem Ruhetag 8 min Finger-Pflege', 'Woche 4 Deload, Woche 8 Taper + Benchmark gegen Woche 1', 'Nebenziele in kleinen Dosen: One-Arm-Pull-up (Mo, Fr), Front Lever (Mi, Fr), Handstand (Mi, Do), Pancake und Spagat an den Ruhetagen'],
       not: ['Kein Springen, kein Nachschnappen und kein voller Aufsteller an kleinen Griffen, solange Mittel- oder Ringfinger dabei schmerzen', 'Keine 7:3-Repeaters, keine Density Hangs', 'Keine maximalen Weighted Pull-ups – die One-Arm-Stufen bleiben bei RPE 7–8 und wenigen Sätzen', 'Keine regelmäßigen Limit-Sessions, kein Campus, kein Pump 8–9/10'],
       themes: ['foundations', 'slab', 'tension'], week: maltaWeek },
-    { id: 'strength1', name: 'Max Strength & Recruitment', short: 'Maxkraft', type: 'str', weeks: 10, where: 'Ravensburg · MoonBoard, Hangboard + Gewichte',
+    { id: 'strength1', name: 'Max Strength & Recruitment', short: 'Maxkraft', type: 'str', weeks: 12, where: 'Ravensburg · MoonBoard, Hangboard + Gewichte',
       goal: 'Finger- und Zugkraft kontrolliert aufbauen. Aerobes Volumen sinkt auf Erhaltungsdosis, schwere Fingerlast steigt schrittweise.',
-      points: ['Mo Hangboard + Weighted Pull-ups (kontrollierte Last), Fr MoonBoard Limit, Mi Skill Day', 'Zwei harte Fingertage mit 3–4 Tagen Abstand – eine Hauptanpassung pro Session', 'Grip-Rotation: Half Crimp + Open Hand, ab Woche 5 im Wechsel auch volle Leiste und Löcher (dosiert, nur schmerzfrei); am Board Leiste/Pinch/Sloper mischen', 'Woche 4 und 8 Deload, Woche 10 Test', 'Nebenziele: One-Arm-Pull-up und Front Lever am Mittwoch frisch, Handstand Mi/Do, Pancake und Spagat an den Ruhetagen'],
+      points: ['Mo Hangboard + Weighted Pull-ups (kontrollierte Last), Fr MoonBoard Limit, Mi Skill Day', 'Zwei harte Fingertage mit 3–4 Tagen Abstand – eine Hauptanpassung pro Session', 'Grip-Rotation: Half Crimp + Open Hand, ab Woche 5 im Wechsel auch volle Leiste und Löcher (dosiert, nur schmerzfrei); am Board Leiste/Pinch/Sloper mischen', 'Woche 4 und 8 Deload, Woche 12 Test', 'Zwölf Wochen, weil Sehnen und Ringbänder langsamer nachziehen als die Kraft', 'Nebenziele: One-Arm-Pull-up und Front Lever am Mittwoch frisch, Handstand Mi/Do, Pancake und Spagat an den Ruhetagen'],
       not: ['Keine Pump-Circuits nach Max Hangs', 'Kein Campus in dieser Phase', 'Keine Laststeigerung in zwei Wochen hintereinander, wenn die Finger reagieren'],
       themes: ['tension', 'tactics', 'foundations'], week: (i, n) => strengthWeek(i, n, { board: 'MoonBoard' }) },
-    { id: 'power1', name: 'Power & Contact Strength', short: 'Power', type: 'pow', weeks: 6, flex: true, where: 'Ort offen · Board, Campusboard',
+    { id: 'power1', name: 'Power & Contact Strength', short: 'Power', type: 'pow', weeks: 4, flex: true, where: 'Ort offen · Board, Campusboard',
       goal: 'Kraft in schnelle, weite Züge umsetzen. Eine Max-Hang-Erhaltungsdosis pro Woche bleibt.',
-      points: ['Mo Power (explosive Züge, ab Woche 3 Campus nur bei ruhigen Fingern)', 'Fr Limit Boulder mit weiten Zügen und Flash-Versuch', 'Mi Skill Day: Dynamik, Timing, Koordination'],
+      points: ['Vier Wochen: Power baut sich schnell auf und belastet die Finger am stärksten', 'Mo Power (explosive Züge, in Woche 3 Campus nur bei ruhigen Fingern)', 'Fr Limit Boulder mit weiten Zügen und Flash-Versuch', 'Mi Skill Day: Dynamik, Timing, Koordination'],
       not: ['Kein Campus bei Fingersignalen', 'Keine Marathon-Sessions – Power braucht Frische'],
       themes: ['dynamic', 'mental', 'tension'], week: (i, n) => powerWeek(i, n, {}) },
     { id: 'spring', name: 'Frühjahrs-Performance', short: 'Fels I', type: 'perf', weeks: 4, flex: true, where: 'Ort offen · Fels oder Halle',
@@ -409,12 +409,12 @@
       points: ['Mo kurzer Primer, Sa Performance Day (verschiebbar)', 'Wenige Versuche mit voller Absicht, klare Endpunkte', 'Letzte Woche: Übergang, Mobility-Tests, Auswertung'],
       not: ['Kein zusätzliches Training „weil es gut läuft“', 'Kein Projektieren bis die Haut durch ist'],
       themes: ['tactics', 'outdoor', 'mental'], week: springWeek },
-    { id: 'strength2', name: 'Strength II', short: 'Maxkraft II', type: 'str', weeks: 6, flex: true, where: 'Ort offen · Board, Hangboard + Gewichte',
+    { id: 'strength2', name: 'Strength II', short: 'Maxkraft II', type: 'str', weeks: 8, flex: true, where: 'Ort offen · Board, Hangboard + Gewichte',
       goal: 'Zweiter Kraftblock auf höherem Niveau – gezielt an den Schwächen, die das Frühjahr gezeigt hat.',
       points: ['Max Hangs 4–5 Sätze, 7–10 s, plus zweiter Grifftyp im Wechsel: Pinch-Block, volle Leiste, Löcher', 'Weighted Pull-ups schwerer und kürzer', 'Fr Limit Boulder mit einem Anti-Style-Boulder pro Session'],
       not: ['Kein Campus', 'Keine Pump-Einheiten'],
       themes: ['tension', 'foundations', 'slab'], week: (i, n) => strengthWeek(i, n, { board: 'Board', second: true, grip: 'Pinch', gripTitle: 'Pinch-Block Lifts' }) },
-    { id: 'power2', name: 'Power & Power Endurance', short: 'Power / PE', type: 'pow', weeks: 6, flex: true, where: 'Ort offen · Board, Campusboard',
+    { id: 'power2', name: 'Power & Power Endurance', short: 'Power / PE', type: 'pow', weeks: 4, flex: true, where: 'Ort offen · Board, Campusboard',
       goal: 'Kraft wiederholt und über längere Boulder abrufen. Rhythmus, Snap und Flow entstehen hier.',
       points: ['Mo Power (Campus / explosive Züge) + Hang-Erhalt', 'Fr lange Boulder (6–12 Züge), Linkups, später Boulder Triples', 'Mi Skill Day: Taktik, Pacing, Flash-Strategie'],
       not: ['Kein Versuch mit schlechter Technik – Qualität bleibt der Maßstab'],
