@@ -492,6 +492,44 @@
       themes: ['mental', 'outdoor', 'tactics'], week: taperWeek }
   ];
 
+  // ---------- Einheiten auf die Zieldauer ausbauen ----------
+  // Du bist rund zwei Stunden im Gym; reine Trainingszeit etwa 100 Minuten. Fehlende Zeit wird gefüllt mit dem, was
+  // am meisten bringt und die Finger am wenigsten kostet: Technik zuerst (frisch), dann Rumpf/Antagonisten,
+  // Mobility am Ende (warm), zuletzt etwas leichtes Klettern. Deload-, Test- und Performance-Einheiten bleiben kurz.
+  const TARGET_MIN = 100;
+  const NO_FILL = { mobility: 1, primer: 1, perf: 1, outdoor: 1, test: 1 };
+  const coreB = (min) => ({ t: 'acc', title: 'Rumpf & Körperspannung', min, lines: ['3 Runden: 8–10 × hängendes Bein- oder Knieheben, 20–30 s Hollow Body, 8 × Seitstütz mit Hüftheben pro Seite.', 'Kontrolliert, 2–3 Wiederholungen Reserve. Körperspannung ist an steilen Boards dein Hebel.'] });
+  const easyB = (min) => ({ t: 'cap', title: 'Leichtes Klettern zum Schluss', min, count: { n: Math.max(3, Math.round(min / 2.5)), unit: 'Boulder' }, lines: [`Etwa ${Math.max(3, Math.round(min / 2.5))} leichte Boulder, Grad {g:circ}, ohne Pump.`, 'Jeder Boulder mit einer Aufgabe: leise Tritte, Hüfte an die Wand oder der Fokus aus dem Prinzip der Woche.'], re: (f) => easyB(Math.max(6, Math.round(min * Math.min(1, f)))) });
+  function fillTo(s, target) {
+    if (NO_FILL[s.kind] || s.optional) return;
+    const total = () => s.blocks.reduce((a, b) => a + (b.min || 0), 0);
+    let g = target - total(); if (g < 8) return;
+    const end = () => { const k = s.blocks.map(b => b.t === 'mob').lastIndexOf(true); return k >= 0 ? k : s.blocks.length; };   // vor dem Cooldown
+    // 1) Technik: gleich nach dem Aufwärmen, solange du frisch bist
+    if (!s.blocks.some(b => b.t === 'tech')) {
+      const m = g >= 35 ? 20 : g >= 22 ? 15 : g >= 12 ? 12 : 10;
+      const k = Math.max(s.blocks.findIndex(b => b.t === 'prin'), s.blocks.findIndex(b => b.t === 'warmup'));
+      s.blocks.splice(k + 1, 0, tech(m, ['Grad: {g:tech}. Technik zuerst, solange du frisch bist – das ist zugleich der zweite Teil des Aufwärmens.', 'Zwei bis drei Boulder je dreimal klettern und jedes Mal eine Sache aus dem Prinzip der Woche ändern.', 'Einen Versuch filmen und mit den Prüfpunkten des Prinzips vergleichen.']));
+      g -= m;
+    }
+    // 2) Antagonisten bzw. Rumpf – was in der Einheit noch fehlt
+    if (g >= 8) {
+      const hasAnta = s.blocks.some(b => b.t === 'acc'), hasCore = s.blocks.some(b => b.goal === 'front-lever');
+      const add = !hasAnta ? anta(g >= 14 ? 10 : 8) : !hasCore ? coreB(g >= 14 ? 10 : 8) : null;
+      if (add) { s.blocks.splice(end(), 0, add); g -= add.min; }
+    }
+    // 3) Mobility am Ende: Pancake, bei genug Zeit auch Mittelspagat
+    if (g >= 8) {
+      const m = Math.min(15, g), two = m >= 13;
+      s.blocks.push(goalB('pancake', two ? 7 : m, 'Du bist jetzt warm – die beste Zeit für lange Dehnpositionen.'));
+      if (two) s.blocks.push(goalB('middle-split', m - 7, null));
+      g -= m;
+    }
+    // 4) Rest: etwas leichtes Klettern mit Aufgabe
+    if (g >= 8) { const m = Math.min(15, g); s.blocks.splice(end(), 0, easyB(m)); g -= m; }
+    s.min = total();
+  }
+
   // ---------- Zeitliche Auflösung ----------
   let cache = null;
   function layout() {
@@ -523,6 +561,7 @@
         if ((s.key === 'mo' || s.key === 'fr') && s.kind !== 'mobility' && s.kind !== 'test' && !s.blocks.some(b => b.t === 'prin')) {
           const k = s.blocks.findIndex(b => b.t === 'warmup'); if (k >= 0) s.blocks.splice(k + 1, 0, prin());
         }
+        if (!w.deload && !w.test) fillTo(s, TARGET_MIN);
         s.planId = ph.id + '-w' + (i + 1) + '-' + s.key;
         s.baseDate = D.add(mon, s.dow);
         s.phaseId = ph.id;
