@@ -186,6 +186,7 @@
     const fg = h.lift ? 0 : finger(date).v;
     if (fg >= 3) return { kg: prev.kg, text: `Finger ${fg}/10: Last halten oder ${kgs(step * 2)}–${kgs(step * 4)} kg runter.` };
     if (prev.rpe >= 9 && target < 9) return { kg: prev.kg - step * 2, text: `Letztes Mal RPE 9+: ${kgs(step * 2)} kg weniger.` };
+    if (target <= 6 && prev.rpe >= target + 2) return { kg: prev.kg - step, text: `Letztes Mal Anstrengung ${prev.rpe}, Ziel ${target}: ${kgs(step)} kg weniger.` };
     if (prev.rpe <= target - 2) return { kg: prev.kg + step * 2, text: `Letztes Mal RPE ${prev.rpe} – deutlich unter dem Ziel (${target}): +${kgs(step * 2)} kg.` };
     if (prev.rpe < target) return { kg: prev.kg + step, text: `Letztes Mal RPE ${prev.rpe}, Ziel ${target}: +${kgs(step)} kg.` };
     return { kg: prev.kg, text: `Letztes Mal RPE ${prev.rpe}: Last halten, bis sie sich wie RPE ${target - 1} anfühlt.` };

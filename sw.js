@@ -1,5 +1,5 @@
 /* Green Days — Offline-Cache. Version erhöhen, wenn sich Dateien ändern. */
-const VERSION = 'gd-v16';
+const VERSION = 'gd-v17';
 const FILES = ['./', 'index.html', 'css/app.css', 'js/version.js', 'js/update.js', 'js/store.js', 'js/library.js', 'js/plan.js', 'js/adapt.js', 'js/timer.js', 'js/charts.js', 'js/ui.js', 'js/views.js', 'js/progress.js', 'js/injury.js', 'js/technique.js', 'js/targets.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
 self.addEventListener('install', (e) => { e.waitUntil(caches.open(VERSION).then((c) => c.addAll(FILES)).then(() => self.skipWaiting())); });
 self.addEventListener('activate', (e) => { e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== VERSION).map((k) => caches.delete(k)))).then(() => self.clients.claim())); });

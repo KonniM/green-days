@@ -622,7 +622,7 @@
       ${sug ? `<p class="banner tone-green"><b>Vorschlag ${sign(sug.kg)} kg:</b> ${e(sug.text)}</p>` : ''}
       <div class="grid2">${field(h.label || 'Zusatzlast in kg', `<input type="number" name="kg" step="0.25" value="${sug ? sug.kg : (plain || h.lift ? '' : 30)}" inputmode="decimal">`, plain ? '' : 'Negativ = entlastet')}
       ${field('Sätze', `<input type="number" name="sets" min="1" max="10" value="${reps || h.sets || ''}" inputmode="numeric">`)}</div>
-      ${field('RPE der Sätze', scale('rpe', 5, 10, null, { wide: true }), `Ziel ${tg - 1}–${tg}.${tg < 9 ? ' Bei 9+ war die Last zu hoch.' : ''}`)}
+      ${field(tg <= 6 ? 'Anstrengung der Sätze (1–10)' : 'RPE der Sätze', scale('rpe', tg <= 6 ? 2 : 5, 10, null, { wide: true }), `Ziel ${tg - 1}–${tg}.${tg < 9 ? (tg <= 6 ? ' Darüber war die Last für diese Übung zu hoch.' : ' Bei 9+ war die Last zu hoch.') : ''}`)}
       <button class="btn btn-primary btn-block" data-act="hang-save" data-i="${i}">Speichern</button></div>`);
   }
 
